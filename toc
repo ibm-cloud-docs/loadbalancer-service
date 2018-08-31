@@ -31,7 +31,6 @@ IBM Cloud Load Balancer Service
     advanced-traffic.md
     monitoring-metrics.md
 
-
     {: .topicgroup}
     Layer 7 Support
         l7-explained.md
