@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -26,7 +26,7 @@ Scroll to the right to view the rest of the table!
 |**Public VIP**|Yes|Yes|Yes|Yes|Yes |
 |**Private VIP**|Yes|No|Yes|Yes|Yes |
 |**Layer 4 LB**|Yes|Yes|Yes|Yes|Yes |
-|**Layer 7 LB**|No|Cookie Persistence|Cookie Persistence|Yes|Yes |
+|**Layer 7 LB**|Yes|Cookie Persistence|Cookie Persistence|Yes|Yes |
 |**Health Checks**|Yes|Yes|Yes|Yes|Yes |
 |**Horizontal Scaling**|Yes|No|No|No|No |
 |**SSL Offload**|Yes|Yes|Yes|Yes|Yes |

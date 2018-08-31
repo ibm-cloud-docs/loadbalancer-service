@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-08-30"
 
 ---
 
@@ -33,6 +33,10 @@ While trying to create a new load balancer service, you may define up to two vir
 ## What's the maximum number of compute instances I can associate with my load balancer?
 
 50.
+
+## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
+
+Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but VLAN Spanning needs to be enabled for the load balancer to be able to communicate and forward requests to the compute instance sitting on a different subnet.
 
 ## What are the default settings and allowed values for various health check parameters?
 
@@ -77,6 +81,28 @@ VMWare virtual machines assigned non-SoftLayer addresses (such as VMWare NSX net
 
 TCP port 56501 is used for management. Please ensure that traffic to this port, as well as your application's ports, are not blocked by your firewall, otherwise load balancer provisioning will fail.
 
-## What do I need to do when I get an error "This SoftLayer account is not linked to any Bluemix account"?
+## What do I need to do when I get the error "This SoftLayer account is not linked to any Bluemix account"?
 
 Ensure that your SoftLayer account is linked with your Bluemix account. Refer to [Softlayer Link](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid) for further instructions.
+
+## What if I cannot see the monitoring metrics of an existing Load Balancer after linking my Softlayer account to Bluemix? 
+
+Monitoring metrics will not be available for existing load balancers after linking the accounts. You must recreate the load balancers or contact support. Monitoring metrics for newly created load balancers will be available.
+
+## Are the load balancer IP addresses fixed?
+
+We cannot guarantee load balancer IP addresses to remain constant due to the elasticity that is built into the service. As it scales up or down, you will see changes in the available IPs associated with the FQDN of your instance. 
+
+**NOTE:** You should use FQDN and not cached IP addresses.
+
+## If I have a firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer service?
+
+Please refer to the topic [IBM Cloud IP Range](https://console.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+
+## Why can't I see my Layer 7 configuration in the UI?
+
+Currently, Layer 7 support is available only through public APIs, but this functionality will be available in the UI soon. Refer to the Layer 7 section of the [APIs Documentation](apis.html) for more information.
+
+## What information do I need to file a support ticket?
+
+To file a support ticket, please provide the product name ("IBM Cloud Load Balancer"), the UUID of your load balancer (if possible) and your Softlayer account number. The UUID can be found in the URL after navigating to the overview page of the given oad balancer.

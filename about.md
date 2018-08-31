@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-08-07"
 
 ---
 
@@ -46,3 +46,5 @@ The IBM Cloud Load Balancer Service offers the following features:
 * Usage-based pricing 
 * Monitoring
     * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](monitoring-metrics.html) for additional details.
+* Layer 7 Support
+    * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken.    

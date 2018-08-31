@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-08-30"
 
 ---
 
@@ -34,4 +34,6 @@ The following SSL ciphers are supported by your load balancer:
 * AES128-GCM-SHA256
 * AES128-SHA256
 
-If your load balancer has one or more HTTPS front-end application ports (protocols) configured, by default all the above predefined SSL ciphers will be enabled for your load balancer. You may choose to enable different SSL ciphers for your load balancer if needed.
+If your load balancer has one or more HTTPS front-end application ports (protocols) configured, by default all the above predefined SSL ciphers will be enabled for your load balancer. 
+
+**NOTE:** You can choose to enable different SSL ciphers for your load balancer if needed. For more information, refer to [Choose a preferred cipher suite for your HTTPS application](custom-ciphers.html).
