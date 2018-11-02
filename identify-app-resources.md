@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-10-30"
 
 
 ---
@@ -21,6 +21,9 @@ These server instances must be local to the data center where you deploy the loa
 
 <img src="images/locate-server-instance.png" alt="drawing" style="width: 300px;"/>
 
-**NOTE:** The server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are greyed out with other load balancing methods.
-
 Click **Next**.
+
+**NOTES:** 
+
+1. Server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are greyed out with other load balancing methods.
+2. Refer to [Limitations on number of application servers](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.

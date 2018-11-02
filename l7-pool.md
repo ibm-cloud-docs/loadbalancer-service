@@ -23,7 +23,7 @@ L7 pools only support HTTP as the backend protocol.
 
 ## Session Persistence
 Session persistence can be configured for each Layer 7 pool. For more details, refer to the  
-[advanced traffic section](advanced-traffic.md).
+[advanced traffic section](advanced-traffic.html).
 
 ## Layer 7 Members
 

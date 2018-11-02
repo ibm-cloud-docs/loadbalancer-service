@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -67,4 +67,4 @@ The table below shows how the data points are derived from the time interval:
 
 # How to enable Metrics Monitoring
 
-In order to retrieve monitoring metrics you must link your SoftLayer account with your Bluemix account. Refer to [Softlayer Link](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid) for more information.
+In order to retrieve monitoring metrics you must link your SoftLayer account with your IBM Cloud account. Refer to [Softlayer Link](../../../account/softlayerlink.html#switching-to-ibmid) for more information.

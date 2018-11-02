@@ -17,7 +17,7 @@ IBM Cloud Load Balancer Service
     basic-load-balancing.md
 
     {: .topicgroup}
-    Step-by-step: Creating and using an IBM Cloud Load Balancer for elastic server load balancing
+    Creating and using an IBM Cloud Load Balancer for elastic server load balancing
         reliability-guide.md
         create-load-balancer.md
         begin-lb-config.md
@@ -37,7 +37,7 @@ IBM Cloud Load Balancer Service
         l7-policy.md
         l7-pool.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="reference"}
     apis.md
     external-resources.md
@@ -51,6 +51,7 @@ IBM Cloud Load Balancer Service
     Troubleshooting
         troubleshooting-application.md
         troubleshooting-provisioning.md
+        troubleshooting-vlan-spanning.md
 
     getting-help.md
     {: .navgroup-end}

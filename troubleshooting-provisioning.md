@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -14,14 +14,24 @@ lastupdated: "2018-08-30"
 {:tip: .tip}
 {:download: .download}
 
-# Load Balancer provisioning troubleshooting
+# Load Balancer Provisioning Troubleshooting
 This topic provides information on common issues you may encounter while creating a new instance of IBM Cloud Load Balancer.
 
 ## Insufficient IP addresses in your subnet
-IBM Cloud Load Balancer requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
+IBM Cloud Load Balancer requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well. 
+
+Follow the steps below to check for free IPs in a subnet.
+
+1. Go to the [Customer Portal](https://control.softlayer.com), and navigate to the subnets section by selecting **Network > IP Management > Subnets**.
+
+2. Click on the subnet which you want to check for free IP's.
+
+	<img src="images/subnet_list.png" alt="drawing" style="width: 600px;"/>
+		
+3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
 ## Issues with firewalls on public and private VLANs
-Refer to the topic [IBM Cloud IP Range](https://console.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Refer to the topic [IBM Cloud IP Range](../../infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
  
 ## Viewing load balancer error messages
 To view error messages for your load balancer, perform the following procedure:

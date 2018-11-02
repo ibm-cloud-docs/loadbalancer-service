@@ -47,7 +47,7 @@ You can now leverage the “IBM Cloud Monitoring” service to monitor the follo
 
 Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](monitoring-metrics.html) for additional details
 
-This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps](https://console.bluemix.net/docs/account/linking_accounts.html#unifyingaccounts). 
+This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps](../../../account/linking_accounts.html#unifyingaccounts). 
 
 ### Cipher Suite Customization
 You can now customize the cipher suites that are used when the load balancer is configured for SSL termination.
