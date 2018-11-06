@@ -29,4 +29,3 @@ Navigate to the **Monitoring** tab to view real-time charts of your system perfo
 You may edit your existing configuration by navigating to **Protocols**, **Server Instances**, and **Health Checks** tabs. As an example, navigate to Protocols tab to define additional application ports or to customize SSL cipher list. 
 
 <img src="images/protocols-monitor.png" alt="drawing" style="width: 300px;"/>
-

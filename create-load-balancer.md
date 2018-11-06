@@ -25,7 +25,7 @@ To create an IBM Cloud Load Balancer service, perform the following procedure:
 
 3. Select the **IBM Cloud Load Balancer** (default selection) and click **Create**. 
 
-	If you see **Upgrade** instead of **Create**, then you have to link your IBM Cloud Infrastructure (Softlayer) account by following [these steps](../../account/softlayerlink.html#unifyingaccounts).
+	If you see **Upgrade** instead of **Create**, then you have to link your IBM Cloud Infrastructure (Softlayer) account by following [these steps ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.test.cloud.ibm.com/docs/account/softlayerlink.html#unifyingaccounts).
 
 	<img src="images/create-load-balancer.png" alt="drawing" style="width: 600px;"/>
 
@@ -50,3 +50,6 @@ To create an IBM Cloud Load Balancer service, perform the following procedure:
 	If you do not see any private subnets, click **Previous**, then select a different data center with private subnets.
 
 6. Click **Next** to finish the configuration.
+
+## What's Next
+Configure your Load Balancer with [basic parameters](begin-lb-config.html).

@@ -18,12 +18,12 @@ lastupdated: "2018-10-30"
 # Getting Started
 To get started using the IBM Cloud Load Balancer, you’ll need two main items:
 
-* An account with IBM: [IBMid](https://www.ibm.com/account/us-en/signup/register.html)
+* An account with IBM: [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html)
 * A IBM server, either [Bare Metal](../../bare-metal/about.html#getting-started-with-bare-metal-servers) or [Virtual Server Instance (VSI)](../../vsi/vsi_index.html#getting-started-with-virtual-servers)
 
-If you need assistance in obtaining an **IBMid** account, contact your [IBM sales representative](https://www.ibm.com/cloud-computing/bluemix/contact-us) for additional guidance.
+If you need assistance in obtaining an **IBMid** account, contact your [IBM sales representative ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us) for additional guidance.
 
-If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account](../../../account/softlayerlink.html#unifyingaccounts) with your IBMid.
+If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.test.cloud.ibm.com/docs/account/softlayerlink.html#unifyingaccounts) with your IBMid.
 
 ## Ordering a Load Balancer
 

@@ -39,4 +39,4 @@ Each Layer-7 load balancer pool contains one or more logical server instances.
  * A pool can be configured for session persistence. 
  * Use the source IP address of the client to configure session persistence.
 
-Refer to [L7 Pools](l7-pool.html) for additional details
+Refer to [L7 Pools](l7-pool.html) for additional details.

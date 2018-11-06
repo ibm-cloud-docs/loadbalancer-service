@@ -64,3 +64,6 @@ The system pre-populates a default health check configuration for these back-end
 * **Path**: The HTTP URL path for the health check     
 
 Click **Next** to enable your choice.
+
+## What's Next
+[Identify your application's resources](identify-app-resources.html), such as origin pools and health check mechanisms.

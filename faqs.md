@@ -95,7 +95,7 @@ We cannot guarantee load balancer IP addresses to remain constant due to the ela
 
 ## If I have a firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer service?
 
-Please refer to the topic [IBM Cloud IP Range](https://../..//infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Please refer to the topic [IBM Cloud IP Ranges](https://../../infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Why can't I see my Layer 7 configuration in the UI?
 

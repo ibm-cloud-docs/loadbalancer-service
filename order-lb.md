@@ -23,3 +23,6 @@ The system now creates a service instance for you and takes you to the Load Bala
 <img src="images/summary-offline.png" alt="drawing" style="width: 300px;"/>
 
 <img src="images/summary-online.png" alt="drawing" style="width: 300px;"/>
+
+## What's Next
+[Edit your configuration](managing-lb.html) to monitor your service performance.

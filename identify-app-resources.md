@@ -27,3 +27,6 @@ Click **Next**.
 
 1. Server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are greyed out with other load balancing methods.
 2. Refer to [Limitations on number of application servers](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
+
+## What's Next
+[Review the contents](order-lb.html) of your order before placing it.

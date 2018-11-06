@@ -23,7 +23,7 @@ IBM Cloud Load Balancer pricing is based on the following three metrics, calcula
 * Data Processed
 * Outbound Public Bandwidth (Egress)
 
-**NOTE:** All prices vary by geographic regionThe Outbound public bandwidth consumed by the IBM Cloud Load Balancer service is billed per the standard data transfer charge of [USD $0.09 per GB](https://www.ibm.com/cloud/bandwidth).
+**NOTE:** All prices vary by geographic regionThe Outbound public bandwidth consumed by the IBM Cloud Load Balancer service is billed per the standard data transfer charge of [USD $0.09 per GB ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bandwidth).
 
 The following chart details an example IBM Cloud Load Balancer priced for a customer using 4500 GB per month for public load balancing:
 
@@ -32,7 +32,7 @@ The following chart details an example IBM Cloud Load Balancer priced for a cust
 | **Service Usage** | 720 hours | $0.025/hour | $18/month |
 | **Data Processed** | 4500GB | $0.008/GB | $36/month |
 
-The total charge for the above scenario is $54/month plus the standard data transfer charge [USD $0.09 per GB](https://www.ibm.com/cloud/bandwidth).
+The total charge for the above scenario is $54/month plus the standard data transfer charge [USD $0.09 per GB ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bandwidth).
 
 ![pricing](./images/pricing.png)
 
