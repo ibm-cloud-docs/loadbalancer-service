@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -31,7 +31,7 @@ Follow the steps below to check for free IPs in a subnet.
 3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
 ## Issues with firewalls on public and private VLANs
-Refer to the topic [IBM Cloud IP Range](../../infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
  
 ## Viewing load balancer error messages
 To view error messages for your load balancer, perform the following procedure:

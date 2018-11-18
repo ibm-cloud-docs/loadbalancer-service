@@ -22,7 +22,7 @@ This section contains answers to some frequently asked questions about the IBM C
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](../../infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
 
 ## Can I use a different DNS name for my load balancer?
 {:faq}
@@ -110,7 +110,7 @@ We cannot guarantee load balancer IP addresses to remain constant due to the ela
 ## If I have a firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer service?
 {:faq}
 
-Please refer to the topic [IBM Cloud IP Ranges](https://../../infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Why can't I see my Layer 7 configuration in the UI?
 {:faq}

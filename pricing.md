@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -39,4 +39,4 @@ The total charge for the above scenario is $54/month plus the standard data tran
 
 **NOTE:** All prices vary by geographic region; pricing in example and diagram is Dallas pricing in U.S. Dollars; Not displayed in the diagram is service usage fee of $0.025/hour.
 
-To see specific pricing information for your region, you can go through our simple [sign up process](../../../catalog/infrastructure/load-balancer-group).
+To see specific pricing information for your region, you can go through our simple [sign up process](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).

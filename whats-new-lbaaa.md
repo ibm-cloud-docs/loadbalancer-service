@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -47,7 +47,7 @@ You can now leverage the “IBM Cloud Monitoring” service to monitor the follo
 
 Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](monitoring-metrics.html) for additional details
 
-This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.test.cloud.ibm.com/docs/account/softlayerlink.html#unifyingaccounts). 
+This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/account/softlayerlink.html#link_user_account). 
 
 ### Cipher Suite Customization
 You can now customize the cipher suites that are used when the load balancer is configured for SSL termination.
