@@ -21,7 +21,7 @@ IBM Cloud offers several load balancing solutions to choose from. The table belo
 Scroll to the right to view the rest of the table!
 
 
-|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Shared)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicated)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Shared)| [Local Load Balancer](/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicated)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**Public VIP**|Yes|Yes|Yes|Yes|Yes |
 |**Private VIP**|Yes|No|Yes|Yes|Yes |
