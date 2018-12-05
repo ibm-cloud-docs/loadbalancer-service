@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -42,7 +42,7 @@ Se il protocollo è *HTTP*, viene segnalata solo la velocità effettiva per il t
 
 L'utente può inoltre specificare l'intervallo temporale in cui la metrica deve essere segnalata. Gli intervalli di tempo supportati sono: 
 
-* 1 ora 
+* 1 ora
 * 6 ore
 * 12 ore
 * 24 ore
@@ -60,11 +60,11 @@ La seguente tabella mostra come i punti dati vengono ricavati dall'intervallo te
 | ------------------------------------------ | --------------------------------------------------- | -------------------|
 | 1 ora    | 5 minuti | 12   |
 | 6 ore   | 30 minuti | 12  |
-| 12 ore  | 1 ora    | 12 |
+| 12 ore  | 1 ora | 12 |
 | 24 ore  | 2 ore | 12 |
 | 1 settimana    | 12 ore | 12 |
 | 2 settimane  | 24 ore | 12 |
 
-# Come abilitare il monitoraggio delle metriche 
+# Come abilitare il monitoraggio delle metriche
 
-Per poter richiamare le metriche di monitoraggio devi collegare l'account SoftLayer al tuo account Bluemix. Fai riferimento a [Softlayer Link](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid) per ulteriori informazioni.
+Per poter richiamare le metriche di monitoraggio devi collegare l'account SoftLayer al tuo account IBM Cloud. Fai riferimento a [questo argomento ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](/docs/account/softlayerlink.html#link_user_account) per ulteriori informazioni. 

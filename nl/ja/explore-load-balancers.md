@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,14 +21,14 @@ IBM Cloud では複数のロード・バランシング・ソリューション�
 右にスクロールすると、表の残りの部分が表示されます。
 
 
-|        | [IBM Cloud Load Balancer](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (共有)| [Local Load Balancer](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (専用)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (標準)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (プラチナ) |
+|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (共有)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (専用)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (標準)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (プラチナ) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**パブリック VIP**|あり|あり|あり|あり|あり |
 |**プライベート VIP**|あり|なし|あり|あり|あり |
 |**Layer 4 LB**|あり|あり|あり|あり|あり |
-|**Layer 7 LB**|なし|Cookie パーシスタンス|Cookie パーシスタンス|あり|あり |
+|**Layer 7 LB**|あり|Cookie パーシスタンス|Cookie パーシスタンス|あり|あり |
 |**ヘルス・チェック**|あり|あり|あり|あり|あり |
-|**水平スケーリング**|あり|なし|なし|なし|なし|
+|**水平スケーリング**|あり|なし|なし|なし|なし |
 |**SSL オフロード**|あり|あり|あり|あり|あり |
 |**管理**|IBM ポータルを介して|IBM ポータルを介して|IBM ポータルを介して|自己管理 (ベンダー GUI)|自己管理 (ベンダー GUI) |
 |**高可用性**|標準装備|標準装備|オプション|オプション|オプション |

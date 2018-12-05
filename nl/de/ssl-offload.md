@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -34,4 +34,6 @@ Von der Lastausgleichsfunktion werden folgende SSL-Verschlüsselungen unterstüt
 * AES128-GCM-SHA256
 * AES128-SHA256
 
-Wenn für die Lastausgleichsfunktion mindestens ein HTTPS-Front-End-Anwendungsport (Protokoll) konfiguriert ist, sind standardmäßig alle oben vordefinierten SSL-Verschlüsselungen für die Lastausgleichsfunktion aktiviert. Sie können bei Bedarf auch andere SSL-Verschlüsselungen für die Lastausgleichsfunktion aktivieren.
+Wenn für die Lastausgleichsfunktion mindestens ein HTTPS-Front-End-Anwendungsport (Protokoll) konfiguriert ist, sind standardmäßig alle oben vordefinierten SSL-Verschlüsselungen für die Lastausgleichsfunktion aktiviert. 
+
+**HINWEIS:** Sie können bei Bedarf auch andere SSL-Verschlüsselungen für die Lastausgleichsfunktion aktivieren. Weitere Informationen finden Sie unter [Bevorzugte Cipher-Suite für Ihre HTTPS-Anwendung auswählen](custom-ciphers.html). 

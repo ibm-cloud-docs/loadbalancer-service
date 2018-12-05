@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -65,4 +65,4 @@ A tabela abaixo mostra como os pontos de dados são derivados do intervalo de te
 
 # Como ativar o monitoramento de métricas
 
-Para recuperar as métricas de monitoramento, deve-se vincular sua conta do SoftLayer com a conta do Bluemix. Consulte [Link do Softlayer](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid) para obter mais informações.
+Para recuperar as métricas de monitoramento, deve-se vincular sua conta do SoftLayer à sua conta do IBM Cloud. Consulte [este tópico ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/account/softlayerlink.html#link_user_account) para obter mais informações.

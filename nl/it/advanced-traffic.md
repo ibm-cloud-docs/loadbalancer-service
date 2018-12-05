@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Gestione del traffico avanzata
 Questa sezione descrive diverse funzioni di gestione del traffico disponibili con il servizio del programma di bilanciamento del carico.
@@ -23,7 +25,7 @@ Utilizza la configurazione ‘numero massimo di connessioni’ per limitare il n
 
 ## Persistenza sessione
 
-Il programma di bilanciamento del carico supporta la persistenza della sessione su una porta VIP fornita che si basa sull'`IP di origine` della connessione. Ad esempio, se la persistenza della sessione è abilitata per la porta 80 (HTTP), allora i successivi tentativi di connessione HTTP dallo stesso client (stesso IP di origine) vengono conservati nello stesso server di backend. 
+Il programma di bilanciamento del carico supporta la persistenza della sessione su una porta VIP fornita che si basa sull'`IP di origine` della connessione. Ad esempio, se la persistenza della sessione è abilitata per la porta 80 (HTTP), allora i successivi tentativi di connessione HTTP dallo stesso client (stesso IP di origine) vengono conservati nello stesso server di backend. Questa funzione è disponibile per tutti e tre i protocolli supportati (HTTP, HTTPS e TCP).
 
 Il programma di bilanciamento del carico supporta un massimo di 10.000 voci di persistenza client. La data di scadenza per queste tre voci è 10 minuti. Ulteriori richieste ricevute dallo stesso client dopo 10 minuti possono venire inoltrate a un server di backend differente. Se la voce di persistenza della sessione non scade, ma la porta di backend è diventata non integra, viene selezionato un nuovo server per inoltrare tutte le seguenti connessioni client.  
 

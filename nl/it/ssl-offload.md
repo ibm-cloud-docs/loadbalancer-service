@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -20,8 +20,8 @@ Per tutte le connessioni HTTPS in entrata, il servizio del programma di bilancia
 
 Un certificato SSL è obbligatorio al programma di bilanciamento del carico per eseguire le attività offload SSL. Puoi utilizzare un certificato SSL preesistente o acquistarne uno nuovo e gestirlo con [IBM Cloud Certificate Store ](https://control.softlayer.com/security/sslcerts). 
 
-# Suite di cifratura SSL 
-Il servizio del programma di bilanciamento del carico supporta TLS versione 1.2 con offload SSL. 
+# Suite di cifratura SSL
+Il servizio del programma di bilanciamento del carico supporta TLS versione 1.2 con offload SSL.
 
 Le seguenti cifrature SSL sono supportate dal tuo programma di bilanciamento del carico:
 
@@ -34,4 +34,6 @@ Le seguenti cifrature SSL sono supportate dal tuo programma di bilanciamento del
 * AES128-GCM-SHA256
 * AES128-SHA256
 
-Se il tuo programma di bilanciamento del carico ha più di una porta dell'applicazione di frontend HTTPS (protocolli) configurata, per impostazione predefinita tutte le cifrature SSL predefinite saranno abilitate per il tuo programma di bilanciamento del carico. Puoi scegliere di abilitare diverse cifrature SSL per il tuo programma di bilanciamento del carico se necessario.
+Se il tuo programma di bilanciamento del carico ha più di una porta dell'applicazione di frontend HTTPS (protocolli) configurata, per impostazione predefinita tutte le cifrature SSL predefinite saranno abilitate per il tuo programma di bilanciamento del carico. 
+
+**NOTA:** puoi scegliere di abilitare diverse cifrature SSL per il tuo programma di bilanciamento del carico se necessario. Per ulteriori informazioni, consulta [Seleziona una suite di cifratura preferita per la tua applicazione HTTPS](custom-ciphers.html).

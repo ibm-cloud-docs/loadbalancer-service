@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -65,4 +65,4 @@ lastupdated: "2018-03-14"
 
 # 如何啟用度量值監視
 
-若要擷取監視度量值，您必須鏈結 SoftLayer 帳戶與 Bluemix 帳戶。如需相關資訊，請參閱 [Softlayer 鏈結](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid)。
+為了能夠擷取監視度量值，您必須鏈結 SoftLayer 帳戶與 IBM Cloud 帳戶。如需相關資訊，請參閱[本主題 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](/docs/account/softlayerlink.html#link_user_account)。

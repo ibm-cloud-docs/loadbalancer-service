@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ IBM Cloud offre plusieurs solutions d'équilibrage de charge. Le tableau ci-dess
 Faites défiler l'écran vers la droite pour visualiser la totalité du tableau !
 
 
-|        | [Equilibreur de charge IBM Cloud](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Equilibreur de charge local](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (partagé)| [Equilibreur de charge local](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (dédié)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [Equilibreur de charge IBM Cloud](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Equilibreur de charge local](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (partagé)| [Equilibreur de charge local](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (dédié)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**VIP public**|Oui|Oui|Oui|Oui|Oui |
 |**VIP privé**|Oui|Non|Oui|Oui|Oui |
 |**Couche 4 LB**|Oui|Oui|Oui|Oui|Oui |
-|**Couche 7 LB**|Non|Persistance des cookies|Persistance des cookies|Oui|Oui |
+|**Couche 7 LB**|Oui|Persistance des cookies|Persistance des cookies|Oui|Oui |
 |**Contrôles de santé**|Oui|Oui|Oui|Oui|Oui |
 |**Mise à l'échelle horizontale**|Oui|Non|Non|Non|Non |
 |**Déchargement SSL**|Oui|Oui|Oui|Oui|Oui |

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -34,4 +34,6 @@ Los siguientes cifrados SSL están soportados por el equilibrador de carga:
 * AES128-GCM-SHA256
 * AES128-SHA256
 
-Si el equilibrador de carga tiene uno o varios puertos de aplicación frontales HTTPS (protocolos) configurados, de forma predeterminada se habilitarán todos los cifrados SSL predefinidos anteriores para el equilibrador de carga. Puede elegir habilitar cifrados SSL distintos para su equilibrador de carga, si es necesario.
+Si el equilibrador de carga tiene uno o varios puertos de aplicación frontales HTTPS (protocolos) configurados, de forma predeterminada se habilitarán todos los cifrados SSL predefinidos anteriores para el equilibrador de carga. 
+
+**NOTA:** puede optar por habilitar cifrados SSL distintos para su equilibrador de carga, si es necesario. Para obtener más información, consulte [Elegir una suite de cifrado preferida para la aplicación HTTPS](custom-ciphers.html).

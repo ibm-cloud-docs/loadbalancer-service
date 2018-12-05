@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" href="/docs/infrastructure/loadbalancer-service/getting-started.html"}
+{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service/getting-started.html" path="infrastructure/loadbalancer-service"}
 IBM Cloud Load Balancer Service
 
     {: .navgroup id="learn"}
@@ -15,22 +15,30 @@ IBM Cloud Load Balancer Service
 
     {: .navgroup id="howto"}
     basic-load-balancing.md
+
+    {: .topicgroup}
+    탄력적인 서버 로드 밸런싱을 위해 IBM Cloud 로드 밸런서 작성 및 사용
+        reliability-guide.md
+        create-load-balancer.md
+        begin-lb-config.md
+        identify-app-resources.md
+        order-lb.md
+        managing-lb.md
+
+    custom-ciphers.md
     health-checks.md
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md
 
     {: .topicgroup}
-    단계별: 글로벌 로드 밸런싱으로 애플리케이션 안정성 및 확장성 개선
-        application-reliability.md
-        create-cis.md
-        input-domain.md
-        begin-config.md
-        identify-app-resources.md
-        define-global-lb.md
+    계층 7 지원
+        l7-explained.md
+        l7-policy.md
+        l7-pool.md
 
     {: .navgroup-end}
-    
+
     {: .navgroup id="reference"}
     apis.md
     external-resources.md
@@ -39,5 +47,13 @@ IBM Cloud Load Balancer Service
     {: .navgroup id="help"}
     faqs.md
     known-limitations.md
+
+    {: .topicgroup}
+    문제점 해결
+        troubleshooting-application.md
+        troubleshooting-provisioning.md
+        troubleshooting-vlan-spanning.md
+        troubleshooting-errors.md
+
     getting-help.md
     {: .navgroup-end}

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" href="/docs/infrastructure/loadbalancer-service/getting-started.html"}
+{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service/getting-started.html" path="infrastructure/loadbalancer-service"}
 IBM Cloud Load Balancer Service
 
     {: .navgroup id="learn"}
@@ -15,22 +15,30 @@ IBM Cloud Load Balancer Service
 
     {: .navgroup id="howto"}
     basic-load-balancing.md
+
+    {: .topicgroup}
+    Criando e usando um IBM Cloud Load Balancer para balanceamento de carga do servidor elástico
+        reliability-guide.md
+        create-load-balancer.md
+        begin-lb-config.md
+        identify-app-resources.md
+        order-lb.md
+        managing-lb.md
+
+    custom-ciphers.md
     health-checks.md
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md
 
     {: .topicgroup}
-    Passo a passo: melhorando a confiabilidade e a escalabilidade do aplicativo com o Balanceamento de carga global
-        application-reliability.md
-        create-cis.md
-        input-domain.md
-        begin-config.md
-        identify-app-resources.md
-        define-global-lb.md
+    Suporte da Camada 7
+        l7-explained.md
+        l7-policy.md
+        l7-pool.md
 
     {: .navgroup-end}
-    
+
     {: .navgroup id="reference"}
     apis.md
     external-resources.md
@@ -39,5 +47,13 @@ IBM Cloud Load Balancer Service
     {: .navgroup id="help"}
     faqs.md
     known-limitations.md
+
+    {: .topicgroup}
+    Resolução de problemas
+        troubleshooting-application.md
+        troubleshooting-provisioning.md
+        troubleshooting-vlan-spanning.md
+        troubleshooting-errors.md
+
     getting-help.md
     {: .navgroup-end}

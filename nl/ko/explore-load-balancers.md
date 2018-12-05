@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ IBM Cloud에서는 선택 가능한 여러 가지 로드 밸런싱 솔루션을 
 표의 나머지를 보려면 오른쪽으로 스크롤하십시오.
 
 
-|        |[IBM Cloud 로드 밸런서](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)|[로컬 로드 밸런서](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started)(공유)|[로컬 로드 밸런서](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started)(전용)|[Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX(표준)|[Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX(Platinum) |
+|        |[IBM Cloud 로드 밸런서](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)|[로컬 로드 밸런서](../../infrastructure/local-load-balancer/getting-started.html#getting-started)(공유)|[로컬 로드 밸런서](../../infrastructure/local-load-balancer/getting-started.html#getting-started)(전용)|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX(표준)|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX(Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**공용 VIP**|예|예|예|예|예 |
 |**사설 VIP**|예|아니오|예|예|예 |
 |**계층 4 LB**|예|예|예|예|예 |
-|**계층 7 LB**|아니오|쿠키 지속성|쿠키 지속성|예|예 |
+|**계층 7 LB**|예|쿠키 지속성|쿠키 지속성|예|예 |
 |**상태 검사**|예|예|예|예|예 |
 |**수평적 확장**|예|아니오|아니오|아니오|아니오 |
 |**SSL 오프로드**|예|예|예|예|예 |

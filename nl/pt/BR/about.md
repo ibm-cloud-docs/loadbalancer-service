@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Sobre
 
@@ -46,3 +48,5 @@ O IBM Cloud Load Balancer Service oferece os recursos a seguir:
 * Definição de preço por utilização 
 * Monitoramento
     * Monitora as métricas de Rendimento, Conexões ativas e Taxa de conexão para protocolos HTTP, HTTPS e TCP sobre intervalos de tempo especificados pelo usuário. Consulte [Monitorando métricas](monitoring-metrics.html) para obter detalhes adicionais.
+* Suporte da Camada 7
+    * O tráfego HTTP/HTTPS é roteado para diferentes serviços de backend com base no cabeçalho de HTTP e é feito usando políticas e regras. As regras são usadas para classificar o tráfego e se baseiam nos campos de cabeçalho de HTTP. Quando o tráfego corresponde a todas as regras, uma ação especificada pela política é executada.    

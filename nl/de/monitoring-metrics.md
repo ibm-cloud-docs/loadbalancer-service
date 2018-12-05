@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-03-14"
 Von der Lastausgleichsfunktion werden folgende Metriken überwacht: 
 
 * Durchsatz
-* Aktive Verbindungen 
+* Aktive Verbindungen
 * Verbindungsrate
 
 Diese Metriken werden in Form von Diagrammen dargestellt, die durch Auswählen der Registerkarte **Überwachung** angezeigt werden können;
@@ -57,13 +57,13 @@ In der folgenden Tabelle wird veranschaulicht, wie die Datenpunkte aus dem Zeiti
 
 | Zeitintervall | Datenpunktgenauigkeit | Anzahl der Datenpunkte |                                                                                              
 | ------------------------------------------ | --------------------------------------------------- | -------------------|
-| 1 Stunde   | 5 Minuten  | 12   |
-| 6 Stunden  | 30 Minuten | 12   |
-| 12 Stunden | 1 Stunde   | 12   |
-| 24 Stunden | 2 Stunden  | 12   |
-| 1 Woche    | 12 Stunden | 12   |
-| 2 Wochen   | 24 Stunden | 12   |
+| 1 Stunde    | 5 Minuten | 12   |
+| 6 Stunden   | 30 Minuten | 12  |
+| 12 Stunden  | 1 Stunde | 12 |
+| 24 Stunden  | 2 Stunden | 12 |
+| 1 Woche    | 12 Stunden | 12 |
+| 2 Wochen  | 24 Stunden | 12 |
 
 # Verwendungshinweise zum Aktivieren der Überwachung der Metriken
 
-Zum Abrufen von Überwachungsmetriken müssen Sie mit Ihrem Bluemix-Konto eine Verbindung zu Ihrem SoftLayer-Konto herstellen. Informationen hierzu finden Sie unter [SoftLayer-Link](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid).
+Zum Abrufen von Überwachungsmetriken müssen Sie mit Ihrem IBM Cloud-Konto eine Verbindung zu Ihrem SoftLayer-Konto herstellen. Weitere Informationen finden Sie [hier ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/account/softlayerlink.html#link_user_account). 

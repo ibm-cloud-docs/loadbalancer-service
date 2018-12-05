@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 정보
 
@@ -45,4 +47,6 @@ IBM Cloud Load Balancer Service는 다음 기능을 제공합니다.
 * 기본 제공 신뢰성 
 * 종량제 
 * 모니터링
-    * 사용자가 지정한 시간 간격에 HTTP, HTTPS 및 TCP 프로토콜에 대한 처리량, 활성 연결 수 및 연결 속도 메트릭을 모니터합니다. 추가 세부사항은 [모니터링 메트릭](monitoring-metrics.html)을 참조하십시오. 
+    * 사용자가 지정한 시간 간격에 HTTP, HTTPS 및 TCP 프로토콜에 대한 처리량, 활성 연결 수 및 연결 속도 메트릭을 모니터합니다. 추가 세부사항은 [모니터링 메트릭](monitoring-metrics.html)을 참조하십시오.
+* 계층 7 지원
+    * HTTP/HTTPS 트래픽은 HTTP 헤더를 기반으로 여러 백엔드 서비스로 라우팅되고 정책 및 규칙을 사용하여 수행됩니다. 규칙은 트래픽을 분류하는 데 사용되고 HTTP 헤더 필드를 기반으로 합니다. 트래픽이 모든 규칙과 일치하면 정책에 지정된 조치가 수행됩니다.    

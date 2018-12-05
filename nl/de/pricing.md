@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -23,7 +23,7 @@ Die Preisstruktur für IBM Cloud Load Balancer basiert auf den drei folgenden Me
 * Verarbeitete Daten
 * Abgehende öffentlich Bandbreite (Egress)
 
-**HINWEIS:** Alle Preise variieren nach geografischer Region. Die Abgehende öffentliche Bandbreite, die vom IBM Cloud Load Balancer-Service verbraucht wird, wird gemäß der Standarddatenübertragungsgebühr von [USD 0,09 pro GB](https://www.ibm.com/cloud/bandwidth) abgerechnet.
+**HINWEIS:** Alle Preise variieren nach geografischer Region. Die Abgehende öffentliche Bandbreite, die vom IBM Cloud Load Balancer-Service verbraucht wird, wird gemäß der Standarddatenübertragungsgebühr von [USD 0,09 pro GB ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/bandwidth) abgerechnet.
 
 Im folgenden Diagramm wird ein Beispiel für die Abrechnung des IBM Cloud Load Balancer-Service für einen Kunden beschrieben, der 4.500 GB pro Monat für den öffentlichen Lastausgleich verwendet:
 
@@ -32,7 +32,7 @@ Im folgenden Diagramm wird ein Beispiel für die Abrechnung des IBM Cloud Load B
 | **Servicenutzung** | 720 Stunden | USD 0,025/Stunde | USD 18/Monat |
 | **Verarbeitete Daten** | 4.500 GB | USD 0,008/GB | USD 36/Monat |
 
-Die Gesamtgebühr für das obige Szenario beträgt USD 54/Monat plus einer Standarddatenübertragungsgebühr von [USD 0,09 pro GB](https://www.ibm.com/cloud/bandwidth).
+Die Gesamtgebühr für das obige Szenario beträgt USD 54/Monat plus einer Standarddatenübertragungsgebühr von [USD 0,09 pro GB ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/bandwidth). 
 
 ![Preisstruktur](./images/pricing.png)
 

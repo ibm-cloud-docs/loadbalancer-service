@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 
 # Transferência de SSL
 
-Para todas as conexões HTTPS recebidas, o serviço de balanceador de carga finaliza a conexão SSL e estabelece uma comunicação HTTP de texto sem formatação com o servidor de backend. As tarefas de handshakes SSL intensivas de CPU e as tarefas de criptografia/decriptografia são deslocadas dos servidores de backend, permitindo que eles usem todos os seus ciclos de CPU para processar o tráfego de aplicativos. 
+Para todas as conexões HTTPS recebidas, o serviço de balanceador de carga finaliza a conexão SSL e estabelece uma comunicação HTTP de texto sem formatação com o servidor de back-end. As tarefas de handshakes SSL intensivas de CPU e as tarefas de criptografia/decriptografia são deslocadas dos servidores de back-end, permitindo que eles usem todos os seus ciclos de CPU para processar o tráfego de aplicativos. 
 
 É necessário um certificado SSL para que o balanceador de carga execute tarefas de transferência de SSL. É possível usar um certificado SSL preexistente ou comprar um novo e gerenciá-lo por meio do [IBM Cloud Certificate Store](https://control.softlayer.com/security/sslcerts). 
 
@@ -34,4 +34,6 @@ As cifras SSL a seguir são suportadas por seu balanceador de carga:
 * AES128-GCM-SHA256
 * AES128-SHA256
 
-Se o balanceador de carga tiver uma ou mais portas de aplicativo de front-end HTTPS (protocolos) configuradas, por padrão, todas as cifras SSL predefinidas acima serão ativadas para o balanceador de carga. É possível optar por ativar diferentes cifras de SSL para o seu balanceador de carga, se necessário.
+Se o balanceador de carga tiver uma ou mais portas de aplicativo de front-end HTTPS (protocolos) configuradas, por padrão, todas as cifras SSL predefinidas acima serão ativadas para o balanceador de carga. 
+
+**NOTA:** será possível optar por ativar cifras diferentes de SSL para seu balanceador de carga, se necessário. Para obter informações adicionais, consulte [Escolher um conjunto de cifras preferenciais para seu aplicativo HTTPS](custom-ciphers.html).

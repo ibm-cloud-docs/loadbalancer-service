@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Gestión de tráfico avanzada
 En esta sección, se abordan varias características de gestión de tráfico avanzada disponibles con el servicio de equilibrador de carga.
@@ -23,7 +25,7 @@ Utilice la configuración Número máx. de conexiones para limitar el número m�
 
 ## Persistencia de sesión
 
-El equilibrador de carga soporta la persistencia de sesión en un puerto VIP determinado basado en la dirección `source IP` de la conexión. Por ejemplo, si se habilita la persistencia de sesión para el puerto 80 (HTTP), entonces los intentos de conexión HTTP posteriores desde el mismo cliente (misma IP de origen) serán persistentes en el mismo servidor back-end. 
+El equilibrador de carga soporta la persistencia de sesión en un puerto VIP determinado basado en la dirección `source IP` de la conexión. Por ejemplo, si se habilita la persistencia de sesión para el puerto 80 (HTTP), entonces los intentos de conexión HTTP posteriores desde el mismo cliente (misma IP de origen) serán persistentes en el mismo servidor back-end. Esta característica está disponible para los tres protocolos soportados (HTTP, HTTPS y TCP).
 
 El equilibrador de carga soporta un máximo de 10.000 entradas de persistencia de cliente. La hora de caducidad de estas entradas es de 10 minutos. Las solicitudes adicionales que se reciban del mismo cliente después de 10 minutos, se reenviarán a otro servidor back-end. Si la entrada de persistencia de sesión no ha caducado, pero el puerto es erróneo, se seleccionará otro servidor para reenviar posibles conexiones de cliente posteriores.  
 

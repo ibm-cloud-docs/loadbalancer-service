@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,13 +13,15 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # A propos de
 
-Le service Equilibreur de charge IBM Cloud aide les clients à améliorer la disponibilité des applications critiques pour l'activité de leur entreprise en répartissant le trafic entre plusieurs instances de serveur et en réacheminant le trafic vers des instances viables seulement.
+Le service IBM Cloud Load Balancer aide les clients à améliorer la disponibilité des applications critiques pour l'activité de leur entreprise en répartissant le trafic entre plusieurs instances de serveur et en réacheminant le trafic vers des instances viables seulement.
 
 ## Présentation des fonctionnalités
-Le service Equilibreur de charge IBM Cloud offre les fonctionnalités suivantes :
+Le service IBM Cloud Load Balancer offre les fonctionnalités suivantes :
 
 * Equilibreur de charge public (Internet)
 	* Service accessible au public via son nom de domaine complet
@@ -45,4 +47,6 @@ Le service Equilibreur de charge IBM Cloud offre les fonctionnalités suivantes 
 * Fiabilité intégrée 
 * Tarification basée sur l'utilisation 
 * Surveillance
-    * Surveille les métriques Débit, Connexions actives et Taux de connexion pour les protocoles HTTP, HTTPS et TCP au cours des intervalles de temps spécifiés par l'utilisateur. Pour plus d'informations, voir [Métriques de surveillance](monitoring-metrics.html). 
+    * Surveille les métriques Débit, Connexions actives et Taux de connexion pour les protocoles HTTP, HTTPS et TCP au cours des intervalles de temps spécifiés par l'utilisateur. Pour plus d'informations, voir [Métriques de surveillance](monitoring-metrics.html).
+* Prise en charge de couche 7
+    * Le trafic HTTP/HTTPS est acheminé vers différents services de back end sur l'en-tête HTTP, à l'aide de politiques et de règles. Les règles sont utilisées pour classifier le trafic et sont basés sur les zones d'en-tête HTTP. Lorsque le trafic correspond à toutes les règles, une action spécifiée par la politique est exécutée.     

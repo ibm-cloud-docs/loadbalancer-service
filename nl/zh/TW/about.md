@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 關於
 
@@ -46,3 +48,5 @@ IBM Cloud Load Balancer 服務提供下列特性：
 * 以用量為基礎的定價 
 * 監視
     * 在使用者指定的時間間隔，監視 HTTP、HTTPS 及 TCP 通訊協定的「傳輸量」、「作用中連線」及「連線速率」度量值。如需其他詳細資料，請參閱[監視度量值](monitoring-metrics.html)。
+* 第 7 層支援
+    * HTTP/HTTPS 資料流量會根據 HTTP 標頭遞送至不同的後端服務，並使用原則及規則來完成。規則用來分類資料流量，並且以 HTTP 標頭欄位為基礎。資料流量符合所有規則時，會採取原則所指定的動作。    

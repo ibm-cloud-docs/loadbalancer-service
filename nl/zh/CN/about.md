@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 关于
 
@@ -46,3 +48,5 @@ IBM Cloud Load Balancer 服务提供以下功能：
 * 按使用量定价 
 * 监视
     * 监视用户指定的时间间隔期间 HTTP、HTTPS 和 TCP 协议的吞吐量、活动连接数和连接速率度量值。请参阅[监视度量值](monitoring-metrics.html)获取更多详细信息。
+* 第 7 层支持
+    * HTTP/HTTPS 流量将路由到基于 HTTP 头的不同后端服务，并使用策略和规则来完成。规则基于 HTTP 头字段，用于对流量进行分类。流量与所有规则匹配时，将执行策略指定的操作。    

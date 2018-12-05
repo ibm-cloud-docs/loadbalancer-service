@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Referencia de API
 La API de SoftLayer® es la interfaz de desarrollo que permite a los desarrolladores y administradores del sistema interactuar directamente con el sistema de fondo de SoftLayer. 
@@ -20,10 +22,9 @@ La API de SoftLayer® es la interfaz de desarrollo que permite a los desarrollad
 
 La API de SoftLayer (SLAPI) ofrece muchas de las características del Portal de clientes. Por lo general, si una interacción es posible en el Portal de clientes, también lo es en la API. Por lo tanto, puesto que se puede interactuar mediante programación con todos los componentes del entorno de SoftLayer dentro de la API, es posible utilizar la API para automatizar tareas.
 
-La API de SoftLayer (SLAPI) es un sistema de llamadas de procedimiento remoto. Cada llamada implica el envío de datos a un punto final de API a cambio de la recepción de datos estructurados. El formato utilizado para enviar y recibir datos con la SLAPI depende de qué implementación de la API utilice. Actualmente la SLAPI utiliza SOAP, XML-RPC o REST para la transmisión de datos. 
+La API de SoftLayer (SLAPI) es un sistema de llamadas de procedimiento remoto. Cada llamada implica el envío de datos a un punto final de API y la recepción de datos estructurados. El formato utilizado para enviar y recibir datos con la SLAPI depende de qué implementación de la API utilice. Actualmente la SLAPI utiliza SOAP, XML-RPC o REST para la transmisión de datos. 
 
 Para obtener más información sobre la API SoftLayer, las API del servicio IBM Cloud Load Balancer, consulte los siguientes recursos en la red de despliegue de SoftLayer:
-* [Visión general de la API de SoftLayer ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://sldn.softlayer.com/article/softlayer-api-overview){: new_window} 
 * [Iniciación a la API de SoftLayer ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/article/getting-started){: new_window}
 * [SoftLayer_Product_Package API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Product_Package){: new_window}
 * [SoftLayer_Network_LBaaS_LoadBalancer API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_LoadBalancer){: new_window}
@@ -31,6 +32,10 @@ Para obtener más información sobre la API SoftLayer, las API del servicio IBM 
 * [SoftLayer_Network_LBaaS_Member API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_Member){: new_window}
 * [SoftLayer_Network_LBaaS_HealthMonitor API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_HealthMonitor){: new_window}
 * [API SoftLayer_Network_LBaaS_SSLCipher ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_SSLCipher){: new_window}
+* [API SoftLayer_Network_LBaaS_L7Policy ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Policy){: new_window}
+* [API SoftLayer_Network_LBaaS_L7Rule ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Rule){: new_window}
+* [API SoftLayer_Network_LBaaS_L7Pool ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Pool){: new_window}
+* [API SoftLayer_Network_LBaaS_L7Member ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Member){: new_window}
 
 Los siguientes ejemplos utilizan Python con el cliente zeep SOAP.
 
@@ -381,7 +386,7 @@ result = client.service.addLoadBalancerMembers(
     _soapheaders=[userAuthValue, objectMaskValue],
     loadBalancerUuid=uuid, serverInstances=serverInstances
 )
-imprimir resultado
+print result
 ```
 {: codeblock}
 
@@ -484,7 +489,7 @@ except Fault as exp:
 {: codeblock}
 
 ## Visualización de la supervisión de métricas de equilibradores de carga
-### Obtener el rendimiento del tráfico HTTP
+### Obtención del rendimiento del tráfico HTTP
 ```
 desde el cliente zeep import
 
@@ -532,7 +537,7 @@ for timeSeriesDataValue in timeSeriesDataValues:
 ```
 {: codeblock}
 
-### Obtener el rendimiento de un equilibrador de carga
+### Obtención del rendimiento de un equilibrador de carga
 ```
 desde el cliente zeep import, xsd 
 
@@ -576,4 +581,472 @@ timeSeriesDataValues = client.service.getListenerTimeSeriesData(
 for timeSeriesDataValue in timeSeriesDataValues:
     print 'EpochTimeStamp: %d' % timeSeriesDataValue.epochTimestamp
     print 'Value: %f' % timeSeriesDataValue.value
+```
+{: codeblock}
+
+## API de capa 7
+
+### Creación de varias políticas L7 y reglas L7
+```
+desde el cliente zeep import, xsd 
+
+# Username and apikey for SLAPI call
+username = '<Your username>'
+apiKey = '<Your apiKey>'
+# UUID of listener
+uuid = '<Your listener UUID>'
+
+# WSDL for SoftLayer_Network_LBaaS_L7Policy API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Policy?wsdl'
+client = Client(wsdl)
+
+factory = client.type_factory('ns0')
+l7Rule1 = factory.SoftLayer_Network_LBaaS_L7Rule(type = "HEADER", comparisonType = "EQUAL_TO", key = "headerkey", value = "header_key3", invert = 0)
+l7Rule2 = factory.SoftLayer_Network_LBaaS_L7Rule(type = "PATH", comparisonType = "STARTS_WITH", value = "/secret_key", invert = 0)
+l7RuleArray1 = factory.SoftLayer_Network_LBaaS_L7RuleArray([l7Rule1, l7Rule2])
+
+# Bulk policies and rules configuration
+policiesRulesConfiguration = [
+   {"l7Policy":
+        {
+            "name": "traf_test1",
+            "action": "REDIRECT_URL",
+            "priority":101,
+            "redirectUrl": "http://example.com"
+        },
+     "l7Rules": l7RuleArray1
+    }
+]
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])  
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Policy::addL7Policies API
+result = client.service.addL7Policies(
+    _soapheaders=[userAuthValue],
+    listenerUuid=uuid, policiesRules=policiesRulesConfiguration
+)
+print result
+```
+{: codeblock}
+
+### Actualización de la política de capa 7
+```
+desde el cliente zeep import, xsd 
+
+# Username and apikey for SLAPI call
+username = '<Your username>'
+apiKey = '<Your apiKey>'
+
+# WSDL for SoftLayer_Network_LBaaS_L7Policy API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Policy?wsdl'
+client = Client(wsdl)
+
+# Update policy configuration by specifying the variable name and value
+policyConfiguration =  {"<name>": "<value>"}
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])  
+)
+
+# XSD for L7Policy Init Parameters
+xsdObjectIdElem = xsd.Element(
+    '{http://api.service.softlayer.com/soap/v3/}SoftLayer_Network_LBaaS_L7PolicyInitParameters',
+    xsd.ComplexType([
+        xsd.Element('{http://api.service.softlayer.com/soap/v3/}id', xsd.Int())
+    ])
+)
+
+# Pass the id of the policy object
+xsdObjectId = xsdObjectIdElem(<id>)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Policy::addL7Policies API
+result = client.service.editObject(
+    _soapheaders=[userAuthValue, xsdObjectId],
+    templateObject=policyConfiguration
+)
+print result
+```
+{: codeblock}
+
+### Adición de reglas a la política de capa 7 
+```
+desde el cliente zeep import, xsd
+
+# Username and apikey for SLAPI call
+username = '<Your username>'
+apiKey = '<Your apiKey>'
+# UUID of the Layer 7 policy
+policyUuid = '<UUID of the L7 policy to which the rules being created are to be attached>'
+# New rules to add
+ruleConfigurations = [
+   {  
+       "type": "FILE_TYPE",
+       "comparisonType": "CONTAINS",
+       "value": "some_value",
+       "invert": 1
+   },  
+   {  
+            "type": "PATH",
+            "comparisonType": "EQUAL_TO",
+            "value": "some_value",
+            "invert": 0
+   } 
+]
+
+# WSDL for SoftLayer_Network_LBaaS_L7Rule API
+wsdl = "https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Rule?wsdl"
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+   "{http://api.softlayer.com/soap/v3/}authenticate",
+   xsd.ComplexType([
+       xsd.Element("{http://api.softlayer.com/soap/v3/}username", xsd.String()),
+       xsd.Element("{http://api.softlayer.com/soap/v3/}apiKey", xsd.String())
+   ])  
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Rule::addL7Rules API
+try:
+   result = client.service.addL7Rules(_soapheaders=[userAuthValue],
+   policyUuid=policyUuid, rules=ruleConfigurations
+   )
+except Exception as e:
+   print "Encountered exception: ", str(e)
+   exit()
+
+print result
+```
+{: codeblock}
+
+### Actualización de varias reglas de capa 7 adjuntas a la misma política de capa 7 
+```
+desde el cliente zeep import, xsd 
+
+# Username and apikey for SLAPI call
+username = '<Your username>'
+apiKey = '<Your apiKey>'
+# UUID of the Layer 7 policy
+policyUuid = '<UUID of the L7 policy to which the rules being updated are attached to>'
+# Rules to update
+ruleConfigurations = [ 
+    {   
+        'uuid':'<UUID of the L7 Rule being updated>',
+        'type': 'FILE_TYPE',
+        'comparisonType': 'CONTAINS',
+        'value': 'some_newvalue',
+        'invert': 1
+    },  
+    {   
+        'uuid':'<UUID of the L7 Rule being updated>',
+        'type': 'PATH',
+        'comparisonType': 'EQUAL_TO',
+        'value': 'some_newvalue2',
+        'invert': 0
+    } 
+]
+
+# WSDL for SoftLayer_Network_LBaaS_L7Rule API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Rule?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])  
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Rule::updateL7Rules API
+result = client.service.updateL7Rules(
+    _soapheaders=[userAuthValue],
+    policyUuid=policyUuid, rules=ruleConfigurations
+)
+print result
+```
+{: codeblock}
+
+### Creación de una agrupación de capa 7 con servidores, supervisión de estado y afinidad de sesiones
+```
+desde el cliente zeep import, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of load balancer to be updated
+uuid = 'a3e466e0-5cc3-4efb-bb56-07ad63988b16'
+
+# Layer 7 pool to be added
+l7Pool = {
+    'name': 'image_pool',
+    'protocol': 'HTTP',  # only supports HTTP
+    'loadBalancingAlgorithm': 'ROUNDROBIN'
+}
+
+# Layer 7 Backend servers to be added
+l7Members = [
+    {
+        'address': '10.73.67.83',
+        'port': 80,
+        'weight': 10
+    },
+    {
+        'address': '10.73.67.83',
+        'port': 81,
+        'weight': 11
+    }
+]
+
+# Layer 7 Health monitor to be added
+l7HealthMonitor = {
+    'interval': 10,
+    'timeout': 5,
+    'maxRetries': 3,
+    'urlPath': '/'
+}
+
+# Layer 7 session affinity to be added. Only supports SOURCE_IP as of now
+l7SessionAffinity = {
+    'type': 'SOURCE_IP'
+}
+
+# WSDL for SoftLayer_Network_LBaaS_L7Pool API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Pool?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# XSD for objectMask
+xsdObjectMask = xsd.Element(
+    '{http://api.service.softlayer.com/soap/v3/}SoftLayer_ObjectMask',
+    xsd.ComplexType([
+        xsd.Element('{http://api.service.softlayer.com/soap/v3/}mask', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Pool::createL7Pool API
+result = client.service.createL7Pool(
+    _soapheaders=[userAuthValue],
+    loadBalancerUuid=uuid,
+    l7Pool=l7Pool,
+    l7Members=l7Members,  # optional
+    l7HealthMonitor=l7HealthMonitor,  # optional
+    l7SessionAffinity=l7SessionAffinity  # optional
+)
+print result
+```
+{: codeblock}
+
+### Actualización de una agrupación de capa 7 con supervisión de estado y afinidad de sesiones
+```
+desde el cliente zeep import, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of L7 pool to be updated
+l7PoolUuid = '095a9033-d127-4c95-8c0c-67af8c970a3a'
+
+# New Layer 7 pool values to be updated
+l7Pool = {
+    'loadBalancingAlgorithm': 'LEASTCONNECTION'
+}
+
+# New Layer 7 Health monitor values to be updated
+l7HealthMonitor = {
+    'urlPath': '/index'
+}
+
+# New Layer 7 session affinity values to be updated.
+# If not given it deletes the existing session affinity
+# If given and session affinity doesn't exist, it creates one.
+l7SessionAffinity = {
+    'type': 'SOURCE_IP'
+}
+
+# WSDL for SoftLayer_Network_LBaaS_L7Pool API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Pool?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# XSD for objectMask
+xsdObjectMask = xsd.Element(
+    '{http://api.service.softlayer.com/soap/v3/}SoftLayer_ObjectMask',
+    xsd.ComplexType([
+        xsd.Element('{http://api.service.softlayer.com/soap/v3/}mask', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Pool::updateL7Pool API
+result = client.service.updateL7Pool(
+    _soapheaders=[userAuthValue],
+    l7PoolUuid=l7PoolUuid,
+    l7Pool=l7Pool,
+    l7HealthMonitor=l7HealthMonitor,  # optional
+    l7SessionAffinity=l7SessionAffinity  # optional, but if not given this deletes existing session affinity.
+)
+print result
+```
+{: codeblock}
+
+### Adición de servidores a una agrupación de capa 7
+```
+desde el cliente zeep import, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the L7 pool to which members should be added.
+l7PoolUuid = '095a9033-d127-4c95-8c0c-67af8c970a3a'
+
+# Backend servers to be added
+memberInstances = [
+    {
+        'address': '10.73.67.84',
+        'port': 80,
+        'weight': 10
+    },
+    {
+        'address': '10.73.67.84',
+        'port': 81,
+        'weight': 11
+    }
+]
+
+# WSDL for SoftLayer_Network_LBaaS_L7Member API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Member?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# XSD for objectMask
+xsdObjectMask = xsd.Element(
+    '{http://api.service.softlayer.com/soap/v3/}SoftLayer_ObjectMask',
+    xsd.ComplexType([
+        xsd.Element('{http://api.service.softlayer.com/soap/v3/}mask', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Member::addL7PoolMembers API
+result = client.service.addL7PoolMembers(
+    _soapheaders=[userAuthValue],
+    l7PoolUuid=l7PoolUuid, memberInstances=memberInstances
+)
+print result
+```
+{: codeblock}
+
+### Actualización de los servidores que pertenecen a una agrupación de capa 7
+```
+desde el cliente zeep import, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the L7 pool who's member we need to update
+l7PoolUuid = '095a9033-d127-4c95-8c0c-67af8c970a3a'
+
+# Backend servers to be added
+members = [
+    {
+        'uuid': '1e433123-ceae-4bbd-a4e3-2539ceb8b46f',  # UUID of the member to be updated.
+        'address': '10.73.67.83',
+        'port': 90,
+        'weight': 10
+    },
+    {
+        'uuid': 'bd3524db-26c8-4662-982e-04a68a420fba',
+        'address': '10.73.67.83',
+        'port': 91,
+        'weight': 11
+    }
+]
+
+# WSDL for SoftLayer_Network_LBaaS_L7Member API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_L7Member?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# XSD for objectMask
+xsdObjectMask = xsd.Element(
+    '{http://api.service.softlayer.com/soap/v3/}SoftLayer_ObjectMask',
+    xsd.ComplexType([
+        xsd.Element('{http://api.service.softlayer.com/soap/v3/}mask', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Make SLAPI call to SoftLayer_Network_LBaaS_L7Member::addL7PoolMembers API
+result = client.service.updateL7PoolMembers(
+    _soapheaders=[userAuthValue],
+    l7PoolUuid=l7PoolUuid, members=members
+)
+print result
 ```

@@ -1,10 +1,8 @@
 ---
 
-
-
 copyright:
-  years: 2017
-lastupdated: "2018-06-20"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 
 ---
@@ -16,28 +14,19 @@ lastupdated: "2018-06-20"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Identificar seus recursos de aplicativo
+# Identifique os recursos do servidor de aplicativos
+Localize suas **instâncias do servidor** na tabela na parte inferior e clique em **+** para incluí-las atrás do balanceador de carga. É possível selecionar no IBM Cloud Virtual Server Instances (VSIs) e no Bare Metal Servers em sua conta.
 
-Identifique os recursos de seu aplicativo, tais como conjuntos de origem e mecanismos de verificação de funcionamento.
- 
-1. Navegue para a seção **Conjuntos de origem** e clique em **Criar conjunto** para definir um novo conjunto de origem. 
+Essas instâncias do servidor devem ser locais para o data center no qual você implementará o serviço do balanceador de carga. Além disso, as instâncias do servidor dos data centers vizinhos dentro da mesma cidade também podem ser incluídas (por exemplo, se as três primeiras letras do nome do data center forem iguais).
 
-   Os conjuntos de origem são recursos do servidor que entregam aplicativos para seus clientes. 
-   
-2. Designe um nome ao Conjunto de origem e selecione o mecanismo de verificação de funcionamento definido anteriormente. Inclua seu servidor de aplicativos como sua Origem. É possível incluir uma ou mais Origens clicando em **Incluir origem**. 
+<img src="images/locate-server-instance.png" alt="drawing" style="width: 300px;"/>
 
-   **NOTA:** se seus servidores de aplicativos estiverem acomodados atrás de um balanceador de carga local, como um IBM Cloud Load Balancer, inclua o FQDN do balanceador de carga ou o IP virtual como sua Origem, em vez de incluir seus servidores individuais. 
-   
-3. Clique em **Prover recurso** para concluir a criação de seu Conjunto de origem.  
+Clique em **Avançar**.
 
-   <img src="images/Reliability6.png" alt="drawing" style="width: 300px;"/>
-   
-   O Conjunto de origem será inicialmente mostrado como **Sem funcionamento**. Seu estado será mudado para **Em funcionamento** após uma verificação de funcionamento bem-sucedida pelo sistema. Talvez seja necessário atualizar seu navegador para ver a mudança de estado. 
-   
-   <img src="images/Reliability9.png" alt="drawing" style="width: 300px;"/>
-   
-   **NOTA:** se você tiver múltiplas origens dentro de seu Conjunto de origem, use o limite de origem funcional para especificar o número mínimo de origens que devem estar em funcionamento antes de declarar o conjunto em funcionamento. 
-   
-4. Defina o mesmo número de conjuntos de origem que o de farms de aplicativos que você possuir. Essas farms podem estar dentro da mesma região geográfica ou em uma região geográfica diferente. No nosso exemplo, criaremos dois conjuntos de origem representando uma farm de aplicativos nas costas oeste e leste dos Estados Unidos. 
+**NOTAS:** 
 
-   <img src="images/Reliability10.png" alt="drawing" style="width: 300px;"/>
+1. Os **pesos** do servidor são relevantes apenas ao usar o método de balanceamento de carga **Round-robin ponderado**. O peso padrão é 50 e o intervalo é de 0 a 100. Os pesos ficam esmaecidos com outros métodos de balanceamento de carga.
+2. Consulte [Limitações no número de servidores de aplicativos](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obter mais informações sobre o limite máximo para o número de servidores de aplicativos.
+
+## O que vem a seguir
+[Revise o conteúdo](order-lb.html) de seu pedido antes de fazê-lo.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Produktinformation
 
@@ -29,7 +31,7 @@ Der IBM Cloud Load Balancer-Service bietet die folgenden Features:
 	* Clientanforderungen werden über das private Netz umgeleitet
 	* Back-End-Serverinstanzen für private Teilnetze
 * Basislastausgleich
-	* Verteilung des Datenverkehrs auf der Basis einer Anwendungsportinformtion der Ebene 4 (Layer-4)
+	* Verteilung des Datenverkehrs auf der Basis einer Anwendungsportinformation der Ebene 4 (Layer-4)
 	* Unterstützung für HTTP-, HTTPS- und TCP-basierte Anwendungen 
 	* Vielzahl an Lastausgleichsmethoden, zum Beispiel 'Round Robin' (RR), 'Weighted Round Robin' (WRR) und 'Least Connections'
 	* Lastausgleich zwischen virtuellem Server und Bare-Metal-Recheninstanzen, die sich lokal im Rechenzentrum befinden
@@ -46,3 +48,5 @@ Der IBM Cloud Load Balancer-Service bietet die folgenden Features:
 * Nutzungsorientierte Preisgestaltung 
 * Überwachung
     * Überwacht Metriken für Durchsatz, aktive Verbindungen und Verbindungsrate für HTTP-, HTTPS- und TCP-Protokolle über bestimmte Zeitintervalle hinweg. Weitere Details finden Sie unter [Überwachungsmetriken](monitoring-metrics.html).
+* Layer 7-Support
+    * Der HTTP/HTTPS-Datenverkehr wird basierend auf dem HTTP-Header an verschiedene Back-End-Services weitergeleitet und wird mithilfe von Richtlinien und Regeln verarbeitet. Regeln dienen der Klassifizierung des Datenverkehrs und basieren auf den HTTP-Headerfeldern. Wenn der Datenverkehr mit allen Regeln übereinstimmt, wird eine durch die Richtlinie angegebene Aktion ausgeführt.     

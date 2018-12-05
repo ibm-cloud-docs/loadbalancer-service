@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -65,4 +65,4 @@ lastupdated: "2018-03-14"
 
 # 如何启用度量值监视
 
-为了检索监视度量值，您必须将 SoftLayer 帐户与 Bluemix 帐户链接起来。请参阅 [Softlayer 链接](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid)获取更多信息。
+为了检索监视度量值，您必须将 SoftLayer 帐户与 IBM Cloud 帐户链接起来。请参阅[本主题 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/account/softlayerlink.html#link_user_account) 获取更多信息。

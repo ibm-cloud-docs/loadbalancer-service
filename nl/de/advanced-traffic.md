@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Erweiterte Verwaltung des Datenverkehrs
 In diesem Abschnitt werden erweiterte Funktionen der Datenverkehrsverwaltung besprochen, die mit dem Service für die Lastausgleichsfunktion verfügbar sind.
@@ -23,7 +25,7 @@ Verwenden Sie die Konfiguration 'Maximale Verbindungen', um die maximale Anzahl 
 
 ## Sitzungspersistenz
 
-Von der Lastausgleichsfunktion wird die Sitzungspersistenz für einen bestimmten VIP-Port abhängig von der `Quellen-IP` der Verbindung unterstützt. Beispiel: Wenn die Sitzungspersistenz für Port 80 (HTTP) aktiviert ist, sind die nachfolgenden HTTP-Verbindungsversuche von demselben Client (derselben Quellen-IP) auf demselben Back-End-Server persistent. 
+Von der Lastausgleichsfunktion wird die Sitzungspersistenz für einen bestimmten VIP-Port abhängig von der `Quellen-IP` der Verbindung unterstützt. Beispiel: Wenn die Sitzungspersistenz für Port 80 (HTTP) aktiviert ist, sind die nachfolgenden HTTP-Verbindungsversuche von demselben Client (derselben Quellen-IP) auf demselben Back-End-Server persistent. Diese Funktion steht für alle drei unterstützten Protokolle (HTTP, HTTPS und TCP) zur Verfügung. 
 
 Von der Lastausgleichsfunktion werden maximal 10.000 Clientpersistenzeinträge unterstützt. Die Ablaufzeit für diese Einträge beträgt 10 Minuten. Weitere Anforderungen, die von demselben Client nach 10 Minuten empfangen werden, können an einen anderen Back-End-Server weitergeleitet werden. Falls der Eintrag für die Sitzungspersistenz nicht abgelaufen ist, der Back-End-Port jedoch nicht mehr ordnungsgemäß funktioniert, wird ein neuer Server zum Weiterleiten aller nachfolgenden Clientverbindungen ausgewählt.  
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -65,4 +65,4 @@ La tabla siguiente muestra cómo se obtienen los puntos de datos a partir del in
 
 # Cómo habilitar la supervisión de métricas
 
-Para recuperar las métricas de supervisión, debe enlazar la cuenta de SoftLayer con la cuenta de Bluemix. Consulte [Enlace de Softlayer](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid) para obtener más información.
+Para recuperar las métricas de supervisión, debe enlazar la cuenta de SoftLayer con la cuenta de IBM Cloud. Consulte [este tema ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo") ](/docs/account/softlayerlink.html#link_user_account) para obtener más información.

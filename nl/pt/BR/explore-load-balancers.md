@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ O IBM Cloud oferece várias soluções de balanceamento de carga para escolher. 
 Role para a direita para visualizar o restante da tabela!
 
 
-|        | [IBM Cloud Load Balancer](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Compartilhado)| [Local Load Balancer](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicado)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Padrão)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Compartilhado)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicado)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Padrão)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**VIP Público**|Sim|Sim|Sim|Sim|Sim |
 |**VIP Privado**|Sim|Não|Sim|Sim|Sim |
 |**Camada 4 LB**|Sim|Sim|Sim|Sim|Sim |
-|**Camada 7 LB**|Não|Persistência de Cookie|Persistência de Cookie|Sim|Sim |
+|**Camada 7 LB**|Sim|Persistência de Cookie|Persistência de Cookie|Sim|Sim |
 |**Verificações de funcionamento**|Sim|Sim|Sim|Sim|Sim |
 |**Escala horizontal**|Sim|Não|Não|Não|Não |
 |**Transferência de SSL**|Sim|Sim|Sim|Sim|Sim |

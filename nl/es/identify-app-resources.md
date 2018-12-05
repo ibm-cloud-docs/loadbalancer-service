@@ -1,10 +1,8 @@
 ---
 
-
-
 copyright:
-  years: 2017
-lastupdated: "2018-06-20"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 
 ---
@@ -16,28 +14,19 @@ lastupdated: "2018-06-20"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Identificar los recursos de la aplicación
+# Identificar los recursos del servidor de aplicaciones
+Localice las **instancias del servidor** en la tabla de la parte inferior y pulse **+** para añadirlas detrás del equilibrador de carga. Puede seleccionar entre las instancias de servidor virtual de IBM Cloud (VSI) y los servidores nativos de su cuenta.
 
-Identifique los recursos de la aplicación, como las agrupaciones de origen y los mecanismos de comprobación de estado.
- 
-1. Vaya a la sección **Agrupaciones de origen** y pulse **Crear agrupación** para definir una nueva agrupación de origen. 
+Estas instancias de servidor deben ser locales para el centro de datos en el que se despliega el servicio de equilibrador de carga. Además, las instancias de servidor de los centros de datos vecinos dentro de la misma ciudad también se pueden añadir (por ejemplo, si las tres primeras letras del nombre del centro de datos son las mismas).
 
-   Las agrupaciones de origen son recursos de servidor que proporcionan aplicaciones a sus clientes. 
-   
-2. Asigne un nombre a la agrupación de origen y seleccione el mecanismo de comprobación de estado definido anteriormente. Añada el servidor de aplicaciones como Origen. Puede añadir uno o varios orígenes pulsando **Añadir origen**. 
+<img src="images/locate-server-instance.png" alt="dibujo" style="width: 300px;"/>
 
-   **NOTA:** Si los servidores de aplicaciones están ubicados detrás de un equilibrador de carga local como, por ejemplo, un IBM Cloud Load Balancer, añada el FQDN o la IP virtual del equilibrador de carga como su Origen en lugar de añadir los servidores individuales. 
-   
-3. Pulse **Suministrar recurso** para completar la creación de la agrupación de origen.  
+Pulse **Siguiente**.
 
-   <img src="images/Reliability6.png" alt="drawing" style="width: 300px;"/>
-   
-   Inicialmente, la agrupación de origen se mostrará como **En mal estado**. Su estado cambiará a **En buen estado** tras de una comprobación de estado satisfactoria por parte del sistema. Es posible que deba renovar el navegador para ver el cambio de estado. 
-   
-   <img src="images/Reliability9.png" alt="drawing" style="width: 300px;"/>
-   
-   **NOTA:** Si tiene varios orígenes dentro de la agrupación de origen, utilice el umbral de origen correcto para especificar el número mínimo de orígenes que estar en buen estado antes de declarar la agrupación en buen estado. 
-   
-4. Defina tantas agrupaciones de origen como granjas de aplicaciones tenga. Estas granjas pueden estar dentro de las mismas regiones geográficas o estar en distintas regiones. En nuestro ejemplo, crearemos dos agrupaciones de origen que representan una granja de aplicaciones en las costas este y oeste de Estados Unidos. 
+**NOTAS:** 
 
-   <img src="images/Reliability10.png" alt="drawing" style="width: 300px;"/>
+1. Las **ponderaciones** del servidor solo son relevantes cuando se utiliza el método de equilibrio de carga **Round robin ponderado**. La ponderación predeterminada es 50 y el rango es de 0 a 100. Las ponderaciones están en gris en los otros métodos de equilibrio de carga.
+2. Consulte [Limitaciones en el número de servidores de aplicaciones](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obtener más información sobre el límite máximo para el número de servidores de aplicaciones.
+
+## A continuación
+[Revise el contenido](order-lb.html) de su pedido antes de instalarlo.

@@ -1,10 +1,8 @@
 ---
 
-
-
 copyright:
-  years: 2017
-lastupdated: "2018-06-20"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 
 ---
@@ -16,28 +14,19 @@ lastupdated: "2018-06-20"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Anwendungsressourcen angeben
+# Anwendungsserverressourcen angeben
+Suchen Sie nach Ihren **Serverinstanzen** in der unten angezeigten Tabelle und klicken Sie auf **+**, um sie hinter der Lastausgleichsfunktion hinzuzufügen. Sie können aus den IBM Cloud Virtual Server Instances (VSIs) und den Bare-Metal-Servern in Ihrem Konto auswählen. 
 
-Geben Sie die Anwendungsressourcen an, zum Beispiel Ursprungspools und Mechanismen für die Statusprüfung.
- 
-1. Navigieren Sie zum Abschnitt **Ursprungspools** und klicken Sie auf **Pool erstellen**, um einen neuen Ursprungspool zu definieren. 
+Diese Serverinstanzen müssen lokal in dem Rechenzentrum vorhanden sein, in dem Sie den Lastausgleichsservice bereitstellen. Darüber hinaus können auch Serverinstanzen aus den benachbarten Rechenzentren innerhalb derselben Stadt hinzugefügt werden (z. B. wenn die ersten drei Buchstaben des Namens des Rechenzentrums identisch sind). 
 
-   Ursprungspools sind Serverressourcen, von denen Anwendungen für Clients bereitgestellt werden. 
-   
-2. Weisen Sie dem Ursprungspool einen Namen zu und wählen Sie die davor definierte Methode für die überprüfen aus. Fügen Sie den Anwendungsserver als Ihren Ursprung hinzu. Sie können weitere Ursprünge durch Klicken auf **Ursprung hinzufügen** hinzufügen. 
+<img src="images/locate-server-instance.png" alt="Zeichnung" style="width: 300px;"/>
 
-   **HINWEIS:** Wenn sich die Anwendungsserver hinter einer lokalen Lastausgleichsfunktion wie zum Beispiel IBM Cloud Load Balancer befinden, fügen Sie den vollständig qualifizierten Domänennamen oder die virtuelle IP Ihrer Lastausgleichsfunktion als Ursprung hinzu, anstatt einzelne Server hinzuzufügen. 
-   
-3. Klicken Sie auf **Ressource bereitstellen**, um die Erstellung des Ursprungspools auszuführen.  
+Klicken Sie auf **Weiter**. 
 
-   <img src="images/Reliability6.png" alt="Zeichnung" style="width: 300px;"/>
-   
-   Für den Ursprungspool wird zunächst **Nicht ordnungsgemäß** angezeigt. Nach einer erfolgreichen Statusprüfung durch das System ändert sich der Status zu **In einwandfreiem Zustand**. Möglicherweise müssen Sie den Browser aktualisieren, damit die Statusänderung angezeigt wird. 
-   
-   <img src="images/Reliability9.png" alt="Zeichnung" style="width: 300px;"/>
-   
-   **HINWEIS:** Falls im Ursprungspool mehrere Ursprungsserver vorhanden sind, verwenden Sie den Schwellenwert für Ursprungsserver in einwandfreiem Zustand, um die Mindestanzahl der Ursprungsserver anzugeben, die sich in einwandfreiem Zustand befinden müssen, damit der Pool zu einem Pool in einwandfreiem Zustand erklärt werden kann. 
-   
-4. Stellen Sie beim Definieren der Ursprungspools sicher, dass die Anzahl der definierten Ursprungspools mit der Anzahl der vorhandenen Anwendungs-Farms übereinstimmt. Diese Farms können sich in derselben oder einer anderen geografischen Region befinden. Im vorliegenden Beispiel werden zwei Ursprungspools erstellt, die jeweils eine Anwendungs-Farm an der Ostküste und der Westküste der USA darstellen. 
+**HINWEISE:** 
 
-   <img src="images/Reliability10.png" alt="Zeichnung" style="width: 300px;"/>
+1. Server**gewichtungen** sind nur relevant, wenn Sie die Lastausgleichsmethode **Weighted Round Robin** verwenden. Die Standardgewichtung ist 50 und der Bereich liegt zwischen 0 und 100. Die Gewichtungen sind für andere Lastausgleichsmethoden abgeblendet. 
+2. Weitere Informationen zur maximal zulässigen Anzahl von Anwendungsservern finden Sie unter [Limits für die Anzahl von Anwendungsservern](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-). 
+
+## Weitere Schritte
+[Überprüfen Sie den Inhalt](order-lb.html) Ihrer Bestellung, bevor Sie sie aufgeben. 

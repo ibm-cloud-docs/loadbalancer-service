@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ IBM Cloud bietet eine Reihe von Lastausgleichslösungen, aus denen Sie auswähle
 Blättern Sie nach rechts, um den Rest der Tabelle anzuzeigen.
 
 
-|        | [IBM Cloud Load Balancer](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Lokale Lastausgleichsfunktion](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (gemeinsam genutzt)| [Lokale Lastausgleichsfunktion](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (dediziert)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Lokale Lastausgleichsfunktion](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (gemeinsam genutzt)| [Lokale Lastausgleichsfunktion](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (dediziert)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**VIP (öffentlich)**|Ja|Ja|Ja|Ja|Ja |
 |**VIP (privat)**|Ja|Nein|Ja|Ja|Ja |
 |**Lastausgleich Ebene 4**|Ja|Ja|Ja|Ja|Ja |
-|**Lastausgleich Ebene 7**|Nein|Cookie-Persistenz|Cookie-Persistenz|Ja|Ja |
+|**Lastausgleich Ebene 7**|Ja|Cookie-Persistenz|Cookie-Persistenz|Ja|Ja |
 |**Statusprüfungen**|Ja|Ja|Ja|Ja|Ja |
 |**Horizontale Skalierung**|Ja|Nein|Nein|Nein|Nein |
 |**SSL-Auslagerung**|Ja|Ja|Ja|Ja|Ja |

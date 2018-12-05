@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ IBM Cloud 提供了数个可选择的负载均衡解决方案。下表对负载�
 滚动到右侧以查看表的其余部分！
 
 
-|        |[IBM Cloud Load Balancer](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)|[本地 Load Balancer](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started)（共享）|[本地 Load Balancer](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started)（专用）|[Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX（标准）|[Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX（白金）|
+|        |[IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)|[本地 Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started)（共享）|[本地 Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started)（专用）|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX（标准）|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX（白金）|
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**公共 VIP**|是|是|是|是|是|
 |**专用 VIP**|是|否|是|是|是|
 |**第 4 层 LB**|是|是|是|是|是|
-|**第 7 层 LB**|否|Cookie 持久性|Cookie 持久性|是|是|
+|**第 7 层 LB**|是|Cookie 持久性|Cookie 持久性|是|是|
 |**运行状况检查**|是|是|是|是|是|
 |**水平伸缩**|是|否|否|否|否|
 |**SSL 卸载**|是|是|是|是|是|

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-08-07"
 
 ---
 
@@ -21,12 +21,12 @@ IBM Cloud offre diverse soluzioni di bilanciamento del carico tra cui scegliere.
 Scorri a destra per visualizzare il resto della tabella!
 
 
-|        | [Programma di bilanciamento del carico di IBM Cloud](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Programma di bilanciamento del carico locale](https://console.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Condiviso)| [Programma di bilanciamento del carico locale](https://console.stage1.bluemix.net/docs/infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicato)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](https://console.bluemix.net/docs/infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Programma di bilanciamento del carico locale](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Condiviso)| [Programma di bilanciamento del carico locale](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicato)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**VIP pubblico**|Sì|Sì|Sì|Sì|Sì |
 |**VIP privato**|Sì|No|Sì|Sì|Sì |
 |**BC livello 4**|Sì|Sì|Sì|Sì|Sì |
-|**BC livello 7**|No|Persistenza cookie|Persistenza cookie|Sì|Sì |
+|**BC livello 7**|Sì|Persistenza cookie|Persistenza cookie|Sì|Sì |
 |**Controlli di integrità**|Sì|Sì|Sì|Sì|Sì |
 |**Scalabilità orizzontale**|Sì|No|No|No|No |
 |**Offload SSL**|Sì|Sì|Sì|Sì|Sì |

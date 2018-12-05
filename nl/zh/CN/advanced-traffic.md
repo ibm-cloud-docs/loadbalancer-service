@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 高级流量管理
 本节讨论随 Load Balancer 服务一起提供的几个高级流量管理功能。
@@ -23,7 +25,7 @@ lastupdated: "2018-03-14"
 
 ## 会话持久性
 
-Load Balancer 基于连接的 `source IP` 针对给定 VIP 端口，支持会话持久性。举例来说，如果针对端口 80 (HTTP) 启用会话持久性，那么来自相同客户机的后续 HTTP 连接尝试会在相同的后端服务器上实现持久性。 
+Load Balancer 基于连接的 `source IP` 针对给定 VIP 端口，支持会话持久性。举例来说，如果针对端口 80 (HTTP) 启用会话持久性，那么来自相同客户机的后续 HTTP 连接尝试会在相同的后端服务器上实现持久性。此功能可用于所有三种支持的协议（HTTP、HTTPS 和 TCP）。
 
 Load Balancer 最多支持 10,000 个客户机持久性条目。这些条目的到期时间为 10 分钟。10 分钟后，从相同客户机接收的其他请求可能会转发到不同的后端服务器。如果会话持久性条目未到期，但是后端端口运行状况变得欠佳，那么会选择新的服务器，用于转发任何后续客户机连接。  
 

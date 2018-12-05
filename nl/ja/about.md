@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 製品情報
 
@@ -45,4 +47,6 @@ IBM Cloud Load Balancer サービスは、以下の機能を提供します。
 * 組み込まれた信頼性 
 * 利用ベースでの価格設定 
 * モニタリング
-    * ユーザーが指定した時間間隔での、HTTP、HTTPS、および TCP プロトコルのスループット、アクティブ接続数、および接続率のメトリックのモニター。詳しくは、[メトリックのモニタリング (Monitoring Metrics)](monitoring-metrics.html)を参照してください。
+    * ユーザーが指定した時間間隔での、HTTP、HTTPS、および TCP プロトコルのスループット、アクティブ接続数、および接続率のメトリックのモニター。 詳しくは、[メトリックのモニタリング (Monitoring Metrics)](monitoring-metrics.html)を参照してください。
+* レイヤー 7 サポート
+    * HTTP/HTTPS トラフィックは、HTTP ヘッダーに基づいて異なるバックエンド・サービスに転送され、ポリシーおよびルールを使用して実行されます。ルールは、トラフィックを分類するために使用され、HTTP ヘッダー・フィールドに基づきます。トラフィックがすべてのルールに一致すると、そのポリシーに指定されたアクションが実行されます。    

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -23,7 +23,7 @@ Los precios de IBM Cloud Load Balancer se basan en las tres métricas siguientes
 * Datos procesados
 * Ancho de banda pública de salida (Egress)
 
-**NOTA:** Todos los precios varían según las regiones geográficas. El ancho de banda público de salida consumido por el servicio IBM Cloud Load Balancer se factura según el cargo por transferencia de datos estándar de [ 0,09 $ por GB](https://www.ibm.com/cloud/bandwidth).
+**NOTA:** Todos los precios varían según las regiones geográficas. El ancho de banda público de salida consumido por el servicio IBM Cloud Load Balancer se factura según el cargo por transferencia de datos estándar de [ 0,09 $ por GB ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/bandwidth).
 
 En la siguiente gráfica se detalla un ejemplo de IBM Cloud Load Balancer con los precios para un cliente que utiliza 4500 GB al mes para el equilibrio de carga público:
 
@@ -32,7 +32,7 @@ En la siguiente gráfica se detalla un ejemplo de IBM Cloud Load Balancer con lo
 | **Uso del servicio** | 720 horas | 0,025 $/hora | 18 $/mes |
 | **Datos procesados** | 4500 GB | 0,008 $/GB | 36 $/mes |
 
-El cargo total para el caso de ejemplo anterior es de 54 $/mes más el cargo por transferencia de datos estándar de [ 0,09 $ por GB](https://www.ibm.com/cloud/bandwidth).
+El cargo total para el caso de ejemplo anterior es de 54 $/mes más el cargo por transferencia de datos estándar de [ 0,09 $ por GB ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/bandwidth).
 
 ![precios](./images/pricing.png)
 

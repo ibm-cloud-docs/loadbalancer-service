@@ -1,10 +1,8 @@
 ---
 
-
-
 copyright:
-  years: 2017
-lastupdated: "2018-06-20"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 
 ---
@@ -16,29 +14,19 @@ lastupdated: "2018-06-20"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Identifier vos ressources d'application
+# Identification de vos ressources de serveur d'application
+Localisez vos **instances de serveur** dans le tableau au bas de l'écran et cliquez sur **+** pour les ajouter derrière l'équilibreur de charge. Vous pouvez effectuer une sélection parmi les instances de serveur virtuel IBM Cloud et les serveurs bare metal de votre compte. 
 
-Identifiez les ressources de votre application, par exemple, les pools d'origines et les mécanismes de contrôle de santé. 
- 
-1. Accédez à la section **Pools d'origines** et cliquez sur **Créer un pool** afin de définir un nouveau pool d'origines.  
+Ces instances de serveur doivent être installées localement sur le centre de données où vous déployez le service d'équilibreur de charge. De plus, les instances de serveur des centres de données voisins au sein de la même ville peuvent être ajoutées (par exemple, si les trois premières lettres du nom des centres de données sont les mêmes). 
 
-   Les pools d'origines sont des ressources serveur qui fournissent des applications à vos clients.  
-   
-2. Affectez un nom à votre pool d'origines et sélectionnez le mécanisme de contrôle de santé défini précédemment. Ajoutez votre serveur d'applications comme origine. Vous pouvez ajouter une ou plusieurs origines en cliquant sur **Ajouter une origine**. 
+<img src="images/locate-server-instance.png" alt="drawing" style="width: 300px;"/>
 
-   **Remarque :** si vos serveurs d'applications sont installés derrière un équilibreur de charge local, par exemple, un service Equilibreur de charge IBM Cloud, ajoutez le nom de domaine complet ou l'adresse IP de votre équilibreur de charge comme origine au lieu d'ajouter vos serveurs individuels.  
-   
-3. Cliquez sur **Mettre à disposition une ressource** pour finaliser la création de votre pool d'origines.   
+Cliquez sur **Suivant**.
 
-   <img src="images/Reliability6.png" alt="drawing" style="width: 300px;"/>
-   
-   Au départ, le pool d'origines est à l'état **Défaillant**. Il passe à l'état **Sain** après un contrôle de santé réussi réalisé par le système. Vous devrez peut-être actualiser votre navigateur pour voir le changement d'état.  
-   
-   <img src="images/Reliability9.png" alt="drawing" style="width: 300px;"/>
-   
-   **Remarque :** si votre pool d'origines comporte plusieurs origines, utilisez le paramètre Seuil d'origine saine pour spécifier le nombre minimal d'origines qui doivent être saines pour que le pool puisse être déclaré comme étant sain.  
-   
-4. Définissez autant de pools d'origines que de parcs d'applications dont vous disposez. Ces parcs peuvent se trouver dans la même région ou dans des régions différentes.
-Dans notre exemple, nous allons créer deux pools d'origines représentant un parc d'applications situé sur les côtes Ouest et Est des Etats-Unis.  
+**Remarques :** 
 
-   <img src="images/Reliability10.png" alt="drawing" style="width: 300px;"/>
+1. Les **pondérations** de serveur ne sont pertinentes que lorsque la méthode d'équilibrage de charge **Round Robin Pondéré** est utilisée. La pondération par défaut est 50 et les valeurs de pondération admises sont comprises entre 0 et 100. Les pondérations sont grisées avec d'autres méthodes d'équilibrage de charge. 
+2. Pour plus d'informations sur le nombre maximal de serveurs d'application autorisés, voir [Limitations concernant le nombre de serveurs d'application](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-). 
+
+## Que faire ensuite ?
+[Examinez le contenu](order-lb.html) de votre commande avant de la passer. 

@@ -1,10 +1,8 @@
 ---
 
-
-
 copyright:
-  years: 2017
-lastupdated: "2018-06-20"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 
 ---
@@ -16,29 +14,19 @@ lastupdated: "2018-06-20"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Identifica le tue risorse dell'applicazione
+# Identifica le tue risorse del server delle applicazioni
+Individua le tue **istanze del server** dalla tabella in basso e fai clic sul segno **+** per aggiungerle dietro il programma di bilanciamento del carico. Puoi scegliere da IBM Cloud Virtual Server Instances (VSI) e Bare Metal Server nel tuo account.
 
-Identifica le risorse della tua applicazione, come i pool di origine e i meccanismi di controllo dell'integrità. 
- 
-1. Passa alla sezione **Origin Pools** e fai clic su **Create pool** per definire un nuovo pool di origine. 
+Queste istanze del server devono essere locali nel data center in cui distribuisci il servizio del programma di bilanciamento del carico. Inoltre, possono essere aggiunte anche le istanze del server provenienti da data center vicini all'interno della stessa città (ad esempio se le prime tre lettere del nome del data center sono uguali).
 
-   I pool di origine sono risorse server che forniscono le applicazioni ai tuoi client. 
-   
-2. Assegna un nome al tuo pool di origine e seleziona il meccanismo di controllo di integrità definito precedentemente. Aggiungi il tuo server dell'applicazione come tua origine. Puoi aggiungere più di un'origine facendo clic su **Add Origin**. 
+<img src="images/locate-server-instance.png" alt="disegno" style="width: 300px;"/>
 
-   **NOTA:** se i tuoi server dell'applicazione si trovano dietro a un programma di bilanciamento del carico locale come un IBM Cloud Load Balancer, aggiungi il FQDN o l'IP virtuale del tuo programma di bilanciamento del carico come la tua origine invece di aggiungere i tuoi server individuali. 
-   
-3. Fai clic su **Provision Resource** per completare la creazione del tuo pool di origine.  
+Fai clic su **Avanti**.
 
-   <img src="images/Reliability6.png" alt="disegno" style="width: 300px;"/>
-   
-   Il pool di origine sarà inizialmente visualizzato come **Unhealthy**. Il suo stato sarà modificato con **Healthy** dopo un controllo di integrità corretto dal sistema. Potresti dover aggiornare il tuo browser per visualizzare la modifica dello stato. 
-   
-   <img src="images/Reliability9.png" alt="disegno" style="width: 300px;"/>
-   
-   **NOTA:** se hai più origini all'interno del tuo pool di origine, utilizza la soglia di origine di integrità per specificare il numero minimo di origini che devono essere integre prima di dichiarare il pool integro. 
-   
-4. Definisci tanti pool di origine quanto è il numero di farm dell'applicazione di cui disponi. Questi farm possono essere all'interno delle stesse o di differenti
-regioni geografiche. Nel nostro esempio, creeremo due pool di origine che rappresentano un farm dell'applicazione negli Stati Uniti costa ovest e est. 
+**NOTE:** 
 
-   <img src="images/Reliability10.png" alt="disegno" style="width: 300px;"/>
+1. I **pesi** del server sono rilevanti solo quando si utilizza il metodo di bilanciamento del carico **Round Robin ponderato**. Il peso predefinito è 50 e l'intervallo è compreso tra 0 e 100. I pesi sono disabilitati con gli altri metodi di bilanciamento del carico. 
+2. Consulta [Limitazioni per il numero di server delle applicazioni](faqs.html#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) per ulteriori informazioni sul limite massimo per il numero di server delle applicazioni.
+
+## Operazioni successive
+[Esamina il contenuto](order-lb.html) del tuo ordine prima di inserirlo.

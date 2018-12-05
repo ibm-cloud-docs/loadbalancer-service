@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Gerenciamento de tráfego avançado
 Esta seção discute vários recursos de gerenciamento de tráfego avançado disponíveis com o serviço de balanceador de carga.
@@ -23,23 +25,23 @@ Use a configuração 'máximo de conexões' para limitar o número máximo de co
 
 ## Persistência de sessão
 
-O balanceador de carga suporta a persistência de sessão em uma determinada porta VIP com base no `IP de origem` da conexão. Como exemplo, se a persistência de sessão estiver ativada para a porta 80 (HTTP), as tentativas de conexão HTTP subsequentes do mesmo cliente (mesmo IP de origem) serão persistentes no mesmo servidor de backend. 
+O balanceador de carga suporta a persistência de sessão em uma determinada porta VIP com base no `IP de origem` da conexão. Como exemplo, se a persistência de sessão estiver ativada para a porta 80 (HTTP), as tentativas de conexão HTTP subsequentes do mesmo cliente (mesmo IP de origem) serão persistentes no mesmo servidor de back-end. Esse recurso está disponível para os três protocolos suportados (HTTP, HTTPS e TCP).
 
-O balanceador de carga suporta um máximo de 10.000 entradas de persistência do cliente. O prazo de expiração dessas entradas é 10 minutos. As solicitações adicionais recebidas do mesmo cliente depois de 10 minutos podem ser encaminhadas para um servidor de backend diferente. Se a entrada de persistência de sessão não tiver expirado, mas a porta backend tiver se tornado inoperante, um novo servidor será selecionado para encaminhar quaisquer conexões subsequentes do cliente.  
+O balanceador de carga suporta um máximo de 10.000 entradas de persistência do cliente. O prazo de expiração dessas entradas é 10 minutos. As solicitações adicionais recebidas do mesmo cliente depois de 10 minutos podem ser encaminhadas para um servidor de back-end diferente. Se a entrada de persistência de sessão não tiver expirado, mas a porta back-end tiver se tornado inoperante, um novo servidor será selecionado para encaminhar quaisquer conexões subsequentes do cliente.  
 
 ## Keep alive HTTP
-O balanceador de carga suporta `Keep alive HTTP`, contanto que esteja ativado no cliente e nos servidores de backend. O balanceador de carga tenta reutilizar as conexões HTTP do lado do servidor para aumentar a eficiência da conexão e reduzir a latência.
+O balanceador de carga suporta `Keep alive HTTP`, contanto que esteja ativado no cliente e nos servidores de back-end. O balanceador de carga tenta reutilizar as conexões HTTP do lado do servidor para aumentar a eficiência da conexão e reduzir a latência.
 
 ## Tempos limite de conexão
 Os valores de tempo limite a seguir são usados pelo balanceador de carga. Esses valores não podem ser customizados neste momento.
 
 | Nome | Descrição | Tempo limite |                                                                                              
 | ------------------------------------------ | --------------------------------------------------- | ------------------- |
-| Tentativa de conexão do lado do servidor    | O espaço de tempo máximo que o balanceador de carga pode usar para estabelecer conexão TCP com o servidor de backend. Se a tentativa de conexão for malsucedida, o balanceador de carga tentará o próximo servidor disponível, de acordo com o método de balanceamento de carga que tiver sido configurado. | 5 segundos   |
+| Tentativa de conexão do lado do servidor    | O espaço de tempo máximo que o balanceador de carga pode usar para estabelecer conexão TCP com o servidor de back-end. Se a tentativa de conexão for malsucedida, o balanceador de carga tentará o próximo servidor disponível, de acordo com o método de balanceamento de carga que tiver sido configurado. | 5 segundos   |
 | Conexão inativa do lado do cliente  | O tempo inativo máximo, após o qual o balanceador de carga desativará a conexão do lado do cliente, no caso de o cliente não ter conseguido fechar sua conexão corretamente.| 50 segundos  |
-| Conexão inativa do lado do servidor | O tempo inativo máximo (com a configuração do protocolo de backend de TCP), após o qual o balanceador de carga fechará a conexão do lado do servidor. Com a configuração do protocolo de backend de HTTP, se o balanceador de carga falhar ao receber uma resposta à sua solicitação de HTTP dentro da janela de tempo limite inativo, ele retornará uma mensagem de erro para o cliente de término.                                | 50 segundos |
+| Conexão inativa do lado do servidor | O tempo inativo máximo (com a configuração do protocolo de back-end de TCP), após o qual o balanceador de carga fechará a conexão do lado do servidor. Com a configuração do protocolo de back-end de HTTP, se o balanceador de carga falhar ao receber uma resposta à sua solicitação de HTTP dentro da janela de tempo limite inativo, ele retornará uma mensagem de erro para o cliente de término.                                | 50 segundos |
 {: caption="Tabela 1. Valores de tempo limite do balanceador de carga" caption-side="top"} 
 
 ## Preservando o endereço IP do cliente de término 
 
-O balanceador de carga funciona como um proxy reverso, que finaliza o tráfego recebido do cliente. Ele estabelece uma conexão separada com a instância do servidor de backend, usando seu próprio endereço IP. Para conexões HTTP com os servidores de backend (em conexões HTTP ou HTTPS de front-end), o balanceador de carga preserva o endereço IP do cliente original, incluindo-o dentro do cabeçalho `X-Forwarded-For HTTP`. Para conexões TCP, as informações de IP do cliente original não são preservadas.
+O balanceador de carga funciona como um proxy reverso, que finaliza o tráfego recebido do cliente. Ele estabelece uma conexão separada com a instância do servidor de back-end, usando seu próprio endereço IP. Para conexões HTTP com os servidores de backend (em conexões HTTP ou HTTPS de front-end), o balanceador de carga preserva o endereço IP do cliente original, incluindo-o dentro do cabeçalho `X-Forwarded-For HTTP`. Para conexões TCP, as informações de IP do cliente original não são preservadas.

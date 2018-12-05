@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Basislastausgleich
 Vom IBM Cloud Load Balancer-Service wird der Datenverkehr auf mehrere Serverinstanzen (Bare-Metal-Server und virtuelle Server) verteilt, die sich lokal in demselben Rechenzentrum befinden. 
@@ -20,7 +22,8 @@ Vom IBM Cloud Load Balancer-Service wird der Datenverkehr auf mehrere Serverinst
 ## Öffentliche Lastausgleichsfunktion 
 Der Instanz des Service für die Lastausgleichsfunktion wird ein öffentlicher und vollständig qualifizierter Domänenname zugewiesen. Sie müssen diesen Domänennamen für den Zugriff auf die Anwendungen verwenden, die hinter dem Service für die Lastausgleichsfunktion gehostet werden. Dieser Domänenname kann für mindestens eine öffentliche IP-Adresse registriert werden. Die öffentlichen IP-Adressen und die Anzahl der öffentlichen IP-Adressen können sich im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind. Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich in einem privaten Netz in einer IBM Cloud befinden. 
 
-**HINWEIS:** Es wird empfohlen, Back-End-Server ausschließlich privat bereitzustellen, sofern nicht eine direkte öffentliche Verbindung erforderlich ist. Dies sorgt für eine bessere Sicherheit und Ihre öffentliche IP-Adresse wird beibehalten. Die Anwendungen, die auf diesen Back-End-Servern gehostet werden, sind mithilfe der Lastausgleichsfunktion weiterhin über das öffentliche Netz verfügbar.  
+Es wird empfohlen, Back-End-Server ausschließlich privat bereitzustellen, sofern nicht eine direkte öffentliche Verbindung erforderlich ist. Dies sorgt für eine bessere Sicherheit und Ihre öffentliche IP-Adresse wird beibehalten. Die Anwendungen, die auf diesen Back-End-Servern gehostet werden, sind mithilfe der Lastausgleichsfunktion weiterhin über das öffentliche Netz verfügbar.
+{:note}  
 
 Bei der Erstellung der Load Balancer-Serviceinstanz können Sie öffentliche IP-Adressen für die Lastausgleichsfunktion entweder aus einem IBM Systempool (Standardeinstellung) oder aus einem öffentlichen VLAN unter Ihrem Konto zuordnen.
 
@@ -29,9 +32,9 @@ Auf die interne Lastausgleichsfunktion kann nur im privaten IBM Cloud-Netz zugeg
 
 Analog zur öffentlichen Lastausgleichsfunktion wird auch der Instanz eines internen Lastenausgleichsservice ein vollständig qualifizierter Domänenname zugeordnet. Dieser Domänenname ist jedoch für mindestens eine private IP-Adresse registriert. 
 
-Ähnlich wie bei einer öffentlichen Lastausgleichsfunktion können sich die privaten IP-Adressen und die Anzahl der privaten IP-Adressen im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind.  
+Ähnlich wie bei einer öffentlichen Lastausgleichsfunktion können sich die privaten IP-Adressen und die Anzahl der privaten IP-Adressen im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind. 
 
-**HINWEIS:** Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich auch in einem privaten Netz in einer IBM Cloud befinden.
+Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich ebenfalls in dem privaten Netz in einer IBM Cloud befinden. {:note}
 
 ## Ports bzw. Protokolle von Front-End- und Back-End-Anwendungen
 Sie können bis zu zehn Ports (bzw. Protokolle) für Front-End-Anwendungen definieren und diese den entsprechenden Ports (bzw. Protokollen) auf den Back-End-Anwendungsservern zuordnen. Der vollständig qualifizierte Domänenname, der der Serviceinstanz für den Lastausgleich zugewiesen ist, und die Ports der Front-End-Anwendung sind öffentlich zugänglich. An diesen Ports werden die eingehenden Benutzeranforderungen empfangen. 
@@ -40,7 +43,7 @@ Die Back-End-Ports sind dagegen nur intern bekannt. Diese Back-End-Ports können
 
 Unterstützte Front-End-Ports bzw. -Protokolle sind HTTP, HTTPS und TCP. Unterstützte Back-End-Ports bzw. -Protokolle sind HTTP und TCP. Eingehender HTTPS-Datenverkehr muss an der Lastausgleichsfunktion terminiert werden, damit eine ungeschützte HTTP-Kommunikation mit dem Back-End-Server möglich ist. 
 
-**HINWEISE:**
+### Hinweise
 
 * Während der Erstkonfiguration können Sie nur maximal zwei Front-End-Ports definieren. Sobald eine Lastausgleichsfunktion erstellt ist, können Sie die Portkonfiguration bearbeiten, um zusätzliche Ports hinzuzufügen; das Maximum liegt bei 10 Ports.
 * Alle zehn Front-End-Ports müssen denselben Back-End-Serverinstanzen zugeordnet sein.
@@ -57,10 +60,12 @@ Zum Verteilen des Datenverkehrs auf die Back-End-Anwendungsserver stehen die dre
 
 	Beispiel: Es gibt die drei Anwendungsserver A, B und C, deren Gewichtung jeweils auf 60, 60 und 30 angepasst wurde; die Server A und B erhalten in diesem Fall dieselbe Anzahl an Verbindungen, während Server C die Hälfte der Verbindungen eines dieser Server erhält. 
 
-	**HINWEISE:** 
 
-	* Wenn für die Gewichtung eines Servers der Wert '0' eingestellt wird, hat dies zur Folge, dass keine neuen Verbindungen an diesen Server weitergeleitet werden, der vorhandene Datenverkehr fließt jedoch weiter, so lange er aktiv ist. Durch die Einstellung von '0' kann ein Server sanft heruntergefahren werden und als Ziel für die Services entfernt werden. 
-	* Werte für die Gewichtung der Server können nur bei Verwendung der Methode 'Weighted Round Robin' angewendet werden. Sie werden bei Verwendung der Lastausgleichsmethoden 'Round Robin' und 'Least Connections' ignoriert. 
+	Wenn für die Gewichtung eines Servers der Wert '0' eingestellt wird, hat dies zur Folge, dass keine neuen Verbindungen an diesen Server weitergeleitet werden, der vorhandene Datenverkehr fließt jedoch weiter, so lange er aktiv ist. Durch die Einstellung von '0' kann ein Server sanft heruntergefahren werden und als Ziel für die Services entfernt werden. 
+	{:note}
+	
+	Werte für die Gewichtung der Server können nur bei Verwendung der Methode 'Weighted Round Robin' angewendet werden. Sie werden bei Verwendung der Lastausgleichsmethoden 'Round Robin' und 'Least Connections' ignoriert. 
+	{:note}
 
 * **Least Connections:** Bei Verwendung dieser Methode erhält die Serverinstanz, von der zu einem bestimmten Zeitpunkt die wenigsten Verbindungen verarbeitet werden, die nächste Clientverbindung. 
 

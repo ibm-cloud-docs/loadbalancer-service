@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-12"
 
 ---
 
@@ -22,9 +22,9 @@ L'équilibreur de charge surveille les métriques suivantes :
 * Connexions actives
 * Taux de connexion
 
-Ces métriques sont affichées sous forme de graphiques accessibles au moyen de l'onglet **Surveillance** et sont disponibles à l'aide d'un programme sous forme de points de données de séries temporelles au moyen de l'API `getListenerTimeSeriesData`. 
+Ces métriques sont affichées sous forme de graphiques accessibles au moyen de l'onglet **Surveillance** et sont disponibles à l'aide d'un programme sous forme de points de données de séries temporelles au moyen de l'API `getListenerTimeSeriesData`.
 
-Chaque point de données contient un horodatage au format époque UNIX, la valeur de métrique pour cet intervalle de temps se terminant à cet horodatage. L'utilisateur peut spécifier les protocoles et l'intervalle de temps pour lesquels les métriques seront communiquées.  
+Chaque point de données contient un horodatage au format époque UNIX, la valeur de métrique pour cet intervalle de temps se terminant à cet horodatage. L'utilisateur peut spécifier les protocoles et l'intervalle de temps pour lesquels les métriques seront communiquées. 
 
 Les protocoles pris en charge sont les suivants :
 
@@ -32,11 +32,11 @@ Les protocoles pris en charge sont les suivants :
 * HTTPS
 * TCP
 
-La spécification d'un protocole permet de filtrer les métriques en fonction de celui-ci. 
+La spécification d'un protocole permet de filtrer les métriques en fonction de celui-ci.
 
-Par exemple, si aucun protocole n'est spécifié et que la métrique est *Débit*, le débit total pour tous les protocoles est communiqué. 
+Par exemple, si aucun protocole n'est spécifié et que la métrique est *Débit*, le débit total pour tous les protocoles est communiqué.
 
-Si le protocole est *HTTP*, seul le débit pour le trafic HTTP est communiqué. 
+Si le protocole est *HTTP*, seul le débit pour le trafic HTTP est communiqué.
 
 L'utilisateur peut spécifier l'intervalle de temps pour lequel la métrique sera communiquée. Les intervalles de temps pris en charge sont les suivants : 
 
@@ -54,15 +54,15 @@ Si l'intervalle correspond à 2 semaines, chaque point de données représente 2
 
 Le tableau ci-dessous indique la façon dont les points de données sont dérivés de l'intervalle de temps :
 
-|Intervalle de temps | Précision de point de données | Nombre de points de données |                                                                                              
+| Intervalle de temps | Précision de point de données | Nombre de points de données |                                                                                              
 | ------------------------------------------ | --------------------------------------------------- | -------------------|
-| 1 heure   | 5 minutes | 12   |
-| 6 heures  | 30 minutes | 12  |
-| 12 heures | 1 heure | 12 |
-| 24 heures | 2 heures | 12 |
-| 1 semaine | 12 heures | 12 |
-| 2 semaines | 24 heures | 12 |
+| 1 heure    | 5 minutes | 12   |
+| 6 heures   | 30 minutes | 12  |
+| 12 heures  | 1 heure | 12 |
+| 24 heures  | 2 heures | 12 |
+| 1 semaine    | 12 heures | 12 |
+| 2 semaines  | 24 heures | 12 |
 
 # Procédure d'activation des métriques de surveillance
 
-Pour extraire les métriques de surveillance, vous devez lier votre compte SoftLayer à votre compte Bluemix. Pour plus d'informations, voir [Liaison Softlayer](https://console.bluemix.net/docs/account/softlayerlink.html#switching-to-ibmid). 
+Pour extraire les métriques de surveillance, vous devez lier votre compte SoftLayer à votre compte IBM Cloud. Pour plus d'informations, voir [cette rubrique ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/account/softlayerlink.html#link_user_account) for more information.

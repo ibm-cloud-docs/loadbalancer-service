@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-03-14"
+  years: 2017, 2018
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,6 +13,8 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Bilanciamento del carico di base
 Il servizio IBM Cloud load balancer distribuisce il traffico tra più istanze server (server virtuale e bare metal) che risiedono localmente, nello stesso data center. 
@@ -20,18 +22,20 @@ Il servizio IBM Cloud load balancer distribuisce il traffico tra più istanze se
 ## Programma di bilanciamento del carico pubblico 
 Viene assegnato un nome di dominio completo e accessibile pubblicamente alla tua istanza del servizio del programma di bilanciamento del carico. Devi utilizzare questo nome dominio per accedere alle tue applicazioni ospitate dietro il servizio del programma di bilanciamento del carico. Questo nome dominio potrebbe essere registrato con uno o più indirizzi IP pubblici. Gli indirizzi IP pubblici e il numero di indirizzi IP pubblici potrebbero cambiare nel tempo in base alle attività di manutenzione e ridimensionamento, che sono trasparenti agli utenti finali. Le istanze di calcolo di backend che ospitano la tua applicazione devono essere su una rete privata cloud IBM. 
 
-**NOTA:** ti raccomandiamo di eseguire il provisioning dei tuoi server di backend come ‘solo privato’, a meno che non richiedano la connettività pubblica diretta. Questa procedura ti aiuta ad avere una migliore protezione e a conservare il tuo indirizzo IP pubblico. Le applicazioni ospitate in questi server di backend sono ancora accessibili sulla rete pubblica utilizzando il programma di bilanciamento del carico.  
+Ti raccomandiamo di eseguire il provisioning dei tuoi server di backend come ‘solo privato’, a meno che non richiedano la connettività pubblica diretta. Questa procedura ti aiuta ad avere una migliore protezione e a conservare il tuo indirizzo IP pubblico. Le applicazioni ospitate in questi server di backend sono ancora accessibili sulla rete pubblica utilizzando il programma di bilanciamento del carico.
+{:note}  
 
 Puoi scegliere di assegnare gli indirizzi IP pubblici del programma di bilanciamento del carico da un pool di sistema IBM (predefinito) o da una VLAN pubblica nel tuo account durante la creazione della tua istanza del servizio del programma di bilanciamento del carico.
 
-## Programma di bilanciamento del carico interno 
+## Programma di bilanciamento del carico interno
 Il programma di bilanciamento del carico interno è accessibile solo all'interno della rete privata IBM Cloud. 
 
 Proprio come a un programma di bilanciamento del carico pubblico, alla tua istanza del servizio del programma di bilanciamento del carico interno viene assegnato anche un nome di dominio completo. Tuttavia, questo nome dominio viene registrato con uno o più indirizzi IP privati. 
 
 In modo simile a un programma di bilanciamento del carico pubblico, gli indirizzi IP privati e il loro numero potrebbero cambiare nel tempo in base alle attività di manutenzione e ridimensionamento, che sono trasparenti agli utenti finali. 
 
-**NOTA:** anche le istanze di calcolo di backend che ospitano la tua applicazione devono essere sulla rete privata IBM Cloud.
+Anche le istanze di calcolo di backend che ospitano la tua applicazione devono essere sulla rete privata IBM Cloud.
+{:note}
 
 ## Protocolli/Porte applicazione di backend e frontend
 Puoi definire fino a dieci porte (protocolli) dell'applicazione di frontend e associarle alle rispettive porte (protocolli) nei server dell'applicazione di backend. Il nome di dominio completo assegnato alla tua istanza del servizio del programma di bilanciamento del carico e le porte dell'applicazione di frontend sono esposti con il mondo esterno. Le richieste utente in entrata vengono ricevute su queste porte. 
@@ -40,7 +44,7 @@ D'altra parte, le porte di backend sono conosciute solo internamente. Queste por
 
 Le porte/protocolli di frontend supportate sono HTTP, HTTPS e TCP. Le porte/protocolli di backend supportate sono HTTP e TCP. Il traffico HTTPS in entrata deve essere terminata nel programma di bilanciamento del carico per consentire la comunicazione HTTP di testo semplice con il server di backend. 
 
-**NOTE:**
+### Considerazioni
 
 * Durante la configurazione iniziale, puoi possibile definire solo fino a due porte di frontend. Quando un programma di bilanciamento del carico viene creato, puoi modificare la configurazione della porta per definire ulteriori porte, fino al massimo di dieci porte.
 * Tutte le dieci porte di frontend devono essere associate alla stessa serie di istanze del server di backend.
@@ -57,10 +61,12 @@ I seguenti tre metodi di bilanciamento del carico sono disponibili per la distri
 
 	Ad esempio, se ci sono tre applicazioni server A, B e C, e i loro pesi sono personalizzati con 60, 60 e 30 rispettivamente, i server A e B riceveranno lo stesso numero di connessioni, mentre il server C ne riceverà la metà. 
 
-	**NOTE:** 
 
-	* Reimpostare il peso su ‘0’ significa che nessuna nuova connessione sarà inoltrata a tale server, ma tutto il traffico esistente continuerà a fluire finché rimane attivo. L'utilizzo di un peso di ‘0’ può aiutare a terminare un server correttamente e a rimuoverlo dalla rotazione del servizio. 
-	* Il valori del peso del server sono applicabili solo con il metodo 'round robin ponderato'. Vengono ignorati con i metodi di bilanciamento del carico 'round robin' e 'numero minimo di connessioni'. 
+	Reimpostare il peso su ‘0’ significa che nessuna nuova connessione sarà inoltrata a tale server, ma tutto il traffico esistente continuerà a fluire finché rimane attivo. L'utilizzo di un peso di ‘0’ può aiutare a terminare un server correttamente e a rimuoverlo dalla rotazione del servizio. 
+	{:note}
+	
+	Il valori del peso del server sono applicabili solo con il metodo 'round robin ponderato'. Vengono ignorati con i metodi di bilanciamento del carico 'round robin' e 'numero minimo di connessioni'. 
+	{:note}
 
 * **Numero minimo di connessioni:** con questo metodo, l'istanza del server che inoltra il numero minimo di connessioni a un ora specificata riceve la successiva connessione client. 
 
