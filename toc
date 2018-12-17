@@ -35,6 +35,7 @@ IBM Cloud Load Balancer Service
     Layer 7 Support
         l7-explained.md
         l7-policy.md
+        l7-rule.md
         l7-pool.md
 
     {: .navgroup-end}
@@ -53,6 +54,7 @@ IBM Cloud Load Balancer Service
         troubleshooting-application.md
         troubleshooting-provisioning.md
         troubleshooting-vlan-spanning.md
+        troubleshooting-errors.md
 
     getting-help.md
     {: .navgroup-end}
