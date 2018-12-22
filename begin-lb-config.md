@@ -2,17 +2,20 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-07"
 
 
 ---
 
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
 {:new_window: target="_blank"}
+{:codeblock: .codeblock}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Configure IBM Cloud Load Balancer parameters
 Once you create a load balancer, you can then configure it for elastic load balancing. To do so:
@@ -33,9 +36,10 @@ Once you create a load balancer, you can then configure it for elastic load bala
 
 	<img src="images/lb-add-protocol.png" alt="drawing" style="width: 300px;"/>
 
-	**NOTE**: A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
+	3A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
+{:note:}
 
-7. The IBM Cloud Load Balancer terminates incoming HTTPS (HTTP over SSL) connections and communicates in plain-text HTTP with the back-end application servers, and offloads processor-intensive SSL tasks from your servers. You must upload your SSL Certificate. Select one of your available certificates from the drop-down list.  
+7. The IBM© Cloud Load Balancer terminates incoming HTTPS (HTTP over SSL) connections and communicates in plain-text HTTP with the back-end application servers, and offloads processor-intensive SSL tasks from your servers. You must upload your SSL Certificate. Select one of your available certificates from the drop-down list.  
 
 	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 

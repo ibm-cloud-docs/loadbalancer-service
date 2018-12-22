@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-08-30"
 {:download: .download}
 
 # Layer-7 Load Balancing
-The IBM Cloud Load Balancer Service distributes traffic among multiple server instances, including bare-metal and virtual-server instances, using Layer-7 (application layer) data. 
+The IBM© Cloud Load Balancer Service distributes traffic among multiple server instances, including bare-metal and virtual-server instances, using Layer-7 (application layer) data. 
 
  * The data traffic to be distributed is classified using policies and rules. 
  * Policies define what action to take when the data traffic matches all the rules associated with a policy.

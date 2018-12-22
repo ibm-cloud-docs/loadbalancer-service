@@ -3,7 +3,7 @@
 copyright:
   years: 2017, 2018
 
-lastupdated: "2018-05-10"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2018-05-10"
 {:tip: .tip}
 {:download: .download}
 
-# External Resources
+# Other Resources
 
-These resources are created by IBM and some of our partners and customers.
+These resources are created by IBM© and some of our partners and customers.
 
 ## Blogs
 

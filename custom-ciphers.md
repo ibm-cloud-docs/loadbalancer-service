@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-08-30"
 {:download: .download}
 
 # Choose a preferred cipher suite for your HTTPS application
-Ciphers algorithms that help the IBM Cloud Load Balancer form secure connections with its HTTP clients.
+Ciphers algorithms that help the IBM© Cloud Load Balancer form secure connections with its HTTP clients.
 
 IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
 

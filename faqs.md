@@ -17,7 +17,7 @@ lastupdated: "2018-11-12"
 
 # FAQs
 
-This section contains answers to some frequently asked questions about the IBM Cloud Load Balancer Service.
+This section contains answers to some frequently asked questions about the IBM© Cloud Load Balancer Service.
 
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}

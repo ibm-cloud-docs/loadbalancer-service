@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Load Balancer Provisioning Troubleshooting
-This topic provides information on common issues you may encounter while creating a new instance of IBM Cloud Load Balancer.
+This topic provides information on common issues you may encounter while creating a new instance of IBM© Cloud Load Balancer.
 
 ## Insufficient IP addresses in your subnet
 IBM Cloud Load Balancer requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well. 

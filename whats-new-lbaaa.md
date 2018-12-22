@@ -17,7 +17,7 @@ lastupdated: "2018-11-12"
 
 # What's New
 
-Find out about new and updated features in IBM Cloud Load Balancer.
+Find out about new and updated features in IBM© Cloud Load Balancer.
 
 ## August 2018
 ### Layer 7 Support

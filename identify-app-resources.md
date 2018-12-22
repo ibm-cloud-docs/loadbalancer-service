@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-12"
 
 
 ---
@@ -15,7 +15,7 @@ lastupdated: "2018-10-30"
 {:table: .aria-labeledby="caption"}
 
 # Identify your application server resources
-Locate your **server instances** from the table at the bottom and click **+** to add them behind the load balancer. You can select from the IBM Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
+Locate your **server instances** from the table at the bottom and click **+** to add them behind the load balancer. You can select from the IBM© Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
 
 These server instances must be local to the data center where you deploy the load balancer service. Additionally, server instances from the neighboring data centers within the same city may also be added (for instance, if the first three letters of the data center name are the same).
 

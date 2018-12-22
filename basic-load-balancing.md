@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,9 +13,11 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Basic Load Balancing
-The IBM Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center. 
+The IBM© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center. 
 
 ## Public Load Balancer 
 A publicly-accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network. 
