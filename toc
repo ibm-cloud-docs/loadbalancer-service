@@ -11,6 +11,7 @@ IBM Cloud Load Balancer Service
     explore-load-balancers.md
     pricing.md
     naas-overview.md
+    external-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -42,7 +43,6 @@ IBM Cloud Load Balancer Service
 
     {: .navgroup id="reference"}
     apis.md
-    external-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
