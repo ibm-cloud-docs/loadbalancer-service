@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# What's New
+# Recent Updates
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
 
