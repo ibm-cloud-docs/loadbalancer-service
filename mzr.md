@@ -22,11 +22,8 @@ Currently the following data centers are part of MZR:
 | MZR Name | Data Centers |
 | ---------|--------------|
 | us-south | dal10, dal12, dal13 |
-| eu-de | fra02, fra04, fra05 |
 | us-east | wdc04, wdc06, wdc07 |
-| eu-gb | lon04, lon05, lon06 |
-| jp-tok | tok02, tok04, tok05 |
-| au-syd | syd01, syd04, syd05 |
+
 
 ## MZR Requirements
 Multi-Zone Regions have the following requirements:
