@@ -28,6 +28,7 @@ IBM Cloud Load Balancer Service
 
     custom-ciphers.md
     health-checks.md
+    mzr.md
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md

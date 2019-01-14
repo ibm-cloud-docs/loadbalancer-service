@@ -49,4 +49,6 @@ The IBM Cloud Load Balancer Service offers the following features:
 * Monitoring
     * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](monitoring-metrics.html) for additional details.
 * Layer 7 Support
-    * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken.    
+    * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken. 
+* Multi-Zone Region (MZR) Support
+    * Load balancer nodes are instantiated in different data centers of a MZR. Refer to [Multi-Zone Region Overview](mzr.html) for more information.
