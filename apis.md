@@ -15,12 +15,12 @@ lastupdated: "2018-08-30"
 {:download: .download}
 
 # API Reference
-The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system. 
+The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system.
 {:shortdesc}
 
 The SoftLayer API (SLAPI) powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. As such, because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
 
-The SoftLayer API (SLAPI) is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission. 
+The SoftLayer API (SLAPI) is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
 
 For more information about the SoftLayer API, IBM Cloud Load Balancer Service APIs, see the following resources in the SoftLayer Development Network:
 * [Getting Started with the SoftLayer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/article/getting-started){: new_window}
@@ -111,7 +111,7 @@ for itemPrice in itemPrices:
 
 ### Verify the load balancer order
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 from zeep.exceptions import Fault
 
 # Username and apikey for SLAPI call
@@ -160,7 +160,7 @@ orderDataValue = orderDataType(
     name=name, packageId=lbaasPackageId, prices=lbaasItemPrices,
     subnets=subnets, protocolConfigurations=protocolConfigurations,
     useHourlyPricing=True,      # Required since LBaaS is an hourly service
-    useSystemPublicIpPool=True, # Optional - Default is "True" to allocate load balancer public IPs 
+    useSystemPublicIpPool=True, # Optional - Default is "True" to allocate load balancer public IPs
                                 # from an IBM system pool, otherwise "False" from the public VLAN
                                 # under your account. useSystemPublicIpPool is only applicable to
                                 # public load balancers
@@ -185,7 +185,7 @@ except Fault as exp:
 
 ### Place the load balancer order
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 from zeep.exceptions import Fault
 
 # Username and apikey for SLAPI call
@@ -197,7 +197,7 @@ privateSubnetId = '<Your subnet id>'
 # Order details
 # Package id retrieved from SoftLayer_Product_Package API
 # (example provided above)
-lbaasPackageId = 805 
+lbaasPackageId = 805
 # ItemPrice id retrieved from SoftLayer_Product_Package API
 # (example provided above)
 lbaasItemPrices = [{'id':199447}, {'id':199467}, {'id':205839}, {'id':205907}]
@@ -234,7 +234,7 @@ orderDataValue = orderDataType(
     name=name, packageId=lbaasPackageId, prices=lbaasItemPrices,
     subnets=subnets, protocolConfigurations=protocolConfigurations,
     useHourlyPricing=True,      # Required since LBaaS is an hourly service
-    useSystemPublicIpPool=True, # Optional - Default is "True" to allocate load balancer public IPs 
+    useSystemPublicIpPool=True, # Optional - Default is "True" to allocate load balancer public IPs
                                 # from an IBM system pool, otherwise "False" from the public VLAN
                                 # under your account. useSystemPublicIpPool is only applicable to
                                 # public load balancers
@@ -288,7 +288,7 @@ for loadbalancer in loadbalancers:
 
 ### Retrieve details of a specific load balancer
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -335,7 +335,7 @@ print 'HealthMonitors: %s\r\n' % loadbalancer.healthMonitors
 ## Updating a load balancer
 ### Add a member
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -343,7 +343,7 @@ apiKey = '<Your apikey>'
 # UUID of load balancer to be updated
 uuid = '<Your load balancer uuid>'
 # Backend servers to be added
-serverInstances = [ 
+serverInstances = [
     {
         'privateIpAddress': '10.121.220.141', #update with the correct IP
         'weight': 80 #weight is only applicable to Weight Round Robin listeners
@@ -390,7 +390,7 @@ print result
 
 ### Add a protocol
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -398,10 +398,10 @@ apiKey = '<Your apiKey>'
 # UUID of load balancer
 uuid = '<Your load balancer UUID>'
 # New protocol to add
-protocolConfigurations = [ 
+protocolConfigurations = [
     {   
         'frontendProtocol': 'TCP',
-        'frontendPort': 90, 
+        'frontendPort': 90,
         'backendProtocol': 'TCP',
         'backendPort': 9090,
         'loadBalancingMethod': 'WEIGHTED_RR',
@@ -446,7 +446,7 @@ print listeners
 
 ## Cancelling a load balancer
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 from zeep.exceptions import Fault
 
 # Username and apikey for SLAPI call
@@ -496,12 +496,12 @@ username = '<Your username>'
 apiKey = '<Your apiKey>'
 # UUID of load balancer
 uuid = '<Your load balancer UUID>'
-# The name of the metric. 
+# The name of the metric.
 # Options are Throughput, ActiveConnections, and ConnectionRate
 nameOfMetric = 'Throughput'
 # The time interval over which the metric is to be measured
 # Options are 1hour, 6hours, 12hours, 24hour, 1week, and 2weeks
-timeInterval = '1hour' 
+timeInterval = '1hour'
 # UUID of the protocol whose throughput your requesting
 protocolUuid = '<UUID of the protocol>'
 
@@ -537,19 +537,19 @@ for timeSeriesDataValue in timeSeriesDataValues:
 
 ### Get throughput of a load balancer
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey SLAPI call
 username = '<Your username>'
 apiKey = '<Your apiKey>'
 # UUID of load balancer
 uuid = '<Your load balancer UUID>'
-# The name of the metric. 
+# The name of the metric.
 # Options are Throughput, ActiveConnections, and ConnectionRate
 nameOfMetric = 'Throughput'
 # The time interval over which the metric is to be measured
 # Options are 1hour, 6hours, 12hours, 24hour, 1week, and 2weeks
-timeInterval = '6hours' 
+timeInterval = '6hours'
 # If no protocol is specified the throughput of all protocols is returned.
 # protocolUuid = '<UUID of the protocol>'
 
@@ -586,7 +586,7 @@ for timeSeriesDataValue in timeSeriesDataValues:
 
 ### Create Multiple L7 Policies and L7 Rules
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -639,7 +639,7 @@ print result
 
 ### Update Layer 7 policy
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -706,7 +706,7 @@ ruleConfigurations = [
             "comparisonType": "EQUAL_TO",
             "value": "some_value",
             "invert": 0
-   } 
+   }
 ]
 
 # WSDL for SoftLayer_Network_LBaaS_L7Rule API
@@ -740,7 +740,7 @@ print result
 
 ### Update multiple Layer 7 Rules attached to the same Layer 7 policy 
 ```
-from zeep import Client, xsd 
+from zeep import Client, xsd
 
 # Username and apikey for SLAPI call
 username = '<Your username>'
@@ -748,21 +748,21 @@ apiKey = '<Your apiKey>'
 # UUID of the Layer 7 policy
 policyUuid = '<UUID of the L7 policy to which the rules being updated are attached to>'
 # Rules to update
-ruleConfigurations = [ 
+ruleConfigurations = [
     {   
         'uuid':'<UUID of the L7 Rule being updated>',
         'type': 'FILE_TYPE',
-        'comparisonType': 'CONTAINS', 
+        'comparisonType': 'CONTAINS',
         'value': 'some_newvalue',
         'invert': 1
     },  
     {   
         'uuid':'<UUID of the L7 Rule being updated>',
         'type': 'PATH',
-        'comparisonType': 'EQUAL_TO', 
+        'comparisonType': 'EQUAL_TO',
         'value': 'some_newvalue2',
         'invert': 0
-    } 
+    }
 ]
 
 # WSDL for SoftLayer_Network_LBaaS_L7Rule API
@@ -861,7 +861,7 @@ userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
 # Make SLAPI call to SoftLayer_Network_LBaaS_L7Pool::createL7Pool API
 result = client.service.createL7Pool(
     _soapheaders=[userAuthValue],
-    loadBalancerUuid=uuid, 
+    loadBalancerUuid=uuid,
     l7Pool=l7Pool,
     l7Members=l7Members,  # optional
     l7HealthMonitor=l7HealthMonitor,  # optional
@@ -1047,4 +1047,38 @@ result = client.service.updateL7PoolMembers(
     l7PoolUuid=l7PoolUuid, members=members
 )
 print result
+```
+{: codeblock}
+
+### Enable or disable data logs for a specific load balancer
+```
+from zeep import Client, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the load balancer
+uuid = ''
+# enabled = 1 when enable, enable = 0 when disable
+enabled = 0
+
+# WSDL for SoftLayer_Network_LBaaS_LoadBalancer API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_LoadBalancer?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Enable or disable data logs for a specific load balancer
+loadbalancer = client.service.enableOrDisableDataLogs(_soapheaders=[userAuthValue], uuid=uuid, enabled=enabled)
+#print loadbalancer
 ```

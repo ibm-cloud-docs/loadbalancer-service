@@ -40,7 +40,7 @@ You may define up to ten front-end application ports (protocols) and map them to
 
 On the other hand, the back-end ports are only known internally. These back-end ports may or may not be the same as the front-end ports. As an example, the load balancer may be configured to receive incoming web/HTTP traffic on front-end port 80, while the back-end servers are listening on custom port 81. 
 
-The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported back-end ports/protocols are HTTP and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain-text HTTP communication with the backend server. 
+The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported back-end ports/protocols are also HTTP, HTTPS and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain-text HTTP communication with the backend server. 
 
 ### Considerations
 
