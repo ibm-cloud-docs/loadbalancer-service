@@ -19,10 +19,6 @@ lastupdated: "2018-11-12"
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
 
-## December 2018
-### Backend encryption and data log forwarding
-IBM Cloud Load Balancer now supports backend encryption and the ability to forward your data logs. Backend encryption allows end-to-end data traffic encryption, including the traffic between the load balancer and the backend servers. Data log forwarding lets you send data logs from your load balancers to the IBM Bluemix Log Analysis Service.
-
 ## August 2018
 ### Layer 7 Support
 IBM Cloud Load Balancer now supports Layer 7 load balancing. With Layer 7 (L7) support, traffic can be redirected to a URL, rejected, or distributed to L7 pool members, including bare-metal and virtual-server instances. Incoming data traffic is classified by using Layer 7 policies and rules. The policies define what action to take when the data traffic matches the rules associated with them.
