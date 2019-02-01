@@ -31,6 +31,7 @@ IBM Cloud Load Balancer Service
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md
+    backend-encryption.md
 
     {: .topicgroup}
     Layer 7 Support
