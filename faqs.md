@@ -29,7 +29,7 @@ For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Lo
 
 While the auto-assigned DNS name for the load balancer is not customizable, you can add a CNAME (Canonical Name) record that points your preferred DNS name to the auto-assigned load balancer DNS name. 
 
-For example, if your account number is 123456, your load balancer is deployed in `dal09` datacenter and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You may add a CNAME record (via the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name myapp-12345-dal09.lb.bluemix.net`.
+For example, if your account number is 123456, your load balancer is deployed in `dal09` datacenter and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You may add a CNAME record (via the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name `myapp-12345-dal09.lb.bluemix.net`.
 
 ## What's the maximum number of virtual ports I can define with my load balancer service?
 {:faq}
