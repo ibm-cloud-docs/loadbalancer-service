@@ -25,26 +25,28 @@ The SoftLayer API (SLAPI) powers many of the features in the Customer Portal. Ge
 The SoftLayer API (SLAPI) is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
 
 For more information about the SoftLayer API, IBM© Cloud Load Balancer Service APIs, see the following resources in the SoftLayer Development Network:
-* [Getting Started with the SoftLayer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/article/getting-started){: new_window}
-* [SoftLayer_Product_Package API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Product_Package){: new_window}
-* [SoftLayer_Network_LBaaS_LoadBalancer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_LoadBalancer){: new_window}
-* [SoftLayer_Network_LBaaS_Listener API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_Listener){: new_window}
-* [SoftLayer_Network_LBaaS_Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_Member){: new_window}
-* [SoftLayer_Network_LBaaS_HealthMonitor API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_HealthMonitor){: new_window}
-* [SoftLayer_Network_LBaaS_SSLCipher API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_SSLCipher){: new_window}
-* [SoftLayer_Network_LBaaS_L7Policy API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Policy){: new_window}
-* [SoftLayer_Network_LBaaS_L7Rule API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Rule){: new_window}
-* [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Pool){: new_window}
-* [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Member){: new_window}
+* [Getting Started with the SoftLayer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/article/getting-started/){: new_window}
+* [SoftLayer_Product_Package API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: new_window}
+* [SoftLayer_Network_LBaaS_LoadBalancer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: new_window}
+* [SoftLayer_Network_LBaaS_Listener API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Listener/){: new_window}
+* [SoftLayer_Network_LBaaS_Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Member/){: new_window}
+* [SoftLayer_Network_LBaaS_HealthMonitor API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: new_window}
+* [SoftLayer_Network_LBaaS_SSLCipher API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_SSLCipher/){: new_window}
+* [SoftLayer_Network_LBaaS_L7Policy API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Policy/){: new_window}
+* [SoftLayer_Network_LBaaS_L7Rule API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: new_window}
+* [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: new_window}
+* [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: new_window}
 
 The following examples are using [softlayer-python](https://github.com/softlayer/softlayer-python) client. 
-In case you don't have a `~/.softlayer` file configured then set your api username and apikey as following for each example below:
+
+Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file configured in your environment.
+
 ```py
 client = SoftLayer.Client(username='set me', api_key='set me')
 ```
 
 ## Creating a load balancer
-The following example retrieves the package id, subnet id and prices for 'Load Balancer As A Service (LBaaS)' pakage, builds the order data and place/verify the order.
+The following example retrieves the package id, subnet id and prices for a "Load Balancer As A Service (LBaaS)" pakage, builds the order data and place/verify the order.
 
 ```py
 import SoftLayer
@@ -199,10 +201,10 @@ if __name__ == "__main__":
     datacenter = "mex01"
     
     lbaas = LBaasExample()
-    # remove dc=datacenter to retrieve all lbaas
+    # remove dc=datacenter to retrieve all the load balancers in the account
     lbaas_list = lbaas.get_list(dc=datacenter)
     
-    # build a pretty table
+    # add lbaas data to the table
     for i in lbaas_list:
         isPublic = "Public" if i['isPublic'] == 1 else "Private"
         table.add_row([i['id'], i['uuid'], i['name'], i['description'], i['address'],
