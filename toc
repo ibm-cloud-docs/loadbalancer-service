@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service/getting-started.html" path="infrastructure/loadbalancer-service"}
+{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
 IBM Cloud Load Balancer Service
 
     {: .navgroup id="learn"}
@@ -28,6 +28,7 @@ IBM Cloud Load Balancer Service
 
     custom-ciphers.md
     health-checks.md
+    mzr.md
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md

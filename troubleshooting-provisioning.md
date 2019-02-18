@@ -22,7 +22,7 @@ IBM Cloud Load Balancer requires at least two free IP addresses from its private
 
 Follow the steps below to check for free IPs in a subnet.
 
-1. Go to the [Customer Portal](https://control.softlayer.com), and navigate to the subnets section by selecting **Network > IP Management > Subnets**.
+1. Go to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com){:new_window}, and navigate to the subnets section by selecting **Network > IP Management > Subnets**.
 
 2. Click on the subnet which you want to check for free IP's.
 
@@ -31,7 +31,7 @@ Follow the steps below to check for free IPs in a subnet.
 3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
 ## Issues with firewalls on public and private VLANs
-Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
  
 ## Viewing load balancer error messages
 To view error messages for your load balancer, perform the following procedure:

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2018-03-14"
 {:tip: .tip}
 {:download: .download}
 
-# Health Checks
+# Performing Health Checks with IBM Cloud Load Balancer
 
 The health check definitions are mandatory for each of the back-end application ports. The port and protocol under health check configuration must match with defined back-end port and protocol, otherwise the configuration is rejected. 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,8 +13,10 @@ lastupdated: "2018-10-30"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
-# Advanced Traffic Management
+# Advanced Traffic Management with IBM Cloud Load Balancer
 This section discusses several advanced traffic management features available with the load balancer service.
 
 ## Max Connections

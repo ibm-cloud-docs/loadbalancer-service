@@ -15,21 +15,21 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# FAQs
+# FAQs for IBM Cloud Load Balancer
 
 This section contains answers to some frequently asked questions about the IBM© Cloud Load Balancer Service.
 
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Can I use a different DNS name for my load balancer?
 {:faq}
 
 While the auto-assigned DNS name for the load balancer is not customizable, you can add a CNAME (Canonical Name) record that points your preferred DNS name to the auto-assigned load balancer DNS name. 
 
-For example, if your account number is 123456, your load balancer is deployed in `dal09` datacenter and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You may add a CNAME record (via the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name `myapp-12345-dal09.lb.bluemix.net`.
+For example, if your account number is 123456, your load balancer is deployed in `dal09` datacenter and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You may add a CNAME record (via the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name myapp-12345-dal09.lb.bluemix.net`.
 
 ## What's the maximum number of virtual ports I can define with my load balancer service?
 {:faq}
@@ -44,7 +44,7 @@ While trying to create a new load balancer service, you may define up to two vir
 ## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
 {:faq}
 
-Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning Troubleshooting](troubleshooting-vlan-spanning.html) for more information.
+Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning Troubleshooting](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting) for more information.
 
 ## What are the default settings and allowed values for various health check parameters?
 {:faq}
@@ -110,12 +110,12 @@ We cannot guarantee load balancer IP addresses to remain constant due to the ela
 ## If I have a firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer service?
 {:faq}
 
-Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Why can't I see my Layer 7 configuration in the UI?
 {:faq}
 
-Currently, Layer 7 support is available only through public APIs, but this functionality will be available in the UI soon. Refer to the Layer 7 section of the [APIs Documentation](apis.html) for more information.
+Currently, Layer 7 support is available only through public APIs, but this functionality will be available in the UI soon. Refer to the Layer 7 section of the [APIs Documentation](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference) for more information.
 
 ## What information do I need to file a support ticket?
 {:faq}

@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Monitoring Metrics
+# Monitoring Metrics with IBM Cloud Load Balancer
 
 The load balancer monitors the following metrics: 
 
@@ -67,4 +67,4 @@ The table below shows how the data points are derived from the time interval:
 
 # How to enable Metrics Monitoring
 
-In order to retrieve monitoring metrics you must link your SoftLayer account with your IBM© Cloud account. Refer to [this topic ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/account/softlayerlink.html#link_user_account) for more information.
+In order to retrieve monitoring metrics you must link your SoftLayer account with your IBM© Cloud account. Refer to [this topic](/docs/account?topic=account-unifyingaccounts#link_accounts) for more information.

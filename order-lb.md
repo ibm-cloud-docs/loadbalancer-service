@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -13,7 +13,7 @@ lastupdated: "2018-08-30"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Review and place order
+# Review and Place Your Order
 Review your **Order Summary** and click **Create** to place your order.
 
 <img src="images/review-order-lb.png" alt="drawing" style="width: 300px;"/>
@@ -25,4 +25,4 @@ The system now creates a service instance for you and takes you to the Load Bala
 <img src="images/summary-online.png" alt="drawing" style="width: 300px;"/>
 
 ## What's Next
-[Edit your configuration](managing-lb.html) to monitor your service performance.
+[Edit your configuration](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to monitor your service performance.

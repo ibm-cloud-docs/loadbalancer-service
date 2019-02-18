@@ -13,7 +13,7 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Layer 7 Rule
+# Layer 7 Rules
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
@@ -39,7 +39,7 @@ HEADER    | A field in the HTTP header
 COOKIE    | A named cookie in the HTTP header 
 PATH      | The part of the URL that follows the hostname (for example, `/index.html`)
 
-Rules also have a comparison type, which indicates how they are are to be evaluated. 
+Rules also have a comparison type, which indicates how they are to be evaluated. 
 Rules can have following comparison types: 
 
 * `REGEX`

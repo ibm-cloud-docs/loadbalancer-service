@@ -37,7 +37,7 @@ For more information about the SoftLayer API, IBM© Cloud Load Balancer Service 
 * [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: new_window}
 * [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: new_window}
 
-The following examples are using [softlayer-python](https://github.com/softlayer/softlayer-python) client. 
+The following examples are using [softlayer-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/softlayer-python){: new_window} client. 
 
 Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file configured in your environment.
 

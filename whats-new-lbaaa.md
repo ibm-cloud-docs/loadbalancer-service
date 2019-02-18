@@ -15,15 +15,19 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# Recent Updates
+# Recent Updates for IBM Cloud Load Balancer
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
+
+## December 2018
+### Backend encryption and data log forwarding
+IBM Cloud Load Balancer now supports backend encryption and the ability to forward your data logs. Backend encryption allows end-to-end data traffic encryption, including the traffic between the load balancer and the backend servers. Data log forwarding lets you send data logs from your load balancers to the IBM Bluemix Log Analysis Service.
 
 ## August 2018
 ### Layer 7 Support
 IBM Cloud Load Balancer now supports Layer 7 load balancing. With Layer 7 (L7) support, traffic can be redirected to a URL, rejected, or distributed to L7 pool members, including bare-metal and virtual-server instances. Incoming data traffic is classified by using Layer 7 policies and rules. The policies define what action to take when the data traffic matches the rules associated with them.
 
-Refer to [Layer 7 load balancing](l7-explained.html) for additional details.
+Refer to [Layer 7 load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing) for additional details.
 
 ## April 2018
 ### Horizontal Scaling
@@ -45,13 +49,13 @@ You can now leverage the “IBM Cloud Monitoring” service to monitor the follo
 
 ![Monitoring Metrics](./images/Metrics.png)
 
-Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](monitoring-metrics.html) for additional details
+Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details
 
-This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/account/softlayerlink.html#link_user_account).
+This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps](/docs/account?topic=account-unifyingaccounts).
 
 ### Cipher Suite Customization
 You can now customize the cipher suites that are used when the load balancer is configured for SSL termination.
 
 When you enable SSL termination on IBM Cloud Load Balancer (by selecting **HTTPS** as the front-end protocol), a carefully selected default set of cipher suites is enabled that conform to security best practices. IBM keeps a close watch on any new vulnerabilities that may be discovered, and updates the list accordingly. This, along with the seamless security updates of software and hardware components, helps to keep your applications secure at all times.
 
-Refer to [Custom Cipher Suite](custom-ciphers.html) for additional details.
+Refer to [Custom Cipher Suite](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application) for additional details.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-10-30"
 # Load Balancer VLAN Spanning Troubleshooting
 This topic provides information on common issues you may encounter when the load balancer and the compute instances connected to the load balancer are in different subnets. VLAN Spanning must be enabled for the load balancer to communicate and forward requests to compute instances residing on a different subnet.
 
-1. Login to the [Customer Portal](https://control.softlayer.com), navigate to **Network > IP Management**, then click on **VLANs**.
+1. Login to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com){:new_window}, navigate to **Network > IP Management**, then click on **VLANs**.
 
 2. Toggle **VLAN Spanning** to **On**.
 

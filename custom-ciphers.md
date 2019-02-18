@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Choose a preferred cipher suite for your HTTPS application
+# Choosing a Preferred Cipher Suite for your HTTPS Application
 Ciphers algorithms that help the IBM© Cloud Load Balancer form secure connections with its HTTP clients.
 
 IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
@@ -32,13 +32,13 @@ Select HTTPS for your front-end protocol, and the available Cipher Suites will d
   
 The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
   
-**NOTE:** For a list of supported ciphers, refer to [SSL Offload](ssl-offload.html).
+**NOTE:** For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
 
 ## Choosing ciphers when creating a new load balancer
 
 To choose the cipher suite when creating a new load balancer:
 
-1. Follow the instructions to [create a load balancer](create-load-balancer.html).
+1. Follow the instructions to [create a load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer).
   
 2. Cipher Suite configuration is only applicable with the HTTPS front-end protocol. When you reach the configuration steps for the **Add protocol** section, choose **HTTPS Protocol**.
 
@@ -52,4 +52,4 @@ To choose the cipher suite when creating a new load balancer:
   
 4. The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
 	
-	**NOTE:** For a list of supported ciphers, refer to [SSL Offload](ssl-offload.html).
+	**NOTE:** For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).

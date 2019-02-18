@@ -16,11 +16,11 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Basic Load Balancing
+# Performing IBM Cloud Load Balancer Basics
 The IBM© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center. 
 
 ## Public Load Balancer 
-A publicly-accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network. 
+A publicly accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network. 
 
 As a good practice, we recommended that you provision your backend servers as ‘private-only’, unless they require direct public connectivity. This practice helps achieve better security, and it preserves your public IP address. The applications hosted on these backend servers are still accessible over public network using the load balancer.
 {:note}  
@@ -42,7 +42,7 @@ You may define up to ten front-end application ports (protocols) and map them to
 
 On the other hand, the back-end ports are only known internally. These back-end ports may or may not be the same as the front-end ports. As an example, the load balancer may be configured to receive incoming web/HTTP traffic on front-end port 80, while the back-end servers are listening on custom port 81. 
 
-The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported back-end ports/protocols are also HTTP, HTTPS and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain-text HTTP communication with the backend server. 
+The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported back-end ports/protocols are also HTTP, HTTPS and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain-text HTTP communication with the backend server. If the backend protocol is HTTPS, the traffic will be encrypted between load balancer and backend servers.
 
 ### Considerations
 

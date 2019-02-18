@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -23,7 +23,7 @@ L7 pools only support HTTP as the backend protocol.
 
 ## Session Persistence
 Session persistence can be configured for each Layer 7 pool. For more details, refer to the  
-[advanced traffic section](advanced-traffic.html).
+[advanced traffic section](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Layer 7 Members
 

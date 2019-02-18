@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Known Issues and Limitations
+# Known Issues and Limitations with IBM Cloud Load Balancer
 This topic provides information on the currently known issues and limitations with the IBM© Cloud Load Balancer Service.
 
 ## Known Issues

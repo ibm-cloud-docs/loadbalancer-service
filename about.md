@@ -16,7 +16,7 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# About
+# About IBM Cloud Load Balancer
 
 The IBM© Cloud Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
 
@@ -47,8 +47,8 @@ The IBM Cloud Load Balancer Service offers the following features:
 * Built-in reliability 
 * Usage-based pricing 
 * Monitoring
-    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](monitoring-metrics.html) for additional details.
+    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details.
 * Layer 7 Support
     * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken. 
 * Multi-Zone Region (MZR) Support
-    * Load balancer nodes are instantiated in different data centers of a MZR. Refer to [Multi-Zone Region Overview](mzr.html) for more information.
+    * Load balancer nodes are instantiated in different data centers of a MZR. Refer to [Multi-Zone Region Overview](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) for more information.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -13,7 +13,7 @@ lastupdated: "2018-08-30"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Monitoring and managing your service
+# Monitoring and Managing Your Service
 You may edit your configuration or monitor your service performance by clicking service name URL on the load balancer summary page. 
 
 The **fully-qualified domain name (FQDN) address** of your load balancer service instance can be seen just below the service name. Your end-users are able to connect to your application via this FQDN address. Note that the public and private IP address(es) of the load balancer service are not exposed to the outside world; only the FQDN address is exposed. 

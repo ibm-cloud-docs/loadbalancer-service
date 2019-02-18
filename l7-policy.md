@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-30"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -54,7 +54,7 @@ Redirect URL | The URL to which traffic will be re-directed, if the action is se
 Redirect L7 Pool | The pool of servers to which traffic will be sent, if the action is set to `REDIRECT_POOL`.
 Protocol | The front-end application port to which the policy is applied.
 
-# Layer 7 Rule
+## Layer 7 Rule
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
