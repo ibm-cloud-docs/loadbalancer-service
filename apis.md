@@ -37,7 +37,7 @@ For more information about the SoftLayer API, IBM© Cloud Load Balancer Service 
 * [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: new_window}
 * [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: new_window}
 
-The following examples are using [softlayer-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/softlayer-python){: new_window} client. 
+The following examples are using [softlayer-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/softlayer-python){: new_window} client.
 
 Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file configured in your environment.
 
@@ -59,15 +59,15 @@ class LBaaSExample():
     def get_package_id(self, pkg_name):
         """Returns the packageId for the LBaaS"""
         _filter = {"name":{"operation": pkg_name}}
-    
+
         pkg_list = self.client['Product_Package'].getAllObjects(filter=_filter)
-    
+
         return pkg_list[0]['id']
-    
+
 
     def get_item_prices(self, pkg_id):
         """Returns the standard prices"""
-                
+
         item_list = self.client['Product_Package'].getItems(id=pkg_id)
         prices = []
 
@@ -75,7 +75,7 @@ class LBaaSExample():
             price_id = [p['id'] for p in item['prices']
                             if not p['locationGroupId']][0]
             prices.append(price_id)
-        
+
         return prices
 
     def get_subnet_id(self, datacenter):
@@ -93,18 +93,18 @@ class LBaaSExample():
                         "routingTypeKeyName": {"operation": "PRIMARY" }
                     }
                 }
-        
+
         subnets = self.client['Account'].getPrivateSubnets(filter=_filter)
 
         return subnets[0]['id']
 
-    def order_lbaas(self, pkg_name, datacenter, name, desc, protocols, 
+    def order_lbaas(self, pkg_name, datacenter, name, desc, protocols,
                     subnet_id=None, public=False, verify=False):
         """Allows to order a Load Balancer"""
 
         package_id = self.get_package_id(pkg_name)
         prices = self.get_item_prices(package_id)
-        
+
         # Find and select a subnet id if it was not specified.
         if subnet_id is None:
             subnet_id = self.get_subnet_id(datacenter)
@@ -121,15 +121,15 @@ class LBaaSExample():
             'protocolConfigurations': protocols,
             'subnets': [{'id': subnet_id}]
         }
-        
+
         try:
             # If verify=True it will check your order for errors.
-            # It will order the lbaas if False. 
+            # It will order the lbaas if False.
             if verify:
                 response = self.client['Product_Order'].verifyOrder(orderData)
             else:
                 response = self.client['Product_Order'].placeOrder(orderData)
-            
+
             return response
         except SoftLayer.SoftLayerAPIError as e:            
             print("Unable to place the order: %s, %s" % (e.faultCode, e.faultString))
@@ -137,7 +137,7 @@ class LBaaSExample():
 
 if __name__ == "__main__":
     lbaas = LBaaSExample()
-    
+
     package_name = 'Load Balancer As A Service (LBaaS)'
     location = 'MEXICO'
     name = 'My-LBaaS-name'
@@ -145,7 +145,7 @@ if __name__ == "__main__":
 
     # Set False for private network
     is_public = True
-    
+
     protocols = [        
         {
             "backendPort": 80,
@@ -183,7 +183,7 @@ class LBaasExample():
         # Use filters if datacenter is set
         if dc:
             _filter = {"datacenter":{"name":{"operation": dc}}}
-        
+
         try:
             # Retrieve load balancer objects
             lbaas_list = self.lbaas_service.getAllObjects(filter=_filter)
@@ -194,16 +194,16 @@ class LBaasExample():
 
 
 if __name__ == "__main__":
-    table = PrettyTable(['ID','UUID','Name', 'Description', 
+    table = PrettyTable(['ID','UUID','Name', 'Description',
                          'Address', 'Type', 'Location', 'Status'])
-    
+
     # To find all lbaas in Mexico
     datacenter = "mex01"
-    
+
     lbaas = LBaasExample()
     # remove dc=datacenter to retrieve all the load balancers in the account
     lbaas_list = lbaas.get_list(dc=datacenter)
-    
+
     # add lbaas data to the table
     for i in lbaas_list:
         isPublic = "Public" if i['isPublic'] == 1 else "Private"
@@ -355,7 +355,7 @@ lbaas_service = client['Network_LBaaS_LoadBalancer']
 
 try:
     # Remove protocol_uuid to retrieve the traffic metrics of the entire load balancer
-    time_series = lbaas_service.getListenerTimeSeriesData(uuid, metric_name, 
+    time_series = lbaas_service.getListenerTimeSeriesData(uuid, metric_name,
                                                           time_range, protocol_uuid)
 
     pprint(time_series)
@@ -668,3 +668,36 @@ except SoftLayer.SoftLayerAPIError as e:
           % (e.faultCode, e.faultString))
 ```
 {: codeblock}
+
+### Enable or disable data logs for a specific load balancer
+```py
+from zeep import Client, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the load balancer
+uuid = ''
+# enabled = 1 when enable, enable = 0 when disable
+enabled = 0
+
+# WSDL for SoftLayer_Network_LBaaS_LoadBalancer API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_LoadBalancer?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Enable or disable data logs for a specific load balancer
+loadbalancer = client.service.enableOrDisableDataLogs(_soapheaders=[userAuthValue], uuid=uuid, enabled=enabled)
+#print loadbalancer
+```
