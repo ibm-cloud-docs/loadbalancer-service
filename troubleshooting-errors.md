@@ -15,6 +15,8 @@ lastupdated: "2018-11-21"
 {:download: .download}
 
 # Error Message Troubleshooting
+{: #error-message-troubleshooting}
+
 This topic provides information on common error messages you may encounter while creating/updating an instance of IBM© Cloud Load Balancer.
 
 | Error | Explanation  | Solution  |

@@ -16,6 +16,7 @@ lastupdated: "2019-02-19"
 
 
 # Recent Updates for IBM Cloud Load Balancer
+{: #recent-updates-for-ibm-cloud-load-balancer}
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
 

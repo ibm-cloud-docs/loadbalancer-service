@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Monitoring Metrics with IBM Cloud Load Balancer
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 The load balancer monitors the following metrics: 
 

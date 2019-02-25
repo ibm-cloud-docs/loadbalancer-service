@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Creating an IBM Cloud Load Balancer
+{: #creating-an-ibm-cloud-load-balancer}
+
 To create an IBM© Cloud Load Balancer service, perform the following procedure:
 
 1. From your browser, open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.

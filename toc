@@ -41,7 +41,6 @@ IBM Cloud Load Balancer Service
         l7-policy.md
         l7-rule.md
         l7-pool.md
-
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

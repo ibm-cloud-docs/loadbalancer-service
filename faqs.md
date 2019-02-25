@@ -16,6 +16,7 @@ lastupdated: "2018-11-12"
 {:faq: data-hd-content-type='faq'}
 
 # FAQs for IBM Cloud Load Balancer
+{: #faqs-for-ibm-cloud-load-balancer}
 
 This section contains answers to some frequently asked questions about the IBM© Cloud Load Balancer Service.
 

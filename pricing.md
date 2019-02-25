@@ -16,6 +16,7 @@ lastupdated: "2018-11-12"
 
 
 # IBM Cloud Load Balancer Pricing
+{: #ibm-cloud-load-balancer-pricing}
 
 IBM© Cloud Load Balancer pricing is based on the following three metrics, calculated monthly:
 

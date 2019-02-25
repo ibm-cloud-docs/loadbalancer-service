@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Application Server Troubleshooting
+{: #application-server-troubleshooting}
+
 This topic provides information on common issues you may encounter while using the load balancer.
 
 ## The back-end server is unhealthy

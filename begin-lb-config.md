@@ -18,6 +18,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # Configuring IBM Cloud Load Balancer parameters
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 Once you create a load balancer, you can then configure it for elastic load balancing. To do so:
 
 1. Name your load balancer, and, optionally, add a description.

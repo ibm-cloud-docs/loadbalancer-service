@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Review and Place Your Order
+{: #review-and-place-your-order}
+
 Review your **Order Summary** and click **Create** to place your order.
 
 <img src="images/review-order-lb.png" alt="drawing" style="width: 300px;"/>

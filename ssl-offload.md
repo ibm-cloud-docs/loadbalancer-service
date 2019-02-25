@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # SSL Offload with IBM Cloud Load Balancer
+{: #ssl-offload-with-ibm-cloud-load-balancer}
 
 For all incoming HTTPS connections, the load balancer service terminates the SSL connection and establishes a plain-text HTTP communication with the back-end server. CPU-intensive SSL handshakes and encryption/decryption tasks are shifted away from the back-end servers, allowing them to use all their CPU cycles for processing application traffic. 
 

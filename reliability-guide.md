@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Creating and using an IBM Cloud Load Balancer for elastic server load balancing
+{: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
+
 The IBM© Cloud Load Balancer service helps improve scalability and availability of your business-critical applications. It monitors the health of your application servers, utilizes smart load balancing methods to distribute traffic among multiple servers, and dynamically adjusts its system capacity to handle varying traffic load. 
 
 ## What you'll accomplish

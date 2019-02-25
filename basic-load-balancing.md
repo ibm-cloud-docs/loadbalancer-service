@@ -17,6 +17,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # Performing IBM Cloud Load Balancer Basics
+{: #performing-ibm-cloud-load-balancer-basics}
+
 The IBM© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center. 
 
 ## Public Load Balancer 

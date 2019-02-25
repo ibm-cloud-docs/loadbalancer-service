@@ -16,6 +16,8 @@ lastupdated: "2018-11-12"
 
 
 # Getting Started with IBM Cloud Load Balancer
+{: #getting-started-with-ibm-cloud-load-balancer}
+
 To get started using the IBM© Cloud Load Balancer, you’ll need two main items:
 
 * An account with IBM: [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}

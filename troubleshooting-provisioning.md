@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Load Balancer Provisioning Troubleshooting
+{: #load-balancer-provisioning-troubleshooting}
+
 This topic provides information on common issues you may encounter while creating a new instance of IBM© Cloud Load Balancer.
 
 ## Insufficient IP addresses in your subnet

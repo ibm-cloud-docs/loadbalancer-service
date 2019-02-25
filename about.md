@@ -17,6 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # About IBM Cloud Load Balancer
+{: #about-ibm-cloud-load-balancer}
 
 The IBM© Cloud Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
 

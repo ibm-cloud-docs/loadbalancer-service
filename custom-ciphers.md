@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Choosing a Preferred Cipher Suite for your HTTPS Application
+{: #choosing-a-preferred-cipher-suite-for-your-https-application}
+
 Ciphers algorithms that help the IBM© Cloud Load Balancer form secure connections with its HTTP clients.
 
 IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.

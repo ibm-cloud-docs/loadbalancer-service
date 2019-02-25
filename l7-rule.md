@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Layer 7 Rules
+{: #layer-7-rules}
+
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.

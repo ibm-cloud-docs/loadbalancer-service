@@ -17,6 +17,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # Advanced Traffic Management with IBM Cloud Load Balancer
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 This section discusses several advanced traffic management features available with the load balancer service.
 
 ## Max Connections

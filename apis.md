@@ -17,6 +17,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # API Reference
+{: #api-reference}
+
 The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system.
 {:shortdesc}
 
