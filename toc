@@ -33,7 +33,6 @@ IBM Cloud Load Balancer Service
     advanced-traffic.md
     monitoring-metrics.md
     backend-encryption.md
-    data-logging.md
 
     {: .topicgroup}
     Layer 7 Support
