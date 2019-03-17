@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer 
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}

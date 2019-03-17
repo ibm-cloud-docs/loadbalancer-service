@@ -5,6 +5,10 @@ copyright:
 
 lastupdated: "2018-11-12"
 
+keywords: resources, blog, brief
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-01-11"
 
+keywords: mzr, overview, data centers
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: create, new, load balancer
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -25,7 +29,7 @@ To create an IBM© Cloud Load Balancer service, perform the following procedure:
 
 	<img src="images/catalog-load-balancer.png" alt="drawing" style="width: 600px;"/>
 
-3. Select the **IBM Cloud Load Balancer** (default selection) and click **Create**. 
+3. Select the **IBM Cloud Load Balancer** (default selection) and click **Create**.
 
 	If you see **Upgrade** instead of **Create**, then you have to link your IBM Cloud Infrastructure (SoftLayer) account by following [these steps](/docs/account?topic=account-unifyingaccounts)
 
@@ -40,7 +44,7 @@ To create an IBM© Cloud Load Balancer service, perform the following procedure:
 	For Internet-facing applications that need access to the public Internet, select **Public (Internet-facing)**.
 
 	<img src="images/select-lb-type.png" alt="drawing" style="width: 600px;"/>
-	
+
 	By default, the Public load balancer receives a globally-unique public IP address from the IBM global address pool. If, however, you wish to assign it public address(es) from your own address pool or wish to deploy it behind a firewall service within your account, check if your public subnet has [sufficient IP addresses](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting) and select **Allocate from a public subnet in your account**.
 
 	For internal-only applications that do not need access to the public internet, choose the **Internal (Private)** type.

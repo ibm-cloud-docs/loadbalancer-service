@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, provisioning, question, problem
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ lastupdated: "2018-11-12"
 This topic provides information on common issues you may encounter while creating a new instance of IBM© Cloud Load Balancer.
 
 ## Insufficient IP addresses in your subnet
-IBM Cloud Load Balancer requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well. 
+IBM Cloud Load Balancer requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
 
 Follow the steps below to check for free IPs in a subnet.
 
@@ -29,16 +33,16 @@ Follow the steps below to check for free IPs in a subnet.
 2. Click on the subnet which you want to check for free IP's.
 
 	<img src="images/subnet_list.png" alt="drawing" style="width: 600px;"/>
-		
+
 3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
 ## Issues with firewalls on public and private VLANs
 Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
- 
+
 ## Viewing load balancer error messages
 To view error messages for your load balancer, perform the following procedure:
 
-1. Click on the load balancer from the list page to view its details. 
+1. Click on the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
 <img src="images/lbaas_error_message.png" alt="drawing" style="width: 500px;"/>

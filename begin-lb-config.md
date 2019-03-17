@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -45,8 +49,8 @@ Once you create a load balancer, you can then configure it for elastic load bala
 
 	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
-	If you do not have an existing certificate, then click **Add a new Certificate**. This takes you to an IBM Cloud certificate service where you can either purchase a new certificate or upload an existing one. 
-	
+	If you do not have an existing certificate, then click **Add a new Certificate**. This takes you to an IBM Cloud certificate service where you can either purchase a new certificate or upload an existing one.
+
 	After adding the certificate, return to the load balancer configuration page and click the refresh icon below the SSL Certificate drop-down list to view and add your newly-uploaded certificate.
 
 	<img src="images/order-ssl-cert.png" alt="drawing" style="width: 300px;"/>

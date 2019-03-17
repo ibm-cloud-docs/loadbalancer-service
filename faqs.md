@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: faq, questions, load balancer, dns, port, traffic, connection, health check, vmware, tls, ssl
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -28,7 +32,7 @@ For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Lo
 ## Can I use a different DNS name for my load balancer?
 {:faq}
 
-While the auto-assigned DNS name for the load balancer is not customizable, you can add a CNAME (Canonical Name) record that points your preferred DNS name to the auto-assigned load balancer DNS name. 
+While the auto-assigned DNS name for the load balancer is not customizable, you can add a CNAME (Canonical Name) record that points your preferred DNS name to the auto-assigned load balancer DNS name.
 
 For example, if your account number is 123456, your load balancer is deployed in `dal09` datacenter and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You may add a CNAME record (via the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name myapp-12345-dal09.lb.bluemix.net`.
 
@@ -82,7 +86,7 @@ The following list details the supported ciphers (listed in order of precedence)
 ## What is the maximum number of Load Balancer service instances I can create within my account?
 {:faq}
 
-Currently, you may create up to 50 service instances. If you need more instances, please contact IBM Support. 
+Currently, you may create up to 50 service instances. If you need more instances, please contact IBM Support.
 
 ## Can the IBM Cloud Load Balancer Service be used with VMWare?
 {:faq}
@@ -96,7 +100,7 @@ VMWare virtual machines assigned non-SoftLayer addresses (such as VMWare NSX net
 
 TCP port 56501 is used for management. Please ensure that traffic to this port, as well as your application's ports, are not blocked by your firewall, otherwise load balancer provisioning will fail.
 
-## What if I cannot see the monitoring metrics of an existing Load Balancer after linking my Softlayer account to IBM Cloud? 
+## What if I cannot see the monitoring metrics of an existing Load Balancer after linking my Softlayer account to IBM Cloud?
 {:faq}
 
 Monitoring metrics will not be available for existing load balancers after linking the accounts. You must recreate the load balancers or contact support. Monitoring metrics for newly created load balancers will be available.

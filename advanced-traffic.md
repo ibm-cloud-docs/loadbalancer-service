@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: traffic, management, connection, persistence
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,8 +46,8 @@ The following timeout values are used by the load balancer. These values cannot 
 | Server-side connection attempt    | The maximum time window that the load balancer can use to establish TCP connection with the back-end server. If the connection attempt is unsuccessful, the load balancer will try the next available server, according to the load balancing method you've configured. | 5 seconds   |
 | Client-side idle connection  | The maximum idle time, after which the load balancer  brings down the client-side connection, if the client has failed to close its connection properly.| 50 seconds  |
 | Server-side idle connection | The maximum idle time (with back-end protocol configuration of TCP), after which the load balancer closes the server-side connection. With the back-end protocol configuration of HTTP, if the load balancer fails to receive a response to its HTTP request within the idle timeout window, it will return an error message to the end-client.                                | 50 seconds |
-{: caption="Table 1. Load Balancer Timeout Values" caption-side="top"} 
+{: caption="Table 1. Load Balancer Timeout Values" caption-side="top"}
 
-## Preserving end-client IP address 
+## Preserving end-client IP address
 
 The load balancer works as a reverse proxy, which terminates incoming traffic from the client. It establishes a separate connection to the back-end server instance, using its own IP address. For HTTP connections with the backend servers (against front-end HTTP or HTTPS connections), the load balancer preserves the original client IP address by including it inside the `X-Forwarded-For HTTP` header. For TCP connections, the original client IP information is not preserved.

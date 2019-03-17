@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,16 +21,16 @@ lastupdated: "2018-11-12"
 # Monitoring Metrics with IBM Cloud Load Balancer
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-The load balancer monitors the following metrics: 
+The load balancer monitors the following metrics:
 
 * Throughput
 * Active Connections
 * Connection Rate
 
-These metrics are visualized as graphs that can be viewed by selecting the **Monitoring** tab, 
+These metrics are visualized as graphs that can be viewed by selecting the **Monitoring** tab,
 and are available programmatically as time series data points by using the `getListenerTimeSeriesData` API.
 
-Each data point contains a timestamp in UNIX epoch time, and the metric value for that time interval ending at that timestamp. The user can specify the protocols and the time interval over which the metrics are to be reported. 
+Each data point contains a timestamp in UNIX epoch time, and the metric value for that time interval ending at that timestamp. The user can specify the protocols and the time interval over which the metrics are to be reported.
 
 Supported protocols include:
 
@@ -36,12 +40,12 @@ Supported protocols include:
 
 Specifying a protocol filters the metric by that protocol.
 
-For example, if no protocol is specified, and the metric is *Throughput*, 
+For example, if no protocol is specified, and the metric is *Throughput*,
 then the total throughput for all protocols is reported.
 
 If the protocol is *HTTP*, then only the throughput for HTTP traffic is reported.
 
-The user can also specify the time interval over which the metric is to be reported. The time intervals supported are: 
+The user can also specify the time interval over which the metric is to be reported. The time intervals supported are:
 
 * 1 hour
 * 6 hours

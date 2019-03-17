@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-08-07"
 
+keywords: load balancer, compare, explore
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ lastupdated: "2018-08-07"
 # Exploring IBM Load Balancers
 {: #explore}
 
-IBM© Cloud offers several load balancing solutions to choose from. The table below compares the load balancing solutions to help you choose the one that's right for you. To learn more about the individual offering, click its name in the table. 
+IBM© Cloud offers several load balancing solutions to choose from. The table below compares the load balancing solutions to help you choose the one that's right for you. To learn more about the individual offering, click its name in the table.
 
 Scroll to the right to view the rest of the table!
 

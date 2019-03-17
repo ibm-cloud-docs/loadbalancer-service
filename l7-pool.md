@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,7 +22,7 @@ lastupdated: "2018-11-12"
 
 A Layer 7 (L7) pool is a logical grouping of the servers (members) for handling incoming requests.
 
-The Layer 7 load balancing feature can direct the incoming traffic to different backend pools based 
+The Layer 7 load balancing feature can direct the incoming traffic to different backend pools based
 on the policies and rules. This feature is supported by associating multiple L7 pools with a load balancer. Layer 7 pools are used with the Layer 7 policies whose action is `redirect to pool`.
 
 L7 pools only support HTTP as the backend protocol.
