@@ -24,10 +24,6 @@ subcollection: loadbalancer-service
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
 
-## February 2019
-### Data Logs
-IBM Cloud Load Balancer now supports data logs forwarding. With data logs enabled, your load balancer log data will be forwarded to the [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Customers can view their data logs from the [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.
-
 ## December 2018
 ### Backend encryption and data log forwarding
 IBM Cloud Load Balancer now supports backend encryption and the ability to forward your data logs. Backend encryption allows end-to-end data traffic encryption, including the traffic between the load balancer and the backend servers. Data log forwarding lets you send data logs from your load balancers to the IBM Bluemix Log Analysis Service.
