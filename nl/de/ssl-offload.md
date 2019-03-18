@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# SSL-Auslagerung
+# SSL-Auslagerung mit IBM Cloud Load Balancer
+{: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Für alle ankommenden HTTPS-Verbindungen beendet die Lastausgleichsfunktion die SSL-Verbindung und baut eine ungeschützte HTTP-Kommunikation mit dem Back-End-Server auf. CPU-intensive SSL-Handshakes sowie Verschlüsselungs- und Entschlüsselungstasks werden von den Back-End-Servern ausgelagert, sodass sie alle CPU-Zyklen für die Verarbeitung des Anwendungsdatenverkehrs verwenden können. 
 
-Ein SSL-Zertifikat ist erforderlich, damit von der Lastausgleichsfunktion SSL-Auslagerungstasks durchgeführt werden können. Sie können ein bereits vorhandenes SSL-Zertifikat verwenden oder ein neues kaufen und dieses über den [IBM Cloud-Zertifikatsspeicher](https://control.softlayer.com/security/sslcerts) verwalten. 
+Ein SSL-Zertifikat ist erforderlich, damit von der Lastausgleichsfunktion SSL-Auslagerungstasks durchgeführt werden können. Sie können ein bereits vorhandenes SSL-Zertifikat verwenden oder ein neues kaufen und dieses über den [IBM© Cloud-Zertifikatsspeicher ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/security/sslcerts){:new_window} verwalten. 
 
-# SSL-Cipher-Suites
+## SSL-Cipher-Suites
 Von der Lastausgleichsfunktion wird TLS 1.2 mit SSL-Auslagerung unterstützt.
 
 Von der Lastausgleichsfunktion werden folgende SSL-Verschlüsselungen unterstützt:
@@ -36,4 +37,4 @@ Von der Lastausgleichsfunktion werden folgende SSL-Verschlüsselungen unterstüt
 
 Wenn für die Lastausgleichsfunktion mindestens ein HTTPS-Front-End-Anwendungsport (Protokoll) konfiguriert ist, sind standardmäßig alle oben vordefinierten SSL-Verschlüsselungen für die Lastausgleichsfunktion aktiviert. 
 
-**HINWEIS:** Sie können bei Bedarf auch andere SSL-Verschlüsselungen für die Lastausgleichsfunktion aktivieren. Weitere Informationen finden Sie unter [Bevorzugte Cipher-Suite für Ihre HTTPS-Anwendung auswählen](custom-ciphers.html). 
+**HINWEIS:** Sie können bei Bedarf auch andere SSL-Verschlüsselungen für die Lastausgleichsfunktion aktivieren. Weitere Informationen finden Sie unter [Bevorzugte Cipher-Suite für Ihre HTTPS-Anwendung auswählen](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application).

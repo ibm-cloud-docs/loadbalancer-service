@@ -16,11 +16,13 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Balanceamento de carga básico
-O serviço de balanceador de carga do IBM Cloud distribui tráfego entre múltiplas instâncias do servidor (bare metal e servidor virtual) que residem localmente, dentro do mesmo data center. 
+# Executando os fundamentos do IBM Cloud Load Balancer
+{: #performing-ibm-cloud-load-balancer-basics}
+
+O serviço balanceador de carga do IBM© Cloud distribui o tráfego entre múltiplas instâncias do servidor (bare metal e servidor virtual) que residem localmente, no mesmo datacenter. 
 
 ## Balanceador de carga público 
-Um nome completo do domínio publicamente acessível é designado à instância do serviço do balanceador de carga. Deve-se usar esse nome de domínio para acessar seus aplicativos hospedados atrás do serviço de balanceador de carga. Esse nome de domínio pode ser registrado com um ou mais endereços IP públicos. Os endereços IP públicos e o número de endereços IP públicos podem mudar ao longo do tempo com base nas atividades de manutenção e ajuste de escala, que são transparentes para os usuários finais. As instâncias de cálculo de backend que hospedam seu aplicativo devem estar em uma rede privada do IBM Cloud. 
+Um nome completo do domínio publicamente acessível é designado para sua instância de serviço do balanceador de carga. Deve-se usar esse nome de domínio para acessar seus aplicativos hospedados atrás do serviço de balanceador de carga. Esse nome de domínio pode ser registrado com um ou mais endereços IP públicos. Os endereços IP públicos e o número de endereços IP públicos podem mudar ao longo do tempo com base nas atividades de manutenção e ajuste de escala, que são transparentes para os usuários finais. As instâncias de cálculo de backend que hospedam seu aplicativo devem estar em uma rede privada do IBM Cloud. 
 
 Como boa prática, recomenda-se provisionar os servidores de backend como 'somente privado’, a menos que requeiram conectividade pública direta. Essa prática ajuda a alcançar melhor segurança, além de preservar o endereço IP público. Os aplicativos hospedados nesses servidores de backend continuam acessíveis na rede pública usando o balanceador de carga.
 {:note}  
@@ -43,7 +45,7 @@ As instâncias de cálculo de backend que hospedam seu aplicativo também devem 
 
 Por outro lado, as portas de back-end são conhecidas apenas internamente. Essas portas de back-end podem ou não ser as mesmas que as portas de front-end. Como exemplo, o balanceador de carga pode ser configurado para receber o tráfego web/HTTP recebido na porta de front-end 80, enquanto os servidores de back-end estão atendendo na porta customizada 81. 
 
-As portas/protocolos de front-end suportados são HTTP, HTTPS e TCP. As portas/protocolos de back-end suportados são HTTP e TCP. O tráfego HTTPS recebido deve ser finalizado no balanceador de carga para permitir a comunicação HTTP de texto sem formatação com o servidor de backend. 
+As portas/protocolos de front-end suportados são HTTP, HTTPS e TCP. As portas/os protocolos de back-end suportados também são HTTP, HTTPS e TCP. O tráfego HTTPS recebido deve ser finalizado no balanceador de carga para permitir a comunicação HTTP de texto sem formatação com o servidor de backend. Se o protocolo de back-end for HTTPS, o tráfego será criptografado entre o balanceador de carga e os servidores de back-end.
 
 ### Considerações
 

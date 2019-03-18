@@ -15,9 +15,11 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Load Balancer VLAN 生成故障诊断
+{: #load-balancer-vlan-spanning-troubleshooting}
+
 本主题提供有关 Load Balancer 和连接到 Load Balancer 的计算实例位于不同子网中时，可能会遇到的常见问题的信息。必须启用 VLAN 生成，Load Balancer 才能与位于不同子网中的计算实例进行通信并向其转发请求。
 
-1. 登录到[客户门户网站](https://control.softlayer.com)，浏览至**网络 > IP 管理**，然后单击 **VLAN**。
+1. 登录到[客户门户网站 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com){:new_window}，导航至**网络 > IP 管理**，然后单击 **VLAN**。
 
 2. 将 **VLAN 生成**切换为**开启**。
 

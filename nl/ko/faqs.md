@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# FAQ
+# IBM Cloud Load Balancer의 FAQ
+{: #faqs-for-ibm-cloud-load-balancer}
 
-이 절에는 IBM Cloud Load Balancer Service와 관련하여 일부 자주 묻는 질문에 대한 답변이 포함되어 있습니다.
+이 절에는 IBM© Cloud Load Balancer Service와 관련하여 일부 자주 묻는 질문에 대한 답변이 포함되어 있습니다.
 
 ## {{site.data.keyword.BluSoftlayer_notm}}에서 사용 가능한 로드 밸런싱 옵션은 몇 가지입니까?
 {:faq}
 
-IBM의 Load Balancers 오퍼링에 대한 자세한 비교를 보려면 [Load Balancers 탐색](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers)을 참조하십시오.
+IBM의 Load Balancers 오퍼링에 대한 자세한 비교를 보려면 [Load Balancers 탐색](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)을 참조하십시오.
 
 ## 내 로드 밸런서에 대해 다른 DNS 이름을 사용할 수 있습니까?
 {:faq}
@@ -44,7 +45,7 @@ IBM의 Load Balancers 오퍼링에 대한 자세한 비교를 보려면 [Load Ba
 ## 내 백엔드 컴퓨팅 인스턴스가 로드 밸런서의 서브넷과 다른 서브넷에 있을 수 있습니까?
 {:faq}
 
-예, 로드 밸런서 및 로드 밸런서에 연결된 컴퓨팅 인스턴스는 다른 서브넷에 있을 수 있지만 로드 밸런서가 컴퓨팅 인스턴스와 통신하고 컴퓨팅 인스턴스에 요청을 전달하려면 **VLAN Spanning**이 사용으로 설정되어야 합니다. 자세한 정보는 [VLAN Spanning 문제점 해결](troubleshooting-vlan-spanning.html)을 참조하십시오.
+예, 로드 밸런서 및 로드 밸런서에 연결된 컴퓨팅 인스턴스는 다른 서브넷에 있을 수 있지만 로드 밸런서가 컴퓨팅 인스턴스와 통신하고 컴퓨팅 인스턴스에 요청을 전달하려면 **VLAN Spanning**이 사용으로 설정되어야 합니다. 자세한 정보는 [VLAN Spanning 문제점 해결](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting)을 참조하십시오.
 
 ## 여러 상태 검사 매개변수에 대한 기본 설정 및 허용된 값은 무엇입니까?
 {:faq}
@@ -60,7 +61,7 @@ IBM의 Load Balancers 오퍼링에 대한 자세한 비교를 보려면 [Load Ba
 ## 이 서비스를 사용하여 원격 데이터 센터에 상주하는 컴퓨팅 인스턴스를 사용할 수 있습니까?
 {:faq}
 
-로드 밸런서 서비스 및 컴퓨팅 인스턴스를 동일한 데이터 센터 내에 로컬로 상주시키도록 권장합니다. 로드 밸런서 서비스의 그래픽 인스턴스(GUI)는 기타 원격 데이터 센터의 컴퓨팅 인스턴스를 표시하지 않습니다. 그러나 GUI에는 동일한 도시 내의 기타 데이터 센터(예: DALxx와 같이 이름이 첫 세 문자를 공유하는 데이터 센터)의 컴퓨팅 인스턴스가 포함됩니다. API 인터페이스를 사용하여 원격 데이터 센터에서 컴퓨팅 인스턴스를 추가할 수 있습니다. 
+로드 밸런서 서비스 및 컴퓨팅 인스턴스를 동일한 데이터 센터 내에 로컬로 상주시키도록 권장합니다. 로드 밸런서 서비스의 그래픽 인스턴스(GUI)는 기타 원격 데이터 센터의 컴퓨팅 인스턴스를 표시하지 않습니다. 그러나 GUI에는 동일한 도시 내의 기타 데이터 센터(예: DALxx와 같이 이름이 첫 세 문자를 공유하는 데이터 센터)의 컴퓨팅 인스턴스가 포함됩니다. API 인터페이스를 사용하여 원격 데이터 센터에서 컴퓨팅 인스턴스를 추가할 수 있습니다.
 
 ## SSL 오프로드를 사용하여 지원되는 TLS 버전은 무엇입니까?
 {:faq}
@@ -110,12 +111,12 @@ TCP 포트 56501은 관리에 사용됩니다. 애플리케이션의 포트는 �
 ## 내 사설 VLAN에 배치된 방화벽이 있는 경우 방화벽이 내 로드 밸런서 서비스와 함께 작동하는 데 필요한 구성은 무엇입니까?
 {:faq}
 
-방화벽을 통한 IP 주소 허용에 대한 정보는 [IBM Cloud IP 범위](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) 주제를 참조하십시오.
+방화벽을 통한 IP 주소 허용에 대한 정보는 [IBM Cloud IP 범위](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) 주제를 참조하십시오.
 
 ## UI에서 내 계층 7 구성을 볼 수 없는 이유는 무엇입니까?
 {:faq}
 
-현재 계층 7 지원은 공용 API를 통해서만 사용 가능하지만 곧 UI에서 이 기능을 사용할 수 있습니다. 자세한 정보는 [API 문서](apis.html)의 계층 7 섹션을 참조하십시오.
+현재 계층 7 지원은 공용 API를 통해서만 사용 가능하지만 곧 UI에서 이 기능을 사용할 수 있습니다. 자세한 정보는 [API 문서](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference)의 계층 7 섹션을 참조하십시오.
 
 ## 지원 티켓을 제출하는 데 필요한 정보는 무엇입니까?
 {:faq}

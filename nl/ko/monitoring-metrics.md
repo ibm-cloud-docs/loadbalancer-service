@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 모니터링 메트릭
+# IBM Cloud Load Balancer로 메트릭 모니터링
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 로드 밸런서는 다음의 메트릭을 모니터합니다. 
 
@@ -66,4 +67,4 @@ lastupdated: "2018-11-12"
 
 # 모니터링 메트릭 사용법
 
-모니터링 메트릭을 검색하려면 SoftLayer 계정을 IBM Cloud 계정과 연결해야 합니다. 자세한 정보는 [이 주제 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/account/softlayerlink.html#link_user_account)를 참조하십시오.
+모니터링 메트릭을 검색하려면 SoftLayer 계정을 IBM© Cloud 계정과 연결해야 합니다. 자세한 정보는 [이 주제](/docs/account?topic=account-unifyingaccounts#link_accounts)를 참조하십시오.

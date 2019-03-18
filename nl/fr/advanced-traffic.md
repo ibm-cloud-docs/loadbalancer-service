@@ -16,8 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Gestion de trafic avancée
-Cette section présente les différentes fonctionnalités de gestion de trafic avancée disponibles dans le serervice Load Balancer.
+# Gestion avancée du trafic avec l'équilibreur de charge IBM Cloud Load Balancer
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
+Cette section présente les différentes fonctionnalités de gestion de trafic avancée disponibles dans le service Load Balancer.
 
 ## Nombre max. de connexions
 
@@ -27,10 +29,10 @@ Utilisez la configuration "Nombre max. de connexions" pour limiter le nombre max
 
 L'équilibreur de charge prend en charge la persistance de session sur un port VIP donné en fonction de l'`IP source` de la connexion. Par exemple, si la persistance de session est activée sur le port 80 (HTTP), toutes les tentatives ultérieures de connexion HTTP provenant du même client (même IP source) sont persistantes sur le même serveur de back end. Cette fonction est disponible pour les trois protocoles pris en charge (HTTP, HTTPS et TCP).
 
-L'équilibreur de charge supporte jusqu'à 10 000 entrées de persistance client. Le délai d'expiration de ces entrées est 10 minutes. Toutes les demandes provenant de ce même client à l'issue des 10 minutes sont transférées vers un autre serveur de back end. Si l'entrée de persistance de session n'est pas arrivée à expiration, mais que le port de back end n'est plus viable, un nouveau serveur est sélectionné pour le transfert des connexions client suivantes.  
+L'équilibreur de charge prend en charge jusqu'à 10 000 entrées de persistance client. Le délai d'expiration de ces entrées est 10 minutes. Toutes les demandes provenant de ce même client à l'issue des 10 minutes sont transférées vers un autre serveur de back end. Si l'entrée de persistance de session n'est pas arrivée à expiration, mais que le port de back end n'est plus viable, un nouveau serveur est sélectionné pour le transfert des connexions client suivantes.  
 
 ## HTTP Keep Alive
-L'équilibreur de charge supporte `HTTP keep alive` à condition qu'il soit activé sur le client et les serveurs de back end. L'équilibreur de charge tente de réutiliser les connexions HTTP afin d'en accroître l'efficacité et de réduire le temps d'attente.
+L'équilibreur de charge prend en charge `HTTP keep alive` à condition qu'il soit activé sur le client et les serveurs de back end. L'équilibreur de charge tente de réutiliser les connexions HTTP afin d'en accroître l'efficacité et de réduire le temps d'attente.
 
 ## Délais de connexion
 Les valeurs de délai suivantes sont utilisées par l'équilibreur de charge. Ces valeurs ne sont pas personnalisables pour le moment.

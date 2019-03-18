@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 其他資源
+# IBM Cloud Load Balancer 的其他資源
+{: #other-resources-for-ibm-cloud-load-balancer}
 
-這些資源由 IBM 以及我們的一些合作夥伴和客戶所建立。
+這些資源由 IBM© 以及我們的一些合作夥伴和客戶所建立。
 
 ## 部落格
 

@@ -16,7 +16,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Gestione del traffico avanzata
+# Gestione del traffico avanzata con IBM Cloud Load Balancer
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 Questa sezione descrive diverse funzioni di gestione del traffico disponibili con il servizio del programma di bilanciamento del carico.
 
 ## Numero massimo di connessioni

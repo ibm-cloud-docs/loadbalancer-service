@@ -13,7 +13,9 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Revisar y realizar el pedido
+# Revisión y realización de un pedido
+{: #review-and-place-your-order}
+
 Revise su **Resumen del pedido** y pulse **Crear** para realizar el pedido.
 
 <img src="images/review-order-lb.png" alt="dibujo" style="width: 300px;"/>
@@ -25,4 +27,4 @@ El sistema crea ahora una instancia de servicio para el usuario y le lleva a la 
 <img src="images/summary-online.png" alt="dibujo" style="width: 300px;"/>
 
 ## A continuación
-[Edite la configuración ](managing-lb.html) para supervisar el rendimiento del servicio.
+[Edite la configuración](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) para supervisar el rendimiento del servicio.

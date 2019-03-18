@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Autres ressources
+# Autres ressources pour l'équilibreur de charge IBM Cloud Load Balancer
+{: #other-resources-for-ibm-cloud-load-balancer}
 
-Ces ressources sont créées par IBM et certains de nos partenaires et clients
+Ces ressources sont créées par IBM© et certains de nos partenaires et clients
 
 ## Blogues
 

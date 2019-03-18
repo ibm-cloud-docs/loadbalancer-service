@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# メトリックのモニタリング
+# IBM Cloud Load Balancer でのメトリックのモニター
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 ロード・バランサーは以下のメトリックをモニターします。 
 
@@ -22,7 +23,8 @@ lastupdated: "2018-11-12"
 * アクティブ接続数
 * 接続率
 
-これらのメトリックは、**「モニタリング」**タブを選択すると表示されるグラフとして視覚化されており、`getListenerTimeSeriesData` API を使用して時系列データ・ポイントとしてプログラムで使用可能です。
+これらのメトリックは、**「モニタリング」**タブを選択すると表示されるグラフとして視覚化されており、
+`getListenerTimeSeriesData` API を使用して時系列データ・ポイントとしてプログラムで使用可能です。
 
 各データ・ポイントには UNIX エポック時のタイム・スタンプと、そのタイム・スタンプの時刻に終了する時間間隔のメトリック値が含まれています。 ユーザーは、プロトコルと、メトリックが報告される時間間隔を指定できます。 
 
@@ -65,4 +67,4 @@ lastupdated: "2018-11-12"
 
 # メトリック・モニタリングを使用可能にする方法
 
-モニタリング・メトリックを取得するには、SoftLayer アカウントを IBM Cloud アカウントとリンクする必要があります。詳しくは、[このトピック ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/account/softlayerlink.html#link_user_account) を参照してください。
+モニタリング・メトリックを取得するには、SoftLayer アカウントを IBM© Cloud アカウントとリンクする必要があります。 詳しくは、[このトピック](/docs/account?topic=account-unifyingaccounts#link_accounts)を参照してください。

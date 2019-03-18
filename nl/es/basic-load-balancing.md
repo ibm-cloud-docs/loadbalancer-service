@@ -16,8 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Equilibrio de carga básica
-El servicio del equilibrador de carga de IBM Cloud distribuye el tráfico entre varias instancias de servidor (desde el servidor nativo y el servidor virtual) residentes en el sistema local, dentro del mismo centro de datos. 
+# Tareas básicas de IBM Cloud Load Balancer
+{: #performing-ibm-cloud-load-balancer-basics}
+
+El servicio del equilibrador de carga de IBM© Cloud distribuye el tráfico entre varias instancias de servidor (desde el servidor nativo y el servidor virtual) residentes en el sistema local, dentro del mismo centro de datos. 
 
 ## Equilibrador de carga pública 
 Se asigna un nombre de dominio totalmente calificado y de acceso público a la instancia de servicio del equilibrador de carga. Debe utilizar este nombre de dominio para acceder a las aplicaciones alojadas detrás del servicio del equilibrador de carga. Este nombre de dominio se puede registrar con una o más direcciones IP públicas. Las direcciones IP públicas y el número de direcciones IP públicas puede cambiar con el tiempo, en función de las actividades de mantenimiento y escalado, que son transparentes para los usuarios finales. Las instancias de cálculo de fondo que alojan la aplicación deben estar en una red privada de IBM Cloud. 
@@ -42,7 +44,7 @@ Puede definir hasta diez puertos (protocolos) de aplicación frontal y asignarlo
 
 Por otra parte, los puertos de fondo solo se conocen internamente. Estos puertos de fondo pueden o no ser los mismos que los puertos frontales. Por ejemplo, el equilibrador de carga se puede configurar para recibir tráfico web/HTTP entrante en el puerto 80 frontal mientras los servidores de fondo escuchan en el puerto personalizado 81. 
 
-Los protocolos/puertos frontales soportados son HTTP, HTTPS y TCP. Los protocolos/puertos de fondo soportados son HTTP y TCP. El tráfico HTTPS entrante debe finalizar en equilibrador de carga para permitir la comunicación HTTP de texto sin formato con el servidor de fondo. 
+Los protocolos/puertos frontales soportados son HTTP, HTTPS y TCP. Los protocolos/puertos de fondo admitidos son HTTP, HTTPS y TCP. El tráfico HTTPS entrante debe finalizar en equilibrador de carga para permitir la comunicación HTTP de texto sin formato con el servidor de fondo. Si el protocolo de fondo es HTTPS, se cifrará el tráfico entre el equilibrador de carga y los servidores de fondo.
 
 ### Aspectos importantes
 

@@ -15,14 +15,16 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Resolución de problemas de suministro de equilibrador de carga
-En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando cree una nueva instancia de IBM Cloud Load Balancer.
+{: #load-balancer-provisioning-troubleshooting}
+
+En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando cree una nueva instancia de IBM© Cloud Load Balancer.
 
 ## Direcciones IP insuficientes en la subred
 IBM Cloud Load Balancer necesita al menos dos direcciones IP libres en su subred privada. Además, si el equilibrador de carga es un equilibrador de carga público y no se utiliza la opción **Agrupación de sistemas IBM**, también se necesitan al menos dos direcciones IP libres de su subred pública. 
 
 Siga los pasos que se indican a continuación para comprobar si hay IP libres en una subred.
 
-1. Vaya al [Portal de clientes](https://control.softlayer.com) y localice la sección de subredes en **Red > Gestión de IP > Subredes**.
+1. Vaya al [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com){:new_window} y vaya a la sección de subredes seleccionado **Red > Gestión de IP > Subredes**.
 
 2. Pulse en la subred en la que desea comprobar si hay IP libres.
 
@@ -31,7 +33,7 @@ Siga los pasos que se indican a continuación para comprobar si hay IP libres en
 3. La página de detalles de la subred seleccionada muestra el estado de todas las IP de dicha subred.
 
 ## Problemas con cortafuegos en las VLAN públicas y privadas
-Consulte el tema [Rangos de IP de IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) para obtener información sobre cómo permitir rangos de IP a través del cortafuegos.
+Consulte el tema [Rangos de IP de IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) para obtener información sobre cómo permitir rangos de IP a través del cortafuegos.
  
 ## Visualización de los mensajes de error del equilibrador de carga
 Para ver los mensajes de error del equilibrador de carga, siga el siguiente procedimiento:

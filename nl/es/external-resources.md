@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Otros recursos
+# Otros recursos para IBM Cloud Load Balancer
+{: #other-resources-for-ibm-cloud-load-balancer}
 
-Estos recursos han sido creados por IBM y por algunos de nuestros socios y clientes.
+Estos recursos han sido creados por IBM© y por algunos de nuestros socios y clientes.
 
 ## Blogs
 

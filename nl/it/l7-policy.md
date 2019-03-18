@@ -14,20 +14,21 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Politica L7
+{: #layer-7-policy}
 
 Una politica L7 viene utilizzata per classificare il traffico mettendo in corrispondenza le informazioni L7 con le regole L7 ed eseguendo quindi azioni specifiche nel caso in cui tali regole vengano soddisfatte. 
 
 * Una politica viene applicata alla porta dell'applicazione di frontend (protocollo). 
-* Allo stesso protocollo possono essere applicate più politiche. 
+* Allo stesso protocollo possono essere applicate più politiche.
 
-Poiché più politiche possono essere applicate ad un protocollo, ad ogni politica è associata una priorità.  
+Poiché più politiche possono essere applicate ad un protocollo, ad ogni politica è associata una priorità. 
 
-* Vengono valutate prima le politiche con la priorità impostata più bassa.  
-* Se le regole associate alla politica non soddisfano il traffico, viene valutata la politica più bassa successiva nell'elenco di priorità.  
+* Vengono valutate prima le politiche con la priorità impostata più bassa. 
+* Se le regole associate alla politica non soddisfano il traffico, viene valutata la politica più bassa successiva nell'elenco di priorità. 
 
-Se il traffico non soddisfa nessuna delle regole della politica, viene reindirizzato al pool predefinito, ossia il pool che è stato configurato quando è stato distribuito il programma di bilanciamento del carico di base. 
+Se il traffico non soddisfa nessuna delle regole della politica, viene reindirizzato al pool predefinito, ossia il pool che è stato configurato quando è stato distribuito il programma di bilanciamento del carico di base.
 
-Ciascuna politica viene associata a un'azione che viene eseguita quando tutte le regole nella politica vengono soddisfatte dal traffico. 
+Ciascuna politica viene associata a un'azione che viene eseguita quando tutte le regole nella politica vengono soddisfatte dal traffico.
 
 Le azioni possono essere:
 
@@ -35,9 +36,9 @@ Le azioni possono essere:
 - Reindirizzamento a un URL (redirect to url)
 - Reindirizzamento a un pool (redirect to pool) 
 
-Le politiche impostate su `reject` vengono valutate per prime, indipendentemente dalla priorità. 
+Le politiche impostate su `reject` vengono valutate per prime, indipendentemente dalla priorità.
 
-In seguito, vengono valutate le politiche impostate su `redirect to url`. 
+In seguito, vengono valutate le politiche impostate su `redirect to url`.
 
 Infine, vengono valutate le politiche impostate su `redirect to pool`.
 
@@ -47,20 +48,20 @@ All'interno di ciascuna categoria di azione, le politiche vengono valutate in or
 
 Proprietà  | Descrizione
 ------------- | -------------
-Nome | Il nome della politica. Ciascuna politica deve avere un nome univoco. 
+Nome | Il nome della politica. Ciascuna politica deve avere un nome univoco.
 Azione | L'azione da eseguire quando vengono soddisfatte le regole. Le azioni sono `REJECT`, `REDIRECT_URL` e `REDIRECT_POOL`. Una politica la cui azione è impostata su `REJECT` viene sempre valutata per prima, indipendentemente dalla sua priorità. Le politiche le cui azioni sono impostate su `REDIRECT_URL` sono le successive ad essere valutate, seguite dalle politiche le cui azioni sono impostate su `REDIRECT_POOL`.
 Priorità | Le politiche vengono valutate in base all'ordine crescente di priorità. 
 URL di reindirizzamento | L'URL a cui verrà reindirizzato il traffico se l'azione è impostata su `REDIRECT_URL`.
 Pool L7 di reindirizzamento | Il pool dei server a cui verrà inviato il traffico se l'azione è impostata su `REDIRECT_POOL`.
-Protocollo | La porta dell'applicazione di frontend a cui viene applicata la politica. 
+Protocollo | La porta dell'applicazione di frontend a cui viene applicata la politica.
 
-# Regola L7
-Le regole L7 definiscono una parte del traffico in entrata che deve soddisfare valori specifici. 
+## Regola L7
+Le regole L7 definiscono una parte del traffico in entrata che deve soddisfare valori specifici.
 
 * Se il traffico in entrata soddisfa il valore specificato di una regola, la regola viene valutata come `true`.
-* Le regole L7 sono sempre associate a una politica L7. Più regole L7 possono essere associate alla stessa politica L7. 
+* Le regole L7 sono sempre associate a una politica L7. Più regole L7 possono essere associate alla stessa politica L7.
 * Se più regole sono associate a una politica, ciascuna regola verrà valutata come `true` o `false`. 
-* Se tutte le regole associate a una politica sono valutate come `true`, l'azione della politica verrà applicata alla richiesta. In caso contrario, il programma di bilanciamento del carico valuta la politica successiva. 
+* Se tutte le regole associate a una politica sono valutate come `true`, l'azione della politica verrà applicata alla richiesta. In caso contrario, il programma di bilanciamento del carico valuta la politica successiva.
 
 Le regole hanno tipi che possono essere: 
 
@@ -72,7 +73,7 @@ Le regole hanno tipi che possono essere:
 
 Questi indicano la parte del traffico L7 che deve soddisfare la regola.
 
-Tipo      |  Campo da estrarre e valutare       
+Tipo      |  Campo da estrarre e valutare
 ----------| -----------------------
 `HOST_NAME` | La parte nome host dell'URL (ad esempio, `api.my_company.com`)
 `FILE_TYPE` | La fine dell'URL che rappresenta il tipo di file (ad esempio, `jpg`)
@@ -89,7 +90,7 @@ Le regole possono avere i seguenti tipi di confronto:
 * `CONTAINS`
 * `EQUAL_TO`
 
-Tipo di confronto|  Tipo di valutazione
+Tipo di confronto |  Tipo di valutazione
 ----------------|---------------------
 `REGEX`           |  Mette in corrispondenza il campo estratto (ad esempio, `hostname`) con l'espressione regolare fornita
 `STARTS_WITH`     |  Verifica se il campo estratto inizia con la stringa fornita
@@ -104,8 +105,8 @@ Tipo di confronto|  Tipo di valutazione
 Proprietà  | Descrizione
 ------------- | -------------
 Tipo | Specifica il tipo di regola. I tipi di regole possono essere `HOST_NAME` (il nome dell'host), `FILE_TYPE` (il tipo del file), `HEADER` (l'intestazione), `COOKIE` (il cookie) o `PATH` (il percorso).
-Tipo di confronto| I tipi di confronto vengono utilizzati insieme al tipo di regola, alla chiave e al valore per definire una regola e classificare il traffico. I tipi di confronto possono essere: `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS` e `EQUAL_TO`.
+Tipo di confronto | I tipi di confronto vengono utilizzati insieme al tipo di regola, alla chiave e al valore per definire una regola e classificare il traffico. I tipi di confronto possono essere: `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS` e `EQUAL_TO`.
 Chiave | La chiave di descrizione per i tipi di regola `HEADER` e `COOKIE`. 
-Valore |  Per i tipi di regola `HEADER` e `COOKIE`, il valore viene confrontato con la chiave. 
-Invert | Se imposti il valore su 1, il valore di questo confronto della regola L7 viene impostato su `true` quando la regola specificata non viene soddisfatta. 
-ID politica L7 | L'identificativo univoco della politica a cui vengono collegate le regole. 
+Valore |  Per i tipi di regola `HEADER` e `COOKIE`, il valore viene confrontato con la chiave.
+Invert | Se imposti il valore su 1, il valore di questo confronto della regola L7 viene impostato su `true` quando la regola specificata non viene soddisfatta.
+ID politica L7 | L'identificativo univoco della politica a cui vengono collegate le regole.

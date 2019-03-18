@@ -16,9 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# 关于
+# 关于 IBM Cloud Load Balancer
+{: #about-ibm-cloud-load-balancer}
 
-IBM Cloud Load Balancer 服务通过在多个应用程序服务器实例之间分配流量，仅将流量转发给运行状况良好的实例，来帮助客户改进其业务关键应用程序的可用性。
+IBM© Cloud Load Balancer 服务通过在多个应用程序服务器实例之间分配流量，以及仅将流量转发给运行状况良好的实例，从而帮助客户提高其业务关键应用程序的可用性。
 
 ## 功能概述
 IBM Cloud Load Balancer 服务提供以下功能：
@@ -32,21 +33,23 @@ IBM Cloud Load Balancer 服务提供以下功能：
 	* 专用子网上的后端服务器实例
 * 基本负载均衡
 	* 基于层 4 应用程序端口信息进行流量分配
-	* 支持基于 HTTP、HTTPS 和 TCP 的应用程序 
+	* 支持基于 HTTP、HTTPS 和 TCP 的应用程序
 	* 各种负载均衡方法，如循环法 (RR)、加权循环法和最少连接数
 	* 在位于数据中心本地的虚拟服务器和裸机计算实例之间进行负载均衡
 * 服务器运行状况检查
-	* 定期监视服务器运行状况，以确保流量仅转发给运行状况良好的服务器 
-	* 对 TCP 端口进行层 4 运行状况检查，对 HTTP 端口进行层 7 运行状况检查 
+	* 定期监视服务器运行状况，以确保流量仅转发给运行状况良好的服务器
+	* 对 TCP 端口进行层 4 运行状况检查，对 HTTP 端口进行层 7 运行状况检查
 * SSL 卸载
 	* 使用与后端服务器的明文 HTTP 通信，终止入局 SSL (HTTPS) 流量
 * 高级流量管理
 	* 客户机吸引力（会话持久性）
 	* 每个虚拟端口的最大连接数
 * 使用直观图形界面和 API 轻松进行管理
-* 内置可靠性 
-* 按使用量定价 
+* 内置可靠性
+* 按使用量定价
 * 监视
-    * 监视用户指定的时间间隔期间 HTTP、HTTPS 和 TCP 协议的吞吐量、活动连接数和连接速率度量值。请参阅[监视度量值](monitoring-metrics.html)获取更多详细信息。
+    * 监视用户指定的时间间隔期间 HTTP、HTTPS 和 TCP 协议的吞吐量、活动连接数和连接速率度量值。请参阅[监视度量值](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer)获取更多详细信息。
 * 第 7 层支持
-    * HTTP/HTTPS 流量将路由到基于 HTTP 头的不同后端服务，并使用策略和规则来完成。规则基于 HTTP 头字段，用于对流量进行分类。流量与所有规则匹配时，将执行策略指定的操作。    
+    * HTTP/HTTPS 流量将路由到基于 HTTP 头的不同后端服务，并使用策略和规则来完成。规则基于 HTTP 头字段，用于对流量进行分类。流量与所有规则匹配时，将执行策略指定的操作。
+* 多专区区域 (MZR) 支持
+    * 负载均衡器节点在 MZR 的不同数据中心内实例化。请参阅[多专区区域概述](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview)以获取更多信息。

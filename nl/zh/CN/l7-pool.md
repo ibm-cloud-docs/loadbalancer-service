@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 第 7 层池
+{: #layer-7-pool}
+
 第 7 层 (L7) 池是用于处理入局请求的服务器（成员）的逻辑分组。
 
 第 7 层负载均衡功能可以根据策略和规则将入局流量定向到不同后端池。通过将多个 L7 池与负载均衡器相关联来支持此功能。第 7 层池与第 7 层策略（其操作是`重定向到池`）配合使用。
@@ -22,7 +24,7 @@ L7 池仅支持 HTTP 作为后端协议。
 
 ## 会话持久性
 可以为每个第 7 层池配置会话持久性。有关更多详细信息，请参阅  
-[高级流量](advanced-traffic.html)部分。
+[高级流量](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer)部分。
 
 ## 第 7 层成员
 

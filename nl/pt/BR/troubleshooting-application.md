@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Resolução de problemas do servidor de aplicativos
+{: #application-server-troubleshooting}
+
 Este tópico fornece informações sobre problemas comuns que podem ser encontrados ao usar o balanceador de carga.
 
 ## O servidor de back-end está inoperante

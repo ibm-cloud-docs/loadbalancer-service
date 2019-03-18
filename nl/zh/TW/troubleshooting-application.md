@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Application Server 疑難排解
+{: #application-server-troubleshooting}
+
 本主題提供您在使用負載平衡器時可能遇到的一般問題相關資訊。
 
 ## 後端伺服器性能不佳

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Métriques de surveillance
+# Surveillance des métriques avec l'équilibreur de charge IBM Cloud Load Balancer
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 L'équilibreur de charge surveille les métriques suivantes : 
 
@@ -65,4 +66,4 @@ Le tableau ci-dessous indique la façon dont les points de données sont dériv�
 
 # Procédure d'activation des métriques de surveillance
 
-Pour extraire les métriques de surveillance, vous devez lier votre compte SoftLayer à votre compte IBM Cloud. Pour plus d'informations, voir [cette rubrique ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/account/softlayerlink.html#link_user_account) for more information.
+Pour extraire les métriques de surveillance, vous devez lier votre compte SoftLayer à votre compte IBM© Cloud. Pour plus d'informations, voir [cette rubrique](/docs/account?topic=account-unifyingaccounts#link_accounts).

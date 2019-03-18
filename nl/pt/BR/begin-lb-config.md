@@ -17,7 +17,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Configurar parâmetros do IBM Cloud Load Balancer
+# Configurando parâmetros do IBM Cloud Load Balancer
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 Depois de criar um balanceador de carga, é possível configurá-lo para balanceamento de carga elástico. Para fazer isso:
 
 1. Nomeie seu balanceador de carga e, opcionalmente, inclua uma descrição.
@@ -32,14 +34,18 @@ Depois de criar um balanceador de carga, é possível configurá-lo para balance
 
 5. Também é possível configurar o **Limite máximo de conexão** em relação ao aplicativo.
 
-6. Clique em **Incluir protocolo** para especificar portas e protocolos adicionais que seu aplicativo possa estar atendendo. Certifique-se de que todas as portas front-end sejam exclusivas. É possível escolher HTTP, HTTPS ou TCP como seu protocolo de front-end.  
+6. Clique em **Incluir protocolo** para especificar portas e protocolos adicionais que seu aplicativo possa estar atendendo. Certifique-se de que todas as portas front-end sejam exclusivas. É possível escolher HTTP, HTTPS ou TCP como seu protocolo de front-end.
 
 	<img src="images/lb-add-protocol.png" alt="drawing" style="width: 300px;"/>
 
-	É possível definir um máximo de duas portas no momento da configuração inicial. Portas adicionais poderão ser incluídas posteriormente após a criação da instância de serviço. Consulte [Limitações no número de portas](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) para obter mais informações sobre o número máximo de portas permitidas.
+	Um máximo de duas portas pode ser definido no momento da configuração inicial. Portas adicionais poderão ser incluídas posteriormente após a criação da instância de serviço. Consulte [Limitações no número de portas](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) para obter mais informações sobre o número máximo de portas permitidas.
 {:note:}
 
-7. O IBM Cloud Load Balancer finaliza conexões HTTPS (HTTP sobre SSL) recebidas, se comunica em HTTP de texto sem formatação com os servidores de aplicativos back-end e transfere tarefas SSL com uso intensivo do processador por meio de seus servidores. Deve-se fazer upload de seu Certificado SSL. Selecione um de seus certificados disponíveis na lista suspensa.  
+7. O IBM© Cloud Load Balancer encerra as conexões HTTPS (HTTP sobre SSL) de entrada e
+pode se comunicar em HTTP de texto sem formatação com os servidores de aplicativos de back-end
+e transfere tarefas SSL com uso intensivo de processador dos servidores se o protocolo de back-end
+for selecionado como HTTP. Se o protocolo de back-end selecionado for HTTPS, o tráfego será criptografado
+entre o balanceador de carga e os servidores de back-end. Deve-se fazer upload de seu Certificado SSL. Selecione um de seus certificados disponíveis na lista suspensa.  
 
 	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
@@ -51,7 +57,8 @@ Depois de criar um balanceador de carga, é possível configurá-lo para balance
 
 	<img src="images/refresh-cert.png" alt="drawing" style="width: 300px;"/>
 
-	**NOTA**: nunca exclua nenhum certificado associado a listeners HTTPS, pois isso pode causar problemas com a funcionalidade.
+	**NOTA: nunca exclua nenhum certificado associado a listeners HTTPS, pois isso
+pode causar problemas com a funcionalidade.**
 
 8. Clique em **Avançar**.
 
@@ -70,4 +77,4 @@ O sistema pré-preenche uma configuração de verificação de funcionamento pad
 Clique em **Avançar** para ativar sua opção.
 
 ## O que vem a seguir
-[Identifique os recursos de seu aplicativo](identify-app-resources.html), como conjuntos de origem e mecanismos de verificação de funcionamento.
+[Identifique os recursos de seu aplicativo](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), como conjuntos de origem e mecanismos de verificação de funcionamento.

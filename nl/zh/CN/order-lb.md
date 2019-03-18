@@ -13,7 +13,9 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# 复查并下单
+# 复查并下订单
+{: #review-and-place-your-order}
+
 复查**订单摘要**，然后单击**创建**以下订单。
 
 <img src="images/review-order-lb.png" alt="图样" style="width: 300px;"/>
@@ -25,4 +27,4 @@ lastupdated: "2018-11-12"
 <img src="images/summary-online.png" alt="图样" style="width: 300px;"/>
 
 ## 接下来做什么
-[编辑配置](managing-lb.html)以监视服务性能。
+[编辑配置](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)以监视服务性能。

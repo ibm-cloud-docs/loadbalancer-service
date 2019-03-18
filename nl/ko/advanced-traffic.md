@@ -16,7 +16,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# 고급 트래픽 관리
+# IBM Cloud Load Balancer로 고급 트래픽 관리
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 이 절에서는 로드 밸런서 서비스를 통해 사용 가능한 여러 고급 트래픽 관리 기능에 대해 설명합니다.
 
 ## 최대 연결

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service/getting-started.html" path="infrastructure/loadbalancer-service"}
+{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
 IBM Cloud Load Balancer 服務
 
     {: .navgroup id="learn"}
@@ -11,6 +11,7 @@ IBM Cloud Load Balancer 服務
     explore-load-balancers.md
     pricing.md
     naas-overview.md
+    external-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -27,21 +28,22 @@ IBM Cloud Load Balancer 服務
 
     custom-ciphers.md
     health-checks.md
+    mzr.md
     ssl-offload.md
     advanced-traffic.md
     monitoring-metrics.md
+    backend-encryption.md
 
     {: .topicgroup}
     第 7 層支援
         l7-explained.md
         l7-policy.md
+        l7-rule.md
         l7-pool.md
-
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     apis.md
-    external-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

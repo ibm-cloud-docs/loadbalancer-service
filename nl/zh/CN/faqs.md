@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# 常见问题及解答
+# IBM Cloud Load Balancer 的常见问题
+{: #faqs-for-ibm-cloud-load-balancer}
 
-本节包含有关 IBM Cloud Load Balancer 服务的一些常见问题的解答。
+本节包含有关 IBM© Cloud Load Balancer 服务的一些常见问题的解答。
 
 ## {{site.data.keyword.BluSoftlayer_notm}} 中提供了多少负载均衡选项？
 {:faq}
 
-有关 IBM Load Balancer 产品的详细比较，请参阅[探索 Load Balancer](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers)。
+有关 IBM Load Balancer 产品的详细比较，请参阅[探索 Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)。
 
 ## 可以为 Load Balancer 使用不同的 DNS 名称吗？
 {:faq}
@@ -44,7 +45,7 @@ lastupdated: "2018-11-12"
 ## 后端计算实例位于的子网能否不同于 Load Balancer 的子网？
 {:faq}
 
-可以，Load Balancer 和连接到 Load Balancer 的计算实例可以位于不同的子网中，但需要启用 **VLAN 生成**，Load Balancer 才能与计算实例进行通信并向其转发请求。请参阅 [VLAN 生成故障诊断](troubleshooting-vlan-spanning.html)获取更多信息。
+可以，Load Balancer 和连接到 Load Balancer 的计算实例可以位于不同的子网中，但需要启用 **VLAN 生成**，Load Balancer 才能与计算实例进行通信并向其转发请求。请参阅 [VLAN 生成故障诊断](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting)以获取更多信息。
 
 ## 各种运行状况检查参数的缺省设置和允许值是什么？
 {:faq}
@@ -90,7 +91,7 @@ Cloud Load Balancer 服务支持具有 SSL 终止功能的 TLS 1.2。
 
 分配有非 SoftLayer 地址（如 VMware NSX 网络）的 VMWare 虚拟机不可直接添加为负载均衡器的后端服务器。但是，根据您的配置，也许能够配置具有 SoftLayer 专用地址的中介（如 NSX 网关）作为负载均衡器的后端服务器（实际服务器为连接到由 VMware NSX 管理的网络的 VM）。
 
-## 如果选择使用帐户下的公共 VLAN 来部署 Load Balancer，并且在公共 VLAN 上部署了防火墙，那么需要对防火墙执行哪些配置才能使用 Load Balancer 服务？
+## 如果选择使用帐户下的公用 VLAN 来部署 Load Balancer，并且在公用 VLAN 上部署了防火墙，那么需要对防火墙执行哪些配置才能使用 Load Balancer 服务？
 {:faq}
 
 TCP 端口 56501 用于管理。请确保防火墙未阻止此端口以及应用程序端口的流量，否则负载均衡器供应将会失败。
@@ -103,19 +104,19 @@ TCP 端口 56501 用于管理。请确保防火墙未阻止此端口以及应用
 ## Load Balancer IP 地址是固定的吗？
 {:faq}
 
-由于 Load Balancer 服务中内置的弹性，我们无法保证 Load Balancer 的 IP 地址保持不变。随着该服务向上或向下扩展，您将看到与实例的 FQDN 关联的可用 IP 发生变化。
+由于 Load Balancer 服务中内置的弹性，我们无法保证 Load Balancer 的 IP 地址保持不变。随着该服务扩展或缩减，您将看到与实例的 FQDN 关联的可用 IP 发生变化。
 
 **注：**您应该使用 FQDN 而不是高速缓存的 IP 地址。
 
 ## 如果在专用 VLAN 上部署了防火墙，那么需要对防火墙执行哪些配置才能使用 Load Balancer 服务？
 {:faq}
 
-请参阅 [IBM Cloud IP 范围](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges)主题，获取有关允许通过防火墙的 IP 范围的信息。
+请参阅 [IBM Cloud IP 范围](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges)主题，获取有关允许通过防火墙的 IP 范围的信息。
 
 ## 为什么在 UI 中看不到第 7 层配置？
 {:faq}
 
-目前，第 7 层支持仅通过公共 API 可用，但此功能将很快在 UI 中提供。请参阅 [API 文档](apis.html)的“第 7 层”部分获取更多信息。
+目前，第 7 层支持仅通过公共 API 可用，但此功能将很快在 UI 中提供。请参阅 [API 文档](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference)的“第 7 层”部分获取更多信息。
 
 ## 我需要哪些信息来提交支持凭单？
 {:faq}

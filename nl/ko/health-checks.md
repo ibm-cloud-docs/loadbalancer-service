@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 상태 검사
+# IBM Cloud Load Balancer로 상태 검사 수행
+{: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 상태 검사 정의는 각 백엔드 애플리케이션에 필수입니다. 상태 검사 구성의 포트 및 프로토콜은 정의된 백엔드 포트 및 프로토콜과 일치해야 합니다. 그렇지 않으면 구성이 거부됩니다. 
 

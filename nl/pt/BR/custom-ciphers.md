@@ -14,15 +14,18 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Escolha um conjunto de cifras preferencial para seu aplicativo HTTPS
-Algoritmos de cifras que ajudam o IBM Cloud Load Balancer a formar conexões seguras com seus clientes HTTP.
+# Escolhendo um conjunto de cifras preferencial para o seu aplicativo HTTPS
+{: #choosing-a-preferred-cipher-suite-for-your-https-application}
+
+Algoritmos de cifra que ajudam o IBM© Cloud Load Balancer formam conexões seguras com
+seus clientes HTTP.
 
 A IBM oferece um conjunto de cifras aprovadas das quais escolher, para que você assegure a comunicação entre o balanceador de carga e seus clientes.
 
 É possível escolher um conjunto de cifras preferencial para um balanceador de carga existente ou designá-lo ao criar um novo. 
 
 ## Escolhendo cifras para um balanceador de carga existente
-Para escolher uma configuração de conjunto de cifras para um balanceador de carga existente, navegue para a tela do balanceador de carga no portal do cliente e clique na guia Protocolos. Se HTTPS não estiver selecionado como seu protocolo de front-end, você não verá a lista de conjuntos de cifras.
+Para escolher uma configuração de conjunto de cifras para um balanceador de carga existente, navegue para a tela do balanceador de carga no portal do cliente e clique na guia Protocolos.  Se HTTPS não estiver selecionado como seu protocolo de front-end, você não verá a lista de conjuntos de cifras.
 
   <img src="images/DetailsFlow-HTTPSUnselected.png" alt="drawing" style="width: 700px;"/>
   
@@ -32,13 +35,13 @@ Selecione HTTPS para o protocolo de front-end e os Conjuntos de cifras disponív
   
 A tabela Cifra é editável e permite selecionar os conjuntos de cifras desejados para o handshake SSL. Clique em **Editar**, selecione as Cifras que deseja implementar e clique em **Salvar**.
   
-**NOTA:** para obter uma lista de cifras suportadas, consulte [Transferência de SSL](ssl-offload.html).
+**NOTA:** para obter uma lista de cifras suportadas, consulte [Transferência de SSL](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
 
 ## Escolhendo cifras ao criar um novo balanceador de carga
 
 Para escolher o conjunto de cifras ao criar um novo balanceador de carga:
 
-1. Siga as instruções para [criar um balanceador de carga](create-load-balancer.html).
+1. Siga as instruções para [criar um balanceador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer).
   
 2. A configuração do conjunto de cifras é aplicável apenas com o protocolo de front-end HTTPS. Quando você chegar às etapas de configuração da seção **Incluir protocolo**, escolha **Protocolo HTTPS**.
 
@@ -52,4 +55,4 @@ Para escolher o conjunto de cifras ao criar um novo balanceador de carga:
   
 4. A tabela Cifra é editável e permite selecionar os conjuntos de cifras desejados para o handshake SSL. Clique em **Editar**, selecione as Cifras que deseja implementar e clique em **Salvar**.
 	
-	**NOTA:** para obter uma lista de cifras suportadas, consulte [Transferência de SSL](ssl-offload.html).
+	**NOTA:** para obter uma lista de cifras suportadas, consulte [Transferência de SSL](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).

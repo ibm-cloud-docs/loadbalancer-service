@@ -14,34 +14,35 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Ebene 7-Richtlinie
+{: #layer-7-policy}
 
-Eine Ebene 7-Richtlinie (Layer 7, L7) wird verwendet, um den Datenverkehr zu klassifizieren, indem die zugehörigen L7-Informationen mit L7-Regeln abgeglichen werden. Falls die Regeln übereinstimmen, werden im Anschluss bestimmte Aktionen ausgeführt.  
+Eine Ebene 7-Richtlinie (Layer 7, L7) wird verwendet, um den Datenverkehr zu klassifizieren, indem die zugehörigen L7-Informationen mit L7-Regeln abgeglichen werden. Falls die Regeln übereinstimmen, werden im Anschluss bestimmte Aktionen ausgeführt. 
 
-* Eine Richtlinie wird auf einen Front-End-Anwendungsport (Protokoll) angewendet.  
-* Es können mehrere Richtlinien auf dasselbe Protokoll angewendet werden. 
+* Eine Richtlinie wird auf einen Front-End-Anwendungsport (Protokoll) angewendet. 
+* Es können mehrere Richtlinien auf dasselbe Protokoll angewendet werden.
 
-Da mehrere Richtlinien auf ein Protokoll angewendet werden können, ist jeder Richtlinie eine Priorität zugeordnet.  
+Da mehrere Richtlinien auf ein Protokoll angewendet werden können, ist jeder Richtlinie eine Priorität zugeordnet. 
 
-* Richtlinien mit der niedrigsten Priorität werden zuerst ausgewertet.  
-* Wenn die Regeln, die der Richtlinie zugeordnet sind, nicht mit dem Datenverkehr übereinstimmen, wird die Richtlinie mit der nächstniedrigsten Priorität ausgewertet.  
+* Richtlinien mit der niedrigsten Priorität werden zuerst ausgewertet. 
+* Wenn die Regeln, die der Richtlinie zugeordnet sind, nicht mit dem Datenverkehr übereinstimmen, wird die Richtlinie mit der nächstniedrigsten Priorität ausgewertet. 
 
-Wenn der Datenverkehr mit keiner der Richtlinienregeln übereinstimmt, wird er an einen Standardpool zurückgeleitet. Dies ist der Pool, der bei der Bereitstellung der Basislastausgleichsfunktion konfiguriert wurde. 
+Wenn der Datenverkehr mit keiner der Richtlinienregeln übereinstimmt, wird er an einen Standardpool zurückgeleitet. Dies ist der Pool, der bei der Bereitstellung der Basislastausgleichsfunktion konfiguriert wurde.
 
-Jede Richtlinie ist einer Aktion zugeordnet, die ausgeführt wird, wenn alle Regeln in der Richtlinie mit dem Datenverkehr übereinstimmen. 
+Jede Richtlinie ist einer Aktion zugeordnet, die ausgeführt wird, wenn alle Regeln in der Richtlinie mit dem Datenverkehr übereinstimmen.
 
-Dies können die folgenden Aktionen sein: 
+Dies können die folgenden Aktionen sein:
 
 - Ablehnen 
 - Umleiten an eine URL
 - Umleiten an einen Pool 
 
-Richtlinien, für die `Ablehnen` festgelegt ist, werden zuerst ausgewertet, unabhängig von ihrer Priorität. 
+Richtlinien, für die `Ablehnen` festgelegt ist, werden zuerst ausgewertet, unabhängig von ihrer Priorität.
 
-Anschließend werden Richtlinien ausgewertet, für die `Umleiten an eine URL` festgelegt ist. 
+Anschließend werden Richtlinien ausgewertet, für die `Umleiten an eine URL` festgelegt ist.
 
-Und schließlich werden Richtlinien ausgewertet, für die `Umleiten an einen Pool` festgelegt ist. 
+Und schließlich werden Richtlinien ausgewertet, für die `Umleiten an einen Pool` festgelegt ist.
 
-Innerhalb jeder Aktionskategorie werden die Richtlinien in aufsteigender Prioritätsfolge (niedrigste bis höchste Priorität) ausgewertet. 
+Innerhalb jeder Aktionskategorie werden die Richtlinien in aufsteigender Prioritätsfolge (niedrigste bis höchste Priorität) ausgewertet.
 
 ## Ebene 7-Richtlinieneigenschaften
 
@@ -54,15 +55,15 @@ Umleitungs-URL | Die URL, an die der Datenverkehr umgeleitet wird, wenn die Akti
 Umleitungs-L7-Pool | Der Pool, an den der Datenverkehr gesendet wird, wenn die Aktion `REDIRECT_POOL` lautet .
 Protokoll | Der Front-End-Anwendungsport, auf den die Richtlinie angewendet wird .
 
-# Ebene 7-Regel
-Ebene 7-Regeln definieren einen Teil des eingehenden Datenverkehrs, der mit bestimmten Werten abgeglichen werden soll. 
+## Ebene 7-Regel
+Ebene 7-Regeln definieren einen Teil des eingehenden Datenverkehrs, der mit bestimmten Werten abgeglichen werden soll.
 
-* Falls der eingehende Datenverkehr mit dem angegebenen Wert einer Regel übereinstimmt, wird die Regel zu `true` ausgewertet. 
-* Ebene 7-Regeln sind immer einer Ebene 7-Richtlinie zugeordnet. Mehrere Ebene 7-Regeln können derselben Ebene 7-Richtlinie zugeordnet sein. 
-* Wenn einer Richtlinie mehrere Regeln zugeordnet sind, wird jede einzelne Regel zu `true` oder `false` ausgewertet.  
-* Wenn alle Regeln, die einer Richtlinie zugeordnet sind, zu `true` ausgewertet werden, wird die Richtlinienaktion auf die Anforderung angewendet. Andernfalls wertet die Lastausgleichsfunktion die nächste Richtlinie aus. 
+* Falls der eingehende Datenverkehr mit dem angegebenen Wert einer Regel übereinstimmt, wird die Regel zu `true` ausgewertet.
+* Ebene 7-Regeln sind immer einer Ebene 7-Richtlinie zugeordnet. Mehrere Ebene 7-Regeln können derselben Ebene 7-Richtlinie zugeordnet sein.
+* Wenn einer Richtlinie mehrere Regeln zugeordnet sind, wird jede einzelne Regel zu `true` oder `false` ausgewertet. 
+* Wenn alle Regeln, die einer Richtlinie zugeordnet sind, zu `true` ausgewertet werden, wird die Richtlinienaktion auf die Anforderung angewendet. Andernfalls wertet die Lastausgleichsfunktion die nächste Richtlinie aus.
 
-Regeln können folgende Typen haben:  
+Regeln können folgende Typen haben: 
 
 * `HOST_NAME`
 * `FILE_TYPE`
@@ -70,7 +71,7 @@ Regeln können folgende Typen haben:
 * `COOKIE`
 * `PATH`
 
-Diese geben den Teil des Ebene 7-Datenverkehrs an, der mit der Regel abgeglichen werden soll. 
+Diese geben den Teil des Ebene 7-Datenverkehrs an, der mit der Regel abgeglichen werden soll.
 
 Typ      |  Feld, das extrahiert und ausgewertet werden soll
 ----------| -----------------------
@@ -80,7 +81,8 @@ HEADER    | Ein Feld im HTTP-Header. r
 COOKIE    | Ein benanntes Cookie im HTTP-Header. 
 PATH      | Der Pfad der URL, der auf den Hostnamen folgt (z. B. `/index.html`. )
 
-Regeln haben auch einen Vergleichstyp, der angibt, wie sie ausgewertet werden sollen. Regeln können folgende Vergleichstypen aufweisen:  
+Regeln haben auch einen Vergleichstyp, der angibt, wie sie ausgewertet werden sollen.
+Regeln können folgende Vergleichstypen aufweisen: 
 
 * `REGEX`
 * `STARTS_WITH`
@@ -90,13 +92,13 @@ Regeln haben auch einen Vergleichstyp, der angibt, wie sie ausgewertet werden so
 
 Vergleichstyp |  Art der Auswertung
 ----------------|---------------------
-`REGEX`           |  Abgleichen des extrahierten Felds (z. B. `HOSTNAME`) mit dem bereitgestellten regulären Ausdruck. 
+`REGEX`           |  Abgleichen des extrahierten Felds (z. B. `HOSTNAME`) mit dem bereitgestellten regulären Ausdruck.
 `STARTS_WITH`     |  Überprüfen, ob das extrahierte Feld mit der bereitgestellten Zeichenfolge beginnt.
 `ENDS_WITH`       |  Überprüfen, ob das extrahierte Feld auf die bereitgestellte Zeichenfolge endet.
 `CONTAINS`        |  Überprüfen, ob das extrahierte Feld die bereitgestellte Zeichenfolge enthält.
 `EQUAL_TO`        |  Überprüfen, ob das extrahierte Feld mit der bereitgestellten Zeichenfolge identisch ist.
 
-**HINWEIS**: Nicht alle Regeltypen unterstützen alle Vergleichstypen. Wenn Sie z. B. `FILE_TYPE` verwenden, ist es am besten, die Vergleichstypen `REGEX` und `ENDS_WITH` zu verwenden. 
+**HINWEIS**: Nicht alle Regeltypen unterstützen alle Vergleichstypen. Wenn Sie z. B. `FILE_TYPE` verwenden, ist es am besten, die Vergleichstypen `REGEX` und `ENDS_WITH` zu verwenden.
 
 ## Ebene 7-Regeleigenschaften
 

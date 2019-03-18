@@ -16,7 +16,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Gestión de tráfico avanzada
+# Gestión avanzada de tráfico con IBM Cloud Load Balancer
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 En esta sección, se abordan varias características de gestión de tráfico avanzada disponibles con el servicio de equilibrador de carga.
 
 ## Número máx. de conexiones

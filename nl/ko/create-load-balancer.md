@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Cloud 로드 밸런서 작성
-IBM Cloud 로드 밸런서 서비스를 작성하려면 다음 프로시저를 수행하십시오.
+# IBM Cloud Load Balancer 작성
+{: #creating-an-ibm-cloud-load-balancer}
+
+IBM© Cloud Load Balancer 서비스를 작성하려면 다음 프로시저를 수행하십시오.
 
 1. 브라우저에서 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}을 열고 사용자 계정에 로그인하십시오.
 
@@ -25,7 +27,7 @@ IBM Cloud 로드 밸런서 서비스를 작성하려면 다음 프로시저를 �
 
 3. **IBM Cloud 로드 밸런서**(기본 선택사항)를 선택하고 **작성**을 클릭하십시오. 
 
-	**작성** 대신에 **업그레이드**가 표시되면 [이러한 단계 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/account/softlayerlink.html#link_customer_accounts)에 따라 IBM Cloud 인프라(Softlayer) 계정을 연결해야 합니다.
+	**작성** 대신에 **업그레이드**가 표시되면 [해당 단계](/docs/account?topic=account-unifyingaccounts)에 따라 IBM Cloud 인프라(SoftLayer) 계정을 연결해야 합니다.
 
 	<img src="images/create-load-balancer.png" alt="그림" style="width: 600px;"/>
 
@@ -39,7 +41,7 @@ IBM Cloud 로드 밸런서 서비스를 작성하려면 다음 프로시저를 �
 
 	<img src="images/select-lb-type.png" alt="그림" style="width: 600px;"/>
 	
-	기본적으로 공용 로드 밸런서는 IBM 글로벌 주소 풀에서 글로벌로 고유한 공인 IP 주소를 수신합니다. 그러나 사용자 고유의 주소 풀에서 공용 주소를 지정하거나 계정 내의 방화벽 서비스 뒤에 배치하려면 공인 서브넷에 [충분한 IP 주소](troubleshooting-provisioning.html)가 있는지 확인하고 **사용자 계정의 공인 서브넷에서 할당**을 선택하십시오.
+	기본적으로 공용 로드 밸런서는 IBM 글로벌 주소 풀에서 글로벌로 고유한 공인 IP 주소를 수신합니다. 그러나 사용자 고유의 주소 풀에서 공용 주소를 지정하거나 계정 내의 방화벽 서비스 뒤에 배치하려면 공인 서브넷에 [충분한 IP 주소](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting)가 있는지 확인하고 **사용자 계정의 공인 서브넷에서 할당**을 선택하십시오.
 
 	공용 인터넷에 액세스할 필요가 없는 내부 전용 애플리케이션의 경우 **내부(사설)** 유형을 선택하십시오.
 
@@ -52,4 +54,4 @@ IBM Cloud 로드 밸런서 서비스를 작성하려면 다음 프로시저를 �
 6. **다음**을 클릭하여 구성을 완료하십시오.
 
 ## 다음에 수행할 작업
-[기본 매개변수](begin-lb-config.html)로 로드 밸런서를 구성하십시오.
+[기본 매개변수](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters)로 로드 밸런서를 구성하십시오.

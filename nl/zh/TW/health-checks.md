@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 性能檢查
+# 使用 IBM Cloud Load Balancer 執行性能檢查
+{: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 每一個後端應用程式埠都必須要有性能檢查定義。性能檢查配置的埠及通訊協定必須符合已定義的後端埠及通訊協定，否則，會拒絕配置。 
 

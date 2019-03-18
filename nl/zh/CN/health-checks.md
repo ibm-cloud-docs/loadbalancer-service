@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 运行状况检查
+# 使用 IBM Cloud Load Balancer 执行运行状况检查
+{: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 对于每个后端应用程序端口来说，必须具有运行状况检查定义。运行状况检查配置下的端口和协议必须与所定义的后端端口和协议相匹配，否则会拒绝该配置。 
 

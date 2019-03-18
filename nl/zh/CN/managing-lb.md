@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 监视和管理服务
+{: #monitoring-and-managing-your-service}
+
 您可以通过单击 Load Balancer 摘要页面上的服务名称 URL 来编辑配置或监视服务性能。 
 
 Load Balancer 服务实例的**标准域名 (FQDN) 地址**会显示在服务名称的正下方。最终用户可以通过此 FQDN 地址连接到您的应用程序。请注意，Load Balancer 服务的公共和专用 IP 地址不会对外公开；只会公开 FQDN 地址。 

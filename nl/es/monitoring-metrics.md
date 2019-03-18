@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Supervisión de métricas
+# Supervisión de métricas con IBM Cloud Load Balancer
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 El equilibrador de carga supervisa las métricas siguientes: 
 
@@ -65,4 +66,4 @@ La tabla siguiente muestra cómo se obtienen los puntos de datos a partir del in
 
 # Cómo habilitar la supervisión de métricas
 
-Para recuperar las métricas de supervisión, debe enlazar la cuenta de SoftLayer con la cuenta de IBM Cloud. Consulte [este tema ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo") ](/docs/account/softlayerlink.html#link_user_account) para obtener más información.
+Para recuperar las métricas de supervisión, debe enlazar la cuenta de SoftLayer con la cuenta de IBM© Cloud. Consulte [este tema](/docs/account?topic=account-unifyingaccounts#link_accounts) para obtener más información.

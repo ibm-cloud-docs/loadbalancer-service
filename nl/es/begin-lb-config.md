@@ -17,7 +17,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Configurar parámetros de IBM Cloud Load Balancer
+# Configuración de los parámetros de IBM Cloud Load Balancer
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 Una vez que se crea un equilibrador de carga, puede configurarlo para el equilibrio de carga elástico. Para hacerlo:
 
 1. Asigne un nombre a su equilibrador de carga y, si lo desea, añada una descripción.
@@ -32,19 +34,19 @@ Una vez que se crea un equilibrador de carga, puede configurarlo para el equilib
 
 5. También puede establecer el **Límite máximo de conexiones** en la aplicación.
 
-6. Pulse **Añadir protocolo** para especificar puertos y protocolos adicionales en los que la aplicación puede estar a la escucha. Asegúrese de que todos los puertos frontales sean exclusivos. Puede elegir HTTP, HTTPS o TCP como protocolo de componente frontal.  
+6. Pulse **Añadir protocolo** para especificar puertos y protocolos adicionales en los que la aplicación puede estar a la escucha. Asegúrese de que todos los puertos frontales sean exclusivos. Puede elegir HTTP, HTTPS o TCP como protocolo de componente frontal.
 
 	<img src="images/lb-add-protocol.png" alt="dibujo" style="width: 300px;"/>
 
-	Se pueden definir un máximo de dos puertos en el momento de la configuración inicial. Luego se pueden añadir más puertos, después de crear la instancia de servicio. Consulte [Limitaciones en el número de puertos](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) para
+	Se pueden definir un máximo de dos puertos en el momento de la configuración inicial. Luego se pueden añadir más puertos, después de crear la instancia de servicio. Consulte [Limitaciones en el número de puertos](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) para
 obtener más información sobre el número máximo de puertos permitidos.
 {:note:}
 
-7. IBM Cloud Load Balancer termina las conexiones HTTPS (HTTP sobre SSL) de entrada, se comunica en HTTP de texto sin formato con los servidores de aplicaciones de fondo y descarga las tareas SSL que requieren un uso intensivo de procesador de los servidores. Debe cargar el certificado SSL. Seleccione uno de los certificados disponibles en la lista desplegable.  
+7. IBM© Cloud Load Balancer termina las conexiones HTTPS (HTTP sobre SSL) de entrada y se puede comunicar en HTTP de texto sin formato con los servidores de aplicaciones de fondo y descargar las tareas SSL que requieren un uso intensivo de procesador de los servidores si el protocolo de fondo seleccionado es HTTP. Si el protocolo de fondo seleccionado es HTTPS, se cifrará el tráfico entre el equilibrador de carga y los servidores de fondo. Debe cargar el certificado SSL. Seleccione uno de los certificados disponibles en la lista desplegable.  
 
 	<img src="images/lb-ssl-cert.png" alt="dibujo" style="width: 300px;"/>
 
-	Si no dispone de un certificado existente, pulse ** Añadir un certificado nuevo**. Esto le lleva a un servicio de certificados de IBM Cloud donde puede adquirir un nuevo certificado o cargar uno existente. 
+	Si no dispone de un certificado existente, pulse **Añadir un certificado nuevo**. Esto le lleva a un servicio de certificados de IBM Cloud donde puede adquirir un nuevo certificado o cargar uno existente. 
 	
 	Después de añadir el certificado, vuelva a la página de configuración del equilibrador de carga y pulse el icono de renovación que hay bajo la lista desplegable Certificado SSL para ver y añadir el certificado que acaba de cargar.
 
@@ -52,7 +54,7 @@ obtener más información sobre el número máximo de puertos permitidos.
 
 	<img src="images/refresh-cert.png" alt="dibujo" style="width: 300px;"/>
 
-	**NOTA**: nunca suprima ningún certificado asociado con escuchas HTTPS, ya que esto puede provocar problemas con la funcionalidad.
+	**NOTA: nunca suprima ningún certificado asociado con escuchas HTTPS, ya que esto puede provocar problemas con la funcionalidad.**
 
 8. Pulse **Siguiente**.
 
@@ -71,4 +73,4 @@ El sistema implementa una configuración de comprobación de estado predetermina
 Pulse **Siguiente** para habilitar su elección.
 
 ## A continuación
-[Identifique los recursos de la aplicación](identify-app-resources.html), como por ejemplo las agrupaciones de origen y los mecanismos de comprobación de estado.
+[Identifique los recursos de la aplicación](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), como por ejemplo las agrupaciones de origen y los mecanismos de comprobación de estado.

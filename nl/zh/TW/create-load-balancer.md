@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 建立 IBM Cloud Load Balancer
-若要建立 IBM Cloud Load Balancer 服務，請執行下列程序：
+{: #creating-an-ibm-cloud-load-balancer}
+
+若要建立 IBM© Cloud Load Balancer 服務，請執行下列程序：
 
 1. 從瀏覽器中，開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入帳戶。
 
@@ -25,7 +27,7 @@ lastupdated: "2018-11-12"
 
 3. 選取 **IBM Cloud Load Balancer**（預設選項），然後按一下**建立**。 
 
-	如果您看到**升級**，而非**建立**，則必須遵循[這些步驟 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](/docs/account/softlayerlink.html#link_customer_accounts) 來鏈結 IBM Cloud 基礎架構 (Softlayer) 帳戶。
+	如果您看到**升級**，而非**建立**，則必須遵循[這些步驟](/docs/account?topic=account-unifyingaccounts)來鏈結「IBM Cloud 基礎架構 (SoftLayer)」帳戶。
 
 	<img src="images/create-load-balancer.png" alt="圖片" style="width: 600px;"/>
 
@@ -39,7 +41,7 @@ lastupdated: "2018-11-12"
 
 	<img src="images/select-lb-type.png" alt="圖片" style="width: 600px;"/>
 	
-	依預設，公用負載平衡器會從 IBM 全球位址儲存區收到一個全球唯一的公用 IP 位址。不過，如果您想要從自己的位址儲存區指派公用位址給它，或想要將它部署在帳戶內的防火牆服務後方，請檢查公用子網路是否具有[足夠的 IP 位址](troubleshooting-provisioning.html)，並選取**從帳戶中的公用子網路配置**。
+	依預設，公用負載平衡器會從 IBM 全球位址儲存區收到一個全球唯一的公用 IP 位址。不過，如果您想要從自己的位址儲存區指派公用位址給它，或想要將它部署在帳戶內的防火牆服務後方，請檢查公用子網路是否具有[足夠的 IP 位址](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting)，並選取**從帳戶中的公用子網路配置**。
 
 	對於不需要存取公用網際網路且僅限內部使用的應用程式，請選擇**內部（專用）**類型。
 
@@ -52,4 +54,4 @@ lastupdated: "2018-11-12"
 6. 按**下一步**，以完成配置。
 
 ## 下一步為何？
-使用[基本參數](begin-lb-config.html)來配置您的負載平衡器。
+使用[基本參數](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters)來配置您的負載平衡器。

@@ -15,14 +15,19 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Resolução de problemas de fornecimento do balanceador de carga
-Este tópico fornece informações sobre problemas comuns que podem ser encontrados ao criar uma nova instância do IBM Cloud Load Balancer.
+{: #load-balancer-provisioning-troubleshooting}
+
+Este tópico fornece informações sobre problemas comuns que você pode encontrar ao criar uma
+nova instância do IBM© Cloud Load Balancer.
 
 ## Endereços IP insuficientes em sua sub-rede
 O IBM Cloud Load Balancer requer pelo menos dois endereços IP livres em sua sub-rede privada. Além disso, se for um balanceador de carga público e a opção **Conjunto de sistemas IBM** não for usada, pelo menos dois endereços IP livres também serão necessários em sua sub-rede pública. 
 
 Siga as etapas abaixo para verificar se há IPs livres em uma sub-rede.
 
-1. Acesse o [Portal do cliente](https://control.softlayer.com) e navegue até a seção de sub-redes, selecionando **Rede > Gerenciamento de IP > Sub-redes**.
+1. Acesse [Portal do Cliente ![Ícone de linkexterno](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com){:new_window} e navegue até a seção de sub-redes selecionando
+
+**Rede > Gerenciamento de IP > Sub-redes**.
 
 2. Clique na sub-rede na qual você deseja verificar se há IPs livres.
 
@@ -31,7 +36,7 @@ Siga as etapas abaixo para verificar se há IPs livres em uma sub-rede.
 3. A página de detalhes da sub-rede selecionada mostra o status de todos os IPs nessa sub-rede.
 
 ## Problemas com firewalls em VLANs públicas e privadas
-Consulte o tópico [Intervalo de IP do IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) para obter informações sobre a permissão de intervalos de IP por meio do firewall.
+Consulte o tópico [Intervalo de IP do IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) para obter informações sobre a permissão de intervalos de IP por meio do firewall.
  
 ## Visualizando mensagens de erro do balanceador de carga
 Para visualizar mensagens de erro de seu balanceador de carga, execute o procedimento a seguir:

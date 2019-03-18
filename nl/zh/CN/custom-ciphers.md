@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # 为 HTTPS 应用程序选择首选密码套件
-密码算法可帮助 IBM Cloud Load Balancer 建立与其 HTTP 客户机的安全连接。
+{: #choosing-a-preferred-cipher-suite-for-your-https-application}
+
+密码算法可帮助 IBM© Cloud Load Balancer 建立与其 HTTP 客户机的安全连接。
 
 IBM 提供了一套经核准的密码供您选择，以便保护 Load Balancer 与客户机之间的通信。
 
@@ -32,13 +34,13 @@ IBM 提供了一套经核准的密码供您选择，以便保护 Load Balancer �
   
 密码表是可编辑的，允许您选择所需的密码套件用于 SSL 握手。单击**编辑**，选择要实施的密码，然后单击**保存**。
   
-**注：**要获取受支持密码的列表，请参阅 [SSL 卸载](ssl-offload.html)。
+**注：**要获取受支持密码的列表，请参阅 [SSL 卸载](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer)。
 
 ## 创建新的 Load Balancer 时选择密码
 
 要在创建新的 Load Balancer 时选择密码套件，请执行以下操作：
 
-1. 遵循指示信息以[创建 Load Balancer](create-load-balancer.html)。
+1. 遵循指示信息以[创建 Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer)。
   
 2. 密码套件配置仅适用于 HTTPS 前端协议。执行到**添加协议**部分的配置步骤时，请选择 **HTTPS 协议**。
 
@@ -52,4 +54,4 @@ IBM 提供了一套经核准的密码供您选择，以便保护 Load Balancer �
   
 4. 密码表是可编辑的，允许您选择所需的密码套件用于 SSL 握手。单击**编辑**，选择要实施的密码，然后单击**保存**。
 	
-	**注：**要获取受支持密码的列表，请参阅 [SSL 卸载](ssl-offload.html)。
+	**注：**要获取受支持密码的列表，请参阅 [SSL 卸载](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer)。

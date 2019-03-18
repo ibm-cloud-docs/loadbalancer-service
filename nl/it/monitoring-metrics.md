@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Metriche di monitoraggio
+# Monitoraggio delle metriche con IBM Cloud Load Balancer
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 Il programma di bilanciamento del carico monitora le seguenti metriche: 
 
@@ -67,4 +68,4 @@ La seguente tabella mostra come i punti dati vengono ricavati dall'intervallo te
 
 # Come abilitare il monitoraggio delle metriche
 
-Per poter richiamare le metriche di monitoraggio devi collegare l'account SoftLayer al tuo account IBM Cloud. Fai riferimento a [questo argomento ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](/docs/account/softlayerlink.html#link_user_account) per ulteriori informazioni. 
+Per poter richiamare le metriche di monitoraggio devi collegare il tuo account SoftLayer al tuo account IBM© Cloud. Fai riferimento a [questo argomento](/docs/account?topic=account-unifyingaccounts#link_accounts) per ulteriori informazioni. 

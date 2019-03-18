@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # 選擇 HTTPS 應用程式的偏好密碼組合
-協助 IBM Cloud Load Balancer 的密碼演算法會形成與其 HTTP 用戶端的安全連線。
+{: #choosing-a-preferred-cipher-suite-for-your-https-application}
+
+協助 IBM© Cloud Load Balancer 的密碼演算法會形成與其 HTTP 用戶端之間的安全連線。
 
 IBM 提供一套核准的密碼供您選擇，讓您保護負載平衡器與用戶端之間的通訊安全。
 
@@ -32,13 +34,13 @@ IBM 提供一套核准的密碼供您選擇，讓您保護負載平衡器與用�
   
 「密碼」表格是可編輯的，容許您選取想要的密碼組合來進行 SSL 信號交換。按一下**編輯**、選取您想要實作的「密碼」，然後按一下**儲存**。
   
-**附註：**如需支援的密碼清單，請參閱 [SSL 卸載](ssl-offload.html)。
+**附註：**如需支援的密碼清單，請參閱 [SSL 卸載](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer)。
 
 ## 在建立新的負載平衡器時選擇密碼
 
 若要在建立新的負載平衡器時選擇密碼組合，請執行下列動作：
 
-1. 遵循[建立負載平衡器](create-load-balancer.html)的指示。
+1. 遵循[建立負載平衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer)的指示。
   
 2. 「密碼組合」配置只適用於 HTTPS 前端通訊協定。當您到達**新增通訊協定**小節的配置步驟時，請選擇 **HTTPS 通訊協定**。
 
@@ -52,4 +54,4 @@ IBM 提供一套核准的密碼供您選擇，讓您保護負載平衡器與用�
   
 4. 「密碼」表格是可編輯的，容許您選取想要的密碼組合來進行 SSL 信號交換。按一下**編輯**、選取您想要實作的「密碼」，然後按一下**儲存**。
 	
-	**附註：**如需支援的密碼清單，請參閱 [SSL 卸載](ssl-offload.html)。
+	**附註：**如需支援的密碼清單，請參閱 [SSL 卸載](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer)。

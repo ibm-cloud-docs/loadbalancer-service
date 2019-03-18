@@ -13,7 +13,9 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# 檢閱及下訂單
+# 檢閱訂單及下訂單
+{: #review-and-place-your-order}
+
 請檢閱**訂單摘要**，然後按一下**建立**來下訂單。
 
 <img src="images/review-order-lb.png" alt="圖片" style="width: 300px;"/>
@@ -25,4 +27,4 @@ lastupdated: "2018-11-12"
 <img src="images/summary-online.png" alt="圖片" style="width: 300px;"/>
 
 ## 下一步為何？
-[編輯配置](managing-lb.html)，以監視服務效能。
+[編輯配置](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)，以監視服務效能。

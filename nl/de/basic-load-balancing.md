@@ -16,8 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Basislastausgleich
-Vom IBM Cloud Load Balancer-Service wird der Datenverkehr auf mehrere Serverinstanzen (Bare-Metal-Server und virtuelle Server) verteilt, die sich lokal in demselben Rechenzentrum befinden. 
+# Allgemeine Schritte für IBM Cloud Load Balancer ausführen
+{: #performing-ibm-cloud-load-balancer-basics}
+
+Vom IBM© Cloud Load Balancer-Service wird der Datenverkehr auf mehrere Serverinstanzen (Bare-Metal-Server und virtuelle Server) verteilt, die sich lokal in demselben Rechenzentrum befinden. 
 
 ## Öffentliche Lastausgleichsfunktion 
 Der Instanz des Service für die Lastausgleichsfunktion wird ein öffentlicher und vollständig qualifizierter Domänenname zugewiesen. Sie müssen diesen Domänennamen für den Zugriff auf die Anwendungen verwenden, die hinter dem Service für die Lastausgleichsfunktion gehostet werden. Dieser Domänenname kann für mindestens eine öffentliche IP-Adresse registriert werden. Die öffentlichen IP-Adressen und die Anzahl der öffentlichen IP-Adressen können sich im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind. Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich in einem privaten Netz in einer IBM Cloud befinden. 
@@ -34,14 +36,15 @@ Analog zur öffentlichen Lastausgleichsfunktion wird auch der Instanz eines inte
 
 Ähnlich wie bei einer öffentlichen Lastausgleichsfunktion können sich die privaten IP-Adressen und die Anzahl der privaten IP-Adressen im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind. 
 
-Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich ebenfalls in dem privaten Netz in einer IBM Cloud befinden. {:note}
+Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich ebenfalls in dem privaten Netz in einer IBM Cloud befinden.
+{:note}
 
 ## Ports bzw. Protokolle von Front-End- und Back-End-Anwendungen
 Sie können bis zu zehn Ports (bzw. Protokolle) für Front-End-Anwendungen definieren und diese den entsprechenden Ports (bzw. Protokollen) auf den Back-End-Anwendungsservern zuordnen. Der vollständig qualifizierte Domänenname, der der Serviceinstanz für den Lastausgleich zugewiesen ist, und die Ports der Front-End-Anwendung sind öffentlich zugänglich. An diesen Ports werden die eingehenden Benutzeranforderungen empfangen. 
 
 Die Back-End-Ports sind dagegen nur intern bekannt. Diese Back-End-Ports können mit den Front-End-Ports identisch sein, können aber auch abweichen. Beispiel: Die Lastausgleichsfunktion kann so konfiguriert sein, dass von ihr eingehender Web- bzw. HTTP-Datenverkehr an Front-End-Port 80 empfangen wird, die Back-End-Server sind jedoch am angepassten Port 81 empfangsbereit. 
 
-Unterstützte Front-End-Ports bzw. -Protokolle sind HTTP, HTTPS und TCP. Unterstützte Back-End-Ports bzw. -Protokolle sind HTTP und TCP. Eingehender HTTPS-Datenverkehr muss an der Lastausgleichsfunktion terminiert werden, damit eine ungeschützte HTTP-Kommunikation mit dem Back-End-Server möglich ist. 
+Unterstützte Front-End-Ports bzw. -Protokolle sind HTTP, HTTPS und TCP. Unterstützte Back-End-Ports bzw. -Protokolle sind HTTP, HTTPS und TCP. Eingehender HTTPS-Datenverkehr muss an der Lastausgleichsfunktion terminiert werden, damit eine ungeschützte HTTP-Kommunikation mit dem Back-End-Server möglich ist. Wenn es sich bei dem Back-End-Protokoll um HTTPS handelt, wird der Datenverkehr zwischen Load Balancer und Back-End-Servern verschlüsselt.
 
 ### Hinweise
 

@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Agrupación de capa 7
+{: #layer-7-pool}
+
 Una agrupación de capa 7 (L7) es una agrupación lógica de los servidores (miembros) para gestionar las solicitudes entrantes.
 
 La característica de equilibrio de carga de capa 7 puede dirigir el tráfico de entrada a diferentes agrupaciones de fondo basándose en políticas y reglas. Esta característica recibe soporte mediante la asociación de varias agrupaciones L7 con un equilibrador de carga. Las agrupaciones de capa 7 se utilizan con las políticas de capa 7 cuya acción consiste en `redirigir a la agrupación`.
@@ -22,7 +24,7 @@ Las agrupaciones L7 solo dan soporte a HTTP como protocolo de fondo.
 
 ## Persistencia de sesión
 La persistencia de sesión se puede configurar para cada agrupación de capa 7. Para obtener más detalles, consulte la  
-[sección sobre tráfico avanzado](advanced-traffic.html).
+[sección sobre tráfico avanzado](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Miembros de capa 7
 

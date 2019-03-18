@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Balanceamento de carga da Camada 7
-O IBM Cloud Load Balancer Service distribui o tráfego entre várias instâncias do servidor, incluindo instâncias do bare metal e do servidor virtual, usando dados da Camada 7 (camada de aplicativo). 
+{: #layer-7-load-balancing}
+
+O IBM© Cloud Load Balancer Service distribui o tráfego entre múltiplas instâncias do servidor, incluindo instâncias bare-metal e de servidor virtual, usando dados da Camada 7 (camada de aplicativo). 
 
  * O tráfego de dados a ser distribuído é classificado usando políticas e regras. 
  * As políticas definem a ação a ser tomada quando o tráfego de dados corresponde a todas as regras associadas a uma política.
@@ -29,7 +31,7 @@ Uma política da Camada 7 é associada a uma porta do aplicativo front-end. Vár
  * Cada regra da L7 é associada a uma política. 
  * Se todas as regras associadas à política forem avaliadas como `true`, a política será correspondida, portanto, a ação associada será tomada.
 
-Consulte [Política e regras da L7](l7-policy.html) para obter detalhes adicionais.
+Consulte [Política e regras da L7](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) para obter detalhes adicionais.
 
 ## Conjuntos da Camada 7
 Cada conjunto de balanceador de carga da Camada 7 contém uma ou mais instâncias de servidor lógico. 
@@ -39,4 +41,4 @@ Cada conjunto de balanceador de carga da Camada 7 contém uma ou mais instância
  * Um conjunto pode ser configurado para persistência de sessão. 
  * Use o endereço IP de origem do cliente para configurar a persistência de sessão.
 
-Consulte [Conjuntos da L7](l7-pool.html) para obter detalhes adicionais.
+Consulte [Conjuntos da L7](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-pool) para obter detalhes adicionais.

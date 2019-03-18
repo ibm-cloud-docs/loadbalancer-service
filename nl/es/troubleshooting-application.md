@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Resolución de problemas del servidor de aplicaciones
+{: #application-server-troubleshooting}
+
 En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando utilice el equilibrador de carga.
 
 ## El servidor de fondo no está en buen estado

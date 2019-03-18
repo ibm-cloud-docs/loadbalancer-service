@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Monitorando e gerenciando seu serviço
+{: #monitoring-and-managing-your-service}
+
 É possível editar sua configuração ou monitorar o desempenho do serviço clicando na URL do nome do serviço na página de resumo do balanceador de carga. 
 
 O **endereço do nome completo do domínio (FQDN)** da instância de serviço do balanceador de carga pode ser visto logo abaixo do nome do serviço. Seus usuários finais poderão se conectar ao aplicativo por meio desse endereço FQDN. Observe que os endereços IP públicos e privados do serviço do balanceador de carga não são expostos ao mundo externo; apenas o endereço FQDN é exposto. 

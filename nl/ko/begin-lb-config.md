@@ -17,14 +17,16 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud 로드 밸런서 매개변수 구성
+# IBM Cloud Load Balancer 매개변수 구성
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 로드 밸런서를 작성한 후 탄력적인 로드 밸런싱을 사용하도록 구성할 수 있습니다. 이를 위해서는 다음을 수행하십시오.
 
 1. 로드 밸런서의 이름을 지정하고 선택적으로 설명을 추가하십시오.
 
 	<img src="images/lb-config-basic.png" alt="그림" style="width: 300px;"/>
 
-2. 애플리케이션이 청취 중인 프로토콜 및 포트를 식별하여 애플리케이션 프로파일의 세부사항을 입력하십시오. 프론트 엔드 및 백엔드 둘 다에 동일한 구성을 사용하거나 다른 프론트 엔드 포트를 노출할 수 있습니다(예를 들어, 보안을 위해). 
+2. 애플리케이션이 청취 중인 프로토콜 및 포트를 식별하여 애플리케이션 프로파일의 세부사항을 입력하십시오. 프론트 엔드 및 백엔드 둘 다에 동일한 구성을 사용하거나 다른 프론트 엔드 포트를 노출할 수 있습니다(예를 들어, 보안을 위해).
 
 3. 기본 로드 밸런싱 메소드는 **라운드 로빈**입니다. 애플리케이션 요구사항에 따라 드롭 다운 목록에서 **가중치 라운드 로빈** 및 **최소 연결**로 변경할 수 있습니다.
 
@@ -32,14 +34,14 @@ lastupdated: "2018-11-07"
 
 5. 애플리케이션에 대한 **최대 연결 한계**를 설정할 수도 있습니다.
 
-6. 애플리케이션이 청취 중일 수 있는 추가 포트 및 프로토콜을 지정하려면 **프로토콜 추가**를 클릭하십시오. 모든 프론트 엔드 포트가 고유해야 합니다. HTTP, HTTPS 또는 TCP를 프론트 엔드 프로토콜로 선택할 수 있습니다.  
+6. 애플리케이션이 청취 중일 수 있는 추가 포트 및 프로토콜을 지정하려면 **프로토콜 추가**를 클릭하십시오. 모든 프론트 엔드 포트가 고유해야 합니다. HTTP, HTTPS 또는 TCP를 프론트 엔드 프로토콜로 선택할 수 있습니다.
 
 	<img src="images/lb-add-protocol.png" alt="그림" style="width: 300px;"/>
 
-	초기 구성 시 최대 두 개의 포트를 정의할 수 있습니다. 서비스 인스턴스를 작성한 후 포트를 더 추가할 수 있습니다. 허용되는 최대 포트 수에 대한 자세한 정보는 [포트 수에 대한 제한사항](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)을 참조하십시오.
+	초기 구성 시 최대 두 개의 포트를 정의할 수 있습니다. 서비스 인스턴스를 작성한 후 포트를 더 추가할 수 있습니다. 허용되는 최대 포트 수에 대한 자세한 정보는 [포트 수에 대한 제한사항](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)을 참조하십시오.
 {:note:}
 
-7. IBM Cloud 로드 밸런서는 수신 HTTPS(HTTP over SSL) 연결을 종료하고 일반 텍스트 HTTP로 백엔드 애플리케이션 서버와 통신하며 서버에서 프로세서 집약적 SSL 태스크를 오프로드합니다. SSL 인증서를 업로드해야 합니다. 드롭 다운 목록에서 사용 가능한 인증서 중 하나를 선택하십시오.  
+7. IBM Cloud 로드 밸런서는 수신 HTTPS(HTTP over SSL) 연결을 종료하고 일반 텍스트 HTTP로 백엔드 애플리케이션 서버와 통신하며 백엔드 프로토콜을 HTTP로 선택하는 경우 서버에서 프로세서 집약적 SSL 태스크를 오프로드합니다. 선택한 백엔드 프로토콜이 HTTPS이면 로드 밸런서와 백엔드 서버 사이에 트래픽이 암호화됩니다. SSL 인증서를 업로드해야 합니다. 드롭 다운 목록에서 사용 가능한 인증서 중 하나를 선택하십시오.  
 
 	<img src="images/lb-ssl-cert.png" alt="그림" style="width: 300px;"/>
 
@@ -51,7 +53,7 @@ lastupdated: "2018-11-07"
 
 	<img src="images/refresh-cert.png" alt="그림" style="width: 300px;"/>
 
-	**참고**: 기능에 문제가 발생할 수 있으므로 HTTPS 리스너와 연관된 인증서를 삭제하지 마십시오.
+	**참고: 기능에 문제가 발생할 수 있으므로 HTTPS 리스너와 연관된 인증서를 삭제하지 마십시오.**
 
 8. **다음**을 클릭하십시오.
 
@@ -70,4 +72,4 @@ lastupdated: "2018-11-07"
 **다음**을 클릭하여 선택사항을 사용으로 설정하십시오.
 
 ## 다음에 수행할 작업
-오리진 풀 및 상태 검사 메커니즘과 같은 [애플리케이션의 리소스를 식별](identify-app-resources.html)하십시오.
+오리진 풀 및 상태 검사 메커니즘과 같은 [애플리케이션의 리소스를 식별](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)하십시오.

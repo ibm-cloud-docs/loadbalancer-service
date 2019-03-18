@@ -16,8 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Bilanciamento del carico di base
-Il servizio IBM Cloud load balancer distribuisce il traffico tra più istanze server (server virtuale e bare metal) che risiedono localmente, nello stesso data center. 
+# Esecuzione dei principi di base di IBM Cloud Load Balancer
+{: #performing-ibm-cloud-load-balancer-basics}
+
+Il servizio IBM© Cloud load balancer distribuisce il traffico tra più istanze server (server virtuale e bare metal) che risiedono localmente, nello stesso data center.  
 
 ## Programma di bilanciamento del carico pubblico 
 Viene assegnato un nome di dominio completo e accessibile pubblicamente alla tua istanza del servizio del programma di bilanciamento del carico. Devi utilizzare questo nome dominio per accedere alle tue applicazioni ospitate dietro il servizio del programma di bilanciamento del carico. Questo nome dominio potrebbe essere registrato con uno o più indirizzi IP pubblici. Gli indirizzi IP pubblici e il numero di indirizzi IP pubblici potrebbero cambiare nel tempo in base alle attività di manutenzione e ridimensionamento, che sono trasparenti agli utenti finali. Le istanze di calcolo di backend che ospitano la tua applicazione devono essere su una rete privata cloud IBM. 
@@ -42,7 +44,7 @@ Puoi definire fino a dieci porte (protocolli) dell'applicazione di frontend e as
 
 D'altra parte, le porte di backend sono conosciute solo internamente. Queste porte di backend potrebbero non essere le stesse delle porte di frontend. Ad esempio, il programma di bilanciamento del carico può essere configurato per ricevere il traffico web/HTTP in entrata su nella porta di frontend 80, mentre i server di backend sono in ascolto sulla porta personalizzata 81. 
 
-Le porte/protocolli di frontend supportate sono HTTP, HTTPS e TCP. Le porte/protocolli di backend supportate sono HTTP e TCP. Il traffico HTTPS in entrata deve essere terminata nel programma di bilanciamento del carico per consentire la comunicazione HTTP di testo semplice con il server di backend. 
+Le porte/protocolli di frontend supportate sono HTTP, HTTPS e TCP. Le porte/protocolli di backend supportate sono anche HTTP, HTTPS e TCP. Il traffico HTTPS in entrata deve essere terminata nel programma di bilanciamento del carico per consentire la comunicazione HTTP di testo semplice con il server di backend. Se il protocollo di backend è HTTPS, il traffico verrà crittografato tra il programma di bilanciamento del carico e i server di backend.
 
 ### Considerazioni
 

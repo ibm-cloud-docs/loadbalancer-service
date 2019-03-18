@@ -17,10 +17,12 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Configura i parametri di IBM Cloud Load Balancer
+# Configurazione dei parametri di IBM Cloud Load Balancer
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 Una volta che hai creato un programma di bilanciamento del carico, puoi configurarlo per il bilanciamento del carico elastico. Per eseguire tale operazione:
 
-1. Assegna un nome al tuo programma di bilanciamento del carico e, facoltativamente, aggiungi una descrizione. 
+1. Assegna un nome al tuo programma di bilanciamento del carico e, facoltativamente, aggiungi una descrizione.
 
 	<img src="images/lb-config-basic.png" alt="disegno" style="width: 300px;"/>
 
@@ -30,37 +32,37 @@ Una volta che hai creato un programma di bilanciamento del carico, puoi configur
 
 4. Facoltativamente, puoi abilitare **Session stickiness**. Se abilitato, tutte le richieste provenienti da un determinato utente finale (ad esempio, un utente con lo stesso IP di origine) verranno indirizzate allo stesso server di backend per un tempo "permanente (sticky)" definito dal sistema.
 
-5. Puoi anche impostare il valore di **Maximum connection limit** in base alla tua applicazione. 
+5. Puoi anche impostare il valore di **Maximum connection limit** in base alla tua applicazione.
 
-6. Fai clic su **Add Protocol** per specificare le porte e i protocolli aggiuntivi su cui può essere in ascolto la tua applicazione. Assicurati che tutte le porte di frontend siano univoche. Come protocollo di frontend puoi scegliere HTTP, HTTPS o TCP.  
+6. Fai clic su **Add Protocol** per specificare le porte e i protocolli aggiuntivi su cui può essere in ascolto la tua applicazione. Assicurati che tutte le porte di frontend siano univoche. Come protocollo di frontend puoi scegliere HTTP, HTTPS o TCP.
 
 	<img src="images/lb-add-protocol.png" alt="disegno" style="width: 300px;"/>
 
-	Al momento della configurazione iniziale possono essere definite massimo due porte. Dopo aver creato l'istanza di servizio possono essere aggiunte altre porte. Consulta [Limitazioni per il numero di porte virtuali](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) per ulteriori informazioni sul numero massimo di porte consentite.
+	Al momento della configurazione iniziale possono essere definite massimo due porte. Dopo aver creato l'istanza di servizio possono essere aggiunte altre porte. Consulta [Limitazioni per il numero di porte virtuali](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) per ulteriori informazioni sul numero massimo di porte consentite.
 {:note:}
 
-7. IBM Cloud Load Balancer termina le connessioni HTTPS (HTTP over SSL) in entrata e comunica in HTTP di testo semplice con i server delle applicazioni di backend e le attività SSL di offload intensive del processore provenienti dai tuoi server. Devi caricare il tuo certificato SSL. Seleziona uno dei tuoi certificati disponibili dall'elenco a discesa.   
+7. IBM© Cloud Load Balancer termina le connessioni HTTPS (HTTP over SSL) in entrata e può comunicare in HTTP di testo semplice con i server delle applicazioni di backend e le attività SSL di offload intensive del processore provenienti dai tuoi server se il protocollo di backend viene selezionato come HTTP. Se il protocollo di backend selezionato è HTTPS, il traffico verrà crittografato tra il programma di bilanciamento del carico e i server di backend. Devi caricare il tuo certificato SSL. Seleziona uno dei tuoi certificati disponibili dall'elenco a discesa.  
 
 	<img src="images/lb-ssl-cert.png" alt="disegno" style="width: 300px;"/>
 
-	Se non hai un certificato esistente, fai clic su **Add a new Certificate**. Questa opzione ti porta ad un servizio certificati IBM Cloud in cui puoi acquistare un nuovo certificato o caricarne uno esistente.  
+	Se non hai un certificato esistente, fai clic su **Add a new Certificate**. Questa opzione ti porta ad un servizio certificati IBM Cloud in cui puoi acquistare un nuovo certificato o caricarne uno esistente. 
 	
-	Una volta aggiunto il certificato, ritorna alla pagina di configurazione del programma di bilanciamento del carico e fai clic sull'icona di aggiornamento nell'elenco a discesa del certificato SSL per visualizzare e aggiungere il certificato che hai appena caricato. 
+	Una volta aggiunto il certificato, ritorna alla pagina di configurazione del programma di bilanciamento del carico e fai clic sull'icona di aggiornamento nell'elenco a discesa del certificato SSL per visualizzare e aggiungere il certificato che hai appena caricato.
 
 	<img src="images/order-ssl-cert.png" alt="disegno" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="disegno" style="width: 300px;"/>
 
-	**NOTA**: non devi mai eliminare i certificati associati ai listener HTTPS poiché può causare problemi con la funzionalità. 
+	**NOTA: non devi mai eliminare i certificati associati ai listener HTTPS poiché può causare problemi con la funzionalità.**
 
 8. Fai clic su **Next**.
 
 ## Configura i controlli di integrità
-La definizione di controllo di integrità è obbligatoria per ciascuna delle porte dell'applicazione. Queste sono porte di backend identificate nel menu di configurazione di base precedente. 
+La definizione di controllo di integrità è obbligatoria per ciascuna delle porte dell'applicazione. Queste sono porte di backend identificate nel menu di configurazione di base precedente.
 
 <img src="images/config-health-check.png" alt="disegno" style="width: 300px;"/>
 
-Il sistema pre-popola una configurazione del controllo di integrità predefinita per queste porte di backend. Puoi personalizzare queste impostazioni per soddisfare le esigenze della tua applicazione. 
+Il sistema pre-popola una configurazione del controllo di integrità predefinita per queste porte di backend. Puoi personalizzare queste impostazioni per soddisfare le esigenze della tua applicazione.
 
 * **Interval**: l'intervallo, in secondi, tra due tentativi di controllo di integrità consecutivi
 * **Timeout**: il tempo massimo di attesa di una risposta ad una richiesta di controllo di integrità da parte del sistema
@@ -70,4 +72,4 @@ Il sistema pre-popola una configurazione del controllo di integrità predefinita
 Fai clic su **Next** per abilitare la tua scelta.
 
 ## Operazioni successive
-[Identifica le risorse della tua applicazione](identify-app-resources.html), ad esempio i pool di origine e i meccanismi del controllo di integrità. 
+[Identifica le risorse della tua applicazione](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), ad esempio i pool di origine e i meccanismi del controllo di integrità.

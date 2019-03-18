@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# Perguntas mais frequentes
+# Perguntas frequentes do IBM Cloud Load Balancer
+{: #faqs-for-ibm-cloud-load-balancer}
 
-Esta seção contém respostas a algumas perguntas mais frequentes sobre o serviço IBM Cloud Load Balancer.
+Esta seção contém respostas para algumas das perguntas mais frequentes sobre o IBM© Cloud Load Balancer Service.
 
 ## Quantas opções de balanceamento de carga estão disponíveis no {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-Para uma comparação detalhada de ofertas IBM Load Balancer, consulte [Explorar Load Balancers](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+Para uma comparação detalhada de ofertas IBM Load Balancer, consulte [Explorar Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Posso usar um nome DNS diferente para meu balanceador de carga?
 {:faq}
@@ -44,7 +45,7 @@ Ao tentar criar um novo serviço de balanceador de carga, será possível defini
 ## Minhas instâncias de cálculo de backend podem ficar em uma sub-rede diferente da sub-rede do balanceador de carga?
 {:faq}
 
-Sim, o balanceador de carga e as instâncias de cálculo conectadas a ele podem ficar em sub-redes diferentes, mas o **VLAN Spanning** precisa ser ativado para que o balanceador de carga se comunique e encaminhe solicitações para a instância de cálculo. Consulte [Resolução de problemas do VLAN Spanning](troubleshooting-vlan-spanning.html) para obter mais informações.
+Sim, o balanceador de carga e as instâncias de cálculo conectadas a ele podem ficar em sub-redes diferentes, mas o **VLAN Spanning** precisa ser ativado para que o balanceador de carga se comunique e encaminhe solicitações para a instância de cálculo. Consulte [Resolução de problemas do VLAN Spanning](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting) para obter mais informações.
 
 ## Quais são as configurações padrão e os valores permitidos para os vários parâmetros de verificação de funcionamento?
 {:faq}
@@ -110,12 +111,12 @@ Não é possível garantir que os endereços IP do balanceador de carga permane�
 ## Se eu tiver um firewall implementado em minha VLAN privada, quais configurações serão necessárias para que ele funcione com meu serviço de balanceador de carga?
 {:faq}
 
-Consulte o tópico [Intervalos de IP do IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) para obter informações sobre como permitir intervalos de IP por meio do firewall.
+Consulte o tópico [Intervalos de IP do IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) para obter informações sobre como permitir intervalos de IP por meio do firewall.
 
 ## Por que não posso ver a configuração da Camada 7 na IU?
 {:faq}
 
-Atualmente, o suporte da Camada 7 fica disponível apenas por meio de APIs públicas, mas essa funcionalidade estará disponível na IU em breve. Consulte a seção Camada 7 da [Documentação das APIs](apis.html) para obter mais informações.
+Atualmente, o suporte da Camada 7 fica disponível apenas por meio de APIs públicas, mas essa funcionalidade estará disponível na IU em breve. Consulte a seção Camada 7 da [Documentação das APIs](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference) para obter mais informações.
 
 ## Quais informações eu preciso para arquivar um chamado de suporte?
 {:faq}

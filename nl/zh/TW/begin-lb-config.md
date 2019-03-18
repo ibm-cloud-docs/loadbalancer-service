@@ -18,6 +18,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # 配置 IBM Cloud Load Balancer 參數
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 在您建立負載平衡器之後，即可配置它，以進行彈性負載平衡。若要這樣做，請執行下列動作：
 
 1. 命名負載平衡器，然後選擇性地新增說明。
@@ -32,14 +34,14 @@ lastupdated: "2018-11-07"
 
 5. 您也可以對您的應用程式設定**最大連線限制**。
 
-6. 按一下**新增通訊協定**，來指定應用程式可能在接聽的其他埠及通訊協定。請確定所有前端埠都是唯一的。您可以選擇 HTTP、HTTPS 或 TCP 作為前端通訊協定。  
+6. 按一下**新增通訊協定**，來指定應用程式可能在接聽的其他埠及通訊協定。請確定所有前端埠都是唯一的。您可以選擇 HTTP、HTTPS 或 TCP 作為前端通訊協定。
 
 	<img src="images/lb-add-protocol.png" alt="圖片" style="width: 300px;"/>
 
-	起始配置時，最多只能定義兩個埠。建立服務實例之後，稍後可能會新增其他埠。如需所容許埠數上限的相關資訊，請參閱[埠數限制](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)。
+	起始配置時，最多只能定義兩個埠。建立服務實例之後，稍後可能會新增其他埠。如需所容許埠數上限的相關資訊，請參閱[埠數限制](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)。
 {:note:}
 
-7. IBM Cloud Load Balancer 會終止送入的 HTTPS（透過 SSL 的 HTTP）連線，並與後端應用程式伺服器進行純文字 HTTP 通訊，以及從伺服器卸載處理器密集的 SSL 作業。您必須上傳「SSL 憑證」。請從下拉清單選取其中一個可用的憑證。  
+7. 如果選擇 HTTP 作為後端通訊協定，則 IBM© Cloud Load Balancer 會終止送入的 HTTPS（透過 SSL 的 HTTP）連線，並與後端應用程式伺服器進行純文字 HTTP 通訊，以及從伺服器卸載處理器密集的 SSL 作業。如果選取的後端通訊協定為 HTTPS，則會加密負載平衡器與後端伺服器之間的資料流量。您必須上傳「SSL 憑證」。請從下拉清單選取其中一個可用的憑證。  
 
 	<img src="images/lb-ssl-cert.png" alt="圖片" style="width: 300px;"/>
 
@@ -51,7 +53,7 @@ lastupdated: "2018-11-07"
 
 	<img src="images/refresh-cert.png" alt="圖片" style="width: 300px;"/>
 
-	**附註**：絕對不要刪除與 HTTPS 接聽器相關聯的任何憑證，因為這可能會導致功能發生問題。
+	**附註：絕對不要刪除與 HTTPS 接聽器相關聯的任何憑證，因為這可能會導致功能發生問題。**
 
 8. 按**下一步**。
 
@@ -70,4 +72,4 @@ lastupdated: "2018-11-07"
 按**下一步**，以啟用您的選擇。
 
 ## 下一步為何？
-[識別應用程式的資源](identify-app-resources.html)，例如原始儲存區及性能檢查機制。
+[識別應用程式的資源](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)，例如原始儲存區及性能檢查機制。

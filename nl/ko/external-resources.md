@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 기타 리소스
+# IBM Cloud Load Balancer의 기타 리소스
+{: #other-resources-for-ibm-cloud-load-balancer}
 
-IBM 및 IBM의 일부 파트너와 고객이 이러한 리소스를 작성합니다.
+IBM© 및 IBM의 일부 파트너와 고객이 이러한 리소스를 작성합니다.
 
 ## 블로그
 

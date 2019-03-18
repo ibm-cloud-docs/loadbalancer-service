@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Conjunto da Camada 7
+{: #layer-7-pool}
+
 Um conjunto da Camada 7 (L7) é um agrupamento lógico dos servidores (membros) para manipulação de solicitações recebidas.
 
 O recurso de balanceamento de carga da Camada 7 pode direcionar o tráfego recebido para diferentes conjuntos de backend com base
@@ -22,8 +24,8 @@ nas políticas e regras. Esse recurso é suportado associando vários conjuntos 
 Os conjuntos da L7 suportam apenas HTTP como o protocolo de back-end.
 
 ## Persistência de sessão
-A persistência de sessão pode ser configurada para cada conjunto da Camada 7. Para obter mais detalhes, consulte a   
-[seção de tráfego avançado](advanced-traffic.html).
+A persistência de sessão pode ser configurada para cada conjunto da Camada 7. Para obter mais detalhes, consulte a  
+[seção de tráfego avançado](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Membros da Camada 7
 

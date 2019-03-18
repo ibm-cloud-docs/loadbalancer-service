@@ -18,6 +18,8 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # 配置 IBM Cloud Load Balancer 参数
+{: #configuring-ibm-cloud-load-balancer-parameters}
+
 创建 Load Balancer 后，可以对其进行配置以实现弹性负载均衡。为此，请执行以下操作：
 
 1. 命名 Load Balancer，并可选择添加描述。
@@ -32,14 +34,14 @@ lastupdated: "2018-11-07"
 
 5. 您还可以对应用程序设置**最大连接数限制**。
 
-6. 单击**添加协议**以指定应用程序可能在侦听的其他端口和协议。请确保所有前端端口都是唯一的。您可以选择 HTTP、HTTPS 或 TCP 作为前端协议。  
+6. 单击**添加协议**以指定应用程序可能在侦听的其他端口和协议。请确保所有前端端口都是唯一的。您可以选择 HTTP、HTTPS 或 TCP 作为前端协议。
 
 	<img src="images/lb-add-protocol.png" alt="图样" style="width: 300px;"/>
 
-	在初始配置时最多可以定义 2 个端口。日后创建服务实例后可添加更多端口。请参阅[端口数限制](faqs.html#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)，以获取有关允许的最大端口数的更多信息。
+	在初始配置时最多可以定义 2 个端口。日后创建服务实例后可添加更多端口。请参阅[端口数限制](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)，以获取有关允许的最大端口数的更多信息。
 {:note:}
 
-7. IBM Cloud Load Balancer 会终止入局 HTTPS（基于 SSL 的 HTTP）连接，以纯文本 HTTP 与后端应用程序服务器通信，并从服务器卸载处理器密集型 SSL 任务。您必须上传 SSL 证书。从下拉列表中选择一个可用的证书。  
+7. 如果选择后端协议为 HTTP，那么 IBM© Cloud Load Balancer 会终止入局 HTTPS（基于 SSL 的 HTTP）连接，可以通过明文 HTTP 与后端应用程序服务器通信，并从服务器卸载处理器密集型 SSL 任务。如果选择的后端协议为 HTTPS，那么 Load Balancer 与后端服务器之间的流量将会加密。您必须上传 SSL 证书。从下拉列表中选择一个可用的证书。  
 
 	<img src="images/lb-ssl-cert.png" alt="图样" style="width: 300px;"/>
 
@@ -51,7 +53,7 @@ lastupdated: "2018-11-07"
 
 	<img src="images/refresh-cert.png" alt="图样" style="width: 300px;"/>
 
-	**注**：切勿删除与 HTTPS 侦听器关联的任何证书，因为这可能会导致功能方面的问题。
+	**注：切勿删除与 HTTPS 侦听器关联的任何证书，因为这可能会导致功能方面的问题。**
 
 8. 单击**下一步**。
 
@@ -70,4 +72,4 @@ lastupdated: "2018-11-07"
 单击**下一步**以启用选项。
 
 ## 接下来做什么
-[识别应用程序资源](identify-app-resources.html)，例如源池和运行状况检查机制。
+[识别应用程序资源](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)，例如源池和运行状况检查机制。

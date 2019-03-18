@@ -16,7 +16,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# 高级流量管理
+# 使用 IBM Cloud Load Balancer 的高级流量管理
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 本节讨论随 Load Balancer 服务一起提供的几个高级流量管理功能。
 
 ## 最大连接数

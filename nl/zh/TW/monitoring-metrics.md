@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 監視度量值
+# 使用 IBM Cloud Load Balancer 監視度量值
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 負載平衡器會監視下列度量值： 
 
@@ -65,4 +66,4 @@ lastupdated: "2018-11-12"
 
 # 如何啟用度量值監視
 
-為了能夠擷取監視度量值，您必須鏈結 SoftLayer 帳戶與 IBM Cloud 帳戶。如需相關資訊，請參閱[本主題 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](/docs/account/softlayerlink.html#link_user_account)。
+為了能夠擷取監視度量值，您必須鏈結 SoftLayer 帳戶與 IBM© Cloud 帳戶。如需相關資訊，請參閱[本主題](/docs/account?topic=account-unifyingaccounts#link_accounts)。

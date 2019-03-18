@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Überwachungsmetriken
+# Überwachungsmetriken mit IBM Cloud Load Balancer
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 Von der Lastausgleichsfunktion werden folgende Metriken überwacht: 
 
@@ -66,4 +67,4 @@ In der folgenden Tabelle wird veranschaulicht, wie die Datenpunkte aus dem Zeiti
 
 # Verwendungshinweise zum Aktivieren der Überwachung der Metriken
 
-Zum Abrufen von Überwachungsmetriken müssen Sie mit Ihrem IBM Cloud-Konto eine Verbindung zu Ihrem SoftLayer-Konto herstellen. Weitere Informationen finden Sie [hier ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/account/softlayerlink.html#link_user_account). 
+Zum Abrufen von Überwachungsmetriken müssen Sie mit Ihrem IBM© Cloud-Konto eine Verbindung zu Ihrem SoftLayer-Konto herstellen. Weitere Informationen finden Sie [in diesem Thema](/docs/account?topic=account-unifyingaccounts#link_accounts).

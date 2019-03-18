@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Bekannte Probleme und Einschränkungen
-Dieser Abschnitt enthält Informationen über die derzeit bekannten Probleme und Einschränkungen beim IBM Cloud Load Balancer-Service.
+# Bekannte Probleme und Einschränkungen bei IBM Cloud Load Balancer
+{: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
+
+Dieser Abschnitt enthält Informationen über die derzeit bekannten Probleme und Einschränkungen beim IBM© Cloud Load Balancer-Service.
 
 ## Bekannte Probleme
 Der IBM Cloud Load Balancer-Service weist derzeit die folgenden Probleme auf:

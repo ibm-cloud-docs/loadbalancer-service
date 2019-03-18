@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Política da Camada 7
+{: #layer-7-policy}
 
 Uma política da Camada 7 (L7) é usada para classificar o tráfego, correspondendo suas informações da L7 com as regras da L7 e, em seguida, tomando ações específicas no caso de correspondência das regras. 
 
@@ -54,7 +55,7 @@ Redirecionar URL | A URL para a qual o tráfego será redirecionado, se a ação
 Redirecionar conjunto da L7 | O conjunto de servidores para o qual o tráfego será enviado, se a ação estiver configurada como `REDIRECT_POOL`.
 Protocolo | A porta do aplicativo front-end à qual a política é aplicada.
 
-# Regra da Camada 7
+## Regra da Camada 7
 As regras da Camada 7 definem uma parte do tráfego recebido que deve ser correspondida com valores específicos.
 
 * Se o tráfego recebido corresponder ao valor especificado de uma regra, a regra será avaliada como `true`.

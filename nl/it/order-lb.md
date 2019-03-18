@@ -13,7 +13,9 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Esamina e inserisci l'ordine
+# Esamina e inserisci il tuo ordine
+{: #review-and-place-your-order}
+
 Esamina il **riepilogo del tuo ordine** e fai clic su **Create** per inserire l'ordine.
 
 <img src="images/review-order-lb.png" alt="disegno" style="width: 300px;"/>
@@ -25,4 +27,4 @@ Ora il sistema crea un'istanza di servizio per te e ti porta alla pagina di riep
 <img src="images/summary-online.png" alt="disegno" style="width: 300px;"/>
 
 ## Operazioni successive
-[Modifica la tua configurazione](managing-lb.html) per monitorare le tue prestazioni di servizio. 
+[Modifica la tua configurazione](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) per monitorare le tue prestazioni di servizio.

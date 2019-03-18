@@ -16,9 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Acerca de
+# Acerca de IBM Cloud Load Balancer
+{: #about-ibm-cloud-load-balancer}
 
-El servicio IBM Cloud Load Balancer ayuda a los clientes a mejorar la disponibilidad de las aplicaciones importantes para la empresa mediante la distribución del tráfico entre varias instancias del servidor de aplicaciones y el reenvío de tráfico solo a instancias en buen estado.
+El servicio IBM© Cloud Load Balancer ayuda a los clientes a mejorar la disponibilidad de las aplicaciones importantes para la empresa mediante la distribución del tráfico entre varias instancias del servidor de aplicaciones y el reenvío de tráfico solo a instancias en buen estado.
 
 ## Visión general de las características
 El servicio IBM Cloud Load Balancer ofrece las siguientes características:
@@ -32,21 +33,23 @@ El servicio IBM Cloud Load Balancer ofrece las siguientes características:
 	* Instancias de servidor back-end en subredes privadas
 * Equilibrio de carga básica
 	* Distribución del tráfico basada en información de puerto de aplicación de capa 4
-	* Soporte para aplicaciones basadas en HTTP, HTTPS y TCP 
+	* Soporte para aplicaciones basadas en HTTP, HTTPS y TCP
 	* Variedad de métodos de equilibrio de carga tales como round robin (RR), round robin ponderado y menos conexiones
 	* Equilibrio de carga entre las instancias de cálculo del servidor virtual y del servidor nativo residentes en el sistema local dentro de un centro de datos
 * Comprobaciones del estado del servidor
-	* Supervisión periódica del estado del servidor para garantizar que el tráfico se envíe solo a servidores en buen estado 
-	* Comprobaciones de estado de capa 4 para puertos TCP y de capa 7 para puertos HTTP 
+	* Supervisión periódica del estado del servidor para garantizar que el tráfico se envíe solo a servidores en buen estado
+	* Comprobaciones de estado de capa 4 para puertos TCP y de capa 7 para puertos HTTP
 * Descarga SSL
 	* Finalización del tráfico SSL entrante (HTTPS) utilizando comunicación HTTP en texto sin formato con servidores back-end
 * Gestión de tráfico avanzada
 	* Retención de cliente (persistencia de sesión)
 	* Número máximo de conexiones por puerto virtual
 * Gestión fácil con interfaz gráfica intuitiva y API
-* Fiabilidad incorporada 
-* Precio basado en uso 
+* Fiabilidad incorporada
+* Precio basado en uso
 * Supervisión
-    * Supervisa las métricas de rendimiento, conexiones activas y tasa de conexión para los protocolos HTTP, HTTPS y TCP sobre intervalos de tiempo especificados por el usuario. Consulte [Supervisión de métricas](monitoring-metrics.html) para obtener detalles adicionales.
+    * Supervisa las métricas de rendimiento, conexiones activas y tasa de conexión para los protocolos HTTP, HTTPS y TCP sobre intervalos de tiempo especificados por el usuario. Consulte [Supervisión de métricas](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) para obtener detalles adicionales.
 * Soporte de capa 7
-    * El tráfico HTTP/HTTPS se direcciona a diferentes servicios de fondo en función de la cabecera HTTP y se realiza utilizando políticas y reglas. Las reglas se utilizan para clasificar el tráfico y se basan en los campos de cabecera HTTP. Cuando el tráfico coincide con todas las reglas, se toma una acción especificada por la política.    
+    * El tráfico HTTP/HTTPS se direcciona a diferentes servicios de fondo en función de la cabecera HTTP y se realiza utilizando políticas y reglas. Las reglas se utilizan para clasificar el tráfico y se basan en los campos de cabecera HTTP. Cuando el tráfico coincide con todas las reglas, se toma una acción especificada por la política.
+* Soporte de región multizona (MZR)
+    * Se crean instancias de los nodos de equilibrador de carga en distintos centros de datos de una MZR. Consulte la [Visión general de la región multizona](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) para obtener más información.

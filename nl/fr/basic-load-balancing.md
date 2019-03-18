@@ -16,11 +16,13 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Equilibrage de charge de base
-Le service IBM Cloud Load Balancer répartit le trafic entre plusieurs instances de serveurs (bare metal et virtuel) installées en local, au sein du même centre de données. 
+# Notions de base d'exécution de l'équilibreur de charge IBM Cloud Load Balancer
+{: #performing-ibm-cloud-load-balancer-basics}
+
+Le service IBM© Cloud Load Balancer répartit le trafic entre plusieurs instances de serveurs (bare metal et virtuel) installées en local, au sein du même centre de données. 
 
 ## Equilibreur de charge public 
-Un nom de domaine complet, accessible publiquement, est affecté à votre instance de service d'équilibreur de charge. Vous devez utiliser ce nom de domaine pour accéder à vos applications hébergées derrière le serervice Load Balancer. Vous pouvez enregistrer ce nom de domaine avec une ou plusieurs adresses IP publiques. Les adresses IP publiques et le nombre d'adresses IP publiques peuvent évoluer au fil du temps en fonction des activités de maintenance et de mise à l'échelle, qui sont transparentes pour l'utilisateur final. Les instances de calcul de back end qui hébergent votre application doivent être installées sur un réseau privé IBM Cloud. 
+Un nom de domaine complet, accessible publiquement, est affecté à votre instance de service d'équilibreur de charge. Vous devez utiliser ce nom de domaine pour accéder à vos applications hébergées derrière le service Load Balancer. Vous pouvez enregistrer ce nom de domaine avec une ou plusieurs adresses IP publiques. Les adresses IP publiques et le nombre d'adresses IP publiques peuvent évoluer au fil du temps en fonction des activités de maintenance et de mise à l'échelle, qui sont transparentes pour l'utilisateur final. Les instances de calcul de back end qui hébergent votre application doivent être installées sur un réseau privé IBM Cloud. 
 
 Nous vous recommandons d'utiliser vos serveurs de back au format "privé uniquement" à moins que ceux-ci ne requièrent une connectivité publique directe. Cette pratique aide à obtenir une meilleure sécurité et conserve votre adresse IP publique. Les applications hébergées sur ces serveurs de back end restent accessibles sur le réseau public par le biais de l'équilibreur de charge.
 {:note}  
@@ -28,20 +30,21 @@ Nous vous recommandons d'utiliser vos serveurs de back au format "privé uniquem
 Vous pouvez choisir d'allouer des adresses IP publiques d'équilibrage de charge à partir d'un pool de systèmes IBM (par défaut) ou d'un VLAN public de votre compte lors de la création de votre instance d'équilibrage de charge.
 
 ## Equilibreur de charge interne
-L'équilibreur de charge interne n'est accessible que dans le réseau privé IBM Cloud.  
+L'équilibreur de charge interne n'est accessible que dans le réseau privé IBM Cloud. 
 
 Comme pour un équilibreur de charge public, votre instance de service d'équilibreur de charge interne se voit également affecter un nom de domaine complet. Toutefois, ce nom de domaine est enregistré avec une ou plusieurs adresses IP publiques. 
 
 Comme pour un équilibreur de charge public, les adresses IP privées et leur nombre peuvent évoluer au fil du temps en fonction des activités de maintenance et de mise à l'échelle, qui sont transparentes pour l'utilisateur final. 
 
-Les instances de calcul de back end qui hébergent votre application doivent également figurer sur le réseau privé IBM Cloud.{:note}
+Les instances de calcul de back end qui hébergent votre application doivent également figurer sur le réseau privé IBM Cloud.
+{:note}
 
 ## Ports/protocoles d'applications de front end et de back end
-Vous pouvez choisir jusqu'à dix ports (protocoles) d'applications de front end et les mapper à leurs ports (protocoles) respectifs sur les serveurs d'applications de back end. Le nom de domaine complet qui est affecté à votre instance de serervice Load Balancer et les ports d'applications de front end sont exposés au monde extérieur. Les demandes d'utilisateur entrantes sont reçues sur ces ports. 
+Vous pouvez choisir jusqu'à dix ports (protocoles) d'applications de front end et les mapper à leurs ports (protocoles) respectifs sur les serveurs d'applications de back end. Le nom de domaine complet qui est affecté à votre instance de service Load Balancer et les ports d'applications de front end sont exposés au monde extérieur. Les demandes d'utilisateur entrantes sont reçues sur ces ports. 
 
 En revanche, les ports de back end ne sont connus qu'en interne. Les ports de back end peuvent être, ou non, identiques à ceux de front end. Par exemple, l'équilibreur de charge peut être configuré de manière à recevoir le trafic HTTP/web entrant sur le port de front end 80, tandis que les serveurs de back end écoutent sur le port personnalisé 81. 
 
-Les ports/protocoles de front end pris en charge sont HTTP, HTTPS et TCP. Les ports/protocoles de back end pris en charge sont HTTP et TCP. Le trafic HTTP entrant doit être arrêté au niveau de l'équilibreur de charge pour autoriser la communication HTTP en texte en clair avec le serveur de back end. 
+Les ports/protocoles de front end pris en charge sont HTTP, HTTPS et TCP. Les ports/protocoles de back end pris en charge sont également HTTP, HTTPS et TCP. Le trafic HTTP entrant doit être arrêté au niveau de l'équilibreur de charge pour autoriser la communication HTTP en texte en clair avec le serveur de back end. Si le protocole de back end est HTTPS, le trafic sera chiffré entre l'équilibreur de charge et les serveurs de back end. 
 
 ### Remarques
 

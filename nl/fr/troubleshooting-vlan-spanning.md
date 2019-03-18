@@ -15,12 +15,14 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Traitement des incidents liés au spanning VLAN d'équilibreur de charge
-Cette rubrique fournit des informations sur les problèmes qui peuvent se produire couramment lorsque l'équilibreur de charge et les instances de calcul qui lui sont connectées se trouvent dans des sous-réseaux différents. Le spanning VLAN doit être activé pour que l'équilibreur de charge puisse communiquer et envoyer des demandes aux instances de calcul qui se trouvent sur un autre sous-réseau. 
+{: #load-balancer-vlan-spanning-troubleshooting}
 
-1. Connectez-vous au [portail client](https://control.softlayer.com), accédez à **Réseau > Gestion IP**, puis cliquez sur **VLAN**.
+Cette rubrique fournit des informations sur les problèmes qui peuvent se produire couramment lorsque l'équilibreur de charge et les instances de calcul qui lui sont connectées se trouvent dans des sous-réseaux différents. Le spanning VLAN doit être activé pour que l'équilibreur de charge puisse communiquer et envoyer des demandes aux instances de calcul qui se trouvent sur un autre sous-réseau.
+
+1. Connectez-vous au [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com){:new_window}, accédez à **Réseau > Gestion IP**, puis cliquez sur **VLAN**.
 
 2. Activez **Spanning VLAN** (**On**).
 
 <img src="images/vlan-spanning.png" alt="drawing" style="width: 500px;"/>
 
-Cela ouvre la communication entre l'équilibreur de charge et ses instances de calcul. 
+Cela ouvre la communication entre l'équilibreur de charge et ses instances de calcul.

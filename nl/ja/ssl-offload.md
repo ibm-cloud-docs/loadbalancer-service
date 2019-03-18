@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# SSL オフロード
+# IBM Cloud Load Balancer での SSL オフロード
+{: #ssl-offload-with-ibm-cloud-load-balancer}
 
 すべての着信 HTTPS 接続について、ロード・バランサー・サービスは SSL 接続を終了し、バックエンド・サーバーとのプレーン・テキスト HTTP 通信を確立します。 CPU 集中型の SSL ハンドシェークおよび暗号化/復号のタスクはバックエンド・サーバーから移行され、アプリケーション・トラフィックの処理にすべての CPU サイクルを使用できます。 
 
-ロード・バランサーが SSL オフロード・タスクを実行するには、SSL 証明書が必要です。 既存の SSL 証明書を使用するか、新しい SSL 証明書を購入し、[IBM Cloud 証明書ストア](https://control.softlayer.com/security/sslcerts)を介して管理できます。 
+ロード・バランサーが SSL オフロード・タスクを実行するには、SSL 証明書が必要です。 既存の SSL 証明書を使用するか、新しい SSL 証明書を購入し、[IBM© Cloud 証明書ストア ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/security/sslcerts){:new_window} を介して管理できます。 
 
-# SSL 暗号スイート
+## SSL 暗号スイート
 ロード・バランサー・サービスは、SSL オフロードのある TLS バージョン 1.2 をサポートしています。
 
 次の SSL 暗号はご使用のロード・バランサーによりサポートされています。
@@ -36,4 +37,4 @@ lastupdated: "2018-11-12"
 
 ロード・バランサーに 1 つ以上の HTTPS フロントエンド・アプリケーション・ポート (プロトコル) が構成されている場合、デフォルトで上記のすべての事前定義済み SSL 暗号がそのロード・バランサーで使用可能になります。 
 
-**注:** 必要な場合、ご使用のロード・バランサー用に異なる SSL 暗号を使用可能にすることを選択できます。詳しくは、[HTTPS アプリケーション用の優先暗号スイートの選択](custom-ciphers.html)を参照してください。
+**注:** 必要な場合、ご使用のロード・バランサー用に異なる SSL 暗号を使用可能にすることを選択できます。 詳しくは、[HTTPS アプリケーション用の優先暗号スイートの選択](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application)を参照してください。

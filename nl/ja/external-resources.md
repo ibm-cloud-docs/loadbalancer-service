@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# その他の資料
+# IBM Cloud Load Balancer のための他のリソース
+{: #other-resources-for-ibm-cloud-load-balancer}
 
-以下の資料は、IBM および IBM のパートナーおよびお客様によって作成されたものです。
+以下の資料は、IBM© および IBM のパートナーおよびお客様によって作成されたものです。
 
 ## ブログ
 

@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Política de capa 7
+{: #layer-7-policy}
 
 Una política de capa 7 (L7) se utiliza para clasificar el tráfico comparando su información de L7 con las reglas L7 y, a continuación, tomando acciones específicas si esas reglas coinciden. 
 
@@ -54,7 +55,7 @@ URL de redirección | El URL al que se redirigirá el tráfico, si la acción es
 Agrupación L7 de redirección | La agrupación de servidores a la que se enviará el tráfico, si la acción está establecida en `REDIRECT_POOL`.
 Protocolo | El puerto de aplicación frontal al que se aplica la política.
 
-# Regla de capa 7
+## Regla de capa 7
 Las reglas de capa 7 definen una parte del tráfico de entrada que se va a comparar con valores específicos.
 
 * Si el tráfico de entrada coincide con el valor especificado de una regla, la regla se evalúa como `true`.

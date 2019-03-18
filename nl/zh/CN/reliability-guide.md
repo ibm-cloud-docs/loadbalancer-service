@@ -13,8 +13,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# 如何创建 IBM Cloud Load Balancer 并将其用于弹性服务器负载均衡
-IBM Cloud Load Balancer 服务可帮助提高业务关键型应用程序的可扩展性和可用性。它可监视应用程序服务器的运行状况，利用智能负载均衡方法在多个服务器之间分配流量，并动态调整其系统容量以处理不断变化的流量负载。 
+# 创建 IBM Cloud Load Balancer 并将其用于弹性服务器负载均衡
+{: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
+
+IBM© Cloud Load Balancer 服务可帮助提高业务关键型应用程序的可伸缩性和可用性。它可监视应用程序服务器的运行状况，利用智能负载均衡方法在多个服务器之间分配流量，并动态调整其系统容量以处理不断变化的流量负载。 
 
 ## 您将完成的内容
 
@@ -23,8 +25,8 @@ IBM Cloud Load Balancer 服务可帮助提高业务关键型应用程序的可�
 
 任务 |描述 
 ------------- | -------------
-[创建 Load Balancer](create-load-balancer.html)|首先创建 Load Balancer 服务。
-[配置基本参数](begin-lb-config.html)|配置 Load Balancer。
-[识别应用程序资源](identify-app-resources.html)|识别您的应用程序资源，例如源池和运行状况检查机制。
-[复查并订购 Load Balancer](order-lb.html)|下订单之前复查订单内容。
-[监视和管理服务](managing-lb.html)|编辑配置并监视服务性能。
+[创建 Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer)|首先创建 Load Balancer 服务。
+[配置基本参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters)|配置 Load Balancer。
+[识别应用程序资源](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)|识别您的应用程序资源，例如源池和运行状况检查机制。
+[复查并订购 Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order)|下订单之前复查订单内容。
+[监视和管理服务](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)|编辑配置并监视服务性能。

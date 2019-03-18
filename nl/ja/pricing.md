@@ -15,15 +15,16 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# 価格設定
+# IBM Cloud Load Balancer の価格設定
+{: #ibm-cloud-load-balancer-pricing}
 
-IBM Cloud Load Balancer の価格設定は以下の 3 つのメトリックに基づいており、毎月計算されます。
+IBM© Cloud Load Balancer の価格設定は以下の 3 つのメトリックに基づいており、毎月計算されます。
 
 * サービス利用時間
 * 処理されるデータ
 * アウトバウンド・パブリック処理能力 (Egress)
 
-**注:** すべての価格は地域によって異なります。IBM Cloud Load Balancer サービスが消費するアウトバウンド・パブリック処理能力は、標準のデータ転送料金 [GB 当たり USD $0.09 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/bandwidth) に基づいて請求されます。
+**注:** すべての価格は地域によって異なります。IBM Cloud Load Balancer サービスが消費するアウトバウンド・パブリック処理能力は、標準のデータ転送料金 [GB 当たり USD 0.09 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/bandwidth) に基づいて請求されます。
 
 次の表は、パブリック・ロード・バランシングに毎月 4500 GB を使用しているお客様向けに価格設定された IBM Cloud Load Balancer の例の詳細を示しています。
 
@@ -39,4 +40,4 @@ IBM Cloud Load Balancer の価格設定は以下の 3 つのメトリックに�
 
 **注:** すべての価格は地域によって異なります。例と表にある価格は、米ドル建てのダラスの価格設定です。サービス使用料金 $0.025/時間は表には表示されていません。
 
-お客様の地域の具体的な価格設定情報を確認するには、単純な[登録プロセス](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)を実行してください。
+お客様の地域の具体的な価格設定情報を確認するには、単純な[登録プロセス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group) を実行してください。

@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 第 7 層儲存區
+{: #layer-7-pool}
+
 第 7 層 (L7) 儲存區是用來處理送入要求之伺服器（成員）的邏輯分組。
 
 第 7 層負載平衡特性可以根據原則及規則，將送入的資料流量導向至不同的後端儲存區。此特性的支援方式是將多個 L7 儲存區與負載平衡器相關聯。第 7 層儲存區是與動作為 `redirect to pool` 的第 7 層原則搭配使用。
@@ -22,7 +24,7 @@ L7 儲存區僅支援 HTTP 作為後端通訊協定。
 
 ## 階段作業持續性
 可以針對每個第 7 層儲存區配置階段作業持續性。如需詳細資料，請參閱  
-[進階資料流量](advanced-traffic.html)小節。
+[進階資料流量](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer)小節。
 
 ## 第 7 層成員
 

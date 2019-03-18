@@ -16,7 +16,9 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# 進階資料流量管理
+# 使用 IBM Cloud Load Balancer 進行進階資料流量管理
+{: #advanced-traffic-management-with-ibm-cloud-load-balancer}
+
 本節討論負載平衡器服務所提供的數個進階資料流量管理特性。
 
 ## 連線上限

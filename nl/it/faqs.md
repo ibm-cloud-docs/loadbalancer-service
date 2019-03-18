@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# FAQ
+# FAQ per IBM Cloud Load Balancer
+{: #faqs-for-ibm-cloud-load-balancer}
 
-Questa sezione contiene le risposte ad alcune domande frequenti sul servizio IBM Cloud Load Balancer.
+Questa sezione contiene le risposte ad alcune domande frequenti sul servizio IBM© Cloud Load Balancer.
 
 ## Quante opzioni di bilanciamento del carico sono disponibili in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-Per un confronto dettagliato delle offerte del programma di bilanciamento del carico di IBM, fai riferimento a [Esplora i programmi di bilanciamento del carico](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+Per un confronto dettagliato delle offerte del programma di bilanciamento del carico di IBM, fai riferimento a [Esplora i programmi di bilanciamento del carico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Posso utilizzare un nome DNS differente per il mio programma di bilanciamento del carico?
 {:faq}
@@ -44,7 +45,7 @@ Mentre si tenta di creare un nuovo servizio del programma di bilanciamento del c
 ## Le mie istanze di calcolo di backend possono trovarsi su una sottorete diversa da quella del programma di bilanciamento del carico?
 {:faq}
 
-Sì, il programma di bilanciamento del carico e le istanze di calcolo connesse ad esso possono trovarsi su sottoreti diverse, ma lo **spanning delle VLAN** deve essere abilitato affinché il programma di bilanciamento del carico possa comunicare e inoltrare le richieste all'istanza di calcolo. Fai riferimento a [Risoluzione dei problemi dello spanning delle VLAN](troubleshooting-vlan-spanning.html) per ulteriori informazioni.
+Sì, il programma di bilanciamento del carico e le istanze di calcolo connesse ad esso possono trovarsi su sottoreti diverse, ma lo **spanning delle VLAN** deve essere abilitato affinché il programma di bilanciamento del carico possa comunicare e inoltrare le richieste all'istanza di calcolo. Fai riferimento a [Risoluzione dei problemi dello spanning delle VLAN](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting) per ulteriori informazioni.
 
 ## Quali sono le impostazioni predefinite e i valori consentiti per i vari parametri del controllo di integrità?
 {:faq}
@@ -98,7 +99,7 @@ La porta TCP 56501 viene utilizzata per la gestione. Assicurati che il traffico 
 ## Cosa devo fare se non riesco a vedere le metriche di monitoraggio di un programma di bilanciamento del carico esistente dopo aver collegato il mio account Softlayer a IBM Cloud? 
 {:faq}
 
-Le metriche di monitoraggio non saranno disponibili per i programmi di bilanciamento del carico esistenti dopo il collegamento degli account. Devi ricreare i programmi di bilanciamento del carico oppure contattare il supporto. Le metriche di monitoraggio per i programmi di bilanciamento del carico appena creati saranno disponibili. 
+Le metriche di monitoraggio non saranno disponibili per i programmi di bilanciamento del carico esistenti dopo il collegamento degli account. Devi ricreare i programmi di bilanciamento del carico oppure contattare il supporto. Le metriche di monitoraggio per i programmi di bilanciamento del carico appena creati saranno disponibili.
 
 ## Gli indirizzi IP del programma di bilanciamento del carico sono fissi?
 {:faq}
@@ -110,14 +111,14 @@ Non possiamo garantire che gli indirizzi IP del programma di bilanciamento del c
 ## Se ho un firewall distribuito sulla mia VLAN privata, quali configurazioni sono necessarie affinché funzioni con il mio servizio del programma di bilanciamento del carico?
 {:faq}
 
-Fai riferimento all'argomento [Intervalli IP di IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) per informazioni su come consentire intervalli IP attraverso il firewall.
+Fai riferimento all'argomento [Intervalli IP di IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) per informazioni su come consentire intervalli IP attraverso il firewall.
 
 ## Perché non posso vedere la mia configurazione L7 nell'interfaccia utente?
 {:faq}
 
-Al momento, il supporto L7 è disponibile solo tramite API pubbliche, ma la funzionalità sarà presto disponibile nell'interfaccia utente. Fai riferimento alla sezione L7 della [Documentazione API](apis.html) per ulteriori informazioni. 
+Al momento, il supporto L7 è disponibile solo tramite API pubbliche, ma la funzionalità sarà presto disponibile nell'interfaccia utente. Fai riferimento alla sezione L7 della [Documentazione API](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference) per ulteriori informazioni.
 
 ## Di quali informazioni ho bisogno per inviare un ticket di supporto?
 {:faq}
 
-Per inviare un ticket di supporto, specifica il nome prodotto ("IBM Cloud Load Balancer"), l'UUID del tuo programma di bilanciamento del carico (se possibile) e il tuo numero di account Softlayer. Puoi trovare l'UUID nell'URL dopo esserti spostato alla pagina di panoramica di un determinato programma di bilanciamento del carico. 
+Per inviare un ticket di supporto, specifica il nome prodotto ("IBM Cloud Load Balancer"), l'UUID del tuo programma di bilanciamento del carico (se possibile) e il tuo numero di account Softlayer. Puoi trovare l'UUID nell'URL dopo esserti spostato alla pagina di panoramica di un determinato programma di bilanciamento del carico.

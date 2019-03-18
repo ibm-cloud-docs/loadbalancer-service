@@ -15,15 +15,16 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# Tarification
+# Tarification de l'équilibreur de charge IBM Cloud Load Balancer
+{: #ibm-cloud-load-balancer-pricing}
 
-La tarification du service IBM Cloud Load Balancer est basée sur les trois métriques suivantes, calculées mensuellement :
+La tarification du service IBM© Cloud Load Balancer est basée sur les trois métriques suivantes, calculées mensuellement :
 
 * Heures d'utilisation du service
 * Données traitées
 * Bande passante publique sortante (Egress)
 
-**Remarque :** tous les prix varient en fonction des régions géographiques. La bande passante publique sortante consommée par le service IBM Cloud Load Balancer est facturée sur la base des frais de transfert de données standard fixés à [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth). 
+**Remarque :** tous les prix varient en fonction des régions géographiques. La bande passante publique sortante consommée par le service IBM Cloud Load Balancer est facturée sur la base des frais de transfert de données standard fixés à [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth).
 
 Le graphique suivant décrit en détail un exemple de service IBM Cloud Load Balancer facturé pour un client qui utilise 4500 Go par mois d'équilibrage de charge public :
 
@@ -32,11 +33,11 @@ Le graphique suivant décrit en détail un exemple de service IBM Cloud Load Bal
 | **Utilisation du service** | 720 heures | 0,025 $/heure | 18 $/mois |
 | **Données traitées** | 4500 Go | 0,008 $/Go | 36 $/mois |
 
-La facturation totale pour le scénario décrit précédemment s'élève à 54 $/mois plus [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth). 
+La facturation totale pour le scénario décrit précédemment s'élève à 54 $/mois plus [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth).
 
 ![pricing](./images/pricing.png)
 
 
 **Remarque :** tous les prix varient en fonction des régions géographiques. Dans l'exemple et le diagramme, la tarification est exprimée en dollars américains pour la région de Dallas, les frais d'utilisation du service s'élevant à 0,025 $/heure ne sont pas affichés dans le diagramme.
 
-Pour afficher les informations de tarification spécifiques de votre région, vous pouvez suivre notre [processus d'inscription simplifié](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).
+Pour afficher les informations de tarification spécifiques de votre région, vous pouvez suivre notre [processus d'inscription simplifié![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).

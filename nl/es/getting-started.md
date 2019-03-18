@@ -15,19 +15,22 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# Guía de inicio
-Para empezar a utilizar IBM Cloud Load Balancer necesitará dos elementos principales:
+# Iniciación a IBM Cloud Load Balancer
+{: #getting-started-with-ibm-cloud-load-balancer}
 
-* Una cuenta con IBM: [IBMid ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/account/us-en/signup/register.html)
-* Un servidor IBM, ya sea [nativo](/docs/bare-metal/about.html#getting-started-with-bare-metal-servers) o [una instancia de servidor virtual (VSI)](/docs/vsi/vsi_index.html#getting-started-with-virtual-servers)
+Para empezar a utilizar IBM© Cloud Load Balancer necesitará dos elementos principales:
 
-Si necesita ayuda para obtener una cuenta de **IBMid**, póngase en contacto con el [representante de ventas de IBM ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us) para obtener ayuda.
+* Una cuenta con IBM: [IBMid ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
+* Un servidor IBM, ya sea [nativo](/docs/bare-metal?topic=bare-metal-about) o [una instancia de servidor virtual (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers)
 
-Si tiene una cuenta de IBM Cloud Infrastructure (SoftLayer) existente, puede [enlazar la cuenta ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](/docs/account/softlayerlink.html#link_user_account) con el IBMid.
+Si necesita ayuda para obtener una cuenta de **IBMid**, póngase en contacto con el [representante de ventas de IBM ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} para obtener ayuda.
+
+Si tiene una cuenta de IBM Cloud Infrastructure (SoftLayer) existente, puede [enlazar su cuenta](/docs/account?topic=account-unifyingaccounts) a su IBMid.
 
 ## Realizar un pedido de un equilibrador de carga
 
-Para realizar un pedido de un servicio IBM Cloud Load Balancer, seleccione **Red > Load Balancers > IBM Cloud Load Balancer** en el [catálogo de IBM Cloud](https://console.bluemix.net/catalog/infrastructure/load-balancer-group). Inicie la sesión o cree una cuenta nueva y, a continuación, realice el procedimiento siguiente:
+Para solicitar un servicio IBM Cloud Load Balancer, seleccione **Red > Equilibradores de carga > IBM Cloud Load Balancer**
+en el [catálogo de IBM Cloud ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window}. Inicie la sesión o cree una cuenta nueva y, a continuación, realice el procedimiento siguiente:
 
 1. Seleccione el centro de datos y revise el plan de servicio. Pulse **Siguiente**.
 2. Seleccione la subred en la que desee desplegar el equilibrador de carga. La instancia del servicio de equilibrador de carga tendrá una de las interfaces de red en esta subred. Asegúrese de que los servidores de aplicaciones estén en esta subred o sean accesibles desde la misma. Si es necesario, habilite la expansión de VLAN. Pulse **Siguiente**.
@@ -39,10 +42,10 @@ Para realizar un pedido de un servicio IBM Cloud Load Balancer, seleccione **Red
 	
 4. Ajuste los parámetros de la comprobación de estado si lo desea; de lo contrario, utilice los valores predeterminados. Pulse **Siguiente**.
 5. Asocie una o más instancias de servidor detrás del equilibrador de carga. Solo verá las instancias del servidor local en su centro de datos. Pulse **Siguiente**.
-6. Revise la página de resumen y, a continuación, pulse **Crear**.
+6. Revise la página de resumen y luego pulse **Crear**.
 
 	La página de resumen muestra la instancia del servicio de equilibrador de carga que se acaba de crear. Observe el campo **Estado**. El estado `Offline` significa que el equilibrador de carga no está en servicio. No se pueden crear configuraciones ni se puede proporcionar servicio de equilibrio de carga hasta que el estado cambie a `Online`. Puede que tenga que actualizar la pantalla para ver el estado actual.
 
 	Al pulsar el nombre de servicio en la página, irá a la página de visión general del servicio. Puede desplazarse por los separadores **Protocolos**, **Comprobaciones de estado** e **Instancias de servidor** para editar la configuración.
 
-Consulte [Cómo crear y utilizar IBM Cloud Load Balancer para el equilibrio de carga elástico del servidor](reliability-guide.html) para ver instrucciones de configuración paso a paso.
+Consulte [Cómo crear y utilizar IBM Cloud Load Balancer para el equilibrio de carga elástico del servidor](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) para ver instrucciones de configuración paso a paso.

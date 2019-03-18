@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # アプリケーション・サーバーのトラブルシューティング
+{: #application-server-troubleshooting}
+
 このトピックでは、ロード・バランサーの使用時に発生する可能性のある一般的な問題について説明します。
 
 ## バックエンド・サーバーが正常でない

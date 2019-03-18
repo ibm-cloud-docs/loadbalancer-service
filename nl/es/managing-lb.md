@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Supervisión y gestión del servicio
+{: #monitoring-and-managing-your-service}
+
 Puede editar la configuración o supervisar el rendimiento del servicio pulsando el URL del nombre de servicio en la página de resumen del equilibrador de carga. 
 
 La **dirección del nombre completo del dominio (FQDN)** de la instancia de servicio del equilibrador de carga se encuentra justo debajo del nombre de servicio. Los usuarios finales pueden conectarse a su aplicación a través de esta dirección FQDN. Tenga en cuenta que las direcciones IP públicas y privadas del servicio equilibrador de carga no están expuestas al mundo exterior; solo se expone la dirección FQDN. 

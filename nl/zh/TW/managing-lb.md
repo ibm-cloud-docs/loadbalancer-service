@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 監視及管理服務
+{: #monitoring-and-managing-your-service}
+
 您可以編輯配置或監視服務效能，方法是在負載平衡器摘要頁面按一下服務名稱 URL。 
 
 負載平衡器服務實例的**完整網域名稱 (FQDN) 位址**就在服務名稱下方。您的一般使用者可以透過此 FQDN 位址連接至您的應用程式。請注意，負載平衡器服務的公用及專用 IP 位址不會公開給外界；僅公開 FQDN 位址。 

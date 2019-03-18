@@ -14,14 +14,15 @@ lastupdated: "2018-08-07"
 {:tip: .tip}
 {:download: .download}
 
-# Explorar Load Balancers
+# Explorando balanceadores de carga IBM
+{: #explore}
 
-O IBM Cloud oferece várias soluções de balanceamento de carga para escolher. A tabela abaixo compara as soluções de balanceamento de carga para ajudá-lo a escolher a mais adequada para você. Para saber mais sobre a oferta individual, clique em seu nome na tabela. 
+O IBM© Cloud oferece diversas soluções de balanceamento de carga para escolher. A tabela abaixo compara as soluções de balanceamento de carga para ajudá-lo a escolher a mais adequada para você. Para saber mais sobre a oferta individual, clique em seu nome na tabela. 
 
 Role para a direita para visualizar o restante da tabela!
 
 
-|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Compartilhado)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (Dedicado)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Padrão)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Compartilhado)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Dedicado)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Padrão)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**VIP Público**|Sim|Sim|Sim|Sim|Sim |
 |**VIP Privado**|Sim|Não|Sim|Sim|Sim |

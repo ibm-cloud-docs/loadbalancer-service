@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # 应用程序服务器故障诊断
+{: #application-server-troubleshooting}
+
 本主题提供有关使用 Load Balancer 时可能会遇到的常见问题的信息。
 
 ## 后端服务器运行状况欠佳

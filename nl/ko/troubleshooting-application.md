@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # 애플리케이션 서버 문제점 해결
+{: #application-server-troubleshooting}
+
 이 주제에서는 로드 밸런서를 사용하는 동안 발생할 수 있는 일반적인 문제에 대한 정보를 제공합니다.
 
 ## 백엔드 서버가 비정상임

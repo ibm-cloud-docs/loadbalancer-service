@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 监视度量值
+# 使用 IBM Cloud Load Balancer 监视度量值
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 负载均衡器监视以下度量值： 
 
@@ -65,4 +66,4 @@ lastupdated: "2018-11-12"
 
 # 如何启用度量值监视
 
-为了检索监视度量值，您必须将 SoftLayer 帐户与 IBM Cloud 帐户链接起来。请参阅[本主题 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/account/softlayerlink.html#link_user_account) 获取更多信息。
+为了检索监视度量值，您必须将 SoftLayer 帐户与 IBM© Cloud 帐户链接起来。请参阅[本主题](/docs/account?topic=account-unifyingaccounts#link_accounts)以获取更多信息。

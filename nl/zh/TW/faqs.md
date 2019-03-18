@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# 常見問題 (FAQ)
+# IBM Cloud Load Balancer 的常見問題
+{: #faqs-for-ibm-cloud-load-balancer}
 
-本節包含一些「IBM Cloud Load Balancer 服務」常見問題的回答。
+本節包含一些「IBM© Cloud Load Balancer 服務」常見問題的回答。
 
 ## {{site.data.keyword.BluSoftlayer_notm}} 中有多少個負載平衡選項可供使用？
 {:faq}
 
-如需 IBM 負載平衡器供應項目的詳細比較，請參閱[探索負載平衡器](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers)。
+如需 IBM 負載平衡器供應項目的詳細比較，請參閱[探索負載平衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)。
 
 ## 可以為負載平衡器使用不同的 DNS 名稱嗎？
 {:faq}
@@ -44,12 +45,12 @@ lastupdated: "2018-11-12"
 ## 我的後端運算實例是否可以在與負載平衡器子網路不同的子網路上？
 {:faq}
 
-可以，負載平衡器以及連接至負載平衡器的運算實例可以在不同的子網路中，但需要啟用 **VLAN Spanning**，負載平衡器才能將要求傳遞及轉發至運算實例。如需相關資訊，請參閱 [VLAN Spanning 疑難排解](troubleshooting-vlan-spanning.html)。
+可以，負載平衡器以及連接至負載平衡器的運算實例可以在不同的子網路中，但需要啟用 **VLAN Spanning**，負載平衡器才能將要求傳遞及轉發至運算實例。如需相關資訊，請參閱 [VLAN Spanning 疑難排解](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting)。
 
 ## 各種性能檢查參數的預設值及容許值為何？
 {:faq}
 
-預設值及容許值列示如下：
+預設值及容許值列出如下：
 
 * **性能檢查間隔：**預設值是 5 秒，範圍是 2 - 60 秒
 * **性能檢查回應逾時：**預設值是 2 秒，範圍是 1 - 59 秒
@@ -110,12 +111,12 @@ TCP 埠 56501 是用於管理。請確定這個埠以及應用程式埠的資料
 ## 如果我的專用 VLAN 上已部署防火牆，則需要進行哪些配置，它才能使用負載平衡器服務？
 {:faq}
 
-如需容許 IP 範圍通過防火牆的相關資訊，請參閱 [IBM Cloud IP 範圍](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges)主題。
+如需容許 IP 範圍通過防火牆的相關資訊，請參閱 [IBM Cloud IP 範圍](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges)主題。
 
 ## 為何在使用者介面中看不到第 7 層配置？
 {:faq}
 
-目前，第 7 層支援僅透過公用 API 提供，但此功能很快就會在使用者介面中提供。如需相關資訊，請參閱 [API 文件](apis.html)的「第 7 層」小節。
+目前，第 7 層支援僅透過公用 API 提供，但此功能很快就會在使用者介面中提供。如需相關資訊，請參閱 [API 文件](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference)的「第 7 層」小節。
 
 ## 我需要哪些資訊才能將支援問題單存檔？
 {:faq}

@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 已知问题和限制
-本主题提供 IBM Cloud Load Balancer 服务当前已知问题和限制的相关信息。
+# IBM Cloud Load Balancer 的已知问题和限制
+{: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
+
+本主题提供 IBM© Cloud Load Balancer 服务当前已知问题和限制的相关信息。
 
 ## 已知问题
 IBM Cloud Load Balancer 服务目前具有以下问题：

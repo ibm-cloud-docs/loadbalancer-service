@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Comprobaciones de estado
+# Ejecución de comprobaciones de estado con IBM Cloud Load Balancer
+{: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 Las definiciones de comprobaciones de estado son obligatorias para todos los puertos de aplicación back-end. El puerto y el protocolo de la configuración de la comprobación de estado deben coincidir con los definidos; de lo contrario, se rechazará la configuración. 
 

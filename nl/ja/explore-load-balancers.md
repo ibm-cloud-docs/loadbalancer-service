@@ -14,14 +14,15 @@ lastupdated: "2018-08-07"
 {:tip: .tip}
 {:download: .download}
 
-# ロード・バランサーの探索
+# IBM ロード・バランサーの探索
+{: #explore}
 
-IBM Cloud では複数のロード・バランシング・ソリューションを提供しており、その中から選択することになります。 次の表は、ロード・バランシング・ソリューションを比較したもので、適切なソリューションの選択に役立ちます。 個々のオファリングの詳細については、表の中のそれぞれのオファリングの名前をクリックしてください。 
+IBM© Cloud では複数のロード・バランシング・ソリューションを提供しており、その中から選択することになります。 次の表は、ロード・バランシング・ソリューションを比較したもので、適切なソリューションの選択に役立ちます。 個々のオファリングの詳細については、表の中のそれぞれのオファリングの名前をクリックしてください。 
 
 右にスクロールすると、表の残りの部分が表示されます。
 
 
-|        | [IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (共有)| [Local Load Balancer](../../infrastructure/local-load-balancer/getting-started.html#getting-started) (専用)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (標準)| [Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (プラチナ) |
+|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (共有)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (専用)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (標準)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (プラチナ) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**パブリック VIP**|あり|あり|あり|あり|あり |
 |**プライベート VIP**|あり|なし|あり|あり|あり |

@@ -15,9 +15,10 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# 定價
+# IBM Cloud Load Balancer 定價
+{: #ibm-cloud-load-balancer-pricing}
 
-IBM Cloud Load Balancer 定價是根據下列三個度量值，每月計算：
+IBM© Cloud Load Balancer 定價是根據下列三個度量值，每月計算：
 
 * 服務使用小時數
 * 處理的資料
@@ -39,4 +40,4 @@ IBM Cloud Load Balancer 定價是根據下列三個度量值，每月計算：
 
 **附註：**所有價格會依地理區域而有所不同；範例及圖表中的定價是以美金為單位的達拉斯定價；未在圖表中顯示的是服務使用費用，即 $0.025/小時。
 
-若要查看您地區的特定計價資訊，您可以使用我們的簡單[註冊處理程序](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)。
+若要查看您地區的特定計價資訊，您可以使用我們的簡單[註冊處理程序 ![外部鏈結圖](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)。

@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 既知の問題および制限
-このトピックでは、IBM Cloud Load Balancer サービスの、現時点での既知の問題と制限に関する情報を提供します。
+# IBM Cloud Load Balancer の既知の問題と制限
+{: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
+
+このトピックでは、IBM© Cloud Load Balancer サービスの、現時点での既知の問題と制限に関する情報を提供します。
 
 ## 既知の問題
 現在、IBM Cloud Load Balancer サービスには以下の問題があります。

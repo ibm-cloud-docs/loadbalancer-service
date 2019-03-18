@@ -15,19 +15,21 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# 入门
-要开始使用 IBM Cloud Load Balancer，您将需要两个主要项目：
+# IBM Cloud Load Balancer 入门
+{: #getting-started-with-ibm-cloud-load-balancer}
 
-* IBM 帐户：[IBM 标识 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/account/us-en/signup/register.html)
-* IBM 服务器，可以是[裸机](/docs/bare-metal/about.html#getting-started-with-bare-metal-servers)，或者[虚拟服务器实例 (VSI)](/docs/vsi/vsi_index.html#getting-started-with-virtual-servers)
+要开始使用 IBM© Cloud Load Balancer，您将需要两个主要项目：
 
-如果您在获取 **IBM 标识**帐户时需要帮助，请联系 [IBM 销售代表 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us) 获取其他指导。
+* IBM 帐户：[IBM 标识 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
+* IBM 服务器，可以是[裸机](/docs/bare-metal?topic=bare-metal-about)，或者[虚拟服务器实例 (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers)
 
-如果您已经拥有现有的 IBM Cloud Infrastructure (SoftLayer) 帐户，那么可以[链接帐户 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/account/softlayerlink.html#link_user_account) 至 IBM 标识。
+如果您在获取 **IBM 标识**帐户时需要帮助，请联系 [IBM 销售代表 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} 获取其他指导。
+
+如果您已经拥有现有的 IBM Cloud Infrastructure (SoftLayer) 帐户，那么可以[链接帐户](/docs/account?topic=account-unifyingaccounts)至 IBM 标识。
 
 ## 订购负载均衡器
 
-要订购 IBM Cloud Load Balancer 服务，请从 [IBM Cloud 目录](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)中选择**网络 > 负载均衡器 > IBM Cloud Load Balancer**。登录或创建新帐户，然后执行以下过程：
+要订购 IBM Cloud Load Balancer 服务，请从 [IBM Cloud 目录 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window} 中选择**网络 > 负载均衡器 > IBM Cloud Load Balancer**。登录或创建新帐户，然后执行以下过程：
 
 1. 选择数据中心并复查服务套餐。单击**下一步**。
 2. 选择要将 Load Balancer 部署到的子网。您的 Load Balancer 服务实例将在此子网上具有其中一个网络接口：请确保应用程序服务器位于此子网上或可从此子网进行访问。如果必要，请启用 VLAN 生成。单击**下一步**。
@@ -45,4 +47,4 @@ lastupdated: "2018-11-12"
 
 	单击此页面上的服务名称将带您进入服务概述页面。您可以浏览至**协议**、**运行状况检查**和**服务器实例**选项卡，以进一步编辑配置。
 
-请参阅[如何创建 IBM Cloud Load Balancer 并将其用于弹性服务器负载均衡](reliability-guide.html)，获取分步配置指导。
+请参阅[如何创建 IBM Cloud Load Balancer 并将其用于弹性服务器负载均衡](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)，获取分步配置指导。

@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Equilibrio de carga de capa 7
-El servicio IBM Cloud Load Balancer distribuye el tráfico entre varias instancias del servidor, incluidas instancias de servidor nativo y virtual, utilizando datos de capa 7 (capa de aplicación). 
+{: #layer-7-load-balancing}
+
+El servicio IBM© Cloud Load Balancer distribuye el tráfico entre varias instancias del servidor, incluidas instancias de servidor nativo y virtual, utilizando datos de capa 7 (capa de aplicación). 
 
  * El tráfico de datos que se va a distribuir se clasifica mediante políticas y reglas. 
  * Las políticas definen qué acción se debe realizar cuando el tráfico de datos coincide con todas reglas asociadas a la política.
@@ -29,7 +31,7 @@ Una política de capa 7 está asociada a un puerto de aplicación frontal. Se pu
  * Cada regla L7 está asociada a una política. 
  * Si todas las reglas asociadas a la política se evalúan como `true` significa que la política se coincide, por lo que se emprende la acción asociada.
 
-Consulte [Política y reglas de L7](l7-policy.html) para ver más información.
+Consulte [Política y reglas de L7](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) para ver más información.
 
 ## Agrupaciones de capa 7
 Cada agrupación de equilibrador de carga de capa 7 contiene una o varias instancias de servidor lógico. 
@@ -39,4 +41,4 @@ Cada agrupación de equilibrador de carga de capa 7 contiene una o varias instan
  * Se puede configurar una agrupación para la persistencia de sesiones. 
  * Utilice la dirección IP de origen del cliente para configurar la persistencia de sesiones.
 
-Consulte [Agrupaciones de L7](l7-pool.html) para ver más información.
+Consulte [Agrupaciones de L7](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-pool) para ver más información.

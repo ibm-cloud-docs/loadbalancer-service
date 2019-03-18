@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # 创建 IBM Cloud Load Balancer
-要创建 IBM Cloud Load Balancer 服务，请执行以下过程：
+{: #creating-an-ibm-cloud-load-balancer}
+
+要创建 IBM© Cloud Load Balancer 服务，请执行以下过程：
 
 1. 从浏览器，打开[客户门户网站 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}，并登录您的帐户。
 
@@ -25,7 +27,7 @@ lastupdated: "2018-11-12"
 
 3. 选择 **IBM Cloud Load Balancer**（缺省选择），然后单击**创建**。 
 
-	如果您看到的是**升级**而不是**创建**，那么必须通过执行[这些步骤 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/account/softlayerlink.html#link_customer_accounts) 来链接 IBM Cloud Infrastructure (SoftLayer) 帐户：
+	如果您看到的是**升级**而不是**创建**，那么必须通过执行[这些步骤](/docs/account?topic=account-unifyingaccounts)来链接 IBM Cloud Infrastructure (SoftLayer) 帐户
 
 	<img src="images/create-load-balancer.png" alt="图样" style="width: 600px;"/>
 
@@ -39,7 +41,7 @@ lastupdated: "2018-11-12"
 
 	<img src="images/select-lb-type.png" alt="图样" style="width: 600px;"/>
 	
-	缺省情况下，公共负载均衡器会接收来自 IBM 全局地址池的全局唯一公共 IP 地址。但是，如果您希望为其分配自己的地址池中的公共地址，或者希望将其部署在帐户中的防火墙服务后面，请检查公用子网是否有[足够的 IP 地址](troubleshooting-provisioning.html)，然后选择**从帐户中的公用子网分配**。
+	缺省情况下，公共负载均衡器会接收来自 IBM 全局地址池的全局唯一公共 IP 地址。但是，如果您希望为其分配自己的地址池中的公共地址，或者希望将其部署在帐户中的防火墙服务后面，请检查公用子网是否有[足够的 IP 地址](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting)，然后选择**从帐户中的公用子网分配**。
 
 	对于不需要访问公用因特网的仅限内部的应用程序，请选择**内部（专用）**类型。
 
@@ -52,4 +54,4 @@ lastupdated: "2018-11-12"
 6. 单击**下一步**以完成配置。
 
 ## 接下来做什么
-使用[基本参数](begin-lb-config.html)配置 Load Balancer。
+使用[基本参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters)配置 Load Balancer。

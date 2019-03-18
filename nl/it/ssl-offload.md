@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Offload SSL
+# Offload SSL con IBM Cloud Load Balancer
+{: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Per tutte le connessioni HTTPS in entrata, il servizio del programma di bilanciamento del carico termina la connessione SSL e stabilisce una comunicazione HTTP di testo semplice con il server di backend. Gli handshake SSL con uso intensivo di CPU e le attività di crittografia/decrittografia sono stati spostati dai server di backend, consentendo loro di utilizzare i propri cicli di CPU per elaborare il traffico dell'applicazione. 
 
-Un certificato SSL è obbligatorio al programma di bilanciamento del carico per eseguire le attività offload SSL. Puoi utilizzare un certificato SSL preesistente o acquistarne uno nuovo e gestirlo con [IBM Cloud Certificate Store ](https://control.softlayer.com/security/sslcerts). 
+Un certificato SSL è obbligatorio al programma di bilanciamento del carico per eseguire le attività offload SSL. Puoi utilizzare un certificato SSL preesistente o acquistarne uno nuovo e gestirlo con [IBM© Cloud Certificate Store ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/security/sslcerts){:new_window}. 
 
-# Suite di cifratura SSL
+## Suite di cifratura SSL
 Il servizio del programma di bilanciamento del carico supporta TLS versione 1.2 con offload SSL.
 
 Le seguenti cifrature SSL sono supportate dal tuo programma di bilanciamento del carico:
@@ -36,4 +37,4 @@ Le seguenti cifrature SSL sono supportate dal tuo programma di bilanciamento del
 
 Se il tuo programma di bilanciamento del carico ha più di una porta dell'applicazione di frontend HTTPS (protocolli) configurata, per impostazione predefinita tutte le cifrature SSL predefinite saranno abilitate per il tuo programma di bilanciamento del carico. 
 
-**NOTA:** puoi scegliere di abilitare diverse cifrature SSL per il tuo programma di bilanciamento del carico se necessario. Per ulteriori informazioni, consulta [Seleziona una suite di cifratura preferita per la tua applicazione HTTPS](custom-ciphers.html).
+**NOTA:** puoi scegliere di abilitare diverse cifrature SSL per il tuo programma di bilanciamento del carico se necessario. Per ulteriori informazioni, consulta [Seleziona una suite di cifratura preferita per la tua applicazione HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application).

@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Création d'un équilibreur de charge IBM Cloud
-Pour créer un service d'équilibreur de charge IBM Cloud, procédez comme suit :
+# Création d'un équilibreur de charge IBM Cloud Load Balancer
+{: #creating-an-ibm-cloud-load-balancer}
+
+Pour créer un service d'équilibreur de charge IBM© Cloud, procédez comme suit :
 
 1. A partir de votre navigateur, ouvrez le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} et connectez-vous à votre compte.
 
@@ -25,7 +27,7 @@ Pour créer un service d'équilibreur de charge IBM Cloud, procédez comme suit 
 
 3. Sélectionnez **Equilibreur de charge IBM Cloud** (sélection par défaut) et cliquez sur **Créer**. 
 
-	Si l'option **Mettre à niveau** est affichée au lieu de l'option **Créer**, vous devez lier votre compte IBM Cloud Infrastructure (Softlayer) en suivant [ces étapes ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/account/softlayerlink.html#link_customer_accounts)
+	Si l'option **Mettre à niveau** est affichée au lieu de l'option **Créer**, vous devez lier votre compte IBM Cloud Infrastructure (SoftLayer) en suivant [cette procédure](/docs/account?topic=account-unifyingaccounts)
 
 	<img src="images/create-load-balancer.png" alt="drawing" style="width: 600px;"/>
 
@@ -33,23 +35,23 @@ Pour créer un service d'équilibreur de charge IBM Cloud, procédez comme suit 
 
 	<img src="images/select-datacenter.png" alt="drawing" style="width: 600px;"/>
 
-5. Spécifiez votre type d'équilibreur de charge. 
+5. Spécifiez votre type d'équilibreur de charge.
 
 	Pour les applications accessibles sur Internet qui doivent accéder à l'Internet public, sélectionnez **Public (accessible sur Internet)**.
 
 	<img src="images/select-lb-type.png" alt="drawing" style="width: 600px;"/>
 	
-	Par défaut, l'équilibreur de charge public reçoit une adresse IP publique unique au niveau global provenant du pool d'adresses global d'IBM. Si, toutefois, vous souhaitez lui affecter des adresses publiques issues de votre propre pool d'adresses ou si vous souhaitez le déployer derrière un service de pare-feu au sein de votre compte, vérifiez si votre sous-réseau public comporte [suffisamment d'adresses IP](troubleshooting-provisioning.html) et sélectionnez **Allocate from a public subnet in your account**.
+	Par défaut, l'équilibreur de charge public reçoit une adresse IP publique unique au niveau global provenant du pool d'adresses global d'IBM. Si, toutefois, vous souhaitez lui affecter des adresses publiques issues de votre propre pool d'adresses ou si vous souhaitez le déployer derrière un service de pare-feu au sein de votre compte, vérifiez si votre sous-réseau public comporte [suffisamment d'adresses IP](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting) et sélectionnez **Allocate from a public subnet in your account**.
 
 	Pour les applications internes uniquement qui n'ont pas besoin d'accéder à l'Internet public, sélectionnez le type **Interne (privé)**.
 
 	<img src="images/lb-type-private.png" alt="drawing" style="width: 500px;"/>
 
-	Pour les types d'équilibreur de charge accessibles sur Internet et internes, sélectionnez l'un des sous-réseaux privés dans le compte où vous souhaitez déployer votre équilibreur de charge. Vos serveurs d'application doivent être accessibles à partir de ce sous-réseau. Si nécessaire, activez le spanning VLAN pour garantir la connectivité réseau appropriée. 
+	Pour les types d'équilibreur de charge accessibles sur Internet et internes, sélectionnez l'un des sous-réseaux privés dans le compte où vous souhaitez déployer votre équilibreur de charge. Vos serveurs d'application doivent être accessibles à partir de ce sous-réseau. Si nécessaire, activez le spanning VLAN pour garantir la connectivité réseau appropriée.
 
 	Si vous ne voyez pas de sous-réseaux privés, cliquez sur **Précédent**, puis sélectionnez un autre centre de données avec des sous-réseaux privés.
 
-6. Cliquez sur **Suivant** pour terminer la configuration. 
+6. Cliquez sur **Suivant** pour terminer la configuration.
 
 ## Que faire ensuite ?
-Configurez votre équilibreur de charge avec des [paramètres de base](begin-lb-config.html).
+Configurez votre équilibreur de charge avec des [paramètres de base](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters).

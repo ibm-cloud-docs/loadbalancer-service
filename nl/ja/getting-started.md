@@ -15,25 +15,27 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# 概説
-IBM Cloud Load Balancer の使用を開始するには、主に次の 2 つの項目が必要です。
+# IBM Cloud Load Balancer の使用開始
+{: #getting-started-with-ibm-cloud-load-balancer}
 
-* IBM のアカウント: [IBMid ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/account/us-en/signup/register.html)
-* IBM サーバー ([ベア・メタル](/docs/bare-metal/about.html#getting-started-with-bare-metal-servers)または[仮想サーバー・インスタンス (VSI)](/docs/vsi/vsi_index.html#getting-started-with-virtual-servers))
+IBM© Cloud Load Balancer の使用を開始するには、主に次の 2 つの項目が必要です。
 
-**IBMid** アカウントの取得について支援が必要な場合は、[IBM 営業担当員 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us) にお問い合わせください。
+* IBM のアカウント: [IBMid ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
+* IBM サーバー ([ベア・メタル](/docs/bare-metal?topic=bare-metal-about)または[仮想サーバー・インスタンス (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers))
 
-既存の IBM Cloud Infrastructure (SoftLayer) アカウントをお持ちの場合は、IBMid と[アカウントをリンク ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/account/softlayerlink.html#link_user_account) できます。
+**IBMid** アカウントの取得について支援が必要な場合は、[IBM 営業担当員 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} にお問い合わせください。
+
+既存の IBM Cloud Infrastructure (SoftLayer) アカウントをお持ちの場合は、IBMid と[アカウントをリンク](/docs/account?topic=account-unifyingaccounts)できます。
 
 ## ロード・バランサーを注文する
 
-IBM Cloud Load Balancer サービスを注文するには、[IBM Cloud カタログ](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)から**「ネットワーク」>「ロード・バランサー」>「IBM Cloud Load Balancer」**を選択します。 ログインするか新規アカウントを作成してから、以下の手順を実行してください。
+IBM Cloud Load Balancer サービスを注文するには、[IBM Cloud カタログ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window} から**「ネットワーク」>「ロード・バランサー」>「IBM Cloud Load Balancer」**を選択します。 ログインするか新規アカウントを作成してから、以下の手順を実行してください。
 
 1. データ・センターを選択し、サービス・プランを検討します。 **「次へ」**をクリックします。
-2. ロード・バランサーをデプロイするサブネットを選択します。ロード・バランサー・サービス・インスタンスは、このサブネット上にいずれかのネットワーク・インターフェースを持ちます。 アプリケーション・サーバーがこのサブネット上にあるか、またはこのサブネットから到達できることを確認してください。 必要な場合は、VLAN スパンニングを有効にします。 **「次へ」**をクリックします。
+2. ロード・バランサーをデプロイするサブネットを選択します。 ロード・バランサー・サービス・インスタンスは、このサブネット上にいずれかのネットワーク・インターフェースを持ちます。 アプリケーション・サーバーがこのサブネット上にあるか、またはこのサブネットから到達できることを確認してください。 必要な場合は、VLAN スパンニングを有効にします。 **「次へ」**をクリックします。
 3. 名前、説明、フロントエンド・アプリケーションとバックエンド・アプリケーションのプロトコルとポート、およびロード・バランシング方式など、基本的なサービス・パラメーターを定義します。 
 
-	初期サービス作成中は、最大 2 つのプロトコルを定義できます。 サービスの作成後は、最大 10 個のプロトコルを定義できます。 さらに、固有のフロントエンド・ポートを使用する必要があります。  
+	初期サービス作成中は、最大 2 つのプロトコルを定義できます。 サービスの作成後は、最大 10 個のプロトコルを定義できます。 さらに、固有のフロントエンド・ポートを使用する必要があります。 
 	
 	完了したら、**「次へ」**をクリックします。
 	
@@ -45,4 +47,4 @@ IBM Cloud Load Balancer サービスを注文するには、[IBM Cloud カタロ
 
 	このページにあるサービス名をクリックすると、そのサービスの概要ページが表示されます。 **「プロトコル」**タブ、**「ヘルス・チェック」**タブ、および**「サーバー・インスタンス」**タブにナビゲートして、構成をさらに編集することができます。
 
-ステップバイステップの構成手順については、[柔軟なサーバー・ロード・バランシングのための IBM Cloud Load Balancer の作成および使用法](reliability-guide.html)を参照してください。
+ステップバイステップの構成手順については、[柔軟なサーバー・ロード・バランシングのための IBM Cloud Load Balancer の作成および使用法](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)を参照してください。

@@ -14,14 +14,15 @@ lastupdated: "2018-08-07"
 {:tip: .tip}
 {:download: .download}
 
-# 探索負載平衡器
+# 探索 IBM Load Balancer
+{: #explore}
 
-IBM Cloud 提供數個負載平衡解決方案供您選擇。下表比較了這些負載平衡解決方案，以協助您選擇最適合的解決方案。若要進一步瞭解個別供應項目，請在表格中按一下其名稱。 
+IBM© Cloud 提供數個負載平衡解決方案供您選擇。下表比較了這些負載平衡解決方案，以協助您選擇最適合的解決方案。若要進一步瞭解個別供應項目，請在表格中按一下其名稱。 
 
 請捲動到右側以檢視表格的其餘部分！
 
 
-|        |[IBM Cloud Load Balancer](../../infrastructure/loadbalancer-service/getting-started.html#getting-started)|[區域負載平衡器](../../infrastructure/local-load-balancer/getting-started.html#getting-started)（共用）|[區域負載平衡器](../../infrastructure/local-load-balancer/getting-started.html#getting-started)（專用）|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Standard)|[Citrix NetScaler](../../infrastructure/citrix-netscaler-vpx/getting-started.html#getting-started-with-citrix-netscaler) VPX/MPX (Platinum) |
+|        |[IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer)|[區域負載平衡器](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer)（共用）|[區域負載平衡器](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer)（專用）|[Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Standard)|[Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
 |**公用 VIP**|是|是|是|是|是|
 |**專用 VIP**|是|否|是|是|是|

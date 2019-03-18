@@ -15,14 +15,15 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# Preguntas más frecuentes
+# Preguntas frecuentes sobre IBM Cloud Load Balancer
+{: #faqs-for-ibm-cloud-load-balancer}
 
-Esta sección contiene respuestas a algunas preguntas frecuentes sobre el servicio de equilibrador de carga de IBM Cloud.
+Esta sección contiene respuestas a algunas preguntas frecuentes sobre el servicio IBM© Cloud Load Balancer.
 
 ## ¿Cuántas opciones de equilibrio de carga hay disponibles en {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-Para obtener una comparación detallada de las ofertas de equilibradores de carga de IBM, consulte [Explorar los equilibradores de carga](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+Para obtener una comparación detallada de las ofertas de equilibradores de carga de IBM, consulte [Explorar los equilibradores de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## ¿Puedo utilizar un nombre DNS distinto para mi equilibrador de carga?
 {:faq}
@@ -44,7 +45,7 @@ Al crear un nuevo servicio de equilibrador de carga, puede definir hasta dos pue
 ## ¿Pueden mis instancias de cálculo de fondo estar instaladas en una subred distinta de la subred del equilibrador de carga?
 {:faq}
 
-Sí, el equilibrador de carga y las instancias de cálculo conectadas al equilibrador de carga pueden estar en subredes diferentes, pero la **expansión de VLAN** debe estar habilitado para que el equilibrador de carga se comunique y reenvíen las solicitudes a la instancia de cálculo. Consulte [Resolución de problemas de expansión de VLAN](troubleshooting-vlan-spanning.html) para obtener más información.
+Sí, el equilibrador de carga y las instancias de cálculo conectadas al equilibrador de carga pueden estar en subredes diferentes, pero la **expansión de VLAN** debe estar habilitado para que el equilibrador de carga se comunique y reenvíen las solicitudes a la instancia de cálculo. Consulte [Resolución de problemas de expansión de VLAN](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting) para obtener más información.
 
 ## ¿Cuáles son los valores predeterminados y los permitidos para los distintos parámetros de comprobación de estado?
 {:faq}
@@ -110,12 +111,12 @@ No podemos garantizar que las direcciones IP de equilibrador de carga permanezca
 ## Si tengo un cortafuegos desplegado en mi VLAN pública, ¿qué configuraciones se necesitan para que funcione con el servicio de equilibrador de carga?
 {:faq}
 
-Consulte el tema [Rangos de IP de IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated/ips.html#ibm-cloud-ip-ranges) para obtener información sobre cómo permitir rangos de IP a través del cortafuegos.
+Consulte el tema [Rangos de IP de IBM Cloud](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) para obtener información sobre cómo permitir rangos de IP a través del cortafuegos.
 
 ## ¿Por qué no puedo ver la configuración de capa 7 en la interfaz de usuario?
 {:faq}
 
-Actualmente, el soporte de capa 7 solo está disponible a través de API públicas, pero esta funcionalidad estará disponible en la interfaz de usuario pronto. Consulte la sección sobre la capa 7 de la [documentación de las API](apis.html) para obtener más información.
+Actualmente, el soporte de capa 7 solo está disponible a través de API públicas, pero esta funcionalidad estará disponible en la interfaz de usuario pronto. Consulte la sección sobre la capa 7 de la [documentación de las API](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference) para obtener más información.
 
 ## ¿Qué información necesito para presentar una incidencia de soporte?
 {:faq}

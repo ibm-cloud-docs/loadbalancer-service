@@ -14,8 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Elegir una suite de cifrado preferida para la aplicación HTTPS
-Cifra los algoritmos que ayudan a IBM Cloud Load Balancer a formar conexiones seguras con sus clientes HTTP.
+# Elección de una suite de cifrado preferida para la aplicación HTTPS
+{: #choosing-a-preferred-cipher-suite-for-your-https-application}
+
+Algoritmos de cifrado que ayudan a IBM© Cloud Load Balancer a formar conexiones seguras con sus clientes HTTP.
 
 IBM ofrece una suite de cifrados aprobados entre los que puede elegir, para proteger la comunicación entre el equilibrador de carga los clientes.
 
@@ -32,13 +34,13 @@ Seleccione HTTPS para el protocolo frontal y verá las suites de cifrado disponi
   
 La tabla de cifrado se puede editar y le permite seleccionar las suites de cifrado deseadas para el reconocimiento SSL. Pulse **Editar**, seleccione los cifrados que desea implementar y pulse **Guardar**.
   
-**NOTA:** para obtener una lista de los cifrados admitidos, consulte [Descarga de SSL](ssl-offload.html).
+**NOTA:** para obtener una lista de los cifrados admitidos, consulte [Descarga de SSL](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
 
 ## Elección de cifrados al crear un nuevo equilibrador de carga
 
 Para elegir la suite de cifrado al crear un nuevo equilibrador de carga:
 
-1. Siga las instrucciones para [crear un equilibrador de carga](create-load-balancer.html).
+1. Siga las instrucciones para [crear un equilibrador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer).
   
 2. La configuración de la suite de cifrado solo se aplica con el protocolo frontal HTTPS. Cuando llegue a los pasos de configuración de la sección **Añadir protocolo**, seleccione **Protocolo HTTPS**.
 
@@ -52,4 +54,4 @@ Para elegir la suite de cifrado al crear un nuevo equilibrador de carga:
   
 4. La tabla de cifrado se puede editar y le permite seleccionar las suites de cifrado deseadas para el reconocimiento SSL. Pulse **Editar**, seleccione los cifrados que desea implementar y pulse **Guardar**.
 	
-	**NOTA:** para obtener una lista de los cifrados admitidos, consulte [Descarga de SSL](ssl-offload.html).
+	**NOTA:** para obtener una lista de los cifrados admitidos, consulte [Descarga de SSL](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
