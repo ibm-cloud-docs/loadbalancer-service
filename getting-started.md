@@ -15,6 +15,8 @@ subcollection: loadbalancer-service
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:note: .note}
+{:important: .important}
 {:tip: .tip}
 {:download: .download}
 

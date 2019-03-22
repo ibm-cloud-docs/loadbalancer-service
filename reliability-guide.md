@@ -16,6 +16,9 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Creating and using an IBM Cloud Load Balancer for elastic server load balancing
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}

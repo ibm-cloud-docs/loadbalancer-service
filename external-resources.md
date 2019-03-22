@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Other Resources for IBM Cloud Load Balancer

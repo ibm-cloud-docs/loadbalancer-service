@@ -16,6 +16,9 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Layer 7 Rules
 {: #layer-7-rules}
@@ -62,7 +65,8 @@ Comparison Type |  Type of evaluation
 `CONTAINS`        |  Verify whether the extracted field contains the supplied string
 `EQUAL_TO`        |  Verify whether the extracted field is identical to the supplied string
 
-**NOTE**: Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
+Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
+{: tip}
 
 ## Layer 7 Rule Properties
 

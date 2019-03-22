@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 
 # IBM Cloud Load Balancer Pricing
@@ -28,7 +30,8 @@ IBM© Cloud Load Balancer pricing is based on the following three metrics, calcu
 * Data Processed
 * Outbound Public Bandwidth (Egress)
 
-**NOTE:** All prices vary by geographic regionThe Outbound public bandwidth consumed by the IBM Cloud Load Balancer service is billed per the standard data transfer charge of [USD 0.09 per GB ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bandwidth).
+All prices vary by geographic regionThe Outbound public bandwidth consumed by the IBM Cloud Load Balancer service is billed per the standard data transfer charge of [USD 0.09 per GB ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bandwidth).
+{: note}
 
 The following chart details an example IBM Cloud Load Balancer priced for a customer using 4500 GB per month for public load balancing:
 
@@ -42,6 +45,7 @@ The total charge for the above scenario is $54/month plus the standard data tran
 ![pricing](./images/pricing.png)
 
 
-**NOTE:** All prices vary by geographic region; pricing in example and diagram is Dallas pricing in U.S. Dollars; Not displayed in the diagram is service usage fee of $0.025/hour.
+All prices vary by geographic region; pricing in example and diagram is Dallas pricing in U.S. Dollars; Not displayed in the diagram is service usage fee of $0.025/hour.
+{: note}
 
-To see specific pricing information for your region, you can go through our simple [sign up process ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).
+To see specific pricing information for your region, go through our simple [sign up process ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).

@@ -16,6 +16,9 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Monitoring and Managing Your Service
 {: #monitoring-and-managing-your-service}

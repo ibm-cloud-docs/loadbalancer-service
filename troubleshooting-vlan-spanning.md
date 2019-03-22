@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Load Balancer VLAN Spanning Troubleshooting
 {: #load-balancer-vlan-spanning-troubleshooting}

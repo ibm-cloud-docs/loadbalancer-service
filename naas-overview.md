@@ -16,6 +16,8 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Demo: Network as a Service
 {: #naas-video}

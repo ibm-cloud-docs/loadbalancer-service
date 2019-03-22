@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Creating an IBM Cloud Load Balancer
 {: #creating-an-ibm-cloud-load-balancer}

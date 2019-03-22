@@ -15,6 +15,9 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # Layer 7 Pool

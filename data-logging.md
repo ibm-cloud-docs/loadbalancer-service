@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Data Logging
 {: #data-logging}
@@ -32,7 +34,8 @@ You can enable or disable this feature by:
 
 Log into the [IBM Cloud Logging Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://logging.ng.bluemix.net){:new_window} with customer's IBM Cloud account. Logs can be viewed from Kibana. Refer to [this topic](/docs/services/CloudLogAnalysis//kibana?topic=cloudloganalysis-analyzing_logs_Kibana) for more information.
 
-**NOTE:** Data logs are only sent if Softlayer and IBM Cloud accounts are linked. Select your IBM Cloud account that is associated with your Softlayer account, and then login to the Kibana dashboard.
+Data logs are only sent if Softlayer and IBM Cloud accounts are linked. Select the IBM Cloud account associated with your Softlayer account, and then login to the Kibana dashboard.
+{: tip}
 
 ## Log Output Examples
 

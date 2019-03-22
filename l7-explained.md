@@ -16,6 +16,8 @@ subcollection: loadbalancer-service
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Layer-7 Load Balancing

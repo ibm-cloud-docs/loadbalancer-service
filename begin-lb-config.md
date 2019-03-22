@@ -57,7 +57,8 @@ Once you create a load balancer, you can then configure it for elastic load bala
 
 	<img src="images/refresh-cert.png" alt="drawing" style="width: 300px;"/>
 
-	**NOTE: Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.**
+	Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.
+  {: note}
 
 8. Click **Next**.
 

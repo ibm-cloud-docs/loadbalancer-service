@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Multi-Zone Region (MZR) Overview
 {: #multi-zone-region-mzr-overview}

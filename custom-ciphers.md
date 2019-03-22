@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Choosing a Preferred Cipher Suite for your HTTPS Application
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
@@ -28,7 +30,7 @@ IBM offers a suite of approved ciphers for you to choose from, so that you secur
 You can choose a preferred cipher suite for an existing load balancer, or designate them when creating a new one.
 
 ## Choosing ciphers for an existing load balancer
-To choose a cipher suite configuration for an existing load balancer, navigate to your load balancer screen in the customer portal, and click the Protocols tab. If HTTPS is not selected as your front-end protocol, you will not see the list of cipher suites.
+To choose a cipher suite configuration for an existing load balancer, navigate to your load balancer screen in the customer portal, and click the Protocols tab. If HTTPS is not selected as the front-end protocol, you will not see the list of cipher suites.
 
   <img src="images/DetailsFlow-HTTPSUnselected.png" alt="drawing" style="width: 700px;"/>
 
@@ -38,7 +40,8 @@ Select HTTPS for your front-end protocol, and the available Cipher Suites will d
 
 The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
 
-**NOTE:** For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+{: note}
 
 ## Choosing ciphers when creating a new load balancer
 
@@ -58,4 +61,5 @@ To choose the cipher suite when creating a new load balancer:
 
 4. The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
 
-	**NOTE:** For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+	For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+  {: note}

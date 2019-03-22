@@ -16,6 +16,8 @@ subcollection: loadbalancer-service
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Performing Health Checks with IBM Cloud Load Balancer
@@ -31,4 +33,5 @@ The health checks against HTTP and TCP ports are conducted as follows:
 
 * **TCP:** The Load Balancer attempts to open a TCP connection with the back-end server on a specified TCP port. The server port is marked healthy if the connection attempt is successful, and the connection is then closed.
 
-	**NOTE:** The default health check interval is 5 seconds, the default timeout against a health check request is 2 seconds, and the default number of retry attempts is 2.
+	The default health check interval is 5 seconds, the default timeout against a health check request is 2 seconds, and the default number of retry attempts is 2.
+  {: note}

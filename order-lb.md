@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
-keywords: order, load balancer 
+keywords: order, load balancer
 
 subcollection: loadbalancer-service
 
@@ -16,6 +16,8 @@ subcollection: loadbalancer-service
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Review and Place Your Order
 {: #review-and-place-your-order}

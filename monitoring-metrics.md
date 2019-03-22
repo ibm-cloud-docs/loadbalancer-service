@@ -17,6 +17,8 @@ subcollection: loadbalancer-service
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Monitoring Metrics with IBM Cloud Load Balancer
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
