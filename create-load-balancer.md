@@ -60,4 +60,5 @@ To create an IBM© Cloud Load Balancer service, perform the following procedure:
 6. Click **Next** to finish the configuration.
 
 ## What's Next
+{: #whats-next-2}
 Configure your Load Balancer with [basic parameters](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters).

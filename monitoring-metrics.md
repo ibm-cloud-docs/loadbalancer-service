@@ -72,6 +72,7 @@ The table below shows how the data points are derived from the time interval:
 | 1 week    | 12 hours | 12 |
 | 2 weeks  | 24 hours | 12 |
 
-# How to enable Metrics Monitoring
+## How to enable Metrics Monitoring
+{: #how-to-enable-metrics-monitoring}
 
 In order to retrieve monitoring metrics you must link your SoftLayer account with your IBM© Cloud account. Refer to [this topic](/docs/account?topic=account-unifyingaccounts#link_accounts) for more information.

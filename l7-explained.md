@@ -30,6 +30,7 @@ The IBM© Cloud Load Balancer Service distributes traffic among multiple server 
  * Layer-7 (L7) load balancing is supported for HTTP and HTTPS traffic only.
 
 ## Layer-7 Policies and Rules
+{: #layer-7-policies-and-rules}
 A Layer-7 policy is associated with a front-end application port. Multiple policies can be associated with a front-end port.
 
  * These policies are evaluated in order, based on the priority assigned to each policy.
@@ -40,6 +41,7 @@ A Layer-7 policy is associated with a front-end application port. Multiple polic
 Refer to [L7 Policy and Rules](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) for additional details.
 
 ## Layer-7 Pools
+{: #layer-7-pools}
 Each Layer-7 load balancer pool contains one or more logical server instances.
 
  * Each logical server instance is identified by an IP address and port number.

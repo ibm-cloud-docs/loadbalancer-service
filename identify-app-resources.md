@@ -37,4 +37,5 @@ Refer to [Limitations on number of application servers](/docs/infrastructure/loa
 {: tip}
 
 ## What's Next
+{: #what-s-next-3}
 [Review the contents](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order) of your order before placing it.

@@ -52,6 +52,7 @@ Finally, policies set to `redirect to pool` are evaluated.
 Within each action category, the policies are evaluated in ascending order of priority (lowest to highest).
 
 ## Layer 7 Policy Properties
+{: #layer-7-policy-properties}
 
 Property  | Description
 ------------- | -------------
@@ -63,6 +64,7 @@ Redirect L7 Pool | The pool of servers to which traffic will be sent, if the act
 Protocol | The front-end application port to which the policy is applied.
 
 ## Layer 7 Rule
+{: #layer-7-rule}
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
@@ -109,6 +111,7 @@ Not all rule types support all comparison types. For example, if you are using `
 {: tip}
 
 ## Layer 7 Rule Properties
+{: #layer-7-rule-properties}
 
 Property  | Description
 ------------- | -------------

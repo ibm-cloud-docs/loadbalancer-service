@@ -38,6 +38,7 @@ Currently the following data centers are part of MZR:
 
 
 ## MZR Requirements
+{: #mzr-requirements}
 Multi-Zone Regions have the following requirements:
 * The data center you select should be part of an MZR. The above table lists the regions and the data centers in each region.
 * VLAN Spanning must be enabled in your account.

@@ -51,6 +51,8 @@ client = SoftLayer.Client(username='set me', api_key='set me')
 ```
 
 ## Creating a load balancer
+{: #creating-a-load-balancer}
+
 The following example retrieves the package id, subnet id and prices for a "Load Balancer As A Service (LBaaS)" pakage, builds the order data and place/verify the order.
 
 ```py
@@ -171,7 +173,11 @@ if __name__ == "__main__":
 {: codeblock}
 
 ## Retrieving details on load balancers
+{: #retrieving-details-on-load-balancers}
+
 ### List all load balancers
+{: #list-all-load-balancers}
+
 ```py
 import SoftLayer
 from prettytable import PrettyTable
@@ -220,6 +226,8 @@ if __name__ == "__main__":
 {: codeblock}
 
 ### Retrieve details of a specific load balancer
+{: #retrieve-details-of-a-specific-load-balancer}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -243,7 +251,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Updating a load balancer
+{: #updating-a-load-balancer}
+
 ### Add a member
+{: #add-a-member}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -272,6 +284,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Add a protocol
+{: #add-a-protocol}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -316,6 +330,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Cancelling a load balancer
+{: #cancelling-a-load-balancer}
+
 ```py
 import SoftLayer
 
@@ -337,7 +353,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Viewing monitoring metrics of load balancers
+{: #viewing-monitoring-metrics-of-load-balancers}
+
 ### Get throughput of HTTP traffic
+{: #get-throughput-of-http-traffic}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -370,8 +390,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Layer 7 APIs
+{: #layer-7-apis}
 
 ### Create Multiple L7 Policies and L7 Rules
+{: #create-multiple-l7-policies-and-l7-rules}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -421,6 +444,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Update Layer 7 policy
+{: #update-layer-7-policy}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -445,6 +470,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Add rules to a Layer 7 policy 
+{: #add-rules-to-a-layer-7-policy-}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -480,6 +507,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Update multiple Layer 7 Rules attached to the same Layer 7 policy 
+{: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
+
 ```py
 # For nice debug output:
 import SoftLayer
@@ -519,6 +548,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Create a Layer 7 Pool with servers, health monitoring and session affinity
+{: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -574,6 +605,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Update a Layer 7 pool along with health monitoring and session affinity
+{: #update-a-layer-7-pool-along-with-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -606,6 +639,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Add servers to a Layer 7 Pool
+{: #add-servers-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -639,6 +674,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Update severs belonging to a Layer 7 pool
+{: #update-severs-belonging-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -675,6 +712,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Enable or disable data logs for a specific load balancer
+{: #enable-or-disable-data-logs-for-a-specific-load-balancer}
+
 ```py
 from zeep import Client, xsd
 

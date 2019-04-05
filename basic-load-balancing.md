@@ -26,6 +26,8 @@ subcollection: loadbalancer-service
 The IBM© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
 
 ## Public Load Balancer
+{: #public-load-balancer}
+
 A publicly accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network.
 
 As a good practice, we recommended that you provision your backend servers as ‘private-only’, unless they require direct public connectivity. This practice helps achieve better security, and it preserves your public IP address. The applications hosted on these backend servers are still accessible over public network using the load balancer.
@@ -34,6 +36,8 @@ As a good practice, we recommended that you provision your backend servers as �
 You may choose to allocate load balancer public IP addresses from either an IBM system pool(default) or a public VLAN under your account when creating your load balancer service instance.
 
 ## Internal Load Balancer
+{: #internal-load-balancer}
+
 The internal load balancer is only accessible within the IBM Cloud private network.
 
 Just like a public load balancer, your internal load balancer service instance is also assigned a fully qualified domain name. However, this domain name is registered with one or more private IP addresses.
@@ -44,6 +48,8 @@ The backend compute instances hosting your application must also be on the IBM C
 {: note}
 
 ## Front-end and Back-end Application Ports/Protocols
+{: #front-end-and-back-end-application-ports-protocols}
+
 You may define up to ten front-end application ports (protocols) and map them to respective ports (protocols) on the back-end application servers. The fully qualified domain name assigned to your load balancer service instance and the front-end application ports are exposed to the external world. The incoming user requests are received on these ports.
 
 On the other hand, the back-end ports are only known internally. These back-end ports may or may not be the same as the front-end ports. As an example, the load balancer may be configured to receive incoming web/HTTP traffic on front-end port 80, while the back-end servers are listening on custom port 81.
@@ -51,6 +57,7 @@ On the other hand, the back-end ports are only known internally. These back-end 
 The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported back-end ports/protocols are also HTTP, HTTPS and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain-text HTTP communication with the backend server. If the backend protocol is HTTPS, the traffic will be encrypted between load balancer and backend servers.
 
 ### Considerations
+{: #considerations}
 
 * During the initial configuration, you can define up to two front-end ports only. Once a load balancer is created, you can edit port configuration to define additional ports, up to the maximum of ten ports.
 * All ten front-end ports must map to the same set of back-end server instances.
@@ -59,6 +66,8 @@ The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported b
 * TCP port 56501 is used for management. If you choose to allocate load balancer public IP addresses from your public VLAN, please ensure that traffic to this management port as well as your application's ports are not blocked by any firewalls you may have deployed on your public VLANs. This is not required if you choose IBM system pool option to allocate load balancer public IP addresses.
 
 ## Load Balancing Methods
+{: #load-balancing-methods}
+
 The following three load balancing methods are available for distributing traffic among back-end application servers:
 
 * **Round Robin:** Round Robin is the default load balancing method. With this method, the load balancer forwards incoming client connections in round-robin fashion to the back-end servers. As a result, all back-end servers receive roughly an equal number of client connections.
@@ -76,6 +85,7 @@ The following three load balancing methods are available for distributing traffi
 
 * **Least Connections:** With this method, the server instance serving the least number of connections at a given time receives the next client connection.
 
-
 ## Horizontal Scaling
+{: #horizontal-scaling}
+
 The load balancer adjusts its capacity automatically according to the load. When this occurs, you may see a change in the number of IP addresses associated with the load balancer's DNS name.

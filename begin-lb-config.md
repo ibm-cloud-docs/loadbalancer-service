@@ -63,6 +63,8 @@ Once you create a load balancer, you can then configure it for elastic load bala
 8. Click **Next**.
 
 ## Configure Health Checks
+{: #configure-health-checks}
+
 The health check definition is mandatory for each of your application ports. These are the back-end ports identified in the previous basic configuration menu.
 
 <img src="images/config-health-check.png" alt="drawing" style="width: 300px;"/>
@@ -77,4 +79,6 @@ The system pre-populates a default health check configuration for these back-end
 Click **Next** to enable your choice.
 
 ## What's Next
+{: #what-s-next}
+
 [Identify your application's resources](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), such as origin pools and health check mechanisms.

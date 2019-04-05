@@ -30,6 +30,8 @@ IBM offers a suite of approved ciphers for you to choose from, so that you secur
 You can choose a preferred cipher suite for an existing load balancer, or designate them when creating a new one.
 
 ## Choosing ciphers for an existing load balancer
+{: #choosing-ciphers-for-an-existing-load-balancer}
+
 To choose a cipher suite configuration for an existing load balancer, navigate to your load balancer screen in the customer portal, and click the Protocols tab. If HTTPS is not selected as the front-end protocol, you will not see the list of cipher suites.
 
   <img src="images/DetailsFlow-HTTPSUnselected.png" alt="drawing" style="width: 700px;"/>
@@ -44,6 +46,7 @@ For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loa
 {: note}
 
 ## Choosing ciphers when creating a new load balancer
+{: #choosing-ciphers-when-creating-a-new-load-balancer}
 
 To choose the cipher suite when creating a new load balancer:
 

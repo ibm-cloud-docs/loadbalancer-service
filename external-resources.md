@@ -27,5 +27,6 @@ subcollection: loadbalancer-service
 These resources are created by IBM© and some of our partners and customers.
 
 ## Blogs
+{: #lb-blogs}
 
  * [Improved security and More: The latest for IBM Cloud Load Balancer, by Jay Kidambi and Allan Hu ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

@@ -31,16 +31,20 @@ on the policies and rules. This feature is supported by associating multiple L7 
 L7 pools only support HTTP as the backend protocol.
 
 ## Session Persistence
+{: #session-persistence}
+
 Session persistence can be configured for each Layer 7 pool. For more details, refer to the  
 [advanced traffic section](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Layer 7 Members
+{: #layer-7-members}
 
 Backend servers that are associated with a Layer 7 Pool are called Layer 7 Members.
 
 The same backend server can be added multiple times to L7 pools, by specifying a different port number each time.
 
 ## Configure Health Checks
+{: #configure-health-checks}
 The health check definition is mandatory for each Layer 7 pool. The system pre-populates a default health check configuration for L7 pools.
 
 You may customize these settings to suit your application needs:

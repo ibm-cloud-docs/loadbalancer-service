@@ -34,6 +34,7 @@ If you need assistance in obtaining an **IBMid** account, contact your [IBM sale
 If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account](/docs/account?topic=account-unifyingaccounts) with your IBMid.
 
 ## Ordering a Load Balancer
+{: #ordering-a-load-balancer}
 
 To order an IBM Cloud Load Balancer service, select **Network > Load Balancers > IBM Cloud Load Balancer** from the [IBM Cloud catalog  ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window}. Log in or create a new account, then perform the following procedure:
 

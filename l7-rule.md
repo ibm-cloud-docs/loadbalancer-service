@@ -69,6 +69,7 @@ Not all rule types support all comparison types. For example, if you are using `
 {: tip}
 
 ## Layer 7 Rule Properties
+{: #layer-7-rule-properties}
 
 Property  | Description
 ------------- | -------------

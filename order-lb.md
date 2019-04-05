@@ -33,4 +33,6 @@ The system now creates a service instance for you and takes you to the Load Bala
 <img src="images/summary-online.png" alt="drawing" style="width: 300px;"/>
 
 ## What's Next
+{: #what-s-next-4}
+
 [Edit your configuration](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to monitor your service performance.

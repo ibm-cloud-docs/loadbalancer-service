@@ -26,6 +26,7 @@ subcollection: loadbalancer-service
 The IBM© Cloud Load Balancer service helps improve scalability and availability of your business-critical applications. It monitors the health of your application servers, utilizes smart load balancing methods to distribute traffic among multiple servers, and dynamically adjusts its system capacity to handle varying traffic load.
 
 ## What you'll accomplish
+{: #what-you-ll-accomplish-2}
 
 In this Step-by-Step guide you will learn how to configure the service.   
 

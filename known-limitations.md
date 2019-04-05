@@ -26,6 +26,7 @@ subcollection: loadbalancer-service
 This topic provides information on the currently known issues and limitations with the IBM© Cloud Load Balancer Service.
 
 ## Known Issues
+{: #known-issues}
 The IBM Cloud Load Balancer Service currently has the following issues:
 
 * Minor - The **Edit** button in the server instances and protocols tabs apply to all entries and is not restricted to rows selected using a checkbox.
@@ -35,6 +36,7 @@ The IBM Cloud Load Balancer Service currently has the following issues:
 * Cosmetic - The pricing information on the review page is rounded off to two decimal digits. For correct pricing, please refer to pricing displayed on the plan page.
 
 ## Known Limitations
+{: #known-limits}
 The IBM Cloud Load Balancer Service currently has the following limitations:
 
 * Maximum number of virtual ports/protocols - 10

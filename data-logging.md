@@ -31,6 +31,7 @@ You can enable or disable this feature by:
 * Using the API `enableOrDisableDataLogs`.
 
 ## Viewing Logs in the IBM Cloud Logging Analysis Service
+{: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
 Log into the [IBM Cloud Logging Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://logging.ng.bluemix.net){:new_window} with customer's IBM Cloud account. Logs can be viewed from Kibana. Refer to [this topic](/docs/services/CloudLogAnalysis//kibana?topic=cloudloganalysis-analyzing_logs_Kibana) for more information.
 
@@ -38,6 +39,7 @@ Data logs are only sent if Softlayer and IBM Cloud accounts are linked. Select t
 {: tip}
 
 ## Log Output Examples
+{: #log-output-examples}
 
 The following output is an example of an IBM Cloud Load Balancer data log:
 
