@@ -21,7 +21,7 @@ lastupdated: "2018-11-12"
 Für den Einstieg in die Verwendung von IBM© Cloud Load Balancer benötigen Sie zwei Dinge:
 
 * Ein Konto bei IBM: [IBMid ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
-* Einen IBM Server, entweder einen [Bare-Metal-Server](/docs/bare-metal?topic=bare-metal-about) oder eine [virtuelle Serverinstanz (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers).
+* Einen IBM Server, entweder einen [Bare-Metal-Server](/docs/bare-metal?topic=bare-metal-about) oder eine [virtuelle Serverinstanz (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen).
 
 Falls Sie Unterstützung bei der Beschaffung eines Kontos mit **IBMid** benötigen, setzen Sie sich mit Ihrem [IBM Vertriebsbeauftragten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} in Verbindung.
 
@@ -33,12 +33,12 @@ Wählen Sie zum Bestellen des IBM Cloud Load Balancer-Service **Netz > Lastausgl
 
 1. Wählen Sie Ihr Rechenzentrum aus und überprüfen Sie den Serviceplan. Klicken Sie auf **Weiter**.
 2. Wählen Sie das Teilnetz aus, in dem Sie die Lastausgleichsfunktion bereitstellen möchten. Die Instanz des Service für die Lastausgleichsfunktion verfügt über eine der Netzschnittstellen in diesem Teilnetz. Stellen Sie sicher, dass die Anwendungsserver entweder in diesem Teilnetz oder aus diesem Teilnetz erreichbar sind. Aktivieren Sie bei Bedarf das VLAN-Spanning. Klicken Sie auf **Weiter**.
-3. Definieren Sie die Basisserviceparameter, wie zum Beispiel Name, Beschreibung, Protokolle und Ports für Front-End- und Back-End-Anwendungen oder die Lastausgleichsmethode. 
+3. Definieren Sie die Basisserviceparameter, wie zum Beispiel Name, Beschreibung, Protokolle und Ports für Front-End- und Back-End-Anwendungen oder die Lastausgleichsmethode.
 
-	Während der erstmaligen Serviceerstellung können Sie maximal zwei Protokolle definieren. Sie können bis zu zehn Protokolle definieren, wenn der Service erstellt ist. Sie müssen auch einen eindeutigen Front-End-Port verwenden. 
-	
+	Während der erstmaligen Serviceerstellung können Sie maximal zwei Protokolle definieren. Sie können bis zu zehn Protokolle definieren, wenn der Service erstellt ist. Sie müssen auch einen eindeutigen Front-End-Port verwenden.
+
 	Wenn Sie damit fertig sind, klicken Sie auf **Weiter**.
-	
+
 4. Passen Sie bei Bedarf die Parameter für die Statusprüfung an; verwenden Sie andernfalls die Standardeinstellungen. Klicken Sie auf **Weiter**.
 5. Ordnen Sie mindestens eine Serverinstanz hinter der Lastausgleichsfunktion zu. Es werden nur Serverinstanzen angezeigt, die sich lokal im Rechenzentrum befinden. Klicken Sie auf **Weiter**.
 6. Überprüfen Sie die Übersichtsseite und klicken Sie auf **Erstellen**.

@@ -16,12 +16,12 @@ lastupdated: "2018-11-12"
 
 
 # 開始使用 IBM Cloud Load Balancer
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 若要開始使用 IBM© Cloud Load Balancer，您將需要兩個主要項目：
 
 * IBM 的帳戶：[IBM ID ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
-* IBM 伺服器，即[祼機](/docs/bare-metal?topic=bare-metal-about)或[虛擬伺服器實例 (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers)
+* IBM 伺服器，即[祼機](/docs/bare-metal?topic=bare-metal-about)或[虛擬伺服器實例 (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
 
 如果您需要在取得 **IBM ID** 帳戶方面的協助，請與 [IBM 業務代表 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} 聯絡，以取得其他指引。
 
@@ -33,12 +33,12 @@ lastupdated: "2018-11-12"
 
 1. 選取資料中心，並檢閱服務方案。按**下一步**。
 2. 選取您要部署負載平衡器的子網路。在此子網路上，負載平衡器服務實例會有它的一個網路介面。請確定應用程式伺服器位在此子網路上或可透過此子網路連接。必要的話，請啟用 VLAN Spanning。按**下一步**。
-3. 定義基本服務參數（例如名稱、說明、前端及後端應用程式通訊協定和埠）及負載平衡方法。 
+3. 定義基本服務參數（例如名稱、說明、前端及後端應用程式通訊協定和埠）及負載平衡方法。
 
-	在起始服務建立期間，最多可以定義兩個通訊協定。建立服務之後，最多可以定義十個通訊協定。您也必須使用唯一前端埠。 
-	
+	在起始服務建立期間，最多可以定義兩個通訊協定。建立服務之後，最多可以定義十個通訊協定。您也必須使用唯一前端埠。
+
 	完成之後，請按**下一步**。
-	
+
 4. 視需要調整性能檢查參數，否則，請使用預設值。按**下一步**。
 5. 與一個以上受負載平衡器保護的伺服器實例建立關聯。您只會看到資料中心的本端伺服器實例。按**下一步**。
 6. 檢閱摘要頁面，然後按一下**建立**。

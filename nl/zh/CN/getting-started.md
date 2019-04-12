@@ -16,12 +16,12 @@ lastupdated: "2018-11-12"
 
 
 # IBM Cloud Load Balancer 入门
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 要开始使用 IBM© Cloud Load Balancer，您将需要两个主要项目：
 
 * IBM 帐户：[IBM 标识 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
-* IBM 服务器，可以是[裸机](/docs/bare-metal?topic=bare-metal-about)，或者[虚拟服务器实例 (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers)
+* IBM 服务器，可以是[裸机](/docs/bare-metal?topic=bare-metal-about)，或者[虚拟服务器实例 (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
 
 如果您在获取 **IBM 标识**帐户时需要帮助，请联系 [IBM 销售代表 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} 获取其他指导。
 
@@ -33,12 +33,12 @@ lastupdated: "2018-11-12"
 
 1. 选择数据中心并复查服务套餐。单击**下一步**。
 2. 选择要将 Load Balancer 部署到的子网。您的 Load Balancer 服务实例将在此子网上具有其中一个网络接口：请确保应用程序服务器位于此子网上或可从此子网进行访问。如果必要，请启用 VLAN 生成。单击**下一步**。
-3. 定义您的基本服务参数，如名称、描述、前端和后端应用程序协议和端口，以及负载均衡方法。 
+3. 定义您的基本服务参数，如名称、描述、前端和后端应用程序协议和端口，以及负载均衡方法。
 
-	您可以在初始服务创建期间，最多定义两个协议。您可以在创建服务后，定义多达 10 个协议。您还必须使用唯一的前端端口。 
-	
+	您可以在初始服务创建期间，最多定义两个协议。您可以在创建服务后，定义多达 10 个协议。您还必须使用唯一的前端端口。
+
 	完成后，单击**下一步**。
-	
+
 4. 根据需要调整运行状况检查参数，否则使用缺省设置。单击**下一步**。
 5. 关联 Load Balancer 背后的一个或多个服务器实例。您将仅会看到属于数据中心本地的服务器实例。单击**下一步**。
 6. 复查摘要页面，然后单击**创建**。

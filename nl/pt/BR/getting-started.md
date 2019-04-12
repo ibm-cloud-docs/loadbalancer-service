@@ -21,7 +21,7 @@ lastupdated: "2018-11-12"
 Para começar a usar o IBM© Cloud Load Balancer, você precisará de dois itens principais:
 
 * Uma conta com a IBM: [IBMid![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
-* Um servidor IBM, [Bare Metal](/docs/bare-metal?topic=bare-metal-about) ou [Virtual Server Instance (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers)
+* Um servidor IBM, [Bare Metal](/docs/bare-metal?topic=bare-metal-about) ou [Virtual Server Instance (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
 
 Se precisar de assistência na obtenção de uma conta **IBMid**, entre em contato com seu [representante de vendas IBM![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} para obter orientação adicional.
 
@@ -33,12 +33,12 @@ Para pedir um serviço IBM Cloud Load Balancer, selecione **Rede > Balanceadores
 
 1. Selecione seu data center e revise o plano de serviço. Clique em **Avançar**.
 2. Selecione a sub-rede na qual você gostaria implementar seu balanceador de carga. A instância do serviço de balanceador de carga terá uma de suas interfaces de rede nesta sub-rede. Assegure-se de que seus servidores de aplicativos estejam nessa sub-rede ou sejam acessíveis nessa sub-rede. Se necessário, ative o VLAN Spanning. Clique em **Avançar**.
-3. Defina seus parâmetros de serviço básico, como o nome, a descrição, os protocolos e as portas do aplicativo front-end e back-end, além do método de balanceamento de carga. 
+3. Defina seus parâmetros de serviço básico, como o nome, a descrição, os protocolos e as portas do aplicativo front-end e back-end, além do método de balanceamento de carga.
 
-	É possível definir no máximo dois protocolos durante a criação de serviço inicial. É possível definir até dez protocolos após a criação do serviço. Deve-se também usar uma porta front-end exclusiva. 
-	
+	É possível definir no máximo dois protocolos durante a criação de serviço inicial. É possível definir até dez protocolos após a criação do serviço. Deve-se também usar uma porta front-end exclusiva.
+
 	Depois de terminar, clique em **Avançar**.
-	
+
 4. Ajuste os parâmetros de verificação de funcionamento, se desejado, caso contrário, use as configurações padrão. Clique em **Avançar**.
 5. Associe uma ou mais instâncias do servidor utilizadas com o balanceador de carga. Você só verá instâncias do servidor locais para seu data center. Clique em **Avançar**.
 6. Revise a página de resumo, em seguida, clique em **Criar**.
