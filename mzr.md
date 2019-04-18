@@ -41,7 +41,7 @@ Currently the following data centers are part of MZR:
 {: #mzr-requirements}
 Multi-Zone Regions have the following requirements:
 * The data center you select should be part of an MZR. The above table lists the regions and the data centers in each region.
-* VLAN Spanning must be enabled in your account.
+* VLAN Spanning or VRF must be enabled in your account.
 * Private subnets must exist in your account in the data centers of the MZR. Creation of compute devices in data centers results in the instantiation of private subnets.
 
-If the data center you select is not part of an MZR or if VLAN spanning is not enabled in your account, the load balancer creation defaults to the original behavior of instantiating all load balancer nodes in the data center you specify.
+If the data center you select is not part of an MZR or if VLAN spanning or VRF is not enabled in your account, the load balancer creation defaults to the original behavior of instantiating all load balancer nodes in the data center you specify.
