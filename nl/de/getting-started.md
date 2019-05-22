@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 
 
 # Einführung in IBM Cloud Load Balancer
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 Für den Einstieg in die Verwendung von IBM© Cloud Load Balancer benötigen Sie zwei Dinge:
 

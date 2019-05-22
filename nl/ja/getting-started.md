@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 
 
 # IBM Cloud Load Balancer の使用開始
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 IBM© Cloud Load Balancer の使用を開始するには、主に次の 2 つの項目が必要です。
 

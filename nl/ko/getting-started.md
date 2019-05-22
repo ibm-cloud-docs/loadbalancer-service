@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 
 
 # IBM Cloud Load Balancer 시작하기
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 IBM© Cloud 로드 밸런서의 사용을 시작하려면 두 가지 기본 항목이 필요합니다.
 

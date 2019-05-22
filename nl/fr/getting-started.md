@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 
 
 # Initiation à l'équilibreur de charge IBM Cloud Load Balancer
-{: #getting-started-with-ibm-cloud-load-balancer}
+{: #getting-started}
 
 Pour commencer à utiliser le service IBM© Cloud Load Balancer, vous aurez besoin des deux éléments essentiels suivants :
 
