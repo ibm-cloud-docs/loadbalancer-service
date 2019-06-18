@@ -19,6 +19,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:row-headers .row-headers}
 
 # Exploring IBM Load Balancers
 {: #explore}
@@ -29,17 +30,21 @@ Scroll to the right to view the rest of the table!
 {: important}
 
 
-|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Shared)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Dedicated)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Standard)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started) (Shared)| [Local Load Balancer](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started) (Dedicated)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Standard)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
-|**Public VIP**|Yes|Yes|Yes|Yes|Yes |
-|**Private VIP**|Yes|No|Yes|Yes|Yes |
-|**Layer 4 LB**|Yes|Yes|Yes|Yes|Yes |
-|**Layer 7 LB**|Yes|Cookie Persistence|Cookie Persistence|Yes|Yes |
-|**Health Checks**|Yes|Yes|Yes|Yes|Yes |
-|**Horizontal Scaling**|Yes|No|No|No|No |
-|**SSL Offload**|Yes|Yes|Yes|Yes|Yes |
+|**Public VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Private VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)||![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Layer 4 LB**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Layer 7 LB**|![Checkmark icon](../../icons/checkmark-icon.svg)|Cookie Persistence|Cookie Persistence|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Health Checks**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Horizontal Scaling**|![Checkmark icon](../../icons/checkmark-icon.svg)|||| |
+|**SSL Offload**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Management**|via IBM Portal|via IBM Portal|via IBM Portal|Self-manage (Vendor GUI)|Self-manage (Vendor GUI) |
 |**High Availability**|Built-in|Built-in|Optional|Optional|Optional |
-|**Advance LB (TCP Optimization, Compress, Caching, WAF)**|No|No|No|Limited|Yes |
-|**Global LB (GLB)**|No|No|No|No|Yes |
+|**Advance LB (TCP Optimization, Compress, Caching, WAF)**||||Limited|![Checkmark icon](../../icons/checkmark-icon.svg)|
+|**Global LB (GLB)**|||||![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Pricing**|Usage-based|Monthly Flat|Monthly Flat|Monthly Flat|Monthly Flat |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="A comparison of IBM's load balancer offerings" caption-side="top"}
+{: summary="This table all of IBM's load balancer offerings, and provides links to their documentation."}
