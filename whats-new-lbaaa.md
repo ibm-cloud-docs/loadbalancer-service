@@ -25,6 +25,21 @@ subcollection: loadbalancer-service
 
 Find out about new and updated features in IBM© Cloud Load Balancer.
 
+
+## June 2019
+{: #june-2019}
+
+### Public to Public Load Balancer
+{: #public-to-public-load-balancer}
+IBM Cloud Load Balancer now supports a new load balancer type called Public to Public. With this type of load balancer, you can add backend server instances using their public IP's, and traffic will be forwarded to them through their public interface. This applies to both Layer-4 and Layer-7 backend members.
+
+## April 2019
+{: #april-2019}
+
+### Layer 7 Support
+IBM Cloud Load Balancer now fully supports Layer 7 load balancing with APIs and the user portal. Through our Layer 7 (L7) support, you can now group VSI or Bare Metal server instances in server pools and handle incoming requests according to set rules and policies so that traffic can be redirected to a URL, rejected, or distributed to L7 pool members.
+
+
 ## February 2019
 {: #february-2019}
 
@@ -44,10 +59,10 @@ IBM Cloud Load Balancer now supports backend encryption and the ability to forwa
 ## August 2018
 {: #august-2018}
 
-### Layer 7 Support
+### Layer 7 API Support
 {: #layer-7-support-1}
 
-IBM Cloud Load Balancer now supports Layer 7 load balancing. With Layer 7 (L7) support, traffic can be redirected to a URL, rejected, or distributed to L7 pool members, including bare-metal and virtual-server instances. Incoming data traffic is classified by using Layer 7 policies and rules. The policies define what action to take when the data traffic matches the rules associated with them.
+IBM Cloud Load Balancer now provides a set of APIs supporting Layer 7 load balancing. With Layer 7 (L7) support, traffic can be redirected to a URL, rejected, or distributed to L7 pool members, including bare-metal and virtual-server instances. Incoming data traffic is classified by using Layer 7 policies and rules. The policies define what action to take when the data traffic matches the rules associated with them.
 
 Refer to [Layer 7 load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing) for additional details.
 

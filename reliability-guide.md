@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Using an IBM Cloud Load Balancer for elastic server load balancing
+# Using an elastic IBM Cloud Load Balancer for server load balancing
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
 The IBM© Cloud Load Balancer service helps improve scalability and availability of your business-critical applications. It monitors the health of your application servers, utilizes smart load balancing methods to distribute traffic among multiple servers, and dynamically adjusts its system capacity to handle varying traffic load.
@@ -28,14 +28,10 @@ The IBM© Cloud Load Balancer service helps improve scalability and availability
 ## What you'll accomplish
 {: #what-you-ll-accomplish-2}
 
-In this Step-by-Step guide you will learn how to configure the service.   
-
-For information on ordering a Cloud Load Balancer, refer to [Getting Started](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started).
-{: note}
+In this Step-by-Step guide you will learn how to create and configure a new load balancer service.
 
 Task  | Description
 ------------- | -------------
-[Configure Basic Parameters](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters) | Configure your Load Balancer.
-[Identify your application resources](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources) | Identify the your application's resources, such as origin pools and health check mechanisms.
-[Review and order your load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order) | Review the contents of your order before placing it.
-[Monitor and manage your service](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) | Edit your configuration and monitor your service performance.
+[Select the service and configure basic parameters](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) | Configure basic parameters, such as the name, description, and type of your load balancer.
+[Configure load balancing parameters and place order](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order) | Configure protocols, healthchecks, and backend servers.
+[Monitor and manage your load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) | Edit your configuration and monitor your load balancer performance.

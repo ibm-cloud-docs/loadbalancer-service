@@ -21,64 +21,40 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Configuring IBM Cloud Load Balancer parameters
-{: #configuring-ibm-cloud-load-balancer-parameters}
+# Selecting the service and configuring basic parameters
+{: #configuring-ibm-cloud-load-balancer-basic-parameters}
 
-Once you [create a load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), you can then configure it for elastic load balancing. To do so:
+To begin creating your new IBM© Cloud Load Balancer, select **IBM Cloud Load Balancer** from the Load Balancer page of the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
 
-1. Name your load balancer, and, optionally, add a description.
+	<img src="images/CLB_Select_Service_PUP.png" alt="drawing" style="width: 800px;"/>
 
-	<img src="images/lb-config-basic.png" alt="drawing" style="width: 300px;"/>
+When the configuration screen appears, perform the following procedure:
 
-2. Input the details of your application profile by identifying the protocols and ports your application is listening on. You can use the same configuration for both front-end and back-end, or expose a different front-end port (for security purposes, for instance).
+1. Enter the name for the load balancer instance. The FQDN of the load balancer will be based on this name.
 
-3. The default load balancing method is **Round Robin**. You may change it to **Weighted Round Robin** or **Least Connections** from the drop-down list, depending on your application needs.
+	<img src="images/CLB_Basic_Parameters_PUP.png" alt="drawing" style="width: 800px;"/>
 
-4. Optionally, you can enable **Session stickiness**. If enabled, all requests from a given end-user (for example, one with the same source IP) go to the same backend server for a system-defined "sticky" time.
+2. Enter a description for the load balancer (optional).
 
-5. You can also set the **Maximum connection limit** against your application.
+3. Select the datacenter where the load balancer instance will be created. 
 
-6. Click **Add Protocol** to specify additional ports and protocols your application may be listening on. Be sure that all front-end ports are unique. You can choose HTTP, HTTPS or TCP as your front-end protocol.
+For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
+{: tip}
 
-	<img src="images/lb-add-protocol.png" alt="drawing" style="width: 300px;"/>
+4. Select the type of load balancer you want to create from the options **Public** , **Private** or **Public to Public**. Refer to [IBM Cloud Load Balancer Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
-	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
-{:note:}
+5. Select the subnet where you want to deploy your new load balancer. 
+	
+	This option only applies to **Public** and **Private** load balancer types. Your load balancer service instance will have one of its network interfaces on this subnet. Ensure that your application servers are either on this subnet or reachable from this subnet. If necessary, enable VLAN spanning.
+	{: note}
 
-7. The IBM© Cloud Load Balancer terminates incoming HTTPS (HTTP over SSL) connections and can communicate in plain-text HTTP with the back-end application servers, and offloads processor-intensive SSL tasks from your servers if backend protocol is selected as HTTP. If the selected backend protocol is HTTPS, the traffic will be encrypted between load balancer and backend servers. You must upload your SSL Certificate. Select one of your available certificates from the drop-down list.  
-
-	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
-
-	If you do not have an existing certificate, then click **Add a new Certificate**. This takes you to an IBM Cloud certificate service where you can either purchase a new certificate or upload an existing one.
-
-	After adding the certificate, return to the load balancer configuration page and click the refresh icon below the SSL Certificate drop-down list to view and add your newly-uploaded certificate.
-
-	<img src="images/order-ssl-cert.png" alt="drawing" style="width: 300px;"/>
-
-	<img src="images/refresh-cert.png" alt="drawing" style="width: 300px;"/>
-
-	Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.
-  {: note}
-
-8. Click **Next**.
-
-## Configure Health Checks
-{: #configure-health-checks}
-
-The health check definition is mandatory for each of your application ports. These are the back-end ports identified in the previous basic configuration menu.
-
-<img src="images/config-health-check.png" alt="drawing" style="width: 300px;"/>
-
-The system pre-populates a default health check configuration for these back-end ports. You may customize these settings to suit your application needs.
-
-* **Interval**: Interval in seconds between two consecutive health check attempts
-* **Timeout**: Maximum amount of time the system will wait for a response against a health check request
-* **Max Trials**: Maximum number of additional health check attempts the system will make prior to declaring a port unhealthy
-* **Path**: The HTTP URL path for the health check     
-
-Click **Next** to enable your choice.
+6. Select the allocation of Public IP's for the load balancer. 
+	
+	This option only applies to **Public** load balancer types. If you select the option **Allocate from a public subnet in this account** you must ensure that you have at least two public IP's available in a public subnet in the same datacenter. In addition, ensure that traffic to TCP management port 56501, as well as your application's own ports, are not blocked by firewalls deployed on your public VLANs.
+	{: note}
+	
 
 ## What's Next
 {: #what-s-next}
 
-[Identify your application's resources](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), such as origin pools and health check mechanisms.
+[Configure load balancing parameters and place your order](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order).

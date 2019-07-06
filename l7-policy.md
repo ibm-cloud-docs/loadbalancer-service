@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2018, 2019
+lastupdated: "2019-07-01"
 
 keywords: l7, layer 7, policy, policies
 
@@ -35,6 +35,10 @@ Since multiple policies can be applied to a protocol, there is a priority associ
 
 If the traffic does not match any of the policy rules, the traffic is redirected to a default pool, which is the pool that was configured when the basic load balancer was deployed.
 
+<img src="images/Layer7-Policy.png" alt="dibujo" style="width: 800px;"/>
+
+<img src="images/Layer7-PolicyDetails.png" alt="dibujo" style="width: 800px;"/>
+
 Each policy is associated with an action that is performed when all of the rules in the policy match the traffic.
 
 The actions can be:
@@ -50,6 +54,9 @@ After that, policies set to `redirect to url` are evaluated.
 Finally, policies set to `redirect to pool` are evaluated.
 
 Within each action category, the policies are evaluated in ascending order of priority (lowest to highest).
+
+<img src="images/Layer7-PolicyActions.png" alt="dibujo" style="width: 800px;"/>
+
 
 ## Layer 7 Policy Properties
 {: #layer-7-policy-properties}

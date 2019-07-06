@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2018, 2019
+lastupdated: "2019-07-01"
 
 keywords: l7, layer 7, policies, rules, pools
 
@@ -28,6 +28,9 @@ The IBM© Cloud Load Balancer Service distributes traffic among multiple server 
  * The data traffic to be distributed is classified using policies and rules.
  * Policies define what action to take when the data traffic matches all the rules associated with a policy.
  * Layer-7 (L7) load balancing is supported for HTTP and HTTPS traffic only.
+
+ <img src="images/Layer7-Overview.png" alt="dibujo" style="width: 800px;"/>
+
 
 ## Layer-7 Policies and Rules
 {: #layer-7-policies-and-rules}

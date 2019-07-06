@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-07"
+  years: 2017, 2018, 2019
+lastupdated: "2019-07-03"
 
 keywords: basics, load balancing
 
@@ -21,12 +21,12 @@ subcollection: loadbalancer-service
 {:note: .note}
 
 # Performing IBM Cloud Load Balancer Basics
-{: #performing-ibm-cloud-load-balancer-basics}
+{: #ibm-cloud-load-balancer-basics}
 
 The IBMÂ© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
 
-## Public Load Balancer
-{: #public-load-balancer}
+## Public to Private Load Balancer
+{: #public-private-load-balancer}
 
 A publicly accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network.
 
@@ -35,16 +35,30 @@ As a good practice, we recommended that you provision your backend servers as â€
 
 You may choose to allocate load balancer public IP addresses from either an IBM system pool(default) or a public VLAN under your account when creating your load balancer service instance.
 
-## Internal Load Balancer
-{: #internal-load-balancer}
+## Private to Private Load Balancer
+{: #private-private-load-balancer}
 
 The internal load balancer is only accessible within the IBM Cloud private network.
 
-Just like a public load balancer, your internal load balancer service instance is also assigned a fully qualified domain name. However, this domain name is registered with one or more private IP addresses.
+Just like a public to private load balancer, your internal load balancer service instance is also assigned a fully qualified domain name. However, this domain name is registered with one or more private IP addresses.
 
 Similar to a public load balancer, the private IP addresses and their numbers may change over time based on maintenance and scaling activities, which are transparent to end users.
 
 The backend compute instances hosting your application must also be on the IBM Cloud private network.
+{: note}
+
+## Public to Public Load Balancer
+{: #public-public-load-balancer}
+
+The public to public load balancer is publicly accessible.
+
+Just like other load balancer types, your public to public load balancer service instance is assigned a fully qualified domain name. This domain name may be registered with one or more public IP addresses.
+
+Once the load balancer is provisioned, only public IP addresses of the members in the server tables context are visible. This is applicable for both Layer 4 and Layer 7 load balancer members.
+
+The public IP addresses and their numbers may change over time based on maintenance and scaling activities, which are transparent to end users.
+
+The backend compute instances hosting your application must be on the IBM Cloud public network.
 {: note}
 
 ## Front-end and Back-end Application Ports/Protocols

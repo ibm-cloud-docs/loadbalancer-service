@@ -25,10 +25,10 @@ subcollection: loadbalancer-service
 
 This topic provides information on common issues you may encounter when the load balancer and the compute instances connected to the load balancer are in different subnets. VLAN Spanning must be enabled for the load balancer to communicate and forward requests to compute instances residing on a different subnet.
 
-1. Login to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com){:new_window}, navigate to **Network > IP Management**, then click on **VLANs**.
+1.Go to the [Network VLANs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/network/vlans){:new_window} page.
 
 2. Toggle **VLAN Spanning** to **On**.
 
-<img src="images/vlan-spanning.png" alt="drawing" style="width: 500px;"/>
+<img src="images/CLB_vlan_spanning_PUP.png" alt="drawing" style="width: 800px;"/>
 
 This opens communication between the load balancer and its compute instances.

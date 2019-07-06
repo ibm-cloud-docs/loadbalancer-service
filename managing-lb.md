@@ -23,18 +23,29 @@ subcollection: loadbalancer-service
 # Monitoring and Managing Your Service
 {: #monitoring-and-managing-your-service}
 
-You may edit your configuration or monitor your service performance by clicking service name URL on the load balancer summary page.
+You can edit your configuration or monitor your service performance by clicking on the load balancer name in the load balancer summary page.
 
-The **fully-qualified domain name (FQDN) address** of your load balancer service instance can be seen just below the service name. Your end-users are able to connect to your application via this FQDN address. Note that the public and private IP address(es) of the load balancer service are not exposed to the outside world; only the FQDN address is exposed.
+The **fully-qualified domain name (FQDN) address** of your load balancer instance can be seen by clicking on the **Details** button. Your end-users are able to connect to your application using this FQDN address. 
 
-<img src="images/fqdn-address.png" alt="drawing" style="width: 300px;"/>
+The public and private IP address(es) of the load balancer service are not exposed to the outside world; only the FQDN address is exposed. 
+{: note}
 
-The **Overview** tab provides high-level state information of your service. It displays the current health of your application servers and their ports. It also provides a quick summary of system performance - throughput, connection rate, concurrent connections etc.
+The **Details** dropdown also displays the type, location and logging enablement of the load balanncer.
 
-Navigate to the **Monitoring** tab to view real-time charts of your system performance. These graphs may be viewed per individual application port and for various time durations.
+<img src="images/CLB_overview_page_PUP.png" alt="drawing" style="width: 800px;"/>
 
-<img src="images/monitor-lb.png" alt="drawing" style="width: 300px;"/>
+The **Overview** tab on the left side of the screen provides high-level information about your service. It displays the current health of your application servers and their ports, and also provides a quick summary of system performance - throughput, connection rate, concurrent connections, and so on.
 
-You may edit your existing configuration by navigating to **Protocols**, **Server Instances**, and **Health Checks** tabs. As an example, navigate to Protocols tab to define additional application ports or to customize SSL cipher list.
+You can select the **Monitoring** tab to view real-time charts of your system performance. These graphs may be viewed per individual application port and for various time durations.
 
-<img src="images/protocols-monitor.png" alt="drawing" style="width: 300px;"/>
+<img src="images/CLB_monitoring_metrics_PUP.png " alt="drawing" style="width: 800px;"/>
+
+You can edit your existing configuration using the **Protocols**, **Server Instances**, and **Health Checks** tabs. For example, the **Protocols** tab can be used to define additional application ports or to customize tbe SSL cipher lists when there is an existing HTTPS protocol.
+
+<img src="images/CLB_ciphers_edit_PUP.png" alt="drawing" style="width: 800px;"/>
+
+After every configuration change, the load balancer goes into an UPDATE PENDING state. In this state, datapath traffic is not affected, but no further updates can be made to that load balancer. Click the refresh button next to the load balancer's state to check the latest status.
+
+<img src="images/CLB_configuration_pending_PUP.png" alt="drawing" style="width: 800px;"/>
+
+You can also use the **Layer7** tab to configure [Layer-7 Load Balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing).

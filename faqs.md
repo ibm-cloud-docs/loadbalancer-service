@@ -121,11 +121,6 @@ You should use FQDN and not cached IP addresses.
 
 Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
-## Why can't I see my Layer 7 configuration in the UI?
-{: faq}
-
-Currently, Layer 7 support is available only through public APIs, but this functionality will be available in the UI soon. Refer to the Layer 7 section of the [APIs Documentation](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-api-reference) for more information.
-
 ## What information do I need to file a support ticket?
 {: faq}
 

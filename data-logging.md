@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-19"
+lastupdated: "2019-07-01"
 
 keywords: log, logs, logging, las
 
@@ -28,6 +28,9 @@ Data and health check logs are valuable for debugging and maintenance purposes. 
 You can enable or disable this feature by:
 
 * Creating a new load balancer and setting this feature to on.
+
+<img src="images/DataLogging.png" alt="dibujo" style="width: 800px;"/>
+
 * Using the API `enableOrDisableDataLogs`.
 
 ## Viewing Logs in the IBM Cloud Logging Analysis Service

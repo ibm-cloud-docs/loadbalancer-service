@@ -23,46 +23,23 @@ subcollection: loadbalancer-service
 # Choosing a Preferred Cipher Suite for your HTTPS Application
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-Ciphers algorithms that help the IBM© Cloud Load Balancer form secure connections with its HTTP clients.
+Cipher algorithms help the IBM© Cloud Load Balancer form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
 
-IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
+To choose a preferred cipher suite for an existing load balancer:
 
-You can choose a preferred cipher suite for an existing load balancer, or designate them when creating a new one.
+1. Access the Cipher table from the **Protocols** tab. 
 
-## Choosing ciphers for an existing load balancer
-{: #choosing-ciphers-for-an-existing-load-balancer}
+	There must be at least one existing HTTPS protocol. 
+	{: note}
 
-To choose a cipher suite configuration for an existing load balancer, navigate to your load balancer screen in the customer portal, and click the Protocols tab. If HTTPS is not selected as the front-end protocol, you will not see the list of cipher suites.
+2. Click **Edit** to enable editing, and select (or unselect) the required ciphers. 
 
-  <img src="images/DetailsFlow-HTTPSUnselected.png" alt="drawing" style="width: 700px;"/>
+	<img src="images/CLB_ciphers_edit_PUP.png" alt="drawing" style="width: 800px;"/>
+	
+3. When you're dobne, click **Save** to save your changes.
 
-Select HTTPS for your front-end protocol, and the available Cipher Suites will display under Load Balancer Details.
-
-  <img src="images/DetailsFlow-CustomCipherSelection.png" alt="drawing" style="width: 600px;"/>
-
-The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
-
-For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
-{: note}
-
-## Choosing ciphers when creating a new load balancer
-{: #choosing-ciphers-when-creating-a-new-load-balancer}
-
-To choose the cipher suite when creating a new load balancer:
-
-1. Follow the instructions to [create a load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-an-ibm-cloud-load-balancer#creating-an-ibm-cloud-load-balancer).
-
-2. Cipher Suite configuration is only applicable with the HTTPS front-end protocol. When you reach the configuration steps for the **Add protocol** section, choose **HTTPS Protocol**.
-
-	<img src="images/ProvisioningFlow-CustomCiphers.png" alt="drawing" style="width: 500px;"/>
-
-3. A default set of ciphers is alredy selected in the configuration, but you will only be able to edit them once you have finished configuring the load balancer.
-
-	Finish the load balancer configuration, following the instructions in the topic. Once you are done, you can see the default cipher list in the **Protocols Tab** under **Load Balancer Details**.
-
-	<img src="images/View-CustomCiphers.png" alt="drawing" style="width: 600px;"/>
-
-4. The Cipher table is editable and allows you to select your desired cipher suites for SSL handshake. Click **Edit**, select the Ciphers you wish to implement, and click **Save**.
+	If you defined a HTTPS protocol when creating your load balancer, it will have all ciphers in the suite enabled. The selection of a particular set of ciphers can be done only after the load balancer is provisioned.
+	{: note}
 
 	For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
-  {: note}
+	{: note}

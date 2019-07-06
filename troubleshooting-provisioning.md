@@ -32,11 +32,11 @@ IBM Cloud Load Balancer requires at least two free IP addresses from its private
 
 Follow the steps below to check for free IPs in a subnet.
 
-1. Go to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com){:new_window}, and navigate to the subnets section by selecting **Network > IP Management > Subnets**.
+1. Go to the [Subnets ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/network/subnets){:new_window} page.
 
-2. Click on the subnet which you want to check for free IP's.
+2. Search for and click on the subnet you want to check for free IP's.
 
-	<img src="images/subnet_list.png" alt="drawing" style="width: 600px;"/>
+	<img src="images/CLB_view_private_subnets_PUP.png" alt="drawing" style="width: 800px;"/>
 
 3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
@@ -53,6 +53,6 @@ To view error messages for your load balancer, perform the following procedure:
 1. Click on the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
-<img src="images/lbaas_error_message.png" alt="drawing" style="width: 500px;"/>
+<img src="images/CLB_view_error_PUP.png" alt="drawing" style="width: 800px;"/>
 
 If the load balancer is in an `ERROR` state, it cannot be recovered and must be deleted.

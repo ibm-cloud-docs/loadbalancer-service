@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2018, 2019
+lastupdated: "2019-07-01"
 
 keywords: l7, layer 7, pool, http
 
@@ -28,7 +28,12 @@ A Layer 7 (L7) pool is a logical grouping of the servers (members) for handling 
 The Layer 7 load balancing feature can direct the incoming traffic to different backend pools based
 on the policies and rules. This feature is supported by associating multiple L7 pools with a load balancer. Layer 7 pools are used with the Layer 7 policies whose action is `redirect to pool`.
 
-L7 pools only support HTTP as the backend protocol.
+  <img src="images/Layer7-AddPool.png" alt="dibujo" style="width: 800px;"/>
+
+L7 pools support both HTTP and HTTPS as the backend protocol.
+
+  <img src="images/Layer7-Pool.png" alt="dibujo" style="width: 800px;"/>
+
 
 ## Session Persistence
 {: #session-persistence}
@@ -41,11 +46,18 @@ Session persistence can be configured for each Layer 7 pool. For more details, r
 
 Backend servers that are associated with a Layer 7 Pool are called Layer 7 Members.
 
+  <img src="images/Layer7-AddServers.png" alt="dibujo" style="width: 800px;"/>
+
 The same backend server can be added multiple times to L7 pools, by specifying a different port number each time.
+
+  <img src="images/Layer7-PoolMembers.png" alt="dibujo" style="width: 800px;"/>
+
 
 ## Configure Health Checks
 {: #configure-health-checks}
 The health check definition is mandatory for each Layer 7 pool. The system pre-populates a default health check configuration for L7 pools.
+
+  <img src="images/Layer7-AddHealthCheck.png" alt="dibujo" style="width: 800px;"/>
 
 You may customize these settings to suit your application needs:
 
@@ -53,3 +65,5 @@ You may customize these settings to suit your application needs:
  * **Timeout**: The maximum amount of time the system will wait for a response to the health check request.
  * **MaxRetries**: The maximum number of additional health check attempts the system will make prior to declaring the service unhealthy.
  * **UrlPath**: The HTTP URL path for the Layer 7 health check.
+
+  <img src="images/Layer7-HealthCheck.png" alt="dibujo" style="width: 800px;"/>
