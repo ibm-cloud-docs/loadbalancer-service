@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, troubleshooting
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,14 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Come ottenere aiuto e supporto per IBM Cloud Load Balancer
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-In caso di problemi o domande durante l'utilizzo del servizio IBM© Cloud Load Balancer, puoi ottenere supporto ricercando le informazioni o facendo delle domande tramite uno dei seguenti forum.Puoi inoltre aprire un ticket di supporto.
+In caso di problemi o domande durante l'utilizzo del servizio IBM© Cloud Load Balancer, puoi ottenere supporto ricercando le informazioni o facendo delle domande tramite uno dei seguenti forum. Puoi inoltre aprire un ticket di supporto.
 
 Quando utilizzi i forum per fare una domanda, contrassegnala con tag in modo che possa essere individuata dai team di sviluppo di IBM Cloud.
 

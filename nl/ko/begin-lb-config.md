@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # IBM Cloud Load Balancer 매개변수 구성
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-로드 밸런서를 작성한 후 탄력적인 로드 밸런싱을 사용하도록 구성할 수 있습니다. 이를 위해서는 다음을 수행하십시오.
+[로드 밸런서를 작성](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)한 후 탄력적인 로드 밸런싱을 위해 로드 밸런서를 구성할 수 있습니다. 이를 위해서는 다음을 수행하십시오.
 
 1. 로드 밸런서의 이름을 지정하고 선택적으로 설명을 추가하십시오.
 
@@ -45,19 +49,22 @@ lastupdated: "2018-11-07"
 
 	<img src="images/lb-ssl-cert.png" alt="그림" style="width: 300px;"/>
 
-	기존 인증서가 없는 경우 **새 인증서 추가**를 클릭하십시오. 그러면 새 인증서를 구매하거나 기존 인증서를 업로드할 수 있는 IBM Cloud 인증서 서비스로 이동합니다. 
-	
+	기존 인증서가 없는 경우 **새 인증서 추가**를 클릭하십시오. 그러면 새 인증서를 구매하거나 기존 인증서를 업로드할 수 있는 IBM Cloud 인증서 서비스로 이동합니다.
+
 	인증서를 추가한 후 로드 밸런서 구성 페이지로 돌아와서 SSL 인증서 드롭 다운 목록 아래의 새로 고치기 아이콘을 클릭하여 새로 업로드된 인증서를 보고 추가하십시오.
 
 	<img src="images/order-ssl-cert.png" alt="그림" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="그림" style="width: 300px;"/>
 
-	**참고: 기능에 문제가 발생할 수 있으므로 HTTPS 리스너와 연관된 인증서를 삭제하지 마십시오.**
+	기능에 문제가 발생할 수 있으므로 HTTPS 리스너와 연관된 인증서를 삭제하지 마십시오.
+  {: note}
 
 8. **다음**을 클릭하십시오.
 
 ## 상태 검사 구성
+{: #configure-health-checks}
+
 각 애플리케이션 포트에 대한 상태 검사 정의는 필수입니다. 해당 포트는 이전 기본 구성 메뉴에서 식별된 백엔드 포트입니다.
 
 <img src="images/config-health-check.png" alt="그림" style="width: 300px;"/>
@@ -72,4 +79,6 @@ lastupdated: "2018-11-07"
 **다음**을 클릭하여 선택사항을 사용으로 설정하십시오.
 
 ## 다음에 수행할 작업
+{: #what-s-next}
+
 오리진 풀 및 상태 검사 메커니즘과 같은 [애플리케이션의 리소스를 식별](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)하십시오.

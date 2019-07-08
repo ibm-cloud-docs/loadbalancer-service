@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: about, load balancer, overview, features
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,6 +28,8 @@ aplicativos críticos aos negócios, distribuindo o tráfego entre múltiplas in
 de aplicativos e encaminhando o tráfego somente para instâncias em funcionamento.
 
 ## Visão geral de recursos
+{: #overview-of-features}
+
 O IBM Cloud Load Balancer Service oferece os recursos a seguir:
 
 * Balanceador de carga público (voltado para a Internet)
@@ -55,3 +61,6 @@ O IBM Cloud Load Balancer Service oferece os recursos a seguir:
     * O tráfego HTTP/HTTPS é roteado para diferentes serviços de backend com base no cabeçalho de HTTP e é feito usando políticas e regras. As regras são usadas para classificar o tráfego e se baseiam nos campos de cabeçalho de HTTP. Quando o tráfego corresponde a todas as regras, uma ação especificada pela política é executada.
 * Suporte para região multizona (MZR)
     * Os nós balanceadores de carga são instanciados em diferentes data centers de uma MZR. Consulte [Visão geral da região multizona](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) para obter mais informações.
+* Logs de dados
+    * Com os logs de dados ativados, os logs do balanceador de carga serão encaminhados para
+o [IBM Cloud Log Analysis Service ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Os clientes podem visualizar seus logs de dados usando o [IBM Cloud Log Analysis Service ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.

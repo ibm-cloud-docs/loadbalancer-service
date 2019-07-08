@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # レイヤー 7 プール
@@ -18,21 +25,25 @@ lastupdated: "2018-11-12"
 
 レイヤー 7 (L7) プールは、着信要求を処理するためのサーバー (メンバー) の論理グループです。
 
-レイヤー 7 ロード・バランシング機能は、ポリシーおよびルールに基づいて、着信トラフィックを異なるバックエンド・プールに転送できます。 この機能は、1 つのロード・バランサーに複数の L7 プールを関連付けることによってサポートされます。 レイヤー 7 プールは、アクションが `redirect to pool` であるレイヤー 7 ポリシーと共に使用されます。
+レイヤー 7 ロード・バランシング機能は、ポリシーおよびルールに基づいて、着信トラフィックを異なるバックエンド・プールに転送できます。この機能は、1 つのロード・バランサーに複数の L7 プールを関連付けることによってサポートされます。 レイヤー 7 プールは、アクションが `redirect to pool` であるレイヤー 7 ポリシーと共に使用されます。
 
 L7 プールは、バックエンド・プロトコルとして HTTP のみをサポートします。
 
 ## セッション・パーシスタンス
+{: #session-persistence}
+
 レイヤー 7 プールごとにセッション・パーシスタンスを構成することができます。 詳しくは、  
 [高度なトラフィック管理](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer)セクションを参照してください。
 
 ## レイヤー 7 メンバー
+{: #layer-7-members}
 
 レイヤー 7 プールと関連付けられたバックエンド・サーバーはレイヤー 7 メンバーと呼ばれます。
 
 同じバックエンド・サーバーを、毎回異なるポート番号を指定することによって、L7 プールに複数回追加することができます。
 
 ## ヘルス・チェックの構成
+{: #configure-health-checks}
 レイヤー 7 プールごとにヘルス・チェック定義が必須です。 L7 プール用のデフォルトのヘルス・チェックがシステムによって事前設定されます。
 
 アプリケーションのニーズに合うように以下の設定をカスタマイズできます。

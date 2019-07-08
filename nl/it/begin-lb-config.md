@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # Configurazione dei parametri di IBM Cloud Load Balancer
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-Una volta che hai creato un programma di bilanciamento del carico, puoi configurarlo per il bilanciamento del carico elastico. Per eseguire tale operazione:
+Una volta che hai [creato un programma di bilanciamento del carico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), puoi configurarlo per il bilanciamento del carico elastico. Per eseguire tale operazione:
 
 1. Assegna un nome al tuo programma di bilanciamento del carico e, facoltativamente, aggiungi una descrizione.
 
@@ -45,19 +49,22 @@ Una volta che hai creato un programma di bilanciamento del carico, puoi configur
 
 	<img src="images/lb-ssl-cert.png" alt="disegno" style="width: 300px;"/>
 
-	Se non hai un certificato esistente, fai clic su **Add a new Certificate**. Questa opzione ti porta ad un servizio certificati IBM Cloud in cui puoi acquistare un nuovo certificato o caricarne uno esistente. 
-	
+	Se non hai un certificato esistente, fai clic su **Add a new Certificate**. Questa opzione ti porta ad un servizio certificati IBM Cloud in cui puoi acquistare un nuovo certificato o caricarne uno esistente.
+
 	Una volta aggiunto il certificato, ritorna alla pagina di configurazione del programma di bilanciamento del carico e fai clic sull'icona di aggiornamento nell'elenco a discesa del certificato SSL per visualizzare e aggiungere il certificato che hai appena caricato.
 
 	<img src="images/order-ssl-cert.png" alt="disegno" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="disegno" style="width: 300px;"/>
 
-	**NOTA: non devi mai eliminare i certificati associati ai listener HTTPS poiché può causare problemi con la funzionalità.**
+	Non devi mai eliminare i certificati associati ai listener HTTPS poiché tale operazione può causare problemi con la funzionalità.
+  {: note}
 
 8. Fai clic su **Next**.
 
 ## Configura i controlli di integrità
+{: #configure-health-checks}
+
 La definizione di controllo di integrità è obbligatoria per ciascuna delle porte dell'applicazione. Queste sono porte di backend identificate nel menu di configurazione di base precedente.
 
 <img src="images/config-health-check.png" alt="disegno" style="width: 300px;"/>
@@ -72,4 +79,6 @@ Il sistema pre-popola una configurazione del controllo di integrità predefinita
 Fai clic su **Next** per abilitare la tua scelta.
 
 ## Operazioni successive
+{: #what-s-next}
+
 [Identifica le risorse della tua applicazione](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), ad esempio i pool di origine e i meccanismi del controllo di integrità.

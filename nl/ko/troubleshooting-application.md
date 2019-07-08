@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 애플리케이션 서버 문제점 해결
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 이 주제에서는 로드 밸런서를 사용하는 동안 발생할 수 있는 일반적인 문제에 대한 정보를 제공합니다.
 
 ## 백엔드 서버가 비정상임
+{: #the-back-end-server-is-unhealthy}
 백엔드 서버의 상태가 실패이면 다음 목록을 확인하여 수정하십시오.
 
 * 구성된 백엔드 프로토콜의 포트가 애플리케이션이 청취 중인 포트와 일치합니까?

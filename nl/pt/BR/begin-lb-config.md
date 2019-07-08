@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # Configurando parâmetros do IBM Cloud Load Balancer
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-Depois de criar um balanceador de carga, é possível configurá-lo para balanceamento de carga elástico. Para fazer isso:
+Depois de [criar um balanceador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), você poderá configurá-lo para balanceamento de carga elástico. Para fazer isso:
 
 1. Nomeie seu balanceador de carga e, opcionalmente, inclua uma descrição.
 
@@ -49,20 +53,23 @@ entre o balanceador de carga e os servidores de back-end. Deve-se fazer upload d
 
 	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
-	Se você não tiver um certificado existente, clique em **Incluir um novo certificado**. Isso o leva a um serviço de certificado do IBM Cloud no qual é possível comprar um novo certificado ou fazer upload de um existente. 
-	
+	Se você não tiver um certificado existente, clique em **Incluir um novo certificado**. Isso o leva a um serviço de certificado do IBM Cloud no qual é possível comprar um novo certificado ou fazer upload de um existente.
+
 	Depois de incluir o certificado, retorne para a página Configuração do balanceador de carga e clique no ícone de atualização abaixo da lista suspensa Certificado SSL para visualizar e incluir seu certificado recém-transferido por upload.
 
 	<img src="images/order-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="drawing" style="width: 300px;"/>
 
-	**NOTA: nunca exclua nenhum certificado associado a listeners HTTPS, pois isso
-pode causar problemas com a funcionalidade.**
+	Nunca exclua qualquer certificado associado aos listeners HTTPS, já que isso pode causar problemas
+com a funcionalidade.
+  {: note}
 
 8. Clique em **Avançar**.
 
 ## Configurar verificações de funcionamento
+{: #configure-health-checks}
+
 A definição de verificação de funcionamento é obrigatória para cada uma de suas portas do aplicativo. Essas são as portas back-end identificadas no menu de configuração básica anterior.
 
 <img src="images/config-health-check.png" alt="drawing" style="width: 300px;"/>
@@ -77,4 +84,6 @@ O sistema pré-preenche uma configuração de verificação de funcionamento pad
 Clique em **Avançar** para ativar sua opção.
 
 ## O que vem a seguir
+{: #what-s-next}
+
 [Identifique os recursos de seu aplicativo](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), como conjuntos de origem e mecanismos de verificação de funcionamento.

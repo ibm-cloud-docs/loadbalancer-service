@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: pricing, usage, month
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 
 # IBM Cloud Load Balancer 가격
@@ -24,9 +30,10 @@ IBM© Cloud 로드 밸런서 가격은 월별 계산되는 다음의 3개 메트
 * 처리된 데이터
 * 아웃바운드 공용 대역폭(Egress)
 
-**참고:** 모든 가격은 지리적 위치별로 다양합니다. IBM Cloud Load Balancer Service에서 이용하는 아웃바운드 공용 대역폭은 [USD 0.09/GB ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/bandwidth)의 표준 데이터 전송 비용에 따라 청구됩니다.
+모든 가격은 지리적 위치에 따라 다릅니다. IBM Cloud Load Balancer 서비스에서 이용하는 아웃바운드 공용 대역폭에 대해서는 표준 데이터 전송 비용인 [USD 0.09/GB![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/bandwidth)를 기준으로 비용이 청구됩니다.
+{: note}
 
-다음 차트는 공용 로드 밸런싱에 매월 4,500GB를 사용하는 고객에 대해 가격 책정된 IBM Cloud 로드 밸런서의 예를 상세히 보여줍니다.
+다음 차트는 공용 로드 밸런싱에 매월 4,500GB를 사용하는 고객에 대해 가격 책정된 IBM Cloud Load Balancer의 예를 상세히 보여줍니다.
 
 | | 월별 |요금 | 비용 |
 | ------------- | ------------- | ------------- | ------------- |
@@ -38,6 +45,7 @@ IBM© Cloud 로드 밸런서 가격은 월별 계산되는 다음의 3개 메트
 ![가격](./images/pricing.png)
 
 
-**참고:** 모든 가격은 지리적 위치별로 다양합니다. 다이어그램과 예에서의 가격은 댈러스 시의 가격입니다(미국 달러). $0.025/시간의 서비스 사용 요금은 다이어그램에 표시되어 있지 않습니다.
+모든 가격은 지리적 위치에 따라 다릅니다. 예제 및 다이어그램에서의 가격은 댈러스 시의 가격입니다(미국 달러). 시간당 $0.025의 서비스 사용 요금은 다이어그램에 표시되어 있지 않습니다.
+{: note}
 
-사용자 지역의 특정 가격 정보를 보려면 간단한 [가입 프로세스 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)를 수행해야 합니다.
+지역에 대한 특정 가격 정보를 보려면 간단한 [가입 프로세스![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group)를 수행하십시오. 

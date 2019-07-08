@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-04-29"
+
+keywords: load balancer, order, ibmid
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -11,6 +15,8 @@ lastupdated: "2018-11-12"
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:note: .note}
+{:important: .important}
 {:tip: .tip}
 {:download: .download}
 
@@ -28,23 +34,40 @@ Se hai bisogno di assistenza per ottenere un account **IBMid**, contatta il tuo 
 Se hai un account dell'infrastruttura IBM Cloud (SoftLayer) esistente, puoi [collegare il tuo account](/docs/account?topic=account-unifyingaccounts) al tuo ID IBM.
 
 ## Ordine di un programma di bilanciamento del carico
+{: #ordering-a-load-balancer}
 
-Per ordinare un servizio IBM Cloud Load Balancer, seleziona **Network > Load Balancers > IBM Cloud Load Balancer** dal [Catalogo IBM Cloud  ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window}. Accedi o crea un nuovo account ed esegui la seguente procedura:
+Per ordinare un servizio IBM Cloud Load Balancer, seleziona **IBM Cloud Load Balancer** dal [catalogo IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}. Fai quindi clic su **Create** ed esegui la seguente procedura:
 
-1. Seleziona il tuo data center e controlla il piano di servizio. Fai clic su **Avanti**.
-2. Seleziona la sottorete a cui vuoi distribuire il tuo programma di bilanciamento del carico. Il tuo programma di bilanciamento del carico avrà una delle proprie interfacce di rete in questa sottorete. Assicurati i tuoi server dell'applicazione siano su questa sottorete o raggiungibili da essa. Se necessario, abilita lo spanning delle VLAN. Fai clic su **Next**.
-3. Definisci i tuoi parametri del servizio di base, come il nome, la descrizione, le porte e i protocolli dell'applicazione di backend e frontend e il metodo di bilanciamento del carico.
+1. Definisci i tuoi parametri del servizio di base, come il nome r la descrizione.
+2. Seleziona il tuo data center.
+3. Seleziona un tipo di programma di bilanciamento del carico **Public**.
+4. Seleziona la sottorete a cui vuoi distribuire il tuo programma di bilanciamento del carico.
 
-	Puoi definire un massimo di due protocolli durante la creazione del servizio iniziale. Puoi definire fino a dieci protocolli dopo aver creato il servizio. Devi inoltre utilizzare una porta di frontend univoca.
+  Il tuo programma di bilanciamento del carico avrà una delle proprie interfacce di rete in questa sottorete. Assicurati i tuoi server dell'applicazione siano su questa sottorete o raggiungibili da essa. Se necessario, abilita lo spanning delle VLAN.
+  {: note}
 
-	Una volta terminato, fai clic su **Avanti**.
+5. Crea le porte e i protocolli dell'applicazione front-end e back-end.
 
-4. Modifica i tuoi parametri del controllo di integrità se lo desideri, altrimenti utilizza le impostazioni predefinite. Fai clic su **Next**.
-5. Associa una o più istanze del server dietro il tuo programma di bilanciamento del carico. Devi visualizzare soltanto le istanze del server locali nel tuo data center. Fai clic su **Next**.
-6. Controlla la pagina di riepilogo, quindi fai clic su **Create**.
+  Per ulteriori informazioni su questa configurazione, consulta [Configurazione dei parametri di IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
+  {: note}
 
-	La pagina di riepilogo visualizza l'istanza del servizio del programma di bilanciamento del carico che hai appena creato. Prendi nota del campo **Stato**. Uno stato di `Offline` implica che il programma di bilanciamento del carico non è nel servizio. Non può essere effettuata alcuna nuova configurazione e non può essere eseguito il provisioning di alcun servizio di bilanciamento del carico finché lo stato non viene modificato in `Online`. Potresti dover aggiornare la tua schermata per visualizzare lo stato corrente.
+6. Per abilitare l'offload SSL, imposta i protocolli front-end su HTTPS e i protocolli di back-end su HTTP. Seleziona quindi il tuo certificato SSL dalla casella a discesa Certificato.
 
-	Facendo clic sul nome del servizio su questa pagina ti sposti alla pagina della panoramica del servizio. Puoi passare alle schede **Protocolli**, **Controlli di integrità** e **Istanze del server** per modificare ulteriormente la tua configurazione.
+  Tutti i certificati SSL esistenti sono gestiti tramite l'[IBM Cloud Certificate Store  ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/classic/security/sslcerts){:new_window}. Se non hai un certificato SSL, puoi crearne uno qui.
 
-Consulta [Come creare e utilizzare un IBM Cloud Load Balancer per il bilanciamento del carico elastico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) per istruzioni di configurazione dettagliate.
+7. Modifica i tuoi parametri del controllo di integrità se lo desideri, altrimenti utilizza le impostazioni predefinite.
+
+  Per ulteriori informazioni sui parametri di controllo dell'integrità, consulta [Parametri di IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
+  {: note}
+
+8. Fai clic su **Attach Server** per associare una o più istanze del server dietro il tuo programma di bilanciamento del carico. Devi visualizzare soltanto le istanze del server locali nel tuo data center.
+9. Esamina la pagina, conferma l'accordo di servizio e fai quindi clic su **Create**.
+
+Viene visualizzato l'elenco dei programmi di bilanciamento del carico, che mostra tutte le tue istanze del servizio.
+
+Facendo clic sul nome del servizio su questa pagina ti sposti alla pagina della panoramica del servizio. Puoi passare alle schede **Protocolli**, **Controlli di integrità** e **Istanze del server** per modificare ulteriormente la tua configurazione.
+
+Il tuo programma di bilanciamento del carico appena creato potrebbe non essere visualizzato immediatamente in questo elenco. Dopo qualche minuto, il nuovo programma di bilanciamento del carico verrà visualizzato in grigio, a indicare che il suo stato è `Offline`. Dopo qualche altro minuto, il nuovo programma di bilanciamento del carico verrà visualizzato in verde, a indicare che è `Online`. Potresti dover aggiornare la tua schermata per vedere queste modifiche.
+{: note}
+
+Consulta [Come utilizzare un IBM Cloud Load Balancer per il bilanciamento elastico del carico del server](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) per istruzioni dettagliate sulla configurazione del tuo nuovo Cloud Load Balancer.

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # Configuration des paramètres de l'équilibreur de charge IBM Cloud Load Balancer
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-Une fois que vous avez créé un équilibreur de charge, vous pouvez le configurer pour l'équilibrage de charge élastique. Pour ce faire, procédez comme suit :
+A l'issue de la [création d'un équilibreur de charge](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), vous pouvez le configurer pour l'équilibrage de charge élastique. Pour ce faire, procédez comme suit :
 
 1. Nommez votre équilibreur de charge et, éventuellement, ajoutez une description.
 
@@ -45,19 +49,22 @@ Une fois que vous avez créé un équilibreur de charge, vous pouvez le configur
 
 	<img src="images/lb-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
-	Si vous ne possédez pas de certificat, cliquez sur **Ajouter un nouveau certificat**. Vous accédez alors à un service de certificat IBM Cloud dans lequel vous pouvez acquérir un nouveau certificat ou télécharger un certificat existant. 
-	
+	Si vous ne possédez pas de certificat, cliquez sur **Ajouter un nouveau certificat**. Vous accédez alors à un service de certificat IBM Cloud dans lequel vous pouvez acquérir un nouveau certificat ou télécharger un certificat existant.
+
 	Après avoir ajouté le certificat, revenez à la page de configuration de l'équilibreur de charge et cliquez sur l'icône d'actualisation située sous la liste déroulante Certificat SSL pour afficher et ajouter votre certificat nouvellement téléchargé.
 
 	<img src="images/order-ssl-cert.png" alt="drawing" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="drawing" style="width: 300px;"/>
 
-	**Remarque : ne supprimez jamais les certificats associés à des programmes d'écoute HTTPS car cela pourrait provoquer des problèmes de fonctionnalité.**
+	Ne supprimez jamais les certificats associés à des programmes d'écoute HTTPS car cela pourrait engendrer des problèmes de fonctionnalité.
+  {: note}
 
 8. Cliquez sur **Suivant**.
 
 ## Configuration des diagnostics d'intégrité
+{: #configure-health-checks}
+
 La définition de diagnostic d'intégrité est obligatoire pour chacun de vos ports d'application. Il s'agit des ports de back end identifiés dans le précédent menu de configuration de base.
 
 <img src="images/config-health-check.png" alt="drawing" style="width: 300px;"/>
@@ -72,4 +79,6 @@ Le système préremplit une configuration de diagnostic d'intégrité par défau
 Cliquez sur **Suivant** pour activer l'option que vous avez choisie.
 
 ## Que faire ensuite ?
+{: #what-s-next}
+
 [Identifiez les ressources de votre application](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), par exemple les pools d'origine et les mécanismes de diagnostic d'intégrité.

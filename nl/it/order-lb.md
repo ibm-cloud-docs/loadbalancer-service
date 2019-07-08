@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Esamina e inserisci il tuo ordine
 {: #review-and-place-your-order}
@@ -27,4 +33,6 @@ Ora il sistema crea un'istanza di servizio per te e ti porta alla pagina di riep
 <img src="images/summary-online.png" alt="disegno" style="width: 300px;"/>
 
 ## Operazioni successive
+{: #what-s-next-4}
+
 [Modifica la tua configurazione](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) per monitorare le tue prestazioni di servizio.

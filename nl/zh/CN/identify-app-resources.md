@@ -4,6 +4,9 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: resources, server, application, instance, configure
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -13,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # 识别您的应用程序服务器资源
 {: #identifying-your-application-server-resources}
@@ -25,10 +30,12 @@ lastupdated: "2018-11-12"
 
 单击**下一步**。
 
-**注：** 
+仅当使用**加权循环法**负载均衡方法时，服务器**权重**才适用。缺省权重为 50，范围为 0-100。对于其他负载均衡方法，权重为灰显。
+{: note}
 
-1. 仅当使用**加权循环法**负载均衡方法时，服务器**权重**才适用。缺省权重为 50，范围为 0-100。对于其他负载均衡方法，权重为灰显。
-2. 请参阅[应用程序服务器数的限制](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-)，获取有关应用程序服务器数最大限制的更多信息。
+请参阅[应用程序服务器数的限制](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-)，获取有关应用程序服务器数最大限制的更多信息。
+{: tip}
 
 ## 接下来做什么
+{: #what-s-next-3}
 下订单之前[复查订单内容](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order)。

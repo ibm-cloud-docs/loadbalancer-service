@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: api, apis, reference, slapi
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 {: #api-reference}
 
 「SoftLayer® 應用程式設計介面 (API)」是開發介面，可讓開發人員及系統管理者直接與 SoftLayer 的後端系統互動。
-{:shortdesc}
+
 
 SoftLayer API (SLAPI) 具備「客戶入口網站」中的許多特性。一般來說，如果可以在「客戶入口網站」中進行某項互動，則也可以在 API 中執行。因此，因為您可以在 API 內透過程式設計方式與 SoftLayer 環境的所有部分進行互動，所以可以使用 API 將作業自動化。
 
@@ -48,6 +52,8 @@ client = SoftLayer.Client(username='set me', api_key='set me')
 ```
 
 ## 建立負載平衡器
+{: #creating-a-load-balancer}
+
 下列範例會擷取 "Load Balancer As A Service (LBaaS)" 套件的套件 ID、子網路 ID 以及價格，且會建置訂單資料，並下訂單/驗證訂單。
 
 ```py
@@ -168,7 +174,11 @@ if __name__ == "__main__":
 {: codeblock}
 
 ## 擷取負載平衡器上的詳細資料
+{: #retrieving-details-on-load-balancers}
+
 ### 列出所有負載平衡器
+{: #list-all-load-balancers}
+
 ```py
 import SoftLayer
 from prettytable import PrettyTable
@@ -217,6 +227,8 @@ if __name__ == "__main__":
 {: codeblock}
 
 ### 擷取特定負載平衡器的詳細資料
+{: #retrieve-details-of-a-specific-load-balancer}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -240,7 +252,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 更新負載平衡器
+{: #updating-a-load-balancer}
+
 ### 新增成員
+{: #add-a-member}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -269,6 +285,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 新增通訊協定
+{: #add-a-protocol}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -313,6 +331,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 取消負載平衡器
+{: #cancelling-a-load-balancer}
+
 ```py
 import SoftLayer
 
@@ -334,7 +354,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 檢視負載平衡器的監視度量值
+{: #viewing-monitoring-metrics-of-load-balancers}
+
 ### 取得 HTTP 資料流量的傳輸量
+{: #get-throughput-of-http-traffic}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -367,8 +391,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 第 7 層 API
+{: #layer-7-apis}
 
 ### 建立多個 L7 原則及 L7 規則
+{: #create-multiple-l7-policies-and-l7-rules}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -418,6 +445,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 更新第 7 層原則
+{: #update-layer-7-policy}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -442,6 +471,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 將規則新增至第 7 層原則
+{: #add-rules-to-a-layer-7-policy-}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -477,6 +508,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 更新附加至相同第 7 層原則的多個第 7 層規則
+{: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
+
 ```py
 # For nice debug output:
 import SoftLayer
@@ -516,6 +549,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 使用伺服器、性能監視及階段作業親緣性來建立第 7 層儲存區
+{: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -571,6 +606,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 與性能監視及階段作業親緣性一起更新第 7 層儲存區
+{: #update-a-layer-7-pool-along-with-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -603,6 +640,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 將伺服器新增至第 7 層儲存區
+{: #add-servers-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -636,6 +675,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 更新屬於第 7 層儲存區的伺服器
+{: #update-severs-belonging-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -668,4 +709,40 @@ try:
 except SoftLayer.SoftLayerAPIError as e:
     print("Unable to update severs belonging to a Layer 7 pool: %s, %s"
           % (e.faultCode, e.faultString))
+```
+{: codeblock}
+
+### 啟用或停用特定負載平衡器的資料日誌
+{: #enable-or-disable-data-logs-for-a-specific-load-balancer}
+
+```py
+from zeep import Client, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the load balancer
+uuid = ''
+# enabled = 1 when enable, enable = 0 when disable
+enabled = 0
+
+# WSDL for SoftLayer_Network_LBaaS_LoadBalancer API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_LoadBalancer?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Enable or disable data logs for a specific load balancer
+loadbalancer = client.service.enableOrDisableDataLogs(_soapheaders=[userAuthValue], uuid=uuid, enabled=enabled)
+#print loadbalancer
 ```

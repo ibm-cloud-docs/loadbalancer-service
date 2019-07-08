@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # Pool de couche 7
@@ -23,16 +30,20 @@ La fonction d'équilibrage de charge de couche 7 peut diriger le trafic entrant 
 Les pools L7 ne prennent en charge que HTTP comme protocole de back end.
 
 ## Persistance de session
+{: #session-persistence}
+
 La persistance de session peut être configurée pour chaque pool de couche 7. Pour plus d'informations, voir la  
 [section sur le trafic avancé](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Membres de couche 7
+{: #layer-7-members}
 
 Les serveurs de back end qui sont associés à un pool de couche 7 sont appelés membres de couche 7.
 
 Le même serveur de back end peut être ajouté plusieurs fois à des pools L7, en spécifiant un numéro de port différent à chaque fois.
 
 ## Configuration des diagnostics d'intégrité
+{: #configure-health-checks}
 La définition de diagnostic d'intégrité est obligatoire pour chaque pool de couche 7. Le système préremplit une configuration de diagnostic d'intégrité par défaut pour les pools L7.
 
 Vous pouvez personnaliser ces paramètres en fonction des besoins de votre application :

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # 配置 IBM Cloud Load Balancer 参数
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-创建 Load Balancer 后，可以对其进行配置以实现弹性负载均衡。为此，请执行以下操作：
+[创建负载均衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)后，可以对其进行配置以实现弹性负载均衡。为此，请执行以下操作：
 
 1. 命名 Load Balancer，并可选择添加描述。
 
@@ -45,19 +49,22 @@ lastupdated: "2018-11-07"
 
 	<img src="images/lb-ssl-cert.png" alt="图样" style="width: 300px;"/>
 
-	如果您没有现有证书，请单击**添加新证书**。这会将您转至 IBM Cloud 证书服务，您可以在其中购买新证书或上传现有证书。 
-	
+	如果您没有现有证书，请单击**添加新证书**。这会将您转至 IBM Cloud 证书服务，您可以在其中购买新证书或上传现有证书。
+
 	添加证书后，返回到负载均衡器配置页面，然后单击“SSL 证书”下拉列表下面的“刷新”图标以查看并添加新上传的证书。
 
 	<img src="images/order-ssl-cert.png" alt="图样" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="图样" style="width: 300px;"/>
 
-	**注：切勿删除与 HTTPS 侦听器关联的任何证书，因为这可能会导致功能方面的问题。**
+	切勿删除与 HTTPS 侦听器关联的任何证书，因为这可能会导致功能方面的问题。
+  {: note}
 
 8. 单击**下一步**。
 
 ## 配置运行状况检查
+{: #configure-health-checks}
+
 对于每个应用程序端口，必须定义运行状况检查。这些是先前基本配置菜单中确定的后端端口。
 
 <img src="images/config-health-check.png" alt="图样" style="width: 300px;"/>
@@ -72,4 +79,6 @@ lastupdated: "2018-11-07"
 单击**下一步**以启用选项。
 
 ## 接下来做什么
+{: #what-s-next}
+
 [识别应用程序资源](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)，例如源池和运行状况检查机制。

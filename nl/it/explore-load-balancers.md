@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-08-07"
 
+keywords: load balancer, compare, explore
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,27 +16,35 @@ lastupdated: "2018-08-07"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
+{:row-headers .row-headers}
 
 # Esplorazione di IBM Load Balancers
 {: #explore}
 
-IBM© Cloud offre diverse soluzioni di bilanciamento del carico tra cui scegliere. La seguente tabella confronta le soluzioni di bilanciamento del carico per aiutarti a scegliere quella più adatta a te. Per ulteriori informazioni sulle offerte individuali, fai clic sul nome dell'offerta nella tabella. 
+IBM© Cloud offre diverse soluzioni di bilanciamento del carico tra cui scegliere. La seguente tabella confronta le soluzioni di bilanciamento del carico per aiutarti a scegliere quella più adatta a te. Per ulteriori informazioni sulle offerte individuali, fai clic sul nome dell'offerta nella tabella.
 
 Scorri a destra per visualizzare il resto della tabella!
+{: important}
 
 
-|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer)| [Programma di bilanciamento del carico locale](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Condiviso)| [Programma di bilanciamento del carico locale](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started-with-local-load-balancer#getting-started-with-local-load-balancer) (Dedicato)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Standard)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance#getting-started-with-citrix-netscaler-vpx-software-appliance) VPX/MPX (Platinum) |
+|        | [IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)| [Programma di bilanciamento del carico locale](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started) (Condiviso)| [Programma di bilanciamento del carico locale](/docs/infrastructure/local-load-balancer?topic=local-load-balancer-getting-started) (Dedicato)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Standard)| [Citrix NetScaler](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: | :------: | :------: |
-|**VIP pubblico**|Sì|Sì|Sì|Sì|Sì |
-|**VIP privato**|Sì|No|Sì|Sì|Sì |
-|**BC livello 4**|Sì|Sì|Sì|Sì|Sì |
-|**BC livello 7**|Sì|Persistenza cookie|Persistenza cookie|Sì|Sì |
-|**Controlli di integrità**|Sì|Sì|Sì|Sì|Sì |
-|**Scalabilità orizzontale**|Sì|No|No|No|No |
-|**Offload SSL**|Sì|Sì|Sì|Sì|Sì |
+|**VIP pubblico**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
+|**VIP privato**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)||![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
+|**BC livello 4**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
+|**BC livello 7**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|Persistenza cookie|Persistenza cookie|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
+|**Controlli di integrità**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
+|**Scalabilità orizzontale**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|||| |
+|**Offload SSL**|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
 |**Gestione**|tramite portale IBM|tramite portale IBM|tramite portale IBM|Autogestito (GUI fornitore)|Autogestito (GUI fornitore) |
 |**Alta disponibilità**|Integrata|Integrata|Facoltativa|Facoltativa|Facoltativa |
-|**BC avanzato (Ottimizzazione TCP, Compressione, Memorizzazione in cache, WAF)**|No|No|No|Limitato|Sì |
-|**BC globale (GLB)**|No|No|No|No|Sì |
+|**BC avanzato (Ottimizzazione TCP, Compressione, Memorizzazione in cache, WAF)**||||Limitato|![Icona di segno di spunta](../../icons/checkmark-icon.svg)|
+|**BC globale (GLB)**|||||![Icona di segno di spunta](../../icons/checkmark-icon.svg) |
 |**Prezzi**|In base all'utilizzo|Canone mensile|Canone mensile|Canone mensile|Canone mensile |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="Un confronto delle offerte di programma di bilanciamento del carico di IBM" caption-side="top"}
+{: summary="This table all of IBM's load balancer offerings, and provides links to their documentation."}

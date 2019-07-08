@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-01-11"
 
+keywords: mzr, overview, data centers
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2019-01-11"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 多专区区域 (MZR) 概述
 {: #multi-zone-region-mzr-overview}
@@ -25,12 +31,17 @@ lastupdated: "2019-01-11"
 | ---------|--------------|
 | us-south | dal10、dal12 和 dal13 |
 | us-east | wdc04、wdc06 和 wdc07 |
+| eu-gb | lon04、lon05 和 lon06 |
+| eu-de | fra02、fra04 和 fra05 |
+| jp-tok | tok02、tok04 和 tok05 |
+| au-syd | syd01、syd04 和 syd05 |
 
 
 ## MZR 需求
+{: #mzr-requirements}
 多专区区域具有以下需求：
 * 您选择的数据中心应为 MZR 的一部分。上表列出了区域以及每个区域中的数据中心。
-* 您的帐户中必须启用 VLAN 生成。
+* 您的帐户中必须启用 VLAN 生成或 VRF。
 * 在 MZR 的数据中心内，您的帐户中必须存在专用子网。在数据中心内创建计算设备会使专用子网实例化。
 
-如果选择的数据中心不是 MZR 的一部分，或者如果您的帐户中未启用 VLAN 生成，那么创建负载均衡器将缺省为原始行为，即在您指定的数据中心内实例化所有负载均衡器节点。
+如果选择的数据中心不是 MZR 的一部分，或者如果您的帐户中未启用 VLAN 生成或 VRF，那么创建负载均衡器将缺省为原始行为，即在您指定的数据中心内实例化所有负载均衡器节点。

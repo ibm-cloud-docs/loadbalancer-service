@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: create, new, load balancer
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Creazione di un IBM Cloud Load Balancer
 {: #creating-an-ibm-cloud-load-balancer}
@@ -25,7 +31,7 @@ Per creare un servizio IBM© Cloud Load Balancer, esegui la seguente procedura:
 
 	<img src="images/catalog-load-balancer.png" alt="disegno" style="width: 600px;"/>
 
-3. Seleziona **IBM Cloud Load Balancer** (selezione predefinita) e fai clic su **Create**. 
+3. Seleziona **IBM Cloud Load Balancer** (selezione predefinita) e fai clic su **Create**.
 
 	Se vedi **Upgrade** invece di **Create**, devi collegare il tuo account dell'infrastruttura IBM Cloud (SoftLayer) seguendo [questi passi](/docs/account?topic=account-unifyingaccounts)
 
@@ -40,7 +46,7 @@ Per creare un servizio IBM© Cloud Load Balancer, esegui la seguente procedura:
 	Per le applicazioni verso Internet che devono accedere a Internet pubblico, seleziona **Public (Internet-facing)**.
 
 	<img src="images/select-lb-type.png" alt="disegno" style="width: 600px;"/>
-	
+
 	Per impostazione predefinita, il programma di bilanciamento del carico pubblico riceve un indirizzo IP pubblico globalmente univoco dal pool di indirizzi globali IBM. Se, tuttavia, desideri assegnargli indirizzi pubblici provenienti dal tuo pool di indirizzi oppure se desideri distribuirlo dietro un servizio di firewall all'interno del tuo account, controlla se la tua sottorete pubblica dispone di [indirizzi IP sufficienti](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting) e seleziona **Allocate from a public subnet in your account**.
 
 	Per le applicazioni soltanto interne che non necessitano di accesso a internet pubblico, scegli il tipo **Internal (Private)**.
@@ -54,4 +60,5 @@ Per creare un servizio IBM© Cloud Load Balancer, esegui la seguente procedura:
 6. Fai clic su **Next** per terminare la configurazione.
 
 ## Operazioni successive
+{: #whats-next-2}
 Configura il tuo programma di bilanciamento del carico con i [parametri di base](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters).

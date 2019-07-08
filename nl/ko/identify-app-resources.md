@@ -4,6 +4,9 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: resources, server, application, instance, configure
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -13,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Application Server 리소스 식별
 {: #identifying-your-application-server-resources}
@@ -25,10 +30,12 @@ lastupdated: "2018-11-12"
 
 **다음**을 클릭하십시오.
 
-**참고:** 
+서버 **가중치**는 **가중치 라운드 로빈** 로드 밸런싱 메소드를 사용 중인 경우에만 관련됩니다. 기본 가중치는 50이고 범위는 0 - 100입니다. 다른 로드 밸런싱 메소드를 사용하는 경우 가중치가 흐리게 표시됩니다.
+{: note}
 
-1. 서버 **가중치**는 **가중치 라운드 로빈** 로드 밸런싱 메소드를 사용 중인 경우에만 관련됩니다. 기본 가중치는 50이고 범위는 0 - 100입니다. 다른 로드 밸런싱 메소드를 사용하는 경우 가중치가 흐리게 표시됩니다.
-2. 최대 애플리케이션 서버 수 한계에 대한 자세한 정보는 [애플리케이션 서버 수에 대한 제한사항](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-)을 참조하십시오.
+최대 애플리케이션 서버 수 한계에 대한 자세한 정보는 [애플리케이션 서버 수에 대한 제한사항](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-)을 참조하십시오.
+{: tip}
 
 ## 다음에 수행할 작업
+{: #what-s-next-3}
 주문하기 전에 주문의 [컨텐츠를 검토](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order)하십시오.

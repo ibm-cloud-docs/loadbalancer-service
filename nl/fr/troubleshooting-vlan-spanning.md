@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: vlan, troubleshooting, problems, questions
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Traitement des incidents liés au spanning VLAN d'équilibreur de charge
 {: #load-balancer-vlan-spanning-troubleshooting}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Supervisión de métricas con IBM Cloud Load Balancer
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-El equilibrador de carga supervisa las métricas siguientes: 
+El equilibrador de carga supervisa las métricas siguientes:
 
 * Rendimiento
 * Conexiones activas
@@ -25,7 +31,7 @@ El equilibrador de carga supervisa las métricas siguientes:
 
 Estas métricas se visualizan como gráficos que se pueden ver seleccionando el separador **Supervisión** y están disponibles programáticamente como puntos de datos de serie temporal utilizando la API `getListenerTimeSeriesData`.
 
-Cada punto de datos contiene una indicación de fecha y hora en tiempo de época de UNIX y el valor de métrica para dicho intervalo de tiempo que finaliza en esa indicación de fecha y hora. El usuario puede especificar los protocolos y el intervalo de tiempo sobre el que se debe informar sobre las métricas. 
+Cada punto de datos contiene una indicación de fecha y hora en tiempo de época de UNIX y el valor de métrica para dicho intervalo de tiempo que finaliza en esa indicación de fecha y hora. El usuario puede especificar los protocolos y el intervalo de tiempo sobre el que se debe informar sobre las métricas.
 
 Los protocolos soportados son:
 
@@ -39,7 +45,7 @@ Por ejemplo, si no se especifica ningún protocolo y la métrica es *Rendimiento
 
 Si el protocolo es *HTTP*, sólo se informa del rendimiento del tráfico HTTP.
 
-El usuario también puede especificar el intervalo de tiempo sobre el que se debe informar sobre la métrica. Los intervalos de tiempo soportados son: 
+El usuario también puede especificar el intervalo de tiempo sobre el que se debe informar sobre la métrica. Los intervalos de tiempo soportados son:
 
 * 1 hora
 * 6 horas
@@ -64,6 +70,7 @@ La tabla siguiente muestra cómo se obtienen los puntos de datos a partir del in
 | 1 semana    | 12 horas | 12 |
 | 2 semanas  | 24 horas | 12 |
 
-# Cómo habilitar la supervisión de métricas
+## Cómo habilitar la supervisión de métricas
+{: #how-to-enable-metrics-monitoring}
 
 Para recuperar las métricas de supervisión, debe enlazar la cuenta de SoftLayer con la cuenta de IBM© Cloud. Consulte [este tema](/docs/account?topic=account-unifyingaccounts#link_accounts) para obtener más información.

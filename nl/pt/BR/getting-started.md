@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-04-29"
+
+keywords: load balancer, order, ibmid
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -11,6 +15,8 @@ lastupdated: "2018-11-12"
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:note: .note}
+{:important: .important}
 {:tip: .tip}
 {:download: .download}
 
@@ -28,23 +34,46 @@ Se precisar de assistência na obtenção de uma conta **IBMid**, entre em conta
 Se você tiver uma conta existente do IBM Cloud Infrastructure (SoftLayer), será possível [vincular sua conta](/docs/account?topic=account-unifyingaccounts) a seu IBMid.
 
 ## Solicitando um balanceador de carga
+{: #ordering-a-load-balancer}
 
-Para pedir um serviço IBM Cloud Load Balancer, selecione **Rede > Balanceadores de carga > IBM Cloud Load Balancer** no [catálogo do IBM Cloud  ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window}. Efetue login ou crie uma nova conta, em seguida, execute o procedimento a seguir:
+Para pedir um serviço do IBM Cloud Load Balancer, selecione **IBM Cloud Load Balancer** no [catálogo do
+IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}. Em seguida, clique em Criar e execute o procedimento a seguir:
 
-1. Selecione seu data center e revise o plano de serviço. Clique em **Avançar**.
-2. Selecione a sub-rede na qual você gostaria implementar seu balanceador de carga. A instância do serviço de balanceador de carga terá uma de suas interfaces de rede nesta sub-rede. Assegure-se de que seus servidores de aplicativos estejam nessa sub-rede ou sejam acessíveis nessa sub-rede. Se necessário, ative o VLAN Spanning. Clique em **Avançar**.
-3. Defina seus parâmetros de serviço básico, como o nome, a descrição, os protocolos e as portas do aplicativo front-end e back-end, além do método de balanceamento de carga.
+1. Defina seus parâmetros de serviço básicos, tais como o nome e a descrição.
+2. Selecione o seu data center.
+3. Selecione um tipo de balanceador de carga de **Público**.
+4. Selecione a sub-rede na qual você gostaria implementar seu balanceador de carga.
 
-	É possível definir no máximo dois protocolos durante a criação de serviço inicial. É possível definir até dez protocolos após a criação do serviço. Deve-se também usar uma porta front-end exclusiva.
+  A instância do serviço de balanceador de carga terá uma de suas interfaces de rede nesta sub-rede. Assegure-se de que seus servidores de aplicativos estejam nessa sub-rede ou sejam acessíveis nessa sub-rede. Se necessário, ative o VLAN Spanning.
+  {: note}
 
-	Depois de terminar, clique em **Avançar**.
+5. Criar protocolos e portas de aplicativo front-end e back-end.
 
-4. Ajuste os parâmetros de verificação de funcionamento, se desejado, caso contrário, use as configurações padrão. Clique em **Avançar**.
-5. Associe uma ou mais instâncias do servidor utilizadas com o balanceador de carga. Você só verá instâncias do servidor locais para seu data center. Clique em **Avançar**.
-6. Revise a página de resumo, em seguida, clique em **Criar**.
+  Para obter mais informações sobre essa configuração, consulte [Configurando parâmetros do IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
+  {: note}
 
-	A página de resumo exibe a instância do serviço de balanceador de carga recém-criada. Observe o campo **Status**. Um status de `Offline` sugere que o balanceador de carga não está em serviço. Nenhuma nova configuração poderá ser feita e nenhum serviço de balanceamento de carga poderá ser fornecido até que seu status mude para `Online`. Talvez seja necessário atualizar sua tela para ver o status atual.
+6. Para ativar a transferência de SSL, configure os protocolos de front-end para
+HTTPS e os protocolos de back-end para HTTP. Em seguida, selecione seu Certificado SSL na
+caixa suspensa Certificado.
 
-	Clicar no nome do serviço nessa página o levará para a página de visão geral do serviço. É possível navegar para as guias **Protocolos**, **Verificações de funcionamento** e **Instâncias do servidor** para editar sua configuração posteriormente.
+  Todos os certificados SSL existentes são gerenciados por meio do [IBM Cloud Certificate Store  ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/classic/security/sslcerts){:new_window}. Se você não tiver um certificado SSL, poderá criar um aqui.
 
-Consulte [Como criar e usar um IBM Cloud Load Balancer para o balanceamento de carga do servidor elástico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) para obter orientação de configuração passo a passo.
+7. Ajuste os parâmetros de verificação de funcionamento, se desejado, caso contrário, use as configurações padrão.
+
+  Para obter mais informações sobre os parâmetros de verificação de funcionamento, consulte [Parâmetros do IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
+  {: note}
+
+8. Clique em **Anexar servidor** para associar um ou mais instâncias de
+servidor atrás do seu balanceador de carga. Você só verá instâncias do servidor locais para seu data center.
+9. Revise a página, confirme o Contrato de Prestação de Serviços e, em seguida, clique em **Criar**.
+
+A lista Balanceador de carga é exibida, mostrando todas as suas instâncias de serviço.
+
+Clicar no nome do serviço nessa página o levará para a página de visão geral do serviço. É possível navegar para as guias **Protocolos**, **Verificações de funcionamento** e **Instâncias do servidor** para editar sua configuração posteriormente.
+
+O balanceador de carga recém-criado pode não ser exibido imediatamente nessa lista. Após alguns minutos, o novo balanceador de carga será exibido em uma cor cinza, indicando que o seu status é `Offline`. Depois de mais alguns minutos, o novo balanceador de carga será exibido
+em verde, indicando que ele está `Online`. Poderá ser necessário atualizar sua tela
+para ver essas mudanças.
+{: note}
+
+Consulte [Como usar o IBM Cloud Load Balancer para balanceamento de carga do servidor elástico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) para obter orientações passo-a-passo sobre a configuração do seu novo Cloud Load Balancer.

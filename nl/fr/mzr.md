@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-01-11"
 
+keywords: mzr, overview, data centers
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2019-01-11"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Présentation de MZR (Multi-Zone Region)
 {: #multi-zone-region-mzr-overview}
@@ -25,12 +31,17 @@ Les centres de données suivants font actuellement partie d'une région MZR :
 | ---------|--------------|
 | us-south | dal10, dal12, dal13 |
 | us-east | wdc04, wdc06, wdc07 |
+| eu-gb | lon04, lon05, lon06 |
+| eu-de | fra02, fra04, fra05 |
+| jp-tok | tok02, tok04, tok05 |
+| au-syd | syd01, syd04, syd05 |
 
 
 ## Exigences liées à MZR
+{: #mzr-requirements}
 Les régions multi-zone (MZR) doivent répondre aux exigences suivantes :
 * Le centre de données sélectionné doit faire partie d'une région MZR. Le tableau ci-dessus répertorie les régions et les centres de données de chaque région.
-* Le spanning VLAN doit être activé dans votre compte.
+* VRF ou le spanning VLAN doit être activé dans votre compte.
 * Votre compte doit comporter des sous-réseaux privés dans le centre de données de la région MZR. La création de dispositifs de calcul dans des centres de données entraîne l'instanciation de sous-réseaux privés.
 
-Si le centre de données sélectionné ne fait pas partie d'une région MZR ou si le spanning VLAN n'est pas activé dans votre compte, la création de l'équilibreur de charge instancie par défaut tous les noeuds d'équilibreur de charge dans le centre de données indiqué.
+Si le centre de données sélectionné ne fait pas partie d'une région MZR, ou si VRF ou le spanning VLAN n'est pas activé dans votre compte, la création de l'équilibreur de charge instancie par défaut tous les noeuds d'équilibreur de charge dans le centre de données indiqué.

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 錯誤訊息疑難排解
 {: #error-message-troubleshooting}

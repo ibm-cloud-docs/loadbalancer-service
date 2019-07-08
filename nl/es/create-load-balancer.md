@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: create, new, load balancer
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -13,8 +17,10 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
-# Creación de un equilibrador de carga de IBM Cloud
+# Creación de un IBM Cloud Load Balancer
 {: #creating-an-ibm-cloud-load-balancer}
 
 Para crear un servicio IBM© Cloud Load Balancer, siga el siguiente procedimiento:
@@ -25,7 +31,7 @@ Para crear un servicio IBM© Cloud Load Balancer, siga el siguiente procedimient
 
 	<img src="images/catalog-load-balancer.png" alt="dibujo" style="width: 600px;"/>
 
-3. Seleccione el **IBM Cloud Load Balancer** (selección predeterminada) y pulse **Crear**. 
+3. Seleccione el **IBM Cloud Load Balancer** (selección predeterminada) y pulse **Crear**.
 
 	Si ve **Actualizar** en lugar de **Crear**, debe enlazar la cuenta de IBM Cloud Infrastructure (SoftLayer) siguiendo [estos pasos](/docs/account?topic=account-unifyingaccounts)
 
@@ -40,7 +46,7 @@ Para crear un servicio IBM© Cloud Load Balancer, siga el siguiente procedimient
 	Para las aplicaciones de cara a Internet que necesitan acceso a la Internet pública, seleccione **Público (conectado a internet)**.
 
 	<img src="images/select-lb-type.png" alt="dibujo" style="width: 600px;"/>
-	
+
 	De forma predeterminada, el equilibrador de carga público recibe una dirección IP pública exclusiva global de la agrupación de direcciones globales de IBM. Sin embargo, si desea asignar direcciones públicas de su propia agrupación de direcciones o desea desplegarlo detrás de un servicio de cortafuegos dentro de su cuenta, compruebe si su subred pública tiene [suficientes direcciones IP](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting) y seleccione **Asignar desde una subred pública en la cuenta**.
 
 	Solo para las aplicaciones internas que no necesitan acceso a Internet público, seleccione el tipo **Interno (privado)**.
@@ -54,4 +60,5 @@ Para crear un servicio IBM© Cloud Load Balancer, siga el siguiente procedimient
 6. Pulse **Siguiente** para finalizar la configuración.
 
 ## A continuación
+{: #whats-next-2}
 Configure el equilibrador de carga con [parámetros básicos](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters).

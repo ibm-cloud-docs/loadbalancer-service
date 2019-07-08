@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
+{: .toc subcollection="loadbalancer-service" category="network" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
 Servicio IBM Cloud Load Balancer
 
     {: .navgroup id="learn"}
@@ -18,7 +18,7 @@ Servicio IBM Cloud Load Balancer
     basic-load-balancing.md
 
     {: .topicgroup}
-    Creación y utilización de IBM Cloud Load Balancer para el equilibro de carga elástico del servidor
+    Utilización de IBM Cloud Load Balancer para el equilibro de carga elástico del servidor
         reliability-guide.md
         create-load-balancer.md
         begin-lb-config.md
@@ -33,6 +33,7 @@ Servicio IBM Cloud Load Balancer
     advanced-traffic.md
     monitoring-metrics.md
     backend-encryption.md
+    data-logging.md
 
     {: .topicgroup}
     Soporte de capa 7

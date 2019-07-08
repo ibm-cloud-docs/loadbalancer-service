@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: about, load balancer, overview, features
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,6 +26,8 @@ lastupdated: "2018-11-07"
 IBM© Cloud Load Balancer 服务通过在多个应用程序服务器实例之间分配流量，以及仅将流量转发给运行状况良好的实例，从而帮助客户提高其业务关键应用程序的可用性。
 
 ## 功能概述
+{: #overview-of-features}
+
 IBM Cloud Load Balancer 服务提供以下功能：
 
 * 公用（面向互联网）负载均衡器
@@ -53,3 +59,5 @@ IBM Cloud Load Balancer 服务提供以下功能：
     * HTTP/HTTPS 流量将路由到基于 HTTP 头的不同后端服务，并使用策略和规则来完成。规则基于 HTTP 头字段，用于对流量进行分类。流量与所有规则匹配时，将执行策略指定的操作。
 * 多专区区域 (MZR) 支持
     * 负载均衡器节点在 MZR 的不同数据中心内实例化。请参阅[多专区区域概述](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview)以获取更多信息。
+* 数据日志
+    * 启用数据日志后，负载均衡器日志将转发到 [IBM Cloud Log Analysis 服务 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}。客户可以使用 [IBM Cloud Log Analysis 服务 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/log-analysis){:new_window} 查看其数据日志。

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: health check, http, tcp, ports
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,19 +16,24 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Ejecución de comprobaciones de estado con IBM Cloud Load Balancer
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
-Las definiciones de comprobaciones de estado son obligatorias para todos los puertos de aplicación back-end. El puerto y el protocolo de la configuración de la comprobación de estado deben coincidir con los definidos; de lo contrario, se rechazará la configuración. 
+Las definiciones de comprobaciones de estado son obligatorias para todos los puertos de aplicación back-end. El puerto y el protocolo de la configuración de la comprobación de estado deben coincidir con los definidos; de lo contrario, se rechazará la configuración.
 
-El equilibrador de carga lleva a cabo comprobaciones de estado periódicas para supervisar el estado de los puertos back-end y reenviarles tráfico de clientes en consecuencia. Si se detecta un puerto de servidor back-end en mal estado, no se le reenvían más conexiones nuevas. El equilibrador de carga sigue supervisando el estado de dichos puertos y reanuda su uso cuando recobran el buen estado y superan dos intentos de comprobación de estado. 
+El equilibrador de carga lleva a cabo comprobaciones de estado periódicas para supervisar el estado de los puertos back-end y reenviarles tráfico de clientes en consecuencia. Si se detecta un puerto de servidor back-end en mal estado, no se le reenvían más conexiones nuevas. El equilibrador de carga sigue supervisando el estado de dichos puertos y reanuda su uso cuando recobran el buen estado y superan dos intentos de comprobación de estado.
 
-Las comprobaciones de estado con puertos HTTP y TCP se llevan a cabo de la siguiente manera:
+Las comprobaciones de estado con puertos HTTP, HTTPS y TCP se llevan a cabo de la siguiente manera:
 
-* **HTTP:** se envía una solicitud `HTTP GET` con un URL especificado previamente al puerto del servidor back-end. Se marca que el puerto del servidor se encuentra en buen estado tras haber recibido una respuesta `200 OK`. El URL `GET` predeterminado es “/” a través de la GUI y se puede personalizar. 
+* **HTTP:** se envía una solicitud `HTTP GET` con un URL especificado previamente al puerto del servidor back-end. Se marca que el puerto del servidor se encuentra en buen estado tras haber recibido una respuesta `200 OK`. El URL `GET` predeterminado es “/” a través de la GUI y se puede personalizar.
 
-* **TCP:** el equilibrador de carga intenta abrir una conexión con el servidor back-end en un puerto TCP especificado. Se marca que el puerto del servidor se encuentra en buen estado si la conexión finaliza correctamente y, a continuación, se cierra. 
+* **HTTPS:** Solo es aplicable cuando el cifrado de fondo está habilitado y el protocolo de fondo está establecido en HTTPS. El mecanismo es igual que **HTTP**, excepto en que todos los mensajes de comprobación de estado están cifrados SSL. Para obtener más información sobre cifrado de fondo, consulte /docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-setting-backend-encryption
 
-	**NOTA:** el intervalo entre comprobaciones de estado es de 5 segundos, el tiempo de espera predeterminado con una solicitud de comprobación de estado es de 2 segundos y el número predeterminado de intentos es de 2. 
+* **TCP:** el equilibrador de carga intenta abrir una conexión con el servidor back-end en un puerto TCP especificado. Se marca que el puerto del servidor se encuentra en buen estado si la conexión finaliza correctamente y, a continuación, se cierra.
+
+	El intervalo entre comprobaciones de estado es de 5 segundos, el tiempo de espera predeterminado con una solicitud de comprobación de estado es de 2 segundos y el número predeterminado de intentos es 2.
+  {: note}

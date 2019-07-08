@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 应用程序服务器故障诊断
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 本主题提供有关使用 Load Balancer 时可能会遇到的常见问题的信息。
 
 ## 后端服务器运行状况欠佳
+{: #the-back-end-server-is-unhealthy}
 如果后端服务器的运行状况在衰退，请尝试验证以下列表以尝试解决此问题：
 
 * 配置的后端协议的端口与应用程序正在侦听的端口相匹配吗？

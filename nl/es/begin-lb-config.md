@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # Configuración de los parámetros de IBM Cloud Load Balancer
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-Una vez que se crea un equilibrador de carga, puede configurarlo para el equilibrio de carga elástico. Para hacerlo:
+Una vez que se [crea un equilibrador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), puede configurarlo para el equilibrio de carga elástico. Para hacerlo:
 
 1. Asigne un nombre a su equilibrador de carga y, si lo desea, añada una descripción.
 
@@ -46,19 +50,22 @@ obtener más información sobre el número máximo de puertos permitidos.
 
 	<img src="images/lb-ssl-cert.png" alt="dibujo" style="width: 300px;"/>
 
-	Si no dispone de un certificado existente, pulse **Añadir un certificado nuevo**. Esto le lleva a un servicio de certificados de IBM Cloud donde puede adquirir un nuevo certificado o cargar uno existente. 
-	
+	Si no dispone de un certificado existente, pulse **Añadir un certificado nuevo**. Esto le lleva a un servicio de certificados de IBM Cloud donde puede adquirir un nuevo certificado o cargar uno existente.
+
 	Después de añadir el certificado, vuelva a la página de configuración del equilibrador de carga y pulse el icono de renovación que hay bajo la lista desplegable Certificado SSL para ver y añadir el certificado que acaba de cargar.
 
 	<img src="images/order-ssl-cert.png" alt="dibujo" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="dibujo" style="width: 300px;"/>
 
-	**NOTA: nunca suprima ningún certificado asociado con escuchas HTTPS, ya que esto puede provocar problemas con la funcionalidad.**
+	Nunca suprima ningún certificado asociado con escuchas HTTPS, ya que puede provocar problemas de funcionalidad.
+  {: note}
 
 8. Pulse **Siguiente**.
 
 ## Configurar comprobaciones de estado
+{: #configure-health-checks}
+
 La definición de comprobaciones de estado es obligatoria para cada puerto de aplicación. Son los puertos de fondo identificados en el menú de configuración básica anterior.
 
 <img src="images/config-health-check.png" alt="dibujo" style="width: 300px;"/>
@@ -73,4 +80,6 @@ El sistema implementa una configuración de comprobación de estado predetermina
 Pulse **Siguiente** para habilitar su elección.
 
 ## A continuación
+{: #what-s-next}
+
 [Identifique los recursos de la aplicación](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources), como por ejemplo las agrupaciones de origen y los mecanismos de comprobación de estado.

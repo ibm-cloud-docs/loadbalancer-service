@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, rules, traffic
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 第 7 层规则
 {: #layer-7-rules}
@@ -20,10 +27,10 @@ lastupdated: "2018-11-12"
 
 * 如果入局流量与规则的指定值匹配，那么规则求值为 `true`。
 * 第 7 层规则始终与第 7 层策略相关联。多个第 7 层规则可以与同一个第 7 层策略相关联。
-* 如果多个规则与一个策略相关联，那么每个规则会求值为 `true` 或 `false`。 
+* 如果多个规则与一个策略相关联，那么每个规则会求值为 `true` 或 `false`。
 * 如果与一个策略关联的所有规则均求值为 `true`，那么会将该策略的操作应用于请求。否则，Load Balancer 会对下一个策略求值。
 
-规则具有类型，可以是： 
+规则具有类型，可以是：
 
 * `HOST_NAME`
 * `FILE_TYPE`
@@ -42,7 +49,7 @@ COOKIE|HTTP 头中指定的 cookie
 PATH|URL 中主机名之后的部分（例如，`/index.html`）
 
 规则还具有比较类型，用于指示如何对规则求值。 
-规则可以具有以下比较类型： 
+规则可以具有以下比较类型：
 
 * `REGEX`
 * `STARTS_WITH`
@@ -58,9 +65,11 @@ PATH|URL 中主机名之后的部分（例如，`/index.html`）
 `CONTAINS`|验证抽取的字段是否包含提供的字符串
 `EQUAL_TO`|验证抽取的字段是否与提供的字符串完全相同
 
-**注**：并非所有规则类型都支持所有比较类型。例如，如果使用的是 `FILE_TYPE`，那么最好使用比较类型 `REGEX` 和 `ENDS_WITH`。
+并非所有规则类型都支持所有比较类型。例如，如果使用的是 `FILE_TYPE`，那么最好使用比较类型 `REGEX` 和 `ENDS_WITH`。
+{: tip}
 
 ## 第 7 层规则属性
+{: #layer-7-rule-properties}
 
 属性|描述 
 ------------- | -------------

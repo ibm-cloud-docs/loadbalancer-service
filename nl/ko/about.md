@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: about, load balancer, overview, features
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,6 +26,8 @@ lastupdated: "2018-11-07"
 IBM© Cloud Load Balancer Service는 다중 애플리케이션 서버 인스턴스에 트래픽을 분배하고 트래픽을 양호한 상태의 인스턴스에만 전달하여 고객이 비즈니스 중심 애플리케이션의 가용성을 향상시키는 데 도움을 줍니다.
 
 ## 기능 개요
+{: #overview-of-features}
+
 IBM Cloud Load Balancer Service는 다음 기능을 제공합니다.
 
 * 공용(인터넷 연결) 로드 밸런서
@@ -53,3 +59,5 @@ IBM Cloud Load Balancer Service는 다음 기능을 제공합니다.
     * HTTP/HTTPS 트래픽은 HTTP 헤더를 기반으로 여러 백엔드 서비스로 라우팅되고 정책 및 규칙을 사용하여 수행됩니다. 규칙은 트래픽을 분류하는 데 사용되고 HTTP 헤더 필드를 기반으로 합니다. 트래픽이 모든 규칙과 일치하면 정책에 지정된 조치가 수행됩니다.
 * MZR(Multi-Zone Region) 지원
     * 로드 밸런서 노드는 MZR의 여러 다른 센터에서 인스턴스화됩니다. 자세한 정보는 [MZR(Multi-Zone Region) 개요](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview)를 참조하십시오.
+* 데이터 로그
+    * 데이터 로그가 사용으로 설정되면 로드 밸런서 로그가 [IBM Cloud 로그 분석 서비스![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}에 전달됩니다. 고객은 [IBM Cloud 로그 분석 서비스![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}를 사용하여 데이터 로그를 볼 수 있습니다. 

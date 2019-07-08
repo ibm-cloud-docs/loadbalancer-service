@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # Conjunto da Camada 7
@@ -24,16 +31,20 @@ nas políticas e regras. Esse recurso é suportado associando vários conjuntos 
 Os conjuntos da L7 suportam apenas HTTP como o protocolo de back-end.
 
 ## Persistência de sessão
+{: #session-persistence}
+
 A persistência de sessão pode ser configurada para cada conjunto da Camada 7. Para obter mais detalhes, consulte a  
 [seção de tráfego avançado](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Membros da Camada 7
+{: #layer-7-members}
 
 Os servidores de backend associados a um conjunto da Camada 7 são chamados de membros da Camada 7.
 
 O mesmo servidor de backend pode ser incluído várias vezes em conjuntos da L7, especificando sempre um número de porta diferente.
 
 ## Configurar verificações de funcionamento
+{: #configure-health-checks}
 A definição de verificação de funcionamento é obrigatória para cada conjunto da Camada 7. O sistema pré-preenche uma configuração de verificação de funcionamento padrão para conjuntos da L7.
 
 É possível customizar essas configurações para adequar as necessidades do aplicativo:

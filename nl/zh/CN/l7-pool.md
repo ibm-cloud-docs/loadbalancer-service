@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # 第 7 层池
@@ -23,16 +30,20 @@ lastupdated: "2018-11-12"
 L7 池仅支持 HTTP 作为后端协议。
 
 ## 会话持久性
+{: #session-persistence}
+
 可以为每个第 7 层池配置会话持久性。有关更多详细信息，请参阅  
 [高级流量](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer)部分。
 
 ## 第 7 层成员
+{: #layer-7-members}
 
 与第 7 层池关联的后端服务器称为第 7 层成员。
 
 通过每次指定不同的端口号，可以将同一后端服务器多次添加到 L7 池。
 
 ## 配置运行状况检查
+{: #configure-health-checks}
 对于每个第 7 层池，必须定义运行状况检查。系统会预填充 L7 池的缺省运行状况检查配置。
 
 您可以定制以下设置来满足您的应用程序需求：

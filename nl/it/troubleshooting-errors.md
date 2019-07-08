@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Risoluzione dei problemi per i messaggi di errore
 {: #error-message-troubleshooting}
@@ -35,7 +41,7 @@ Questo argomento fornisce le informazioni sui messaggi di errore comuni che puoi
 | `La VLAN della sottorete privata specificata si trova sul router `xyz`. Tuttavia, non sono state trovate VLAN pubbliche con `n` IP liberi sullo stesso router.` | Ciò si verifica perché hai selezionato l'opzione **Allocate from public subnet from this account** durante il provisioning. | Seleziona invece **Allocate from IBM System Pool** oppure contatta il supporto IBM.|
 | `La VLAN della sottorete privata specificata si trova sul router `xyz`. Tuttavia, non sono state trovate sottoreti pubbliche con `n` IP liberi con la VLAN sullo stesso router.` | Ciò si verifica perché hai selezionato l'opzione **Allocate from public subnet from this account** durante il provisioning. | Seleziona invece **Allocate from IBM System Pool** oppure contatta il supporto IBM.|
 | `La nuova descrizione fornita deve essere una stringa.`| Puoi aver immesso una descrizione non valida. | Immetti una descrizione valida del programma di bilanciamento del carico che non superi 255 caratteri. |
-| `È necessario un elemento di fatturazione per elaborare un annullamento per il programma di bilanciamento del carico uuid=aaaa-bbbb-cccc-dddd.` | Le informazioni di fatturazione sono mancanti o non sono valide per il tuo account e il programma di bilanciamento del carico non può essere annullato. | Contatta il supporto IBM. |
+| `È necessario un elemento di fatturazione per elaborare un annullamento per il programma di bilanciamento del carico uuid=aaaa-bbbb-cccc-dddd.` | Le informazioni di fatturazione sono mancanti o non sono valide per il tuo account e il programma di bilanciamento del carico non può essere annullato. | Contatta il supporto IBM.|
 | `Si è verificato un errore interno. I dati non possono essere richiamati.` | I dati delle metriche non possono essere richiamati | Ricarica la pagina. Se il problema persiste, contatta il supporto IBM. |
 | `La porta di frontend deve essere un numero intero compreso tra 1 e 65535 escluso l'intervallo 56500-56520.` | Puoi aver immesso un numero di porta di frontend compreso tra 56500 e 56520. | Immetti un numero di porta univoco compreso tra 1 e 65535, escludendo però l'intervallo da 56500 a 56520. |
 | `La porta di backend deve essere un numero intero.` | Puoi aver immesso un valore di porta di backend non valido. | Immetti un numero di porta di backend compreso tra 1 e 65535. |

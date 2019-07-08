@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, troubleshooting
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,9 +16,11 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
-# Obtención de ayuda y soporte para el equilibrador de carga de IBM Cloud
+# Obtención de ayuda y soporte para IBM Cloud Load Balancer
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
 Si tiene problemas o preguntas sobre el uso del servicio IBM© Cloud Load Balancer, puede obtener ayuda buscando información o planteando preguntas a través de uno de los foros listados a continuación. También puede abrir una incidencia de soporte.
@@ -26,4 +32,4 @@ Al utilizar los foros para formular una pregunta, etiquete la pregunta para que 
 
 Consulte [Obtención de ayuda](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) para obtener más detalles sobre el uso de los foros.
 
-Para obtener información sobre cómo abrir una incidencia de soporte de IBM o sobre los niveles de soporte y la gravedad de las incidencias, consulte [Cómo obtener soporte](/docs/get-support?topic=get-support-contacting-bluemix-support-dedicated-local).
+Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte [Cómo obtener soporte](/docs/get-support?topic=get-support-contacting-bluemix-support-dedicated-local).

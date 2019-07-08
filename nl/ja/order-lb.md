@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # 注文の検討と発注
 {: #review-and-place-your-order}
@@ -27,4 +33,6 @@ lastupdated: "2018-11-12"
 <img src="images/summary-online.png" alt="描画" style="width: 300px;"/>
 
 ## 次に行うこと
+{: #what-s-next-4}
+
 [構成を編集](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)して、サービス・パフォーマンスをモニターします。

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # アプリケーション・サーバーのトラブルシューティング
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 このトピックでは、ロード・バランサーの使用時に発生する可能性のある一般的な問題について説明します。
 
 ## バックエンド・サーバーが正常でない
+{: #the-back-end-server-is-unhealthy}
 バックエンド・サーバーの正常性が損なわれている場合、以下のリストを検証し、障害の修正を試みてください。
 
 * 構成されたバックエンド・プロトコルのポートは、アプリケーションが listen を行っているポートと一致していますか?

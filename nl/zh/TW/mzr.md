@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-01-11"
 
+keywords: mzr, overview, data centers
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2019-01-11"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 多區域地區 (MZR) 概觀
 {: #multi-zone-region-mzr-overview}
@@ -25,12 +31,17 @@ lastupdated: "2019-01-11"
 | ---------|--------------|
 | us-south | dal10、dal12、dal13 |
 | us-east | wdc04、wdc06、wdc07 |
+| eu-gb | lon04、lon05、lon06 |
+| eu-de | fra02、fra04、fra05 |
+| jp-tok | tok02、tok04、tok05 |
+| au-syd | syd01、syd04、syd05 |
 
 
 ## MZR 需求
+{: #mzr-requirements}
 多區域地區的需求如下：
 * 您選取的資料中心應為 MZR 的一部分。上表列出地區以及每個地區中的資料中心。
-* 您的帳戶必須啟用 VLAN Spanning。
+* 您的帳戶必須啟用 VLAN Spanning 或 VRF。
 * 在 MZR 的資料中心中，您的帳戶中必須有專用子網路。在資料中心中建立運算裝置會導致實例化專用子網路。
 
-如果您選取的資料中心不是 MZR 的一部分，或者您的帳戶未啟用 VLAN Spanning，則負載平衡器的建立作業會預設回原始行為，即實例化您所指定資料中心中的所有負載平衡器節點。
+如果您選取的資料中心不是 MZR 的一部分，或者您的帳戶未啟用 VLAN Spanning 或 VRF，則負載平衡器的建立作業會預設回原始行為，即實例化您所指定資料中心中的所有負載平衡器節點。

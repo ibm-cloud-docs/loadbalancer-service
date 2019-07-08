@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Resolução de problemas do servidor de aplicativos
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 Este tópico fornece informações sobre problemas comuns que podem ser encontrados ao usar o balanceador de carga.
 
 ## O servidor de back-end está inoperante
+{: #the-back-end-server-is-unhealthy}
 Se o funcionamento do servidor de back-end estiver falhando, tente verificar a lista a seguir para testar e corrigi-lo:
 
 * A porta do protocolo de back-end configurado corresponde à porta em que seu aplicativo está atendendo?

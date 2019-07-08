@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: about, load balancer, overview, features
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,6 +26,8 @@ lastupdated: "2018-11-07"
 El servicio IBM© Cloud Load Balancer ayuda a los clientes a mejorar la disponibilidad de las aplicaciones importantes para la empresa mediante la distribución del tráfico entre varias instancias del servidor de aplicaciones y el reenvío de tráfico solo a instancias en buen estado.
 
 ## Visión general de las características
+{: #overview-of-features}
+
 El servicio IBM Cloud Load Balancer ofrece las siguientes características:
 
 * Equilibrador de carga público (con acceso a Internet)
@@ -53,3 +59,5 @@ El servicio IBM Cloud Load Balancer ofrece las siguientes características:
     * El tráfico HTTP/HTTPS se direcciona a diferentes servicios de fondo en función de la cabecera HTTP y se realiza utilizando políticas y reglas. Las reglas se utilizan para clasificar el tráfico y se basan en los campos de cabecera HTTP. Cuando el tráfico coincide con todas las reglas, se toma una acción especificada por la política.
 * Soporte de región multizona (MZR)
     * Se crean instancias de los nodos de equilibrador de carga en distintos centros de datos de una MZR. Consulte la [Visión general de la región multizona](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) para obtener más información.
+* Registros de datos
+    * Si los registros de datos están habilitados, los registros de equilibrador de carga se reenviarán al [el servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Los clientes pueden ver sus registros de datos utilizando [el servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.

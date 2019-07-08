@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用 IBM Cloud Load Balancer 监视度量值
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-负载均衡器监视以下度量值： 
+负载均衡器监视以下度量值：
 
 * 吞吐量
 * 活动连接数
@@ -25,7 +31,7 @@ lastupdated: "2018-11-12"
 
 这些度量值将可视化为图形，可通过选择**监视**选项卡进行查看，并可使用 `getListenerTimeSeriesData` API 以编程方式提供这些度量值作为时间序列数据点。
 
-每个数据点包含 UNIX 戳记时间格式的时间戳记，以及在该时间戳记结束的那个时间间隔的度量值。用户可以指定要报告度量值的协议和时间间隔。 
+每个数据点包含 UNIX 戳记时间格式的时间戳记，以及在该时间戳记结束的那个时间间隔的度量值。用户可以指定要报告度量值的协议和时间间隔。
 
 支持的协议包括：
 
@@ -39,7 +45,7 @@ lastupdated: "2018-11-12"
 
 如果协议为 *HTTP*，那么仅报告 HTTP 流量的吞吐量。
 
-用户还可以指定要报告度量值的时间间隔。支持的时间间隔有： 
+用户还可以指定要报告度量值的时间间隔。支持的时间间隔有：
 
 * 1 小时
 * 6 小时
@@ -64,6 +70,7 @@ lastupdated: "2018-11-12"
 | 1 周| 12 小时| 12 |
 | 2 周| 24 小时| 12 |
 
-# 如何启用度量值监视
+## 如何启用度量值监视
+{: #how-to-enable-metrics-monitoring}
 
 为了检索监视度量值，您必须将 SoftLayer 帐户与 IBM© Cloud 帐户链接起来。请参阅[本主题](/docs/account?topic=account-unifyingaccounts#link_accounts)以获取更多信息。

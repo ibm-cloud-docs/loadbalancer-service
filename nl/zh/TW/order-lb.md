@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # 檢閱訂單及下訂單
 {: #review-and-place-your-order}
@@ -27,4 +33,6 @@ lastupdated: "2018-11-12"
 <img src="images/summary-online.png" alt="圖片" style="width: 300px;"/>
 
 ## 下一步為何？
+{: #what-s-next-4}
+
 [編輯配置](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)，以監視服務效能。

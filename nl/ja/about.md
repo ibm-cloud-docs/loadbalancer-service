@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: about, load balancer, overview, features
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,6 +26,8 @@ lastupdated: "2018-11-07"
 IBM© Cloud Load Balancer サービスは、複数のアプリケーション・サーバー・インスタンス間にトラフィックを分散し、正常なインスタンスのみにトラフィックを転送することにより、ビジネスに不可欠なお客様のアプリケーションの可用性の向上に役立ちます。
 
 ## 機能の概要
+{: #overview-of-features}
+
 IBM Cloud Load Balancer サービスは、以下の機能を提供します。
 
 * パブリック (インターネット向け) ロード・バランサー
@@ -52,4 +58,6 @@ IBM Cloud Load Balancer サービスは、以下の機能を提供します。
 * レイヤー 7 サポート
     * HTTP/HTTPS トラフィックは、HTTP ヘッダーに基づいて異なるバックエンド・サービスに転送され、ポリシーおよびルールを使用して実行されます。 ルールは、トラフィックを分類するために使用され、HTTP ヘッダー・フィールドに基づきます。 トラフィックがすべてのルールに一致すると、そのポリシーに指定されたアクションが実行されます。
 * マルチゾーン・リージョン (MZR) のサポート
-    * ロード・バランサーのノードは、MZR のさまざまなデータ・センターでインスタンス化されます。詳しくは、[マルチゾーン・リージョンの概要](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview)を参照してください。
+    * ロード・バランサーのノードは、MZR のさまざまなデータ・センターでインスタンス化されます。 詳しくは、[マルチゾーン・リージョンの概要](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview)を参照してください。
+* データ・ログ
+    * データ・ログが有効になっている場合、ロード・バランサーのログは [IBM Cloud Log Analysis サービス![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/log-analysis){:new_window} に転送されます。顧客は、データ・ログを [IBM Cloud Log Analysis サービス![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/log-analysis){:new_window} を使用して表示できます。

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: api, apis, reference, slapi
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +25,6 @@ lastupdated: "2018-11-07"
 
 SoftLayer® API(Application Programming Interface)는 SoftLayer의 백엔드 시스템을 사용하여 개발자와 시스템 관리자에게 직접적인 상호작용을
 제공하는 개발 인터페이스입니다.
-{:shortdesc}
 
 SoftLayer API(SLAPI)는 고객 포털의 많은 기능을 제공합니다. 일반적으로, 고객 포털에서 상호작용이 가능하면 이를 API에서 실행할 수도 있습니다. 따라서 API 내에서 SoftLayer 환경의 모든 부분과 프로그래밍 방식으로 상호작용이 가능하므로 API를 사용하여 태스크를 자동화할 수 있습니다.
 
@@ -29,7 +32,7 @@ SoftLayer API(SLAPI)는 원격 프로시저 호출(RPC) 시스템입니다. 각 
 과정이 포함됩니다. SLAPI를 통해 데이터를 송수신할 때 사용되는 형식은 사용자가 선택한 API 구현에 따라 다릅니다. 현재 SLAPI에서는
 데이터 전송에 SOAP, XML-RPC 또는 REST를 사용합니다.
 
-SoftLayer API 및 IBM© Cloud Load Balancer Service API에 대한 자세한 정보는 SoftLayer Development Network의 다음 자원을 참조하십시오.
+SoftLayer API 및 IBM© Cloud Load Balancer Service API에 대한 자세한 정보는 SoftLayer Development Network의 다음 리소스를 참조하십시오.
 * [Getting Started with the SoftLayer API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://softlayer.github.io/article/getting-started/){: new_window}
 * [SoftLayer_Product_Package API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: new_window}
 * [SoftLayer_Network_LBaaS_LoadBalancer API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: new_window}
@@ -51,6 +54,8 @@ client = SoftLayer.Client(username='set me', api_key='set me')
 ```
 
 ## 로드 밸런서 작성
+{: #creating-a-load-balancer}
+
 다음 예에서는 "Load Balancer As A Service(LBaaS)" 패키지의 패키지 ID, 서브넷 ID 및 가격을 검색하고 주문 데이터를 빌드하며 주문을 하고 검증합니다.
 
 ```py
@@ -171,7 +176,11 @@ if __name__ == "__main__":
 {: codeblock}
 
 ## Load Balancers의 세부사항 검색
+{: #retrieving-details-on-load-balancers}
+
 ### 모든 Load Balancers 표시
+{: #list-all-load-balancers}
+
 ```py
 import SoftLayer
 from prettytable import PrettyTable
@@ -220,6 +229,8 @@ if __name__ == "__main__":
 {: codeblock}
 
 ### 특정 로드 밸런서의 세부사항 검색
+{: #retrieve-details-of-a-specific-load-balancer}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -243,7 +254,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 로드 밸런서 업데이트
+{: #updating-a-load-balancer}
+
 ### 구성원 추가
+{: #add-a-member}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -272,6 +287,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 프로토콜 추가
+{: #add-a-protocol}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -316,6 +333,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 로드 밸런서 취소
+{: #cancelling-a-load-balancer}
+
 ```py
 import SoftLayer
 
@@ -337,7 +356,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Load Balancers의 모니터링 메트릭 보기
+{: #viewing-monitoring-metrics-of-load-balancers}
+
 ### HTTP 트래픽의 처리량 가져오기
+{: #get-throughput-of-http-traffic}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -370,8 +393,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## 계층 7 API
+{: #layer-7-apis}
 
 ### 다중 L7 정책 및 L7 규칙 작성
+{: #create-multiple-l7-policies-and-l7-rules}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -421,6 +447,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 계층 7 정책 업데이트
+{: #update-layer-7-policy}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -445,6 +473,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 계층 7 정책에 규칙 추가
+{: #add-rules-to-a-layer-7-policy-}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -480,6 +510,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 동일한 계층 7 정책에 첨부된 다중 7 규칙 업데이트
+{: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
+
 ```py
 # For nice debug output:
 import SoftLayer
@@ -519,6 +551,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 서버, 상태 모니터링 및 세션 선호도를 포함하는 계층 7 풀 작성
+{: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -574,6 +608,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 상태 모니터링 및 세션 선호도와 함께 계층 7 풀 업데이트
+{: #update-a-layer-7-pool-along-with-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -606,6 +642,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 계층 7 풀에 서버 추가
+{: #add-servers-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -639,6 +677,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### 계층 7 풀에 속하는 서버 업데이트
+{: #update-severs-belonging-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -671,4 +711,40 @@ try:
 except SoftLayer.SoftLayerAPIError as e:
     print("Unable to update severs belonging to a Layer 7 pool: %s, %s"
           % (e.faultCode, e.faultString))
+```
+{: codeblock}
+
+### 특정 로드 밸런서에 대한 데이터 로그 사용 또는 사용 안함
+{: #enable-or-disable-data-logs-for-a-specific-load-balancer}
+
+```py
+from zeep import Client, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the load balancer
+uuid = ''
+# enabled = 1 when enable, enable = 0 when disable
+enabled = 0
+
+# WSDL for SoftLayer_Network_LBaaS_LoadBalancer API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_LoadBalancer?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Enable or disable data logs for a specific load balancer
+loadbalancer = client.service.enableOrDisableDataLogs(_soapheaders=[userAuthValue], uuid=uuid, enabled=enabled)
+#print loadbalancer
 ```

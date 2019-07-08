@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # Pool L7
@@ -24,16 +31,20 @@ politiche e alle regole. Questa funzione viene supportata associando più pool L
 I pool L7 supportano solo HTTP come protocollo di backend.
 
 ## Persistenza sessione
+{: #session-persistence}
+
 La persistenza sessione può essere configurata per ciascun pool L7. Per ulteriori dettagli, esamina la  
 [sezione di traffico avanzata](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer).
 
 ## Membri L7
+{: #layer-7-members}
 
 I server di backend associati a un pool L7 sono denominati Membri L7.
 
 Lo stesso server di backend può essere aggiunto più volte ai pool L7 specificando ogni volta un numero di porta diverso.
 
 ## Configura i controlli di integrità
+{: #configure-health-checks}
 La definizione di controllo di integrità è obbligatoria per ciascun pool L7. Il sistema pre-popola una configurazione del controllo di integrità predefinita per i pool L7.
 
 Puoi personalizzare queste impostazioni per soddisfare le esigenze della tua applicazione:

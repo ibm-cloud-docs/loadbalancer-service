@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Monitorando métricas com o IBM Cloud Load Balancer
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-O balanceador de carga monitora as métricas a seguir: 
+O balanceador de carga monitora as métricas a seguir:
 
 * Rendimento
 * Conexões ativas
@@ -25,7 +31,7 @@ O balanceador de carga monitora as métricas a seguir:
 
 Essas métricas são visualizadas como gráficos que podem ser visualizados selecionando a guia **Monitoramento** e estão disponíveis programaticamente como pontos de dados da série temporal, usando a API `getListenerTimeSeriesData`.
 
-Cada ponto de dados contém um registro de data e hora na época do UNIX e o valor da métrica para esse intervalo de tempo terminando nesse registro de data e hora. O usuário pode especificar os protocolos e o intervalo de tempo durante o qual as métricas devem ser relatadas. 
+Cada ponto de dados contém um registro de data e hora na época do UNIX e o valor da métrica para esse intervalo de tempo terminando nesse registro de data e hora. O usuário pode especificar os protocolos e o intervalo de tempo durante o qual as métricas devem ser relatadas.
 
 Os protocolos suportados incluem:
 
@@ -39,7 +45,7 @@ Por exemplo, se nenhum protocolo for especificado e a métrica for *Rendimento*,
 
 Se o protocolo for *HTTP*, apenas o rendimento para o tráfego de HTTP será relatado.
 
-O usuário também pode especificar o intervalo de tempo sobre o qual a métrica deve ser relatada. Os intervalos de tempo suportados são: 
+O usuário também pode especificar o intervalo de tempo sobre o qual a métrica deve ser relatada. Os intervalos de tempo suportados são:
 
 * 1 hora
 * 6 horas
@@ -64,6 +70,7 @@ A tabela abaixo mostra como os pontos de dados são derivados do intervalo de te
 | 1 semana    | 12 horas | 12 |
 | 2 semanas  | 24 horas | 12 |
 
-# Como ativar o monitoramento de métricas
+## Como ativar o monitoramento de métricas
+{: #how-to-enable-metrics-monitoring}
 
 Para recuperar as métricas de monitoramento, é necessário vincular sua conta da SoftLayer à conta do IBM© Cloud. Consulte [esse tópico](/docs/account?topic=account-unifyingaccounts#link_accounts) para obter mais informações.

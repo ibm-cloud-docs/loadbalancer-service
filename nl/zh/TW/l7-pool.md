@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, pool, http
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,6 +15,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
 # 第 7 層儲存區
@@ -23,16 +30,20 @@ lastupdated: "2018-11-12"
 L7 儲存區僅支援 HTTP 作為後端通訊協定。
 
 ## 階段作業持續性
+{: #session-persistence}
+
 可以針對每個第 7 層儲存區配置階段作業持續性。如需詳細資料，請參閱  
 [進階資料流量](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer)小節。
 
 ## 第 7 層成員
+{: #layer-7-members}
 
 與「第 7 層儲存區」相關聯的後端伺服器稱為「第 7 層成員」。
 
 每次指定不同的埠號，即可多次將相同的後端伺服器新增至 L7 儲存區。
 
 ## 配置性能檢查
+{: #configure-health-checks}
 每個第 7 層儲存區的性能檢查定義都是必要的。系統會預先移入 L7 儲存區的預設性能檢查配置。
 
 您可以自訂下列設定，以符合應用程式需求：

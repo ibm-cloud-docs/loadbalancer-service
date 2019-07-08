@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Revisión y realización de un pedido
 {: #review-and-place-your-order}
@@ -27,4 +33,6 @@ El sistema crea ahora una instancia de servicio para el usuario y le lleva a la 
 <img src="images/summary-online.png" alt="dibujo" style="width: 300px;"/>
 
 ## A continuación
+{: #what-s-next-4}
+
 [Edite la configuración](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) para supervisar el rendimiento del servicio.

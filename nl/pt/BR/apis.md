@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: api, apis, reference, slapi
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +25,6 @@ lastupdated: "2018-11-07"
 
 O SoftLayer® Application Programming Interface (API) é a interface de desenvolvimento que fornece aos desenvolvedores e administradores de sistema interação
 direta com o sistema backend do SoftLayer.
-{:shortdesc}
 
 A SoftLayer API (SLAPI) alimenta muitos dos recursos no Portal do cliente. Geralmente, se uma interação é possível no Portal do cliente, ela também pode ser executada na API. Logo, como é possível interagir programaticamente com todas as partes do ambiente do SoftLayer dentro da API, é possível usar a API para automatizar tarefas.
 
@@ -54,6 +57,8 @@ client = SoftLayer.Client(username='set me', api_key='set me')
 ```
 
 ## Criando um balanceador de carga
+{: #creating-a-load-balancer}
+
 O exemplo a seguir recupera o ID do pacote, o ID de sub-rede e os preços para um pacote
 "Balanceador de carga como um serviço (LBaaS)", compila os dados do pedido e faz/verifica o pedido.
 
@@ -175,7 +180,11 @@ if __name__ == "__main__":
 {: codeblock}
 
 ## Recuperando detalhes sobre balanceadores de carga
+{: #retrieving-details-on-load-balancers}
+
 ### Listar todos os balanceadores de carga
+{: #list-all-load-balancers}
+
 ```py
 import SoftLayer
 from prettytable import PrettyTable
@@ -224,6 +233,8 @@ if __name__ == "__main__":
 {: codeblock}
 
 ### Recuperar detalhes de um balanceador de carga específico
+{: #retrieve-details-of-a-specific-load-balancer}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -247,7 +258,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Atualizando um balanceador de carga
+{: #updating-a-load-balancer}
+
 ### Incluir um membro
+{: #add-a-member}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -276,6 +291,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Incluir um protocolo
+{: #add-a-protocol}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -320,6 +337,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Cancelando um balanceador de carga
+{: #cancelling-a-load-balancer}
+
 ```py
 import SoftLayer
 
@@ -341,7 +360,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## Visualizando métricas de monitoramento de balanceadores de carga
+{: #viewing-monitoring-metrics-of-load-balancers}
+
 ### Obter rendimento de tráfego HTTP
+{: #get-throughput-of-http-traffic}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -374,8 +397,11 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ## APIs da Camada 7
+{: #layer-7-apis}
 
 ### Criar diversas políticas e regras da L7
+{: #create-multiple-l7-policies-and-l7-rules}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -425,6 +451,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Atualizar política da Camada 7
+{: #update-layer-7-policy}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -449,6 +477,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Incluir regras em uma política da Camada 7 
+{: #add-rules-to-a-layer-7-policy-}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -484,6 +514,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Atualizar diversas regras da Camada 7 anexadas à mesma política da Camada 7 
+{: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
+
 ```py
 # For nice debug output:
 import SoftLayer
@@ -523,6 +555,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Criar um conjunto da Camada 7 com servidores, monitoramento de funcionamento e afinidade de sessão
+{: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -578,6 +612,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Atualizar um conjunto da Camada 7 junto ao monitoramento de funcionamento e à afinidade de sessão
+{: #update-a-layer-7-pool-along-with-health-monitoring-and-session-affinity}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -610,6 +646,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Incluir servidores em um conjunto da Camada 7
+{: #add-servers-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -643,6 +681,8 @@ except SoftLayer.SoftLayerAPIError as e:
 {: codeblock}
 
 ### Atualizar servidores pertencentes a um conjunto da Camada 7
+{: #update-severs-belonging-to-a-layer-7-pool}
+
 ```py
 import SoftLayer
 from pprint import pprint
@@ -675,4 +715,40 @@ try:
 except SoftLayer.SoftLayerAPIError as e:
     print("Unable to update severs belonging to a Layer 7 pool: %s, %s"
           % (e.faultCode, e.faultString))
+```
+{: codeblock}
+
+### Ativar ou desativar logs de dados para um balanceador de carga específico
+{: #enable-or-disable-data-logs-for-a-specific-load-balancer}
+
+```py
+from zeep import Client, xsd
+
+# Username and apikey for SLAPI call
+username = ''
+apiKey = ''
+# UUID of the load balancer
+uuid = ''
+# enabled = 1 when enable, enable = 0 when disable
+enabled = 0
+
+# WSDL for SoftLayer_Network_LBaaS_LoadBalancer API
+wsdl = 'https://api.softlayer.com/soap/v3/SoftLayer_Network_LBaaS_LoadBalancer?wsdl'
+client = Client(wsdl)
+
+# XSD for authentication
+xsdUserAuth = xsd.Element(
+    '{http://api.softlayer.com/soap/v3/}authenticate',
+    xsd.ComplexType([
+        xsd.Element('{http://api.softlayer.com/soap/v3/}username', xsd.String()),
+        xsd.Element('{http://api.softlayer.com/soap/v3/}apiKey', xsd.String())
+    ])
+)
+
+# Create XSD value objects
+userAuthValue = xsdUserAuth(username=username, apiKey=apiKey)
+
+# Enable or disable data logs for a specific load balancer
+loadbalancer = client.service.enableOrDisableDataLogs(_soapheaders=[userAuthValue], uuid=uuid, enabled=enabled)
+#print loadbalancer
 ```

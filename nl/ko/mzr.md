@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-01-11"
 
+keywords: mzr, overview, data centers
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2019-01-11"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # MZR(Multi-Zone Region) 개요
 {: #multi-zone-region-mzr-overview}
@@ -25,12 +31,17 @@ lastupdated: "2019-01-11"
 | ---------|--------------|
 | us-south | dal10, dal12, dal13 |
 | us-east | wdc04, wdc06, wdc07 |
+| eu-gb | lon04, lon05, lon06 |
+| eu-de | fra02, fra04, fra05 |
+| jp-tok | tok02, tok04, tok05 |
+| au-syd | syd01, syd04, syd05 |
 
 
 ## MZR 요구사항
+{: #mzr-requirements}
 MZR(Multi-Zone Regions)의 요구사항은 다음과 같습니다.
 * 선택한 데이터 센터는 MZR의 일부여야 합니다. 위의 표에는 지역과 각 지역의 데이터 센터가 나열되어 있습니다.
-* 계정에서 VLAN Spanning이 사용으로 설정되어야 합니다.
+* 계정에서 VLAN Spanning 또는 VRF가 사용으로 설정되어야 합니다. 
 * 사설 서브넷은 MZR의 데이터 센터에 있는 계정에 있어야 합니다. 데이터 센터에 컴퓨팅 디바이스를 작성하면 사설 서브넷이 인스턴스화됩니다.
 
-선택하는 데이터 센터가 MZR의 일부가 아니거나 계정에서 VLAN Spanning이 사용되지 않은 경우 로드 밸런서를 작성하면 기본적으로 사용자가 지정하는 데이터 센터에서 모든 로드 밸런서 노드를 인스턴스화하는 원래 동작이 수행됩니다.
+선택하는 데이터 센터가 MZR의 일부가 아니거나 계정에서 VLAN Spanning 또는 VRF가 사용으로 설정되어 있지 않은 경우에는 로드 밸런서를 작성하면 기본적으로 사용자가 지정하는 데이터 센터에서 모든 로드 밸런서 노드를 인스턴스화하는 원래 동작이 수행됩니다. 

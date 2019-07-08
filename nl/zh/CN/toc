@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
+{: .toc subcollection="loadbalancer-service" category="network" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
 IBM Cloud Load Balancer 服务
 
     {: .navgroup id="learn"}
@@ -18,9 +18,8 @@ IBM Cloud Load Balancer 服务
     basic-load-balancing.md
 
     {: .topicgroup}
-    创建 IBM Cloud Load Balancer 并将其用于弹性服务器负载均衡
+    使用 IBM Cloud Load Balancer 实现弹性服务器负载均衡
         reliability-guide.md
-        create-load-balancer.md
         begin-lb-config.md
         identify-app-resources.md
         order-lb.md
@@ -33,6 +32,7 @@ IBM Cloud Load Balancer 服务
     advanced-traffic.md
     monitoring-metrics.md
     backend-encryption.md
+    data-logging.md
 
     {: .topicgroup}
     第 7 层支持

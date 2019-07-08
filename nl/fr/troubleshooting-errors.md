@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Traitement des incidents liés à des messages d'erreur
 {: #error-message-troubleshooting}
 
-Cette rubrique fournit des informations sur les messages d'erreur courants liés à la création/mise à jour d'une instance de l'équilibreur de charge IBM© Cloud. 
+Cette rubrique fournit des informations sur les messages d'erreur courants liés à la création/mise à jour d'une instance de l'équilibreur de charge IBM© Cloud.
 
 | Erreur | Explication  | Solution  |
 | ------------- | ------------- | ----- |
@@ -35,9 +41,9 @@ Cette rubrique fournit des informations sur les messages d'erreur courants liés
 | `Le VLAN de sous-réseau privé spécifié figure sur le routeur `xyz`. Or, aucun VLAN public avec `n` adresses IP libres n'a été trouvé sur le même routeur.` | Cela se produit car vous avez sélectionné l'option **Allouer à partir du sous-réseau public à partir de ce compte** lors de la mise à disposition. | Sélectionnez l'option **Allouer à partir du pool de systèmes IBM** ou contactez le support IBM.|
 | `Le VLAN de sous-réseau privé spécifié figure sur le routeur `xyz`. Or, aucun sous-réseau public avec `n` adresses IP libres n'a été trouvé avec VLAN sur le même routeur.` | Cela se produit car vous avez sélectionné l'option **Allouer à partir du sous-réseau public à partir de ce compte** lors de la mise à disposition. | Sélectionnez l'option **Allouer à partir du pool de systèmes IBM** ou contactez le support IBM.|
 | `La nouvelle description spécifiée doit être une chaîne.`| La description entrée n'est peut-être pas valide. | Entrez une description d'équilibreur de charge valide de 255 caractères au maximum. |
-| `Un élément de facturation est requis pour traiter une annulation pour l'identificateur unique universel d'équilibreur de charge uuid=aaaa-bbbb-cccc-dddd.` | Des informations sur la facturation sont manquantes ou non valides pour votre compte et l'équilibreur de charge ne peut pas être annulé. | Prenez contact avec le support IBM. |
+| `Un élément de facturation est requis pour traiter une annulation pour l'identificateur unique universel d'équilibreur de charge uuid=aaaa-bbbb-cccc-dddd.` | Des informations sur la facturation sont manquantes ou non valides pour votre compte et l'équilibreur de charge ne peut pas être annulé. | Prenez contact avec le support IBM.|
 | `Une erreur interne s'est produite. Impossible de récupérer les données.` | Les données de métriques ne peuvent pas être extraites | Rechargez la page. Si le problème persiste, contactez le support IBM. |
-| `Le numéro de port de front end doit être un entier compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520.` |Vous avez peut-être entré un numéro de port de front end compris entre 56500 et 56520. | Entrez un numéro de port unique compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520. |
+| `Le numéro de port de front end doit être un entier compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520.` | Vous avez peut-être entré un numéro de port de front end compris entre 56500 et 56520. | Entrez un numéro de port unique compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520. |
 | `Le numéro de port de back end doit être un nombre entier.` | Vous avez peut-être entré une valeur de port de back end non valide. | Entrez un numéro de port de back end compris entre 1 et 65535. |
 | `Le numéro de port de back end doit être un entier compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520.` | Vous avez peut-être entré un port de back end compris entre 56500 et 56520.| Entrez un numéro de port de back end compris entre 1 et 65535, à l'exclusion de la plage de 56500 à 56520. |
 | `Le protocole HTTP de back end n'est pas compatible avec le protocole TCP de front end.` | Vous avez peut-être sélectionné une combinaison de protocole de back end et de protocole de front end qui ne sont pas compatibles. | Sélectionnez une combinaison valide de protocole de back end et de protocole de front end, sous la forme : `<br> HTTP-HTTP <br> HTTPS-HTTP <br> TCP-TCP` |

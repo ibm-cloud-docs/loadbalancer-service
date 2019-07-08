@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
+keywords: parameters, load balancing, configure, protocol, health check
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2018-11-07"
 # 配置 IBM Cloud Load Balancer 參數
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
-在您建立負載平衡器之後，即可配置它，以進行彈性負載平衡。若要這樣做，請執行下列動作：
+在您[建立負載平衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)之後，即可配置它，以進行彈性負載平衡。若要這樣做，請執行下列動作：
 
 1. 命名負載平衡器，然後選擇性地新增說明。
 
@@ -45,19 +49,22 @@ lastupdated: "2018-11-07"
 
 	<img src="images/lb-ssl-cert.png" alt="圖片" style="width: 300px;"/>
 
-	如果您沒有現有的憑證，請按一下**新增憑證**。這會將您帶往 IBM Cloud 憑證服務，您可以在其中購買新憑證或上傳現有憑證。 
-	
+	如果您沒有現有的憑證，請按一下**新增憑證**。這會將您帶往 IBM Cloud 憑證服務，您可以在其中購買新憑證或上傳現有憑證。
+
 	新增憑證之後，請回到負載平衡器配置頁面，然後按一下「SSL 憑證」下拉清單下方的重新整理圖示，以檢視及新增新上傳的憑證。
 
 	<img src="images/order-ssl-cert.png" alt="圖片" style="width: 300px;"/>
 
 	<img src="images/refresh-cert.png" alt="圖片" style="width: 300px;"/>
 
-	**附註：絕對不要刪除與 HTTPS 接聽器相關聯的任何憑證，因為這可能會導致功能發生問題。**
+	絕對不要刪除與 HTTPS 接聽器相關聯的任何憑證，因為這可能會導致功能發生問題。
+  {: note}
 
 8. 按**下一步**。
 
 ## 配置性能檢查
+{: #configure-health-checks}
+
 每個應用程式埠的性能檢查定義都是必要的。這些是前一個基本配置功能表中所識別的後端埠。
 
 <img src="images/config-health-check.png" alt="圖片" style="width: 300px;"/>
@@ -72,4 +79,6 @@ lastupdated: "2018-11-07"
 按**下一步**，以啟用您的選擇。
 
 ## 下一步為何？
+{: #what-s-next}
+
 [識別應用程式的資源](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-identifying-your-application-server-resources)，例如原始儲存區及性能檢查機制。

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: order, load balancer
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # 주문 검토 및 주문하기
 {: #review-and-place-your-order}
@@ -27,4 +33,6 @@ lastupdated: "2018-11-12"
 <img src="images/summary-online.png" alt="그림" style="width: 300px;"/>
 
 ## 다음에 수행할 작업
+{: #what-s-next-4}
+
 서비스 성능을 모니터하도록 [구성을 편집](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service)하십시오.

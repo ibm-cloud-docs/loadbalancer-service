@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Resolución de problemas de mensajes de error
 {: #error-message-troubleshooting}
@@ -32,8 +38,7 @@ En este tema se proporciona información sobre los mensajes de error comunes que
 | `El puerto de fondo debe ser un entero.` | Es posible que haya especificado un valor de puerto de fondo no válido. | Especifique un número de puerto de fondo comprendido entre 1 y 65535. |
 | `Puesto que el protocolo y el puerto no se pueden editar en el supervisor de estado, este error no se puede solucionar desde la interfaz de usuario.`| Su subred privada no es de tipo estándar y no se puede utilizar para crear el equilibrador de carga. | Póngase en contacto con el servicio de soporte técnico de IBM. |
 | `La subred privada `xyz` debe tener como mínimo `n` direcciones IP libres.` | La subred privada seleccionada no tiene ninguna dirección IP libre. | Consulte estos [pasos de resolución de problemas](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting) para obtener más información. |
-| `La VLAN de subred privada especificada está en el direccionador `xyz`. Sin embargo, no se ha encontrado ninguna VLAN pública con `n` IP libres en el mismo direccionador.` | Esto ocurre porque ha seleccionado la opción **Asignar desde una subred pública de esta cuenta** durante el suministro. | Seleccione **Asignar desde la agrupación del sistema IBM**
-o póngase en contacto con el servicio de soporte técnico de IBM.|
+| `La VLAN de subred privada especificada está en el direccionador `xyz`. Sin embargo, no se ha encontrado ninguna VLAN pública con `n` IP libres en el mismo direccionador.` | Esto ocurre porque ha seleccionado la opción **Asignar desde una subred pública de esta cuenta** durante el suministro. | Seleccione **Asignar desde la agrupación del sistema IBM** o póngase en contacto con el servicio de soporte técnico de IBM.|
 | `La VLAN de subred privada especificada está en el direccionador `xyz`. Sin embargo, no se ha encontrado ninguna subred pública
 con `n` IP libres con VLAN en el mismo direccionador.` | Esto ocurre porque ha seleccionado la opción **Asignar desde una subred pública de esta cuenta** durante el suministro. | Seleccione **Asignar desde la agrupación del sistema IBM** o póngase en contacto con el servicio de soporte técnico de IBM.|
 | `La nueva descripción debe ser una serie.`| Es posible que haya especificado una descripción no válida. | Especifique una descripción de equilibrador de carga válida que no supere los 255 caracteres. |

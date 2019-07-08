@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, rules, traffic
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 第 7 層規則
 {: #layer-7-rules}
@@ -20,10 +27,10 @@ lastupdated: "2018-11-12"
 
 * 如果送入的資料流量符合指定的規則值，則規則會評估為 `true`。
 * 第 7 層規則一律與第 7 層原則相關聯。多個第 7 層規則可以與相同的第 7 層原則相關聯。
-* 如果多個規則與某個原則相關聯，則每個規則都會評估為 `true` 或 `false`。 
+* 如果多個規則與某個原則相關聯，則每個規則都會評估為 `true` 或 `false`。
 * 如果與原則相關聯的所有規則都評估為 `true`，則會將原則動作套用至該要求。否則，負載平衡器會評估下一個原則。
 
-規則的類型可以是： 
+規則的類型可以是：
 
 * `HOST_NAME`
 * `FILE_TYPE`
@@ -41,7 +48,7 @@ HEADER    | HTTP 標頭中的欄位
 COOKIE    | HTTP 標頭中的具名 Cookie
 PATH      |主機名稱後面的 URL 部分（例如 `/index.html`）
 
-規則也具有比較類型，可指出其評估方式。規則可具有下列比較類型： 
+規則也具有比較類型，可指出其評估方式。規則可具有下列比較類型：
 
 * `REGEX`
 * `STARTS_WITH`
@@ -57,9 +64,11 @@ PATH      |主機名稱後面的 URL 部分（例如 `/index.html`）
 `CONTAINS`        |  驗證擷取的欄位是否包含提供的字串
 `EQUAL_TO`        |  驗證擷取的欄位是否與提供的字串相同
 
-**附註**：並非所有規則類型都支援所有比較類型。例如，如果您使用 `FILE_TYPE`，則最好使用比較類型 `REGEX` 及 `ENDS_WITH`。
+並非所有規則類型都支援所有比較類型。例如，如果您使用 `FILE_TYPE`，則最好使用比較類型 `REGEX` 及 `ENDS_WITH`。
+{: tip}
 
 ## 第 7 層規則內容
+{: #layer-7-rule-properties}
 
 內容      |說明 
 ------------- | -------------

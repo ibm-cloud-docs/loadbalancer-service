@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Resolución de problemas del servidor de aplicaciones
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando utilice el equilibrador de carga.
 
 ## El servidor de fondo no está en buen estado
+{: #the-back-end-server-is-unhealthy}
 Si el estado del servidor de fondo no es bueno, intente verificar la siguiente lista para intentar solucionarlo:
 
 * ¿El puerto del protocolo de programa de fondo configurado coincide con el puerto en el que está escuchando la aplicación?

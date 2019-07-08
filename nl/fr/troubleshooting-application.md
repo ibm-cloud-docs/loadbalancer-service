@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Traitement des incidents liés au serveur d'application
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 Cette rubrique fournit des informations sur les problèmes courants liés à l'utilisation de l'équilibreur de charge.
 
 ## Le serveur de back end est défectueux
+{: #the-back-end-server-is-unhealthy}
 Si la santé de votre serveur de back end est défaillante, vérifiez la liste suivante pour essayer d'y remédier :
 
 * Le port du protocole de back end configuré correspond-il au port sur lequel votre application est en mode écoute ?

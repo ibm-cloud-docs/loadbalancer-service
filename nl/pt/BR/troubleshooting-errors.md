@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Resolução de problemas da mensagem de erro
 {: #error-message-troubleshooting}
@@ -48,15 +54,15 @@ o fornecimento. | Selecione **Alocar no IBM System Pool** em vez disso ou entre 
 | `Dada a nova descrição, deve ser uma sequência.`| Você pode ter inserido uma descrição inválida. | Insira uma descrição válida do Balanceador de Carga, com no máximo 255 caracteres. |
 | `Um item de faturamento é requerido para processar um cancelamento para o balanceador de
 carga uuid=aaaa-bbbb-cccc-dddd.` | As informações de faturamento estão ausentes ou são
-inválidas para sua conta e o Balanceador de Carga não pode ser cancelado. | Entre em contato com o suporte IBM. |
+inválidas para sua conta e o Balanceador de Carga não pode ser cancelado. | Entre em contato com o suporte IBM.|
 | `Ocorreu um erro interno. Os dados não puderam ser recuperados.` | Os dados de métrica
 não podem ser recuperados | Recarregue a página. Se o problema ainda persistir, entre em contato com o suporte IBM. |
 | `A porta de front-end deve ser um número inteiro entre 1 e 65535, excluindo o intervalo de 56500-56520.` | Você pode ter inserido um número de porta front-end entre 56500-56520. | Insira um número de porta exclusivo entre 1 a 65535, mas excluindo o intervalo de 56500 a 56520. |
 | `A porta de back-end deve ser um número inteiro.` | Você pode ter inserido um valor de porta de back-end inválido. | Insira um número de porta de back-end entre 1 e 65535. |
-| `A porta de back-end deve ser um número inteiro entre 1 e 65535, excluindo o intervalo de 56500-56520.` | Você pode ter inserido uma porta back-end entre 56500 e 56520. | Insira um número de porta de back-end
+| `A porta de back-end deve ser um número inteiro entre 1 e 65535, excluindo o intervalo de 56500-56520.` | Você pode ter inserido uma porta back-end entre 56500 e 56520.| Insira um número de porta de back-end
 entre 1 e 65535, mas excluindo o intervalo de 56500 a 56520. |
 | `O HTTP de protocolo de back-end não é compatível com o TCP do protocolo de front-end.` | Você pode ter selecionado um protocolo de back-end incompatível e uma combinação de protocolo de front-end. | Selecione uma combinação válida de protocolo de front-end e back-end, no formato: `<br> HTTP-HTTP <br> HTTPS-HTTP <br> TCP-TCP` |
-| `Peso do membro <some value> é fornecido para o membro abcd-xxxx-yyyy-2222. O valor do peso
+| `Member weight <some value> é fornecido para o membro abcd-xxxx-yyyy-2222. O valor do peso
 permitido é 0-100 `| Você pode ter inserido um peso inválido. | Insira um valor de peso entre 0 e 100. |
 | `Ocorreu um problema ao buscar os servidores.` | Isso pode acontecer como um resultado de problemas de tempo limite de rede. | Recarregue a página. Se o problema ainda persistir, entre em contato
-com o Suporte IBM. |
+com o Suporte IBM.|

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: pricing, usage, month
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 
 # Precificação do IBM Cloud Load Balancer
@@ -24,10 +30,10 @@ A precificação do IBM© Cloud Load Balancer é baseada nas três métricas a s
 * Dados processados
 * Largura da banda pública de saída (Egresso)
 
-**NOTA:** todos os preços variam de acordo com a região geográfica. A
-largura de banda pública de saída consumida pelo serviço IBM Cloud Load Balancer é cobrada de
-acordo com o encargo de transferência de dados padrão de [US$ 0,09
-por GB ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud/bandwidth).
+Todos os preços variam por região geográfica. A largura da banda pública de saída consumida
+pelo serviço IBM Cloud Load Balancer é faturada por encargo de transferência de dados padrão de
+[0,09 dólares por GB ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud/bandwidth).
+{: note}
 
 O gráfico a seguir detalha um exemplo do IBM Cloud Load Balancer precificado para um cliente que usa 4.500 GB por mês para balanceamento de carga pública:
 
@@ -41,8 +47,7 @@ O total de encargos do cenário acima é de US$ 54/mês mais o encargo de transf
 ![pricing](./images/pricing.png)
 
 
-**NOTA:** todos os preços variam por região geográfica; a precificação no exemplo e no diagrama é a precificação de Dallas em Dólares dos EUA; não está exibida no diagrama uma taxa de uso de serviço de US$ 0,025/hora.
+Todos os preços variam por região geográfica; a precificação no exemplo e diagrama é a precificação de Dallas em dólares; no diagrama, não é exibida a taxa de uso de serviço de $ 0,025/hora.
+{: note}
 
-Para ver informações específicas de preços para a sua região, você pode passar pelo
-nosso [processo
-simples de inscrição ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).
+Para ver as informações de precificação específicas para a sua região, acesse nosso [processo de inscrição simplificado ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group).

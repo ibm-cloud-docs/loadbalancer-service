@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: create, new, load balancer
+
+subcollection: loadbalancer-service
+
 
 ---
 
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # 创建 IBM Cloud Load Balancer
 {: #creating-an-ibm-cloud-load-balancer}
@@ -25,7 +31,7 @@ lastupdated: "2018-11-12"
 
 	<img src="images/catalog-load-balancer.png" alt="图样" style="width: 600px;"/>
 
-3. 选择 **IBM Cloud Load Balancer**（缺省选择），然后单击**创建**。 
+3. 选择 **IBM Cloud Load Balancer**（缺省选择），然后单击**创建**。
 
 	如果您看到的是**升级**而不是**创建**，那么必须通过执行[这些步骤](/docs/account?topic=account-unifyingaccounts)来链接 IBM Cloud Infrastructure (SoftLayer) 帐户
 
@@ -40,7 +46,7 @@ lastupdated: "2018-11-12"
 	对于需要访问公用因特网的面向因特网的应用程序，请选择**公共（面向因特网）**。
 
 	<img src="images/select-lb-type.png" alt="图样" style="width: 600px;"/>
-	
+
 	缺省情况下，公共负载均衡器会接收来自 IBM 全局地址池的全局唯一公共 IP 地址。但是，如果您希望为其分配自己的地址池中的公共地址，或者希望将其部署在帐户中的防火墙服务后面，请检查公用子网是否有[足够的 IP 地址](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting)，然后选择**从帐户中的公用子网分配**。
 
 	对于不需要访问公用因特网的仅限内部的应用程序，请选择**内部（专用）**类型。
@@ -54,4 +60,5 @@ lastupdated: "2018-11-12"
 6. 单击**下一步**以完成配置。
 
 ## 接下来做什么
+{: #whats-next-2}
 使用[基本参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters)配置 Load Balancer。

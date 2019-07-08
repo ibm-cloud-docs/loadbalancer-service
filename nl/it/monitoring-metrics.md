@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Monitoraggio delle metriche con IBM Cloud Load Balancer
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-Il programma di bilanciamento del carico monitora le seguenti metriche: 
+Il programma di bilanciamento del carico monitora le seguenti metriche:
 
 * Velocità effettiva
 * Connessioni attive
@@ -26,7 +32,7 @@ Il programma di bilanciamento del carico monitora le seguenti metriche:
 Queste metriche vengono visualizzate come grafici che possono essere visualizzati selezionando la scheda **Monitoring**
 e sono disponibili in modo programmatico come punti dati delle serie temporali utilizzando l'API `getListenerTimeSeriesData`.
 
-Ogni punto dati contiene una data/ora con scadenza UNIX e il valore della metrica per tale intervallo temporale che finisce in tale data/ora. L'utente può specificare i protocolli e l'intervallo temporale in cui le metriche devono essere segnalate. 
+Ogni punto dati contiene una data/ora con scadenza UNIX e il valore della metrica per tale intervallo temporale che finisce in tale data/ora. L'utente può specificare i protocolli e l'intervallo temporale in cui le metriche devono essere segnalate.
 
 I protocolli supportati includono:
 
@@ -41,7 +47,7 @@ viene segnalata la velocità effettiva totale per tutti i protocolli.
 
 Se il protocollo è *HTTP*, viene segnalata solo la velocità effettiva per il traffico HTTP.
 
-L'utente può inoltre specificare l'intervallo temporale in cui la metrica deve essere segnalata. Gli intervalli di tempo supportati sono: 
+L'utente può inoltre specificare l'intervallo temporale in cui la metrica deve essere segnalata. Gli intervalli di tempo supportati sono:
 
 * 1 ora
 * 6 ore
@@ -66,6 +72,7 @@ La seguente tabella mostra come i punti dati vengono ricavati dall'intervallo te
 | 1 settimana    | 12 ore | 12 |
 | 2 settimane  | 24 ore | 12 |
 
-# Come abilitare il monitoraggio delle metriche
+## Come abilitare il monitoraggio delle metriche
+{: #how-to-enable-metrics-monitoring}
 
-Per poter richiamare le metriche di monitoraggio devi collegare il tuo account SoftLayer al tuo account IBM© Cloud. Fai riferimento a [questo argomento](/docs/account?topic=account-unifyingaccounts#link_accounts) per ulteriori informazioni. 
+Per poter richiamare le metriche di monitoraggio devi collegare il tuo account SoftLayer al tuo account IBM© Cloud. Fai riferimento a [questo argomento](/docs/account?topic=account-unifyingaccounts#link_accounts) per ulteriori informazioni.

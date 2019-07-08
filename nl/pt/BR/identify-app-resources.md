@@ -4,6 +4,9 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: resources, server, application, instance, configure
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -13,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Identificando recursos do servidor de aplicativos
 {: #identifying-your-application-server-resources}
@@ -26,10 +31,12 @@ Essas instâncias do servidor devem ser locais para o data center no qual você 
 
 Clique em **Avançar**.
 
-**NOTAS:** 
+Os **pesos** do servidor são relevantes apenas ao usar o método de balanceamento de carga **Round-robin ponderado**. O peso padrão é 50 e o intervalo é de 0 a 100. Os pesos ficam esmaecidos com outros métodos de balanceamento de carga.
+{: note}
 
-1. Os **pesos** do servidor são relevantes apenas ao usar o método de balanceamento de carga **Round-robin ponderado**. O peso padrão é 50 e o intervalo é de 0 a 100. Os pesos ficam esmaecidos com outros métodos de balanceamento de carga.
-2. Consulte [Limitações no número de servidores de aplicativos](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obter mais informações sobre o limite máximo para o número de servidores de aplicativos.
+Consulte [Limitações no número de servidores de aplicativos](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obter mais informações sobre o limite máximo para o número de servidores de aplicativos.
+{: tip}
 
 ## O que vem a seguir
+{: #what-s-next-3}
 [Revise o conteúdo](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order) de seu pedido antes de fazê-lo.

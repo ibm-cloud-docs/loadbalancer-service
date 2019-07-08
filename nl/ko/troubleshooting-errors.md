@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-21"
 
+keywords: error, message, troubleshooting, problems
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-21"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 오류 메시지 문제점 해결
 {: #error-message-troubleshooting}
@@ -32,14 +38,14 @@ lastupdated: "2018-11-21"
 | `Backend port must be an integer.` | 올바르지 않은 백엔드 포트 값을 입력했을 수 있습니다. | 1 - 65535의 백엔드 포트 번호를 입력하십시오. |
 | `Since the protocol and port are not editable in health monitor, this error is impossible from UI.`| 사설 서브넷은 표준 유형이 아니므로 로드 밸런서를 작성하는 데 사용할 수 없습니다. | IBM 지원 센터에 문의하십시오. |
 | `Private subnet `xyz` must have at least `n` free IP addresses.` | 선택한 사설 서브넷에 사용 가능한 IP 주소가 없습니다. | 자세한 정보는 해당 [문제점 해결 단계](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-provisioning-troubleshooting)를 참조하십시오. |
-| `Specified private subnet VLAN is on router `xyz`. 그러나 동일한 라우터에서 `n`개의 사용 가능한 IP가 있는 공용 VLAN을 찾을 수 없습니다.` | 이 문제는 프로비저닝 중에 **이 계정의 공인 서브넷에서 할당** 옵션을 선택했기 때문에 발생합니다. | 대신 **IBM 시스템 풀에서 할당** 옵션을 선택하거나 IBM 지원 센터에 문의하십시오. |
-| `Specified private subnet VLAN is on router `xyz`. 그러나 동일한 라우터에서 VLAN을 포함하는 `n`개의 사용 가능한 IP가 있는 공인 서브넷을 찾을 수 없습니다.` | 이 문제는 프로비저닝 중에 **이 계정의 공인 서브넷에서 할당** 옵션을 선택했기 때문에 발생합니다. | 대신 **IBM 시스템 풀에서 할당** 옵션을 선택하거나 IBM 지원 센터에 문의하십시오. |
+| `Specified private subnet VLAN is on router `xyz`. 그러나 동일한 라우터에서 `n`개의 사용 가능한 IP가 있는 공용 VLAN을 찾을 수 없습니다.` | 이 문제는 프로비저닝 중에 **이 계정의 공인 서브넷에서 할당** 옵션을 선택했기 때문에 발생합니다. | 대신 **IBM 시스템 풀에서 할당** 옵션을 선택하거나 IBM 지원 센터에 문의하십시오.|
+| `Specified private subnet VLAN is on router `xyz`. 그러나 동일한 라우터에서 VLAN을 포함하는 `n`개의 사용 가능한 IP가 있는 공인 서브넷을 찾을 수 없습니다.` | 이 문제는 프로비저닝 중에 **이 계정의 공인 서브넷에서 할당** 옵션을 선택했기 때문에 발생합니다. | 대신 **IBM 시스템 풀에서 할당** 옵션을 선택하거나 IBM 지원 센터에 문의하십시오.|
 | `Given new description must be a string.`| 올바르지 않은 설명을 입력했을 수 있습니다. | 255자 이하의 올바른 로드 밸런서 설명을 입력하십시오. |
-| `A billing item is required to process a cancellation for load balancer uuid=aaaa-bbbb-cccc-dddd.` | 계정의 비용 청구 정보가 누락되었거나 올바르지 않습니다. 로드 밸런서는 취소할 수 없습니다. | IBM 지원 센터에 문의하십시오. |
+| `A billing item is required to process a cancellation for load balancer uuid=aaaa-bbbb-cccc-dddd.` | 계정의 비용 청구 정보가 누락되었거나 올바르지 않습니다. 로드 밸런서는 취소할 수 없습니다. | IBM 지원 센터에 문의하십시오.|
 | `An internal error occurred. 데이터를 검색할 수 없습니다.` | 메트릭 데이터를 검색할 수 없습니다. | 페이지를 다시 로드하십시오. 문제가 지속되면 IBM 지원 센터에 문의하십시오. |
 | `Front-end port must be an integer between 1 and 65535 excluding the range 56500-56520.` | 56500-56520의 프론트 엔드 포트 번호를 입력했을 수 있습니다. | 1 - 65535의 고유한 포트 번호를 입력하십시오. 단, 56500 - 56520 범위는 제외하십시오. |
 | `Back-end port must be an integer.` | 올바르지 않은 백엔드 포트 값을 입력했을 수 있습니다. | 1 - 65535의 백엔드 포트 번호를 입력하십시오. |
-| `Back-end port must be an integer between 1 and 65535 excluding the range 56500-56520.` | 56500 - 56520 사이의 백엔드 포트를 입력했을 수 있습니다. | 1 - 65535의 백엔드 포트 번호를 입력하십시오. 단, 56500 - 56520 범위는 제외하십시오. |
+| `Back-end port must be an integer between 1 and 65535 excluding the range 56500-56520.` | 56500 - 56520 사이의 백엔드 포트를 입력했을 수 있습니다.| 1 - 65535의 백엔드 포트 번호를 입력하십시오. 단, 56500 - 56520 범위는 제외하십시오. |
 | `Backend protocol HTTP is not compatible with frontend protocol TCP.` | 호환되지 않는 백엔드 프로토콜과 프론트 엔드 프로토콜 조합을 선택했을 수 있습니다. | 다음 형식의 올바른 프론트 엔드와 백엔드 프로토콜 조합을 선택하십시오. `<br> HTTP-HTTP <br> HTTPS-HTTP <br> TCP-TCP` |
 | `Member weight <some value> is provided for member abcd-xxxx-yyyy-2222. The allowed weight value is 0-100 `| 올바르지 않은 가중치를 입력했을 수 있습니다. | 0 - 100의 가중치 값을 입력하십시오. |
-| `There was a problem fetching the servers.` | 네트워크 제한시간 문제 때문에 발생할 수 있습니다. | 페이지를 다시 로드하십시오. 문제가 지속되면 IBM 지원 센터에 문의하십시오. |
+| `There was a problem fetching the servers.` | 네트워크 제한시간 문제 때문에 발생할 수 있습니다. | 페이지를 다시 로드하십시오. 문제가 지속되면 IBM 지원 센터에 문의하십시오.|

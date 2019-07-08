@@ -4,6 +4,9 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: resources, server, application, instance, configure
+
+subcollection: loadbalancer-service
 
 ---
 
@@ -13,6 +16,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
 
 # Identificación de los recursos del servidor de aplicaciones
 {: #identifying-your-application-server-resources}
@@ -25,10 +30,12 @@ Estas instancias de servidor deben ser locales para el centro de datos en el que
 
 Pulse **Siguiente**.
 
-**NOTAS:** 
+Las **ponderaciones** del servidor solo son relevantes cuando se utiliza el método de equilibrio de carga **Round robin ponderado**. La ponderación predeterminada es 50 y el rango es de 0 a 100. Las ponderaciones están en gris en los otros métodos de equilibrio de carga.
+{: note}
 
-1. Las **ponderaciones** del servidor solo son relevantes cuando se utiliza el método de equilibrio de carga **Round robin ponderado**. La ponderación predeterminada es 50 y el rango es de 0 a 100. Las ponderaciones están en gris en los otros métodos de equilibrio de carga.
-2. Consulte [Limitaciones en el número de servidores de aplicaciones](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obtener más información sobre el límite máximo para el número de servidores de aplicaciones.
+Consulte [Limitaciones en el número de servidores de aplicaciones](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) para obtener más información sobre el límite máximo para el número de servidores de aplicaciones.
+{: tip}
 
 ## A continuación
+{: #what-s-next-3}
 [Revise el contenido](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-review-and-place-your-order) de su pedido antes de instalarlo.

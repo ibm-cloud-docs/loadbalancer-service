@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
+keywords: l7, layer 7, monitor, metrics, throughput, connection
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # IBM Cloud Load Balancer でのメトリックのモニター
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
-ロード・バランサーは以下のメトリックをモニターします。 
+ロード・バランサーは以下のメトリックをモニターします。
 
 * スループット
 * アクティブ接続数
@@ -26,7 +32,7 @@ lastupdated: "2018-11-12"
 これらのメトリックは、**「モニタリング」**タブを選択すると表示されるグラフとして視覚化されており、
 `getListenerTimeSeriesData` API を使用して時系列データ・ポイントとしてプログラムで使用可能です。
 
-各データ・ポイントには UNIX エポック時のタイム・スタンプと、そのタイム・スタンプの時刻に終了する時間間隔のメトリック値が含まれています。 ユーザーは、プロトコルと、メトリックが報告される時間間隔を指定できます。 
+各データ・ポイントには UNIX エポック時のタイム・スタンプと、そのタイム・スタンプの時刻に終了する時間間隔のメトリック値が含まれています。 ユーザーは、プロトコルと、メトリックが報告される時間間隔を指定できます。
 
 サポートされるプロトコルとしては、以下のものがあります。
 
@@ -40,7 +46,7 @@ lastupdated: "2018-11-12"
 
 プロトコルが *HTTP* の場合、HTTP トラフィックのスループットのみが報告されます。
 
-ユーザーは、メトリックが報告される時間間隔も指定することができます。 サポートされている時間間隔は以下のとおりです。 
+ユーザーは、メトリックが報告される時間間隔も指定することができます。 サポートされている時間間隔は以下のとおりです。
 
 * 1 時間
 * 6 時間
@@ -65,6 +71,7 @@ lastupdated: "2018-11-12"
 | 1 週間    | 12 時間 | 12 |
 | 2 週間  | 24 時間 | 12 |
 
-# メトリック・モニタリングを使用可能にする方法
+## メトリック・モニタリングを使用可能にする方法
+{: #how-to-enable-metrics-monitoring}
 
 モニタリング・メトリックを取得するには、SoftLayer アカウントを IBM© Cloud アカウントとリンクする必要があります。 詳しくは、[このトピック](/docs/account?topic=account-unifyingaccounts#link_accounts)を参照してください。

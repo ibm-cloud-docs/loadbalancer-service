@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: troubleshooting, problem, server, application
+
+subcollection: loadbalancer-service
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Application Server 疑難排解
 {: #application-server-troubleshooting}
@@ -20,6 +26,7 @@ lastupdated: "2018-11-12"
 本主題提供您在使用負載平衡器時可能遇到的一般問題相關資訊。
 
 ## 後端伺服器性能不佳
+{: #the-back-end-server-is-unhealthy}
 如果您的後端伺服器性能失敗，請嘗試驗證下列清單來嘗試並進行修正：
 
 * 已配置後端通訊協定的埠是否符合您應用程式正在接聽的埠？
