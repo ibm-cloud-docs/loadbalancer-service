@@ -18,11 +18,10 @@ IBM Cloud Load Balancer Service
     basic-load-balancing.md
 
     {: .topicgroup}
-    Using an IBM Cloud Load Balancer for elastic server load balancing
+    Using an elastic IBM Cloud Load Balancer for server load balancing
         reliability-guide.md
         begin-lb-config.md
         identify-app-resources.md
-        order-lb.md
         managing-lb.md
 
     custom-ciphers.md

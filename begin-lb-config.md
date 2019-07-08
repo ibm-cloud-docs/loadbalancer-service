@@ -26,7 +26,7 @@ subcollection: loadbalancer-service
 
 To begin creating your new IBM© Cloud Load Balancer, select **IBM Cloud Load Balancer** from the Load Balancer page of the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
 
-	<img src="images/CLB_Select_Service_PUP.png" alt="drawing" style="width: 800px;"/>
+<img src="images/CLB_Select_Service_PUP.png" alt="drawing" style="width: 800px;"/>
 
 When the configuration screen appears, perform the following procedure:
 
@@ -38,8 +38,8 @@ When the configuration screen appears, perform the following procedure:
 
 3. Select the datacenter where the load balancer instance will be created. 
 
-For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
-{: tip}
+	For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
+	{: tip}
 
 4. Select the type of load balancer you want to create from the options **Public** , **Private** or **Public to Public**. Refer to [IBM Cloud Load Balancer Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
@@ -52,7 +52,6 @@ For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loa
 	
 	This option only applies to **Public** load balancer types. If you select the option **Allocate from a public subnet in this account** you must ensure that you have at least two public IP's available in a public subnet in the same datacenter. In addition, ensure that traffic to TCP management port 56501, as well as your application's own ports, are not blocked by firewalls deployed on your public VLANs.
 	{: note}
-	
 
 ## What's Next
 {: #what-s-next}
