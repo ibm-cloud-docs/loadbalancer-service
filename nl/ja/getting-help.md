@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer のためのヘルプとサポート
+# {{site.data.keyword.loadbalancer_full}} のためのヘルプとサポート
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-IBM© Cloud Load Balancer サービスを使用しているときに問題や質問がある場合は、情報を検索したり、以下にリストしたいずれかのフォーラムで質問したりして、支援を得ることができます。 また、サポート・チケットをオープンすることも可能です。
+{{site.data.keyword.loadbalancer_full}} サービスを使用しているときに問題や質問がある場合は、情報を検索したり、以下にリストしたいずれかのフォーラムで質問したりして、支援を得ることができます。 また、サポート・チケットをオープンすることも可能です。
 
 フォーラムを使用して質問する場合は、IBM Cloud 開発チームの目に留まるように質問にタグを付けてください。
 
-* IBM Cloud Load Balancer サービスに関する技術的な質問がある場合は、[スタック・オーバーフロー](https://stackoverflow.com/search?q=lbaas+ibm-cloud)で質問を投稿し、質問に「lbaas」と「ibm-cloud」のタグを付けてください。
+* {{site.data.keyword.loadbalancer_full}} サービスに関する技術的な質問がある場合は、[スタック・オーバーフロー](https://stackoverflow.com/search?q=lbaas+ibm-cloud)で質問を投稿し、質問に「lbaas」と「ibm-cloud」のタグを付けてください。
 * サービスおよび開始手順に関する質問については、[IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/lbaas.html?smartspace=ibm-cloud) フォーラムを使用してください。 「lbaas」タグと「ibm-cloud」タグを含めてください。
 
 フォーラムの使用について詳しくは、[ヘルプの利用](https://{DomainName}/docs/get-support?topic=get-support-using-avatar)を参照してください。

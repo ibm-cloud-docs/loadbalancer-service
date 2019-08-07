@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# 配置 IBM Cloud Load Balancer 参数
+# 配置 {{site.data.keyword.loadbalancer_full}} 参数
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 [创建负载均衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)后，可以对其进行配置以实现弹性负载均衡。为此，请执行以下操作：
@@ -45,7 +45,7 @@ subcollection: loadbalancer-service
 	在初始配置时最多可以定义 2 个端口。日后创建服务实例后可添加更多端口。请参阅[端口数限制](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)，以获取有关允许的最大端口数的更多信息。
 {:note:}
 
-7. 如果选择后端协议为 HTTP，那么 IBM© Cloud Load Balancer 会终止入局 HTTPS（基于 SSL 的 HTTP）连接，可以通过明文 HTTP 与后端应用程序服务器通信，并从服务器卸载处理器密集型 SSL 任务。如果选择的后端协议为 HTTPS，那么 Load Balancer 与后端服务器之间的流量将会加密。您必须上传 SSL 证书。从下拉列表中选择一个可用的证书。  
+7. 如果选择后端协议为 HTTP，那么 {{site.data.keyword.loadbalancer_full}} 会终止入局 HTTPS（基于 SSL 的 HTTP）连接，可以通过明文 HTTP 与后端应用程序服务器通信，并从服务器卸载处理器密集型 SSL 任务。如果选择的后端协议为 HTTPS，那么 Load Balancer 与后端服务器之间的流量将会加密。您必须上传 SSL 证书。从下拉列表中选择一个可用的证书。  
 
 	<img src="images/lb-ssl-cert.png" alt="图样" style="width: 300px;"/>
 

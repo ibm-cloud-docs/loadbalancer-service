@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 오류 메시지 문제점 해결
 {: #error-message-troubleshooting}
 
-이 주제에서는 IBM© Cloud Load Balancer의 인스턴스를 작성/업데이트하는 동안 발생할 수 있는 일반적인 오류 메시지에 대한 정보를 제공합니다.
+이 주제에서는 {{site.data.keyword.loadbalancer_full}}의 인스턴스를 작성/업데이트하는 동안 발생할 수 있는 일반적인 오류 메시지에 대한 정보를 제공합니다.
 
 |오류 |설명  |솔루션  |
 | ------------- | ------------- | ----- |

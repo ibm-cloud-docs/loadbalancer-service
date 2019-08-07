@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Actualizaciones recientes de IBM Cloud Load Balancer
+# Actualizaciones recientes de {{site.data.keyword.loadbalancer_full}}
 {: #recent-updates-for-ibm-cloud-load-balancer}
 
-Descubra las características nuevas y actualizadas de IBM© Cloud Load Balancer.
+Descubra las características nuevas y actualizadas de {{site.data.keyword.loadbalancer_full}}.
 
 ## Febrero de 2019
 {: #february-2019}
@@ -31,7 +31,7 @@ Descubra las características nuevas y actualizadas de IBM© Cloud Load Balancer
 ### Registros de datos
 {: #data-logs}
 
-IBM Cloud Load Balancer ahora da soporte al reenvío de registros de datos. Con los registros de datos habilitados, los datos de registro del equilibrador de carga se reenviarán al [servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Los clientes pueden ver sus registros de datos desde el [servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.
+{{site.data.keyword.loadbalancer_full}} ahora da soporte al reenvío de registros de datos. Con los registros de datos habilitados, los datos de registro del equilibrador de carga se reenviarán al [servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Los clientes pueden ver sus registros de datos desde el [servicio IBM Cloud Log Analysis ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.
 
 ## Diciembre de 2018
 {: #december-2018}
@@ -39,7 +39,7 @@ IBM Cloud Load Balancer ahora da soporte al reenvío de registros de datos. Con 
 ### Cifrado de datos de fondo y reenvío de registros de datos
 {: #backend-encryption-and-data-log-forwarding}
 
-Ahora IBM Cloud Load Balancer da soporte al cifrado de fondo y a la posibilidad de reenviar sus registros de datos. El cifrado de fondo permite cifrar el tráfico de datos de extremo a extremo, incluido el tráfico entre el equilibrador de carga y los servidores de fondo. El reenvío de registros de datos le permite enviar registros de datos de los equilibradores de carga al servicio de análisis de registros de IBM Bluemix.
+Ahora {{site.data.keyword.loadbalancer_full}} da soporte al cifrado de fondo y a la posibilidad de reenviar sus registros de datos. El cifrado de fondo permite cifrar el tráfico de datos de extremo a extremo, incluido el tráfico entre el equilibrador de carga y los servidores de fondo. El reenvío de registros de datos le permite enviar registros de datos de los equilibradores de carga al servicio de análisis de registros de IBM Bluemix.
 
 ## Agosto de 2018
 {: #august-2018}
@@ -47,7 +47,7 @@ Ahora IBM Cloud Load Balancer da soporte al cifrado de fondo y a la posibilidad 
 ### Soporte de capa 7
 {: #layer-7-support-1}
 
-IBM Cloud Load Balancer ahora da soporte al equilibrio de carga de capa 7. Con el soporte de capa 7 (L7), el tráfico se puede redirigir a un URL, rechazar o distribuir a los miembros de la agrupación L7, incluidas las instancias de servidores nativos y virtuales. El tráfico de datos de entrada se clasifica mediante políticas y reglas de capa 7. Las políticas definen qué acción se debe realizar cuando el tráfico de datos coincide con las reglas asociadas.
+{{site.data.keyword.loadbalancer_full}} ahora da soporte al equilibrio de carga de capa 7. Con el soporte de capa 7 (L7), el tráfico se puede redirigir a un URL, rechazar o distribuir a los miembros de la agrupación L7, incluidas las instancias de servidores nativos y virtuales. El tráfico de datos de entrada se clasifica mediante políticas y reglas de capa 7. Las políticas definen qué acción se debe realizar cuando el tráfico de datos coincide con las reglas asociadas.
 
 Consulte [Equilibrio de carga de capa 7](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing) para obtener detalles adicionales.
 
@@ -57,16 +57,16 @@ Consulte [Equilibrio de carga de capa 7](/docs/infrastructure/loadbalancer-servi
 ### Escalado horizontal
 {: #horizontal-scaling}
 
-La capacidad de IBM Cloud Load Balancer ahora aumenta automáticamente cuando la carga aumenta y se reduce cuando la carga disminuye. Cuando crea el equilibrador de carga, empieza con dos dispositivos, pero el número de dispositivos puede aumentar hasta 16 (en el momento de escribir este documento) a medida que el sistema de supervisión detecta un incremento en la carga. Las direcciones IP de cada uno de los dispositivos activos se añaden como registros A DNS al nombre de dominio completo (FQDN) del equilibrador de carga.
+La capacidad de {{site.data.keyword.loadbalancer_full}} ahora aumenta automáticamente cuando la carga aumenta y se reduce cuando la carga disminuye. Cuando crea el equilibrador de carga, empieza con dos dispositivos, pero el número de dispositivos puede aumentar hasta 16 (en el momento de escribir este documento) a medida que el sistema de supervisión detecta un incremento en la carga. Las direcciones IP de cada uno de los dispositivos activos se añaden como registros A DNS al nombre de dominio completo (FQDN) del equilibrador de carga.
 
 ### Equilibrador de carga interno
 {: #internal-load-balancer-1}
 
-Ya está disponible una versión "interna" muy solicitada de nuestro IBM Cloud Load Balancer. Este equilibrador de carga no está expuesto públicamente, pero se puede seguir utilizando para equilibrar las aplicaciones dentro de sus redes privadas de IBM Cloud (en un despliegue de varios niveles, por ejemplo, tal como se muestra en la imagen).
+Ya está disponible una versión "interna" muy solicitada de nuestro {{site.data.keyword.loadbalancer_full}}. Este equilibrador de carga no está expuesto públicamente, pero se puede seguir utilizando para equilibrar las aplicaciones dentro de sus redes privadas de IBM Cloud (en un despliegue de varios niveles, por ejemplo, tal como se muestra en la imagen).
 
 ![Equilibrador de carga interno](./images/InternalLB.png)
 
-Es seguro y coherente con las versiones anteriores de IBM Cloud Load Balancer de la parte pública.
+Es seguro y coherente con las versiones anteriores de {{site.data.keyword.loadbalancer_full}} de la parte pública.
 
 ### Supervisión de métricas
 {: #monitoring-metrics-2}
@@ -88,6 +88,6 @@ Esta característica requiere que se enlacen las cuentas de IaaS y PaaS de IBM C
 
 Ahora puede personalizar las suites de cifrado que se utilizan cuando el equilibrador de carga está configurado para terminación SSL.
 
-Cuando habilita la terminación SSL en IBM Cloud Load Balancer (seleccionando **HTTPS** como protocolo frontal), se habilita un conjunto predeterminado y cuidadosamente seleccionado de suites de cifrado que se ajustan a las prácticas recomendadas de seguridad. IBM sigue de cerca las nuevas vulnerabilidades que se puedan descubrir y actualiza la lista en consecuencia. Esto, junto con las actualizaciones de seguridad de componentes de software y hardware, ayuda a mantener las aplicaciones seguras en todo momento.
+Cuando habilita la terminación SSL en {{site.data.keyword.loadbalancer_full}} (seleccionando **HTTPS** como protocolo frontal), se habilita un conjunto predeterminado y cuidadosamente seleccionado de suites de cifrado que se ajustan a las prácticas recomendadas de seguridad. IBM sigue de cerca las nuevas vulnerabilidades que se puedan descubrir y actualiza la lista en consecuencia. Esto, junto con las actualizaciones de seguridad de componentes de software y hardware, ayuda a mantener las aplicaciones seguras en todo momento.
 
 Consulte el tema sobre la [Suite de cifrado personalizado](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application) para obtener más información.

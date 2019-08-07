@@ -21,19 +21,19 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# IBM Cloud Load Balancer の価格設定
+# {{site.data.keyword.loadbalancer_full}} の価格設定
 {: #ibm-cloud-load-balancer-pricing}
 
-IBM© Cloud Load Balancer の価格設定は以下の 3 つのメトリックに基づいており、毎月計算されます。
+{{site.data.keyword.loadbalancer_full}} の価格設定は以下の 3 つのメトリックに基づいており、毎月計算されます。
 
 * サービス利用時間
 * 処理されるデータ
 * アウトバウンド・パブリック処理能力 (Egress)
 
-すべての価格は地域によって異なります。IBM Cloud Load Balancer サービスが消費するアウトバウンド・パブリック処理能力は、標準のデータ転送料金 [GB 当たり USD 0.09 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/bandwidth) に基づいて請求されます。
+すべての価格は地域によって異なります。{{site.data.keyword.loadbalancer_full}} サービスが消費するアウトバウンド・パブリック処理能力は、標準のデータ転送料金 [GB 当たり USD 0.09 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/bandwidth) に基づいて請求されます。
 {: note}
 
-次の表は、パブリック・ロード・バランシングに毎月 4500 GB を使用しているお客様向けに価格設定された IBM Cloud Load Balancer の例の詳細を示しています。
+次の表は、パブリック・ロード・バランシングに毎月 4500 GB を使用しているお客様向けに価格設定された {{site.data.keyword.loadbalancer_full}} の例の詳細を示しています。
 
 | | 月単位 | レート | コスト |
 | ------------- | ------------- | ------------- | ------------- |

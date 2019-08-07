@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# 탄력적인 서버 로드 밸런싱을 위해 IBM Cloud Load Balancer 사용
+# 탄력적인 서버 로드 밸런싱을 위해 {{site.data.keyword.loadbalancer_full}} 사용
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-IBM© Cloud Load Balancer 서비스는 비즈니스에 중요한 애플리케이션의 확장성 및 가용성을 향상시키는 데 도움을 줍니다. 애플리케이션 서버의 상태를 모니터하고 스마트 로드 밸런싱 메소드를 활용하여 여러 서버 간에 트래픽을 분배하며 변화하는 트래픽 로드를 처리하도록 동적으로 시스템 용량을 조정합니다.
+{{site.data.keyword.loadbalancer_full}} 서비스는 비즈니스에 중요한 애플리케이션의 확장성 및 가용성을 향상시키는 데 도움을 줍니다. 애플리케이션 서버의 상태를 모니터하고 스마트 로드 밸런싱 메소드를 활용하여 여러 서버 간에 트래픽을 분배하며 변화하는 트래픽 로드를 처리하도록 동적으로 시스템 용량을 조정합니다.
 
 ## 수행할 내용
 {: #what-you-ll-accomplish-2}

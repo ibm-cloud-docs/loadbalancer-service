@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="loadbalancer-service" category="network" audience="network" arm="3662751" href="/docs/infrastructure/loadbalancer-service?topic=infrastructure/loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="infrastructure/loadbalancer-service"}
-Servizio IBM Cloud Load Balancer
+Servizio {{site.data.keyword.loadbalancer_full}}
 
     {: .navgroup id="learn"}
     getting-started.md
@@ -18,7 +18,7 @@ Servizio IBM Cloud Load Balancer
     basic-load-balancing.md
 
     {: .topicgroup}
-    Utilizzo di un IBM Cloud Load Balancer per un bilanciamento elastico del carico del server
+    Utilizzo di un {{site.data.keyword.loadbalancer_full}} per un bilanciamento elastico del carico del server
         reliability-guide.md
         begin-lb-config.md
         identify-app-resources.md

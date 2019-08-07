@@ -21,19 +21,19 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# Precios de IBM Cloud Load Balancer
+# Precios de {{site.data.keyword.loadbalancer_full}}
 {: #ibm-cloud-load-balancer-pricing}
 
-Los precios de IBM© Cloud Load Balancer se basan en las tres métricas siguientes, calculadas mensualmente:
+Los precios de {{site.data.keyword.loadbalancer_full}} se basan en las tres métricas siguientes, calculadas mensualmente:
 
 * Horas de uso de servicio
 * Datos procesados
 * Ancho de banda pública de salida (Egress)
 
-Todos los precios varían según las regiones geográficas. El ancho de banda público de salida consumido por el servicio IBM Cloud Load Balancer se factura según el cargo por transferencia de datos estándar de [0,09 $ por GB ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/bandwidth).
+Todos los precios varían según las regiones geográficas. El ancho de banda público de salida consumido por el servicio {{site.data.keyword.loadbalancer_full}} se factura según el cargo por transferencia de datos estándar de [0,09 $ por GB ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/bandwidth).
 {: note}
 
-En la siguiente gráfica se detalla un ejemplo de IBM Cloud Load Balancer con los precios para un cliente que utiliza 4500 GB al mes para el equilibrio de carga público:
+En la siguiente gráfica se detalla un ejemplo de {{site.data.keyword.loadbalancer_full}} con los precios para un cliente que utiliza 4500 GB al mes para el equilibrio de carga público:
 
 | | Mensual | Tarifa | Coste |
 | ------------- | ------------- | ------------- | ------------- |

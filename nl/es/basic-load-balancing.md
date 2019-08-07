@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Tareas básicas de IBM Cloud Load Balancer
+# Tareas básicas de {{site.data.keyword.loadbalancer_full}}
 {: #performing-ibm-cloud-load-balancer-basics}
 
-El servicio IBM© IBM Cloud Load Balancer distribuye el tráfico entre varias instancias de servidor (desde el servidor nativo y el servidor virtual) residentes en el sistema local, dentro del mismo centro de datos.
+El servicio IBM© {{site.data.keyword.loadbalancer_full}} distribuye el tráfico entre varias instancias de servidor (desde el servidor nativo y el servidor virtual) residentes en el sistema local, dentro del mismo centro de datos.
 
 ## Equilibrador de carga pública
 {: #public-load-balancer}

@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Performing IBM Cloud Load Balancer Basics
+# Performing Load Balancer Basics
 {: #ibm-cloud-load-balancer-basics}
 
-The IBM© Cloud load balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
+The {{site.data.keyword.loadbalancer_full}} service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
 
 ## Public to Private Load Balancer
 {: #public-private-load-balancer}
@@ -90,8 +90,7 @@ The following three load balancing methods are available for distributing traffi
 
 	As an example, if there are three application servers A, B and C, and their weights are customized to 60, 60 and 30 respectively, then servers A and B will receive an equal number of connections, while server C will receive half that number of connections.
 
-
-	Re-setting a server weight to ‘0’ means no new connections will be forwarded to that server, but any existing traffic will  continue to flow as long as it is active. Using a weight of ‘0’ can help bring down a server gracefully and remove it from service rotation.
+	Re-setting a server weight to ‘0’ means no new connections will be forwarded to that server, but any existing traffic will continue to flow as long as it is active. Using a weight of ‘0’ can help bring down a server gracefully and remove it from service rotation.
 	{: note}
 
 	The server weight values are applicable only with the 'weighted round robin' method. They are ignored with 'round robin' and 'least connections' load balancing methods.

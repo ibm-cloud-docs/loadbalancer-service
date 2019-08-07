@@ -30,7 +30,7 @@ SoftLayer API (SLAPI) により、カスタマー・ポータルの多くの機�
 
 SoftLayer API (SLAPI) はリモート・プロシージャー・コール・システムです。 各呼び出しでは、API エンドポイントにデータが送信され、それに対して構造化データを受信します。 SLAPI を使用したデータの送受信に使用される形式は、選択した API の実装方法によって異なります。 SLAPI は現在、データ伝送に SOAP、XML-RPC、または REST を使用しています。
 
-SoftLayer API、IBM© Cloud Load Balancer サービス API については、SoftLayer Development Network にある以下の資料を参照してください。
+SoftLayer API、{{site.data.keyword.loadbalancer_full}} サービス API については、SoftLayer Development Network にある以下の資料を参照してください。
 * [Getting Started with the SoftLayer API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://softlayer.github.io/article/getting-started/){: new_window}
 * [SoftLayer_Product_Package API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: new_window}
 * [SoftLayer_Network_LBaaS_LoadBalancer API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: new_window}

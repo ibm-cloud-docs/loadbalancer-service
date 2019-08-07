@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # 로드 밸런서 프로비저닝 문제점 해결
 {: #load-balancer-provisioning-troubleshooting}
 
-이 주제에서는 IBM© Cloud Load Balancer의 새 인스턴스를 작성하는 동안 발생할 수 있는 일반적인 문제에 대한 정보를 제공합니다.
+이 주제에서는 {{site.data.keyword.loadbalancer_full}}의 새 인스턴스를 작성하는 동안 발생할 수 있는 일반적인 문제에 대한 정보를 제공합니다.
 
 ## 서브넷에 IP 주소가 충분하지 않음
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer에는 사설 서브넷의 두 개 이상의 사용 가능한 IP 주소가 필요합니다. 또한 로드 밸런서가 공용 로드 밸런서이고 **IBM 시스템 풀** 옵션이 사용되지 않으면 공인 서브넷에서도 두 개 이상의 사용 가능한 IP 주소가 필요합니다.
+{{site.data.keyword.loadbalancer_full}}에는 사설 서브넷의 두 개 이상의 사용 가능한 IP 주소가 필요합니다. 또한 로드 밸런서가 공용 로드 밸런서이고 **IBM 시스템 풀** 옵션이 사용되지 않으면 공인 서브넷에서도 두 개 이상의 사용 가능한 IP 주소가 필요합니다.
 
 아래 단계에 따라 서브넷에 사용 가능한 IP가 있는지 확인하십시오.
 

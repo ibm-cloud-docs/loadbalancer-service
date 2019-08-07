@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Surveillance des métriques avec l'équilibreur de charge IBM Cloud Load Balancer
+# Surveillance des métriques avec l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 L'équilibreur de charge surveille les métriques suivantes :

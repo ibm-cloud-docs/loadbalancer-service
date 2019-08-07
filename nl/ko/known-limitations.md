@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer의 알려진 문제와 제한사항
+# {{site.data.keyword.loadbalancer_full}}의 알려진 문제와 제한사항
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-이 절에는 현재 알려진 문제점 및 IBM© Cloud Load Balancer Service의 제한사항에 대한 정보가 제공됩니다.
+이 절에는 현재 알려진 문제점 및 {{site.data.keyword.loadbalancer_full}} Service의 제한사항에 대한 정보가 제공됩니다.
 
 ## 알려진 문제점
 {: #known-issues}
-IBM Cloud Load Balancer Service에는 다음 문제점이 있습니다.
+{{site.data.keyword.loadbalancer_full}} Service에는 다음 문제점이 있습니다.
 
 * 사소한 문제점 - 서버 인스턴스의 **편집** 단추와 프로토콜 탭은 모든 항목에 적용되고, 선택란을 사용하여 선택한 행으로 제한되지 않습니다.
 * 사소한 문제점 - 로드 밸런서 서비스의 초기 작성 중에 여러 화면을 앞뒤로 이동하면 사용자 정의 상태 검사 설정이 유실됩니다.
@@ -37,7 +37,7 @@ IBM Cloud Load Balancer Service에는 다음 문제점이 있습니다.
 
 ## 알려진 제한사항
 {: #known-limits}
-IBM Cloud Load Balancer Service에는 다음 제한사항이 있습니다.
+{{site.data.keyword.loadbalancer_full}} Service에는 다음 제한사항이 있습니다.
 
 * 최대 가상 포트/프로토콜 수 - 10
 * 로드 밸런서 뒤의 최대 서버 수 - 50

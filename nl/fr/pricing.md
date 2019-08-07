@@ -21,19 +21,19 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# Tarification de l'équilibreur de charge IBM Cloud Load Balancer
+# Tarification de l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #ibm-cloud-load-balancer-pricing}
 
-La tarification du service IBM© Cloud Load Balancer est basée sur les trois métriques suivantes, calculées mensuellement :
+La tarification du service {{site.data.keyword.loadbalancer_full}} est basée sur les trois métriques suivantes, calculées mensuellement :
 
 * Heures d'utilisation du service
 * Données traitées
 * Bande passante publique sortante (Egress)
 
-Tous les prix varient en fonction des régions géographiques. La bande passante publique sortante consommée par le service IBM Cloud Load Balancer est facturée sur la base des frais de transfert de données standard fixés à [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth).
+Tous les prix varient en fonction des régions géographiques. La bande passante publique sortante consommée par le service {{site.data.keyword.loadbalancer_full}} est facturée sur la base des frais de transfert de données standard fixés à [0,09 $ par Go ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/bandwidth).
 {: note}
 
-Le graphique suivant décrit en détail un exemple de service IBM Cloud Load Balancer facturé pour un client qui utilise 4500 Go par mois d'équilibrage de charge public :
+Le graphique suivant décrit en détail un exemple de service {{site.data.keyword.loadbalancer_full}} facturé pour un client qui utilise 4500 Go par mois d'équilibrage de charge public :
 
 | | Tous les mois | Tarif | Coût |
 | ------------- | ------------- | ------------- | ------------- |

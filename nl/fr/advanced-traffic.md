@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Gestion avancée du trafic avec l'équilibreur de charge IBM Cloud Load Balancer
+# Gestion avancée du trafic avec l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-Cette section présente les différentes fonctionnalités de gestion de trafic avancée disponibles dans le service IBM Cloud Load Balancer. 
+Cette section présente les différentes fonctionnalités de gestion de trafic avancée disponibles dans le service {{site.data.keyword.loadbalancer_full}}. 
 
 ## Nombre max. de connexions
 {: #max-connections}

@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer パラメーターの構成
+# {{site.data.keyword.loadbalancer_full}} パラメーターの構成
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 [ロード・バランサーの作成](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)後、柔軟なロード・バランシングのために構成することができます。構成するには、以下の手順に従ってください。
@@ -45,7 +45,7 @@ subcollection: loadbalancer-service
 	最大 2 ポートを初期構成時に定義できます。 サービス・インスタンス作成後にポートを追加できます。 許容される最大ポート数について詳しくは、[ポート数の制限](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-)に関する個所を参照してください。
 {:note:}
 
-7. IBM© Cloud Load Balancer は、着信 HTTPS (HTTP over SSL) 接続を終了し、プレーン・テキスト HTTP でバックエンド・アプリケーション・サーバーと通信できるので、バックエンド・プロトコルに HTTP が選択されている場合にはプロセッサー集約的な SSL タスクによるサーバーへの負荷を軽減します。 選択されているバックエンド・プロトコルが HTTPS の場合、トラフィックはロード・バランサーとバックエンド・サーバーの間で暗号化されます。 SSL 証明書をアップロードする必要があります。 ドロップダウン・リストから、使用可能な証明書のうちの 1 つを選択してください。  
+7. {{site.data.keyword.loadbalancer_full}} は、着信 HTTPS (HTTP over SSL) 接続を終了し、プレーン・テキスト HTTP でバックエンド・アプリケーション・サーバーと通信できるので、バックエンド・プロトコルに HTTP が選択されている場合にはプロセッサー集約的な SSL タスクによるサーバーへの負荷を軽減します。 選択されているバックエンド・プロトコルが HTTPS の場合、トラフィックはロード・バランサーとバックエンド・サーバーの間で暗号化されます。 SSL 証明書をアップロードする必要があります。 ドロップダウン・リストから、使用可能な証明書のうちの 1 つを選択してください。  
 
 	<img src="images/lb-ssl-cert.png" alt="描画" style="width: 300px;"/>
 

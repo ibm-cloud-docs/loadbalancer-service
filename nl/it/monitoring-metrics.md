@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Monitoraggio delle metriche con IBM Cloud Load Balancer
+# Monitoraggio delle metriche con {{site.data.keyword.loadbalancer_full}}
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 Il programma di bilanciamento del carico monitora le seguenti metriche:

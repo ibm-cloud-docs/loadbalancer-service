@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Bilanciamento del carico L7 (Livello 7)
 {: #layer-7-load-balancing}
 
-Il servizio IBM© Cloud Load Balancer distribuisce il traffico tra più istanze server, inclusi bare-metal e VSI, utilizzando i dati L7 (livello applicazione).
+Il servizio {{site.data.keyword.loadbalancer_full}} distribuisce il traffico tra più istanze server, inclusi bare-metal e VSI, utilizzando i dati L7 (livello applicazione).
 
  * Il traffico dati da distribuire viene classificato utilizzando politiche e regole.
  * Le politiche definiscono quale azione eseguire quando il traffico dati soddisfa tutte le regole associate a una politica.

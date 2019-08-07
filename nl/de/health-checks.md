@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Statusprüfungen mit IBM Cloud Load Balancer durchführen
+# Statusprüfungen mit {{site.data.keyword.loadbalancer_full}} durchführen
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 Die Definitionen der Statusprüfungen sind für jeden der Back-End-Anwendungsports obligatorisch. Der Port und das Protokoll, die in der Konfiguration für die Statusprüfung definiert sind, müssen mit dem definierten Back-End-Port und -Protokoll identisch sein; andernfalls wird die Konfiguration abgelehnt. 

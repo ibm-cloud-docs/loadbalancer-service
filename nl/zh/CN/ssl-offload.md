@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# 使用 IBM Cloud Load Balancer 执行 SSL 卸载
+# 使用 {{site.data.keyword.loadbalancer_full}} 执行 SSL 卸载
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 对于所有入局 HTTPS 连接，负载均衡器服务会终止 SSL 连接并与后端服务器建立明文 HTTP 通信。CPU 密集型 SSL 握手和加密/解密任务将从后端服务器转移开，从而允许它们使用其所有 CPU 周期来处理应用程序流量。

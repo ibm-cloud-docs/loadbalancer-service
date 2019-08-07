@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Offload SSL con IBM Cloud Load Balancer
+# Offload SSL con {{site.data.keyword.loadbalancer_full}}
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Per tutte le connessioni HTTPS in entrata, il servizio del programma di bilanciamento del carico termina la connessione SSL e stabilisce una comunicazione HTTP di testo semplice con il server di backend. Gli handshake SSL con uso intensivo di CPU e le attività di crittografia/decrittografia sono stati spostati dai server di backend, consentendo loro di utilizzare i propri cicli di CPU per elaborare il traffico dell'applicazione.

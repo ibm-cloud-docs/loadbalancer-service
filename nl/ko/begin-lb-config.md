@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer 매개변수 구성
+# {{site.data.keyword.loadbalancer_full}} 매개변수 구성
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 [로드 밸런서를 작성](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started)한 후 탄력적인 로드 밸런싱을 위해 로드 밸런서를 구성할 수 있습니다. 이를 위해서는 다음을 수행하십시오.

@@ -44,7 +44,7 @@ Data logs are only sent if Softlayer and IBM Cloud accounts are linked. Select t
 ## Log Output Examples
 {: #log-output-examples}
 
-The following output is an example of an IBM Cloud Load Balancer data log:
+The following output is an example of an {{site.data.keyword.loadbalancer_full}} data log:
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

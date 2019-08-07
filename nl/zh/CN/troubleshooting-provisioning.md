@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # Load Balancer 供应故障诊断
 {: #load-balancer-provisioning-troubleshooting}
 
-本主题提供有关在创建 IBM© Cloud Load Balancer 新实例时可能会遇到的常见问题的信息。
+本主题提供有关在创建 {{site.data.keyword.loadbalancer_full}} 新实例时可能会遇到的常见问题的信息。
 
 ## 子网中的 IP 地址不足
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer 至少需要其专用子网有两个可用 IP 地址。此外，如果 Load Balancer 是公共负载均衡器，并且未使用 **IBM 系统池**选项，那么还需要公用子网中至少有两个可用 IP 地址。
+{{site.data.keyword.loadbalancer_full}} 至少需要其专用子网有两个可用 IP 地址。此外，如果 Load Balancer 是公共负载均衡器，并且未使用 **IBM 系统池**选项，那么还需要公用子网中至少有两个可用 IP 地址。
 
 遵循以下步骤检查子网中是否有可用 IP。
 

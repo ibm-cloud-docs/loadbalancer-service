@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# 使用 IBM Cloud Load Balancer 監視度量值
+# 使用 {{site.data.keyword.loadbalancer_full}} 監視度量值
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 負載平衡器會監視下列度量值：

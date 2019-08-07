@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Monitorando métricas com o IBM Cloud Load Balancer
+# Monitorando métricas com o {{site.data.keyword.loadbalancer_full}}
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 O balanceador de carga monitora as métricas a seguir:

@@ -23,11 +23,11 @@ subcollection: loadbalancer-service
 # Known Issues and Limitations with IBM Cloud Load Balancer
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-This topic provides information on the currently known issues and limitations with the IBM© Cloud Load Balancer Service.
+This topic provides information on the currently known issues and limitations with the {{site.data.keyword.loadbalancer_full}} Service.
 
 ## Known Issues
 {: #known-issues}
-The IBM Cloud Load Balancer Service currently has the following issues:
+The {{site.data.keyword.loadbalancer_full}} Service currently has the following issues:
 
 * Minor - The **Edit** button in the server instances and protocols tabs apply to all entries and is not restricted to rows selected using a checkbox.
 * Minor - During the initial creation of the load balancer service, you will lose your custom health check settings if you go back and forth between various screens.
@@ -37,7 +37,7 @@ The IBM Cloud Load Balancer Service currently has the following issues:
 
 ## Known Limitations
 {: #known-limits}
-The IBM Cloud Load Balancer Service currently has the following limitations:
+The {{site.data.keyword.loadbalancer_full}} Service currently has the following limitations:
 
 * Maximum number of virtual ports/protocols - 10
 * Maximum number of servers behind load balancer - 50

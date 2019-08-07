@@ -21,19 +21,19 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# IBM Cloud Load Balancer 定价
+# {{site.data.keyword.loadbalancer_full}} 定价
 {: #ibm-cloud-load-balancer-pricing}
 
-IBM© Cloud Load Balancer 定价基于以下三个度量值，每月进行计算：
+{{site.data.keyword.loadbalancer_full}} 定价基于以下三个度量值，每月进行计算：
 
 * 服务使用小时数
 * 已处理数据
 * 出站公共带宽 (Egress)
 
-所有价格因地理区域而异。IBM Cloud Load Balancer 服务使用的出站公共带宽根据标准数据传输费用 [0.09 美元/GB ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/bandwidth) 进行计费。
+所有价格因地理区域而异。{{site.data.keyword.loadbalancer_full}} 服务使用的出站公共带宽根据标准数据传输费用 [0.09 美元/GB ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/bandwidth) 进行计费。
 {: note}
 
-以下图表详细描述了 IBM Cloud Load Balancer 对每月使用 4500 GB 公共负载均衡的客户进行定价的示例：
+以下图表详细描述了 {{site.data.keyword.loadbalancer_full}} 对每月使用 4500 GB 公共负载均衡的客户进行定价的示例：
 
 | | 每月| 速率 | 成本|
 | ------------- | ------------- | ------------- | ------------- |

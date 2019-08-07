@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# IBM Cloud Load Balancer の使用開始
+# {{site.data.keyword.loadbalancer_full}} の使用開始
 {: #getting-started}
 
-IBM© Cloud Load Balancer の使用を開始するには、主に次の 2 つの項目が必要です。
+{{site.data.keyword.loadbalancer_full}} の使用を開始するには、主に次の 2 つの項目が必要です。
 
 * IBM のアカウント: [IBMid ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * IBM サーバー ([ベア・メタル](/docs/bare-metal?topic=bare-metal-about)または[仮想サーバー・インスタンス (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen))
@@ -36,7 +36,7 @@ IBM© Cloud Load Balancer の使用を開始するには、主に次の 2 つの
 ## ロード・バランサーを注文する
 {: #ordering-a-load-balancer}
 
-IBM Cloud Load Balancer サービスを注文するには、[IBM Cloud カタログ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window} から**「IBM Cloud Load Balancer」**を選択します。次に、**「作成」**をクリックして、以下の手順を実行します。
+{{site.data.keyword.loadbalancer_full}} サービスを注文するには、[IBM Cloud カタログ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window} から**「{{site.data.keyword.loadbalancer_full}}」**を選択します。次に、**「作成」**をクリックして、以下の手順を実行します。
 
 1. 名前および説明など、基本的なサービス・パラメーターを定義します。
 2. データ・センターを選択します。
@@ -70,4 +70,4 @@ IBM Cloud Load Balancer サービスを注文するには、[IBM Cloud カタロ
 新しく作成したロード・バランサーは、このリストにすぐに表示されない場合があります。数分後、新しいロード・バランサーはグレイで表示され、そのステータスは `Offline` になります。さらに数分後、新しいロード・バランサーは緑色で表示され、ステータスが `Online` になっていることが示されます。画面を最新表示しないと、これらの変更が表示されない場合があります。
 {: note}
 
-新しい Cloud Load Balancer のステップバイステップの構成手順については、[柔軟なサーバー・ロード・バランシングのための IBM Cloud Load Balancer の使用法](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)を参照してください。
+新しい Cloud Load Balancer のステップバイステップの構成手順については、[柔軟なサーバー・ロード・バランシングのための {{site.data.keyword.loadbalancer_full}} の使用法](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)を参照してください。

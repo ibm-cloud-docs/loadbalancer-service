@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Diagnostics d'intégrité avec l'équilibreur de charge IBM Cloud Load Balancer
+# Diagnostics d'intégrité avec l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 Les définitions de diagnostic d'intégrité sont obligatoires pour chacun des ports d'application de back end. Le port/protocole sélectionné dans la configuration du diagnostic d'intégrité doit correspondre au port/protocole de back end, faute de quoi la configuration est rejetée.

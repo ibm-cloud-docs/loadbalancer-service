@@ -41,7 +41,7 @@ subcollection: loadbalancer-service
 ## 日誌輸出範例
 {: #log-output-examples}
 
-下列輸出是 IBM Cloud Load Balancer 資料日誌的範例：
+下列輸出是 {{site.data.keyword.loadbalancer_full}} 資料日誌的範例：
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

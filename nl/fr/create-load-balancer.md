@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Création d'un équilibreur de charge IBM Cloud Load Balancer
+# Création d'un équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #creating-an-ibm-cloud-load-balancer}
 
 Pour créer un service d'équilibreur de charge IBM© Cloud, procédez comme suit :

@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Esecuzione dei controlli di integrità con IBM Cloud Load Balancer
+# Esecuzione dei controlli di integrità con {{site.data.keyword.loadbalancer_full}}
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 Le definizioni del controllo di integrità sono obbligatorie per ogni porta dell'applicazione di backend. La porta e il protocollo nella configurazione del controllo di integrità devono corrispondere alla porta e al protocollo di backend, altrimenti la configurazione viene rifiutata.

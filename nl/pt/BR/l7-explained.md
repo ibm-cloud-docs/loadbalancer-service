@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Balanceamento de carga da Camada 7
 {: #layer-7-load-balancing}
 
-O IBM© Cloud Load Balancer Service distribui o tráfego entre múltiplas instâncias do servidor, incluindo instâncias bare-metal e de servidor virtual, usando dados da Camada 7 (camada de aplicativo).
+O {{site.data.keyword.loadbalancer_full}} Service distribui o tráfego entre múltiplas instâncias do servidor, incluindo instâncias bare-metal e de servidor virtual, usando dados da Camada 7 (camada de aplicativo).
 
  * O tráfego de dados a ser distribuído é classificado usando políticas e regras.
  * As políticas definem a ação a ser tomada quando o tráfego de dados corresponde a todas as regras associadas a uma política.

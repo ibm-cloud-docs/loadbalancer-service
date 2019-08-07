@@ -26,7 +26,7 @@ Die SoftLayer-API (SLAPI) unterstützt viele Funktionen im Kundenportal. Im Allg
 
 Die SoftLayer-API (SLAPI) ist ein Remote Procedure Call-System. Bei jedem Aufruf werden Daten zum API-Endpunkt gesendet und anschließend strukturierte Daten empfangen. Welches Format zum Senden und Empfangen der Daten mit der SLAPI verwendet wird, hängt von der jeweils ausgewählten Implementierung der API ab. Von der SLAPI werden derzeit SOAP, XML-RPC und REST für die Datenübertragung verwendet.
 
-Weitere Informationen zur SoftLayer-API und zu den IBM© Cloud Load Balancer Service-APIs finden Sie in den folgenden Ressourcen im SoftLayer Development Network:
+Weitere Informationen zur SoftLayer-API und zu den {{site.data.keyword.loadbalancer_full}} Service-APIs finden Sie in den folgenden Ressourcen im SoftLayer Development Network:
 * [Einführung in die SoftLayer-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://softlayer.github.io/article/getting-started/){: new_window}
 * [SoftLayer_Product_Package-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: new_window}
 * [SoftLayer_Network_LBaaS_LoadBalancer-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: new_window}

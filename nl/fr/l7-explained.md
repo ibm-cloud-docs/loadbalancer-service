@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Equilibrage de charge de couche 7
 {: #layer-7-load-balancing}
 
-Le service IBM© Cloud Load Balancer répartit le trafic entre plusieurs instances de serveur, y compris les instances de serveur virtuel et bare metal, en utilisant des données de couche 7 (couche d'application).
+Le service {{site.data.keyword.loadbalancer_full}} répartit le trafic entre plusieurs instances de serveur, y compris les instances de serveur virtuel et bare metal, en utilisant des données de couche 7 (couche d'application).
 
  * Le trafic de données à répartir est classifié à l'aide de politiques et de règles.
  * Les règles définissent l'action à effectuer lorsque le trafic de données correspond à toutes les règles associées à une politique.

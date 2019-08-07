@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Outros recursos do IBM Cloud Load Balancer
+# Outros recursos do {{site.data.keyword.loadbalancer_full}}
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 Esses recursos são criados pela IBM© e alguns de nossos parceiros e clientes.
@@ -29,4 +29,4 @@ Esses recursos são criados pela IBM© e alguns de nossos parceiros e clientes.
 ## Blogs
 {: #lb-blogs}
 
- * [Segurança aprimorada e mais: o mais recente para o IBM Cloud Load Balancer, por Jay Kidambi e Allan Hu ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+ * [Segurança aprimorada e mais: o mais recente para o {{site.data.keyword.loadbalancer_full}}, por Jay Kidambi e Allan Hu ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

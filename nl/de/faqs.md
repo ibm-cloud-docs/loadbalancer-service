@@ -15,10 +15,10 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# Häufig gestellte Fragen für IBM Cloud Load Balancer
+# Häufig gestellte Fragen für {{site.data.keyword.loadbalancer_full}}
 {: #faqs-for-ibm-cloud-load-balancer}
 
-Dieser Abschnitt enthält Antworten auf einige häufig gestellte Fragen zum IBM© Cloud Load Balancer-Service.
+Dieser Abschnitt enthält Antworten auf einige häufig gestellte Fragen zum {{site.data.keyword.loadbalancer_full}}-Service.
 
 ## Wie viele Lastausgleichsoptionen stehen in {{site.data.keyword.BluSoftlayer_notm}} zur Verfügung?
 {:faq}
@@ -66,7 +66,7 @@ Es wird empfohlen, den Lastenausgleichsservice und die Recheninstanzen lokal in 
 ## Welche TLS-Version wird mit der SSL-Auslagerung unterstützt?
 {:faq}
 
-Vom IBM Cloud Load Balancer-Service wird TLS 1.2 mit SSL-Terminierung unterstützt.
+Vom {{site.data.keyword.loadbalancer_full}}-Service wird TLS 1.2 mit SSL-Terminierung unterstützt.
 
 In der folgenden Liste werden die unterstützten Verschlüsselungen (in der Reihenfolge ihrer Priorität) aufgeführt:  
 
@@ -84,7 +84,7 @@ In der folgenden Liste werden die unterstützten Verschlüsselungen (in der Reih
 
 Derzeit können Sie bis zu 50 Serviceinstanzen erstellen. Falls Sie weitere Instanzen benötigen, wenden Sie sich an den IBM Support. 
 
-## Kann der IBM Cloud Load Balancer-Service mit VMWare verwendet werden?
+## Kann der {{site.data.keyword.loadbalancer_full}}-Service mit VMWare verwendet werden?
 {:faq}
 
 Virtuelle VMware-Maschinen, denen portierbare private SoftLayer-Adressen zugeordnet sind, können als Back-End-Server für die Lastausgleichsfunktion angegeben werden. Diese Funktion ist derzeit nur bei Verwendung der API verfügbar, nicht jedoch in der Webbenutzerschnittstelle. Portierbare private IPs, die mithilfe der API hinzugefügt wurden, werden in der grafischen Benutzerschnittstelle mit der Kennzeichnung 'Unbekannt' angezeigt, da sie nicht von SoftLayer zugewiesen werden. Beachten Sie, dass diese Art der Konfiguration auch mit anderen Hypervisoren wie Xen und KVM verwendet werden kann.
@@ -121,4 +121,4 @@ Derzeit ist die Unterstützung für Layer 7 nur über öffentliche APIs verfügb
 ## Welche Informationen benötige ich für ein Support-Ticket?
 {:faq}
 
-Geben Sie für ein Support-Ticket den Produktnamen ("IBM Cloud Load Balancer"), die UUID Ihrer Lastausgleichsfunktion (wenn möglich) und Ihre Softlayer-Kontonummer an. Die UUID finden Sie in der URL, nachdem Sie die Übersichtsseite der entsprechenden Lastausgleichsfunktion aufgerufen haben.
+Geben Sie für ein Support-Ticket den Produktnamen ("{{site.data.keyword.loadbalancer_full}}"), die UUID Ihrer Lastausgleichsfunktion (wenn möglich) und Ihre Softlayer-Kontonummer an. Die UUID finden Sie in der URL, nachdem Sie die Übersichtsseite der entsprechenden Lastausgleichsfunktion aufgerufen haben.

@@ -24,7 +24,7 @@ subcollection: loadbalancer-service
 # Selecting the service and configuring basic parameters
 {: #configuring-ibm-cloud-load-balancer-basic-parameters}
 
-To begin creating your new IBM© Cloud Load Balancer, select **IBM Cloud Load Balancer** from the Load Balancer page of the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
+To begin creating your new {{site.data.keyword.loadbalancer_full}}, select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
 
 <img src="images/CLB_Select_Service_PUP.png" alt="drawing" style="width: 800px;"/>
 
@@ -41,7 +41,7 @@ When the configuration screen appears, perform the following procedure:
 	For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
 	{: tip}
 
-4. Select the type of load balancer you want to create from the options **Public** , **Private** or **Public to Public**. Refer to [IBM Cloud Load Balancer Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
+4. Select the type of load balancer you want to create from the options **Public** , **Private** or **Public to Public**. Refer to [{{site.data.keyword.loadbalancer_full}} Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
 5. Select the subnet where you want to deploy your new load balancer. 
 	

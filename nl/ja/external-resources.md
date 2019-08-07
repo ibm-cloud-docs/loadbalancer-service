@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer のための他のリソース
+# {{site.data.keyword.loadbalancer_full}} のための他のリソース
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 以下の資料は、IBM© および IBM のパートナーおよびお客様によって作成されたものです。
@@ -29,4 +29,4 @@ subcollection: loadbalancer-service
 ## ブログ
 {: #lb-blogs}
 
- * [Improved security and More: The latest for IBM Cloud Load Balancer (Jay Kidambi および Allan Hu 著) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+ * [Improved security and More: The latest for {{site.data.keyword.loadbalancer_full}} (Jay Kidambi および Allan Hu 著) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

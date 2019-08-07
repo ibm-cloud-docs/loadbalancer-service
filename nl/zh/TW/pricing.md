@@ -21,19 +21,19 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# IBM Cloud Load Balancer 定價
+# {{site.data.keyword.loadbalancer_full}} 定價
 {: #ibm-cloud-load-balancer-pricing}
 
-IBM© Cloud Load Balancer 定價是根據下列三個度量值，每月計算：
+{{site.data.keyword.loadbalancer_full}} 定價是根據下列三個度量值，每月計算：
 
 * 服務使用小時數
 * 處理的資料
 * 出埠公用頻寬 (Egress)
 
-所有價格會依地理區域而有所不同。IBM Cloud Load Balancer 服務所耗用的「出埠」公用頻寬是根據標準資料傳送費用（即[每 GB 美金 0.09 元 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/bandwidth)）來計費。
+所有價格會依地理區域而有所不同。{{site.data.keyword.loadbalancer_full}} 服務所耗用的「出埠」公用頻寬是根據標準資料傳送費用（即[每 GB 美金 0.09 元 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/bandwidth)）來計費。
 {: note}
 
-下圖詳述 IBM Cloud Load Balancer 針對每個月使用 4500 GB 進行公用負載平衡之客戶定價的範例：
+下圖詳述 {{site.data.keyword.loadbalancer_full}} 針對每個月使用 4500 GB 進行公用負載平衡之客戶定價的範例：
 
 | | 每月 | 速率 | 成本 |
 | ------------- | ------------- | ------------- | ------------- |

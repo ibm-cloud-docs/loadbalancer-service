@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Utilisation d'un équilibreur de charge IBM Cloud Load Balancer pour l'équilibrage de charge de serveur élastique
+# Utilisation d'un équilibreur de charge {{site.data.keyword.loadbalancer_full}} pour l'équilibrage de charge de serveur élastique
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-Le service IBM© Cloud Load Balancer vous aide à améliorer l'évolutivité et la disponibilité de vos applications critiques d'entreprise. Il surveille la santé de vos serveurs d'application, utilise des méthodes d'équilibrage de charge intelligentes pour distribuer du trafic à plusieurs serveurs et ajuste dynamiquement sa capacité système pour traiter la charge de trafic variable.
+Le service {{site.data.keyword.loadbalancer_full}} vous aide à améliorer l'évolutivité et la disponibilité de vos applications critiques d'entreprise. Il surveille la santé de vos serveurs d'application, utilise des méthodes d'équilibrage de charge intelligentes pour distribuer du trafic à plusieurs serveurs et ajuste dynamiquement sa capacité système pour traiter la charge de trafic variable.
 
 ## Ce que vous allez accomplir
 {: #what-you-ll-accomplish-2}

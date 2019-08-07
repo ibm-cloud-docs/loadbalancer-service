@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 錯誤訊息疑難排解
 {: #error-message-troubleshooting}
 
-本主題提供您在建立/更新 IBM© Cloud Load Balancer 實例時可能遇到的一般錯誤訊息相關資訊。
+本主題提供您在建立/更新 {{site.data.keyword.loadbalancer_full}} 實例時可能遇到的一般錯誤訊息相關資訊。
 
 | 錯誤 | 說明 | 解決方案 |
 | ------------- | ------------- | ----- |

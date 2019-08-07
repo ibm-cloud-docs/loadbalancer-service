@@ -45,7 +45,7 @@ Add the protocols for your load balancer:
 
 6. If you chose HTTP for your backend protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list. 
 
-	The IBM© Cloud Load Balancer [terminates incoming HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) (HTTP over SSL) connections and can communicate in plain-text HTTP with the back-end application servers. It also offloads processor-intensive SSL tasks from your servers if HTTP is selected for the backend protocol. In this case, traffic is encrypted between the load balancer and the backend servers. For this to work correctly, you must upload your SSL Certificate.
+	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) (HTTP over SSL) connections and can communicate in plain-text HTTP with the back-end application servers. It also offloads processor-intensive SSL tasks from your servers if HTTP is selected for the backend protocol. In this case, traffic is encrypted between the load balancer and the backend servers. For this to work correctly, you must upload your SSL Certificate.
 	
 	<img src="images/CLB_HTTPS_Cert_PUP.png" alt="drawing" style="width: 800px;"/>
 	

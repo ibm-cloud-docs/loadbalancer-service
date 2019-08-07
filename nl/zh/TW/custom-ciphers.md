@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 選擇 HTTPS 應用程式的偏好密碼組合
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-協助 IBM© Cloud Load Balancer 的密碼演算法會形成與其 HTTP 用戶端之間的安全連線。
+協助 {{site.data.keyword.loadbalancer_full}} 的密碼演算法會形成與其 HTTP 用戶端之間的安全連線。
 
 IBM 提供一套核准的密碼供您選擇，讓您保護負載平衡器與用戶端之間的通訊安全。
 

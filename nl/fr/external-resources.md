@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Autres ressources pour l'équilibreur de charge IBM Cloud Load Balancer
+# Autres ressources pour l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 Ces ressources sont créées par IBM© et certains de nos partenaires et clients
@@ -29,4 +29,4 @@ Ces ressources sont créées par IBM© et certains de nos partenaires et clients
 ## Blogues
 {: #lb-blogs}
 
- * [Improved security and More: The latest for IBM Cloud Load Balancer, by Jay Kidambi and Allan Hu ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+ * [Improved security and More: The latest for {{site.data.keyword.loadbalancer_full}}, by Jay Kidambi and Allan Hu ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

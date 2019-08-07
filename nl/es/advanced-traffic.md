@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Gestión avanzada de tráfico con IBM Cloud Load Balancer
+# Gestión avanzada de tráfico con {{site.data.keyword.loadbalancer_full}}
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-En esta sección, se abordan varias características de gestión avanzada de tráfico disponibles con el servicio de IBM Cloud Load Balancer.
+En esta sección, se abordan varias características de gestión avanzada de tráfico disponibles con el servicio de {{site.data.keyword.loadbalancer_full}}.
 
 ## Número máx. de conexiones
 {: #max-connections}

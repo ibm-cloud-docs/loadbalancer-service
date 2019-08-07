@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Parameter von IBM Cloud Load Balancer konfigurieren
+# Parameter von {{site.data.keyword.loadbalancer_full}} konfigurieren
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 Nachdem Sie eine Lastausgleichsfunktion erstellt haben, können Sie sie für den elastischen Lastausgleich konfigurieren. Gehen Sie dazu wie folgt vor:
@@ -41,7 +41,7 @@ Nachdem Sie eine Lastausgleichsfunktion erstellt haben, können Sie sie für den
 	Es können maximal 2 Ports zum Zeitpunkt der Erstkonfiguration definiert werden. Weitere Ports können später hinzugefügt werden, nachdem die Serviceinstanz erstellt wurde. Weitere Informationen zur maximal zulässigen Anzahl von Ports finden Sie unter [Limits für die Anzahl von Ports](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-).
 {:note:}
 
-7. Der IBM© Cloud Load Balancer beendet eingehende HTTPS-Verbindungen (HTTP over SSL), kommuniziert in Klartext-HTTP mit den Back-End-Anwendungsservern und lagert prozessorintensive SSL-Tasks von Ihren Servern aus, wenn als Back-End-Protokoll HTTP ausgewählt wurde. Wenn es sich bei dem ausgewählten Back-End-Protokoll um HTTPS handelt, wird der Datenverkehr zwischen Load Balancer und Back-End-Servern verschlüsselt.Sie müssen Ihr SSL-Zertifikat hochladen. Wählen Sie in der Dropdown-Liste eines Ihrer verfügbaren Zertifikate aus.  
+7. Der {{site.data.keyword.loadbalancer_full}} beendet eingehende HTTPS-Verbindungen (HTTP over SSL), kommuniziert in Klartext-HTTP mit den Back-End-Anwendungsservern und lagert prozessorintensive SSL-Tasks von Ihren Servern aus, wenn als Back-End-Protokoll HTTP ausgewählt wurde. Wenn es sich bei dem ausgewählten Back-End-Protokoll um HTTPS handelt, wird der Datenverkehr zwischen Load Balancer und Back-End-Servern verschlüsselt.Sie müssen Ihr SSL-Zertifikat hochladen. Wählen Sie in der Dropdown-Liste eines Ihrer verfügbaren Zertifikate aus.  
 
 	<img src="images/lb-ssl-cert.png" alt="Zeichnung" style="width: 300px;"/>
 

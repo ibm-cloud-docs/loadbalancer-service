@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer の実行の基本
+# {{site.data.keyword.loadbalancer_full}} の実行の基本
 {: #performing-ibm-cloud-load-balancer-basics}
 
-IBM© Cloud Load Balancer サービスは、同じデータ・センター内にローカルに常駐する複数のサーバー・インスタンス (ベア・メタルおよび仮想サーバー) 間でトラフィックを分散します。
+{{site.data.keyword.loadbalancer_full}} サービスは、同じデータ・センター内にローカルに常駐する複数のサーバー・インスタンス (ベア・メタルおよび仮想サーバー) 間でトラフィックを分散します。
 
 ## パブリック・ロード・バランサー
 {: #public-load-balancer}

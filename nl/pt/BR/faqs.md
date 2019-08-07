@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Perguntas frequentes do IBM Cloud Load Balancer
+# Perguntas frequentes do {{site.data.keyword.loadbalancer_full}}
 {: #faqs-for-ibm-cloud-load-balancer}
 
-Esta seção contém respostas para algumas das perguntas mais frequentes sobre o IBM© Cloud Load Balancer Service.
+Esta seção contém respostas para algumas das perguntas mais frequentes sobre o {{site.data.keyword.loadbalancer_full}} Service.
 
 ## Quantas opções de balanceamento de carga estão disponíveis no {{site.data.keyword.BluSoftlayer_notm}}?
 {: faq}
@@ -92,7 +92,7 @@ A lista a seguir detalha as cifras suportadas (listadas em ordem de precedência
 
 Atualmente, é possível criar até 50 instâncias de serviço. Se você precisar de mais instâncias, entre em contato com o Suporte IBM.
 
-## O serviço IBM Cloud Load Balancer pode ser usado com o VMWare?
+## O serviço {{site.data.keyword.loadbalancer_full}} pode ser usado com o VMWare?
 {: faq}
 
 As máquinas virtuais VMWare designadas a endereços privados móveis do SoftLayer podem ser especificadas como servidores de backend para o balanceador de carga. Esse recurso está atualmente disponível apenas usando a API e não a IU da web (GUI). Os IPs privados móveis incluídos usando a API aparecem como "Desconhecido" na GUI, uma vez que eles não são designados pelo SoftLayer. Observe que esse tipo de configuração pode ser usado com outros hypervisors, como Xen e KVM também.
@@ -130,4 +130,4 @@ Atualmente, o suporte da Camada 7 fica disponível apenas por meio de APIs públ
 ## Quais informações eu preciso para arquivar um chamado de suporte?
 {: faq}
 
-Para arquivar um chamado de suporte, forneça o nome do produto ("IBM Cloud Load Balancer"), o UUID de seu balanceador de carga (se possível) e o número da conta do Softlayer. O UUID pode ser localizado na URL depois de navegar para a página de visão geral do balanceador de carga fornecido.
+Para arquivar um chamado de suporte, forneça o nome do produto ("{{site.data.keyword.loadbalancer_full}}"), o UUID de seu balanceador de carga (se possível) e o número da conta do Softlayer. O UUID pode ser localizado na URL depois de navegar para a página de visão geral do balanceador de carga fornecido.

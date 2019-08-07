@@ -17,7 +17,7 @@ lastupdated: "2018-11-21"
 # Fehlerbehebung bei Fehlernachrichten
 {: #error-message-troubleshooting}
 
-In diesem Abschnitt finden Sie Informationen zu gängigen Fehlernachrichten, die beim Erstellen/Aktualisieren einer Instanz von IBM© Cloud Load Balancer ausgegeben werden können. 
+In diesem Abschnitt finden Sie Informationen zu gängigen Fehlernachrichten, die beim Erstellen/Aktualisieren einer Instanz von {{site.data.keyword.loadbalancer_full}} ausgegeben werden können. 
 
 | Fehler | Erläuterung  | Lösung  |
 | ------------- | ------------- | ----- |

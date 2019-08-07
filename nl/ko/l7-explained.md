@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 계층 7 로드 밸런싱
 {: #layer-7-load-balancing}
 
-IBM© Cloud Load Balancer Service는 계층 7(애플리케이션 계층) 데이터를 사용하여 Bare Metal 및 Virtual Server 인스턴스를 포함한 다중 서버 인스턴스 간에 트래픽을 분배합니다.
+{{site.data.keyword.loadbalancer_full}} Service는 계층 7(애플리케이션 계층) 데이터를 사용하여 Bare Metal 및 Virtual Server 인스턴스를 포함한 다중 서버 인스턴스 간에 트래픽을 분배합니다.
 
  * 분배될 데이터 트래픽은 정책 및 규칙을 사용하여 분류됩니다.
  * 정책은 데이터 트래픽이 정책과 연관된 모든 규칙과 일치하는 경우 수행할 조치를 정의합니다.

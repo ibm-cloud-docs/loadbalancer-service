@@ -20,15 +20,15 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# A propos de l'équilibreur de charge IBM Cloud Load Balancer
+# A propos de l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #about-ibm-cloud-load-balancer}
 
-Le service IBM© Cloud Load Balancer aide les clients à améliorer la disponibilité des applications critiques pour l'activité de leur entreprise en répartissant le trafic entre plusieurs instances de serveur et en réacheminant le trafic vers des instances viables seulement.
+Le service {{site.data.keyword.loadbalancer_full}} aide les clients à améliorer la disponibilité des applications critiques pour l'activité de leur entreprise en répartissant le trafic entre plusieurs instances de serveur et en réacheminant le trafic vers des instances viables seulement.
 
 ## Présentation des fonctionnalités
 {: #overview-of-features}
 
-Le service IBM Cloud Load Balancer offre les fonctionnalités suivantes :
+Le service {{site.data.keyword.loadbalancer_full}} offre les fonctionnalités suivantes :
 
 * Equilibreur de charge public (Internet)
 	* Service accessible au public via son nom de domaine complet

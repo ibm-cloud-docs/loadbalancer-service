@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Esecuzione dei principi di base di IBM Cloud Load Balancer
+# Esecuzione dei principi di base di {{site.data.keyword.loadbalancer_full}}
 {: #performing-ibm-cloud-load-balancer-basics}
 
-Il servizio IBM© Cloud load balancer distribuisce il traffico tra più istanze server (server virtuale e bare metal) che risiedono localmente, nello stesso data center.
+Il servizio {{site.data.keyword.loadbalancer_full}} distribuisce il traffico tra più istanze server (server virtuale e bare metal) che risiedono localmente, nello stesso data center.
 
 ## Programma di bilanciamento del carico pubblico
 {: #public-load-balancer}

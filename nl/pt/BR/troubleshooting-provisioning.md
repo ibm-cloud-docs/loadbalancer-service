@@ -24,12 +24,12 @@ subcollection: loadbalancer-service
 {: #load-balancer-provisioning-troubleshooting}
 
 Este tópico fornece informações sobre problemas comuns que você pode encontrar ao criar uma
-nova instância do IBM© Cloud Load Balancer.
+nova instância do {{site.data.keyword.loadbalancer_full}}.
 
 ## Endereços IP insuficientes em sua sub-rede
 {: #insufficient-ip-addresses-in-your-subnet}
 
-O IBM Cloud Load Balancer requer pelo menos dois endereços IP livres em sua sub-rede privada. Além disso, se for um balanceador de carga público e a opção **Conjunto de sistemas IBM** não for usada, pelo menos dois endereços IP livres também serão necessários em sua sub-rede pública.
+O {{site.data.keyword.loadbalancer_full}} requer pelo menos dois endereços IP livres em sua sub-rede privada. Além disso, se for um balanceador de carga público e a opção **Conjunto de sistemas IBM** não for usada, pelo menos dois endereços IP livres também serão necessários em sua sub-rede pública.
 
 Siga as etapas abaixo para verificar se há IPs livres em uma sub-rede.
 

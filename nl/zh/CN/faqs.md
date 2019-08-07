@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer 的常见问题
+# {{site.data.keyword.loadbalancer_full}} 的常见问题
 {: #faqs-for-ibm-cloud-load-balancer}
 
-本节包含有关 IBM© Cloud Load Balancer 服务的一些常见问题的解答。
+本节包含有关 {{site.data.keyword.loadbalancer_full}} 服务的一些常见问题的解答。
 
 ## {{site.data.keyword.BluSoftlayer_notm}} 中提供了多少负载均衡选项？
 {: faq}
@@ -91,7 +91,7 @@ Cloud Load Balancer 服务支持具有 SSL 终止功能的 TLS 1.2。
 
 目前，最多可以创建 50 个服务实例。如果您需要更多实例，请联系 IBM 支持人员。
 
-## IBM Cloud Load Balancer 服务可与 VMWare 一起使用吗？
+## {{site.data.keyword.loadbalancer_full}} 服务可与 VMWare 一起使用吗？
 {: faq}
 
 分配有 SoftLayer 可移植专用地址的 VMWare 虚拟机可以指定为负载均衡器的后端服务器。此功能当前仅在使用 API 时可用，在使用 Web UI (GUI) 时不可用。使用 API 添加的可移植专用 IP 在 GUI 中显示为“未知”，因为这些 IP 不是 SoftLayer 分配的。请注意，这种配置可用于其他管理程序，如 Xen 和 KVM。
@@ -129,4 +129,4 @@ TCP 端口 56501 用于管理。请确保防火墙未阻止此端口以及应用
 ## 我需要哪些信息来提交支持凭单？
 {: faq}
 
-要提交支持凭单，请提供产品名称（“IBM Cloud Load Balancer”）、Load Balancer 的 UUID（如果可能）和您的 Softlayer 帐号。浏览至给定 Load Balancer 的概述页面后，可以在 URL 中找到 UUID。
+要提交支持凭单，请提供产品名称（“{{site.data.keyword.loadbalancer_full}}”）、Load Balancer 的 UUID（如果可能）和您的 Softlayer 帐号。浏览至给定 Load Balancer 的概述页面后，可以在 URL 中找到 UUID。

@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer の FAQ
+# {{site.data.keyword.loadbalancer_full}} の FAQ
 {: #faqs-for-ibm-cloud-load-balancer}
 
-このセクションでは、IBM© Cloud Load Balancer サービスに関するよくある質問の答えを記載しています。
+このセクションでは、{{site.data.keyword.loadbalancer_full}} サービスに関するよくある質問の答えを記載しています。
 
 ## {{site.data.keyword.BluSoftlayer_notm}} で使用できるロード・バランシング・オプションの数を教えてください。
 {: faq}
@@ -91,7 +91,7 @@ Cloud Load Balancer サービスは、TLS 1.2 を SSL 終端処理とともに�
 
 現在のところ、最大 50 のサービス・インスタンスを作成できます。 それより多くのインスタンスが必要な場合は、IBM サポートにお問い合わせください。
 
-## IBM Cloud Load Balancer サービスは VMWare で使用できますか。
+## {{site.data.keyword.loadbalancer_full}} サービスは VMWare で使用できますか。
 {: faq}
 
 SoftLayer ポータブル・プライベート・アドレスを割り当てられた VMWare 仮想マシンは、ロード・バランサーにバックエンド・サーバーとして指定できます。 この機能は現在、API を介してのみ使用でき、Web UI (GUI) では使用できません。 API を使用して追加されたポータブル・プライベート IP は、SoftLayer によって割り当てられていないため、GUI には「Unknown」と表示されます。 この種の構成は、Xen や KVM などの他のハイパーバイザーでも使用できることに注意してください。
@@ -129,4 +129,4 @@ TCP ポート 56501 は、管理に使用されます。 このポートへの�
 ## サポート・チケットを提出するために必要な情報を教えてください。
 {: faq}
 
-サポート・チケットを提出する際は、製品名 (「IBM Cloud Load Balancer」)、ロード・バランサーの UUID (可能な場合)、および Softlayer アカウント番号を提供してください。 UUID は、該当のロード・バランサーの概要ページにナビゲートした後の URL 内で見つかります。
+サポート・チケットを提出する際は、製品名 (「{{site.data.keyword.loadbalancer_full}}」)、ロード・バランサーの UUID (可能な場合)、および Softlayer アカウント番号を提供してください。 UUID は、該当のロード・バランサーの概要ページにナビゲートした後の URL 内で見つかります。

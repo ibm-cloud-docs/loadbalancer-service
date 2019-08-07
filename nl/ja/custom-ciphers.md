@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # HTTPS アプリケーション用の優先暗号スイートの選択
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-暗号アルゴリズムは、IBM© Cloud Load Balancer が HTTP クライアントとのセキュア接続を形成するのを支援します。
+暗号アルゴリズムは、{{site.data.keyword.loadbalancer_full}} が HTTP クライアントとのセキュア接続を形成するのを支援します。
 
 IBM によって提供されている承認済みの暗号スイートの中からいずれかを選択して、ロード・バランサーとクライアントの間の通信を保護できます。
 

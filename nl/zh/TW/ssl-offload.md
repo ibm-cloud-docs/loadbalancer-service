@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer 的 SSL 卸載
+# {{site.data.keyword.loadbalancer_full}} 的 SSL 卸載
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 對於所有送入的 HTTPS 連線，負載平衡器服務會終止 SSL 連線，並建立與後端伺服器的純文字 HTTP 通訊。CPU 密集的 SSL 信號交換及加密/解密作業已從後端伺服器移開，如此可讓它們使用其所有 CPU 週期來處理應用程式資料流量。

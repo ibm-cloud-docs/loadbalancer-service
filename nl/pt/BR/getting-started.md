@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# Introdução ao IBM Cloud Load Balancer
+# Introdução ao {{site.data.keyword.loadbalancer_full}}
 {: #getting-started}
 
-Para começar a usar o IBM© Cloud Load Balancer, você precisará de dois itens principais:
+Para começar a usar o {{site.data.keyword.loadbalancer_full}}, você precisará de dois itens principais:
 
 * Uma conta com a IBM: [IBMid![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * Um servidor IBM, [Bare Metal](/docs/bare-metal?topic=bare-metal-about) ou [Virtual Server Instance (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
@@ -36,7 +36,7 @@ Se você tiver uma conta existente do IBM Cloud Infrastructure (SoftLayer), ser�
 ## Solicitando um balanceador de carga
 {: #ordering-a-load-balancer}
 
-Para pedir um serviço do IBM Cloud Load Balancer, selecione **IBM Cloud Load Balancer** no [catálogo do
+Para pedir um serviço do {{site.data.keyword.loadbalancer_full}}, selecione **{{site.data.keyword.loadbalancer_full}}** no [catálogo do
 IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}. Em seguida, clique em Criar e execute o procedimento a seguir:
 
 1. Defina seus parâmetros de serviço básicos, tais como o nome e a descrição.
@@ -49,7 +49,7 @@ IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link
 
 5. Criar protocolos e portas de aplicativo front-end e back-end.
 
-  Para obter mais informações sobre essa configuração, consulte [Configurando parâmetros do IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
+  Para obter mais informações sobre essa configuração, consulte [Configurando parâmetros do {{site.data.keyword.loadbalancer_full}}](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
   {: note}
 
 6. Para ativar a transferência de SSL, configure os protocolos de front-end para
@@ -60,7 +60,7 @@ caixa suspensa Certificado.
 
 7. Ajuste os parâmetros de verificação de funcionamento, se desejado, caso contrário, use as configurações padrão.
 
-  Para obter mais informações sobre os parâmetros de verificação de funcionamento, consulte [Parâmetros do IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
+  Para obter mais informações sobre os parâmetros de verificação de funcionamento, consulte [Parâmetros do {{site.data.keyword.loadbalancer_full}}](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
   {: note}
 
 8. Clique em **Anexar servidor** para associar um ou mais instâncias de
@@ -76,4 +76,4 @@ em verde, indicando que ele está `Online`. Poderá ser necessário atualizar su
 para ver essas mudanças.
 {: note}
 
-Consulte [Como usar o IBM Cloud Load Balancer para balanceamento de carga do servidor elástico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) para obter orientações passo-a-passo sobre a configuração do seu novo Cloud Load Balancer.
+Consulte [Como usar o {{site.data.keyword.loadbalancer_full}} para balanceamento de carga do servidor elástico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) para obter orientações passo-a-passo sobre a configuração do seu novo Cloud Load Balancer.

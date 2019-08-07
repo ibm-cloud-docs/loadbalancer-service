@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Problemi noti e limitazioni con IBM Cloud Load Balancer
+# Problemi noti e limitazioni con {{site.data.keyword.loadbalancer_full}}
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-Questo argomento fornisce le informazioni sui problemi noti e le limitazioni al momento conosciuti per il servizio IBM© Cloud Load Balancer.
+Questo argomento fornisce le informazioni sui problemi noti e le limitazioni al momento conosciuti per il servizio {{site.data.keyword.loadbalancer_full}}.
 
 ## Problemi noti
 {: #known-issues}
-Il servizio IBM Cloud Load Balancer al momento ha i seguenti problemi:
+Il servizio {{site.data.keyword.loadbalancer_full}} al momento ha i seguenti problemi:
 
 * Minore - Il pulsante **Modifica** nelle istanze del server e nelle schede dei protocolli viene applicato a tutte le voci e non è limitato alle righe selezionate utilizzando una casella di spunta.
 * Minore - Durante la creazione iniziale del servizio del programma di bilanciamento del carico, perderai le tue impostazioni del controllo di integrità se ti sposti tra la varie schermate.
@@ -37,7 +37,7 @@ Il servizio IBM Cloud Load Balancer al momento ha i seguenti problemi:
 
 ## Limitazioni note
 {: #known-limits}
-Il servizio IBM Cloud Load Balancer al momento ha le seguenti limitazioni:
+Il servizio {{site.data.keyword.loadbalancer_full}} al momento ha le seguenti limitazioni:
 
 * Numero massimo di porte/protocolli virtuali - 10
 * Numero massimo di server dietro il programma di bilanciamento del carico - 50

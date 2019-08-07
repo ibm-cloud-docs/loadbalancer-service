@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Ejecución de comprobaciones de estado con IBM Cloud Load Balancer
+# Ejecución de comprobaciones de estado con {{site.data.keyword.loadbalancer_full}}
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 Las definiciones de comprobaciones de estado son obligatorias para todos los puertos de aplicación back-end. El puerto y el protocolo de la configuración de la comprobación de estado deben coincidir con los definidos; de lo contrario, se rechazará la configuración.

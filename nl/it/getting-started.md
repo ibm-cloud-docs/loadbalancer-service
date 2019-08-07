@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# Introduzione a IBM Cloud Load Balancer
+# Introduzione a {{site.data.keyword.loadbalancer_full}}
 {: #getting-started}
 
-Per iniziare ad utilizzare IBM© Cloud Load Balancer, avrai bisogno di due elementi principali:
+Per iniziare ad utilizzare {{site.data.keyword.loadbalancer_full}}, avrai bisogno di due elementi principali:
 
 * Un account con IBM: [IBMid ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * Un server IBM, [Bare Metal](/docs/bare-metal?topic=bare-metal-about) o [VSI (Virtual Server Instance)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
@@ -36,7 +36,7 @@ Se hai un account dell'infrastruttura IBM Cloud (SoftLayer) esistente, puoi [col
 ## Ordine di un programma di bilanciamento del carico
 {: #ordering-a-load-balancer}
 
-Per ordinare un servizio IBM Cloud Load Balancer, seleziona **IBM Cloud Load Balancer** dal [catalogo IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}. Fai quindi clic su **Create** ed esegui la seguente procedura:
+Per ordinare un servizio {{site.data.keyword.loadbalancer_full}}, seleziona **{{site.data.keyword.loadbalancer_full}}** dal [catalogo IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}. Fai quindi clic su **Create** ed esegui la seguente procedura:
 
 1. Definisci i tuoi parametri del servizio di base, come il nome r la descrizione.
 2. Seleziona il tuo data center.
@@ -48,7 +48,7 @@ Per ordinare un servizio IBM Cloud Load Balancer, seleziona **IBM Cloud Load Bal
 
 5. Crea le porte e i protocolli dell'applicazione front-end e back-end.
 
-  Per ulteriori informazioni su questa configurazione, consulta [Configurazione dei parametri di IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
+  Per ulteriori informazioni su questa configurazione, consulta [Configurazione dei parametri di {{site.data.keyword.loadbalancer_full}}](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters).
   {: note}
 
 6. Per abilitare l'offload SSL, imposta i protocolli front-end su HTTPS e i protocolli di back-end su HTTP. Seleziona quindi il tuo certificato SSL dalla casella a discesa Certificato.
@@ -57,7 +57,7 @@ Per ordinare un servizio IBM Cloud Load Balancer, seleziona **IBM Cloud Load Bal
 
 7. Modifica i tuoi parametri del controllo di integrità se lo desideri, altrimenti utilizza le impostazioni predefinite.
 
-  Per ulteriori informazioni sui parametri di controllo dell'integrità, consulta [Parametri di IBM Cloud Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
+  Per ulteriori informazioni sui parametri di controllo dell'integrità, consulta [Parametri di {{site.data.keyword.loadbalancer_full}}](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks).
   {: note}
 
 8. Fai clic su **Attach Server** per associare una o più istanze del server dietro il tuo programma di bilanciamento del carico. Devi visualizzare soltanto le istanze del server locali nel tuo data center.
@@ -70,4 +70,4 @@ Facendo clic sul nome del servizio su questa pagina ti sposti alla pagina della 
 Il tuo programma di bilanciamento del carico appena creato potrebbe non essere visualizzato immediatamente in questo elenco. Dopo qualche minuto, il nuovo programma di bilanciamento del carico verrà visualizzato in grigio, a indicare che il suo stato è `Offline`. Dopo qualche altro minuto, il nuovo programma di bilanciamento del carico verrà visualizzato in verde, a indicare che è `Online`. Potresti dover aggiornare la tua schermata per vedere queste modifiche.
 {: note}
 
-Consulta [Come utilizzare un IBM Cloud Load Balancer per il bilanciamento elastico del carico del server](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) per istruzioni dettagliate sulla configurazione del tuo nuovo Cloud Load Balancer.
+Consulta [Come utilizzare un {{site.data.keyword.loadbalancer_full}} per il bilanciamento elastico del carico del server](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) per istruzioni dettagliate sulla configurazione del tuo nuovo Cloud Load Balancer.

@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Descarga de SSL con IBM Cloud Load Balancer
+# Descarga de SSL con {{site.data.keyword.loadbalancer_full}}
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Para todas las conexiones HTTPS entrantes, el servicio del equilibrador de carga finaliza la conexión SSL y establece una comunicación HTTP de texto sin formato con el servidor back-end. Los reconocimientos SSL y las tareas de cifrado/descifrado de CPU se desplazan de los servidores back-end, lo que les permite utilizar todos sus ciclos de CPU para procesar el tráfico de aplicaciones.

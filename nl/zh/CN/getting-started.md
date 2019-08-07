@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# IBM Cloud Load Balancer 入门
+# {{site.data.keyword.loadbalancer_full}} 入门
 {: #getting-started}
 
-要开始使用 IBM© Cloud Load Balancer，您将需要两个主要项目：
+要开始使用 {{site.data.keyword.loadbalancer_full}}，您将需要两个主要项目：
 
 * IBM 帐户：[IBM 标识 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * IBM 服务器，可以是[裸机](/docs/bare-metal?topic=bare-metal-about)，或者[虚拟服务器实例 (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
@@ -36,7 +36,7 @@ subcollection: loadbalancer-service
 ## 订购负载均衡器
 {: #ordering-a-load-balancer}
 
-要订购 IBM Cloud Load Balancer 服务，请从 [IBM Cloud 目录 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window} 选择 **IBM Cloud Load Balancer**。然后，单击**创建**并执行以下过程：
+要订购 {{site.data.keyword.loadbalancer_full}} 服务，请从 [IBM Cloud 目录 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window} 选择 **{{site.data.keyword.loadbalancer_full}}**。然后，单击**创建**并执行以下过程：
 
 1. 定义基本服务参数，例如名称和描述。
 2. 选择数据中心。
@@ -48,7 +48,7 @@ subcollection: loadbalancer-service
 
 5. 创建前端和后端应用程序协议和端口。
 
-  有关此配置的更多信息，请参阅[配置 IBM Cloud Load Balancer 参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters)。
+  有关此配置的更多信息，请参阅[配置 {{site.data.keyword.loadbalancer_full}} 参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters)。
   {: note}
 
 6. 要启用 SSL 卸载，请将前端协议设置为 HTTPS，将后端协议设置为 HTTP。然后从“证书”下拉框中选择您的 SSL 证书。
@@ -57,7 +57,7 @@ subcollection: loadbalancer-service
 
 7. 根据需要调整运行状况检查参数，否则使用缺省设置。
 
-  有关运行状况检查参数的更多信息，请参阅 [IBM Cloud Load Balancer 参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks)。
+  有关运行状况检查参数的更多信息，请参阅 [{{site.data.keyword.loadbalancer_full}} 参数](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks)。
   {: note}
 
 8. 单击**连接服务器**，以关联负载均衡器后面的一个或多个服务器实例。您将仅会看到属于数据中心本地的服务器实例。
@@ -70,4 +70,4 @@ subcollection: loadbalancer-service
 新创建的负载均衡器可能不会立即在此列表中显示。几分钟之后，新的负载均衡器将显示为灰色，表示其状态为 `Offline`。再过几分钟之后，新的负载均衡器将显示为绿色，表示其状态为 `Online`。您可能需要刷新屏幕才能看到这些更改。
 {: note}
 
-请参阅[如何使用 IBM Cloud Load Balancer 实现弹性服务器负载均衡](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)，以获取有关配置新 Cloud Load Balancer 的逐步指导信息。
+请参阅[如何使用 {{site.data.keyword.loadbalancer_full}} 实现弹性服务器负载均衡](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)，以获取有关配置新 Cloud Load Balancer 的逐步指导信息。

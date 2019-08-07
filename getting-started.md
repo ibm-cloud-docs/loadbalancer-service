@@ -24,7 +24,7 @@ subcollection: loadbalancer-service
 # Getting Started with IBM Cloud Load Balancer
 {: #getting-started}
 
-To get started using the IBM© Cloud Load Balancer, you’ll need two main items:
+To get started using the {{site.data.keyword.loadbalancer_full}}, you’ll need two main items:
 
 * An account with IBM: [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * A IBM server, either [Bare Metal](/docs/bare-metal?topic=bare-metal-about) or [Virtual Server Instance (VSI)](/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen#gettingstartedvsigen)
@@ -36,4 +36,4 @@ If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [l
 ## Ordering a Load Balancer
 {: #ordering-a-load-balancer}
 
-Refer to [Using an elastic IBM Cloud Load Balancer for  server load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to get started with IBM Cloud Load Balancer.
+Refer to [Using an elastic {{site.data.keyword.loadbalancer_full}} for  server load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to get started with {{site.data.keyword.loadbalancer_full}}.

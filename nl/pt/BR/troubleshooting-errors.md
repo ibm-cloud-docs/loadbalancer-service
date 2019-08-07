@@ -24,7 +24,7 @@ subcollection: loadbalancer-service
 {: #error-message-troubleshooting}
 
 Este tópico fornece informações sobre mensagens de erro comuns que você pode encontrar ao
-criar/atualizar uma instância do IBM© Cloud Load Balancer.
+criar/atualizar uma instância do {{site.data.keyword.loadbalancer_full}}.
 
 | Erro | Explicação  | Solução  |
 | ------------- | ------------- | ----- |

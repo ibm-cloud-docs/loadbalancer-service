@@ -20,15 +20,15 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer について
+# {{site.data.keyword.loadbalancer_full}} について
 {: #about-ibm-cloud-load-balancer}
 
-IBM© Cloud Load Balancer サービスは、複数のアプリケーション・サーバー・インスタンス間にトラフィックを分散し、正常なインスタンスのみにトラフィックを転送することにより、ビジネスに不可欠なお客様のアプリケーションの可用性の向上に役立ちます。
+{{site.data.keyword.loadbalancer_full}} サービスは、複数のアプリケーション・サーバー・インスタンス間にトラフィックを分散し、正常なインスタンスのみにトラフィックを転送することにより、ビジネスに不可欠なお客様のアプリケーションの可用性の向上に役立ちます。
 
 ## 機能の概要
 {: #overview-of-features}
 
-IBM Cloud Load Balancer サービスは、以下の機能を提供します。
+{{site.data.keyword.loadbalancer_full}} サービスは、以下の機能を提供します。
 
 * パブリック (インターネット向け) ロード・バランサー
 	* 完全修飾ドメイン・ネーム (FQDN) を介してパブリックにアクセス可能なサービス

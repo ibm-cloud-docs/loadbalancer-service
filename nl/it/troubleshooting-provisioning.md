@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # Risoluzione dei problemi di provisioning del programma di bilanciamento del carico
 {: #load-balancer-provisioning-troubleshooting}
 
-Questo argomento fornisce le informazioni sui problemi comuni che puoi riscontrare mentre crei una nuova istanza di IBM© Cloud Load Balancer.
+Questo argomento fornisce le informazioni sui problemi comuni che puoi riscontrare mentre crei una nuova istanza di {{site.data.keyword.loadbalancer_full}}.
 
 ## Indirizzi IP insufficienti nella tua sottorete
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer richiede almeno due indirizzi IP liberi nella sua sottorete privata. Inoltre, se il programma di bilanciamento del carico è un programma di bilanciamento del carico pubblico e non viene utilizzata l'opzione **IBM system pool**, saranno necessari almeno anche due indirizzi IP liberi nella tua sottorete pubblica.
+{{site.data.keyword.loadbalancer_full}} richiede almeno due indirizzi IP liberi nella sua sottorete privata. Inoltre, se il programma di bilanciamento del carico è un programma di bilanciamento del carico pubblico e non viene utilizzata l'opzione **IBM system pool**, saranno necessari almeno anche due indirizzi IP liberi nella tua sottorete pubblica.
 
 Segui i passi riportati di seguito per controllare gli IP liberi in una sottorete.
 

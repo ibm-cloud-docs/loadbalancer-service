@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Escolhendo um conjunto de cifras preferencial para o seu aplicativo HTTPS
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-Algoritmos de cifra que ajudam o IBM© Cloud Load Balancer formam conexões seguras com
+Algoritmos de cifra que ajudam o {{site.data.keyword.loadbalancer_full}} formam conexões seguras com
 seus clientes HTTP.
 
 A IBM oferece um conjunto de cifras aprovadas das quais escolher, para que você assegure a comunicação entre o balanceador de carga e seus clientes.

@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer로 SSL 오프로드
+# {{site.data.keyword.loadbalancer_full}}로 SSL 오프로드
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 모든 수신 HTTPS 연결의 경우, 로드 밸런서 서비스는 SSL 연결을 종료하고 백엔드 서버와 일반 텍스트 HTTP 통신을 설정합니다. CPU 집중 SSL 핸드쉐이크 및 암호화/복호화 태스크는 백엔드 서버로부터 전환되며, 애플리케이션 트래픽 처리를 위해 모든 자체 CPU 사이클의 사용이 허용됩니다.

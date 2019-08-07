@@ -14,10 +14,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Cloud Load Balancer erstellen
+# {{site.data.keyword.loadbalancer_full}} erstellen
 {: #creating-an-ibm-cloud-load-balancer}
 
-Gehen Sie wie folgt vor, um einen IBM© Cloud Load Balancer-Service zu erstellen: 
+Gehen Sie wie folgt vor, um einen {{site.data.keyword.loadbalancer_full}}-Service zu erstellen: 
 
 1. Öffnen Sie im Browser das [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} und melden Sie sich an Ihrem Konto an.
 
@@ -25,7 +25,7 @@ Gehen Sie wie folgt vor, um einen IBM© Cloud Load Balancer-Service zu erstellen
 
 	<img src="images/catalog-load-balancer.png" alt="Zeichnung" style="width: 600px;"/>
 
-3. Wählen Sie **IBM Cloud Load Balancer** (Standardauswahl) aus und klicken Sie auf **Erstellen**. 
+3. Wählen Sie **{{site.data.keyword.loadbalancer_full}}** (Standardauswahl) aus und klicken Sie auf **Erstellen**. 
 
 	Wenn statt **Erstellen** die Option **Upgrade** angezeigt wird, müssen Sie Ihr IBM Cloud Infrastructure-Konto (SoftLayer) verknüpfen, indem Sie [diese Schritte](/docs/account?topic=account-unifyingaccounts) ausführen. 
 

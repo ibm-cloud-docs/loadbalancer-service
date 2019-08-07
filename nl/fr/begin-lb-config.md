@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Configuration des paramètres de l'équilibreur de charge IBM Cloud Load Balancer
+# Configuration des paramètres de l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 A l'issue de la [création d'un équilibreur de charge](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), vous pouvez le configurer pour l'équilibrage de charge élastique. Pour ce faire, procédez comme suit :

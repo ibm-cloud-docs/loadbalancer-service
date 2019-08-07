@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Déchargement SSL avec l'équilibreur de charge IBM Cloud Load Balancer
+# Déchargement SSL avec l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 A chaque connexion HTTP entrante, le service Load Balancer met fin à la connexion SSL et établit une communication HTTP en texte en clair avec le serveur de back end. Les tâches de chiffrement/déchiffrement et d'établissement de liaison SSL sont déchargées des serveurs de back end, de sorte qu'ils peuvent utiliser l'intégralité de leur cycle d'unité centrale à des fins de traitement du trafic d'application.

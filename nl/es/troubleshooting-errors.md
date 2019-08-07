@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Resolución de problemas de mensajes de error
 {: #error-message-troubleshooting}
 
-En este tema se proporciona información sobre los mensajes de error comunes que puede encontrar cuando cree o actualice una instancia de IBM© Cloud Load Balancer.
+En este tema se proporciona información sobre los mensajes de error comunes que puede encontrar cuando cree o actualice una instancia de {{site.data.keyword.loadbalancer_full}}.
 
 | Error | Explicación  | Solución  |
 | ------------- | ------------- | ----- |

@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer 기본 기능 수행
+# {{site.data.keyword.loadbalancer_full}} 기본 기능 수행
 {: #performing-ibm-cloud-load-balancer-basics}
 
-IBM© Cloud Load Balancer 서비스는 동일한 데이터 센터 내에 로컬로 상주하는 다중 서버 인스턴스(Bare Metal 및 Virtual Server)에 트래픽을 분배합니다.
+{{site.data.keyword.loadbalancer_full}} 서비스는 동일한 데이터 센터 내에 로컬로 상주하는 다중 서버 인스턴스(Bare Metal 및 Virtual Server)에 트래픽을 분배합니다.
 
 ## 공용 로드 밸런서
 {: #public-load-balancer}

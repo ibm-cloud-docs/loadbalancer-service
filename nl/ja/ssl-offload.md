@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer での SSL オフロード
+# {{site.data.keyword.loadbalancer_full}} での SSL オフロード
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 すべての着信 HTTPS 接続について、ロード・バランサー・サービスは SSL 接続を終了し、バックエンド・サーバーとのプレーン・テキスト HTTP 通信を確立します。 CPU 集中型の SSL ハンドシェークおよび暗号化/復号のタスクはバックエンド・サーバーから移行され、アプリケーション・トラフィックの処理にすべての CPU サイクルを使用できます。

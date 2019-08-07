@@ -15,11 +15,11 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Andere Ressourcen für IBM Cloud Load Balancer
+# Andere Ressourcen für {{site.data.keyword.loadbalancer_full}}
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 Diese Ressourcen werden von IBM© und einigen unserer Partner und Kunden erstellt. 
 
 ## Blogs
 
- * [Improved Security & More: The latest for IBM Cloud Load Balancer, by Jay Kidambi and Allan Hu ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+ * [Improved Security & More: The latest for {{site.data.keyword.loadbalancer_full}}, by Jay Kidambi and Allan Hu ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

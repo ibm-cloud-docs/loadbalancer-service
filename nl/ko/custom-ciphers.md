@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # HTTPS 애플리케이션의 기본 암호 스위트 선택
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-IBM© Cloud Load Balancer가 해당 HTTP 클라이언트와의 보안 연결을 형성하는 데 도움을 주는 암호 알고리즘입니다.
+{{site.data.keyword.loadbalancer_full}}가 해당 HTTP 클라이언트와의 보안 연결을 형성하는 데 도움을 주는 암호 알고리즘입니다.
 
 IBM에서는 로드 밸런서와 클라이언트 간의 통신을 보호하기 위해 선택할 수 있는 승인된 암호 스위트를 제공합니다.
 

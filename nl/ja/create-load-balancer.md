@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer の作成
+# {{site.data.keyword.loadbalancer_full}} の作成
 {: #creating-an-ibm-cloud-load-balancer}
 
-IBM© Cloud Load Balancer サービスを作成するには、以下の手順を実行します。
+{{site.data.keyword.loadbalancer_full}} サービスを作成するには、以下の手順を実行します。
 
 1. ブラウザーから、[カスタマー・ポータル![外部リンク・アイコン](../../icons/launch-glyph.svg "")](https://control.softlayer.com/){: new_window}を開き、アカウントにログインします。
 
@@ -31,7 +31,7 @@ IBM© Cloud Load Balancer サービスを作成するには、以下の手順を
 
 	<img src="images/catalog-load-balancer.png" alt="描画" style="width: 600px;"/>
 
-3. **「IBM Cloud Load Balancer」** (デフォルト選択) を選択し、**「作成」**をクリックします。
+3. **「{{site.data.keyword.loadbalancer_full}}」** (デフォルト選択) を選択し、**「作成」**をクリックします。
 
 	**「作成」**ではなく**「アップグレード」**が表示される場合、[これらのステップ](/docs/account?topic=account-unifyingaccounts)に従って、IBM Cloud Infrastructure (SoftLayer) アカウントをリンクする必要があります。
 

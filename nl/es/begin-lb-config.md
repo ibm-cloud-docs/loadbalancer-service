@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Configuración de los parámetros de IBM Cloud Load Balancer
+# Configuración de los parámetros de {{site.data.keyword.loadbalancer_full}}
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 Una vez que se [crea un equilibrador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), puede configurarlo para el equilibrio de carga elástico. Para hacerlo:
@@ -46,7 +46,7 @@ Una vez que se [crea un equilibrador de carga](/docs/infrastructure/loadbalancer
 obtener más información sobre el número máximo de puertos permitidos.
 {:note:}
 
-7. IBM© Cloud Load Balancer termina las conexiones HTTPS (HTTP sobre SSL) de entrada y se puede comunicar en HTTP de texto sin formato con los servidores de aplicaciones de fondo y descargar las tareas SSL que requieren un uso intensivo de procesador de los servidores si el protocolo de fondo seleccionado es HTTP. Si el protocolo de fondo seleccionado es HTTPS, se cifrará el tráfico entre el equilibrador de carga y los servidores de fondo. Debe cargar el certificado SSL. Seleccione uno de los certificados disponibles en la lista desplegable.  
+7. {{site.data.keyword.loadbalancer_full}} termina las conexiones HTTPS (HTTP sobre SSL) de entrada y se puede comunicar en HTTP de texto sin formato con los servidores de aplicaciones de fondo y descargar las tareas SSL que requieren un uso intensivo de procesador de los servidores si el protocolo de fondo seleccionado es HTTP. Si el protocolo de fondo seleccionado es HTTPS, se cifrará el tráfico entre el equilibrador de carga y los servidores de fondo. Debe cargar el certificado SSL. Seleccione uno de los certificados disponibles en la lista desplegable.  
 
 	<img src="images/lb-ssl-cert.png" alt="dibujo" style="width: 300px;"/>
 

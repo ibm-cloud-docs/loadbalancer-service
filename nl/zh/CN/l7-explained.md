@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 第 7 层负载均衡
 {: #layer-7-load-balancing}
 
-IBM© Cloud Load Balancer 服务使用第 7 层（应用程序层）数据在多个服务器实例（包括裸机服务器实例和虚拟服务器实例）之间分配流量。
+{{site.data.keyword.loadbalancer_full}} 服务使用第 7 层（应用程序层）数据在多个服务器实例（包括裸机服务器实例和虚拟服务器实例）之间分配流量。
 
  * 要分配的数据流量使用策略和规则进行分类。
  * 策略定义数据流量与某个策略的所有关联规则匹配时要执行的操作。

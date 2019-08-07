@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Transferência SSL com o IBM Cloud Load Balancer
+# Transferência SSL com o {{site.data.keyword.loadbalancer_full}}
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Para todas as conexões HTTPS recebidas, o serviço de balanceador de carga finaliza a conexão SSL e estabelece uma comunicação HTTP de texto sem formatação com o servidor de back-end. As tarefas de handshakes SSL intensivas de CPU e as tarefas de criptografia/decriptografia são deslocadas dos servidores de back-end, permitindo que eles usem todos os seus ciclos de CPU para processar o tráfego de aplicativos.

@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 第 7 層負載平衡
 {: #layer-7-load-balancing}
 
-「IBM© Cloud Load Balancer 服務」會使用第 7 層（應用程式層）資料，將資料流量分散到多個伺服器實例（包括裸機及虛擬伺服器實例）。
+「{{site.data.keyword.loadbalancer_full}} 服務」會使用第 7 層（應用程式層）資料，將資料流量分散到多個伺服器實例（包括裸機及虛擬伺服器實例）。
 
  * 要分散的資料流量會使用原則及規則進行分類。
  * 原則定義在資料流量符合所有與原則相關聯的規則時要採取的動作。

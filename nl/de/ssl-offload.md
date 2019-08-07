@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# SSL-Auslagerung mit IBM Cloud Load Balancer
+# SSL-Auslagerung mit {{site.data.keyword.loadbalancer_full}}
 {: #ssl-offload-with-ibm-cloud-load-balancer}
 
 Für alle ankommenden HTTPS-Verbindungen beendet die Lastausgleichsfunktion die SSL-Verbindung und baut eine ungeschützte HTTP-Kommunikation mit dem Back-End-Server auf. CPU-intensive SSL-Handshakes sowie Verschlüsselungs- und Entschlüsselungstasks werden von den Back-End-Servern ausgelagert, sodass sie alle CPU-Zyklen für die Verarbeitung des Anwendungsdatenverkehrs verwenden können. 

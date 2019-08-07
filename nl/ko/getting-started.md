@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# IBM Cloud Load Balancer 시작하기
+# {{site.data.keyword.loadbalancer_full}} 시작하기
 {: #getting-started}
 
 IBM© Cloud 로드 밸런서의 사용을 시작하려면 두 가지 기본 항목이 필요합니다.
@@ -36,7 +36,7 @@ IBM© Cloud 로드 밸런서의 사용을 시작하려면 두 가지 기본 항�
 ## 로드 밸런서 주문
 {: #ordering-a-load-balancer}
 
-IBM Cloud Load Balancer 서비스를 주문하려면 [IBM Cloud 카탈로그![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}에서 **IBM Cloud Load Balancer**를 선택하십시오. 그런 다음 **작성**을 클릭한 후 다음 프로시저를 수행하십시오. 
+{{site.data.keyword.loadbalancer_full}} 서비스를 주문하려면 [IBM Cloud 카탈로그![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){:new_window}에서 **{{site.data.keyword.loadbalancer_full}}**를 선택하십시오. 그런 다음 **작성**을 클릭한 후 다음 프로시저를 수행하십시오. 
 
 1. 기본 서비스 매개변수를 정의하십시오(예: 이름 및 설명). 
 2. 데이터 센터를 선택하십시오. 
@@ -48,7 +48,7 @@ IBM Cloud Load Balancer 서비스를 주문하려면 [IBM Cloud 카탈로그![�
 
 5. 프론트 엔드 및 백엔드 애플리케이션 프로토콜 및 포트를 작성하십시오. 
 
-  이 구성에 대한 자세한 정보는 [IBM Cloud Load Balancer 매개변수 구성](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters)을 참조하십시오.
+  이 구성에 대한 자세한 정보는 [{{site.data.keyword.loadbalancer_full}} 매개변수 구성](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configuring-ibm-cloud-load-balancer-parameters)을 참조하십시오.
   {: note}
 
 6. SSL 오프로드를 사용으로 설정하려면 프론트 엔드 프로토콜을 HTTPS로 설정하고 백엔드 프로토콜을 HTTP로 설정하십시오. 그런 다음 인증서 드롭 다운 상자에서 SSL 인증서를 선택하십시오. 
@@ -57,7 +57,7 @@ IBM Cloud Load Balancer 서비스를 주문하려면 [IBM Cloud 카탈로그![�
 
 7. 필요한 경우 상태 점검 매개변수를 조정하십시오. 그렇지 않으면 기본 설정을 사용하십시오.
 
-  상태 검사 매개변수에 대한 자세한 정보는 [IBM Cloud Load Balancer 매개변수](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks)를 참조하십시오.
+  상태 검사 매개변수에 대한 자세한 정보는 [{{site.data.keyword.loadbalancer_full}} 매개변수](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-parameters#configure-health-checks)를 참조하십시오.
   {: note}
 
 8. **서버 연결**을 클릭하여 로드 밸런서 뒤에 하나 이상의 서버 인스턴스를 연관시키십시오. 데이터 센터에 로컬인 서버 인스턴스만 표시됩니다.
@@ -70,4 +70,4 @@ IBM Cloud Load Balancer 서비스를 주문하려면 [IBM Cloud 카탈로그![�
 새로 작성된 로드 밸런서가 이 목록에 즉시 표시되지 않을 수 있습니다. 몇 분이 지나면 새 로드 밸런서가 회색(상태가 `Offline`임을 나타냄)으로 표시됩니다. 다시 몇 분이 지나면 새 로드 밸런서가 초록색(`Online` 상태임을 나타냄)으로 표시됩니다. 이러한 변경을 보기 위해 화면을 새로 고쳐야 할 수 있습니다.
 {: note}
 
-새 클라우드 로드 밸런서 구성에 대한 단계별 지침은 [탄력적인 서버 로드 밸런싱을 위해 IBM Cloud Load Balancer를 사용하는 방법](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)을 참조하십시오. 
+새 클라우드 로드 밸런서 구성에 대한 단계별 지침은 [탄력적인 서버 로드 밸런싱을 위해 {{site.data.keyword.loadbalancer_full}}를 사용하는 방법](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing)을 참조하십시오. 

@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# FAQ per IBM Cloud Load Balancer
+# FAQ per {{site.data.keyword.loadbalancer_full}}
 {: #faqs-for-ibm-cloud-load-balancer}
 
-Questa sezione contiene le risposte ad alcune domande frequenti sul servizio IBM© Cloud Load Balancer.
+Questa sezione contiene le risposte ad alcune domande frequenti sul servizio {{site.data.keyword.loadbalancer_full}}.
 
 ## Quante opzioni di bilanciamento del carico sono disponibili in {{site.data.keyword.BluSoftlayer_notm}}?
 {: faq}
@@ -91,7 +91,7 @@ Il seguente elenco mostra le cifrature supportate (elencate in ordine di precede
 
 Al momento, puoi creare fino a 50 istanze del servizio. Se hai bisogno di più istanze, contatta il supporto IBM.
 
-## Il servizio IBM Cloud Load Balancer può essere utilizzato con VMWare?
+## Il servizio {{site.data.keyword.loadbalancer_full}} può essere utilizzato con VMWare?
 {: faq}
 
 Le macchine virtuali VMWare assegnate agli indirizzi privati portatili SoftLayer possono essere specificate come server di backend al programma di bilanciamento del carico. Questa funzione è al momento disponibile solo utilizzando l'API e non la IU web (GUI). Gli IP privati portatili aggiunti utilizzando l'API vengono visualizzati come "Sconosciuti" nella GUI, poiché non sono assegnati da SoftLayer. Tieni presente che questo tipo di configurazione può essere utilizzato anche con altri hypervisor come Xen e KVM.
@@ -129,4 +129,4 @@ Al momento, il supporto L7 è disponibile solo tramite API pubbliche, ma la funz
 ## Di quali informazioni ho bisogno per inviare un ticket di supporto?
 {: faq}
 
-Per inviare un ticket di supporto, specifica il nome prodotto ("IBM Cloud Load Balancer"), l'UUID del tuo programma di bilanciamento del carico (se possibile) e il tuo numero di account Softlayer. Puoi trovare l'UUID nell'URL dopo esserti spostato alla pagina di panoramica di un determinato programma di bilanciamento del carico.
+Per inviare un ticket di supporto, specifica il nome prodotto ("{{site.data.keyword.loadbalancer_full}}"), l'UUID del tuo programma di bilanciamento del carico (se possibile) e il tuo numero di account Softlayer. Puoi trovare l'UUID nell'URL dopo esserti spostato alla pagina di panoramica di un determinato programma di bilanciamento del carico.

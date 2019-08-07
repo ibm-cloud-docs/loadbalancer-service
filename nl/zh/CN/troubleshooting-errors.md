@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 错误消息故障诊断
 {: #error-message-troubleshooting}
 
-本主题提供有关在创建/更新 IBM© Cloud Load Balancer 实例时可能会遇到的常见错误消息的信息。
+本主题提供有关在创建/更新 {{site.data.keyword.loadbalancer_full}} 实例时可能会遇到的常见错误消息的信息。
 
 |错误|说明|解决方案|
 | ------------- | ------------- | ----- |

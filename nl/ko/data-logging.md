@@ -41,7 +41,7 @@ Softlayer 및 IBM Cloud 계정이 연결되어 있는 경우에만 데이터 로
 ## 로그 출력 예
 {: #log-output-examples}
 
-다음 출력은 IBM Cloud Load Balancer 데이터 로그의 예입니다. 
+다음 출력은 {{site.data.keyword.loadbalancer_full}} 데이터 로그의 예입니다. 
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

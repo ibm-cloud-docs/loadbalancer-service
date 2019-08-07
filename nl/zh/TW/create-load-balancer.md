@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# 建立 IBM Cloud Load Balancer
+# 建立 {{site.data.keyword.loadbalancer_full}}
 {: #creating-an-ibm-cloud-load-balancer}
 
-若要建立 IBM© Cloud Load Balancer 服務，請執行下列程序：
+若要建立 {{site.data.keyword.loadbalancer_full}} 服務，請執行下列程序：
 
 1. 從瀏覽器中，開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入帳戶。
 
@@ -31,7 +31,7 @@ subcollection: loadbalancer-service
 
 	<img src="images/catalog-load-balancer.png" alt="圖片" style="width: 600px;"/>
 
-3. 選取 **IBM Cloud Load Balancer**（預設選項），然後按一下**建立**。
+3. 選取 **{{site.data.keyword.loadbalancer_full}}**（預設選項），然後按一下**建立**。
 
 	如果您看到**升級**，而非**建立**，則必須遵循[這些步驟](/docs/account?topic=account-unifyingaccounts)來鏈結「IBM Cloud 基礎架構 (SoftLayer)」帳戶。
 

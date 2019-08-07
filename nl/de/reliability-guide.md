@@ -13,10 +13,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Cloud Load Balancer für einen elastischen Serverlastausgleich erstellen und verwenden
+# {{site.data.keyword.loadbalancer_full}} für einen elastischen Serverlastausgleich erstellen und verwenden
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-Der IBM© Cloud Load Balancer-Service verbessert die Skalierbarkeit und Verfügbarkeit Ihrer geschäftskritischen Anwendungen. Er überwacht den Status Ihrer Anwendungsserver, setzt intelligente Lastausgleichsmethoden ein, um den Datenverkehr auf mehrere Server zu verteilen, und passt die Systemkapazität dynamisch an, um unterschiedliche Verkehrslasten zu bewältigen. 
+Der {{site.data.keyword.loadbalancer_full}}-Service verbessert die Skalierbarkeit und Verfügbarkeit Ihrer geschäftskritischen Anwendungen. Er überwacht den Status Ihrer Anwendungsserver, setzt intelligente Lastausgleichsmethoden ein, um den Datenverkehr auf mehrere Server zu verteilen, und passt die Systemkapazität dynamisch an, um unterschiedliche Verkehrslasten zu bewältigen. 
 
 ## Lernziele
 

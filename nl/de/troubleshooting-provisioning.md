@@ -17,10 +17,10 @@ lastupdated: "2018-11-12"
 # Fehlerbehebung bei der Bereitstellung der Lastausgleichsfunktion
 {: #load-balancer-provisioning-troubleshooting}
 
-In diesem Abschnitt finden Sie Informationen zu gängigen Problemen, die beim Erstellen einer Instanz von IBM© Cloud Load Balancer auftreten können. 
+In diesem Abschnitt finden Sie Informationen zu gängigen Problemen, die beim Erstellen einer Instanz von {{site.data.keyword.loadbalancer_full}} auftreten können. 
 
 ## Unzureichend IP-Adressen in Ihrem Teilnetz
-IBM Cloud Load Balancer erfordert mindestens zwei freie IP-Adressen in seinem privaten Teilnetz. Darüber hinaus werden auch aus Ihrem öffentlichen Teilnetz mindestens zwei freie IP-Adressen benötigt, wenn die Lastausgleichsfunktion eine öffentliche Lastausgleichsfunktion ist und wenn die Option **IBM Systempool** nicht verwendet wird. 
+{{site.data.keyword.loadbalancer_full}} erfordert mindestens zwei freie IP-Adressen in seinem privaten Teilnetz. Darüber hinaus werden auch aus Ihrem öffentlichen Teilnetz mindestens zwei freie IP-Adressen benötigt, wenn die Lastausgleichsfunktion eine öffentliche Lastausgleichsfunktion ist und wenn die Option **IBM Systempool** nicht verwendet wird. 
 
 Führen Sie die folgenden Schritte aus, um nach freien IPs in einem Teilnetz zu suchen.
 

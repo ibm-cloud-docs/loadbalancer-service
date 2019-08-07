@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # エラー・メッセージのトラブルシューティング
 {: #error-message-troubleshooting}
 
-このトピックでは、IBM© Cloud Load Balancer のインスタンスの作成時または更新時に出される可能性のある一般的なエラー・メッセージについて説明します。
+このトピックでは、{{site.data.keyword.loadbalancer_full}} のインスタンスの作成時または更新時に出される可能性のある一般的なエラー・メッセージについて説明します。
 
 | エラー | 説明  | 解決策  |
 | ------------- | ------------- | ----- |

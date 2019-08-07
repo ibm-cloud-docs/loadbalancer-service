@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Utilizzo di un IBM Cloud Load Balancer per il bilanciamento elastico del carico del server
+# Utilizzo di un {{site.data.keyword.loadbalancer_full}} per il bilanciamento elastico del carico del server
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-Il servizio IBM© Cloud Load Balancer aiuta a migliorare la scalabilità e la disponibilità delle tue applicazioni critiche per il business. Monitora l'integrità dei tuoi server delle applicazioni, utilizza metodi di bilanciamento del carico mirati per distribuire il traffico tra più server e regola in modo dinamico la capacità di sistema per gestire la variazione del carico del traffico.
+Il servizio {{site.data.keyword.loadbalancer_full}} aiuta a migliorare la scalabilità e la disponibilità delle tue applicazioni critiche per il business. Monitora l'integrità dei tuoi server delle applicazioni, utilizza metodi di bilanciamento del carico mirati per distribuire il traffico tra più server e regola in modo dinamico la capacità di sistema per gestire la variazione del carico del traffico.
 
 ## Cosa otterrai
 {: #what-you-ll-accomplish-2}

@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Notions de base d'exécution de l'équilibreur de charge IBM Cloud Load Balancer
+# Notions de base d'exécution de l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #performing-ibm-cloud-load-balancer-basics}
 
-Le service IBM© Cloud Load Balancer répartit le trafic entre plusieurs instances de serveurs (bare metal et virtuel) installées en local, au sein du même centre de données.
+Le service {{site.data.keyword.loadbalancer_full}} répartit le trafic entre plusieurs instances de serveurs (bare metal et virtuel) installées en local, au sein du même centre de données.
 
 ## Equilibreur de charge public
 {: #public-load-balancer}

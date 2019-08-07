@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer로 메트릭 모니터링
+# {{site.data.keyword.loadbalancer_full}}로 메트릭 모니터링
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 로드 밸런서는 다음의 메트릭을 모니터합니다.

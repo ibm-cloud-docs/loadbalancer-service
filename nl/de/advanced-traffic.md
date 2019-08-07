@@ -16,7 +16,7 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Erweiterte Verwaltung des Datenverkehrs mit IBM Cloud Load Balancer
+# Erweiterte Verwaltung des Datenverkehrs mit {{site.data.keyword.loadbalancer_full}}
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
 In diesem Abschnitt werden erweiterte Funktionen der Datenverkehrsverwaltung besprochen, die mit dem Service für die Lastausgleichsfunktion verfügbar sind.

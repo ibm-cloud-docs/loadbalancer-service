@@ -20,15 +20,15 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# 關於 IBM Cloud Load Balancer
+# 關於 {{site.data.keyword.loadbalancer_full}}
 {: #about-ibm-cloud-load-balancer}
 
-IBM© Cloud Load Balancer 服務可協助客戶改善其企業關鍵應用程式的可用性，方法是將資料流量分散到多個應用程式伺服器實例，並且只將資料流量轉遞至性能良好的實例。
+{{site.data.keyword.loadbalancer_full}} 服務可協助客戶改善其企業關鍵應用程式的可用性，方法是將資料流量分散到多個應用程式伺服器實例，並且只將資料流量轉遞至性能良好的實例。
 
 ## 特性概觀
 {: #overview-of-features}
 
-IBM Cloud Load Balancer 服務提供下列特性：
+{{site.data.keyword.loadbalancer_full}} 服務提供下列特性：
 
 * 公用（面向網際網路）負載平衡器
 	* 透過其完整網域名稱 (FQDN) 可公開存取服務

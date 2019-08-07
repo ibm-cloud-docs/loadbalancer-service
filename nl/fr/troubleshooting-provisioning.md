@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # Traitement des incidents liés à la mise à disposition d'équilibreur de charge
 {: #load-balancer-provisioning-troubleshooting}
 
-Cette rubrique fournit des informations sur les problèmes courants liés à la création d'une nouvelle instance d'équilibreur de charge IBM© Cloud Load Balancer.
+Cette rubrique fournit des informations sur les problèmes courants liés à la création d'une nouvelle instance d'équilibreur de charge {{site.data.keyword.loadbalancer_full}}.
 
 ## Adresses IP insuffisantes dans votre réseau
 {: #insufficient-ip-addresses-in-your-subnet}
 
-L'équilibreur de charge IBM Cloud Load Balancer requiert au moins deux adresses IP libres issues de son sous-réseau privé. En outre, si l'équilibreur de charge est un équilibreur de charge public et que l'option **Pool de systèmes IBM** n'est pas utilisée, au moins deux adresses IP libres issues de votre réseau public sont également requises.
+L'équilibreur de charge {{site.data.keyword.loadbalancer_full}} requiert au moins deux adresses IP libres issues de son sous-réseau privé. En outre, si l'équilibreur de charge est un équilibreur de charge public et que l'option **Pool de systèmes IBM** n'est pas utilisée, au moins deux adresses IP libres issues de votre réseau public sont également requises.
 
 Procédez comme suit pour rechercher les adresses IP libres dans un sous-réseau :
 

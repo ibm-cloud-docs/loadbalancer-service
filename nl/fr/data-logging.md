@@ -41,7 +41,7 @@ Les journaux de données sont envoyées uniquement si les comptes Softlayer et I
 ## Exemples de sortie de journal
 {: #log-output-examples}
 
-La sortie suivante est un exemple de journal de données IBM Cloud Load Balancer :
+La sortie suivante est un exemple de journal de données {{site.data.keyword.loadbalancer_full}} :
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

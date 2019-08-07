@@ -16,10 +16,10 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Allgemeine Schritte für IBM Cloud Load Balancer ausführen
+# Allgemeine Schritte für {{site.data.keyword.loadbalancer_full}} ausführen
 {: #performing-ibm-cloud-load-balancer-basics}
 
-Vom IBM© Cloud Load Balancer-Service wird der Datenverkehr auf mehrere Serverinstanzen (Bare-Metal-Server und virtuelle Server) verteilt, die sich lokal in demselben Rechenzentrum befinden. 
+Vom {{site.data.keyword.loadbalancer_full}}-Service wird der Datenverkehr auf mehrere Serverinstanzen (Bare-Metal-Server und virtuelle Server) verteilt, die sich lokal in demselben Rechenzentrum befinden. 
 
 ## Öffentliche Lastausgleichsfunktion 
 Der Instanz des Service für die Lastausgleichsfunktion wird ein öffentlicher und vollständig qualifizierter Domänenname zugewiesen. Sie müssen diesen Domänennamen für den Zugriff auf die Anwendungen verwenden, die hinter dem Service für die Lastausgleichsfunktion gehostet werden. Dieser Domänenname kann für mindestens eine öffentliche IP-Adresse registriert werden. Die öffentlichen IP-Adressen und die Anzahl der öffentlichen IP-Adressen können sich im Lauf der Zeit aufgrund von Wartungs- und Skalierungsaktivitäten ändern, die für die Endbenutzer transparent sind. Die Back-End-Recheninstanzen, auf denen die Anwendung gehostet wird, müssen sich in einem privaten Netz in einer IBM Cloud befinden. 

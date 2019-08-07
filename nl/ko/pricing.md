@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 
-# IBM Cloud Load Balancer 가격
+# {{site.data.keyword.loadbalancer_full}} 가격
 {: #ibm-cloud-load-balancer-pricing}
 
 IBM© Cloud 로드 밸런서 가격은 월별 계산되는 다음의 3개 메트릭을 기반으로 합니다.
@@ -30,10 +30,10 @@ IBM© Cloud 로드 밸런서 가격은 월별 계산되는 다음의 3개 메트
 * 처리된 데이터
 * 아웃바운드 공용 대역폭(Egress)
 
-모든 가격은 지리적 위치에 따라 다릅니다. IBM Cloud Load Balancer 서비스에서 이용하는 아웃바운드 공용 대역폭에 대해서는 표준 데이터 전송 비용인 [USD 0.09/GB![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/bandwidth)를 기준으로 비용이 청구됩니다.
+모든 가격은 지리적 위치에 따라 다릅니다. {{site.data.keyword.loadbalancer_full}} 서비스에서 이용하는 아웃바운드 공용 대역폭에 대해서는 표준 데이터 전송 비용인 [USD 0.09/GB![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/bandwidth)를 기준으로 비용이 청구됩니다.
 {: note}
 
-다음 차트는 공용 로드 밸런싱에 매월 4,500GB를 사용하는 고객에 대해 가격 책정된 IBM Cloud Load Balancer의 예를 상세히 보여줍니다.
+다음 차트는 공용 로드 밸런싱에 매월 4,500GB를 사용하는 고객에 대해 가격 책정된 {{site.data.keyword.loadbalancer_full}}의 예를 상세히 보여줍니다.
 
 | | 월별 |요금 | 비용 |
 | ------------- | ------------- | ------------- | ------------- |

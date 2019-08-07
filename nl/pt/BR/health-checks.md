@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Executando verificações de funcionamento com o IBM Cloud Load Balancer
+# Executando verificações de funcionamento com o {{site.data.keyword.loadbalancer_full}}
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 As definições de verificação de funcionamento são obrigatórias para cada uma das portas do aplicativo back-end. A porta e o protocolo na configuração de verificação de funcionamento deverão corresponder à porta e ao protocolo de back-end definidos, caso contrário, a configuração será rejeitada.

@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Come ottenere aiuto e supporto per IBM Cloud Load Balancer
+# Come ottenere aiuto e supporto per {{site.data.keyword.loadbalancer_full}}
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-In caso di problemi o domande durante l'utilizzo del servizio IBM© Cloud Load Balancer, puoi ottenere supporto ricercando le informazioni o facendo delle domande tramite uno dei seguenti forum. Puoi inoltre aprire un ticket di supporto.
+In caso di problemi o domande durante l'utilizzo del servizio {{site.data.keyword.loadbalancer_full}}, puoi ottenere supporto ricercando le informazioni o facendo delle domande tramite uno dei seguenti forum. Puoi inoltre aprire un ticket di supporto.
 
 Quando utilizzi i forum per fare una domanda, contrassegnala con tag in modo che possa essere individuata dai team di sviluppo di IBM Cloud.
 
-* Se hai domande tecniche sul servizio IBM Cloud Load Balancer, inserisci la tua domanda in [Stack Overflow](https://stackoverflow.com/search?q=lbaas+ibm-cloud) e contrassegnala con le tag "lbaas" e "ibm-cloud".
+* Se hai domande tecniche sul servizio {{site.data.keyword.loadbalancer_full}}, inserisci la tua domanda in [Stack Overflow](https://stackoverflow.com/search?q=lbaas+ibm-cloud) e contrassegnala con le tag "lbaas" e "ibm-cloud".
 * Per domande sul servizio e sulle istruzioni per l'utilizzo iniziale, utilizza il forum
 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/lbaas.html?smartspace=ibm-cloud). Includi le tag "lbaas" e "ibm-cloud".
 

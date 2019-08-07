@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # About IBM Cloud Load Balancer
 {: #about-ibm-cloud-load-balancer}
 
-The IBM© Cloud Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
+The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
 
 ## Overview of Features
 {: #overview-of-features}
 
-The IBM Cloud Load Balancer Service offers the following features:
+The {{site.data.keyword.loadbalancer_full}} Service offers the following features:
 
 * Public (internet-facing) load balancer
 	* Publicly-accessible service through its fully qualified domain name (FQDN)

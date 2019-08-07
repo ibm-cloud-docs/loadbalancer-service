@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Preguntas frecuentes sobre IBM Cloud Load Balancer
+# Preguntas frecuentes sobre {{site.data.keyword.loadbalancer_full}}
 {: #faqs-for-ibm-cloud-load-balancer}
 
-Esta sección contiene respuestas a algunas preguntas frecuentes sobre el servicio IBM© Cloud Load Balancer.
+Esta sección contiene respuestas a algunas preguntas frecuentes sobre el servicio {{site.data.keyword.loadbalancer_full}}.
 
 ## ¿Cuántas opciones de equilibrio de carga hay disponibles en {{site.data.keyword.BluSoftlayer_notm}}?
 {: faq}
@@ -91,7 +91,7 @@ En la siguiente lista, se enumeran los cifrados soportados (listados en orden de
 
 Actualmente, puede crear un máximo de 50 instancias de servicio. Si necesita más instancias, póngase en contacto con el soporte de IBM.
 
-## ¿Se puede utilizar el servicio IBM Cloud Load Balancer con VMware?
+## ¿Se puede utilizar el servicio {{site.data.keyword.loadbalancer_full}} con VMware?
 {: faq}
 
 Las máquinas virtuales VMware que tienen asignadas direcciones privadas portátiles de SoftLayer se pueden especificar como servidores de fondo en el equilibrador de carga. Esta característica actualmente solo está disponible utilizando la API, y no por la interfaz de usuario web (GUI). Las IP privadas portátiles añadidas mediante la API aparecen como "Desconocidas" en la GUI, ya que no han sido asignadas por SoftLayer. Tenga en cuenta que esta clase de configuración se puede utilizar con otros hipervisores, como Xen y KVM.
@@ -129,4 +129,4 @@ Actualmente, el soporte de capa 7 solo está disponible a través de API públic
 ## ¿Qué información necesito para presentar una incidencia de soporte?
 {: faq}
 
-Para presentar una incidencia de soporte, proporcione el nombre del producto ("IBM Cloud Load Balancer"), el UUID del equilibrador de carga (si es posible) y el número de su cuenta de Softlayer. Encontrará el UUID en el URL después de ir a la página de visión general del equilibrador de carga determinado.
+Para presentar una incidencia de soporte, proporcione el nombre del producto ("{{site.data.keyword.loadbalancer_full}}"), el UUID del equilibrador de carga (si es posible) y el número de su cuenta de Softlayer. Encontrará el UUID en el URL después de ir a la página de visión general del equilibrador de carga determinado.

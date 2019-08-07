@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer 的已知問題及限制
+# {{site.data.keyword.loadbalancer_full}} 的已知問題及限制
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-本主題提供目前已知「IBM© Cloud Load Balancer 服務」問題及限制的資訊。
+本主題提供目前已知「{{site.data.keyword.loadbalancer_full}} 服務」問題及限制的資訊。
 
 ## 已知問題
 {: #known-issues}
-IBM Cloud Load Balancer 服務目前具有下列問題：
+{{site.data.keyword.loadbalancer_full}} 服務目前具有下列問題：
 
 * 次要 - 伺服器實例及「通訊協定」標籤中的**編輯**按鈕會套用至所有項目，而且不受限於使用勾選框所選取的列。
 * 次要 - 在起始建立負載平衡器服務期間，如果您在各種畫面之間來回切換，則會失去自訂性能檢查設定。
@@ -37,7 +37,7 @@ IBM Cloud Load Balancer 服務目前具有下列問題：
 
 ## 已知限制
 {: #known-limits}
-IBM Cloud Load Balancer 服務目前具有下列限制：
+{{site.data.keyword.loadbalancer_full}} 服務目前具有下列限制：
 
 * 虛擬埠/通訊協定數目上限 - 10
 * 受負載平衡器保護的伺服器數目上限 - 50

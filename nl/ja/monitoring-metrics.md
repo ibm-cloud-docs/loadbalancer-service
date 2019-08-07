@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer でのメトリックのモニター
+# {{site.data.keyword.loadbalancer_full}} でのメトリックのモニター
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 ロード・バランサーは以下のメトリックをモニターします。

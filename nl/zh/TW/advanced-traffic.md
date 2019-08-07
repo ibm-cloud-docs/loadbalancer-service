@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# 使用 IBM Cloud Load Balancer 進行進階資料流量管理
+# 使用 {{site.data.keyword.loadbalancer_full}} 進行進階資料流量管理
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-本節討論 IBM Cloud Load Balancer 服務所提供的數個進階資料流量管理特性。
+本節討論 {{site.data.keyword.loadbalancer_full}} 服務所提供的數個進階資料流量管理特性。
 
 ## 連線上限
 {: #max-connections}

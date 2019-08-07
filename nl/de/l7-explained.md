@@ -17,7 +17,7 @@ lastupdated: "2018-11-12"
 # Layer 7-Lastausgleich
 {: #layer-7-load-balancing}
 
-Vom IBM© Cloud Load Balancer-Service wird der Datenverkehr unter Verwendung von Layer 7-Daten (Anwendungsebene) auf mehrere Serverinstanzen verteilt, darunter Bare-Metal-Server und virtuelle Server.  
+Vom {{site.data.keyword.loadbalancer_full}}-Service wird der Datenverkehr unter Verwendung von Layer 7-Daten (Anwendungsebene) auf mehrere Serverinstanzen verteilt, darunter Bare-Metal-Server und virtuelle Server.  
 
  * Der zu verteilende Datenverkehr wird mithilfe von Richtlinien und Regeln klassifiziert. 
  * Richtlinien definieren, welche Aktion ausgeführt werden soll, wenn der Datenverkehr mit allen Regeln übereinstimmt, die einer Richtlinie zugeordnet sind.

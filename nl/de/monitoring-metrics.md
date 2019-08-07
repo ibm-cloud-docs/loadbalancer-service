@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Überwachungsmetriken mit IBM Cloud Load Balancer
+# Überwachungsmetriken mit {{site.data.keyword.loadbalancer_full}}
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 Von der Lastausgleichsfunktion werden folgende Metriken überwacht: 

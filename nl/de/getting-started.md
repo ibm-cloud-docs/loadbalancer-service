@@ -15,10 +15,10 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 
-# Einführung in IBM Cloud Load Balancer
+# Einführung in {{site.data.keyword.loadbalancer_full}}
 {: #getting-started-with-ibm-cloud-load-balancer}
 
-Für den Einstieg in die Verwendung von IBM© Cloud Load Balancer benötigen Sie zwei Dinge:
+Für den Einstieg in die Verwendung von {{site.data.keyword.loadbalancer_full}} benötigen Sie zwei Dinge:
 
 * Ein Konto bei IBM: [IBMid ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * Einen IBM Server, entweder einen [Bare-Metal-Server](/docs/bare-metal?topic=bare-metal-about) oder eine [virtuelle Serverinstanz (VSI)](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers).
@@ -29,7 +29,7 @@ Falls Sie bereits über ein vorhandenes Konto für die IBM Cloud-Infrastruktur (
 
 ## Lastausgleichsfunktion bestellen
 
-Wählen Sie zum Bestellen des IBM Cloud Load Balancer-Service **Netz > Lastausgleichsfunktionen > IBM Cloud Load Balancer** im [IBM Cloud-Katalog ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window} aus. Melden Sie sich an oder erstellen Sie ein neues Konto, und führen Sie anschließend die folgende Prozedur aus:
+Wählen Sie zum Bestellen des {{site.data.keyword.loadbalancer_full}}-Service **Netz > Lastausgleichsfunktionen > {{site.data.keyword.loadbalancer_full}}** im [IBM Cloud-Katalog ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/infrastructure/load-balancer-group){:new_window} aus. Melden Sie sich an oder erstellen Sie ein neues Konto, und führen Sie anschließend die folgende Prozedur aus:
 
 1. Wählen Sie Ihr Rechenzentrum aus und überprüfen Sie den Serviceplan. Klicken Sie auf **Weiter**.
 2. Wählen Sie das Teilnetz aus, in dem Sie die Lastausgleichsfunktion bereitstellen möchten. Die Instanz des Service für die Lastausgleichsfunktion verfügt über eine der Netzschnittstellen in diesem Teilnetz. Stellen Sie sicher, dass die Anwendungsserver entweder in diesem Teilnetz oder aus diesem Teilnetz erreichbar sind. Aktivieren Sie bei Bedarf das VLAN-Spanning. Klicken Sie auf **Weiter**.
@@ -47,4 +47,4 @@ Wählen Sie zum Bestellen des IBM Cloud Load Balancer-Service **Netz > Lastausgl
 
 	Wenn Sie auf den Servicenamen auf dieser Seite klicken, wechseln Sie zur Übersichtsseite des Service. Sie können zu den Registerkarten **Protokolle**, **Statusprüfungen** und **Serverinstanzen** navigieren, um die Ihre Konfiguration weiter zu bearbeiten.
 
-Eine schrittweisen Konfigurationsanleitung feinden Sie unter [Vorgehensweise zum Erstellen und Verwenden einer IBM Cloud Load Balancer-Instanz für einen elastischen Serverlastausgleich](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing).
+Eine schrittweisen Konfigurationsanleitung feinden Sie unter [Vorgehensweise zum Erstellen und Verwenden einer {{site.data.keyword.loadbalancer_full}}-Instanz für einen elastischen Serverlastausgleich](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing).

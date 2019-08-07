@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Elección de una suite de cifrado preferida para la aplicación HTTPS
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-Algoritmos de cifrado que ayudan a IBM© Cloud Load Balancer a formar conexiones seguras con sus clientes HTTP.
+Algoritmos de cifrado que ayudan a {{site.data.keyword.loadbalancer_full}} a formar conexiones seguras con sus clientes HTTP.
 
 IBM ofrece una suite de cifrados aprobados entre los que puede elegir, para proteger la comunicación entre el equilibrador de carga los clientes.
 

@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # 負載平衡器佈建疑難排解
 {: #load-balancer-provisioning-troubleshooting}
 
-本主題提供您在建立新的 IBM© Cloud Load Balancer 實例時可能遇到的一般問題相關資訊。
+本主題提供您在建立新的 {{site.data.keyword.loadbalancer_full}} 實例時可能遇到的一般問題相關資訊。
 
 ## 子網路中的 IP 位址不足
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer 需要至少兩個來自其專用子網路的可用 IP 位址。此外，如果負載平衡器是公用負載平衡器，而且未使用 **IBM 系統儲存區**選項，則還至少需要您公用子網路中的兩個可用 IP 位址。
+{{site.data.keyword.loadbalancer_full}} 需要至少兩個來自其專用子網路的可用 IP 位址。此外，如果負載平衡器是公用負載平衡器，而且未使用 **IBM 系統儲存區**選項，則還至少需要您公用子網路中的兩個可用 IP 位址。
 
 請遵循下面的步驟，以檢查子網路中的可用 IP。
 

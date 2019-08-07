@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Executando os fundamentos do IBM Cloud Load Balancer
+# Executando os fundamentos do {{site.data.keyword.loadbalancer_full}}
 {: #performing-ibm-cloud-load-balancer-basics}
 
 O serviço balanceador de carga do IBM© Cloud distribui o tráfego entre múltiplas instâncias do servidor (bare metal e servidor virtual) que residem localmente, no mesmo datacenter.

@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # ロード・バランサーのプロビジョンに関するトラブルシューティング
 {: #load-balancer-provisioning-troubleshooting}
 
-このトピックでは、IBM© Cloud Load Balancer の新規インスタンスの作成時に発生する可能性のある一般的な問題について説明します。
+このトピックでは、{{site.data.keyword.loadbalancer_full}} の新規インスタンスの作成時に発生する可能性のある一般的な問題について説明します。
 
 ## サブネットの IP アドレスが不十分
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer には、プライベート・サブネットからの 2 つ以上の空き IP アドレスが必要です。 さらに、ロード・バランサーがパブリック・ロード・バランサーであり、かつ、**IBM システム・プール**のオプションが使用されていない場合は、パブリック・サブネットからも 2 つ以上の空き IP アドレスが必要です。
+{{site.data.keyword.loadbalancer_full}} には、プライベート・サブネットからの 2 つ以上の空き IP アドレスが必要です。 さらに、ロード・バランサーがパブリック・ロード・バランサーであり、かつ、**IBM システム・プール**のオプションが使用されていない場合は、パブリック・サブネットからも 2 つ以上の空き IP アドレスが必要です。
 
 サブネットに空き IP があるかどうかを確認するには、以下のステップを実行します。
 

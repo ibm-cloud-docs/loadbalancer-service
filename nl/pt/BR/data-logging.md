@@ -44,7 +44,7 @@ em seguida, efetue login no painel do Kibana.
 ## Exemplos de saída de log
 {: #log-output-examples}
 
-A saída a seguir é um exemplo de um log de dados do IBM Cloud Load Balancer:
+A saída a seguir é um exemplo de um log de dados do {{site.data.keyword.loadbalancer_full}}:
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

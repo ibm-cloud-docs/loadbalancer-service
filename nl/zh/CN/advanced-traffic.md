@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# 使用 IBM Cloud Load Balancer 的高级流量管理
+# 使用 {{site.data.keyword.loadbalancer_full}} 的高级流量管理
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-本节讨论随 IBM Cloud Load Balancer 服务一起提供的几个高级流量管理功能。
+本节讨论随 {{site.data.keyword.loadbalancer_full}} 服务一起提供的几个高级流量管理功能。
 
 ## 最大连接数
 {: #max-connections}

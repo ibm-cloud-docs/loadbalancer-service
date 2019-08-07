@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# 柔軟なサーバー・ロード・バランシングのための IBM Cloud Load Balancer の使用
+# 柔軟なサーバー・ロード・バランシングのための {{site.data.keyword.loadbalancer_full}} の使用
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-IBM© Cloud Load Balancer サービスは、お客様のビジネスに不可欠なアプリケーションの拡張容易性および可用性を高めるのに役立ちます。 このサービスは、アプリケーション・サーバーの正常性をモニターし、スマートなロード・バランシング方式を活用して複数サーバー間でトラフィックを分散させ、システム容量を動的に調整することで変化するトラフィック負荷を処理します。
+{{site.data.keyword.loadbalancer_full}} サービスは、お客様のビジネスに不可欠なアプリケーションの拡張容易性および可用性を高めるのに役立ちます。 このサービスは、アプリケーション・サーバーの正常性をモニターし、スマートなロード・バランシング方式を活用して複数サーバー間でトラフィックを分散させ、システム容量を動的に調整することで変化するトラフィック負荷を処理します。
 
 ## このガイドで達成できること
 {: #what-you-ll-accomplish-2}

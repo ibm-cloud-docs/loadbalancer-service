@@ -41,7 +41,7 @@ Sólo se envían registros de datos si las cuentas de Softlayer e IBM Cloud est�
 ## Ejemplos de salida de registro
 {: #log-output-examples}
 
-La siguiente salida es un ejemplo de un registro de datos de IBM Cloud Load Balancer:
+La siguiente salida es un ejemplo de un registro de datos de {{site.data.keyword.loadbalancer_full}}:
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

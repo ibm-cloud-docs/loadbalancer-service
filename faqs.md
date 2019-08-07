@@ -24,7 +24,7 @@ subcollection: loadbalancer-service
 # FAQs for IBM Cloud Load Balancer
 {: #faqs-for-ibm-cloud-load-balancer}
 
-This section contains answers to some frequently asked questions about the IBM© Cloud Load Balancer Service.
+This section contains answers to some frequently asked questions about the {{site.data.keyword.loadbalancer_full}} Service.
 
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {: faq}
@@ -91,7 +91,7 @@ The following list details the supported ciphers (listed in order of precedence)
 
 Currently, you may create up to 50 service instances. If you need more instances, please contact IBM Support.
 
-## Can the IBM Cloud Load Balancer Service be used with VMWare?
+## Can the {{site.data.keyword.loadbalancer_full}} Service be used with VMWare?
 {: faq}
 
 VMWare virtual machines that are assigned SoftLayer portable private addresses can be specified as backend servers to the load balancer. This feature is currently available only using the API, and not the web UI (GUI). Portable private IPs added using the API appear as "Unknown" in the GUI, as they are not assigned by SoftLayer. Note that this kind of configuration can be used with other Hypervisors such as Xen and KVM as well.
@@ -124,4 +124,4 @@ Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-fi
 ## What information do I need to file a support ticket?
 {: faq}
 
-To file a support ticket, please provide the product name ("IBM Cloud Load Balancer"), the UUID of your load balancer (if possible) and your Softlayer account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
+To file a support ticket, please provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your Softlayer account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.

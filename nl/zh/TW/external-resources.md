@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer 的其他資源
+# {{site.data.keyword.loadbalancer_full}} 的其他資源
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 這些資源由 IBM© 以及我們的一些合作夥伴和客戶所建立。
@@ -29,4 +29,4 @@ subcollection: loadbalancer-service
 ## 部落格
 {: #lb-blogs}
 
- * [Improved security and More: The latest for IBM Cloud Load Balancer，作者 Jay Kidambi 及 Allan Hu ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+ * [Improved security and More: The latest for {{site.data.keyword.loadbalancer_full}}，作者 Jay Kidambi 及 Allan Hu ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)

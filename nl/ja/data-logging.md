@@ -41,7 +41,7 @@ subcollection: loadbalancer-service
 ## ログ出力の例
 {: #log-output-examples}
 
-以下の出力は IBM Cloud Load Balancer データ・ログの例です。
+以下の出力は {{site.data.keyword.loadbalancer_full}} データ・ログの例です。
 
 ```
 Feb 19 05:50:34 loadbalancer-dal09-323698-643866-713576 load-balancer[2558]: Connect from xxx.xxx.xxx.xxx:29856 to 169.55.3.169:80 (a96406a3-12f6-4c1b-8e63-6901848d74ff/HTTP)

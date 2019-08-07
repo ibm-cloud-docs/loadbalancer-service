@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# 使用 IBM Cloud Load Balancer 以進行彈性伺服器負載平衡
+# 使用 {{site.data.keyword.loadbalancer_full}} 以進行彈性伺服器負載平衡
 {: #creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing}
 
-IBM© Cloud Load Balancer 服務可協助改善企業關鍵應用程式的可調整性及可用性。它會監視應用程式伺服器的性能、利用智慧型負載平衡方法以將資料流量分佈到多部伺服器，並動態調整其系統容量以處理不同的資料流量負載。
+{{site.data.keyword.loadbalancer_full}} 服務可協助改善企業關鍵應用程式的可調整性及可用性。它會監視應用程式伺服器的性能、利用智慧型負載平衡方法以將資料流量分佈到多部伺服器，並動態調整其系統容量以處理不同的資料流量負載。
 
 ## 您將達成的目標
 {: #what-you-ll-accomplish-2}

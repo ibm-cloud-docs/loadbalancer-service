@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer의 FAQ
+# {{site.data.keyword.loadbalancer_full}}의 FAQ
 {: #faqs-for-ibm-cloud-load-balancer}
 
-이 절에는 IBM© Cloud Load Balancer Service와 관련하여 일부 자주 묻는 질문에 대한 답변이 포함되어 있습니다.
+이 절에는 {{site.data.keyword.loadbalancer_full}} Service와 관련하여 일부 자주 묻는 질문에 대한 답변이 포함되어 있습니다.
 
 ## {{site.data.keyword.BluSoftlayer_notm}}에서 사용 가능한 로드 밸런싱 옵션은 몇 가지입니까?
 {: faq}
@@ -91,7 +91,7 @@ Cloud Load Balancer Service는 TLS 1.2 및 SSL 종료를 지원합니다.
 
 현재 최대 50개의 서비스 인스턴스를 작성할 수 있습니다. 인스턴스가 추가로 필요하면 IBM 지원 센터에 문의하십시오.
 
-## IBM Cloud Load Balancer Service를 VMWare에서 사용할 수 있습니까?
+## {{site.data.keyword.loadbalancer_full}} Service를 VMWare에서 사용할 수 있습니까?
 {: faq}
 
 SoftLayer 이동식 사설 주소가 지정된 VMWare 가상 머신은 로드 밸런서에 대한 백엔드 서버로서 지정될 수 있습니다. 이 기능은 현재 웹 UI(GUI)가 아닌 API를 통해서만 사용 가능합니다. SoftLayer에 의해 지정되지 않았으므로, API를 사용하여 추가된 이동식 사설 IP는 GUI에서 "알 수 없음"으로 표시됩니다. 이러한 종류의 구성은 Xen 및 KVM 등의 기타 하이퍼바이저와 함께 사용될 수 있습니다.
@@ -129,4 +129,4 @@ TCP 포트 56501은 관리에 사용됩니다. 애플리케이션의 포트는 �
 ## 지원 티켓을 제출하는 데 필요한 정보는 무엇입니까?
 {: faq}
 
-지원 티켓을 제출하려면 제품 이름("IBM Cloud Load Balancer"), 로드 밸런서의 UUID(가능한 경우) 및 Softlayer 계정 번호를 제공하십시오. 지정된 로드 밸런서의 개요 페이지로 이동한 후 URL에서 UUID를 찾을 수 있습니다.
+지원 티켓을 제출하려면 제품 이름("{{site.data.keyword.loadbalancer_full}}"), 로드 밸런서의 UUID(가능한 경우) 및 Softlayer 계정 번호를 제공하십시오. 지정된 로드 밸런서의 개요 페이지로 이동한 후 URL에서 UUID를 찾을 수 있습니다.

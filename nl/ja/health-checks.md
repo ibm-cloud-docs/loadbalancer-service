@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Load Balancer でのヘルス・チェックの実行
+# {{site.data.keyword.loadbalancer_full}} でのヘルス・チェックの実行
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 
 ヘルス・チェックの定義は、それぞれのバックエンド・アプリケーション・ポートで必須です。 ヘルス・チェック構成に含まれるポートとプロトコルは、定義されているバックエンドのポートとプロトコルに一致している必要があります。さもないと、構成は拒否されます。

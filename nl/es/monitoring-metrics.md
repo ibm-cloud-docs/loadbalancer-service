@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Supervisión de métricas con IBM Cloud Load Balancer
+# Supervisión de métricas con {{site.data.keyword.loadbalancer_full}}
 {: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 El equilibrador de carga supervisa las métricas siguientes:

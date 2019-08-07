@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Foire aux questions concernant l'équilibreur de charge IBM Cloud Load Balancer
+# Foire aux questions concernant l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #faqs-for-ibm-cloud-load-balancer}
 
-La présente section apporte des réponses aux questions les plus fréquemment posées au sujet du service IBM© Cloud Load Balancer.
+La présente section apporte des réponses aux questions les plus fréquemment posées au sujet du service {{site.data.keyword.loadbalancer_full}}.
 
 ## Combien d'options d'équilibrage de charge sont disponibles dans {{site.data.keyword.BluSoftlayer_notm}} ?
 {: faq}
@@ -73,7 +73,7 @@ Il est recommandé d'installer votre service Load Balancer et vos instances de c
 ## Quelle est la version TLS compatible avec le déchargement SSL ?
 {: faq}
 
-Le service IBM Cloud Load Balancer prend en charge la version TLS 1.2 avec terminaison SSL.
+Le service {{site.data.keyword.loadbalancer_full}} prend en charge la version TLS 1.2 avec terminaison SSL.
 
 La liste ci-dessous répertorie les différents chiffrements pris en charge (par ordre de priorité) :  
 
@@ -91,7 +91,7 @@ La liste ci-dessous répertorie les différents chiffrements pris en charge (par
 
 Actuellement, vous pouvez créer jusqu'à 50 instances de service. Si vous avez besoin de plus d'instances, contactez le support IBM.
 
-## Le service IBM Cloud Load Balancer peut-il être utilisé avec VMWare ?
+## Le service {{site.data.keyword.loadbalancer_full}} peut-il être utilisé avec VMWare ?
 {: faq}
 
 Les machines virtuelles VMWare auxquelles des adresses privées portables SoftLayer sont affectées peuvent être spécifiées en tant que serveurs de back end pour l'équilibreur de charge. Cette fonctionnalité est actuellement disponible uniquement à l'aide de l'API et non via l'interface graphique (GUI) Web. Les adresses IP privées portables qui sont ajoutées à l'aide de l'API apparaissent comme étant "inconnues" dans l'interface graphique, car elles ne sont pas affectées par SoftLayer. Notez que ce type de configuration peut être utilisé avec d'autres hyperviseurs, tels que Xen et KVM.
@@ -129,4 +129,4 @@ Actuellement, la prise en charge de la couche 7 est disponible uniquement via de
 ## Quelles sont les informations nécessaires pour créer un ticket de demande de service ?
 {: faq}
 
-Pour créer un ticket de demande de service, indiquez le nom du produit ("IBM Cloud Load Balancer"), l'identificateur unique universel de votre équilibreur de charge (si possible) et votre numéro de compte Softlayer. Vous trouverez l'identificateur unique universel dans l'URL après avoir accédé à la page de présentation de l'équilibreur de charge concerné.
+Pour créer un ticket de demande de service, indiquez le nom du produit ("{{site.data.keyword.loadbalancer_full}}"), l'identificateur unique universel de votre équilibreur de charge (si possible) et votre numéro de compte Softlayer. Vous trouverez l'identificateur unique universel dans l'URL après avoir accédé à la page de présentation de l'équilibreur de charge concerné.

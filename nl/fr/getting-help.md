@@ -20,14 +20,14 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Aide et assistance pour l'équilibreur de charge IBM Cloud Load Balancer
+# Aide et assistance pour l'équilibreur de charge {{site.data.keyword.loadbalancer_full}}
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-Si vous rencontrez des problèmes ou si vous vous posez des questions lors de l'utilisation du service IBM© Cloud Load Balancer, vous pouvez obtenir de l'aide en recherchant des informations ou en posant des questions sur l'un des forums ci-dessous. Vous pouvez également ouvrir un ticket de demande de service.
+Si vous rencontrez des problèmes ou si vous vous posez des questions lors de l'utilisation du service {{site.data.keyword.loadbalancer_full}}, vous pouvez obtenir de l'aide en recherchant des informations ou en posant des questions sur l'un des forums ci-dessous. Vous pouvez également ouvrir un ticket de demande de service.
 
 Lorsque vous posez une question sur un forum, étiquetez votre question de sorte que les équipes de développement d'IBM Cloud puissent la voir.
 
-* Si vous avez une question d'ordre technique sur le service IBM Cloud Load Balancer, postez-la sur[Stack Overflow](https://stackoverflow.com/search?q=lbaas+ibm-cloud) en lui affectant les balises "lbaas" et "ibm-cloud".
+* Si vous avez une question d'ordre technique sur le service {{site.data.keyword.loadbalancer_full}}, postez-la sur[Stack Overflow](https://stackoverflow.com/search?q=lbaas+ibm-cloud) en lui affectant les balises "lbaas" et "ibm-cloud".
 * Si vous avez des questions relatives au service et aux instructions de mise en route, utilisez le forum [IBM developerWorks - dW Answers](https://developer.ibm.com/answers/topics/lbaas.html?smartspace=ibm-cloud). Incluez les balises "lbaas" et "ibm-cloud".
 
 Pour plus d'informations sur l'utilisation des forums, voir [Comment obtenir de l'aide](https://{DomainName}/docs/get-support?topic=get-support-using-avatar).

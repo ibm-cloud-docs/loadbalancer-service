@@ -17,7 +17,7 @@ lastupdated: "2018-11-12"
 # Bevorzugte Cipher-Suite für Ihre HTTPS-Anwendung auswählen
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-Verschlüsselungsalgorithmen, die IBM© Cloud Load Balancer beim Erstellen sicherer Verbindungen mit den zugehörigen HTTP-Clients unterstützen. 
+Verschlüsselungsalgorithmen, die {{site.data.keyword.loadbalancer_full}} beim Erstellen sicherer Verbindungen mit den zugehörigen HTTP-Clients unterstützen. 
 
 IBM bietet ein Portfolio von genehmigten Verschlüsselungen an, aus dem Sie auswählen können, um die Kommunikation zwischen Ihrer Lastausgleichsfunktion und Ihren Clients zu sichern.
 

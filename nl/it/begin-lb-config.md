@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Configurazione dei parametri di IBM Cloud Load Balancer
+# Configurazione dei parametri di {{site.data.keyword.loadbalancer_full}}
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 Una volta che hai [creato un programma di bilanciamento del carico](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), puoi configurarlo per il bilanciamento del carico elastico. Per eseguire tale operazione:
@@ -45,7 +45,7 @@ Una volta che hai [creato un programma di bilanciamento del carico](/docs/infras
 	Al momento della configurazione iniziale possono essere definite massimo due porte. Dopo aver creato l'istanza di servizio possono essere aggiunte altre porte. Consulta [Limitazioni per il numero di porte virtuali](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) per ulteriori informazioni sul numero massimo di porte consentite.
 {:note:}
 
-7. IBM© Cloud Load Balancer termina le connessioni HTTPS (HTTP over SSL) in entrata e può comunicare in HTTP di testo semplice con i server delle applicazioni di backend e le attività SSL di offload intensive del processore provenienti dai tuoi server se il protocollo di backend viene selezionato come HTTP. Se il protocollo di backend selezionato è HTTPS, il traffico verrà crittografato tra il programma di bilanciamento del carico e i server di backend. Devi caricare il tuo certificato SSL. Seleziona uno dei tuoi certificati disponibili dall'elenco a discesa.  
+7. {{site.data.keyword.loadbalancer_full}} termina le connessioni HTTPS (HTTP over SSL) in entrata e può comunicare in HTTP di testo semplice con i server delle applicazioni di backend e le attività SSL di offload intensive del processore provenienti dai tuoi server se il protocollo di backend viene selezionato come HTTP. Se il protocollo di backend selezionato è HTTPS, il traffico verrà crittografato tra il programma di bilanciamento del carico e i server di backend. Devi caricare il tuo certificato SSL. Seleziona uno dei tuoi certificati disponibili dall'elenco a discesa.  
 
 	<img src="images/lb-ssl-cert.png" alt="disegno" style="width: 300px;"/>
 

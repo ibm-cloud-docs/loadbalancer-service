@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer로 고급 트래픽 관리
+# {{site.data.keyword.loadbalancer_full}}로 고급 트래픽 관리
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-이 절에서는 IBM Cloud Load Balancer 서비스와 함께 사용할 수 있는 여러 고급 트래픽 관리 기능에 대해 설명합니다. 
+이 절에서는 {{site.data.keyword.loadbalancer_full}} 서비스와 함께 사용할 수 있는 여러 고급 트래픽 관리 기능에 대해 설명합니다. 
 
 ## 최대 연결
 {: #max-connections}

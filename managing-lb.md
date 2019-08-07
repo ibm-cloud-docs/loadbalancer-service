@@ -25,12 +25,12 @@ subcollection: loadbalancer-service
 
 You can edit your configuration or monitor your service performance by clicking on the load balancer name in the load balancer summary page.
 
-The **fully-qualified domain name (FQDN) address** of your load balancer instance can be seen by clicking on the **Details** button. Your end-users are able to connect to your application using this FQDN address. 
+The **fully-qualified domain name (FQDN) address** of your load balancer instance can be seen by clicking on the **Details** button. Your end-users are able to connect to your application using this FQDN address.
 
-The public and private IP address(es) of the load balancer service are not exposed to the outside world; only the FQDN address is exposed. 
+The public and private IP address(es) of the load balancer service are not exposed to the outside world; only the FQDN address is exposed.
 {: note}
 
-The **Details** dropdown also displays the type, location and logging enablement of the load balanncer.
+The **Details** dropdown also displays the type, location and logging enablement of the load balancer.
 
 <img src="images/CLB_overview_page_PUP.png" alt="drawing" style="width: 800px;"/>
 
@@ -40,7 +40,7 @@ You can select the **Monitoring** tab to view real-time charts of your system pe
 
 <img src="images/CLB_monitoring_metrics_PUP.png " alt="drawing" style="width: 800px;"/>
 
-You can edit your existing configuration using the **Protocols**, **Server Instances**, and **Health Checks** tabs. For example, the **Protocols** tab can be used to define additional application ports or to customize tbe SSL cipher lists when there is an existing HTTPS protocol.
+You can edit your existing configuration using the **Protocols**, **Server Instances**, and **Health Checks** tabs. For example, the **Protocols** tab can be used to define additional application ports or to customize the SSL cipher lists when there is an existing HTTPS protocol.
 
 <img src="images/CLB_ciphers_edit_PUP.png" alt="drawing" style="width: 800px;"/>
 

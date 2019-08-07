@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# IBM Cloud Load Balancer での高度なトラフィック管理
+# {{site.data.keyword.loadbalancer_full}} での高度なトラフィック管理
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
-このセクションでは、IBM Cloud Load Balancer サービスで使用可能ないくつかの高度なトラフィック管理機能について説明します。
+このセクションでは、{{site.data.keyword.loadbalancer_full}} サービスで使用可能ないくつかの高度なトラフィック管理機能について説明します。
 
 ## 最大接続数
 {: #max-connections}

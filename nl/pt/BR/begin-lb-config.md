@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Configurando parâmetros do IBM Cloud Load Balancer
+# Configurando parâmetros do {{site.data.keyword.loadbalancer_full}}
 {: #configuring-ibm-cloud-load-balancer-parameters}
 
 Depois de [criar um balanceador de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started), você poderá configurá-lo para balanceamento de carga elástico. Para fazer isso:
@@ -45,7 +45,7 @@ Depois de [criar um balanceador de carga](/docs/infrastructure/loadbalancer-serv
 	Um máximo de duas portas pode ser definido no momento da configuração inicial. Portas adicionais poderão ser incluídas posteriormente após a criação da instância de serviço. Consulte [Limitações no número de portas](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) para obter mais informações sobre o número máximo de portas permitidas.
 {:note:}
 
-7. O IBM© Cloud Load Balancer encerra as conexões HTTPS (HTTP sobre SSL) de entrada e
+7. O {{site.data.keyword.loadbalancer_full}} encerra as conexões HTTPS (HTTP sobre SSL) de entrada e
 pode se comunicar em HTTP de texto sem formatação com os servidores de aplicativos de back-end
 e transfere tarefas SSL com uso intensivo de processador dos servidores se o protocolo de back-end
 for selecionado como HTTP. Se o protocolo de back-end selecionado for HTTPS, o tráfego será criptografado

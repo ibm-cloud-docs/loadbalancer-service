@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Load Balancer 작성
+# {{site.data.keyword.loadbalancer_full}} 작성
 {: #creating-an-ibm-cloud-load-balancer}
 
-IBM© Cloud Load Balancer 서비스를 작성하려면 다음 프로시저를 수행하십시오.
+{{site.data.keyword.loadbalancer_full}} 서비스를 작성하려면 다음 프로시저를 수행하십시오.
 
 1. 브라우저에서 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}을 열고 사용자 계정에 로그인하십시오.
 
@@ -31,7 +31,7 @@ IBM© Cloud Load Balancer 서비스를 작성하려면 다음 프로시저를 �
 
 	<img src="images/catalog-load-balancer.png" alt="그림" style="width: 600px;"/>
 
-3. **IBM Cloud Load Balancer**(기본 선택사항)를 선택하고 **작성**을 클릭하십시오.
+3. **{{site.data.keyword.loadbalancer_full}}**(기본 선택사항)를 선택하고 **작성**을 클릭하십시오.
 
 	**작성** 대신에 **업그레이드**가 표시되면 [해당 단계](/docs/account?topic=account-unifyingaccounts)에 따라 IBM Cloud 인프라(SoftLayer) 계정을 연결해야 합니다.
 

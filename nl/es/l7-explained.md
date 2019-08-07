@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Equilibrio de carga de capa 7
 {: #layer-7-load-balancing}
 
-El servicio IBM© Cloud Load Balancer distribuye el tráfico entre varias instancias del servidor, incluidas instancias de servidor nativo y virtual, utilizando datos de capa 7 (capa de aplicación).
+El servicio {{site.data.keyword.loadbalancer_full}} distribuye el tráfico entre varias instancias del servidor, incluidas instancias de servidor nativo y virtual, utilizando datos de capa 7 (capa de aplicación).
 
  * El tráfico de datos que se va a distribuir se clasifica mediante políticas y reglas.
  * Las políticas definen qué acción se debe realizar cuando el tráfico de datos coincide con todas reglas asociadas a la política.

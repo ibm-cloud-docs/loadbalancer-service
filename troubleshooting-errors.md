@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # Error Message Troubleshooting
 {: #error-message-troubleshooting}
 
-This topic provides information on common error messages you may encounter while creating/updating an instance of IBM© Cloud Load Balancer.
+This topic provides information on common error messages you may encounter while creating/updating an instance of {{site.data.keyword.loadbalancer_full}}.
 
 | Error | Explanation  | Solution  |
 | ------------- | ------------- | ----- |

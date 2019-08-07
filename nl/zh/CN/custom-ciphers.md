@@ -23,7 +23,7 @@ subcollection: loadbalancer-service
 # 为 HTTPS 应用程序选择首选密码套件
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 
-密码算法可帮助 IBM© Cloud Load Balancer 建立与其 HTTP 客户机的安全连接。
+密码算法可帮助 {{site.data.keyword.loadbalancer_full}} 建立与其 HTTP 客户机的安全连接。
 
 IBM 提供了一套经核准的密码供您选择，以便保护 Load Balancer 与客户机之间的通信。
 

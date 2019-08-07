@@ -14,13 +14,13 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Bekannte Probleme und Einschränkungen bei IBM Cloud Load Balancer
+# Bekannte Probleme und Einschränkungen bei {{site.data.keyword.loadbalancer_full}}
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-Dieser Abschnitt enthält Informationen über die derzeit bekannten Probleme und Einschränkungen beim IBM© Cloud Load Balancer-Service.
+Dieser Abschnitt enthält Informationen über die derzeit bekannten Probleme und Einschränkungen beim {{site.data.keyword.loadbalancer_full}}-Service.
 
 ## Bekannte Probleme
-Der IBM Cloud Load Balancer-Service weist derzeit die folgenden Probleme auf:
+Der {{site.data.keyword.loadbalancer_full}}-Service weist derzeit die folgenden Probleme auf:
 
 * Geringfügig - Die Schaltfläche **Bearbeiten** in den Registerkarten für Serverinstanzen und Protokolle wird auf alle Einträge angewendet und nicht auf die Zeilen beschränkt, die mit einem Kontrollkästchen ausgewählt wurden. 
 * Geringfügig - Während der erstmaligen Erstellung des Service für die Lastausgleichsfunktion gehen die angepassten Einstellungen für die Statusprüfung verloren, wenn Sie zwischen verschiedenen Ansichten zurück- und wieder vorspringen.
@@ -29,7 +29,7 @@ Der IBM Cloud Load Balancer-Service weist derzeit die folgenden Probleme auf:
 * Auf die Darstellung begrenzt - Die Preisinformationen auf der Überprüfungsseite sind auf zwei Dezimalstellen gerundet. Die korrekten Preise finden Sie in den Preisstrukturinformationen auf der Planseite.
 
 ## Bekannte Einschränkungen
-Der IBM Cloud Load Balancer-Service weist derzeit die folgenden Einschränkungen auf:
+Der {{site.data.keyword.loadbalancer_full}}-Service weist derzeit die folgenden Einschränkungen auf:
 
 * Maximale Anzahl an virtuellen Ports bzw. Protokollen: 10
 * Maximale Anzahl der Server hinter der Lastausgleichsfunktion: 50

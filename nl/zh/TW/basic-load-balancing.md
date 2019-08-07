@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# 執行 IBM Cloud Load Balancer 基本功能
+# 執行 {{site.data.keyword.loadbalancer_full}} 基本功能
 {: #performing-ibm-cloud-load-balancer-basics}
 
-IBM© Cloud Load Balancer 服務會將資料流量分散到位在相同資料中心本端的多個伺服器實例（裸機及虛擬伺服器）。
+{{site.data.keyword.loadbalancer_full}} 服務會將資料流量分散到位在相同資料中心本端的多個伺服器實例（裸機及虛擬伺服器）。
 
 ## 公用負載平衡器
 {: #public-load-balancer}

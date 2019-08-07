@@ -23,12 +23,12 @@ subcollection: loadbalancer-service
 # Resolución de problemas de suministro de equilibrador de carga
 {: #load-balancer-provisioning-troubleshooting}
 
-En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando cree una nueva instancia de IBM© Cloud Load Balancer.
+En este tema se proporciona información sobre los problemas comunes que puede encontrar cuando cree una nueva instancia de {{site.data.keyword.loadbalancer_full}}.
 
 ## Direcciones IP insuficientes en la subred
 {: #insufficient-ip-addresses-in-your-subnet}
 
-IBM Cloud Load Balancer necesita al menos dos direcciones IP libres en su subred privada. Además, si el equilibrador de carga es un equilibrador de carga público y no se utiliza la opción **Agrupación de sistemas IBM**, también se necesitan al menos dos direcciones IP libres de su subred pública.
+{{site.data.keyword.loadbalancer_full}} necesita al menos dos direcciones IP libres en su subred privada. Además, si el equilibrador de carga es un equilibrador de carga público y no se utiliza la opción **Agrupación de sistemas IBM**, también se necesitan al menos dos direcciones IP libres de su subred pública.
 
 Siga los pasos que se indican a continuación para comprobar si hay IP libres en una subred.
 

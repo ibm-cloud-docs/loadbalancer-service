@@ -16,13 +16,13 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Informationen zu IBM Cloud Load Balancer
+# Informationen zu {{site.data.keyword.loadbalancer_full}}
 {: #about-ibm-cloud-load-balancer}
 
-Der IBM© Cloud Load Balancer-Service unterstützt die Kunden beim Verbessern der Verfügbarkeit ihrer geschäftskritischen Anwendungen; dazu wird der Datenverkehr auf mehrere Anwendungsserverinstanzen verteilt und ausschließlich an ordnungsgemäß funktionierende Instanzen weitergeleitet.
+Der {{site.data.keyword.loadbalancer_full}}-Service unterstützt die Kunden beim Verbessern der Verfügbarkeit ihrer geschäftskritischen Anwendungen; dazu wird der Datenverkehr auf mehrere Anwendungsserverinstanzen verteilt und ausschließlich an ordnungsgemäß funktionierende Instanzen weitergeleitet.
 
 ## Übersicht über die Features
-Der IBM Cloud Load Balancer-Service bietet die folgenden Features:
+Der {{site.data.keyword.loadbalancer_full}}-Service bietet die folgenden Features:
 
 * Öffentliche Lastausgleichsfunktion (mit Internetverbindung)
 	* Über vollständig qualifizierten Domänennamen (FQDN) öffentlich zugänglicher Service
