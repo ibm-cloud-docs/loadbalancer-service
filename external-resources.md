@@ -30,3 +30,8 @@ These resources are created by IBM© and some of our partners and customers.
 {: #lb-blogs}
 
  * [Improved security and More: The latest for {{site.data.keyword.loadbalancer_full}}, by Jay Kidambi and Allan Hu ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/04/updates-cloud-load-balancer/)
+
+ ## Education
+ {: #lb-education}
+
+* [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/cloud/learn/load-balancing)
