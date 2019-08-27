@@ -43,13 +43,13 @@ Add the protocols for your load balancer:
 	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
 	{: note}
 
-6. If you chose HTTP for your backend protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list. 
+6. If you chose HTTPS for your frontend protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list. 
 
-	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) (HTTP over SSL) connections and can communicate in plain-text HTTP with the back-end application servers. It also offloads processor-intensive SSL tasks from your servers if HTTP is selected for the backend protocol. In this case, traffic is encrypted between the load balancer and the backend servers. For this to work correctly, you must upload your SSL Certificate.
+	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) connections and can communicate in plain-text HTTP with the back-end application servers when HTTP is selected as the backend protocol. This offloads processor intensive SSL tasks from your servers to the load balancer. You can also choose to have HTTPS as the backend protocol when the backend application servers are configured to receive HTTPS traffic. In this case, traffic is encrypted between the load balancer and the backend servers. 
 	
 	<img src="images/CLB_HTTPS_Cert_PUP.png" alt="drawing" style="width: 800px;"/>
 	
-	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/catalog/infrastructure/ssl-certificate) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
+	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/classic/security/sslcerts) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
 	{: note}
 	
 	Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.

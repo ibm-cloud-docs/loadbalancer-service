@@ -46,7 +46,7 @@ While trying to create a new load balancer service, you may define up to two vir
 ## What's the maximum number of compute instances I can associate with my load balancer?
 {: faq}
 
-50.
+While trying to create a new load balancer service, you may configure up to 10 compute instances as backend servers. You can define additional servers after the loadbalancer is created. The maximum number of backend members allowed is 50.
 
 ## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
 {: faq}

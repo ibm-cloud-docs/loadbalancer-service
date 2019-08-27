@@ -41,16 +41,16 @@ When the configuration screen appears, perform the following procedure:
 	For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
 	{: tip}
 
-4. Select the type of load balancer you want to create from the options **Public** , **Private** or **Public to Public**. Refer to [{{site.data.keyword.loadbalancer_full}} Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
+4. Select the type of load balancer you want to create from the options **Public to Private** , **Private to Private** or **Public to Public**. Refer to [{{site.data.keyword.loadbalancer_full}} Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
 5. Select the subnet where you want to deploy your new load balancer. 
 	
-	This option only applies to **Public** and **Private** load balancer types. Your load balancer service instance will have one of its network interfaces on this subnet. Ensure that your application servers are either on this subnet or reachable from this subnet. If necessary, enable VLAN spanning.
+	This option only applies to **Public to Private** and **Private to Private** load balancer types. Your load balancer service instance will have one of its network interfaces on this subnet. Ensure that your application servers are either on this subnet or reachable from this subnet. If necessary, enable VLAN spanning.
 	{: note}
 
 6. Select the allocation of Public IP's for the load balancer. 
 	
-	This option only applies to **Public** load balancer types. If you select the option **Allocate from a public subnet in this account** you must ensure that you have at least two public IP's available in a public subnet in the same datacenter. In addition, ensure that traffic to TCP management port 56501, as well as your application's own ports, are not blocked by firewalls deployed on your public VLANs.
+	This option only applies to **Public to Private** load balancer type. If you select the option **Allocate from a public subnet in this account** you must ensure that you have at least two public IP's available in a public subnet in the same datacenter. In addition, ensure that traffic to TCP management port 56501, as well as your application's own ports, are not blocked by firewalls deployed on your public VLANs.
 	{: note}
 
 ## What's Next
