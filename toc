@@ -11,6 +11,12 @@ IBM Cloud Load Balancer
     explore-load-balancers.md
     pricing.md
     naas-overview.md
+
+    {: .topicgroup}
+    Tutorials
+        /tutorials?topic=solution-tutorials-web-app-private-network
+        /tutorials?topic=solution-tutorials-highly-available-and-scalable-web-application
+
     external-resources.md
     {: .navgroup-end}
 
