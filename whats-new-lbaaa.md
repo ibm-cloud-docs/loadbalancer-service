@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2019-02-19"
+lastupdated: "2019-09-11"
 
 keywords: updates, additions, imporvements
 
@@ -25,6 +25,13 @@ subcollection: loadbalancer-service
 
 Find out about new and updated features in {{site.data.keyword.loadbalancer_full}}.
 
+
+## September 2019
+{: #september-2019}
+
+### HTTP Cookie Session Persistence
+{: #http-cookie-session-persistence}
+{{site.data.keyword.loadbalancer_full}} now supports a new session persistence type called 'HTTP Cookie'. With this type of session persistence, the load balancer adds a cookie to the first response from the back-end server. Subsequent HTTP(s) requests with the cookie arriving at the load balancer are now persistent on the same back-end server.
 
 ## June 2019
 {: #june-2019}

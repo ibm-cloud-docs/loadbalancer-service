@@ -33,7 +33,9 @@ Use the ‘max connections’ configuration to limit the maximum number of concu
 ## Session Persistence
 {: #session-persistence}
 
-The load balancer supports session persistence against given VIP ports based upon the `source IP` of the connection. As an example, if session persistence is enabled for port 80 (HTTP), then subsequent HTTP connection attempts from the same client (same source IP) are persistent on the same back-end server. This feature is available for all three supported protocols (HTTP, HTTPS and TCP).
+The load balancer supports session persistence based upon the source IP of the connection. As an example, if you have 'source IP' type session persistence enabled for port 80 (HTTP), then subsequent HTTP connection attempts from the same source IP client are persistent on the same back-end server. This feature is available for all three supported protocols (HTTP, HTTPS and TCP).
+
+The load balancer also supports session persistence based upon the HTTP Cookie. For example, if you have 'HTTP Cookie' type session persistence enabled for port 80 (HTTP), when the load balancer receives its first response from the back-end server, it adds a cookie with the name `IBMCLB` and a value of `back-end server UUID` in the reponse header. All subsequent HTTP requests with this cookie arriving at the load balancer are persistent on the same back-end server. This feature is available for HTTP and HTTPS.
 
 The load balancer supports a maximum of 10,000 client persistence entries. The expiration time for these entries is 10 minutes. Additional requests received from the same client after 10 minutes may be forwarded to a different back-end server. If the session persistence entry has not expired, but the back-end port has become unhealthy, a new server is selected for forwarding any subsequent client connections.  
 

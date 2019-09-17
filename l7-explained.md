@@ -50,6 +50,6 @@ Each Layer-7 load balancer pool contains one or more logical server instances.
  * Each logical server instance is identified by an IP address and port number.
  * Each pool has a health monitor associated with it, which monitors the health of all the servers in the pool.
  * A pool can be configured for session persistence.
- * Use the source IP address of the client to configure session persistence.
+ * Use the source IP address of the client or HTTP Cookie to configure session persistence.
 
 Refer to [L7 Pools](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-pool) for additional details.
