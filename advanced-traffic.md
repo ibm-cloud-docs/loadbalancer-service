@@ -57,4 +57,8 @@ The following timeout values are used by the load balancer. These values cannot 
 ## Preserving end-client IP address
 {: #preserving-end-client-ip-address}
 
-The load balancer works as a reverse proxy, which terminates incoming traffic from the client. It establishes a separate connection to the back-end server instance, using its own IP address. For HTTP connections with the backend servers (against front-end HTTP or HTTPS connections), the load balancer preserves the original client IP address by including it inside the `X-Forwarded-For HTTP` header. For TCP connections, the original client IP information is not preserved.
+IBM Cloud Load Balancer works as a reverse proxy, which terminates incoming traffic from the client. It establishes a separate connection to the back-end server instance, using its own IP address. For HTTP connections with the backend servers (against front-end HTTP or HTTPS connections), the load balancer preserves the original client IP address by including it inside the `X-Forwarded-For HTTP` header. For TCP connections, the original client IP information is not preserved.
+
+## Preserving end-client protocol
+{: #preserving-end-client-protocol}
+IBM Cloud Load Balancer preserves the original protocol used by the client for front-end HTTP and HTTPS connections. It does this by including it inside the `X-Forwarded-Proto` HTTP header. This does not apply to TCP protocols, since the load balancer does not look at Layer7 traffic when the TCP protocol is used.

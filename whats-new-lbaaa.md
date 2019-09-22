@@ -29,9 +29,14 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ## September 2019
 {: #september-2019}
 
+### Support for X-Forwarded-Proto Header
+{: #x-forwarded-proto-header}
+{{site.data.keyword.loadbalancer_full}} now inserts the X-Forwarded-Proto header for all requests when the front-end protocol is HTTP or HTTPS. This helps the backend servers to know the protocol used by the client to connect to the load balancer. 
+
 ### HTTP Cookie Session Persistence
 {: #http-cookie-session-persistence}
 {{site.data.keyword.loadbalancer_full}} now supports a new session persistence type called 'HTTP Cookie'. With this type of session persistence, the load balancer adds a cookie to the first response from the back-end server. Subsequent HTTP(s) requests with the cookie arriving at the load balancer are now persistent on the same back-end server.
+
 
 ## June 2019
 {: #june-2019}
