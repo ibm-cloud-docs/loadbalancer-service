@@ -36,18 +36,20 @@ You can enable or disable this feature by:
 ## Viewing Logs in the IBM Cloud Logging Analysis Service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
-Log into the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} with your IBM Cloud account. Logs can be viewed from the logDNA instance. Refer to [this topic](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started) for more information.
+Log into the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} with your IBM Cloud account. Logs can be viewed from the LogDNA instance. Refer to [this topic](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started) for more information.
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
 {: note}
 
-Select the IBM Cloud account associated with your Softlayer account, then create a logging instance by selecting **Create a logging instance**. The logging instance creation dialog displays.
+To create a LogDNA instance, perform the following procedure:
 
-Currently only the Dallas region is supported, so choose **Dallas** from the region dropdown list.
+1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog displays.
 
-Click **Create** to create the logging instance.
+2. Currently only the Dallas region is supported, so choose **Dallas** from the region dropdown list.
 
-After you create the logging instance, configure it by clicking **Configure the platform service logs**.
+3. Click **Create** to create the logging instance.
+
+4. After you create the logging instance, configure it by clicking **Configure the platform service logs**.
 
 ## Log Output Examples
 {: #log-output-examples}
