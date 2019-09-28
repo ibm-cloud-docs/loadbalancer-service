@@ -38,7 +38,10 @@ You can enable or disable this feature by:
 
 Log into the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} with your IBM Cloud account. Logs can be viewed from the logDNA instance. Refer to [this topic](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started) for more information.
 
-Data logs are only sent if your Softlayer and IBM Cloud accounts are linked. Select the IBM Cloud account associated with your Softlayer account, then create a logging instance by selecting **Create a logging instance**. The logging instance creation dialog displays.
+Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
+{: note}
+
+Select the IBM Cloud account associated with your Softlayer account, then create a logging instance by selecting **Create a logging instance**. The logging instance creation dialog displays.
 
 Currently only the Dallas region is supported, so choose **Dallas** from the region dropdown list.
 
