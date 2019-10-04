@@ -29,7 +29,7 @@ To get started using the {{site.data.keyword.loadbalancer_full}}, you will need 
 * An account with IBM: [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
 * An IBM server, either [Bare Metal](/docs/bare-metal?topic=bare-metal-getting-started) or [Virtual Server Instance (VSI)](/docs/vsi)
 
-If you need assistance in obtaining an **IBMid** account, contact your [IBM sales representative ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/contact-us){:new_window} for additional guidance.
+If you need assistance in obtaining an **IBMid** account, contact your [IBM sales representative for additional guidance.
 
 If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account](/docs/account?topic=account-unifyingaccounts) with your IBMid.
 

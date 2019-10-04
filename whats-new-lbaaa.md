@@ -31,7 +31,7 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 
 ### Support for X-Forwarded-Proto Header
 {: #x-forwarded-proto-header}
-{{site.data.keyword.loadbalancer_full}} now inserts the X-Forwarded-Proto header for all requests when the front-end protocol is HTTP or HTTPS. This helps the backend servers to know the protocol used by the client to connect to the load balancer. 
+{{site.data.keyword.loadbalancer_full}} now inserts the X-Forwarded-Proto header for all requests when the front-end protocol is HTTP or HTTPS. This helps the backend servers to know the protocol used by the client to connect to the load balancer.
 
 ### HTTP Cookie Session Persistence
 {: #http-cookie-session-persistence}
@@ -58,7 +58,7 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ### Data Logs
 {: #data-logs}
 
-{{site.data.keyword.loadbalancer_full}} now supports data logs forwarding. With data logs enabled, your load balancer log data will be forwarded to the [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Customers can view their data logs from the [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.
+{{site.data.keyword.loadbalancer_full}} now supports data logs forwarding. With data logs enabled, your load balancer log data will be forwarded to the [IBM Cloud Log Analysis Service. 
 
 ## December 2018
 {: #december-2018}

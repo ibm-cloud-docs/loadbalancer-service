@@ -26,7 +26,7 @@ subcollection: loadbalancer-service
 
 This section contains answers to some frequently asked questions about the {{site.data.keyword.loadbalancer_full}} Service.
 
-## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
+## How many load balancing options are available in IBM Cloud?
 {: faq}
 
 For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
@@ -94,9 +94,9 @@ Currently, you may create up to 50 service instances. If you need more instances
 ## Can the {{site.data.keyword.loadbalancer_full}} Service be used with VMWare?
 {: faq}
 
-VMWare virtual machines that are assigned SoftLayer portable private addresses can be specified as backend servers to the load balancer. This feature is currently available only using the API, and not the web UI (GUI). Portable private IPs added using the API appear as "Unknown" in the GUI, as they are not assigned by SoftLayer. Note that this kind of configuration can be used with other Hypervisors such as Xen and KVM as well.
+VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as backend servers to the load balancer. This feature is currently available only using the API, and not the web UI (GUI). Portable private IPs added using the API appear as "Unknown" in the GUI, as they are not assigned by IBM Cloud. Note that this kind of configuration can be used with other Hypervisors such as Xen and KVM as well.
 
-VMWare virtual machines assigned non-SoftLayer addresses (such as VMWare NSX networks) cannot be added directly as backend servers to the load balancer. However, depending on your configuration, it may be possible to configure an intermediary, such as an NSX gateway, that has a SoftLayer private address as the backend server to the load balancer (with the actual servers being VMs attached to network(s) managed by VMware NSX).
+VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX networks) cannot be added directly as backend servers to the load balancer. However, depending on your configuration, it may be possible to configure an intermediary, such as an NSX gateway, that has a IBM Cloud private address as the backend server to the load balancer (with the actual servers being VMs attached to network(s) managed by VMware NSX).
 
 ## If I choose to use a public VLAN under my account to deploy my load balancer and I have a firewall deployed on my public VLAN, what configurations are required on my firewall to work with my load balancer service?
 {: faq}
@@ -124,4 +124,4 @@ Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-fi
 ## What information do I need to file a support ticket?
 {: faq}
 
-To file a support ticket, please provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your Softlayer account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
+To file a support ticket, please provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your IBM Cloud account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
