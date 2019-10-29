@@ -59,7 +59,6 @@ IBM Cloud Load Balancer
     Troubleshooting
         troubleshooting-application.md
         troubleshooting-provisioning.md
-        troubleshooting-vlan-spanning.md
         troubleshooting-errors.md
 
     getting-help.md

@@ -51,7 +51,7 @@ While trying to create a new load balancer service, you may configure up to 10 c
 ## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
 {: faq}
 
-Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning Troubleshooting](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancer-vlan-spanning-troubleshooting) for more information.
+Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning](/docs/infrastructure/vlans?topic=vlans-vlan-spanning) for more information.
 
 ## What are the default settings and allowed values for various health check parameters?
 {: faq}
