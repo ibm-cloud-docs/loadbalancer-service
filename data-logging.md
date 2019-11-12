@@ -11,7 +11,7 @@ subcollection: loadbalancer-service
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -29,7 +29,7 @@ You can enable or disable this feature by:
 
 * Creating a new load balancer and setting this feature to on.
 
-<img src="images/DataLogging.png" alt="dibujo" style="width: 800px;"/>
+![Data Logging](images/DataLogging.png "Data Logging")
 
 * Using the API `enableOrDisableDataLogs`.
 

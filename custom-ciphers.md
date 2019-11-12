@@ -11,7 +11,7 @@ subcollection: loadbalancer-service
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -34,7 +34,7 @@ To choose a preferred cipher suite for an existing load balancer:
 
 2. Click **Edit** to enable editing, and select (or unselect) the required ciphers.
 
-	<img src="images/CLB_ciphers_edit_PUP.png" alt="drawing" style="width: 800px;"/>
+	![Edit CLB ciphers](images/CLB_ciphers_edit_PUP.png "Edit CLB ciphers")
 
 3. When you're done, click **Save** to save your changes.
 

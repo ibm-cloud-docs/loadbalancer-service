@@ -13,7 +13,7 @@ subcollection: loadbalancer-service
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:note: .note}
@@ -30,7 +30,7 @@ Layer 7 rules define a portion of the incoming traffic that is to be matched wit
 * If multiple rules are associated with a policy, then each rule will be evaluated to be `true` or `false`.
 * If all the rules associated to a policy evaluate to `true`, then the policy action will be applied to the request. Otherwise, the load balancer evaluates the next policy.
 
-  <img src="images/Layer7-AddRules.png" alt="dibujo" style="width: 800px;"/>
+  ![Layer 7 Add Rules](images/Layer7-AddRules.png "Layer 7 Add Rules")
 
 
 Rules have types, which can be:
@@ -41,8 +41,7 @@ Rules have types, which can be:
 * `COOKIE`
 * `PATH`
 
-  <img src="images/Layer7-Rules.png" alt="dibujo" style="width: 800px;"/>
-
+  ![Layer 7 Rules](images/Layer7-Rules.png "Layer 7 Rules")
 
 These indicate the portion of the Layer 7 traffic to be matched with the rule.
 

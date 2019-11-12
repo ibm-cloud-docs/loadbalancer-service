@@ -11,7 +11,7 @@ subcollection: loadbalancer-service
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -36,7 +36,7 @@ Follow the steps below to check for free IPs in a subnet.
 
 2. Search for and click on the subnet you want to check for free IP's.
 
-	<img src="images/CLB_view_private_subnets_PUP.png" alt="drawing" style="width: 800px;"/>
+	![View private subnets](images/CLB_view_private_subnets_PUP.png "View private subnets")
 
 3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
@@ -53,6 +53,6 @@ To view error messages for your load balancer, perform the following procedure:
 1. Click on the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
-<img src="images/CLB_view_error_PUP.png" alt="drawing" style="width: 800px;"/>
+![View errors](images/CLB_view_error_PUP.png "View errors")
 
 If the load balancer is in an `ERROR` state, it cannot be recovered and must be deleted.

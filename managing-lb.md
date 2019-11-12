@@ -13,7 +13,7 @@ subcollection: loadbalancer-service
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:note: .note}
@@ -32,20 +32,20 @@ The public and private IP address(es) of the load balancer service are not expos
 
 The **Details** dropdown also displays the type, location and logging enablement of the load balancer.
 
-<img src="images/CLB_overview_page_PUP.png" alt="drawing" style="width: 800px;"/>
+![CLB overview page](images/CLB_overview_page_PUP.png "CLB overview page")
 
 The **Overview** tab on the left side of the screen provides high-level information about your service. It displays the current health of your application servers and their ports, and also provides a quick summary of system performance - throughput, connection rate, concurrent connections, and so on.
 
 You can select the **Monitoring** tab to view real-time charts of your system performance. These graphs may be viewed per individual application port and for various time durations.
 
-<img src="images/CLB_monitoring_metrics_PUP.png " alt="drawing" style="width: 800px;"/>
+![CLB monitoring metrics](images/CLB_monitoring_metrics_PUP.png "CLB monitoring metrics")
 
 You can edit your existing configuration using the **Protocols**, **Server Instances**, and **Health Checks** tabs. For example, the **Protocols** tab can be used to define additional application ports or to customize the SSL cipher lists when there is an existing HTTPS protocol.
 
-<img src="images/CLB_ciphers_edit_PUP.png" alt="drawing" style="width: 800px;"/>
+![Editing CLB ciphers](images/CLB_ciphers_edit_PUP.png "Editing CLB ciphers")
 
 After every configuration change, the load balancer goes into an UPDATE PENDING state. In this state, datapath traffic is not affected, but no further updates can be made to that load balancer. Click the refresh button next to the load balancer's state to check the latest status.
 
-<img src="images/CLB_configuration_pending_PUP.png" alt="drawing" style="width: 800px;"/>
+![CLB configuration pending](images/CLB_configuration_pending_PUP.png "CLB configuration pending")
 
 You can also use the **Layer7** tab to configure [Layer-7 Load Balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing).
