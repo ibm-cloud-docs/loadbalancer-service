@@ -8,6 +8,7 @@ IBM Cloud Load Balancer
     getting-started.md
     about.md
     whats-new-lbaaa.md
+    lb-responsibilities.md
     explore-load-balancers.md
     pricing.md
     naas-overview.md
