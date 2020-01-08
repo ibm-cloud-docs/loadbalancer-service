@@ -121,7 +121,7 @@ You should use FQDN and not cached IP addresses.
 
 Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
-## What information do I need to file a support ticket?
+## What information do I need to file a support case?
 {: faq}
 
-To file a support ticket, please provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your IBM Cloud account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
+To file a support case, please provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your IBM Cloud account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
