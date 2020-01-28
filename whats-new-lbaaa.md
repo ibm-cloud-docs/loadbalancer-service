@@ -20,8 +20,8 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Recent Updates for IBM Cloud Load Balancer
-{: #recent-updates-for-ibm-cloud-load-balancer}
+# Release notes for IBM Cloud Load Balancer
+{: #release-notes-for-ibm-cloud-load-balancer}
 
 Find out about new and updated features in {{site.data.keyword.loadbalancer_full}}.
 
