@@ -19,9 +19,12 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:support: data-reuse='support'}
 
 # Error Message Troubleshooting
 {: #error-message-troubleshooting}
+{: troubleshoot}
+{: support}
 
 This topic provides information on common error messages you may encounter while creating/updating an instance of {{site.data.keyword.loadbalancer_full}}.
 

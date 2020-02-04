@@ -19,6 +19,7 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:support: data-reuse='support'}
 
 # Load Balancer Provisioning Troubleshooting
 {: #load-balancer-provisioning-troubleshooting}
@@ -27,6 +28,8 @@ This topic provides information on common issues you may encounter while creatin
 
 ## Insufficient IP addresses in your subnet
 {: #insufficient-ip-addresses-in-your-subnet}
+{: troubleshoot}
+{: support}
 
 {{site.data.keyword.loadbalancer_full}} requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
 
@@ -42,11 +45,15 @@ Follow the steps below to check for free IPs in a subnet.
 
 ## Issues with firewalls on public and private VLANs
 {: #issues-with-firewalls-on-public-and-private-vlans}
+{: troubleshoot}
+{: support}
 
 Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}
+{: troubleshoot}
+{: support}
 
 To view error messages for your load balancer, perform the following procedure:
 

@@ -19,9 +19,13 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Performing Health Checks
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
+{: help}
+{: support}
 
 The health check definitions are mandatory for each of the back-end application ports. The port and protocol under health check configuration must match with defined back-end port and protocol, otherwise the configuration is rejected.
 

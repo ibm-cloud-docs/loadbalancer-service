@@ -19,9 +19,13 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Setting Backend Encryption
 {: #setting-backend-encryption}
+{: help}
+{: support}
 
 Backend encryption is supported to allow end-to-end data traffic encryption. Not only is the traffic between the load balancer and the client encrypted, but so is the traffic between the load balancer and the backend server.
 

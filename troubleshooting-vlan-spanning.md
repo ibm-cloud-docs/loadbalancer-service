@@ -19,9 +19,12 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:support: data-reuse='support'}
 
 # Load Balancer VLAN Spanning Troubleshooting
 {: #load-balancer-vlan-spanning-troubleshooting}
+{: troubleshoot}
+{: support}
 
 This topic provides information on common issues you may encounter when the load balancer and the compute instances connected to the load balancer are in different subnets. VLAN Spanning must be enabled for the load balancer to communicate and forward requests to compute instances residing on a different subnet.
 

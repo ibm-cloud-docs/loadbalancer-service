@@ -18,6 +18,7 @@ subcollection: loadbalancer-service
 {:tip: .tip}
 {:download: .download}
 {:note: .note}
+{:support: data-reuse='support'}
 {:important: .important}
 
 # Application Server Troubleshooting
@@ -27,6 +28,9 @@ This topic provides information on common issues you may encounter while using t
 
 ## The back-end server is unhealthy
 {: #the-back-end-server-is-unhealthy}
+{: troubleshoot}
+{: support}
+
 If your back-end server's health is failing, try verifying the following list to try and fix it:
 
 * Does the port of the configured back-end protocol match the port your application is listening on?

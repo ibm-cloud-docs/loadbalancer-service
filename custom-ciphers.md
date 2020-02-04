@@ -19,9 +19,13 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Choosing a Preferred Cipher Suite for your HTTPS Application
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
+{: help}
+{: support}
 
 Cipher algorithms help the {{site.data.keyword.loadbalancer_full}} form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
 
