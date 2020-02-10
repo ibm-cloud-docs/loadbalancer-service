@@ -32,7 +32,7 @@ This section contains answers to some frequently asked questions about the {{sit
 {: faq}
 {: support}
 
-For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
+For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Can I use a different DNS name for my load balancer?
 {: #dns}
@@ -58,7 +58,7 @@ While trying to create a new load balancer service, you may configure up to 10 c
 ## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
 {: faq}
 
-Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning](/docs/infrastructure/vlans?topic=vlans-vlan-spanning) for more information.
+Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** needs to be enabled for the load balancer to communicate and forward requests to the compute instance. Refer to [VLAN Spanning](/docs/vlans?topic=vlans-vlan-spanning) for more information.
 
 ## What are the default settings and allowed values for various health check parameters?
 {: #healthcheck}
@@ -136,7 +136,7 @@ You should use FQDN and not cached IP addresses.
 {: faq}
 {: support}
 
-Please refer to the topic [IBM Cloud IP Ranges](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Please refer to the topic [IBM Cloud IP Ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## What information do I need to file a support ticket?
 {: faq}

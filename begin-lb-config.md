@@ -38,10 +38,10 @@ When the configuration screen appears, perform the following procedure:
 
 3. Select the datacenter where the load balancer instance will be created.
 
-	For multi-zone availability, all requirements for [MZR](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
+	For multi-zone availability, all requirements for [MZR](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
 	{: tip}
 
-4. Select the type of load balancer you want to create from the options **Public to Private** , **Private to Private** or **Public to Public**. Refer to [{{site.data.keyword.loadbalancer_full}} Basics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
+4. Select the type of load balancer you want to create from the options **Public to Private** , **Private to Private** or **Public to Public**. Refer to [{{site.data.keyword.loadbalancer_full}} Basics](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
 5. Select the subnet where you want to deploy your new load balancer.
 
@@ -56,4 +56,4 @@ When the configuration screen appears, perform the following procedure:
 ## What's Next
 {: #what-s-next}
 
-[Configure load balancing parameters and place your order](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order).
+[Configure load balancing parameters and place your order](/docs/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order).

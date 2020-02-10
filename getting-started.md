@@ -36,4 +36,4 @@ If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [l
 ## Ordering a Load Balancer
 {: #ordering-a-load-balancer}
 
-Refer to [Using an elastic {{site.data.keyword.loadbalancer_full}} for  server load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to get started with {{site.data.keyword.loadbalancer_full}}.
+Refer to [Using an elastic {{site.data.keyword.loadbalancer_full}} for  server load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to get started with {{site.data.keyword.loadbalancer_full}}.

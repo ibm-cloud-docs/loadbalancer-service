@@ -41,7 +41,7 @@ A Layer-7 policy is associated with a front-end application port. Multiple polic
  * Each L7 rule is associated with a policy.
  * If all the rules associated with the policy evaluate to `true`, the policy is matched, so the associated action is taken.
 
-Refer to [L7 Policy and Rules](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) for additional details.
+Refer to [L7 Policy and Rules](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) for additional details.
 
 ## Layer-7 Pools
 {: #layer-7-pools}
@@ -52,4 +52,4 @@ Each Layer-7 load balancer pool contains one or more logical server instances.
  * A pool can be configured for session persistence.
  * Use the source IP address of the client or HTTP Cookie to configure session persistence.
 
-Refer to [L7 Pools](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-pool) for additional details.
+Refer to [L7 Pools](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-pool) for additional details.

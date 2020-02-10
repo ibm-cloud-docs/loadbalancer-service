@@ -35,7 +35,7 @@ The health checks against HTTP，HTTPS and TCP ports are conducted as follows:
 
 * **HTTP:** An `HTTP GET` request against a pre-specified URL is sent to the back-end server port. The server port is marked healthy upon receiving a `200 OK` response. The default `GET` URL is “/” via the GUI, and it can be customized.
 
-* **HTTPS:** Only applicable when back-end encryption is enabled and the back-end protocol is set to HTTPS. The mechanism is the same as **HTTP**, except that all health check messages are SSL encrypted. For more information on back-end encryption, refer to [Setting Backend Encryption](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-setting-backend-encryption).
+* **HTTPS:** Only applicable when back-end encryption is enabled and the back-end protocol is set to HTTPS. The mechanism is the same as **HTTP**, except that all health check messages are SSL encrypted. For more information on back-end encryption, refer to [Setting Backend Encryption](/docs/loadbalancer-service?topic=loadbalancer-service-setting-backend-encryption).
 
 * **TCP:** The Load Balancer attempts to open a TCP connection with the back-end server on a specified TCP port. The server port is marked healthy if the connection attempt is successful, and the connection is then closed.
 

@@ -54,10 +54,10 @@ The {{site.data.keyword.loadbalancer_full}} Service offers the following feature
 * Built-in reliability
 * Usage-based pricing
 * Monitoring
-    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details.
+    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details.
 * Layer 7 Support
     * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken.
 * Multi-Zone Region (MZR) Support
-    * Load balancer nodes are instantiated in different data centers of a MZR. Refer to [Multi-Zone Region Overview](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) for more information.
+    * Load balancer nodes are instantiated in different data centers of a MZR. Refer to [Multi-Zone Region Overview](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) for more information.
 * Data Logs
     * With data logs enabled, load balancer logs will be forwarded to the [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}. Customers can view their data logs using [IBM Cloud Log Analysis Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/log-analysis){:new_window}.

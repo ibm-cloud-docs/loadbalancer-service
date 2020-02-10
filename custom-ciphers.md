@@ -45,5 +45,5 @@ To choose a preferred cipher suite for an existing load balancer:
 	If you defined a HTTPS protocol when creating your load balancer, it will have all ciphers in the suite enabled. The selection of a particular set of ciphers can be done only after the load balancer is provisioned.
 	{: note}
 
-	For a list of supported ciphers, refer to [SSL Offload](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+	For a list of supported ciphers, refer to [SSL Offload](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
 	{: note}

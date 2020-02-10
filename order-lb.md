@@ -36,4 +36,4 @@ Your newly created load balancer may not immediately display in this list. After
 ## What's Next
 {: #what-s-next-4}
 
-[Monitor and manage your service performance](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service).
+[Monitor and manage your service performance](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service).

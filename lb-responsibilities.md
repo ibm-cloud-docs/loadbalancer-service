@@ -40,5 +40,5 @@ Learn about management responsibilities that you have when you use {{site.data.k
 ## Customer Responsibilities
 
 * Use the provided API or UI to configure the Load Balancer to meet the needs of your workloads.
-* Following the instructions in the [IBM Cloud Load Balancer user documentation](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up firewalls and VLAN spanning) based on the features used.
+* Following the instructions in the [IBM Cloud Load Balancer user documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up firewalls and VLAN spanning) based on the features used.
 * Monitor service notifications for communications regarding maintenance operations.

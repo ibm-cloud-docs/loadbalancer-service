@@ -48,7 +48,7 @@ Follow the steps below to check for free IPs in a subnet.
 {: troubleshoot}
 {: support}
 
-Refer to the topic [IBM Cloud IP Range](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+Refer to the topic [IBM Cloud IP Range](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}

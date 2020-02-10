@@ -45,5 +45,5 @@ The following SSL ciphers are supported by your load balancer:
 
 If your load balancer has one or more HTTPS front-end application ports (protocols) configured, by default all the above predefined SSL ciphers will be enabled for your load balancer.
 
-You can choose to enable different SSL ciphers for your load balancer if needed. For more information, refer to [Choose a preferred cipher suite for your HTTPS application](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application).
+You can choose to enable different SSL ciphers for your load balancer if needed. For more information, refer to [Choose a preferred cipher suite for your HTTPS application](/docs/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application).
 {: note}

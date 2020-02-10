@@ -30,22 +30,22 @@ This topic shows you how to configure your load balancer and finalize the order.
 
 Add the protocols for your load balancer:
 
-1. On the the load balancer configuration page, identify the [protocols and ports](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics#front-end-and-back-end-application-ports-protocols) your application is listening on, and then input the details into your new application profile. You can use the same configuration for both front-end and back-end, or expose a different front-end port (for security purposes, for instance).
+1. On the the load balancer configuration page, identify the [protocols and ports](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics#front-end-and-back-end-application-ports-protocols) your application is listening on, and then input the details into your new application profile. You can use the same configuration for both front-end and back-end, or expose a different front-end port (for security purposes, for instance).
 
-2. The default [load balancing method](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-load-balancing-methods) is **Round Robin**. You can change it to either **Weighted Round Robin** or **Least Connections** from the drop-down list, depending on your application needs.
+2. The default [load balancing method](/docs/loadbalancer-service?topic=loadbalancer-service-load-balancing-methods) is **Round Robin**. You can change it to either **Weighted Round Robin** or **Least Connections** from the drop-down list, depending on your application needs.
 
-3. Optionally, you can enable **Session stickiness**, which sends all requests from a given end-user (for example, one with the same source IP) to the same backend server for a system defined "sticky" time. For more information on session stickiness, refer to [this topic](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-session-persistence)
+3. Optionally, you can enable **Session stickiness**, which sends all requests from a given end-user (for example, one with the same source IP) to the same backend server for a system defined "sticky" time. For more information on session stickiness, refer to [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-session-persistence)
 
-4. You can also set the **Maximum connection limit** against your application. For more information, refer to [this topic](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-connection-timeouts)
+4. You can also set the **Maximum connection limit** against your application. For more information, refer to [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-connection-timeouts)
 
 5. Click **Add Protocol** to specify additional ports and protocols your application may be listening on. Be sure that all front-end ports are unique. You can choose HTTP, HTTPS or TCP as your front-end protocol.
 
-	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
+	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
 	{: note}
 
 6. If you chose HTTPS for your frontend protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list.
 
-	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) connections and can communicate in plain-text HTTP with the back-end application servers when HTTP is selected as the backend protocol. This offloads processor intensive SSL tasks from your servers to the load balancer. You can also choose to have HTTPS as the backend protocol when the backend application servers are configured to receive HTTPS traffic. In this case, traffic is encrypted between the load balancer and the backend servers.
+	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) connections and can communicate in plain-text HTTP with the back-end application servers when HTTP is selected as the backend protocol. This offloads processor intensive SSL tasks from your servers to the load balancer. You can also choose to have HTTPS as the backend protocol when the backend application servers are configured to receive HTTPS traffic. In this case, traffic is encrypted between the load balancer and the backend servers.
 
 	![CLB Cert](images/CLB_HTTPS_Cert_PUP.png "CLB Cert")
 
@@ -57,7 +57,7 @@ Add the protocols for your load balancer:
 
 ## Step 2 - Configuring Health Checks
 
-The [health check](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-performing-health-checks-with-ibm-cloud-load-balancer) definition is mandatory for each of your application ports (the back-end ports identified in the protocols section).
+The [health check](/docs/loadbalancer-service?topic=loadbalancer-service-performing-health-checks-with-ibm-cloud-load-balancer) definition is mandatory for each of your application ports (the back-end ports identified in the protocols section).
 
 The system pre-populates a default health check configuration for these back-end ports, and you can customize these settings to suit your application needs:
 
@@ -79,7 +79,7 @@ If the load balancer type is Public to Public, the server instances are added wi
 Server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are greyed out with other load balancing methods.
 {: note}
 
-Refer to [Limitations on number of application servers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
+Refer to [Limitations on number of application servers](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
 {: tip}
 
 ## Step 4 - Placing your Order
@@ -98,4 +98,4 @@ Finally, to place your order:
 
 ## What's Next
 {: #what-s-next-3}
-[Manage and monitor your load balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to edit configuration and monitor service performance.
+[Manage and monitor your load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to edit configuration and monitor service performance.

@@ -48,4 +48,4 @@ After every configuration change, the load balancer goes into an UPDATE PENDING 
 
 ![CLB configuration pending](images/CLB_configuration_pending_PUP.png "CLB configuration pending")
 
-You can also use the **Layer7** tab to configure [Layer-7 Load Balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing).
+You can also use the **Layer7** tab to configure [Layer-7 Load Balancing](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing).

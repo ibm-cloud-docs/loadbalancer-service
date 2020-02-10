@@ -76,7 +76,7 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 
 {{site.data.keyword.loadbalancer_full}} now provides a set of APIs supporting Layer 7 load balancing. With Layer 7 (L7) support, traffic can be redirected to a URL, rejected, or distributed to L7 pool members, including bare-metal and virtual-server instances. Incoming data traffic is classified by using Layer 7 policies and rules. The policies define what action to take when the data traffic matches the rules associated with them.
 
-Refer to [Layer 7 load balancing](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing) for additional details.
+Refer to [Layer 7 load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-load-balancing) for additional details.
 
 ## April 2018
 {: #april-2018}
@@ -106,7 +106,7 @@ You can now leverage the “IBM Cloud Monitoring” service to monitor the follo
 
 ![Monitoring Metrics](./images/Metrics.png)
 
-Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details
+Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details
 
 This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps](/docs/account?topic=account-unifyingaccounts).
 
@@ -117,4 +117,4 @@ You can now customize the cipher suites that are used when the load balancer is 
 
 When you enable SSL termination on {{site.data.keyword.loadbalancer_full}} (by selecting **HTTPS** as the front-end protocol), a carefully selected default set of cipher suites is enabled that conform to security best practices. IBM keeps a close watch on any new vulnerabilities that may be discovered, and updates the list accordingly. This, along with the seamless security updates of software and hardware components, helps to keep your applications secure at all times.
 
-Refer to [Custom Cipher Suite](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application) for additional details.
+Refer to [Custom Cipher Suite](/docs/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application) for additional details.
