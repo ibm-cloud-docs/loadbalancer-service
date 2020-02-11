@@ -1,5 +1,5 @@
 {
-  "can-i-use-a-different-dns-name-for-my-load-balancer":[
+  "dns":[
     "use a different DNS name for my load balancer",
     "change the DNS name on my loadbalancer",
     "update the DNS name",
@@ -7,7 +7,7 @@
     "is the DNS name for the load balancer customizable",
     "edit the DNS name"
  ],
-   "what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-":[
+   "max":[
      "maximum number of virtual ports for my loadbalancer",
      "max amount of virtual ports for loadbalancer",
      "how many virtual ports can I use within load balancer",
@@ -31,7 +31,7 @@
      "what does VLAN spanning enable",
      "load balancer and the compute instances connected to the load balancer be in different subnets"
  ],
-   "what-are-the-default-settings-and-allowed-values-for-various-health-check-parameters-":[    
+   "healthcheck":[    
      "default settings and allowed values for various health check parameters",
      "default settings for health checks",
      "allowed values for the health checks",
@@ -61,14 +61,14 @@
      "number of load balancers allowed",
      "define more than 10 load balancers"
 ],
-   "can-the-ibm-cloud-trade-load-balancer-service-be-used-with-vmware-":[      
+   "vmware":[      
      "Load Balancer Service be used with VMWare",
      "use load balancers with VMware",
      "with Vmware can I also have a load balancer",
      "combine Vmware and load balancers",
      "Vmware be specified as backend servers to a load balancer"
 ],
-   "if-i-choose-to-use-a-public-vlan-under-my-account-to-deploy-my-load-balancer-and-i-have-a-firewall-deployed-on-my-public-vlan-what-configurations-are-required-on-my-firewall-to-work-with-my-load-balancer-service-":[  
+   "public":[  
      "for my public VLAN what configurations are required on my firewall to work with my load balancer",
      "how to configure firewall on public VLAN",
      "firewall on public VLAN configuration",
@@ -82,14 +82,14 @@
      "can't see the monitoring metrics of my load balancer",
      "monitoring metrics unavailable for my load balancers"
 ],
-   "are-the-load-balancer-ip-addresses-fixed-":[  
+   "fixedip":[  
      "load balancer IP addresses fixed",
      "load balancer ip address be changed",
      "load balancers IP addresses remain constant",
      "changes in the available IPs associated with the FQDN",
      "change to the IP address of the loadbalancer"
 ],
-   "if-i-have-a-firewall-deployed-on-my-private-vlan-what-configurations-are-required-for-it-to-work-with-my-load-balancer-service-":[ 
+   "vlan":[ 
      "firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer",
      "have a firewall are there any changes required for my loadbalancer",
      "how do I configure my loadbalancer to work with a firewall",
