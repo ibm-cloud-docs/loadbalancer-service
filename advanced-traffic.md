@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-11-07"
+lastupdated: "2020-02-11"
 
 keywords: traffic, management, connection, persistence
 
@@ -35,13 +35,11 @@ Use the ‘max connections’ configuration to limit the maximum number of concu
 
 The load balancer supports session persistence based upon the source IP of the connection. As an example, if you have 'source IP' type session persistence enabled for port 80 (HTTP), then subsequent HTTP connection attempts from the same source IP client are persistent on the same back-end server. This feature is available for all three supported protocols (HTTP, HTTPS and TCP).
 
-The load balancer also supports session persistence based upon the HTTP Cookie. For example, if you have 'HTTP Cookie' type session persistence enabled for port 80 (HTTP), when the load balancer receives its first response from the back-end server, it adds a cookie with the name `IBMCLB` and a value of `back-end server UUID` in the reponse header. All subsequent HTTP requests with this cookie arriving at the load balancer are persistent on the same back-end server. This feature is available for HTTP and HTTPS.
-
-The load balancer supports a maximum of 10,000 client persistence entries. The expiration time for these entries is 10 minutes. Additional requests received from the same client after 10 minutes may be forwarded to a different back-end server. If the session persistence entry has not expired, but the back-end port has become unhealthy, a new server is selected for forwarding any subsequent client connections.  
+The load balancer also supports session persistence based upon the HTTP Cookie. For example, if you have 'HTTP Cookie' type session persistence enabled for port 80 (HTTP), when the load balancer receives its first response from the back-end server, it adds a cookie with the name `IBMCLB` and a value of `back-end server UUID` in the response header. All subsequent HTTP requests with this cookie arriving at the load balancer are persistent on the same back-end server. This feature is available for HTTP and HTTPS.
 
 ## HTTP Keep Alive
 {: #http-keep-alive}
-The load balancer supports `HTTP keep alive` as long as it is enabled on both the client and back-end servers. The load balancer attempts to re-use the server-side HTTP connections to increase connection efficiency and reduce latency.
+The load balancer supports 'HTTP keep alive' as long as it is enabled on both the client and back-end servers. The load balancer attempts to re-use the server-side HTTP connections to increase connection efficiency and reduce latency.
 
 ## Connection Timeouts
 {: #connection-timeouts}
