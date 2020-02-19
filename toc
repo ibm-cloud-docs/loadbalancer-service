@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" category="network" audience="network" arm="3662751" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started-with-ibm-cloud-load-balancer" path="loadbalancer-service"}
+{: .toc subcollection="loadbalancer-service" category="network" audience="network" arm="3662751" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started" path="loadbalancer-service"}
 IBM Cloud Load Balancer
 
     {: .navgroup id="learn"}
