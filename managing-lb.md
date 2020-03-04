@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Monitoring and Managing Your Service
+# Monitoring and managing your service
 {: #monitoring-and-managing-your-service}
 
 You can edit your configuration or monitor your service performance by clicking on the load balancer name in the load balancer summary page.

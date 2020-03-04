@@ -20,12 +20,12 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Known Issues and Limitations with IBM Cloud Load Balancer
+# Known issues and limitations with IBM Cloud Load Balancer
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
 This topic provides information on the currently known issues and limitations with the {{site.data.keyword.loadbalancer_full}} Service.
 
-## Known Issues
+## Known issues
 {: #known-issues}
 The {{site.data.keyword.loadbalancer_full}} Service currently has the following issues:
 
@@ -35,7 +35,7 @@ The {{site.data.keyword.loadbalancer_full}} Service currently has the following 
 * Cosmetic - During the initial service creation, the drop-down list for the data centers may be skewed. Regardless, you will still be able to select your desired data center.
 * Cosmetic - The pricing information on the review page is rounded off to two decimal digits. For correct pricing, please refer to pricing displayed on the plan page.
 
-## Known Limitations
+## Known limitations
 {: #known-limits}
 The {{site.data.keyword.loadbalancer_full}} Service currently has the following limitations:
 

@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:support: data-reuse='support'}
 
-# Error Message Troubleshooting
+# Error message troubleshooting
 {: #error-message-troubleshooting}
 {: troubleshoot}
 {: support}

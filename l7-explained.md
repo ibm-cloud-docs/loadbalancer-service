@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Layer-7 Load Balancing
+# Layer-7 load balancing
 {: #layer-7-load-balancing}
 
 The {{site.data.keyword.loadbalancer_full}} Service distributes traffic among multiple server instances, including bare-metal and virtual-server instances, using Layer-7 (application layer) data.
@@ -32,7 +32,7 @@ The {{site.data.keyword.loadbalancer_full}} Service distributes traffic among mu
  ![Layer 7 Overview](images/Layer7-Overview.png "Layer 7 Overview")
 
 
-## Layer-7 Policies and Rules
+## Layer-7 policies and rules
 {: #layer-7-policies-and-rules}
 A Layer-7 policy is associated with a front-end application port. Multiple policies can be associated with a front-end port.
 
@@ -43,7 +43,7 @@ A Layer-7 policy is associated with a front-end application port. Multiple polic
 
 Refer to [L7 Policy and Rules](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-policy) for additional details.
 
-## Layer-7 Pools
+## Layer-7 pools
 {: #layer-7-pools}
 Each Layer-7 load balancer pool contains one or more logical server instances.
 

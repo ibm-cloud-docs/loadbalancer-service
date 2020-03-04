@@ -22,7 +22,7 @@ subcollection: loadbalancer-service
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Choosing a Preferred Cipher Suite for your HTTPS Application
+# Choosing a preferred cipher suite for your HTTPS application
 {: #choosing-a-preferred-cipher-suite-for-your-https-application}
 {: help}
 {: support}

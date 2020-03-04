@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Other Resources for IBM Cloud Load Balancer
+# Other resources for IBM Cloud Load Balancer
 {: #other-resources-for-ibm-cloud-load-balancer}
 
 These resources are created by IBM© and some of our partners and customers.

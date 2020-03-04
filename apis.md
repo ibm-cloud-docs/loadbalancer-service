@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# API Reference
+# API reference
 {: #api-reference}
 
 The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system.
@@ -392,7 +392,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ## Layer 7 APIs
 {: #layer-7-apis}
 
-### Create Multiple L7 Policies and L7 Rules
+### Create Multiple L7 policies and L7 rules
 {: #create-multiple-l7-policies-and-l7-rules}
 
 ```py
@@ -506,7 +506,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-### Update multiple Layer 7 Rules attached to the same Layer 7 policy 
+### Update multiple Layer 7 rules attached to the same Layer 7 policy 
 {: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
 
 ```py
@@ -547,7 +547,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-### Create a Layer 7 Pool with servers, health monitoring and session affinity
+### Create a Layer 7 pool with servers, health monitoring and session affinity
 {: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
 
 ```py

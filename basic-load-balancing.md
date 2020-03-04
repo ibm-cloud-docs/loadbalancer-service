@@ -20,12 +20,12 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# Performing Load Balancer Basics
+# Performing load balancer basics
 {: #ibm-cloud-load-balancer-basics}
 
 The {{site.data.keyword.loadbalancer_full}} service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
 
-## Public to Private Load Balancer
+## Public to private load balancer
 {: #public-private-load-balancer}
 
 A publicly accessible, fully qualified domain name is assigned to your load balancer service instance. You must use this domain name to access your applications hosted behind the load balancer service. This domain name may be registered with one or more public IP addresses. The public IP addresses and number of public IP addresses may change over time based on maintenance and scaling activities, which are transparent to the end users. The backend compute instances hosting your application must be on an IBM Cloud private network.
@@ -35,7 +35,7 @@ As a good practice, we recommended that you provision your backend servers as â€
 
 You may choose to allocate load balancer public IP addresses from either an IBM system pool(default) or a public VLAN under your account when creating your load balancer service instance.
 
-## Private to Private Load Balancer
+## Private to private load balancer
 {: #private-private-load-balancer}
 
 The internal load balancer is only accessible within the IBM Cloud private network.

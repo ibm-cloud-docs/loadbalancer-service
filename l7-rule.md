@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Layer 7 Rules
+# Layer 7 rules
 {: #layer-7-rules}
 
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
@@ -73,7 +73,7 @@ Comparison Type |  Type of evaluation
 Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
 {: tip}
 
-## Layer 7 Rule Properties
+## Layer 7 rule properties
 {: #layer-7-rule-properties}
 
 Property  | Description

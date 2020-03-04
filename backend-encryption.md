@@ -22,7 +22,7 @@ subcollection: loadbalancer-service
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Setting Backend Encryption
+# Setting backend encryption
 {: #setting-backend-encryption}
 {: help}
 {: support}

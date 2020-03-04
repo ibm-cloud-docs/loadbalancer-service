@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Data Logging
+# Data logging
 {: #data-logging}
 
 Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} under your account.
@@ -33,7 +33,7 @@ You can enable or disable this feature by:
 
 * Using the API `enableOrDisableDataLogs`.
 
-## Viewing Logs in the IBM Cloud Logging Analysis Service
+## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
 Log into the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} with your IBM Cloud account. Logs can be viewed from the LogDNA instance. Refer to [this topic](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started) for more information.
@@ -51,7 +51,7 @@ To create a LogDNA instance, perform the following procedure:
 
 4. After you create the logging instance, configure it by clicking **Configure the platform service logs**.
 
-## Log Output Examples
+## Log output examples
 {: #log-output-examples}
 
 The following output is an example of an {{site.data.keyword.loadbalancer_full}} data log:

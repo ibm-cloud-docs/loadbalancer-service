@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:support: data-reuse='support'}
 {:important: .important}
 
-# Application Server Troubleshooting
+# Application server troubleshooting
 {: #application-server-troubleshooting}
 
 This topic provides information on common issues you may encounter while using the load balancer.

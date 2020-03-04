@@ -19,7 +19,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Review and Place Your Order
+# Review and place your order
 {: #review-and-place-your-order}
 
 Review the **Order Summary** and click **Create** to place your order.
@@ -33,7 +33,7 @@ Your newly created load balancer may not immediately display in this list. After
 
 ![Summary](images/summary-online.png "Summary")
 
-## What's Next
+## What's next
 {: #what-s-next-4}
 
 [Monitor and manage your service performance](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service).

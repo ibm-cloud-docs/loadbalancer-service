@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Multi-Zone Region (MZR) Overview
+# Multi-Zone Region (MZR) overview
 {: #multi-zone-region-mzr-overview}
 
 When creating a load balancer you will specify the data center where it should be created. If that data center is part of a Multi-Zone Region (MZR) then the load balancer nodes are instantiated in two different data centers. For example, `us-south` is a MZR which contains `dal10`, `dal12`, `dal13`. If a customer creates a load balancer in data center `dal13`, the nodes are instantiated in `dal13`, `dal10` or `dal12`. Normally you will not see any obvious changes in traffic. MZR support is useful when communication to a data center is disrupted. The load balancer will continue to function, since the other node is located in a different data center.
@@ -37,7 +37,7 @@ Currently the following data centers are part of MZR:
 | au-syd | syd01, syd04, syd05 |
 
 
-## MZR Requirements
+## MZR requirements
 {: #mzr-requirements}
 Multi-Zone Regions have the following requirements:
 * The data center you select should be part of an MZR. The above table lists the regions and the data centers in each region.

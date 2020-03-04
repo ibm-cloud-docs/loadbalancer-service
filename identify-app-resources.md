@@ -19,14 +19,14 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Configuring Load Balancing Parameters and Placing Your Order
+# Configuring load balancing parameters and placing your order
 {: #configure-load-balancing-parameters-and-place-order}
 
 This topic shows you how to configure your load balancer and finalize the order.
 
 ![CLB Load Balancing Parameters](images/CLB_LoadBalancing_Parameters_PUP.png "CLB Load Balancing Parameters")
 
-## Step 1 - Adding Protocols
+## Step 1 - Adding protocols
 
 Add the protocols for your load balancer:
 
@@ -55,7 +55,7 @@ Add the protocols for your load balancer:
 	Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.
 	{: important}
 
-## Step 2 - Configuring Health Checks
+## Step 2 - Configuring health checks
 
 The [health check](/docs/loadbalancer-service?topic=loadbalancer-service-performing-health-checks-with-ibm-cloud-load-balancer) definition is mandatory for each of your application ports (the back-end ports identified in the protocols section).
 
@@ -66,7 +66,7 @@ The system pre-populates a default health check configuration for these back-end
 * **Max Trials**: Maximum number of additional health check attempts the system will make prior to declaring a port unhealthy
 * **Path**: The HTTP URL path for the health check
 
-## Step 3 - Adding Server Instances
+## Step 3 - Adding server instances
 
 Select your **server instance** from the dropdown in the table, and use the **Attach Server** button to add more servers. You can select from the IBM© Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
 
@@ -82,7 +82,7 @@ Server **weights** are relevant only when using the **Weighted Round Robin** loa
 Refer to [Limitations on number of application servers](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
 {: tip}
 
-## Step 4 - Placing your Order
+## Step 4 - Placing your order
 
 Finally, to place your order:
 
@@ -96,6 +96,6 @@ Finally, to place your order:
 
 	![CLB creation pending](images/CLB_create_pending_PUP.png "CLB creation pending")
 
-## What's Next
+## What's next
 {: #what-s-next-3}
 [Manage and monitor your load balancer](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to edit configuration and monitor service performance.

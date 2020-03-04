@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:download: .download}
 {:row-headers .row-headers}
 
-# Exploring IBM Load Balancers
+# Exploring IBM load balancers
 {: #explore}
 
 IBM© Cloud offers several load balancing solutions to choose from. The table below compares the load balancing solutions to help you choose the one that's right for you. To learn more about the individual offering, click its name in the table.

@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:download: .download}
 
 
-# Getting Started with IBM Cloud Load Balancer
+# Getting started with IBM Cloud Load Balancer
 {: #getting-started}
 
 To get started using the {{site.data.keyword.loadbalancer_full}}, you will need two main items:
@@ -33,7 +33,7 @@ If you need assistance in obtaining an **IBMid** account, contact your [IBM sale
 
 If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account](/docs/account?topic=account-unifyingaccounts) with your IBMid.
 
-## Ordering a Load Balancer
+## Ordering a load balancer
 {: #ordering-a-load-balancer}
 
 Refer to [Using an elastic {{site.data.keyword.loadbalancer_full}} for  server load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to get started with {{site.data.keyword.loadbalancer_full}}.

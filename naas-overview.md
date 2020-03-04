@@ -19,7 +19,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 
-# Demo: Network as a Service
+# Demo: Network as a service
 {: #naas-video}
 
 IBM© Cloud Network services, including Load Balancers, Security Groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you’ll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.

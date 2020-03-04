@@ -53,7 +53,7 @@ When the configuration screen appears, perform the following procedure:
 	This option only applies to **Public to Private** load balancer type. If you select the option **Allocate from a public subnet in this account** you must ensure that you have at least two public IP's available in a public subnet in the same datacenter. In addition, ensure that traffic to TCP management port 56501, as well as your application's own ports, are not blocked by firewalls deployed on your public VLANs.
 	{: note}
 
-## What's Next
+## What's next
 {: #what-s-next}
 
 [Configure load balancing parameters and place your order](/docs/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order).
