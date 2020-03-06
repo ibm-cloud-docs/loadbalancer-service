@@ -25,6 +25,12 @@ subcollection: loadbalancer-service
 
 Find out about new and updated features in {{site.data.keyword.loadbalancer_full}}.
 
+## March 2020
+{: #march-2020}
+
+### Allow customers to configure load balancer timeout values
+{: #allow-customers-to-configure-load-balancer-timeout-values}
+{{site.data.keyword.loadbalancer_full}} now allows you to configure or modify client and server timeout values using the API. This feature is intended for applications that need customized timeout values.
 
 ## September 2019
 {: #september-2019}

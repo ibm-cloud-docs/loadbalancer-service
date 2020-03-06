@@ -311,7 +311,49 @@ protocolConfigurations = [
         "frontendProtocol": "HTTP",
         "loadBalancingMethod": "ROUNDROBIN",    # ROUNDROBIN, LEASTCONNECTION, WEIGHTED_RR
         "maxConn": 1000,
-        "sessionType": "SOURCE_IP"
+        "sessionType": "SOURCE_IP",
+        "serverTimeout": 70,
+        "clientTimeout": 70
+    }
+]
+
+# Create the api client
+client = SoftLayer.Client()
+listener_service = client['Network_LBaaS_Listener']
+
+_mask = "mask[listeners]"
+
+try:
+    response = listener_service.updateLoadBalancerProtocols(uuid, protocolConfigurations, mask=mask)
+    pprint(response)
+except SoftLayer.SoftLayerAPIError as e:            
+    print("Unable to add protocols: %s, %s" % (e.faultCode, e.faultString))
+```
+{: codeblock}
+
+### Update a protocol
+{: #update-a-protocol}
+
+```py
+import SoftLayer
+from pprint import pprint
+
+# Your load balancer UUID
+uuid = 'set me'
+
+# New protocols to add
+protocolConfigurations = [
+    {   
+        "listenerUuid": "69fad83a-e850-4b72-a4d3-af94d5bf5437",
+        "serverTimeout": 60,
+        "clientTimeout": 60
+    },
+    {   
+        "listenerUuid": "e4b8cfd0-1e27-4d3e-a8ed-595b198cd683",
+        "frontendPort": 1450,
+        "maxConn": 1002,
+        "serverTimeout": 80,
+        "clientTimeout": 80
     }
 ]
 
