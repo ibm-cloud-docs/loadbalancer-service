@@ -21,7 +21,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:support: data-reuse='support'}
 
-# Load Balancer Provisioning Troubleshooting
+# Load balancer provisioning troubleshooting
 {: #load-balancer-provisioning-troubleshooting}
 
 This topic provides information on common issues you may encounter while creating a new instance of {{site.data.keyword.loadbalancer_full}}.
@@ -32,16 +32,6 @@ This topic provides information on common issues you may encounter while creatin
 {: support}
 
 {{site.data.keyword.loadbalancer_full}} requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
-
-Follow the steps below to check for free IPs in a subnet.
-
-1. Go to the [Subnets ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/network/subnets){:new_window} page.
-
-2. Search for and click on the subnet you want to check for free IP's.
-
-	![View private subnets](images/CLB_view_private_subnets_PUP.png "View private subnets")
-
-3. The details page for the selected subnet shows the status of all the IP's in that subnet.
 
 ## Issues with firewalls on public and private VLANs
 {: #issues-with-firewalls-on-public-and-private-vlans}
