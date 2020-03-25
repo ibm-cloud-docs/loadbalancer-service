@@ -28,6 +28,15 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ## March 2020
 {: #march-2020}
 
+### Support redirection from HTTP to HTTPS
+{: #L7Policy-Redirect-Https}
+{{site.data.keyword.loadbalancer_full}} now allows you to configure an L7 Policy using the action 'REDIRECT_HTTPS'. This action redirects HTTP traffic to the HTTPS listener port. You don't need a rule configuration for this action, and only one configuration is supported per listener. 
+
+You can configure this action through API only. 
+{: note}
+
+For more information refer to [Layer 7 policy](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy).
+
 ### Allow customers to configure load balancer timeout values
 {: #allow-customers-to-configure-load-balancer-timeout-values}
 {{site.data.keyword.loadbalancer_full}} now allows you to configure or modify client and server timeout values using the API. This feature is intended for applications that need customized timeout values.
