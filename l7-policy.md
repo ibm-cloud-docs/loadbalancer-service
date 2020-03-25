@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Layer 7 Policy
+# Layer 7 policy
 {: #layer-7-policy}
 
 A Layer 7 (L7) policy is used to classify traffic by matching its L7 information with L7 rules, and then taking specific actions if those rules match.
@@ -39,40 +39,45 @@ If the traffic does not match any of the policy rules, the traffic is redirected
 
 ![Layer 7 Details](images/Layer7-PolicyDetails.png "Layer 7 Details")
 
-Each policy is associated with an action that is performed when all of the rules in the policy match the traffic.
+Each policy is associated with an action that executes when all rules in the policy match the traffic.
 
 The actions can be:
 
 - Reject
-- Redirect to a URL
+- Redirect to HTTPS
+- Redirect to URL
 - Redirect to pool
 
-Policies set to `reject` are evaluated first, regardless of their priority.
+Policies set to `reject` are evaluated first.
 
-After that, policies set to `redirect to url` are evaluated.
+If the action is set to `REDIRECT_HTTPS`, then the HTTP traffic redirects to the HTTPS listener port. Only one configuration of this action is supported per listener. This action cannot configure L7 rules, and you must configure it using the API. You can configure the L7 policy using the action `REDIRECT_HTTPS` with the `addL7Policies` method of the  `SoftLayer_Network_LBaaS_L7Policy` service. A `redirectUrl` datatype provides the HTTPS listener ID for HTTPS redirection.
 
-Finally, policies set to `redirect to pool` are evaluated.
+The `Redirect to https` policy is evaluated after a `Reject`. If this policy exists, then any existing `redirect to url` and `
+Redirect to pool` policies do not apply. Also, if there are any existing `Redirect to https` policies, then you cannot create any new `Redirect to url` and `Redirect to pool` policies.
 
-Within each action category, the policies are evaluated in ascending order of priority (lowest to highest).
+If no HTTPS redirect policy exists, then any policies set to `Redirect to url` are evaluated after `Reject`.
 
-![Layer 7 Policy Actions](images/Layer7-PolicyActions.png "Layer 7 Policy Actions"
+Finally, policies set to `Redirect to pool` are evaluated last.
 
-## Layer 7 Policy Properties
+Within each action category, policies are evaluated in ascending order of priority (lowest to highest). Only one action of `REDIRECT_HTTPS` is allowed per listener, and it takes precedence over all other policies except `REJECT`. As a result, the concept of "priority" does not apply.
+
+## Layer 7 policy properties
 {: #layer-7-policy-properties}
 
 Property  | Description
 ------------- | -------------
 Name | The name of the policy. Each policy must have a unique name.
-Action | The action to take when the rules match. The actions are `REJECT`, `REDIRECT_URL`, and `REDIRECT_POOL`. A policy whose action is set to `REJECT` is always evaluated first, regardless of its priority. Policies whose actions are set to `REDIRECT_URL` are evaluated next, followed by policies whose actions are set to `REDIRECT_POOL`.
-Priority | Policies are evaluated based on ascending order of priority.
-Redirect URL | The URL to which traffic will be re-directed, if the action is set to `REDIRECT_URL`.
+Action | The action to take when the rules match. The actions are `REJECT`, `REDIRECT_HTTPS`, `REDIRECT_URL`, and `REDIRECT_POOL`. `REDIRECT_HTTPS` action is supported by API only.
+Priority | Within each action category, policies are evaluated in ascending order of priority. This field is not applicable for `REDIRECT_HTTPS` as only one such action is applicable per listener.
+Redirect URL | The URL to which traffic will be re-directed, if the action is set to `REDIRECT_URL`. And the HTTPS listener ID to which traffic will be re-directed, if the action is set to `REDIRECT_HTTPS`.
 Redirect L7 Pool | The pool of servers to which traffic will be sent, if the action is set to `REDIRECT_POOL`.
 Protocol | The front-end application port to which the policy is applied.
 
-## Layer 7 Rule
+## Layer 7 rule
 {: #layer-7-rule}
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
+* Add l7 rules is not allowed for L7 policy with `REDIRECT_HTTPS` action.
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
 * Layer 7 rules are always associated with a Layer 7 policy. Multiple Layer 7 rules can be associated with the same layer 7 policy.
 * If multiple rules are associated with a policy, then each rule will be evaluated to be `true` or `false`.
@@ -92,9 +97,9 @@ Type      |  Field to be extracted and evaluated
 ----------| -----------------------
 `HOST_NAME` | The hostname part of the URL (for example, `api.my_company.com`)
 `FILE_TYPE` | The end of the URL, representing the file type (for example, `jpg`)
-HEADER    | A field in the HTTP header
-COOKIE    | A named cookie in the HTTP header
-PATH      | The part of the URL that follows the hostname (for example, `/index.html`)
+`HEADER`    | A field in the HTTP header
+`COOKIE`    | A named cookie in the HTTP header
+`PATH`      | The part of the URL that follows the hostname (for example, `/index.html`)
 
 Rules also have a comparison type, which indicates how they are are to be evaluated. 
 Rules can have following comparison types:
@@ -116,7 +121,7 @@ Comparison Type |  Type of evaluation
 Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
 {: tip}
 
-## Layer 7 Rule Properties
+## Layer 7 rule properties
 {: #layer-7-rule-properties}
 
 Property  | Description
