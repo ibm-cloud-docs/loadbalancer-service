@@ -41,6 +41,8 @@ For more information about the SoftLayer API, {{site.data.keyword.loadbalancer_f
 * [SoftLayer_Network_LBaaS_L7Rule API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: new_window}
 * [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: new_window}
 * [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: new_window}
+* [LBaaS commands in the SLCLI ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer-python.readthedocs.io/en/latest/cli/loadbal/#lbaas-commands){: new_window}
+
 
 The following examples are using [softlayer-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/softlayer-python){: new_window} client.
 
@@ -126,7 +128,8 @@ class LBaaSExample():
             'useHourlyPricing': True,       # Required since LBaaS is an hourly service            
             'prices': [{'id': price_id} for price_id in prices],
             'protocolConfigurations': protocols,
-            'subnets': [{'id': subnet_id}]
+            'subnets': [{'id': subnet_id}],
+            'isPublic': public
         }
 
         try:
