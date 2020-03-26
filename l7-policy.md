@@ -50,9 +50,9 @@ The actions can be:
 
 Policies set to `reject` are evaluated first.
 
-If the action is set to `REDIRECT_HTTPS`, then the HTTP traffic redirects to the HTTPS listener port. Only one configuration of this action is supported per listener. This action cannot configure L7 rules, and you must configure it using the API. You can configure the L7 policy using the action `REDIRECT_HTTPS` with the `addL7Policies` method of the  `SoftLayer_Network_LBaaS_L7Policy` service. A `redirectUrl` datatype provides the HTTPS listener ID for HTTPS redirection.
+If the action is set to `REDIRECT_HTTPS`, then the HTTP traffic redirects to the HTTPS listener port. Only one configuration of this action is supported per listener. This action cannot configure L7 rules, and you must configure it using the API. You can configure the L7 policy using the action `REDIRECT_HTTPS` with the `addL7Policies` method of the  `SoftLayer_Network_LBaaS_L7Policy` service. A `redirectUrl` datatype provides the HTTPS listener's universally unique identifier (UUID) for HTTPS redirection.
 
-The `Redirect to https` policy is evaluated after a `Reject`. If this policy exists, then any existing `redirect to url` and `
+The `Redirect to https` policy is evaluated after a `Reject`. If this policy exists, then any existing `Redirect to url` and `
 Redirect to pool` policies do not apply. Also, if there are any existing `Redirect to https` policies, then you cannot create any new `Redirect to url` and `Redirect to pool` policies.
 
 If no HTTPS redirect policy exists, then any policies set to `Redirect to url` are evaluated after `Reject`.
@@ -69,7 +69,7 @@ Property  | Description
 Name | The name of the policy. Each policy must have a unique name.
 Action | The action to take when the rules match. The actions are `REJECT`, `REDIRECT_HTTPS`, `REDIRECT_URL`, and `REDIRECT_POOL`. `REDIRECT_HTTPS` action is supported by API only.
 Priority | Within each action category, policies are evaluated in ascending order of priority. This field is not applicable for `REDIRECT_HTTPS` as only one such action is applicable per listener.
-Redirect URL | The URL to which traffic will be re-directed, if the action is set to `REDIRECT_URL`. And the HTTPS listener ID to which traffic will be re-directed, if the action is set to `REDIRECT_HTTPS`.
+Redirect URL | The URL to which traffic will be re-directed, if the action is set to `REDIRECT_URL`. And the HTTPS listener UUID to which traffic will be re-directed, if the action is set to `REDIRECT_HTTPS`.
 Redirect L7 Pool | The pool of servers to which traffic will be sent, if the action is set to `REDIRECT_POOL`.
 Protocol | The front-end application port to which the policy is applied.
 
