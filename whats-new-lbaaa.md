@@ -25,17 +25,22 @@ subcollection: loadbalancer-service
 
 Find out about new and updated features in {{site.data.keyword.loadbalancer_full}}.
 
+## April 2020
+{: #apr-2020}
+
+You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig).
+
 ## March 2020
 {: #march-2020}
 
 ### Support redirection from HTTP to HTTPS
 {: #L7Policy-Redirect-Https}
-{{site.data.keyword.loadbalancer_full}} now allows you to configure an L7 Policy using the action 'REDIRECT_HTTPS'. This action redirects HTTP traffic to the HTTPS listener port. You don't need a rule configuration for this action, and only one configuration is supported per listener. 
+{{site.data.keyword.loadbalancer_full}} now allows you to configure an L7 Policy using the action 'REDIRECT_HTTPS'. This action redirects HTTP traffic to the HTTPS listener port. You don't need a rule configuration for this action, and only one configuration is supported per listener.
 
-You can configure this action through API only. 
+You can configure this action through API only.
 {: note}
 
-For more information refer to [Layer 7 policy](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-layer-7-policy).
+For more information refer to [Layer 7 policy](/docs/loadbalancer-service?topic=loadbalancer-service-layer-7-policy).
 
 ### Allow customers to configure load balancer timeout values
 {: #allow-customers-to-configure-load-balancer-timeout-values}
@@ -73,7 +78,7 @@ For more information refer to [Layer 7 policy](/docs/infrastructure/loadbalancer
 ### Data Logs
 {: #data-logs}
 
-{{site.data.keyword.loadbalancer_full}} now supports data logs forwarding. With data logs enabled, your load balancer log data will be forwarded to the [IBM Cloud Log Analysis Service. 
+{{site.data.keyword.loadbalancer_full}} now supports data logs forwarding. With data logs enabled, your load balancer log data will be forwarded to the [IBM Cloud Log Analysis Service.
 
 ## December 2018
 {: #december-2018}
