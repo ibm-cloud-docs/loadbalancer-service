@@ -20,16 +20,12 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:download: .download}
 
-# Getting Help and Support
+# Getting help and support
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-If you have problems or questions when using the {{site.data.keyword.loadbalancer_full}} Service, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support case.
+If you have problems or questions when using the {{site.data.keyword.loadbalancer_full}} Service, you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "lbaas" and "ibm-cloud".
+{:shortdesc}
 
-When using the forums to ask a question, tag your question so that it is seen by the IBM Cloud development teams.
+You can also open a support case in the [{{site.data.keyword.cloud_notm}} console (https://cloud.ibm.com/unifiedsupport/cases/add){: external}.
 
-* If you have technical questions about the {{site.data.keyword.loadbalancer_full}} Service, post your question on [Stack Overflow](https://stackoverflow.com/search?q=lbaas+ibm-cloud) and tag your question with "lbaas" and "ibm-cloud".
-* For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/lbaas.html?smartspace=ibm-cloud) forum. Include the "lbaas" and "ibm-cloud" tags.
-
-See [Getting help](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) for more details about using the forums.
-
-For information about opening an IBM support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
+For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
