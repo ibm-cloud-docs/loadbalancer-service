@@ -28,7 +28,7 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ## April 2020
 {: #apr-2020}
 
-You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig).
+You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig).
 
 ## March 2020
 {: #march-2020}
