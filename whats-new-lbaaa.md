@@ -28,7 +28,7 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ## April 2020
 {: #apr-2020}
 
-You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig).
+You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig#monitoring-metrics-sysdig).
 
 ## March 2020
 {: #march-2020}
@@ -127,8 +127,6 @@ You can now leverage the “IBM Cloud Monitoring” service to monitor the follo
 ![Monitoring Metrics](./images/Metrics.png)
 
 Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you may be sending to your Cloud Monitoring instance, you may need to upgrade your monitoring plan. Refer to [Monitoring-Metrics](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details
-
-This feature requires your IBM Cloud IaaS and PaaS accounts to be linked, with a few [simple steps](/docs/account?topic=account-unifyingaccounts).
 
 ### Cipher Suite Customization
 {: #cipher-suite-custom-1}

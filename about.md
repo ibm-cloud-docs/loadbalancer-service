@@ -25,7 +25,7 @@ subcollection: loadbalancer-service
 
 The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
 
-## Overview of Features
+## Overview of features
 {: #overview-of-features}
 
 The {{site.data.keyword.loadbalancer_full}} Service offers the following features:
@@ -54,7 +54,7 @@ The {{site.data.keyword.loadbalancer_full}} Service offers the following feature
 * Built-in reliability
 * Usage-based pricing
 * Monitoring
-    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. Refer to [Monitoring Metrics](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-with-ibm-cloud-load-balancer) for additional details.
+    * Monitors the Throughput, Active Connections and Connection Rate metrics for HTTP, HTTPS, and TCP protocols over user specified time intervals. 
 * Layer 7 Support
     * HTTP/HTTPS traffic is routed to different backend services based on the HTTP header, and is done using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action specified by the policy is taken.
 * Multi-Zone Region (MZR) Support

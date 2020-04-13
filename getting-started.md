@@ -31,8 +31,6 @@ To get started using the {{site.data.keyword.loadbalancer_full}}, you will need 
 
 If you need assistance in obtaining an **IBMid** account, contact your [IBM sales representative for additional guidance.
 
-If you have an existing IBM Cloud Infrastructure (SoftLayer) account, you can [link your account](/docs/account?topic=account-unifyingaccounts) with your IBMid.
-
 ## Ordering a load balancer
 {: #ordering-a-load-balancer}
 
