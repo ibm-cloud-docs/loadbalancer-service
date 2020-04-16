@@ -7,7 +7,6 @@ IBM Cloud Load Balancer
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-    whats-new-lbaaa.md
     explore-load-balancers.md
     pricing.md
     naas-overview.md
@@ -54,6 +53,7 @@ IBM Cloud Load Balancer
     {: .navgroup-end}
 
     {: .navgroup id="help"}
+    whats-new-lbaaa.md
     faqs.md
     known-limitations.md
 
