@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-09-28"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: log, logs, logging, las
 
@@ -45,11 +45,27 @@ To create a LogDNA instance, perform the following procedure:
 
 1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog displays.
 
-2. Currently only the Dallas region is supported, so choose **Dallas** from the region dropdown list.
+2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the Load Balancer. 
 
-3. Click **Create** to create the logging instance.
+  For a Load Balancer in SYD01, you would choose the region of Sydney.
+  {: tip}
+  
+  The following table shows the mapping between regions and data center:
+  
+| Region | Data center |
+| ------ | ----------- |
+| Sydney | SYD01, SYD05, SYD04, MEL01 |
+| Tokyo | CHE01, HKG02, SNG01, TOK02, TOK04, TOK05, SEO01, OSA02 |
+| Frankfurt | AMS01, AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
+| London | LON01, LON02, LON04, LON05, LON06, OSL01 |
+| Dallas | DAL00, DAL01, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, HOU02, MEX01, SJC01, SJC03, SJC04, SEA01, SAO01 |
+| Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
+{: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
 
-4. After you create the logging instance, configure it by clicking **Configure the platform service logs**.
+  Load balancers whose logging was enabled before April 22, 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the correct region based on the data center where the load balancer was provisioned. To do so, create a logging instance as mentioned above, then disable and re-enable the logging toggle for your load balancer.
+  {: note}
+
+After you've chosen your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.
 
 ## Log output examples
 {: #log-output-examples}
