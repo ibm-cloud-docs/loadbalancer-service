@@ -45,13 +45,13 @@ To create a LogDNA instance, perform the following procedure:
 
 1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog displays.
 
-2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the Load Balancer. 
+2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the Load Balancer.
 
   For a Load Balancer in SYD01, you would choose the region of Sydney.
   {: tip}
-  
+
   The following table shows the mapping between regions and data center:
-  
+
 | Region | Data center |
 | ------ | ----------- |
 | Sydney | SYD01, SYD05, SYD04, MEL01 |
@@ -62,7 +62,7 @@ To create a LogDNA instance, perform the following procedure:
 | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
 {: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
 
-  Load balancers whose logging was enabled before April 22, 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the correct region based on the data center where the load balancer was provisioned. To do so, create a logging instance as mentioned above, then disable and re-enable the logging toggle for your load balancer.
+  Load balancers whose logging was enabled before April 22, 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance as mentioned above, then disable and re-enable the logging toggle for your load balancer.
   {: note}
 
 After you've chosen your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.

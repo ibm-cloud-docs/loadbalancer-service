@@ -33,7 +33,11 @@ A publicly accessible, fully qualified domain name is assigned to your load bala
 As a good practice, we recommended that you provision your backend servers as ‘private-only’, unless they require direct public connectivity. This practice helps achieve better security, and it preserves your public IP address. The applications hosted on these backend servers are still accessible over public network using the load balancer.
 {: note}  
 
-You may choose to allocate load balancer public IP addresses from either an IBM system pool(default) or a public VLAN under your account when creating your load balancer service instance.
+There are two ways to allocate public IP addresses to the load balancer:
+
+* **Allocate from IBM system pool:** This is the default method. With this method, IP addresses are allocated from IBM system pool.
+
+* **Allocate from a public subnet in this account:** With this method, IP addresses are allocated from a public subnet from your account. The subnet selection is automatic by default. If you are using API, you can select a particular subnet by passing the public subnet id when placing the order.
 
 ## Private to private load balancer
 {: #private-private-load-balancer}
@@ -47,7 +51,7 @@ Similar to a public load balancer, the private IP addresses and their numbers ma
 The backend compute instances hosting your application must also be on the IBM Cloud private network.
 {: note}
 
-## Public to Public Load Balancer
+## Public to public load balancer
 {: #public-public-load-balancer}
 
 The public to public load balancer is publicly accessible.
@@ -61,7 +65,7 @@ The public IP addresses and their numbers may change over time based on maintena
 The backend compute instances hosting your application must be on the IBM Cloud public network.
 {: note}
 
-## Front-end and Back-end Application Ports/Protocols
+## Front-end and back-end application ports/protocols
 {: #front-end-and-back-end-application-ports-protocols}
 
 You may define up to ten front-end application ports (protocols) and map them to respective ports (protocols) on the back-end application servers. The fully qualified domain name assigned to your load balancer service instance and the front-end application ports are exposed to the external world. The incoming user requests are received on these ports.
@@ -79,7 +83,7 @@ The supported front-end ports/protocols are HTTP, HTTPS and TCP. The supported b
 * The port range of 56500 to 56520 is reserved for management purposes and cannot be used as front-end virtual ports.
 * TCP port 56501 is used for management. If you choose to allocate load balancer public IP addresses from your public VLAN, please ensure that traffic to this management port as well as your application's ports are not blocked by any firewalls you may have deployed on your public VLANs. This is not required if you choose IBM system pool option to allocate load balancer public IP addresses.
 
-## Load Balancing Methods
+## Load balancing methods
 {: #load-balancing-methods}
 
 The following three load balancing methods are available for distributing traffic among back-end application servers:
@@ -98,7 +102,7 @@ The following three load balancing methods are available for distributing traffi
 
 * **Least Connections:** With this method, the server instance serving the least number of connections at a given time receives the next client connection.
 
-## Horizontal Scaling
+## Horizontal scaling
 {: #horizontal-scaling}
 
 The load balancer adjusts its capacity automatically according to the load. When this occurs, you may see a change in the number of IP addresses associated with the load balancer's DNS name.

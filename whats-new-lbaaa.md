@@ -28,6 +28,12 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 ## April 2020
 {: #apr-2020}
 
+### Public subnet selection for public-to-private load balancers
+You can now choose a public subnet while creating a public-to-private load balancer if non-system pool is also selected. This is supported for creation of load balancers using APIs only.
+
+For more information refer to [public-private-load-balancer](/docs/loadbalancer-service?topic=loadbalancer-service-public-private-load-balancer).
+
+### Sysdig monitoring metrics
 You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig#monitoring-metrics-sysdig).
 
 ## March 2020
