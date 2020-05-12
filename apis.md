@@ -172,6 +172,56 @@ if __name__ == "__main__":
 ```
 {: codeblock}
 
+
+## Order a public to private load balancer with specified public subnet
+{: #Order-a-load-balancer-with-specified-public-subnet}
+
+The following example focuses on the order data required to create a load balancer with a specified public subnet. It is only valid for public to private load balancer types, and `useSystemPublicIpPool` must be `false`.
+
+```py
+import SoftLayer
+from prettytable import PrettyTable
+
+class LBaasExample():
+  ...
+  def order_lbaas(self, pkg_name, datacenter, name, desc, protocols,
+                  subnet_id=None, public_subnet_id=None, public=False, verify=False):
+      """Allows to order a Load Balancer"""
+
+      package_id = self.get_package_id(pkg_name)
+      prices = self.get_item_prices(package_id)
+
+      # Build the configuration of the order
+      orderData = {
+          'complexType': 'SoftLayer_Container_Product_Order_Network_LoadBalancer_AsAService',
+          'name': name,
+          'description': desc,
+          'location': datacenter,
+          'packageId': package_id,
+          'useHourlyPricing': True,       # Required since LBaaS is an hourly service
+          'prices': [{'id': price_id} for price_id in prices],
+          'protocolConfigurations': protocols,
+          'subnets': [{'id': subnet_id}],
+          'useSystemPublicIpPool': False,
+          'type': 1, # public to private load balancer
+          'publicSubnets': [{'id': publicSubnet_id}]
+      }
+
+      try:
+          # If verify=True it will check your order for errors.
+          # It will order the lbaas if False.
+          if verify:
+              response = self.client['Product_Order'].verifyOrder(orderData)
+          else:
+              response = self.client['Product_Order'].placeOrder(orderData)
+
+          return response
+      except SoftLayer.SoftLayerAPIError as e:
+          print("Unable to place the order: %s, %s" % (e.faultCode, e.faultString))
+    ...
+```
+{: codeblock}
+
 ## Retrieving details on load balancers
 {: #retrieving-details-on-load-balancers}
 
@@ -371,7 +421,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-## Cancelling a load balancer
+## Canceling a load balancer
 {: #cancelling-a-load-balancer}
 
 ```py
