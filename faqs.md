@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2020
+lastupdated: "2020-04-05"
 
 keywords: faq, questions, load balancer, dns, port, traffic, connection, health check, vmware, tls, ssl
 
@@ -32,7 +32,7 @@ This section contains answers to some frequently asked questions about the {{sit
 {: faq}
 {: support}
 
-For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
+For a detailed comparison of IBM's load balancer offerings, refer to [Exploring IBM load balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Can I use a different DNS name for my load balancer?
 {: #dns}
@@ -48,7 +48,7 @@ For example, if your account number is 123456, your load balancer is deployed in
 {: faq}
 {: support}
 
-While trying to create a new load balancer service, you may define up to two virtual ports. You can define additional virtual ports after the service is created. The maximum number of virtual ports allowed is 10.
+While trying to create a new load balancer service, you can define up to two virtual ports. You can define additional virtual ports after the service is created. The maximum number of virtual ports allowed is 10.
 
 ## What's the maximum number of compute instances I can associate with my load balancer?
 {: faq}
@@ -137,6 +137,46 @@ You should use FQDN and not cached IP addresses.
 {: support}
 
 Please refer to the topic [IBM Cloud IP Ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+
+## Can the IBM Cloud™ load lalancer service be used with Terraform?
+{: faq}
+
+Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. Learn more about [using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).
+
+## Is it possible to add members with secondary IP addresses?
+{: faq}
+
+Members with secondary IP addresses can be added using the API.
+
+## What happens when the Load Balancer is in `Maintenance Pending` state?
+{: faq}
+
+The load balancer can go into `Maintenance Pending` state due to following reasons:
+* Horizontal scaling event takes place.
+* The load balancer has firewall thats blocking the management traffic.
+* Security patches are being installed.
+
+When the load balancer is in the `Maintenance Pending` state, the data path is not affected.
+
+## What is a non-system pool?
+{: faq}
+
+A non-system pool is applicable only with public to private load balancers. The public IP addresses of the load balancer appliances are allocated from your public subnet. Select the **Allocate from a public subnet in this account** option when provisioning a load balancer.
+
+## Does IBM Cloud Load Balancer support UDP?
+{: faq}
+
+The IBM Cloud Load Balancer service does not support UDP. It only supports TCP, HTTP and HTTPS.
+
+## Is autoscaling supported by IBM Cloud Load Balancer?
+{: faq}
+
+The IBM Cloud Load Balancer service does not support autoscaling at this time.
+
+## How can I monitor my IBM Cloud Load Balancer metrics?
+{: faq}
+
+The IBM Cloud Load Balancer service supports monitoring with Sysdig. For more information, refer to [Monitoring metrics using IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig).
 
 ## What information do I need to file a support ticket?
 {: faq}
