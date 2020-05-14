@@ -22,7 +22,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 # Monitoring metrics using IBM Cloud Monitoring with Sysdig
-{: #monitoring-metrics-sysdig}
+{: #monitoring-metrics-with-ibm-cloud-load-balancer}
 
 Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.cloud}} Monitoring with Sysdig, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [IBM Cloud Monitoring with Sysdig](https://www.ibm.com/cloud/sysdig). 
 
