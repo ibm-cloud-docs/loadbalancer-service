@@ -138,7 +138,7 @@ You should use FQDN and not cached IP addresses.
 
 Please refer to the topic [IBM Cloud IP Ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
-## Can the IBM Cloud™ load lalancer service be used with Terraform?
+## Can the IBM Cloud™ load balancer service be used with Terraform?
 {: faq}
 
 Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. Learn more about [using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).

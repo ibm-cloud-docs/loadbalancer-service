@@ -98,13 +98,63 @@
      "range of IPs to use with a firewall",
      "IP ranges allowed for my firewall"
   ],
+   "can-the-ibm-cloud-load-lalancer-service-be-used-with-terraform-":[ 
+      "can load balancer be used with Terraform",
+      "are load balancers compatible with Terraform",
+      "use terraform to create a load balancer instance",
+      "terraform used to maintain a load balancer", 
+	  "terraform and load balancer compatability",
+	  " use terraform for load balancer creation"
+  ],
+   "is-it-possible-to-add-members-with-secondary-ip-addresses-": [
+      "add members with secondary IP addresses",
+	  "can members with secondary IP addresses be added",
+	  "update to include people with a secondary IP address",
+	  "add secondary IP address to load balancer",
+	  "members who have secondary IP addresses be added"
+   ],
+    "what-happens-when-the-load-balancer-is-in-maintenance-pending-state-": [
+	  "load balancer gone into Maintenance Pending",
+	  "my load blanacer is in a maintenance pending state",
+	  "maintenance pending state for my load balancer",
+	  "does maintenance pending mean for loadbalancers",
+	  "loadbalancing in maintenance pending"
+   ],
+    "what-is-a-non-system-pool-": [
+      "what is a non-system pool",
+	  "explain non-system pool",
+	  "non system pool explanation",
+	  "can I use a non-system pool",
+	  "when are non-system pools useful"
+   ],
+    "does-ibm-cloud-load-balancer-support-udp-": [
+      "use UDP for a load balancer",
+	  "does cloud load balancing support UDP",
+	  "load balancer and UDP supported",
+	  "UPD can be used with load balancing",
+	  "udp supported by load balancers"
+   ],
+    "is-autoscaling-supported-by-ibm-cloud-load-balancer-": [
+      "use autoscaling for a load balancer",
+	  "does autoscale support load balancing",
+	  "cloud load balancer and autoscaling supported",
+	  "autoscaling be used with load balancing",
+	  "auto scale supported by load balancers"
+	],
+     "how-can-i-monitor-my-ibm-cloud-load-balancer-metrics-": [
+	   "can I monitor my IBM Cloud Load Balancer metrics",
+	   "monitoring of metrics within my load balancer",
+	   "use a monitoring service for load balancing metrics",
+	   "monitor metrics within load balancer",
+	   "metric monitoring for use in Load Balancer"
+	],
    "what-information-do-i-need-to-file-a-support-ticket-":[     
      "information needed to file a load balancer support ticket",
      "info do I need to file for my loadbalancer case",
      "what do I fill in to open a case for a load balancer issue",
      "what do you require for a load balancing support case",
      "what is needed to open a Load balancer case"
-],
+   ],
    "the-back-end-server-is-unhealthy":[  
      "back-end server's health is failing",
      "back-end server is unhealthy",
