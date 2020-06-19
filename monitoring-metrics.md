@@ -22,9 +22,9 @@ subcollection: loadbalancer-service
 {:important: .important}
 
 # Monitoring metrics using IBM Cloud Monitoring with Sysdig
-{: #monitoring-metrics-with-ibm-cloud-load-balancer}
+{: #monitoring-metrics}
 
-Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.cloud}} Monitoring with Sysdig, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [IBM Cloud Monitoring with Sysdig](https://www.ibm.com/cloud/sysdig). 
+Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.cloud}} Monitoring with Sysdig, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [IBM Cloud Monitoring with Sysdig](https://www.ibm.com/cloud/sysdig).
 
 Load balancers calculate the metrics and send those metrics to your Sysdig instance, which reflects different types of use and traffic. You can visualize and analyze metrics from either the {{site.data.keyword.cloud}} Monitoring with Sysdig dashboard, or its API.
 
@@ -42,14 +42,14 @@ These metrics help track the traffic and usage patterns for your load balancers 
 Each metric is composed of the following metadata types:
 
 * Metric name - The name for the collected metric.
-* Metric type - Determines whether the metric value is a counter metric or a gauge metric. Each of these metrics is of the type `gauge`, which represents a single numerical value that can arbitrarily fluctuate over time. 
+* Metric type - Determines whether the metric value is a counter metric or a gauge metric. Each of these metrics is of the type `gauge`, which represents a single numerical value that can arbitrarily fluctuate over time.
 * Value type - A unit of measurement for a specific metric. Examples include bytes or counts. A value type of `none` means that the metric value represents individual occurrences of that metric type.
 * Segment - How you want Sysdig to divide and display the monitoring metrics.
 
 ### Active connections
 {: #ibm_cloud_load_balancer_active_connections}
 
-Active connections are the number of connections established on a load balancer at a specific time. 
+Active connections are the number of connections established on a load balancer at a specific time.
 
 The active connection metric contains the following metadata:
 
@@ -78,7 +78,7 @@ Connection rate is number of new incoming active connections per second to your 
 ### Throughput
 {: #ibm_cloud_load_balancer_throughput}
 
-Throughput is the amount of data that passes in and out of a load balancer over a period of time. 
+Throughput is the amount of data that passes in and out of a load balancer over a period of time.
 
 | Metadata | Description |
 |----------|-------------|
@@ -93,7 +93,7 @@ Throughput is the amount of data that passes in and out of a load balancer over 
 
 You can split the data that Sysdig presents into various visualizations in the Sysdig dashboard, allowing views of different metrics based on your preferences. For example, if you have multiple load balancers or accounts with different load balancers in each account, you might want to focus on a particular listener (front-end protocol) port.
 
-As an example, you can segment the `active connections` by `IBM Cloud Load Balancer listener port` to show how many active users are connected to the load balancer through each listener type. To illustrate this, let's assume that your load balancer has two different listener protocols one HTTP on port 80 and another for TCP on port 8080. The dashboard would contain different lines showing 10 users who are connected through HTTP on Port 80 in one color, and 6 users connected through TCP on port 8080 in another color. 
+As an example, you can segment the `active connections` by `IBM Cloud Load Balancer listener port` to show how many active users are connected to the load balancer through each listener type. To illustrate this, let's assume that your load balancer has two different listener protocols one HTTP on port 80 and another for TCP on port 8080. The dashboard would contain different lines showing 10 users who are connected through HTTP on Port 80 in one color, and 6 users connected through TCP on port 8080 in another color.
 
 ### Global attributes
 {: global-attributes}
@@ -197,7 +197,7 @@ To view and work with your Sysdig metrics, follow these steps:
 
 3. Select **Dashboards** on the left sidebar to open the IBM Load Balancer Monitoring Metrics dashboard. Then, click **Default Dashboards > IBM > Load Balancer Monitoring Metrics**. The default dashboard is not editable.
 
-4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify parameters and segment your metrics by load balancer ID or listener port, you must create a custom dashboard. 
+4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify parameters and segment your metrics by load balancer ID or listener port, you must create a custom dashboard.
 
   ![Sysdig dashboard](images/metrics_3.png "Sysdig dashboard")
 

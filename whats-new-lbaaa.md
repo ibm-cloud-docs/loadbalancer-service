@@ -34,7 +34,7 @@ You can now choose a public subnet while creating a public-to-private load balan
 For more information refer to [public-private-load-balancer](/docs/loadbalancer-service?topic=loadbalancer-service-public-private-load-balancer).
 
 ### Sysdig monitoring metrics
-You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig#monitoring-metrics-sysdig).
+You can now access load balancer monitoring metrics (throughput, active connections, connection rate) using [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## March 2020
 {: #march-2020}
