@@ -26,4 +26,4 @@ subcollection: loadbalancer-service
 If you have problems or questions when using the {{site.data.keyword.loadbalancer_full}} Service, you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "lbaas" and "ibm-cloud".
 {:shortdesc}
 
-For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).
+For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
