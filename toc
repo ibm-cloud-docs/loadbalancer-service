@@ -2,11 +2,12 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="loadbalancer-service" category="network_vpc" audience="network" arm="3662751" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/load-balancer" path="loadbalancer-service"}
-IBM Cloud Load Balancer
+IBM Cloud Load Balancer 
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
+    basic-load-balancing.md
     explore-load-balancers.md
     pricing.md
     naas-overview.md
@@ -14,15 +15,13 @@ IBM Cloud Load Balancer
 
     {: .topicgroup}
     Tutorials
-        /tutorials/solution-tutorials-web-app-private-network
-        /tutorials/solution-tutorials-highly-available-and-scalable-web-application
+        /solution-tutorials/solution-tutorials-web-app-private-network
+        /solution-tutorials/solution-tutorials-highly-available-and-scalable-web-application
 
     external-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    basic-load-balancing.md
-
     {: .topicgroup}
     Using an elastic load balancer for server load balancing
         reliability-guide.md
@@ -30,14 +29,16 @@ IBM Cloud Load Balancer
         identify-app-resources.md
         managing-lb.md
 
-    custom-ciphers.md
-    health-checks.md
-    mzr.md
-    ssl-offload.md
-    advanced-traffic.md
-    monitoring-metrics.md
-    backend-encryption.md
-    data-logging.md
+    {: .topicgroup}
+    Performing load balancer advanced tasks
+        custom-ciphers.md
+        health-checks.md
+        mzr.md
+        ssl-offload.md
+        advanced-traffic.md
+        monitoring-metrics.md
+        backend-encryption.md
+        data-logging.md
 
     {: .topicgroup}
     Layer 7 Support
@@ -45,6 +46,11 @@ IBM Cloud Load Balancer
         l7-policy.md
         l7-rule.md
         l7-pool.md
+        
+    {: .topicgroup}
+    Migrating from an IBM Local Load Balancer
+        array-load-balancer-migration-steps.md
+        array-load-balancer-migration-faqs.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
