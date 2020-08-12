@@ -20,7 +20,7 @@ subcollection: local-load-balancer
 {:important: .important}
 {:download: .download}
 
-# Migrating a Local Load Balancer to IBM Cloud Load Balancer
+# Migrating a Local Load Balancer to an IBM Cloud Load Balancer
 
 You can migrate your Local Load Balancer to an IBM© Cloud Load Balancer by performing the following procedure.
 {: shortdesc}

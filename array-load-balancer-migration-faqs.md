@@ -21,7 +21,7 @@ subcollection: local-load-balancer
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# IBM Cloud Load Balancer migration FAQs
+# Local Load Balancer migration FAQs
 {: #migration-faq}
 
 You can find answers to frequently asked questions about the IBM Local Load Balancer migration process here.
@@ -32,7 +32,7 @@ You can find answers to frequently asked questions about the IBM Local Load Bala
 
 The EOM announcement date is March 1, 2019 and the effective date is June 1, 2019. No new sales can happen after this date.
 
-## Will support be available after EOM?
+## Will support for Local Load Balancer be available after EOM?
 {: faq}
 
 Yes, support will be available for existing Local Load Balancer customers.
@@ -42,7 +42,7 @@ Yes, support will be available for existing Local Load Balancer customers.
 
 We recommend you get started by reading the [IBM Cloud Load Balancer documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started).
 
-## Will a migration path exist from the Local Load Balancer service to IBM Cloud Load Balancer?
+## Will a migration path exist from the Local Load Balancer service to an IBM Cloud Load Balancer?
 {: faq}
 
 No automated migration path will exist. However, you can request your Local Load Balancer service to be turned off and order the Cloud Load Balancer service from the IBM Cloud Console.
@@ -52,7 +52,7 @@ No automated migration path will exist. However, you can request your Local Load
 
 The Local Load Balancer is a hardware-based local load balancing service, while IBM Cloud Load Balancer is a cloud-native service that offers a cost-effective, auto-scaling load balancing solution with support for both public and private networks.
 
-## Does Cloud Load Balancer use the same terminology as Local Load Balancer.
+## Does Cloud Load Balancer use the same terminology as Local Load Balancer?
 {: faq}
 
 In some cases, it does not. The following table compares key terms in Local Load Balancer with their corresponding and differing terms in Cloud Load Balancer.

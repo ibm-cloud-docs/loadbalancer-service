@@ -28,9 +28,9 @@ IBM© Cloud offers several load balancing solutions to choose from. The table be
 
 
 |        | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started)|  [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Standard)| [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Platinum) |
-|------- | :------: | :------: | :------: | :------: | :------: |
+|------- | :------: | :------: | :------: | 
 |**Public VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
-|**Private VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)||![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Private VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Layer 4 LB**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Layer 7 LB**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Health Checks**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
