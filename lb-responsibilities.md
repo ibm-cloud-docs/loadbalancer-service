@@ -21,42 +21,65 @@ lastupdated: "2020-03-19"
 # Understanding your responsibilities when using IBM Cloud Load Balancer
 {: #responsibilities-lb}
 
-Learn about management responsibilities that you have when you use {{site.data.keyword.cloud}} Load Balancer Service. For overall terms of use, refer to the [IBM Cloud Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
+**8/17 - WORK IN PROGRESS - OUT FOR REVIEW**
 
-Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.loadbalancer_full}}. For a high-level view of the service types in {{site.data.keyword.Bluemix}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyboard.cloud_notm}} offerings](/docs/overview?topic=overview-shared-responsibilities).
+Learn about the management responsibilities and terms and conditions that you have when using the {{site.data.keyword.loadbalancer_full}} service. For a high-level view of the service types in {{site.data.keyword.Bluemix}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} offerings](/docs/overview?topic=overview-shared-responsibilities).
 {:shortdesc}
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use IBM Cloud Load Balancer. For the overall terms of use, see [{{site.data.keyword.Bluemix}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
+Review the following sections for the specific responsibilities that apply to you and {{site.data.keyword.IBM_notm}} when using {{site.data.keyword.cloud_notm}} {{site.data.keyword.loadbalancer_short}}. For the overall terms of use, see [{{site.data.keyword.Bluemix}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
 
-## IBM Cloud infrastructure
-{: #mgmt-infrastructure}
+## Incident and operations management
+{: #incident-and-ops}
 
-You and IBM have unique responsibilities for the set up and maintenance of IBM Cloud infrastructure and your workloads.
+Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-| Responsibilities |  Ownership |
-|----------|-----------------------|
-| Deploy a fully managed, highly available, secured, IBM-owned infrastructure. | IBM |  
-| Provision the Load Balancer and set up the necessary networking connections for management traffic and data path traffic.  | IBM |
-| Fulfill requirements for additional capacity based on utilization. | IBM |
-| Use the provided API or UI to configure the Load Balancer to meet the needs of your workloads. | Customer |
-| Following the instructions in the [IBM Cloud Load Balancer user documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up VLAN spanning) based on the features used. | Customer |
-| Monitor service notifications for communications regarding maintenance operations. | Customer |
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities |  Your Responsibilities |
+|----------|-----------------------|-----------------------|
+| ? | Deploy a fully managed, highly available, secured, IBM-owned infrastructure. | ? |  
+| ? | Provision the load balancer and set up the necessary networking connections for management traffic and data path traffic. | ? |
+| ? | Fulfill requirements for additional capacity based on utilization. | ? |
+| ? |  ? | Use the provided API or UI to configure the load balancer to meet the needs of your workloads. |
+| ? | ? | Follow the instructions in the [IBM Cloud Load Balancer user documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up VLAN spanning) based on the features used. |
+| ? | ? | Monitor service notifications for communications regarding maintenance operations. |
+{: caption="Table 1. Responsibilities for incidents and operations" caption-side="top"}
+
+## Change management
+{: #change-management}
+
+Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
+
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+|----------|-----------------------|-----------------------|
+| ? | ? | ? |
+{: caption="Table 2. Responsibilities for change management" caption-side="top"}
+
+## Identity and access management
+{: #iam-responsibilities}
+
+Identity and access management includes tasks such as authentication, authorization, access control policies, as well as  approving, granting, and revoking access.
+
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+|----------|-----------------------|-----------------------|
+| ? | ? | ? |
+{: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
 ## Security and regulation compliance
 {: #security-rich-environment}
 
-You and IBM have unique responsibilities for security and compliance.
+Security and regulation compliance includes tasks such as security control implementation and compliance certification.
 
-| Responsibilities |  Ownership |
-|----------|-----------------------|
-| Automatically apply security updates to keep the Load Balancer service up to date. | IBM |
-| Following the instructions in the [IBM Cloud Load Balancer user documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up firewalls) based on the features used. | Customer |
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+|----------|-----------------------|-----------------------|
+| ? | Automatically apply security updates to keep the Load Balancer service up to date. | ? |
+| ? | ? | Following the instructions in the [IBM Cloud Load Balancer user documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started#getting-started) to make any necessary configurations (such as, setting up firewalls) based on the features used. |
+{: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="top"}
 
 ## Disaster recovery
 {: #disaster-recovery}
 
-You and IBM have unique responsibilities for security and compliance.
+Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
-| Responsibilities |  Ownership |
-|----------|-----------------------|
-| Monitor and automatically recover the service to prevent outage. | IBM |
+| Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
+|----------|-----------------------|-----------------------|
+| ? | Monitor and automatically recover the service to prevent outage. | ? |
+{: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}

@@ -23,21 +23,22 @@ subcollection: loadbalancer-service
 # Known issues and limitations with IBM Cloud Load Balancer
 {: #known-issues-and-limitations-with-ibm-cloud-load-balancer}
 
-This topic provides information on the currently known issues and limitations with the {{site.data.keyword.loadbalancer_full}} Service.
+This topic provides information on the currently known issues and limitations with the {{site.data.keyword.loadbalancer_full}} service.
+{: shortdesc}
 
 ## Known issues
 {: #known-issues}
-The {{site.data.keyword.loadbalancer_full}} Service currently has the following issues:
+The {{site.data.keyword.loadbalancer_full}} service currently has the following issues:
 
-* Minor - The **Edit** button in the server instances and protocols tabs apply to all entries and is not restricted to rows selected using a checkbox.
-* Minor - During the initial creation of the load balancer service, you will lose your custom health check settings if you go back and forth between various screens.
-* Minor - You may experience some issues while using Internet Explorer 11, Edge or Safari browsers for administering the load balancer service. As an alternative, please use either the Firefox or Chrome browser.
-* Cosmetic - During the initial service creation, the drop-down list for the data centers may be skewed. Regardless, you will still be able to select your desired data center.
-* Cosmetic - The pricing information on the review page is rounded off to two decimal digits. For correct pricing, please refer to pricing displayed on the plan page.
+* The **Edit** button in the server instances and protocols tabs apply to all entries and is not restricted to rows selected using a checkbox.
+* During the initial creation of the load balancer service, your custom health check settings are lost if you go back and forth between various pages.
+* You might experience some issues while using Internet Explorer 11, Edge or Safari browsers for administering the load balancer service. As an alternative, use either the Firefox or Chrome browser.
+* During the initial service creation, the drop-down list for the data centers might be skewed. Regardless, you can still select your data center.
+* The pricing information on the review page is rounded off to two decimal digits. For correct pricing, refer to pricing displayed on the plan page.
 
 ## Known limitations
 {: #known-limits}
-The {{site.data.keyword.loadbalancer_full}} Service currently has the following limitations:
+The {{site.data.keyword.loadbalancer_full}} service currently has the following limitations:
 
 * Maximum number of virtual ports/protocols - 10
 * Maximum number of servers behind load balancer - 50

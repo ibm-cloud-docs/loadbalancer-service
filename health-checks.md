@@ -22,7 +22,7 @@ subcollection: loadbalancer-service
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Performing Health Checks
+# Performing health checks
 {: #performing-health-checks-with-ibm-cloud-load-balancer}
 {: help}
 {: support}

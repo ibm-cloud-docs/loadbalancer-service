@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-12"
 
-keywords: demo, load balancer, network
+keywords: demo
 
 subcollection: loadbalancer-service
 
@@ -22,7 +22,8 @@ subcollection: loadbalancer-service
 # Demo: Network as a service
 {: #naas-video}
 
-IBM© Cloud Network services, including Load Balancers, Security Groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you’ll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.
+{{site.data.keyword.cloud}} network services, including load balancers, security groups, and Content Delivery Network (CDN) make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you’ll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.
+{: shortdesc}
 
 <p>
   <div class="embed-responsive embed-responsive-16by9">

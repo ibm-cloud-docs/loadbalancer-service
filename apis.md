@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:note: .note}
 
-# API reference
+# IBM Cloud Load Balancer API reference
 {: #api-reference}
 
 The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system.

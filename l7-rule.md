@@ -20,10 +20,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Layer 7 rules
+# Layer-7 rules
 {: #layer-7-rules}
 
-Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
+Layer-7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
 * Layer 7 rules are always associated with a Layer 7 policy. Multiple Layer 7 rules can be associated with the same layer 7 policy.
@@ -74,7 +74,7 @@ Not all rule types support all comparison types. For example, if you are using `
 {: tip}
 
 ## Layer 7 rule properties
-{: #layer-7-rule-properties}
+{: #layer-7-rule-props}
 
 Property  | Description
 ------------- | -------------

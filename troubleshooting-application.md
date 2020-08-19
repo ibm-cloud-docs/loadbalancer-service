@@ -25,6 +25,7 @@ subcollection: loadbalancer-service
 {: #application-server-troubleshooting}
 
 This topic provides information on common issues you may encounter while using the load balancer.
+{: shortdesc}
 
 ## The back-end server is unhealthy
 {: #the-back-end-server-is-unhealthy}

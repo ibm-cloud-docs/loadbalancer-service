@@ -20,12 +20,12 @@ subcollection: loadbalancer-service
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}
 
-# Layer 7 pool
+# Layer-7 pool
 {: #layer-7-pool}
 
-A Layer 7 (L7) pool is a logical grouping of the servers (members) for handling incoming requests.
+A Layer-7 (L7) pool is a logical grouping of the servers (members) for handling incoming requests.
 
-The Layer 7 load balancing feature can direct the incoming traffic to different backend pools based
+The Layer-7 load balancing feature can direct the incoming traffic to different backend pools based
 on the policies and rules. This feature is supported by associating multiple L7 pools with a load balancer. Layer 7 pools are used with the Layer 7 policies whose action is `redirect to pool`.
 
   ![Layer 7 Add Pool](images/Layer7-AddPool.png "Layer 7 Add Pool")

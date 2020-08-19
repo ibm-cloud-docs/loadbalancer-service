@@ -11,18 +11,27 @@ subcollection: loadbalancer-service
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"}
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:term: .term}
+{:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
+{:generic: data-hd-programlang="generic"}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Configuring load balancing parameters and placing your order
 {: #configure-load-balancing-parameters-and-place-order}
 
-This topic shows you how to configure your load balancer and finalize the order.
+Learn about how to configure your load balancer and finalize the order.
+{:shortdesc}
 
 ![CLB Load Balancing Parameters](images/CLB_LoadBalancing_Parameters_PUP.png "CLB Load Balancing Parameters")
 
@@ -34,13 +43,13 @@ Add the protocols for your load balancer:
 
 2. The default [load balancing method](/docs/loadbalancer-service?topic=loadbalancer-service-load-balancing-methods) is **Round Robin**. You can change it to either **Weighted Round Robin** or **Least Connections** from the drop-down list, depending on your application needs.
 
-3. Optionally, you can enable **Session stickiness**, which sends all requests from a given end-user (for example, one with the same source IP) to the same backend server for a system defined "sticky" time. For more information on session stickiness, refer to [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-session-persistence)
+3. Optionally, you can enable **Session stickiness**, which sends all requests from a given end-user (for example, one with the same source IP) to the same backend server for a system defined "sticky" time. For more information on session stickiness, see [Session persistence](/docs/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer#session-persist)
 
-4. You can also set the **Maximum connection limit** against your application. For more information, refer to [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-connection-timeouts)
+4. You can also set the **Maximum connection limit** against your application. For more information, see [Max connections](/docs/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer#max-connections)
 
 5. Click **Add Protocol** to specify additional ports and protocols your application may be listening on. Be sure that all front-end ports are unique. You can choose HTTP, HTTPS or TCP as your front-end protocol.
 
-	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-virtual-ports-i-can-define-with-my-load-balancer-service-) for more information on the maximum number of ports allowed.
+	A maximum of two ports may be defined at the time of initial configuration. Additional ports may be added later after creating the service instance. Refer to [Limitations on number of ports](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#max) for more information on the maximum number of ports allowed.
 	{: note}
 
 6. If you chose HTTPS for your frontend protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list.
@@ -62,8 +71,8 @@ The [health check](/docs/loadbalancer-service?topic=loadbalancer-service-perform
 The system pre-populates a default health check configuration for these back-end ports, and you can customize these settings to suit your application needs:
 
 * **Interval**: Interval in seconds between two consecutive health check attempts
-* **Timeout**: Maximum amount of time the system will wait for a response against a health check request
-* **Max Trials**: Maximum number of additional health check attempts the system will make prior to declaring a port unhealthy
+* **Timeout**: Maximum amount of time the system waits for a response against a health check request
+* **Max Trials**: Maximum number of additional health check attempts the system makes prior to declaring a port unhealthy
 * **Path**: The HTTP URL path for the health check
 
 ## Step 3 - Adding server instances
@@ -72,11 +81,11 @@ Select your **server instance** from the dropdown in the table, and use the **At
 
 These server instances must be local to the data center where you deploy the load balancer service. Additionally, server instances from the neighboring data centers within the same city may also be added (for instance, if the first three letters of the data center name are the same).
 
-If the load balancer type is Public to Public, the server instances are added with their Public IP, as shown below.
+If the load balancer type is Public to Public, the server instances are added with their Public IP, as shown in the following image.
 
 ![CLB Backend Member](images/CLB_p2p_backend_member_PUP.png "CLB Backend Member")
 
-Server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are greyed out with other load balancing methods.
+Server **weights** are relevant only when using the **Weighted Round Robin** load balancing method. The default weight is 50 and the range is 0-100. The weights are grayed out with other load balancing methods.
 {: note}
 
 Refer to [Limitations on number of application servers](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
@@ -88,11 +97,11 @@ Finally, to place your order:
 
 1. Review the Order Information in the right column of the page.
 
-2. Click on the checkbox after reading the Master Service Agreement.
+2. Click the checkbox after reading the Master Service Agreement.
 
 3. Click **Create**.
 
-	The system creates your load balancer and takes you to the Load Balancers summary page. Refresh your browser window to see the entry for your new load balancer and its state change from offline to online, which usually takes a few minutes. Offline load balancers are greyed out, while online load balancers can be clicked to manage and monitor them, as shown below.
+	The system creates your load balancer and takes you to the Load Balancers summary page. Refresh your browser window to see the entry for your new load balancer and its state change from offline to online, which usually takes a few minutes. Offline load balancers are grayed out, while online load balancers can be clicked to manage and monitor them, as shown in the following image.
 
 	![CLB creation pending](images/CLB_create_pending_PUP.png "CLB creation pending")
 

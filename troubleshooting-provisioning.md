@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2020-03-25"
 
 keywords: troubleshooting, provisioning, question, problem
 
@@ -21,10 +21,11 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:support: data-reuse='support'}
 
-# Load Balancer Provisioning Troubleshooting
+# Load balancer provisioning troubleshooting
 {: #load-balancer-provisioning-troubleshooting}
 
 This topic provides information on common issues you may encounter while creating a new instance of {{site.data.keyword.loadbalancer_full}}.
+{: shortdesc}
 
 ## Insufficient IP addresses in your subnet
 {: #insufficient-ip-addresses-in-your-subnet}
@@ -33,29 +34,19 @@ This topic provides information on common issues you may encounter while creatin
 
 {{site.data.keyword.loadbalancer_full}} requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
 
-Follow the steps below to check for free IPs in a subnet.
-
-1. Go to the [Subnets ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/network/subnets){:new_window} page.
-
-2. Search for and click on the subnet you want to check for free IP's.
-
-	![View private subnets](images/CLB_view_private_subnets_PUP.png "View private subnets")
-
-3. The details page for the selected subnet shows the status of all the IP's in that subnet.
-
 ## Issues with firewalls on public and private VLANs
 {: #issues-with-firewalls-on-public-and-private-vlans}
 {: troubleshoot}
 {: support}
 
-Refer to the topic [IBM Cloud IP Range](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+See [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}
 {: troubleshoot}
 {: support}
 
-To view error messages for your load balancer, perform the following procedure:
+To view error messages for your load balancer, follow these steps:
 
 1. Click on the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.

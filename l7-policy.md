@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:tip: .tip}
 
-# Layer 7 policy
+# Layer-7 policy
 {: #layer-7-policy}
 
 A Layer 7 (L7) policy is used to classify traffic by matching its L7 information with L7 rules, and then taking specific actions if those rules match.
