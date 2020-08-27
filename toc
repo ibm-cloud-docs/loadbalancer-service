@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="loadbalancer-service" category="network_vpc" audience="network" arm="3662751" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/load-balancer" path="loadbalancer-service"}
-IBM Cloud Load Balancer 
+IBM Cloud Load Balancer
 
     {: .navgroup id="learn"}
     getting-started.md
@@ -17,7 +17,7 @@ IBM Cloud Load Balancer
         /solution-tutorials/solution-tutorials-web-app-private-network
         /solution-tutorials/solution-tutorials-highly-available-and-scalable-web-application
 
-    external-resources.md    
+    external-resources.md
     [What is load balancing?](https://www.ibm.com/cloud/learn/load-balancing)
     {: .navgroup-end}
 
@@ -46,7 +46,7 @@ IBM Cloud Load Balancer
         l7-policy.md
         l7-rule.md
         l7-pool.md
-        
+
     {: .topicgroup}
     Migrating from an IBM Local Load Balancer
         array-load-balancer-migration-steps.md
@@ -54,13 +54,12 @@ IBM Cloud Load Balancer
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    lb-responsibilities.md
     apis.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     whats-new-lbaaa.md
-    known-limitations.md    
+    known-limitations.md
     faqs.md
 
     {: .topicgroup}
