@@ -4,30 +4,38 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-04-22"
 
-keywords: log, logs, logging, las
+keywords: data logs 
 
 subcollection: loadbalancer-service
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
+{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:term: .term}
 {:tip: .tip}
-{:download: .download}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
+{:generic: data-hd-programlang="generic"}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Data logging
 {: #data-logging}
 
-Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} under your account.
+Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis with LogDNA](https://cloud.ibm.com/observe/logging){:external} under your account.
+{:shortdesc}
 
 You can enable or disable this feature by:
 
-* Creating a new load balancer and setting this feature to on.
+* Creating a load balancer and setting this feature to on.
 
 ![Data Logging](images/DataLogging.png "Data Logging")
 
@@ -36,18 +44,18 @@ You can enable or disable this feature by:
 ## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
-Log into the [IBM Log Analysis with LogDNA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/observe/logging){:new_window} with your IBM Cloud account. Logs can be viewed from the LogDNA instance. Refer to [this topic](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started) for more information.
+Log in to the [IBM Log Analysis with LogDNA](https://cloud.ibm.com/observe/logging){:external} with your IBM Cloud account. Logs can be viewed from the LogDNA instance. Refer to [Getting started with IBM Log Analysis with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information. 
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
 {: note}
 
-To create a LogDNA instance, perform the following procedure:
+To create a LogDNA instance, follow these steps:
 
-1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog displays.
+1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog shows.
 
-2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the Load Balancer.
+2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the load balancer.
 
-  For a Load Balancer in SYD01, you would choose the region of Sydney.
+  For a load balancer in SYD01, you would choose the region of Sydney.
   {: tip}
 
   The following table shows the mapping between regions and data center:
@@ -62,10 +70,10 @@ To create a LogDNA instance, perform the following procedure:
 | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
 {: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
 
-  Load balancers whose logging was enabled before April 22, 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance as mentioned above, then disable and re-enable the logging toggle for your load balancer.
+  Load balancers whose logging was enabled before 22 April 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance, then disable and re-enable the logging toggle for your load balancer.
   {: note}
 
-After you've chosen your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.
+After you choose your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.
 
 ## Log output examples
 {: #log-output-examples}
@@ -76,15 +84,15 @@ The following output is an example of an {{site.data.keyword.loadbalancer_full}}
 {"datetime":"2019-09-17T03:13:37.373247+00:00", "host":"loadbalancer-dal09-323716-880632-975820", "process":"Cloud Load Balancer", "message":" Connect from xxx.xxx.xxx.xxx:56771 to 169.55.233.136:80 (a9887082-02ff-440c-8e9e-f9026bdc209a\/HTTP)","logSourceCRN":"crn:v1:bluemix:public:logdna:us-south:a/5c59f412bc914beb390b080e07e5e6a2:ffff0000-ffff-0000-ffff-ffff0000ffff::"}
 ```
 Note that:
-* `datetime` is UTC time.
+* `datetime` is Coordinated Universal Time.
 * `loadbalancer-dal09-323716-880632-975820` is the load balancer name, and `dal09` is the data center.
 * `323716` is the account ID. `880632` is the load balancer ID. `975820` is the load balancer instance ID.
-* `xxx.xxx.xxx.xxx` is a public IP which has been masked for GDPR compliance.
+* `xxx.xxx.xxx.xxx` is a public IP, which is masked for GDPR compliance.
 
-The following output is an example of a health check log seen in the IBM Log Analysis using the LogDNA Service:
+The following output is an example of a health check log seen in the IBM Log Analysis that uses the LogDNA Service:
 
 ```
 {"datetime":"2019-09-11T08:04:22.534063+00:00", "host":"loadbalancer-dal09-323716-879158-975712", "process":"Cloud Load Balancer", "message":" Health check for server 9a226696-64b7-4f42-a587-74addd178f0e\/81035d8f-5e50-4743-ab04-20987c4c51be-10.143.99.103 succeeded, reason: Layer7 check passed, code: 200, info: \"HTTP status check returned code <3C>200<3E>\", check duration: 2ms, status: 4\/4 UP.","logSourceCRN":"crn:v1:bluemix:public:logdna:us-south:a/5c59f412bc914beb390b080e07e5e6a2:ffff0000-ffff-0000-ffff-ffff0000ffff::"}
 ```
 
-Note that `10.143.99.103` is the backend server member IP address.
+Note that `10.143.99.103` is the back-end server member IP address.

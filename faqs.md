@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2020
 lastupdated: "2020-04-05"
 
-keywords: faq, questions, load balancer, dns, port, traffic, connection, health check, vmware, tls, ssl
+keywords:
 
 subcollection: loadbalancer-service
 
@@ -28,7 +28,7 @@ subcollection: loadbalancer-service
 This section contains answers to some frequently asked questions about the {{site.data.keyword.loadbalancer_full}} service.
 {: shortdesc}
 
-## How many load balancing options are available in IBM Cloud?
+## How many load-balancing options are available in IBM Cloud?
 {: #options}
 {: faq}
 {: support}
@@ -40,7 +40,7 @@ For a detailed comparison of IBM's load balancer offerings, refer to [Exploring 
 {: faq}
 {: support}
 
-While the auto-assigned DNS name for the load balancer is not customizable, you can add a CNAME (Canonical Name) record that points your preferred DNS name to the auto-assigned load balancer DNS name.
+While the auto-assigned DNS name for the load balancer is not customizable, you can add a Canonical Name (CNAME) record that points your preferred DNS name to the auto-assigned load balancer DNS name.
 
 For example, if your account number is 123456, your load balancer is deployed in `dal09` data center and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You can add a CNAME record (through the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name `myapp-12345-dal09.lb.bluemix.net`.
 
@@ -54,23 +54,23 @@ While trying to create a load balancer service, you can define up to two virtual
 ## What's the maximum number of compute instances I can associate with my load balancer?
 {: faq}
 
-While trying to create a new load balancer service, you can configure up to 10 compute instances as back-end servers. You can define additional servers after the load balancer is created. The maximum number of backend members allowed is 50.
+While trying to create a new load balancer service, you can configure up to 10 compute instances as back-end servers. You can define additional servers after the load balancer is created. The maximum number of back-end members allowed is 50.
 
-## Can my backend compute instances sit on a subnet different from the load balancer's subnet ?
+## Can my back-end compute instances sit on a subnet different from the load balancer's subnet?
 {: faq}
 
-Yes, the load balancer and the compute instances connected to the load balancer can be in different subnets, but **VLAN Spanning** must be enabled for the load balancer to communicate and forward requests to the compute instance. For more information, see [VLAN spanning](/docs/vlans?topic=vlans-vlan-spanning).
+Yes, the load balancer and the compute instances that are connected to the load balancer can be in different subnets, but **VLAN spanning** must be enabled for the load balancer to communicate and forward requests to the compute instance. For more information, see [VLAN spanning](/docs/vlans?topic=vlans-vlan-spanning).
 
-## What are the default settings and allowed values for various health check parameters?
+## What are the default settings and allowed values for various health check options?
 {: #healthcheck}
 {: faq}
 {: support}
 
-The default settings and allowed values are as follows:
+The default settings and allowed values are as follows.
 
-* **Health check interval:** Default is 5 seconds, range is 2 – 60 seconds
-* **Health check response timeout:** Default is 2 seconds, range is 1 – 59 seconds
-* **Max retry attempts:** Default is 2 retry attempts, and the range is 1 to 10 retries
+* **Health check interval** - Default is 5 seconds, range is 2 – 60 seconds
+* **Health check response timeout** - Default is 2 seconds, range is 1 – 59 seconds
+* **Max retry attempts** - Default is two retry attempts, and the range is 1 - 10 retries
 
 The health check response timeout value must always be less than the health check interval value.
 {: note}
@@ -80,7 +80,7 @@ The health check response timeout value must always be less than the health chec
 
 It is recommended that your load balancer service and your compute instances reside locally within the same data center. The load balancer service’s UI does not show compute instances from other remote data centers. However, the UI includes compute instances from other data centers within the same city (for example, data centers whose names share the first three letters, such as DALxx). You can use the API interface to add compute instances from any remote data center.
 
-## Which TLS version is supported with SSL offload?
+## Which TLS version is supported by SSL offload?
 {: faq}
 
 The IBM Cloud Load Balancer service supports TLS 1.2 with SSL termination.
@@ -106,28 +106,28 @@ Currently, you can create up to 50 service instances. If you need more instances
 {: faq}
 {: support}
 
-VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is currently available only using the API, and not the web UI. Portable private IPs added using the API appear as "Unknown" in the UI as they are not assigned by IBM Cloud. Note that this kind of configuration can be used with other hypervisors, such as Xen and KVM.
+VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is available using the API only, and not the web UI. Portable private IPs added using the API appear as "Unknown" in the UI as they are not assigned by IBM Cloud. Note that this kind of configuration can be used with other hypervisors, such as Xen and KVM.
 
-VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX networks) cannot be added directly as back-end servers to the load balancer. However, depending on your configuration, it might be possible to configure an intermediary, such as an NSX gateway, that has a IBM Cloud private address as the back-end server to the load balancer (with the actual servers being VMs attached to network(s) managed by VMware NSX).
+VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX networks) cannot be added directly as back-end servers to the load balancer. However, depending on your configuration, it might be possible to configure an intermediary, such as an NSX gateway, that has a IBM Cloud private address as the back-end server to the load balancer (with the actual servers being VMs attached to networks managed by VMware NSX).
 
 ## If I choose to use a public VLAN under my account to deploy my load balancer and I have a firewall deployed on my public VLAN, what configurations are required on my firewall to work with my load balancer service?
 {: #public}
 {: faq}
 {: support}
 
-TCP port 56501 is used for management. Ensure that traffic to this port, as well as your application's ports, are not blocked by your firewall; otherwise load balancer provisioning fails.
+TCP port 56501 is used for management. Ensure that traffic to this port and your application's ports, are not blocked by your firewall; otherwise, load balancer provisioning fails.
 
 ## What if I cannot see the monitoring metrics of an existing load balancer after linking my Softlayer account to IBM Cloud?
 {: faq}
 
-Monitoring metrics are not available for existing load balancers after linking the accounts. You must recreate the load balancers or contact IBM Support. Monitoring metrics for newly created load balancers is available.
+Monitoring metrics are not available for existing load balancers after linking the accounts. You must re-create the load balancers or contact IBM Support. Monitoring metrics for newly created load balancers is available.
 
 ## Are the load balancer IP addresses fixed?
 {: #fixedip}
 {: faq}
 {: support}
 
-We cannot guarantee load balancer IP addresses to remain constant due to the elasticity that is built into the service. As it scales up or down, you will see changes in the available IPs associated with the FQDN of your instance.
+IBM cannot guarantee load balancer IP addresses to remain constant due to the elasticity that is built into the service. As it scales up or down, you see changes in the available IPs associated with the FQDN of your instance.
 
 You should use FQDN and not cached IP addresses.
 {: note}
@@ -142,7 +142,7 @@ For information on allowing IP ranges through the firewall, see [IBM Cloud IP ra
 ## Can the IBM Cloud Load Balancer service be used with Terraform?
 {: faq}
 
-Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. For more information, see [using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).
+Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. For more information, see [Using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).
 
 ## Is it possible to add members with secondary IP addresses?
 {: faq}
@@ -168,7 +168,7 @@ A non-system pool is applicable only with public to private load balancers. The 
 ## Does IBM Cloud Load Balancer support UDP?
 {: faq}
 
-The IBM Cloud Load Balancer service does not support UDP. It only supports TCP, HTTP and HTTPS.
+The IBM Cloud Load Balancer service does not support UDP. It supports only TCP, HTTP, and HTTPS.
 
 ## Is autoscaling supported by IBM Cloud Load Balancer?
 {: faq}
@@ -178,7 +178,7 @@ The IBM Cloud Load Balancer service does not support autoscaling at this time.
 ## How can I monitor my IBM Cloud Load Balancer metrics?
 {: faq}
 
-The IBM Cloud Load Balancer service supports monitoring with Sysdig. For more information, see [Monitoring metrics using IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics-sysdig#monitoring-metrics).
+The IBM Cloud Load Balancer service supports monitoring with Sysdig. For more information, see [Monitoring metrics using IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## What information do I need to file an IBM Support ticket?
 {: faq}
