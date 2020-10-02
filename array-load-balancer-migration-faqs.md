@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2018
 lastupdated: "2019-11-14"
 
-keywords: migrate, update, load balancer, local, cloud, faq, support, eom, auto scaling, vip, fqdn, service group, vsi, bare metal, migrating, disruption, scaling, protocol, TLS, version
+keywords: migrate, update, local, cloud, faq, support, eom, auto scaling, vip, fqdn, service group, vsi, bare metal, migrating, disruption, scaling, protocol, TLS, version
 
 subcollection: local-load-balancer
 
@@ -92,7 +92,7 @@ No. IBM Cloud Load Balancer automatically adjusts its load capacity. You can rea
 
 ## What protocols can I choose when using the Cloud Load Balancer?
 
-You can choose HTTP, HTTPS, and TCP protocols. IBM also offers Layer-7 support. 
+You can choose HTTP, HTTPS, and TCP protocols. IBM also offers Layer-7 support.
 
 ## I need a particular type of cipher. Does Cloud Load Balancer support that?
 
