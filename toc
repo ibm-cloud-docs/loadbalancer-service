@@ -1,8 +1,8 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="loadbalancer-service" category="network_vpc" audience="network" arm="3662751" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/load-balancer" path="loadbalancer-service"}
-IBM Cloud Load Balancer
+{: .toc subcollection="loadbalancer-service" category="network_vpc" audience="network" href="/docs/loadbalancer-service?topic=loadbalancer-service-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/load-balancer" path="loadbalancer-service"}
+Load Balancer
 
     {: .navgroup id="learn"}
     getting-started.md
@@ -39,9 +39,10 @@ IBM Cloud Load Balancer
         monitoring-metrics.md
         backend-encryption.md
         data-logging.md
+        selecting-pod.md
 
     {: .topicgroup}
-    Layer-7 support
+    Layer 7 support
         l7-explained.md
         l7-policy.md
         l7-rule.md
@@ -54,7 +55,9 @@ IBM Cloud Load Balancer
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
+    lb-responsibilities.md
     apis.md
+    [Terraform](https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
