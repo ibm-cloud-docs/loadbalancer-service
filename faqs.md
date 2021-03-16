@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2020
-lastupdated: "2020-04-05"
+  years: 2017, 2021
+lastupdated: "2021-03-10"
 
 keywords:
 
@@ -42,19 +42,19 @@ For a detailed comparison of IBM's load balancer offerings, refer to [Exploring 
 
 While the auto-assigned DNS name for the load balancer is not customizable, you can add a Canonical Name (CNAME) record that points your preferred DNS name to the auto-assigned load balancer DNS name.
 
-For example, if your account number is 123456, your load balancer is deployed in `dal09` data center and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You can add a CNAME record (through the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name `myapp-12345-dal09.lb.bluemix.net`.
+For example, if your account number is `123456`, your load balancer is deployed in `dal09` data center and its name is `myapp`, the auto-assigned load balancer DNS name is `myapp-123456-dal09.lb.bluemix.net`. Your preferred DNS name is `www.myapp.com`. You can add a CNAME record (through the DNS provider that you use to manage myapp.com) pointing `www.myapp.com` to the load balancer DNS name `myapp-12345-dal09.lb.bluemix.net`.
 
 ## What's the maximum number of virtual ports I can define with my load balancer service?
 {: #max}
 {: faq}
 {: support}
 
-While trying to create a load balancer service, you can define up to two virtual ports. You can define additional virtual ports after the service is created. The maximum number of virtual ports allowed is 10.
+While trying to create a load balancer service, you can define up to two virtual ports. You can define additional virtual ports after the service is created. The maximum number of virtual ports allowed is `10`.
 
 ## What's the maximum number of compute instances I can associate with my load balancer?
 {: faq}
 
-While trying to create a new load balancer service, you can configure up to 10 compute instances as back-end servers. You can define additional servers after the load balancer is created. The maximum number of back-end members allowed is 50.
+While trying to create a load balancer service, you can configure up to 10 compute instances as back-end servers. You can define additional servers after the load balancer is created. The maximum number of back-end members allowed is 50.
 
 ## Can my back-end compute instances sit on a subnet different from the load balancer's subnet?
 {: faq}
@@ -78,7 +78,7 @@ The health check response timeout value must always be less than the health chec
 ## Can I use compute instances residing in remote data centers with this service?
 {: faq}
 
-It is recommended that your load balancer service and your compute instances reside locally within the same data center. The load balancer service’s UI does not show compute instances from other remote data centers. However, the UI includes compute instances from other data centers within the same city (for example, data centers whose names share the first three letters, such as DALxx). You can use the API interface to add compute instances from any remote data center.
+It is recommended that your load balancer service and your compute instances reside locally within the same data center. The load balancer service’s UI does not show compute instances from other remote data centers. However, the UI includes compute instances from other data centers within the same city (for example, data centers whose names share the first three letters, such as `DALxx`). You can use the API interface to add compute instances from any remote data center.
 
 ## Which TLS version is supported by SSL offload?
 {: faq}
@@ -115,7 +115,23 @@ VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX net
 {: faq}
 {: support}
 
-TCP port 56501 is used for management. Ensure that traffic to this port and your application's ports, are not blocked by your firewall; otherwise, load balancer provisioning fails.
+TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall, otherwise, load balancer provisioning fails. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
+
+In summary, this is the required firewall configuration:
+
+| Inbound/Outbound |	Protocol |	Source IP |	Source Port |	Destination IP | Destination Port |
+| ---------------- | --------- | ---------- | ----------- | -------------- | ----------------- |
+|     Inbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	 56501      |
+|     Inbound 	   |    TCP 	 |     AnyIP 	|     443     |    AnyIP       |    	AnyPort     |
+|     Inbound 	   |    TCP 	 |     AnyIP 	|    10514    |    AnyIP       |    	AnyPort     |
+|     Inbound 	   |    TCP 	 |     AnyIP 	|     8834    |    AnyIP       |    	AnyPort     |
+|     Outbound 	   |    TCP 	 |     AnyIP 	|     56501   |    AnyIP       |    	AnyPort     |
+|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  443       |
+|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	 10514      |
+|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  8834      |
+
+Also, ensure your application's ports are open to accept traffic.
+
 
 ## What if I cannot see the monitoring metrics of an existing load balancer after linking my Softlayer account to IBM Cloud?
 {: faq}
@@ -132,12 +148,13 @@ IBM cannot guarantee load balancer IP addresses to remain constant due to the el
 You should use FQDN and not cached IP addresses.
 {: note}
 
-## If I have a firewall deployed on my private VLAN, what configurations are required for it to work with my load balancer service?
-{: #vlan}
+## If I have a firewall deployed in front of my backend servers, what configurations are required for it to work with my load balancer?
 {: faq}
 {: support}
 
-For information on allowing IP ranges through the firewall, see [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges).
+The available range of possible IPs for `public to public` load balancers cannot be predicted. Because of this, you should open all back-end member ports that have been added to the load balancer and set the source IP to `any`.
+
+`Public to private` and `private to private` type load balancers communicate with your back-end members from your own private subnets. Because of this, you can set the source IP with your subnet's CIDR. Note that if the data center where you created the load balancer is part of an MZR, one load balancer appliance deploys in the selected data center, while a second deploys in a different data center within the same region. This means they exist in two different subnets.
 
 ## Can the IBM Cloud Load Balancer service be used with Terraform?
 {: faq}
