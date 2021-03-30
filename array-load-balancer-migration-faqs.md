@@ -92,7 +92,7 @@ No. IBM Cloud Load Balancer automatically adjusts its load capacity. You can rea
 
 ## What protocols can I choose when using the Cloud Load Balancer?
 
-You can choose HTTP, HTTPS, and TCP protocols. IBM also offers Layer-7 support.
+You can choose HTTP, HTTPS, and TCP protocols. IBM also offers layer 7 support. Refer to [About {{site.data.keyword.cloud_notm}} Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer) for supported features.
 
 ## I need a particular type of cipher. Does Cloud Load Balancer support that?
 

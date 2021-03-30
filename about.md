@@ -41,13 +41,13 @@ The {{site.data.keyword.loadbalancer_full}} service offers the following feature
   * Client requests are routed over the private network
   * Back-end server instances on private subnets
 * Basic load balancing
-  * Traffic distribution based on Layer-4 application port information
+  * Traffic distribution based on layer 4 application port information
   * Support for HTTP, HTTPS, and TCP-based applications
   * Variety of load-balancing methods, such as round robin, weighted round robin, and least connections
   * Load balancing among virtual server and bare metal compute instances residing locally within a data center
 * Server health checks
   * Periodic monitoring of server health to ensure that traffic is forwarded to healthy servers only
-  * Layer-4 health checks for TCP ports and Layer-7 health checks for HTTP port
+  * Layer 4 health checks for TCP ports and Layer-7 health checks for HTTP port
 * SSL offload: Termination of incoming SSL (HTTPS) traffic that uses plain-text HTTP communication with back-end servers
 * Advanced traffic management
   * Client stickiness (session persistence)
