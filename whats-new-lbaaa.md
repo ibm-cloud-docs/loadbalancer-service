@@ -34,8 +34,8 @@ You can now choose a public subnet while creating a public-to-private load balan
 
 For more information, see [public-private-load-balancer](/docs/loadbalancer-service?topic=loadbalancer-service-public-private-load-balancer).
 
-### Sysdig monitoring metrics
-You can now access load balancer monitoring metrics (throughput, active connections, connection rate) through the use of [IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
+### {{site.data.keyword.mon_full_notm}} monitoring metrics
+You can now access load balancer monitoring metrics (throughput, active connections, connection rate) through the use of [{{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## March 2020
 {: #march-2020}
@@ -139,7 +139,7 @@ You can now use the "IBM Cloud Monitoring" service to monitor the following perf
 
 ![Monitoring Metrics](./images/Metrics.png)
 
-Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics using IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
+Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
 
 ### Cipher suite customization
 {: #cipher-suite-custom-1}

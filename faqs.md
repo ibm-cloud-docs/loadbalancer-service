@@ -195,7 +195,7 @@ The IBM Cloud Load Balancer service does not support autoscaling at this time.
 ## How can I monitor my IBM Cloud Load Balancer metrics?
 {: faq}
 
-The IBM Cloud Load Balancer service supports monitoring with Sysdig. For more information, see [Monitoring metrics using IBM Cloud Monitoring with Sysdig](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
+The IBM Cloud Load Balancer service supports monitoring with {{site.data.keyword.mon_full_notm}}. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## What information do I need to file an IBM Support ticket?
 {: faq}
