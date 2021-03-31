@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-04-22"
 
-keywords: data logs 
+keywords: data logs
 
 subcollection: loadbalancer-service
 
@@ -30,7 +30,7 @@ subcollection: loadbalancer-service
 # Data logging
 {: #data-logging}
 
-Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis with LogDNA](https://cloud.ibm.com/observe/logging){:external} under your account.
+Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){:external} under your account.
 {:shortdesc}
 
 You can enable or disable this feature by:
@@ -44,12 +44,12 @@ You can enable or disable this feature by:
 ## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
-Log in to the [IBM Log Analysis with LogDNA](https://cloud.ibm.com/observe/logging){:external} with your IBM Cloud account. Logs can be viewed from the LogDNA instance. Refer to [Getting started with IBM Log Analysis with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information. 
+Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){:external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information.
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
 {: note}
 
-To create a LogDNA instance, follow these steps:
+To create a Log Analysis instance, follow these steps:
 
 1. Select the IBM Cloud account associated with your Softlayer account, then select **Create a logging instance**. The logging instance creation dialog shows.
 
@@ -89,7 +89,7 @@ Note that:
 * `323716` is the account ID. `880632` is the load balancer ID. `975820` is the load balancer instance ID.
 * `xxx.xxx.xxx.xxx` is a public IP, which is masked for GDPR compliance.
 
-The following output is an example of a health check log seen in the IBM Log Analysis that uses the LogDNA Service:
+The following output is an example of a health check log seen in the IBM Log Analysis that uses the IBM Cloud Log Analysis service:
 
 ```
 {"datetime":"2019-09-11T08:04:22.534063+00:00", "host":"loadbalancer-dal09-323716-879158-975712", "process":"Cloud Load Balancer", "message":" Health check for server 9a226696-64b7-4f42-a587-74addd178f0e\/81035d8f-5e50-4743-ab04-20987c4c51be-10.143.99.103 succeeded, reason: Layer7 check passed, code: 200, info: \"HTTP status check returned code <3C>200<3E>\", check duration: 2ms, status: 4\/4 UP.","logSourceCRN":"crn:v1:bluemix:public:logdna:us-south:a/5c59f412bc914beb390b080e07e5e6a2:ffff0000-ffff-0000-ffff-ffff0000ffff::"}

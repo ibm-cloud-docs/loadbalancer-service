@@ -59,4 +59,4 @@ The {{site.data.keyword.loadbalancer_full}} service offers the following feature
 * Layer 7 support
   * HTTP/HTTPS traffic is routed to different back-end services based on the HTTP header, and is done by using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action that is specified by the policy is taken.
 * Multi-Zone Region (MZR) support: Load balancer nodes are instantiated in different data centers of an MZR. For more information, see [Multi-Zone Region overview](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview).
-* Data Logs: With data logs enabled, load balancer logs are forwarded to the [IBM Log Analysis with LogDNA](https://cloud.ibm.com/catalog/services/ibm-log-analysis-with-logdna){:external} where customers can view their data logs.
+* Data Logs: With data logs enabled, load balancer logs are forwarded to the [IBM Log Analysis](https://cloud.ibm.com/catalog/services/ibm-log-analysis-with-logdna){:external} where customers can view their data logs.
