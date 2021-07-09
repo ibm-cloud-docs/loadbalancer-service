@@ -1,0 +1,57 @@
+{
+    "title": "IBM Cloud Load Balancer docs",
+    "lastupdated": "2021-06-08",
+    "introduction": "The IBM Cloud® Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.",
+      "api": "/docs/loadbalancer-service?topic=loadbalancer-service-api-reference", 
+      "terraform": "https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started",
+    "section_recommended": [
+      {
+        "title": "Creating a load balancer service overview",
+        "description": "The IBM Cloud Load Balancer service helps improve scalability and availability of your business-critical applications. It monitors the health of your application servers, uses smart load-balancing methods to distribute traffic among multiple servers, and dynamically adjusts its system capacity to handle varying traffic load.",
+        "href": "/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing"
+      },
+      {
+        "title": "Load balancer basics",
+        "description": "The IBM Cloud Load Balancer service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.",
+        "href": "/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics"
+      },
+      {
+        "title": "Choosing a preferred cipher suite for your HTTPS application",
+        "description": "Cipher algorithms help the IBM Cloud® Load Balancer form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from so that you secure the communication between your load balancer and your clients.",
+        "href": "/docs/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application"
+      }
+    ],
+    "section_videos": [
+      {
+        "title": "Network as a service",
+        "href": "/docs/loadbalancer-service?topic=loadbalancer-service-naas-video", 
+        "thumbnail": "/images/enterprise-video-thumbnail.png" 
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/",
+      "architecture": "https://www.ibm.com/cloud/architecture",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/publiccloud/home"
+    },
+    "section_updates": {
+      "view_more": "/docs/loadbalancer-service?topic=loadbalancer-service-release-notes-for-ibm-cloud-load-balancer",
+      "tiles": [
+        {
+          "date": "April 2020",
+          "title": "Public subnet selection for public-to-private load balancers",
+          "description": "You can now choose a public subnet while creating a public-to-private load balancer if non-system pool is also selected. This is supported for creation of load balancers by using APIs only."
+        },
+        {
+          "date": "March 2020",
+          "title": "Support redirection from HTTP to HTTPS",
+          "description": "IBM Cloud Load Balancer now allows you to configure a Level 7 policy by using the action REDIRECT_HTTPS. This action redirects HTTP traffic to the HTTPS listener port. You don't need a rule configuration for this action, and only one configuration is supported per listener."
+        },
+        {
+          "date": "September 2019",
+          "title": "Support for X-Forwarded-Proto Header",
+          "description": "IBM Cloud Load Balancer now inserts the X-Forwarded-Proto header for all requests when the front-end protocol is HTTP or HTTPS. This helps the back-end servers to know the protocol that is used by the client to connect to the load balancer."
+        }
+      ]
+    }
+  }
