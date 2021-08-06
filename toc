@@ -55,9 +55,9 @@ Load Balancer
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    lb-responsibilities.md
     apis.md
-    [Terraform](https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started)
+    [Terraform reference](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service)
+    lb-responsibilities.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
