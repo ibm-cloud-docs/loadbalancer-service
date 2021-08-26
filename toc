@@ -29,6 +29,8 @@ Load Balancer
         identify-app-resources.md
         managing-lb.md
 
+    terraform.md
+
     {: .topicgroup}
     Performing load balancer advanced tasks
         custom-ciphers.md
