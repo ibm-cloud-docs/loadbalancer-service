@@ -19,7 +19,7 @@ subcollection: loadbalancer-service
 {:note: .note}
 {:important: .important}
 {:download: .download}
-{:row-headers .row-headers}
+{: row-headers .row-headers}
 
 # Exploring IBM Cloud load balancers
 {: #explore}

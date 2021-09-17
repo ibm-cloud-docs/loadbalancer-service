@@ -33,8 +33,8 @@ Looking for a managed Terraform on {{site.data.keyword.cloud}} solution? Try out
 
    The load balancer instance in the following example is named `test_lb_local_service` and is enabled on port `80`. The ID of the local load balancer service group is `ibm_lb_service_group.test_service_group.service_group_id` and the weight for the load balancer service group is `1`. 
    
-  For more information, see the [ibm_lb_service](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service){: external} usage example.
-      {: note}
+   For more information, see the [ibm_lb_service](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service){: external} usage example.
+   {: note}
 
    ```
    resource "ibm_lb_service" "test_lb_local_service" {

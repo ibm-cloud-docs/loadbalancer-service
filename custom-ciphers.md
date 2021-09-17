@@ -27,7 +27,8 @@ subcollection: loadbalancer-service
 {: help}
 {: support}
 
-Cipher algorithms help the {{site.data.keyword.loadbalancer_full}} form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from, so that you secure the communication between your load balancer and your clients.
+Cipher algorithms help the {{site.data.keyword.loadbalancer_full}} form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from so that you secure the communication between your load balancer and your clients.
+{: shortdesc}
 
 To choose a preferred cipher suite for an existing load balancer:
 
@@ -36,14 +37,14 @@ To choose a preferred cipher suite for an existing load balancer:
 	There must be at least one existing HTTPS protocol.
 	{: note}
 
-2. Click **Edit** to enable editing, and select (or unselect) the required ciphers.
+2. Click **Edit** to enable editing, and select (or clear) the required ciphers.
 
 	![Edit CLB ciphers](images/CLB_ciphers_edit_PUP.png "Edit CLB ciphers")
 
 3. When you're done, click **Save** to save your changes.
 
-	If you defined a HTTPS protocol when creating your load balancer, it will have all ciphers in the suite enabled. The selection of a particular set of ciphers can be done only after the load balancer is provisioned.
+	If you defined an HTTPS protocol when you create your load balancer, it has all ciphers in the suite enabled. The selection of a particular set of ciphers can be done only after the load balancer is provisioned.
 	{: note}
 
-	For a list of supported ciphers, refer to [SSL Offload](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
+	For a list of supported ciphers, refer to [SSL offload](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer).
 	{: note}

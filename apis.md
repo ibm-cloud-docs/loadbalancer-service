@@ -4,47 +4,56 @@ copyright:
   years: 2017, 2018
 lastupdated: "2018-11-07"
 
-keywords: api, apis, reference, slapi
+keywords: slapi
 
 subcollection: loadbalancer-service
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
+{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:term: .term}
 {:tip: .tip}
-{:download: .download}
-{:important: .important}
 {:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
+{:generic: data-hd-programlang="generic"}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
+
 
 # IBM Cloud Load Balancer API reference
 {: #api-reference}
 
-The SoftLayer® Application Programming Interface (API) is the development interface that gives developers and system administrators direct interaction with SoftLayer's backend system.
+The SoftLayer application programming interface (API) is the development interface that gives developers and system administrators direct interaction with the SoftLayer back-end system.
+{: shortdesc}
 
-The SoftLayer API (SLAPI) powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. As such, because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
+The SoftLayer API (SLAPI) powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. Because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
 
-The SoftLayer API (SLAPI) is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
+The SLAPI is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
 
 For more information about the SoftLayer API, {{site.data.keyword.loadbalancer_full}} Service APIs, see the following resources in the SoftLayer Development Network:
-* [Getting Started with the SoftLayer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/article/getting-started/){: new_window}
-* [SoftLayer_Product_Package API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: new_window}
-* [SoftLayer_Network_LBaaS_LoadBalancer API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: new_window}
-* [SoftLayer_Network_LBaaS_Listener API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Listener/){: new_window}
-* [SoftLayer_Network_LBaaS_Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Member/){: new_window}
-* [SoftLayer_Network_LBaaS_HealthMonitor API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: new_window}
-* [SoftLayer_Network_LBaaS_SSLCipher API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_SSLCipher/){: new_window}
-* [SoftLayer_Network_LBaaS_L7Policy API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Policy/){: new_window}
-* [SoftLayer_Network_LBaaS_L7Rule API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: new_window}
-* [SoftLayer_Network_LBaaS_L7Pool API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: new_window}
-* [SoftLayer_Network_LBaaS_L7Member API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: new_window}
+* [Getting Started with the SoftLayer API](https://softlayer.github.io/article/getting-started/){: external}
+* [SoftLayer_Product_Package API](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: external}
+* [SoftLayer_Network_LBaaS_LoadBalancer API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
+* [SoftLayer_Network_LBaaS_Listener API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Listener/){: external}
+* [SoftLayer_Network_LBaaS_Member API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Member/){: external}
+* [SoftLayer_Network_LBaaS_HealthMonitor API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: external}
+* [SoftLayer_Network_LBaaS_SSLCipher API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_SSLCipher/){: external}
+* [SoftLayer_Network_LBaaS_L7Policy API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Policy/){: external}
+* [SoftLayer_Network_LBaaS_L7Rule API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: external}
+* [SoftLayer_Network_LBaaS_L7Pool API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: external}
+* [SoftLayer_Network_LBaaS_L7Member API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: external}
 
-The following examples are using [softlayer-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/softlayer-python){: new_window} client.
+The following examples are using [softlayer-python](https://github.com/softlayer/softlayer-python){: external} client.
 
-Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file configured in your environment.
+Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file that is configured in your environment.
 
 ```py
 client = SoftLayer.Client(username='set me', api_key='set me')
@@ -53,7 +62,7 @@ client = SoftLayer.Client(username='set me', api_key='set me')
 ## Creating a load balancer
 {: #creating-a-load-balancer}
 
-The following example retrieves the package id, subnet id and prices for a "Load Balancer As A Service (LBaaS)" pakage, builds the order data and place/verify the order.
+The following example retrieves the package ID, subnet ID, and prices for a "Load Balancer As A Service (LBaaS)" package, builds the order data and places the order.
 
 ```py
 import SoftLayer
@@ -130,8 +139,8 @@ class LBaaSExample():
         }
 
         try:
-            # If verify=True it will check your order for errors.
-            # It will order the lbaas if False.
+            # If verify=True it checks your order for errors.
+            # It orders the lbaas if False.
             if verify:
                 response = self.client['Product_Order'].verifyOrder(orderData)
             else:
@@ -176,7 +185,7 @@ if __name__ == "__main__":
 ## Order a public to private load balancer with specified public subnet
 {: #Order-a-load-balancer-with-specified-public-subnet}
 
-The following example focuses on the order data required to create a load balancer with a specified public subnet. It is only valid for public to private load balancer types, and `useSystemPublicIpPool` must be `false`.
+The following example focuses on the order data that is required to create a load balancer with a specified public subnet. It is only valid for public to private load balancer types, and `useSystemPublicIpPool` must be `false`.
 
 ```py
 import SoftLayer
@@ -208,8 +217,8 @@ class LBaasExample():
       }
 
       try:
-          # If verify=True it will check your order for errors.
-          # It will order the lbaas if False.
+          # If verify=True it checks your order for errors.
+          # It orders the lbaas if False.
           if verify:
               response = self.client['Product_Order'].verifyOrder(orderData)
           else:
@@ -598,7 +607,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-### Update multiple Layer 7 rules attached to the same Layer 7 policy 
+### Update multiple Layer 7 rules that are attached to the same Layer 7 policy
 {: #update-multiple-layer-7-rules-attached-to-the-same-layer-7-policy-}
 
 ```py
@@ -639,7 +648,7 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-### Create a Layer 7 pool with servers, health monitoring and session affinity
+### Create a Layer 7 pool with servers, health monitoring, and session affinity
 {: #create-a-layer-7-pool-with-servers-health-monitoring-and-session-affinity}
 
 ```py
@@ -740,7 +749,7 @@ from pprint import pprint
 # UUID of the L7 pool to which members should be added.
 l7PoolUuid = 'set me'
 
-# Backend servers to be added
+# Back-end servers to be added
 memberInstances = [
     {
         'address': '10.131.11.46',
@@ -775,7 +784,7 @@ from pprint import pprint
 # UUID of the L7 pool who's member we need to update
 l7PoolUuid = 'set me'
 
-# Backend servers to be added
+# Back-end servers to be added
 members = [
     {
         'uuid': '1e433123-ceae-4bbd-a4e3-2539ceb8b46f',  # UUID of the member to be updated.

@@ -30,8 +30,8 @@ subcollection: loadbalancer-service
 # Data logging
 {: #data-logging}
 
-Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){:external} under your account.
-{:shortdesc}
+Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){: external} under your account.
+{: shortdesc}
 
 You can enable or disable this feature by:
 
@@ -44,7 +44,7 @@ You can enable or disable this feature by:
 ## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
-Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){:external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information.
+Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){: external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information.
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
 {: note}
@@ -55,23 +55,23 @@ To create a Log Analysis instance, follow these steps:
 
 2. Choose the region from the dropdown list that corresponds to the data center where you provisioned the load balancer.
 
-  For a load balancer in SYD01, you would choose the region of Sydney.
-  {: tip}
+   For a load balancer in SYD01, you would choose the region of Sydney.
+   {: tip}
 
-  The following table shows the mapping between regions and data center:
+   The following table shows the mapping between regions and data center:
 
-| Region | Data center |
-| ------ | ----------- |
-| Sydney | SYD01, SYD05, SYD04, MEL01 |
-| Tokyo | CHE01, HKG02, SNG01, TOK02, TOK04, TOK05, SEO01, OSA02 |
-| Frankfurt | AMS01, AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
-| London | LON01, LON02, LON04, LON05, LON06, OSL01 |
-| Dallas | DAL00, DAL01, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, HOU02, MEX01, SJC01, SJC03, SJC04, SEA01, SAO01 |
-| Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
-{: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
+   | Region | Data center |
+   | ------ | ----------- |
+   | Sydney | SYD01, SYD05, SYD04, MEL01 |
+   | Tokyo | CHE01, HKG02, SNG01, TOK02, TOK04, TOK05, SEO01, OSA02 |
+   | Frankfurt | AMS01, AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
+   | London | LON01, LON02, LON04, LON05, LON06, OSL01 |
+   | Dallas | DAL00, DAL01, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, HOU02, MEX01, SJC01, SJC03, SJC04, SEA01, SAO01 |
+   | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
+   {: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
 
-  Load balancers whose logging was enabled before 22 April 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance, then disable and re-enable the logging toggle for your load balancer.
-  {: note}
+   Load balancers whose logging was enabled before 22 April 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance, then disable and re-enable the logging toggle for your load balancer.
+   {: note}
 
 After you choose your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.
 

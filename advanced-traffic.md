@@ -31,7 +31,7 @@ subcollection: loadbalancer-service
 {: #advanced-traffic-management-with-ibm-cloud-load-balancer}
 
 Learn about several advanced traffic management features available with the {{site.data.keyword.loadbalancer_full}} service.
-{:shortdesc}
+{: shortdesc}
 
 ## Max connections
 {: #max-connections}

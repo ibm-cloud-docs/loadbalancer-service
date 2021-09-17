@@ -1,26 +1,33 @@
 ---
 
 copyright:
-  years: 2017, 2018, 2019
+  years: 2017, 2019
 lastupdated: "2019-07-01"
 
-keywords: l7, layer 7, policy, policies
+keywords: layer 7 policy
 
 subcollection: loadbalancer-service
 
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"}
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:term: .term}
+{:tip: .tip}
 {:note: .note}
 {:important: .important}
-{:tip: .tip}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
+{:generic: data-hd-programlang="generic"}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
-# Layer-7 policy
+# Layer 7 policy
 {: #layer-7-policy}
 
 A Layer 7 (L7) policy is used to classify traffic by matching its L7 information with L7 rules, and then taking specific actions if those rules match.
@@ -28,7 +35,7 @@ A Layer 7 (L7) policy is used to classify traffic by matching its L7 information
 * A policy is applied to a front-end application port (protocol).
 * Multiple policies can be applied to the same protocol.
 
-Since multiple policies can be applied to a protocol, there is a priority associated with each policy.
+Since multiple policies can be applied to a protocol, a priority is associated with each policy.
 
 * Policies with the lowest set priority are evaluated first.
 * If the rules associated with the policy do not match the traffic, the next lowest policy on the priority list is evaluated.
@@ -39,7 +46,7 @@ If the traffic does not match any of the policy rules, the traffic is redirected
 
 ![Layer 7 Details](images/Layer7-PolicyDetails.png "Layer 7 Details")
 
-Each policy is associated with an action that executes when all rules in the policy match the traffic.
+Each policy is associated with an action that runs when all rules in the policy match the traffic.
 
 The actions can be:
 
@@ -50,7 +57,7 @@ The actions can be:
 
 Policies set to `reject` are evaluated first.
 
-If the action is set to `REDIRECT_HTTPS`, then the HTTP traffic redirects to the HTTPS listener port. Only one configuration of this action is supported per listener. This action cannot configure L7 rules, and you must configure it using the API. You can configure the L7 policy using the action `REDIRECT_HTTPS` with the `addL7Policies` method of the  `SoftLayer_Network_LBaaS_L7Policy` service. A `redirectUrl` datatype provides the HTTPS listener's universally unique identifier (UUID) for HTTPS redirection.
+If the action is set to `REDIRECT_HTTPS`, then the HTTP traffic redirects to the HTTPS listener port. Only one configuration of this action is supported per listener. This action cannot configure L7 rules, and you must configure it using the API. You can configure the L7 policy by using the action `REDIRECT_HTTPS` with the `addL7Policies` method of the  `SoftLayer_Network_LBaaS_L7Policy` service. A `redirectUrl` data type provides the HTTPS listener's universally unique identifier (UUID) for HTTPS redirection.
 
 The `Redirect to https` policy is evaluated after a `Reject`. If this policy exists, then any existing `Redirect to url` and `Redirect to pool` policies do not apply. Also, if there are any existing `Redirect to https` policies, then you cannot create any new `Redirect to url` and `Redirect to pool` policies.
 
@@ -67,30 +74,23 @@ Property  | Description
 ------------- | -------------
 Name | The name of the policy. Each policy must have a unique name.
 Action | The action to take when the rules match. The actions are `REJECT`, `REDIRECT_HTTPS`, `REDIRECT_URL`, and `REDIRECT_POOL`. `REDIRECT_HTTPS` action is supported by API only.
-Priority | Within each action category, policies are evaluated in ascending order of priority. This field is not applicable for `REDIRECT_HTTPS` as only one such action is applicable per listener.
-Redirect URL | The URL to which traffic will be re-directed, if the action is set to `REDIRECT_URL`. And the HTTPS listener UUID to which traffic will be re-directed, if the action is set to `REDIRECT_HTTPS`.
-Redirect L7 Pool | The pool of servers to which traffic will be sent, if the action is set to `REDIRECT_POOL`.
+Priority | Within each action category, policies are evaluated in ascending order of priority. This field is not applicable for `REDIRECT_HTTPS` because only one such action is applicable per listener.
+Redirect URL | The URL to which traffic is redirected, if the action is set to `REDIRECT_URL`. Also, the HTTPS listener UUID to which traffic is to be redirected, if the action is set to `REDIRECT_HTTPS`.
+Redirect L7 Pool | The pool of servers to which traffic is sent, if the action is set to `REDIRECT_POOL`.
 Protocol | The front-end application port to which the policy is applied.
 
 ## Layer 7 rule
 {: #layer-7-rule}
+
 Layer 7 rules define a portion of the incoming traffic that is to be matched with specific values.
 
-* Add l7 rules is not allowed for L7 policy with `REDIRECT_HTTPS` action.
+* Adding L7 rules is not allowed for any L7 policy with `REDIRECT_HTTPS` action.
 * If the incoming traffic matches the specified value of a rule, then the rule evaluates to `true`.
-* Layer 7 rules are always associated with a Layer 7 policy. Multiple Layer 7 rules can be associated with the same layer 7 policy.
-* If multiple rules are associated with a policy, then each rule will be evaluated to be `true` or `false`.
-* If all the rules associated to a policy evaluate to `true`, then the policy action will be applied to the request. Otherwise, the load balancer evaluates the next policy.
+* Layer 7 rules are always associated with a Layer 7 policy. Multiple Layer 7 rules can be associated with the same Layer 7 policy.
+* If multiple rules are associated with a policy, then each rule is evaluated to be `true` or `false`.
+* If all the rules that are associated to a policy evaluate to `true`, then the policy action is applied to the request. Otherwise, the load balancer evaluates the next policy.
 
-Rules have types, which can be:
-
-* `HOST_NAME`
-* `FILE_TYPE`
-* `HEADER`
-* `COOKIE`
-* `PATH`
-
-These indicate the portion of the Layer 7 traffic to be matched with the rule.
+Rules have types, which indicate the portion of the Layer 7 traffic to be matched with the rule.
 
 Type      |  Field to be extracted and evaluated
 ----------| -----------------------
@@ -100,14 +100,7 @@ Type      |  Field to be extracted and evaluated
 `COOKIE`    | A named cookie in the HTTP header
 `PATH`      | The part of the URL that follows the hostname (for example, `/index.html`)
 
-Rules also have a comparison type, which indicates how they are are to be evaluated. 
-Rules can have following comparison types:
-
-* `REGEX`
-* `STARTS_WITH`
-* `ENDS_WITH`
-* `CONTAINS`
-* `EQUAL_TO`
+Rules also have a comparison type, which indicates how they are to be evaluated.
 
 Comparison Type |  Type of evaluation
 ----------------|---------------------
@@ -125,9 +118,9 @@ Not all rule types support all comparison types. For example, if you are using `
 
 Property  | Description
 ------------- | -------------
-Type | Specifies the type of rule. Rule types can be `HOST_NAME` (the name of the host), `FILE_TYPE` (the type of the file), `HEADER` (the header), `COOKIE` (the cookie) or `PATH` (the path).
-Comparison Type | Comparison types are used in association with the rule type, key and value to define a rule and classify traffic. Comparison types can be: `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS`, and `EQUAL_TO`.
+Type | Specifies the type of rule. Rule types can be `HOST_NAME`, `FILE_TYPE`, `HEADER`, `COOKIE`, or `PATH`.
+Comparison Type | Comparison types are used in association with the rule type, key, and value to define a rule and classify traffic. Comparison types can be: `REGEX`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS`, and `EQUAL_TO`.
 Key | The description key for the rule types `HEADER` and `COOKIE`.
 Value |  For the rule types `HEADER` and `COOKIE`, the value is compared against the key.
-Invert | It you set the value to 1, the value of this L7 rule comparison is set to `true` whenever the specified rule is not matched.
+Invert | If you set the value to 1, the value of this L7 rule comparison is set to `true` whenever the specified rule is not matched.
 Layer 7 Policy ID | The unique identifier of the policy to which the rules are attached.

@@ -21,10 +21,10 @@ subcollection: loadbalancer-service
 {:important: .important}
 {:support: data-reuse='support'}
 
-# Load balancer provisioning troubleshooting
+# Common issues when creating a new load balancer
 {: #load-balancer-provisioning-troubleshooting}
 
-This topic provides information on common issues you may encounter while creating a new instance of {{site.data.keyword.loadbalancer_full}}.
+This topic rovides information on common issues that you might encounter when creating a new instance of {{site.data.keyword.loadbalancer_full}}.
 {: shortdesc}
 
 ## Insufficient IP addresses in your subnet
@@ -39,7 +39,7 @@ This topic provides information on common issues you may encounter while creatin
 {: troubleshoot}
 {: support}
 
-See [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges) for information on allowing IP ranges through the firewall.
+For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges).
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}
@@ -48,7 +48,7 @@ See [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firew
 
 To view error messages for your load balancer, follow these steps:
 
-1. Click on the load balancer from the list page to view its details.
+1. Click the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
 ![View errors](images/CLB_view_error_PUP.png "View errors")

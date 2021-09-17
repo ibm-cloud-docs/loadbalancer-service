@@ -25,11 +25,11 @@ subcollection: loadbalancer-service
 {: #getting-started}
 
 The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
-{:shortdesc}
+{: shortdesc}
 
 To get started using {{site.data.keyword.loadbalancer_full}}, you require two main items: 
 
-* An account with IBM: [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){:new_window}
+* An account with IBM - [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){: new_window}
 * An IBM server, either [Bare Metal](/docs/bare-metal?topic=bare-metal-getting-started) or [Virtual Server Instance (VSI)](/docs/vsi)
 
 If you need assistance in obtaining an **IBMid** account, contact your IBM Sales representative for additional guidance.
@@ -37,4 +37,4 @@ If you need assistance in obtaining an **IBMid** account, contact your IBM Sales
 ## Ordering a load balancer
 {: #ordering-a-load-balancer}
 
-To get started with {{site.data.keyword.loadbalancer_full}}, see [Using an elastic load balancer for server load balancing overview](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing).
+To get started with {{site.data.keyword.loadbalancer_full}}, see [Using an elastic load balancer for server load-balancing overview](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing).

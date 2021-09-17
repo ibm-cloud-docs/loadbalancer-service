@@ -30,7 +30,7 @@ subcollection: loadbalancer-service
 {: #multi-zone-region-mzr-overview}
 
 A Multi-Zone Region (MZR) helps your load balancer appliances achieve high availability and redundancy. When provisioning a load balancer, you must specify the subnet where you want it created. If that data center is part of an MZR, one appliance is deployed in the selected data center while a second is deployed in a different data center within the same region.
-{:shortdesc}
+{: shortdesc}
 
 For example, `us-south` is an MZR, which contains the data centers `dal10`, `dal12`, `dal13`. You have a subnet A in `dal10`, subnets B and C in `dal12` and subnets D and E in `dal13`. If you create a load balancer in data center `dal13`, the first appliance gets deployed in `dal13` while the second gets deployed in the subnet with the most available IPs between `dal10` or `dal12` data centers.
 

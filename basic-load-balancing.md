@@ -31,7 +31,7 @@ subcollection: loadbalancer-service
 {: #ibm-cloud-load-balancer-basics}
 
 The {{site.data.keyword.loadbalancer_full}} service distributes traffic among multiple server instances (bare metal and virtual server) that reside locally, within the same data center.
-{:shortdesc}
+{: shortdesc}
 
 ## Public-to-private load balancer
 {: #public-private-load-balancer}

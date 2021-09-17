@@ -1,0 +1,97 @@
+toc:
+  properties:
+    subcollection: loadbalancer-service
+    version: 2
+    category: network_vpc
+    audience: service
+    href: /docs/loadbalancer-service
+    console-page: /catalog/infrastructure/load-balancer-group
+    product-page: https://www.ibm.com/cloud/load-balancer
+    path: loadbalancer-service
+    label: IBM Cloud Load Balancer
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries:
+    - navgroup:
+       id: learn
+       topics:
+       - getting-started.md
+       - about.md
+       - basic-load-balancing.md
+       - explore-load-balancers.md
+       - pricing.md
+       - naas-overview.md
+       - external-resources.md
+       - link:
+          label: What is load balancing?
+          href: https://www.ibm.com/cloud/learn/load-balancing
+
+    - navgroup:
+       id: tutorial
+       topics:
+       - topicgroup:
+          label: Tutorial
+          topics:
+          - /solution-tutorials/solution-tutorials-web-app-private-network
+          - /solution-tutorials/solution-tutorials-highly-available-and-scalable-web-application
+
+    - navgroup:
+       id: howto
+       topics:
+       - topicgroup:
+          label: Using an elastic load balancer for server load balancing
+          topics:
+          - reliability-guide.md
+          - begin-lb-config.md
+          - identify-app-resources.md
+          - managing-lb.md
+       - terraform.md
+       - topicgroup:
+          label: Performing load balancer advanced tasks
+          topics:
+          - custom-ciphers.md
+          - health-checks.md
+          - mzr.md
+          - ssl-offload.md
+          - advanced-traffic.md
+          - monitoring-metrics.md
+          - backend-encryption.md
+          - data-logging.md
+          - selecting-pod.md
+       - topicgroup:
+          label: Layer 7 support
+          topics:
+          - l7-explained.md
+          - l7-policy.md
+          - l7-rule.md
+          - l7-pool.md
+       - topicgroup:
+          label: Migrating from an IBM Local Load Balancer
+          topics:
+          - array-load-balancer-migration-steps.md
+          - array-load-balancer-migration-faqs.md
+
+#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
+#  Links to your command line reference docs should be included in the Reference navigation group.
+    - navgroup:
+       id: reference
+       topics:
+       - apis.md
+       - link:
+          label: Terraform reference]
+          href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service
+       - lb-responsibilities.md
+
+    - navgroup:
+       id: help
+       topics:
+       - whats-new-lbaaa.md
+       - known-limitations.md
+       - faqs.md
+       - topicgroup:
+          label: Troubleshooting
+          topics:
+          - troubleshooting-application.md
+          - troubleshooting-provisioning.md
+          - troubleshooting-errors.md
+       - getting-help.md
