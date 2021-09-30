@@ -80,7 +80,6 @@ toc:
        - link:
           label: Terraform reference]
           href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service
-       - lb-responsibilities.md
 
     - navgroup:
        id: help
