@@ -39,6 +39,7 @@ The {{site.data.keyword.loadbalancer_full}} service currently has the following 
 
 ## Known limitations
 {: #known-limits}
+
 The {{site.data.keyword.loadbalancer_full}} service currently has the following limitations:
 
 * Maximum number of virtual ports/protocols - 10

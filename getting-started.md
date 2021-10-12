@@ -24,7 +24,7 @@ subcollection: loadbalancer-service
 # Getting started with IBM Cloud Load Balancer 
 {: #getting-started}
 
-The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.
+The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. 
 {: shortdesc}
 
 To get started using {{site.data.keyword.loadbalancer_full}}, you require two main items: 

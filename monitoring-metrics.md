@@ -269,7 +269,7 @@ To collect this information and start working with your {{site.data.keyword.mon_
 
 3. To get the endpoint of your {{site.data.keyword.mon_full_notm}} instance, navigate to your main {{site.data.keyword.mon_full_notm}} dashboard in your browser. Then, select the URL to the dashboard, which appears similar to:
 
-   ```
+   ```sh
    https://us-south.monitoring.cloud.ibm.com/#/default-dashboard/ibm_cloud_load_balancer?last=3600
    ```
 
@@ -293,12 +293,12 @@ To collect this information and start working with your {{site.data.keyword.mon_
       If the time range specified by `from` and `to` is large (for example, 4 days), but you define a `sampling` and `value` of 10 seconds, this means that you receive 4 days worth of data that is split into 10-second chunks. This is not a useful sampling due to the large amount of data returned. Specifying a larger chunk is recommended (for example, 1 hour instead of 10 seconds).      
       {: tip}
 
-  ```
-  curl \
-  -H 'Authorization: Bearer <API_TOKEN>’ \
-  -H 'Content-Type: application/json' \
-  https://us-south.monitoring.cloud.ibm.com/api/data/batch  \
-  -d '{
+   ```sh
+   curl \
+   -H 'Authorization: Bearer <API_TOKEN>’ \
+   -H 'Content-Type: application/json' \
+   https://us-south.monitoring.cloud.ibm.com/api/data/batch  \
+   -d '{
     "requests": [
         {
             "format": {
@@ -329,6 +329,6 @@ To collect this information and start working with your {{site.data.keyword.mon_
                 }
             }
         }
-    ]
-}
-```
+      ]
+    }
+   ```

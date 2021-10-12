@@ -52,6 +52,7 @@ For more information, see [Layer 7 policy](/docs/loadbalancer-service?topic=load
 
 ### Allow customers to configure load-balancer timeout values
 {: #allow-customers-to-configure-load-balancer-timeout-values}
+
 {{site.data.keyword.loadbalancer_full}} now allows you to configure or modify client and server timeout values by using the API. This feature is intended for applications that need customized timeout values.
 
 ## September 2019

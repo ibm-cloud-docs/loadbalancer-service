@@ -80,9 +80,10 @@ After you choose your region, click **Create** to create the logging instance, t
 
 The following output is an example of an {{site.data.keyword.loadbalancer_full}} data log:
 
-```
+```sh
 {"datetime":"2019-09-17T03:13:37.373247+00:00", "host":"loadbalancer-dal09-323716-880632-975820", "process":"Cloud Load Balancer", "message":" Connect from xxx.xxx.xxx.xxx:56771 to 169.55.233.136:80 (a9887082-02ff-440c-8e9e-f9026bdc209a\/HTTP)","logSourceCRN":"crn:v1:bluemix:public:logdna:us-south:a/5c59f412bc914beb390b080e07e5e6a2:ffff0000-ffff-0000-ffff-ffff0000ffff::"}
 ```
+
 Note that:
 * `datetime` is Coordinated Universal Time.
 * `loadbalancer-dal09-323716-880632-975820` is the load balancer name, and `dal09` is the data center.
@@ -91,7 +92,7 @@ Note that:
 
 The following output is an example of a health check log seen in the IBM Log Analysis that uses the IBM Cloud Log Analysis service:
 
-```
+```sh
 {"datetime":"2019-09-11T08:04:22.534063+00:00", "host":"loadbalancer-dal09-323716-879158-975712", "process":"Cloud Load Balancer", "message":" Health check for server 9a226696-64b7-4f42-a587-74addd178f0e\/81035d8f-5e50-4743-ab04-20987c4c51be-10.143.99.103 succeeded, reason: Layer7 check passed, code: 200, info: \"HTTP status check returned code <3C>200<3E>\", check duration: 2ms, status: 4\/4 UP.","logSourceCRN":"crn:v1:bluemix:public:logdna:us-south:a/5c59f412bc914beb390b080e07e5e6a2:ffff0000-ffff-0000-ffff-ffff0000ffff::"}
 ```
 

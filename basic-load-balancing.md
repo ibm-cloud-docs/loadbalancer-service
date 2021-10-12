@@ -82,7 +82,8 @@ Note that the back-end ports are only known internally. These back-end ports mig
 
 The supported front-end ports/protocols are HTTP, HTTPS, and TCP. The supported back-end ports/protocols are also HTTP, HTTPS, and TCP. Incoming HTTPS traffic must be terminated at the load balancer to allow for plain text HTTP communication with the back-end server. If the back-end protocol is HTTPS, the traffic is encrypted between load balancer and back-end servers.
 
-**Considerations**
+### Considerations
+{: #basic-considerations}
 
 * During the initial configuration, you can define up to two front-end ports only. After a load balancer is created, you can edit port configuration to define additional ports, up to the maximum of 10 ports.
 * All 10 front-end ports must map to the same set of back-end server instances.

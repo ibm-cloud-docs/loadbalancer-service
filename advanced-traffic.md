@@ -47,10 +47,12 @@ The load balancer also supports session persistence based upon the HTTP Cookie. 
 
 ## HTTP keep alive
 {: #http-keep-alive}
+
 The load balancer supports `HTTP keep alive` as long as it is enabled on both the client and back-end servers. The load balancer attempts to reuse the server-side HTTP connections to increase connection efficiency and reduce latency.
 
 ## Connection timeouts
 {: #connection-timeouts}
+
 The following timeout values are used by the load balancer:
 
 | Name | Description | Default timeout | User configurable |                                                                                             
@@ -73,4 +75,5 @@ IBM Cloud Load Balancer works as a reverse proxy, which terminates incoming traf
 
 ## Preserving end-client protocol
 {: #preserving-end-client-protocol}
+
 IBM Cloud Load Balancer preserves the original protocol that is used by the client for front-end HTTP and HTTPS connections. It does this by including it inside the `X-Forwarded-Proto` HTTP header. This does not apply to TCP protocols because the load balancer does not look at Layer-7 traffic when the TCP protocol is used.

@@ -36,7 +36,7 @@ Looking for a managed Terraform on {{site.data.keyword.cloud}} solution? Try out
    For more information, see the [ibm_lb_service](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service){: external} usage example.
    {: note}
 
-   ```
+   ```sh
    resource "ibm_lb_service" "test_lb_local_service" {
     port = 80
     enabled = true
@@ -50,21 +50,21 @@ Looking for a managed Terraform on {{site.data.keyword.cloud}} solution? Try out
 
 3. Initialize the Terraform CLI.
 
-   ```
+   ```sh
    terraform init
    ```
    {: pre}
 
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the load balancer in your account.
 
-   ```
+   ```sh
    terraform plan
    ```
    {: pre}
 
 5. Create the load balancer instance and IAM access policy in {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```sh
    terraform apply
    ```
    {: pre}

@@ -107,4 +107,5 @@ Finally, to place your order:
 
 ## What's next
 {: #what-s-next-3}
+
 [Managing and monitoring your service](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) to edit configuration and monitor service performance.

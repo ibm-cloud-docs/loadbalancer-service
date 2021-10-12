@@ -70,9 +70,9 @@ The health check definition is mandatory for each Layer 7 pool. The system pre-p
 
 You can customize these settings to suit your application needs:
 
- * **Interval** - The interval in seconds between two consecutive health check attempts.
- * **Timeout** -  The maximum amount of time the system waits for a response to the health check request.
- * **MaxRetries** - The maximum number of additional health check attempts that the system makes before declaring the service unhealthy.
- * **UrlPath** - The HTTP URL path for the Layer 7 health check.
+* **Interval** - The interval in seconds between two consecutive health check attempts.
+* **Timeout** -  The maximum amount of time the system waits for a response to the health check request.
+* **MaxRetries** - The maximum number of additional health check attempts that the system makes before declaring the service unhealthy.
+* **UrlPath** - The HTTP URL path for the Layer 7 health check.
 
    ![Layer 7 HealthCheck](images/Layer7-HealthCheck.png "Layer 7 HealthCheck")

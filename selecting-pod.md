@@ -45,14 +45,14 @@ A better option is to use the CLI and API.
 
 You can use the CLI and API to specify PoD using the following option:
 
-```
+```sh
 --extras '{"virtualGuests": [{"hostname": "test", "domain": "softlayer.com", "primaryBackendNetworkComponent": {"router": {"id": 1673467}}}]}'
 ```
 {: pre}
 
 The `primaryBackendNetworkComponentId` can be obtained through the following API call:
 
-```
+```sh
 slcli call-api SoftLayer_Network_Pod getAllObjects
 ```
 {: pre}
