@@ -53,20 +53,20 @@ Looking for a managed Terraform on {{site.data.keyword.cloud}} solution? Try out
    ```sh
    terraform init
    ```
-   {: pre}
+   {: codeblock}
 
 4. Create a Terraform execution plan. The Terraform execution plan summarizes all the actions that need to be run to create the load balancer in your account.
 
    ```sh
    terraform plan
    ```
-   {: pre}
+   {: codeblock}
 
 5. Create the load balancer instance and IAM access policy in {{site.data.keyword.cloud_notm}}.
 
    ```sh
    terraform apply
    ```
-   {: pre}
+   {: codeblock}
 
 6. From the [{{site.data.keyword.cloud_notm}} resource list](/resources){: external}, select the load balancer instance that you created and note the instance ID.
