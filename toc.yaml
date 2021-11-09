@@ -78,7 +78,7 @@ toc:
        topics:
        - apis.md
        - link:
-          label: Terraform reference]
+          label: Terraform reference
           href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service
 
     - navgroup:
