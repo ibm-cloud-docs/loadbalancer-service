@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # IBM Cloud Load Balancer pricing
 {: #ibm-cloud-load-balancer-pricing}
@@ -40,10 +31,11 @@ The following table details an example {{site.data.keyword.loadbalancer_full}} p
 | ------------- | ------------- | ------------- | ------------- |
 | **Service Usage** | 720 hours | $0.025/hour | $18/month |
 | **Data Processed** | 4500 GB | $0.008/GB | $36/month |
+{: caption="Example pricing" caption-side="bottom"}
 
 The total charge for this scenario is $54/month plus the standard data transfer charge [USD $0.09 per GB ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bandwidth).
 
-![Pricing](./images/pricing.png)
+![Pricing](./images/pricing.png){: caption="Pricing" caption-side="bottom"}
 
 All prices vary by geographic region; pricing in the example and diagram is Dallas pricing in US dollars. Not displayed in the diagram is a service usage fee of $0.025/hour.
 {: note}

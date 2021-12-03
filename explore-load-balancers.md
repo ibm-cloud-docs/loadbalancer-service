@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
-{: row-headers .row-headers}
+{{site.data.keyword.attribute-definition-list}}
 
 # Exploring IBM Cloud load balancers
 {: #explore}
@@ -35,12 +26,12 @@ IBM Cloud offers several load balancing solutions to choose from. The following 
 |**Layer 4 load balancer**|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg) |
 |**Layer 7 load balancer**|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg) |
 |**Health Checks**|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg) |
-|**Horizontal Scaling**|![Checkmark icon](../icons/checkmark-icon.svg)|| |
+|**Horizontal Scaling**|![Checkmark icon](../icons/checkmark-icon.svg)| | |
 |**SSL Offload**|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg)|![Checkmark icon](../icons/checkmark-icon.svg) |
 |**Management**|IBM console|Self-manage (Vendor GUI)|Self-manage (Vendor GUI) |
 |**High Availability**|Built-in|Optional|Optional |
-|**Advance LB (TCP Optimization, Compress, Caching, WAF)**||Limited|![Checkmark icon](../icons/checkmark-icon.svg)|
-|**Global LB**|||![Checkmark icon](../icons/checkmark-icon.svg) |
+|**Advance LB (TCP Optimization, Compress, Caching, WAF)**| |Limited|![Checkmark icon](../icons/checkmark-icon.svg)|
+|**Global LB**| | |![Checkmark icon](../icons/checkmark-icon.svg) |
 |**Pricing**|Usage-based|Monthly Flat|Monthly Flat |
 {: row-headers}
 {: class="comparison-table"}

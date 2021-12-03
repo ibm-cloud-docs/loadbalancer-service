@@ -10,23 +10,14 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Error message troubleshooting
 {: #error-message-troubleshooting}
 {: troubleshoot}
 {: support}
 
-Provides information on common error messages that you might encounter while creating or updating an instance of {{site.data.keyword.loadbalancer_full}}.
+This topic provides information on common error messages that you might encounter while creating or updating an instance of {{site.data.keyword.loadbalancer_full}}.
 {: shortdesc}
 
 | Error | Explanation  | Solution  |
@@ -52,3 +43,4 @@ Provides information on common error messages that you might encounter while cre
 | `Backend protocol HTTP is not compatible with frontend protocol TCP.` | You might have selected an incompatible back-end protocol and front-end protocol combination. | Select a valid front-end and back-end protocol combination, in the form: `<br> HTTP-HTTP <br> HTTPS-HTTP <br> TCP-TCP` |
 | `Member weight <some value> is provided for member abcd-xxxx-yyyy-2222. The allowed weight value is 0-100`| You might have entered an invalid weight. | Enter a weight value between 0 and 100. |
 | `There was a problem fetching the servers.` | This can happen as a result of network timeout issues. | Reload the page. If the issue still persists, contact IBM Support.|
+{: caption="Error messages" caption-side="bottom"}

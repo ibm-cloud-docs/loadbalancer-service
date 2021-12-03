@@ -10,17 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:faq: data-hd-content-type='faq'}
-{:note: .note}
-{:important: .important}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # FAQs for IBM Cloud Load Balancer
 {: #faqs-for-ibm-cloud-load-balancer}
@@ -52,11 +42,13 @@ For example, if your account number is `123456`, your load balancer is deployed 
 While trying to create a load balancer service, you can define up to two virtual ports. You can define additional virtual ports after the service is created. The maximum number of virtual ports allowed is `10`.
 
 ## What's the maximum number of compute instances I can associate with my load balancer?
+{: #faqs-max-instances}
 {: faq}
 
 While trying to create a load balancer service, you can configure up to 10 compute instances as back-end servers. You can define additional servers after the load balancer is created. The maximum number of back-end members allowed is 50.
 
 ## Can my back-end compute instances sit on a subnet different from the load balancer's subnet?
+{: #faqs-back-end-instances}
 {: faq}
 
 Yes, the load balancer and the compute instances that are connected to the load balancer can be in different subnets, but **VLAN spanning** must be enabled for the load balancer to communicate and forward requests to the compute instance. For more information, see [VLAN spanning](/docs/vlans?topic=vlans-vlan-spanning).
@@ -76,11 +68,13 @@ The health check response timeout value must always be less than the health chec
 {: note}
 
 ## Can I use compute instances residing in remote data centers with this service?
+{: #faqs-instances-remote-dc}
 {: faq}
 
 It is recommended that your load balancer service and your compute instances reside locally within the same data center. The load balancer service’s UI does not show compute instances from other remote data centers. However, the UI includes compute instances from other data centers within the same city (for example, data centers whose names share the first three letters, such as `DALxx`). You can use the API interface to add compute instances from any remote data center.
 
 ## Which TLS version is supported by SSL offload?
+{: #faqs-ssl}
 {: faq}
 
 The IBM Cloud Load Balancer service supports TLS 1.2 with SSL termination.
@@ -97,6 +91,7 @@ The following list details the supported ciphers (listed in order of precedence)
 * AES128-SHA256
 
 ## What is the maximum number of load balancer service instances I can create within my account?
+{: #faqs-max-lb-instances}
 {: faq}
 
 Currently, you can create up to 50 service instances. If you need more instances, contact IBM Support.
@@ -129,11 +124,12 @@ In summary, this is the required firewall configuration:
 |     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  443       |
 |     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	 10514      |
 |     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  8834      |
+{: caption="Required firewall configuration" caption-side="bottom"}
 
 Also, ensure your application's ports are open to accept traffic.
 
-
 ## What if I cannot see the monitoring metrics of an existing load balancer after linking my Softlayer account to IBM Cloud?
+{: #faqs-cannot-see-metrics}
 {: faq}
 
 Monitoring metrics are not available for existing load balancers after linking the accounts. You must re-create the load balancers or contact IBM Support. Monitoring metrics for newly created load balancers is available.
@@ -149,6 +145,7 @@ You should use FQDN and not cached IP addresses.
 {: note}
 
 ## If I have a firewall deployed in front of my backend servers, what configurations are required for it to work with my load balancer?
+{: #faqs-firewall}
 {: faq}
 {: support}
 
@@ -157,16 +154,19 @@ The available range of possible IPs for `public to public` load balancers cannot
 `Public to private` and `private to private` type load balancers communicate with your back-end members from your own private subnets. Because of this, you can set the source IP with your subnet's CIDR. Note that if the data center where you created the load balancer is part of an MZR, one load balancer appliance deploys in the selected data center, while a second deploys in a different data center within the same region. This means they exist in two different subnets.
 
 ## Can the IBM Cloud Load Balancer service be used with Terraform?
+{: #faqs-terraform}
 {: faq}
 
 Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. For more information, see [Using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).
 
 ## Is it possible to add members with secondary IP addresses?
+{: #faqs-seconary-ip}
 {: faq}
 
 Members with secondary IP addresses can be added using the API.
 
 ## What happens when the load balancer is in `Maintenance Pending` state?
+{: #faqs-maintenance-pending}
 {: faq}
 
 The load balancer can go into `Maintenance Pending` state due to following reasons:
@@ -178,26 +178,31 @@ The load balancer can go into `Maintenance Pending` state due to following reaso
 When the load balancer is in the `Maintenance Pending` state, the data path is not affected.
 
 ## What is a non-system pool?
+{: #faqs-non-system-pool}
 {: faq}
 
 A non-system pool is applicable only with public to private load balancers. The public IP addresses of the load balancer appliances are allocated from your public subnet. Select the **Allocate from a public subnet in this account** option when provisioning a load balancer.
 
 ## Does IBM Cloud Load Balancer support UDP?
+{: #faqs-udp}
 {: faq}
 
 The IBM Cloud Load Balancer service does not support UDP. It supports only TCP, HTTP, and HTTPS.
 
 ## Is autoscaling supported by IBM Cloud Load Balancer?
+{: #faqs-autoscaling}
 {: faq}
 
 The IBM Cloud Load Balancer service does not support autoscaling at this time.
 
 ## How can I monitor my IBM Cloud Load Balancer metrics?
+{: #faqs-monitor-metrics}
 {: faq}
 
 The IBM Cloud Load Balancer service supports monitoring with {{site.data.keyword.mon_full_notm}}. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## What information do I need to file an IBM Support ticket?
+{: #faqs-ticket}
 {: faq}
 
 To file an IBM Support ticket, provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your IBM Cloud account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.

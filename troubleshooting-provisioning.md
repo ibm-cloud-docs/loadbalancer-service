@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Common issues when creating a new load balancer
 {: #load-balancer-provisioning-troubleshooting}
@@ -51,6 +42,6 @@ To view error messages for your load balancer, follow these steps:
 1. Click the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
-![View errors](images/CLB_view_error_PUP.png "View errors")
+![View errors](images/CLB_view_error_PUP.png "View errors"){: caption="View errors" caption-side="bottom"}
 
 If the load balancer is in an `ERROR` state, it cannot be recovered and must be deleted.

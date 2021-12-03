@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:note: .note}
-{:important: .important}
-{:tip: .tip}
-{:download: .download}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Load Balancer 
 {: #getting-started}
@@ -29,7 +20,7 @@ The {{site.data.keyword.loadbalancer_full}} service helps customers improve avai
 
 To get started using {{site.data.keyword.loadbalancer_full}}, you require two main items: 
 
-* An account with IBM - [IBMid ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/account/us-en/signup/register.html){: new_window}
+* An account with IBM - [IBMid](https://www.ibm.com/account/us-en/signup/register.html){: external}
 * An IBM server, either [Bare Metal](/docs/bare-metal?topic=bare-metal-getting-started) or [Virtual Server Instance (VSI)](/docs/vsi)
 
 If you need assistance in obtaining an **IBMid** account, contact your IBM Sales representative for additional guidance.

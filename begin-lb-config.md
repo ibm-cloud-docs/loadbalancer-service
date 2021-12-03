@@ -8,18 +8,9 @@ keywords: options, load balancing, configure, protocol, health check
 
 subcollection: loadbalancer-service
 
-
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Selecting the service and configuring basic options
 {: #configuring-ibm-cloud-load-balancer-basic-parameters}
@@ -27,7 +18,7 @@ subcollection: loadbalancer-service
 To begin creating your new {{site.data.keyword.loadbalancer_full}}, select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
 {: shortdesc}
 
-![CLB select service](images/CLB_Select_Service_PUP.png "CLB select service")
+![CLB select service](images/CLB_Select_Service_PUP.png "CLB select service"){: caption="CLB select service" caption-side="bottom"}
 
 When the configuration page appears, follow these steps:
 

@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:support: data-reuse='support'}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Why is my back-end server's health failing?
 {: #the-back-end-server-is-unhealthy}

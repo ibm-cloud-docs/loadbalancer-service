@@ -10,22 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Layer 7 policy
 {: #layer-7-policy}
@@ -42,9 +27,9 @@ Since multiple policies can be applied to a protocol, a priority is associated w
 
 If the traffic does not match any of the policy rules, the traffic is redirected to a default pool, which is the pool that was configured when the basic load balancer was deployed.
 
-![Layer 7 Policy](images/Layer7-Policy.png "Layer 7 Policy")
+![Layer 7 Policy](images/Layer7-Policy.png "Layer 7 Policy"){: caption="Layer 7 policy" caption-side="bottom"}
 
-![Layer 7 Details](images/Layer7-PolicyDetails.png "Layer 7 Details")
+![Layer 7 Details](images/Layer7-PolicyDetails.png "Layer 7 Details"){: caption="Layer 7 details" caption-side="bottom"}
 
 Each policy is associated with an action that runs when all rules in the policy match the traffic.
 

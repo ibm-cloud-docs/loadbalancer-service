@@ -10,15 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Release notes for IBM Cloud Load Balancer
 {: #release-notes-for-ibm-cloud-load-balancer}
@@ -30,11 +22,15 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 {: #apr-2020}
 
 ### Public subnet selection for public-to-private load balancers
+{: #april-public-subnet}
+
 You can now choose a public subnet while creating a public-to-private load balancer if non-system pool is also selected. This is supported for creation of load balancers by using APIs only.
 
 For more information, see [public-private-load-balancer](/docs/loadbalancer-service?topic=loadbalancer-service-public-private-load-balancer).
 
 ### {{site.data.keyword.mon_full_notm}} monitoring metrics
+{: #lb-monitoring-metrics-april}
+
 You can now access load balancer monitoring metrics (throughput, active connections, connection rate) through the use of [{{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## March 2020
@@ -67,7 +63,6 @@ For more information, see [Layer 7 policy](/docs/loadbalancer-service?topic=load
 {: #http-cookie-session-persistence}
 
 {{site.data.keyword.loadbalancer_full}} now supports a new session persistence type called `HTTP Cookie`. With this type of session persistence, the load balancer adds a cookie to the first response from the back-end server. Subsequent HTTP requests with the cookie arriving at the load balancer are now persistent on the same back-end server.
-
 
 ## June 2019
 {: #june-2019}
@@ -125,7 +120,7 @@ For more information, see [Layer 7 load balancing](/docs/loadbalancer-service?to
 
 A highly demanded "internal" version of our {{site.data.keyword.loadbalancer_full}} is now available. This load balancer is not exposed publicly, but can still be used to balance applications within their IBM Cloud private networks (in a multi-tiered deployment, for instance, as shown in the figure).
 
-![Internal Load Balancer](./images/InternalLB.png)
+![Internal Load Balancer](./images/InternalLB.png){: caption="Internal load balancer" caption-side="bottom"}
 
 It is both secure and consistent with the previous versions of {{site.data.keyword.loadbalancer_full}} on the public side.
 
@@ -138,7 +133,7 @@ You can now use the "IBM Cloud Monitoring" service to monitor the following perf
 * Connection rate
 * Active connections
 
-![Monitoring Metrics](./images/Metrics.png)
+![Monitoring Metrics](./images/Metrics.png){: caption="Monitoring metrics" caption-side="bottom"}
 
 Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
 

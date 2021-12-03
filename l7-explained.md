@@ -10,15 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Layer 7 load balancing
 {: #layer-7-load-balancing}
@@ -30,7 +22,7 @@ The {{site.data.keyword.loadbalancer_full}} service distributes traffic among mu
 * Policies define what action to take when the data traffic matches all the rules that are associated with a policy.
 * Layer 7 (L7) load balancing is supported for HTTP and HTTPS traffic only.
 
- ![Layer 7 Overview](images/Layer7-Overview.png "Layer 7 Overview")
+ ![Layer 7 Overview](images/Layer7-Overview.png "Layer 7 Overview"){: caption="Layer 7 Overview" caption-side="bottom"}
 
 
 ## Layer 7 policies and rules

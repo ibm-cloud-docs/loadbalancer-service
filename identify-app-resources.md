@@ -10,22 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring load-balancing options and placing your order
 {: #configure-load-balancing-parameters-and-place-order}
@@ -33,9 +18,10 @@ subcollection: loadbalancer-service
 Configure your load balancer and finalize your order.
 {: shortdesc}
 
-![CLB load-balancing options](images/CLB_LoadBalancing_Parameters_PUP.png "CLB Load-Balancing Options")
+![CLB load-balancing options](images/CLB_LoadBalancing_Parameters_PUP.png "CLB Load-Balancing Options"){: caption="CLB Load-Balancing Options" caption-side="bottom"}
 
 ## Step 1 - Adding protocols
+{: #add-protocols}
 
 Add the protocols for your load balancer:
 
@@ -56,7 +42,7 @@ Add the protocols for your load balancer:
 
 	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) connections and can communicate in plain text HTTP with the back-end application servers when HTTP is selected as the backend protocol. This offloads processor intensive SSL tasks from your servers to the load balancer. You can also choose to have HTTPS as the backend protocol when the backend application servers are configured to receive HTTPS traffic. In this case, traffic is encrypted between the load balancer and the backend servers.
 
-	![CLB Cert](images/CLB_HTTPS_Cert_PUP.png "CLB Cert")
+	![CLB Cert](images/CLB_HTTPS_Cert_PUP.png "CLB Cert"){: caption="CLB Cert" caption-side="bottom"}
 
 	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/classic/security/sslcerts) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
 	{: note}
@@ -65,6 +51,7 @@ Add the protocols for your load balancer:
 	{: important}
 
 ## Step 2 - Configuring health checks
+{: #configuring-health-checks}
 
 The [health check](/docs/loadbalancer-service?topic=loadbalancer-service-performing-health-checks-with-ibm-cloud-load-balancer) definition is mandatory for each of your application ports (the back-end ports that are identified in the protocols section).
 
@@ -76,6 +63,7 @@ The system pre-populates a default health check configuration for these back-end
 * **Path**: The HTTP URL path for the health check
 
 ## Step 3 - Adding server instances
+{: #add-server-instances}
 
 Select your **server instance** from the dropdown in the table, and use the **Attach Server** button to add more servers. You can select from the IBM© Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
 
@@ -83,7 +71,7 @@ These server instances must be local to the data center where you deploy the loa
 
 If the load balancer type is Public to Public, the server instances are added with their Public IP, as shown in the following image.
 
-![CLB Back-end Member](images/CLB_p2p_backend_member_PUP.png "CLB Back-end Member")
+![CLB Back-end Member](images/CLB_p2p_backend_member_PUP.png "CLB Back-end Member"){: caption="CLB Back-end Member" caption-side="bottom"}
 
 Server **weights** are relevant only when using the **Weighted Round Robin** load-balancing method. The default weight is 50 and the range is 0-100. The weights are disabled with other load-balancing methods.
 {: note}
@@ -92,6 +80,7 @@ Refer to [Limitations on number of application servers](/docs/loadbalancer-servi
 {: tip}
 
 ## Step 4 - Placing your order
+{: #place-order}
 
 Finally, to place your order:
 
@@ -103,7 +92,7 @@ Finally, to place your order:
 
 	The system creates your load balancer and takes you to the Load Balancers summary page. Refresh your browser window to see the entry for your new load balancer and its state change from offline to online, which usually takes a few minutes. Offline load balancers are disabled, while online load balancers can be clicked to manage and monitor them, as shown in the following image.
 
-	![CLB creation pending](images/CLB_create_pending_PUP.png "CLB creation pending")
+	![CLB creation pending](images/CLB_create_pending_PUP.png "CLB creation pending"){: caption="CLB creation pending" caption-side="bottom"}
 
 ## What's next
 {: #what-s-next-3}

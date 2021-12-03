@@ -10,22 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Data logging
 {: #data-logging}
@@ -37,7 +22,7 @@ You can enable or disable this feature by:
 
 * Creating a load balancer and setting this feature to on.
 
-![Data Logging](images/DataLogging.png "Data Logging")
+![Data Logging](images/DataLogging.png "Data Logging"){: caption="Data logging" caption-side="bottom"}
 
 * Using the API `enableOrDisableDataLogs`.
 
@@ -68,7 +53,7 @@ To create a Log Analysis instance, follow these steps:
    | London | LON01, LON02, LON04, LON05, LON06 |
    | Dallas | DAL00, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, MEX01, SJC01, SJC03, SJC04, SAO01 |
    | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
-   {: caption="Table 1. Mapping between region and datacenter" caption-side="top"}
+   {: caption="Table 1. Mapping between region and datacenter" caption-side="bottom"}
 
    Load balancers whose logging was enabled before 22 April 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance, then disable and re-enable the logging toggle for your load balancer.
    {: note}

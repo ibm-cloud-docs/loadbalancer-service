@@ -10,23 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # IBM Cloud Load Balancer API reference
 {: #api-reference}
@@ -570,8 +554,8 @@ except SoftLayer.SoftLayerAPIError as e:
 ```
 {: codeblock}
 
-### Add rules to a Layer 7 policy 
-{: #add-rules-to-a-layer-7-policy-}
+### Add rules to a Layer 7 policy
+{: #add-rules-to-a-layer-7-policy}
 
 ```py
 import SoftLayer

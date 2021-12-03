@@ -9,23 +9,8 @@ keywords: layer 7 rules
 subcollection: loadbalancer-service
 
 ---
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
 
+{{site.data.keyword.attribute-definition-list}}
 
 # Layer 7 rules
 {: #layer-7-rules}
@@ -37,7 +22,7 @@ Layer 7 rules define a portion of the incoming traffic that is to be matched wit
 * If multiple rules are associated with a policy, then each rule is evaluated to be `true` or `false`.
 * If all the rules that are associated to a policy evaluate to `true`, then the policy action is applied to the request. Otherwise, the load balancer evaluates the next policy.
 
-   ![Layer 7 Add Rules](images/Layer7-AddRules.png "Layer 7 Add Rules")
+   ![Layer 7 Add Rules](images/Layer7-AddRules.png "Layer 7 Add Rules"){: caption="Layer 7 Add Rules" caption-side="bottom"}
 
 
 Rules have types, which indicate the portion of the Layer 7 traffic to be matched with the rule.
@@ -49,9 +34,9 @@ Type      |  Field to be extracted and evaluated
 HEADER    | A field in the HTTP header
 COOKIE    | A named cookie in the HTTP header
 PATH      | The part of the URL that follows the hostname (for example, `/index.html`)
+{: caption="Rule types" caption-side="bottom"}
 
-![Layer 7 Rules](images/Layer7-Rules.png "Layer 7 Rules")
-
+![Layer 7 Rules](images/Layer7-Rules.png "Layer 7 Rules"){: caption="Layer 7 Rules" caption-side="bottom"}
 
 Rules also have a comparison type, which indicates how they are to be evaluated. Rules can have following comparison types:
 
@@ -62,6 +47,7 @@ Comparison Type |  Type of evaluation
 `ENDS_WITH`       |  Verify whether the extracted field ends with the supplied string
 `CONTAINS`        |  Verify whether the extracted field contains the supplied string
 `EQUAL_TO`        |  Verify whether the extracted field is identical to the supplied string
+{: caption="Rule comparison types" caption-side="bottom"}
 
 Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
 {: tip}
@@ -77,3 +63,4 @@ Key | The description key for the rule types `HEADER` and `COOKIE`.
 Value |  For the rule types `HEADER` and `COOKIE`, the value is compared against the key.
 Invert | If you set the value to 1, the value of this L7 rule comparison is set to `true` whenever the specified rule is not matched.
 Layer 7 Policy ID | The unique identifier of the policy to which the rules are attached.
+{: caption="Rule properties" caption-side="bottom"}

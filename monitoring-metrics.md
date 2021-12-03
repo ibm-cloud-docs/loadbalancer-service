@@ -10,16 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:preview: .preview}
-{:download: .download}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Monitoring metrics using IBM Cloud Monitoring
 {: #monitoring-metrics}
@@ -30,7 +21,7 @@ Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.ke
 Load balancers calculate the metrics and send those metrics to your {{site.data.keyword.mon_full_notm}} instance, which reflects different types of use and traffic. You can visualize and analyze metrics from either the {{site.data.keyword.mon_full_notm}} dashboard, or its API.
 
 ## Metrics available by service plan
-{: metrics-by-plan}
+{: #metrics-by-plan}
 
 The supported monitoring metrics include:
 
@@ -60,7 +51,7 @@ The active connection metric contains the following metadata:
 | Metric type | `gauge` |
 | Value type | `none`  |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 1: IBM Cloud Load Balancer active connections metrics metadata" caption-side="top"}
+{: caption="Table 1: IBM Cloud Load Balancer active connections metrics metadata" caption-side="bottom"}
 
 
 ### Connection rate
@@ -74,7 +65,7 @@ Connection rate is number of new incoming active connections per second to your 
 | Metric type | `gauge` |
 | Value type  | `none` |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 2: IBM Cloud Load Balancer connection rate metric metadata" caption-side="top"}
+{: caption="Table 2: IBM Cloud Load Balancer connection rate metric metadata" caption-side="bottom"}
 
 ### Throughput
 {: #ibm_cloud_load_balancer_throughput}
@@ -87,7 +78,7 @@ Throughput is the amount of data that passes in and out of a load balancer over 
 | Metric type | `gauge` |
 | Value type  | `byte` |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` or `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 3: IBM Cloud Load Balancer throughput metric metadata" caption-side="top"}
+{: caption="Table 3: IBM Cloud Load Balancer throughput metric metadata" caption-side="bottom"}
 
 ## Metric segmentation
 {: #attributes}
@@ -97,7 +88,7 @@ You can split the data that {{site.data.keyword.mon_full_notm}} presents into va
 As an example, you can segment the `active connections` by `IBM Cloud Load Balancer listener port` to show how many active users are connected to the load balancer through each listener type. To illustrate this, let's assume that your load balancer has two different listener protocols one HTTP on port 80 and another for TCP on port 8080. The dashboard would contain different lines showing 10 users who are connected through HTTP on Port 80 in one color, and 6 users connected through TCP on port 8080 in another color.
 
 ### Global attributes
-{: global-attributes}
+{: #global-attributes}
 
 The following attributes are available for segmenting all three of the {{site.data.keyword.mon_full_notm}} metrics.
 
@@ -106,10 +97,10 @@ The following attributes are available for segmenting all three of the {{site.da
 | `Resource` | `ibm_resource` | A load balancer's unique ID |
 | `Scope` | `ibm_scope` | The account that is associated with a given load balancer |
 | `Service name` | `ibm_service_name` | ibm-cloud-load-balancer |
-{: caption="Table 4: {{site.data.keyword.mon_full_notm}} global attributes" caption-side="top"}
+{: caption="Table 4: {{site.data.keyword.mon_full_notm}} global attributes" caption-side="bottom"}
 
 ### Additional attributes
-{: additional-attributes}
+{: #additional-attributes}
 
 The following attributes are available to segment one or more of the global attributes. See the individual metrics for any segmentation options.
 
@@ -117,7 +108,7 @@ The following attributes are available to segment one or more of the global attr
 |-----------|----------------|-----------------------|
 | IBM Cloud Load Balancer appliance metrics | `ibm_cloud_load_balancer_appliance_ip` | The metrics coming from the load balancer back end. Because the load balancer is highly available, multiple appliances support each load balancer for redundancy.  |
 | IBM Cloud Load Balancer listener metrics | `ibm_cloud_load_balancer_listener_port` | The metrics that are gathered from individual listeners and their ports. Configure the listeners in your load balancer settings. The monitoring metrics reflect the metrics coming from those listeners. |
-{: caption="Table 5: {{site.data.keyword.mon_full_notm}} additional attributes" caption-side="top"}
+{: caption="Table 5: {{site.data.keyword.mon_full_notm}} additional attributes" caption-side="bottom"}
 
 The displayed metrics contain a timestamp and the metric value for the time interval ending at that timestamp. You can specify different scopes, as well as the time interval over which to report the metrics.
 
@@ -155,7 +146,7 @@ To do so, follow these steps:
    If you do not have an existing load balancer, see [Using an elastic IBM Cloud Load Balancer for server load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to provision one.
    {: tip}
 
-   ![Region](images/metrics_1.png "Region")
+   ![Region](images/metrics_1.png "Region"){: caption="Region" caption-side="bottom"}
 
    The region must match the location of your existing load balancer.
    {: important}
@@ -171,7 +162,7 @@ To do so, follow these steps:
 
 5. Optionally, select a resource group. A resource group is a way to organize account resources in customizable groupings. Any account resource that is managed by using IBM Cloud Identity and Access Management (IAM) access control belongs to a resource group within your account.
 
-   ![Resource group](images/metrics_2.png "Resource group")
+   ![Resource group](images/metrics_2.png "Resource group"){: caption="Resource group" caption-side="bottom"}
 
    If you do not have any pre-configured resource groups, or no reason to share this resource selectively, use the default selection.
    {: note}
@@ -201,7 +192,7 @@ To view and work with your {{site.data.keyword.mon_full_notm}} metrics, follow t
 
 4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify options and segment your metrics by load balancer ID or listener port, you must create a custom dashboard.
 
-   ![{{site.data.keyword.mon_full_notm}} dashboard](images/metrics_3.png "{{site.data.keyword.mon_full_notm}} dashboard")
+   ![{{site.data.keyword.mon_full_notm}} dashboard](images/metrics_3.png "{{site.data.keyword.mon_full_notm}} dashboard")){: caption="{{site.data.keyword.mon_full_notm}} dashboard" caption-side="bottom"}
 
    You can choose what time window that you'd like to see your metrics by using the time selection bar. You can also zoom in and out for more granularity and drag the mouse to create a selection of a specific time window.
    {: tip}
@@ -219,7 +210,7 @@ To customize your dashboard, follow these steps:
 
 3. On the left sidebar, select **Dashboards**. Then, click the green **+** sign in the pane.
 
-   ![Add dashboard](images/metrics_custom_db.png "Add dashboard")
+   ![Add dashboard](images/metrics_custom_db.png "Add dashboard"){: caption="Add dashboard" caption-side="bottom"}
 
 4. Select **Blank dashboard**, then select the type of visual representation you want.
 
@@ -260,7 +251,7 @@ To collect this information and start working with your {{site.data.keyword.mon_
 
 1. Access the [Monitoring home page](https://cloud.ibm.com/observe/monitoring), and click **View {{site.data.keyword.mon_full_notm}}** next to the instance you want to work with. After the {{site.data.keyword.mon_full_notm}} dashboard shows, select your Account Profile icon on the left sidebar, then select **Settings**. Your account settings display.
 
-   ![Settings](images/metrics_settings.png "Settings")
+   ![Settings](images/metrics_settings.png "Settings"){: caption="Settings" caption-side="bottom"}
 
 2. Your API token is an alphanumeric string that is located in the **{{site.data.keyword.mon_full_notm}} Monitor API Token** field. Click the **Copy** button to the right of the key to transfer it to your clipboard.
 

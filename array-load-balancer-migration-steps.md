@@ -10,17 +10,10 @@ subcollection: local-load-balancer
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Migrating a Local Load Balancer to an IBM Cloud Load Balancer
+{: #migrating-llb-to-cloud}
 
 You can migrate your Local Load Balancer to an IBM© Cloud Load Balancer by completing these steps.
 {: shortdesc}
@@ -36,7 +29,7 @@ IBM Cloud Load Balancer offers a more enhanced customer experience, including:
 ## Step 1: Order a Cloud Load Balancer
 {: #step-1-order-a-cloud-load-balancer}
 
-To order an IBM Cloud Load Balancer service, select **IBM Cloud Load Balancer** from the [IBM Cloud catalog  ![External link icon](../../icons/launch-glyph.svg "External link icon")]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){: new_window}. Click **Create**, then complete these steps:
+To order an IBM Cloud Load Balancer service, select **IBM Cloud Load Balancer** from the [IBM Cloud catalog]( https://cloud.ibm.com/catalog/infrastructure/load-balancer-group){: external}. Click **Create**, then complete these steps:
 
 1. Define your basic service options, such as the name and description.
 2. Select your data center.
@@ -47,7 +40,7 @@ To order an IBM Cloud Load Balancer service, select **IBM Cloud Load Balancer** 
    {: note}
 
 5. Create front-end and back-end application protocols and ports with the same configuration as the service groups you are currently using in your Local load Balancer. For more information on this configuration, refer to [Configuring load-balancing options and placing your order](/docs/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order).
-6. To enable SSL offload, set the front-end protocols to HTTPS, and the back-end protocols to HTTP. Then, select the same SSL Certificate as your Local Load Balancer from the Certificate drop-down menu. The Certificate that you use with your Local Load Balancer is in the drop-down list because all existing SSL certificates are managed through the [IBM Cloud Certificate Store  ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/security/sslcerts){: new_window}.
+6. To enable SSL offload, set the front-end protocols to HTTPS, and the back-end protocols to HTTP. Then, select the same SSL Certificate as your Local Load Balancer from the Certificate drop-down menu. The Certificate that you use with your Local Load Balancer is in the drop-down list because all existing SSL certificates are managed through the [IBM Cloud Certificate Store](https://cloud.ibm.com/classic/security/sslcerts){: external}.
 7. Adjust your health check options if wanted; otherwise, use the default settings. For more information on health check options, refer to [Configuring load-balancing options and placing your order](/docs/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order#step-2-configuring-health-checks).
 8. Click **Attach Server** to add any server instances you used for your Local Load Balancer service.
 9. Review the page, confirm the Service Agreement, then click **Create**.

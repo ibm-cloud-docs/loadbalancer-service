@@ -10,22 +10,7 @@ subcollection: loadbalancer-service
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:table: .aria-labeledby="caption"}
-{:generic: data-hd-programlang="generic"}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Selecting Point of Delivery (PoD) based locations using the CLI and API
 {: #selecting-pod}
@@ -42,6 +27,7 @@ To prevent this issue, you can order a "Premium VLAN" in advance, then specify i
 A better option is to use the CLI and API.
 
 ## Using the CLI and API to specify PoD
+{: #pod-cli-api}
 
 You can use the CLI and API to specify PoD using the following option:
 
