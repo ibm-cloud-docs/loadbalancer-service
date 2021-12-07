@@ -25,6 +25,7 @@ toc:
        - link:
           label: What is load balancing?
           href: https://www.ibm.com/cloud/learn/load-balancing
+       - whats-new-lbaaa.md
 
     - navgroup:
        id: tutorial
@@ -84,7 +85,6 @@ toc:
     - navgroup:
        id: help
        topics:
-       - whats-new-lbaaa.md
        - known-limitations.md
        - faqs.md
        - topicgroup:
