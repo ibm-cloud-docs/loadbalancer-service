@@ -26,6 +26,7 @@ Currently, the following data centers are part of MZR:
 | ---------|--------------|
 | us-south | dal10, dal12, dal13 |
 | us-east | wdc04, wdc06, wdc07 |
+| br-sao | sao01, sao04, sao05 |
 | eu-gb | lon04, lon05, lon06 |
 | eu-de | fra02, fra04, fra05 |
 | jp-tok | tok02, tok04, tok05 |
