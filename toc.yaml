@@ -1,6 +1,7 @@
 toc:
   properties:
     subcollection: loadbalancer-service
+    service-name: is.load-balancer
     version: 2
     category: network_vpc
     audience: service
