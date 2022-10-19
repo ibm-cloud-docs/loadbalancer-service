@@ -251,8 +251,8 @@ if __name__ == "__main__":
     table = PrettyTable(['ID','UUID','Name', 'Description',
                          'Address', 'Type', 'Location', 'Status'])
 
-    # To find all lbaas in Mexico
-    datacenter = "mex01"
+    # To find all lbaas in Sao Paolo
+    datacenter = "sao01"
 
     lbaas = LBaasExample()
     # remove dc=datacenter to retrieve all the load balancers in the account
