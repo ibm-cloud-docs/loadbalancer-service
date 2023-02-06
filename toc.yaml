@@ -34,8 +34,7 @@ toc:
        - topicgroup:
           label: Tutorial
           topics:
-          - /solution-tutorials/solution-tutorials-web-app-private-network
-          - /solution-tutorials/solution-tutorials-highly-available-and-scalable-web-application
+          - include: ../cloud-docs-solutions/solution-tutorials/web-app-private-network.md
 
     - navgroup:
        id: howto
