@@ -29,6 +29,9 @@ You can enable or disable this feature by:
 ## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
+Data logging integration is currently being upgraded, and you will not be able to see your logs until this process completes. Please open a [support case](/docs/loadbalancer-service?topic=loadbalancer-service-getting-help-and-support-for-ibm-cloud-load-balancer) for more information on this issue.
+{: important}
+
 Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){: external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information.
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
@@ -48,10 +51,10 @@ To create a Log Analysis instance, follow these steps:
    | Region | Data center |
    | ------ | ----------- |
    | Sydney | SYD01, SYD05, SYD04 |
-   | Tokyo | CHE01, HKG02, SNG01, TOK02, TOK04, TOK05, SEO01, OSA02 |
-   | Frankfurt | AMS01, AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
+   | Tokyo | CHE01, SNG01, TOK02, TOK04, TOK05, OSA02 |
+   | Frankfurt | AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
    | London | LON01, LON02, LON04, LON05, LON06 |
-   | Dallas | DAL00, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, MEX01, SJC01, SJC03, SJC04, SAO01 |
+   | Dallas | DAL00, DAL02, DAL05, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, SJC01, SJC03, SJC04, SAO01 |
    | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
    {: caption="Table 1. Mapping between region and datacenter" caption-side="bottom"}
 
