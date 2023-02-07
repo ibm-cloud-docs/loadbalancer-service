@@ -32,9 +32,9 @@ toc:
        id: tutorial
        topics:
        - topicgroup:
-          label: Tutorial
+          label: Classic infrastructure
           topics:
-          - include: ../cloud-docs-solutions/solution-tutorials/web-app-private-network.md
+          - include: ../solution-tutorials/web-app-private-network.md
 
     - navgroup:
        id: howto
