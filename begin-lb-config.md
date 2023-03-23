@@ -18,13 +18,9 @@ subcollection: loadbalancer-service
 To begin creating your new {{site.data.keyword.loadbalancer_full}}, select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
 {: shortdesc}
 
-![CLB select service](images/CLB_Select_Service_PUP.png "CLB select service"){: caption="CLB select service" caption-side="bottom"}
-
 When the configuration page appears, follow these steps:
 
 1. Enter the name for the load balancer instance. The fully qualified domain name (FQDN) of the load balancer is based on this name.
-
-	![CLB Basic Options](images/CLB_Basic_Parameters_PUP.png "CLB Basic Options")
 
 2. Enter a description for the load balancer (optional).
 

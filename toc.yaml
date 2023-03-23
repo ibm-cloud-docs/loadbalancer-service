@@ -20,7 +20,6 @@ toc:
        - about.md
        - basic-load-balancing.md
        - explore-load-balancers.md
-       - pricing.md
        - naas-overview.md
        - external-resources.md
        - link:
@@ -35,7 +34,7 @@ toc:
           label: Classic infrastructure
           topics:
           - include: ../solution-tutorials/web-app-private-network.md
-
+          
     - navgroup:
        id: howto
        topics:

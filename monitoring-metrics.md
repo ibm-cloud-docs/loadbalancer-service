@@ -146,8 +146,6 @@ To do so, follow these steps:
    If you do not have an existing load balancer, see [Using an elastic IBM Cloud Load Balancer for server load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-creating-and-using-an-ibm-cloud-load-balancer-for-elastic-server-load-balancing) to provision one.
    {: tip}
 
-   ![Region](images/metrics_1.png "Region"){: caption="Region" caption-side="bottom"}
-
    The region must match the location of your existing load balancer.
    {: important}
 
@@ -161,8 +159,6 @@ To do so, follow these steps:
    {: important}
 
 5. Optionally, select a resource group. A resource group is a way to organize account resources in customizable groupings. Any account resource that is managed by using IBM Cloud Identity and Access Management (IAM) access control belongs to a resource group within your account.
-
-   ![Resource group](images/metrics_2.png "Resource group"){: caption="Resource group" caption-side="bottom"}
 
    If you do not have any pre-configured resource groups, or no reason to share this resource selectively, use the default selection.
    {: note}
@@ -192,8 +188,6 @@ To view and work with your {{site.data.keyword.mon_full_notm}} metrics, follow t
 
 4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify options and segment your metrics by load balancer ID or listener port, you must create a custom dashboard.
 
-   ![{{site.data.keyword.mon_full_notm}} dashboard](images/metrics_3.png "{{site.data.keyword.mon_full_notm}} dashboard")){: caption="{{site.data.keyword.mon_full_notm}} dashboard" caption-side="bottom"}
-
    You can choose what time window that you'd like to see your metrics by using the time selection bar. You can also zoom in and out for more granularity and drag the mouse to create a selection of a specific time window.
    {: tip}
 
@@ -209,8 +203,6 @@ To customize your dashboard, follow these steps:
 2. Click **View {{site.data.keyword.mon_full_notm}}** next to the service name of the {{site.data.keyword.mon_full_notm}} instance you want to work with. The dashboard opens.
 
 3. On the left sidebar, select **Dashboards**. Then, click the green **+** sign in the pane.
-
-   ![Add dashboard](images/metrics_custom_db.png "Add dashboard"){: caption="Add dashboard" caption-side="bottom"}
 
 4. Select **Blank dashboard**, then select the type of visual representation you want.
 
@@ -250,8 +242,6 @@ After you create your I{{site.data.keyword.mon_full_notm}} instance, you must co
 To collect this information and start working with your {{site.data.keyword.mon_full_notm}} instance using the metric query API, follow these steps:
 
 1. Access the [Monitoring home page](https://cloud.ibm.com/observe/monitoring), and click **View {{site.data.keyword.mon_full_notm}}** next to the instance you want to work with. After the {{site.data.keyword.mon_full_notm}} dashboard shows, select your Account Profile icon on the left sidebar, then select **Settings**. Your account settings display.
-
-   ![Settings](images/metrics_settings.png "Settings"){: caption="Settings" caption-side="bottom"}
 
 2. Your API token is an alphanumeric string that is located in the **{{site.data.keyword.mon_full_notm}} Monitor API Token** field. Click the **Copy** button to the right of the key to transfer it to your clipboard.
 

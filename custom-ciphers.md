@@ -29,8 +29,6 @@ To choose a preferred cipher suite for an existing load balancer:
 
 2. Click **Edit** to enable editing, and select (or clear) the required ciphers.
 
-	![Edit CLB ciphers](images/CLB_ciphers_edit_PUP.png "Edit CLB ciphers")
-
 3. When you're done, click **Save** to save your changes.
 
 	If you defined an HTTPS protocol when you create your load balancer, it has all ciphers in the suite enabled. The selection of a particular set of ciphers can be done only after the load balancer is provisioned.

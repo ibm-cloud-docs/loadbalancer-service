@@ -42,6 +42,4 @@ To view error messages for your load balancer, follow these steps:
 1. Click the load balancer from the list page to view its details.
 2. Mouseover the error symbol next to the load balancer's status.
 
-![View errors](images/CLB_view_error_PUP.png "View errors"){: caption="View errors" caption-side="bottom"}
-
 If the load balancer is in an `ERROR` state, it cannot be recovered and must be deleted.

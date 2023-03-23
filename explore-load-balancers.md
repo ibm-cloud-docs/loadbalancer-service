@@ -21,7 +21,7 @@ IBM Cloud offers several load balancing solutions to choose from. The following 
 
 |        | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started)|  [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Standard)| [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Platinum) |
 |------- | :------: | :------: | :------: |
-|**Public VIP**|![Checkmark icon](../../icons/checkmark-icon.svg "Checkmark")|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**Public VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Private VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Layer 4 load balancer**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Layer 7 load balancer**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
@@ -32,7 +32,6 @@ IBM Cloud offers several load balancing solutions to choose from. The following 
 |**High Availability**|Built-in|Optional|Optional |
 |**Advance LB (TCP Optimization, Compress, Caching, WAF)**| |Limited|![Checkmark icon](../../icons/checkmark-icon.svg)|
 |**Global LB**| | |![Checkmark icon](../../icons/checkmark-icon.svg) |
-|**Pricing**|Usage-based|Monthly Flat|Monthly Flat |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="A comparison of IBM's load balancer offerings" caption-side="top"}

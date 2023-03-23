@@ -18,8 +18,6 @@ subcollection: loadbalancer-service
 Configure your load balancer and finalize your order.
 {: shortdesc}
 
-![CLB load-balancing options](images/CLB_LoadBalancing_Parameters_PUP.png "CLB Load-Balancing Options"){: caption="CLB Load-Balancing Options" caption-side="bottom"}
-
 ## Step 1 - Adding protocols
 {: #add-protocols}
 
@@ -41,8 +39,6 @@ Add the protocols for your load balancer:
 6. If you chose HTTPS for your front-end protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list.
 
 	The {{site.data.keyword.loadbalancer_full}} [terminates incoming HTTPS](/docs/loadbalancer-service?topic=loadbalancer-service-ssl-offload-with-ibm-cloud-load-balancer) connections and can communicate in plain text HTTP with the back-end application servers when HTTP is selected as the backend protocol. This offloads processor intensive SSL tasks from your servers to the load balancer. You can also choose to have HTTPS as the backend protocol when the backend application servers are configured to receive HTTPS traffic. In this case, traffic is encrypted between the load balancer and the backend servers.
-
-	![CLB Cert](images/CLB_HTTPS_Cert_PUP.png "CLB Cert"){: caption="CLB Cert" caption-side="bottom"}
 
 	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/classic/security/sslcerts) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
 	{: note}
@@ -71,8 +67,6 @@ These server instances must be local to the data center where you deploy the loa
 
 If the load balancer type is Public to Public, the server instances are added with their Public IP, as shown in the following image.
 
-![CLB Back-end Member](images/CLB_p2p_backend_member_PUP.png "CLB Back-end Member"){: caption="CLB Back-end Member" caption-side="bottom"}
-
 Server **weights** are relevant only when using the **Weighted Round Robin** load-balancing method. The default weight is 50 and the range is 0-100. The weights are disabled with other load-balancing methods.
 {: note}
 
@@ -91,8 +85,6 @@ Finally, to place your order:
 3. Click **Create**.
 
 	The system creates your load balancer and takes you to the Load Balancers summary page. Refresh your browser window to see the entry for your new load balancer and its state change from offline to online, which usually takes a few minutes. Offline load balancers are disabled, while online load balancers can be clicked to manage and monitor them, as shown in the following image.
-
-	![CLB creation pending](images/CLB_create_pending_PUP.png "CLB creation pending"){: caption="CLB creation pending" caption-side="bottom"}
 
 ## What's next
 {: #what-s-next-3}

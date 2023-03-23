@@ -113,8 +113,6 @@ Monitoring metrics
     * Connection rate
     * Active connections
 
-:    ![Monitoring Metrics](./images/Metrics.png){: caption="Monitoring metrics" caption-side="bottom"}
-
 :    Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
 
 Cipher suite customization

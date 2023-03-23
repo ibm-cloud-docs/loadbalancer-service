@@ -22,9 +22,6 @@ Layer 7 rules define a portion of the incoming traffic that is to be matched wit
 * If multiple rules are associated with a policy, then each rule is evaluated to be `true` or `false`.
 * If all the rules that are associated to a policy evaluate to `true`, then the policy action is applied to the request. Otherwise, the load balancer evaluates the next policy.
 
-   ![Layer 7 Add Rules](images/Layer7-AddRules.png "Layer 7 Add Rules"){: caption="Layer 7 Add Rules" caption-side="bottom"}
-
-
 Rules have types, which indicate the portion of the Layer 7 traffic to be matched with the rule.
 
 Type      |  Field to be extracted and evaluated
@@ -35,8 +32,6 @@ HEADER    | A field in the HTTP header
 COOKIE    | A named cookie in the HTTP header
 PATH      | The part of the URL that follows the hostname (for example, `/index.html`)
 {: caption="Rule types" caption-side="bottom"}
-
-![Layer 7 Rules](images/Layer7-Rules.png "Layer 7 Rules"){: caption="Layer 7 Rules" caption-side="bottom"}
 
 Rules also have a comparison type, which indicates how they are to be evaluated. Rules can have following comparison types:
 
