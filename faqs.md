@@ -206,3 +206,9 @@ The IBM Cloud Load Balancer service supports monitoring with {{site.data.keyword
 {: faq}
 
 To file an IBM Support ticket, provide the product name ("{{site.data.keyword.loadbalancer_full}}"), the UUID of your load balancer (if possible) and your IBM Cloud account number. The UUID can be found in the URL after navigating to the overview page of the given load balancer.
+
+## Where can I find pricing information for IBM Cloud Load Balancer?
+{: #faqs-pricing}
+{: faq}
+
+You can estimate the cost of a service using the cost estimator on the provisioning pages for IBM Cloud Load Balancer. Select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.

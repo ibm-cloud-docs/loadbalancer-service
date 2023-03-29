@@ -18,6 +18,7 @@ toc:
        topics:
        - getting-started.md
        - about.md
+       - pricing.md
        - basic-load-balancing.md
        - explore-load-balancers.md
        - naas-overview.md
