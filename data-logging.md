@@ -43,20 +43,7 @@ To create a Log Analysis instance, follow these steps:
    For a load balancer in SYD01, you would choose the region of Sydney.
    {: tip}
 
-   The following table shows the mapping between regions and data center:
-
-   | Region | Data center |
-   | ------ | ----------- |
-   | Sydney | SYD01, SYD05, SYD04 |
-   | Tokyo | CHE01, HKG02, SNG01, TOK02, TOK04, TOK05, SEO01, OSA02 |
-   | Frankfurt | AMS01, AMS03, FRA02, FRA04, FRA05, MIL01, PAR01 |
-   | London | LON01, LON02, LON04, LON05, LON06 |
-   | Dallas | DAL00, DAL02, DAL05, DAL06, DAL07, DAL08, DAL09, DAL10, DAL12, DAL13, HOU01, MEX01, SJC01, SJC03, SJC04, SAO01 |
-   | Washington DC | MON01, TOR01, WDC01, WDC04, WDC06, WDC07 |
-   {: caption="Table 1. Mapping between region and datacenter" caption-side="bottom"}
-
-   Load balancers whose logging was enabled before 22 April 2020, had their logs sent to **Dallas** by default. For these load balancers, you can now set the region based on the data center where the load balancer was provisioned. To do so, create a logging instance, then disable and re-enable the logging toggle for your load balancer.
-   {: note}
+   For information on the mapping between regions and data center, refer to [IBM Cloud global data centers](https://www.ibm.com/cloud/data-centers){: external}.
 
 After you choose your region, click **Create** to create the logging instance, then configure it by clicking **Configure the platform service logs**.
 
