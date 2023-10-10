@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2020
-lastupdated: "2020-04-05"
+  years: 2017, 2023
+lastupdated: "2023-06-22"
 
 keywords: mzr, data centers
 
@@ -24,15 +24,16 @@ Currently, the following data centers are part of MZR:
 
 | MZR Name | Data Centers |
 | ---------|--------------|
-| us-south | dal10, dal12, dal13 |
-| us-east | wdc04, wdc06, wdc07 |
-| br-sao | sao01, sao04, sao05 |
-| eu-gb | lon04, lon05, lon06 |
-| eu-de | fra02, fra04, fra05 |
-| jp-tok | tok02, tok04, tok05 |
-| jp-osa | osa21, osa22, osa23 |
 | au-syd | syd01, syd04, syd05 |
+| br-sao | sao01, sao04, sao05 |
 | ca-tor | tor01, tor04, tor05 |
+| eu-de | fra02, fra04, fra05 |
+| eu-es | mad02, mad04, mad05 |
+| eu-gb | lon04, lon05, lon06 |
+| jp-osa | osa21, osa22, osa23 |
+| jp-tok | tok02, tok04, tok05 |
+| us-east | wdc04, wdc06, wdc07 |
+| us-south | dal10, dal12, dal13 |
 {: caption="MZR data centers" caption-side="bottom"}
 
 ## MZR requirements
