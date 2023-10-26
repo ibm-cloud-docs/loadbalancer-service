@@ -211,4 +211,4 @@ To file an IBM Support ticket, provide the product name ("{{site.data.keyword.lo
 {: #faqs-pricing}
 {: faq}
 
-You can estimate the cost of a service using the cost estimator on the provisioning pages for IBM Cloud Load Balancer. Select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
+Pricing metrics for IBM Cloud Load Balancer are detailed in [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-lb-pricing-metrics). You can estimate the cost of a service using the cost estimator on the provisioning pages for IBM Cloud Load Balancer. Select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.

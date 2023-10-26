@@ -45,3 +45,20 @@ The {{site.data.keyword.loadbalancer_full}} service offers the following feature
    * HTTP/HTTPS traffic is routed to different back-end services based on the HTTP header, and is done by using policies and rules. Rules are used to classify the traffic and are based on the HTTP header fields. When the traffic matches all the rules, an action that is specified by the policy is taken.
 * Multi-Zone Region (MZR) support: Load balancer nodes are instantiated in different data centers of an MZR. For more information, see [Multi-Zone Region overview](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview).
 * Data Logs: With data logs enabled, load balancer logs are forwarded to the [IBM Log Analysis](https://cloud.ibm.com/catalog/services/ibm-log-analysis-with-logdna){: external} where customers can view their data logs.
+
+## Pricing metrics
+{: #lb-pricing-metrics}
+
+IBM Cloud Load Balancer determines its pricing based on the following metrics.
+
+*Instance hour per month:* Measures the number of hours CLB is used per calendar month.  
+
+*Data Processed:* Measures how much data, in gigabytes (GB), that is processed per calendar month.  
+
+*Bandwidth Usage:* Measures the amount of bandwidth, in gigabytes (GB), used per calendar month. 
+
+This pricing metric has multiple pricing tiers that differ based upon the amount of data used.  
+{: note}
+
+You can estimate the cost of a service using the cost estimator on the provisioning pages for IBM Cloud Load Balancer. Select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
+{: tip}
