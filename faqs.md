@@ -212,3 +212,9 @@ To file an IBM Support ticket, provide the product name ("{{site.data.keyword.lo
 {: faq}
 
 Pricing metrics for IBM Cloud Load Balancer are detailed in [this topic](/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer#lb-pricing-metrics). You can estimate the cost of a service using the cost estimator on the provisioning pages for IBM Cloud Load Balancer. Select **{{site.data.keyword.loadbalancer_full}}** from the Load Balancer page of the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/load-balancer-group), then click **Create**.
+
+## Can I use my Classic Bandwidth Pool to cover bandwidth costs for my IBM Cloud Load Balancer?
+{: #faqs-clb-costs}
+{: faq}
+
+No. Currently, IBM Cloud Load Balancer is not eligible to participate in Classic Bandwidth Pools.
