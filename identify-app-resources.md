@@ -25,7 +25,7 @@ Add the protocols for your load balancer:
 
 1. On the load balancer configuration page, identify the [protocols and ports](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics#front-end-and-back-end-application-ports-protocols) your application is listening on, and then input the details into your new application profile. You can use the same configuration for both front-end and back-end, or expose a different front-end port (for security purposes, for instance).
 
-2. The default [load-balancing method](/docs/loadbalancer-service?topic=loadbalancer-service-load-balancing-methods) is **Round Robin**. You can change it to either **Weighted Round Robin** or **Least Connections** from the list, depending on your application needs.
+2. The default is **Round Robin**. You can change it to either **Weighted Round Robin** or **Least Connections** from the list, depending on your application needs.
 
 3. Optionally, you can enable **Session stickiness**, which sends all requests from a user (for example, one with the same source IP) to the same back-end server for a system defined "sticky" time. For more information on session stickiness, see [Session persistence](/docs/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer#session-persist)
 
@@ -70,7 +70,7 @@ If the load balancer type is Public to Public, the server instances are added wi
 Server **weights** are relevant only when using the **Weighted Round Robin** load-balancing method. The default weight is 50 and the range is 0-100. The weights are disabled with other load-balancing methods.
 {: note}
 
-Refer to [Limitations on number of application servers](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#what-s-the-maximum-number-of-compute-instances-i-can-associate-with-my-load-balancer-) for more information on the maximum limit for the number of application servers.
+Refer to [Limitations on number of application servers](/docs/loadbalancer-service?topic=loadbalancer-service-known-issues-and-limitations-with-ibm-cloud-load-balancer) for more information on the maximum limit for the number of application servers.
 {: tip}
 
 ## Step 4 - Placing your order

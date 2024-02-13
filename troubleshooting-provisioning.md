@@ -30,7 +30,7 @@ This topic rovides information on common issues that you might encounter when cr
 {: troubleshoot}
 {: support}
 
-For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#ibm-cloud-ip-ranges).
+For more information, see [IBM Cloud IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}

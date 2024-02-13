@@ -29,7 +29,7 @@ You can enable or disable this feature by:
 ## Viewing logs in the IBM Cloud logging analysis service
 {: #viewing-logs-in-the-ibm-cloud-logging-analysis-service}
 
-Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){: external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started) for more information.
+Log in to the [IBM Log Analysis](https://cloud.ibm.com/observe/logging){: external} with your IBM Cloud account. Logs can be viewed from the Log Analysis instance. Refer to [Getting started with IBM Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) for more information.
 
 Data logs are only sent if your Softlayer and IBM Cloud accounts are linked.
 {: note}
