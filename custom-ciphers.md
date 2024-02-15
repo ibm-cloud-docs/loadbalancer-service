@@ -17,7 +17,7 @@ subcollection: loadbalancer-service
 {: help}
 {: support}
 
-Cipher algorithms help the {{site.data.keyword.loadbalancer_full}} form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from so that you secure the communication between your load balancer and your clients.
+Cipher algorithms help the {{site.data.keyword.loadbalancer_full}} form secure connections with its HTTP clients. IBM offers a suite of approved ciphers for you to choose from so that you can secure the communication between your load balancer and your clients.
 {: shortdesc}
 
 To choose a preferred cipher suite for an existing load balancer:

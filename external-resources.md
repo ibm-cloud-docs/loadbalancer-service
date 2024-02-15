@@ -16,6 +16,6 @@ subcollection: loadbalancer-service
 # Other resources for IBM Cloud Load Balancer
 {: #other-resources-for-ibm-cloud-load-balancer}
 
-These resources are created by IBM and some of our partners and customers.
+IBM and some of its partners and customers created the following resources:
 
 * Education - [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/topics/load-balancing)

@@ -12,7 +12,7 @@ subcollection: loadbalancer-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Selecting Point of Delivery (PoD) based locations using the CLI and API
+# Selecting Point of Delivery (PoD) based locations by using the CLI and API
 {: #selecting-pod}
 
 Each physical data center location in {{site.data.keyword.cloud}} is divided into multiple, discrete networking LANs, otherwise known as PoDs. Each of these has its own separate network infrastructure, a limited number of VLANs, as well as public and private IP subnets. These VLANs and subnets are shared by all clients that have compute capacity that is provisioned within that PoD space.
@@ -22,7 +22,7 @@ Currently, you can use the UI to select the deploying data center location at th
 
 Because you cannot specify PoD locations, and there is no VLAN or subnets, your provisioning can be distributed over multiple PoDs, which can be problematic. 
 
-To prevent this issue, you can order a "Premium VLAN" in advance, then specify it as your network VLAN; however, this option incurs an additional cost. 
+To prevent this issue, you can order a "Premium VLAN" in advance, then specify it as your network VLAN; however, this option incurs an extra cost. 
 
 A better option is to use the CLI and API.
 

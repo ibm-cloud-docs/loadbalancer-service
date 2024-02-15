@@ -12,7 +12,7 @@ subcollection: loadbalancer-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Monitoring metrics using IBM Cloud Monitoring
+# Monitoring metrics by using IBM Cloud Monitoring
 {: #monitoring-metrics}
 
 Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.mon_full_notm}}, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [{{site.data.keyword.mon_full_notm}}](https://www.ibm.com/products/cloud-monitoring).
@@ -29,7 +29,7 @@ The supported monitoring metrics include:
 * Throughput of data passing through your load balancer over a given time.
 * Connection rate, or an analysis of when more or less connections are made to your load balancer.
 
-These metrics help track the traffic and usage patterns for your load balancers and can provide insight about peak traffic hours, usage dropoffs, and overall usage patterns.
+These metrics help track the traffic and usage patterns for your load balancers and can provide insight about peak traffic hours, usage dropouts, and overall usage patterns.
 
 Each metric is composed of the following metadata types:
 
@@ -57,7 +57,7 @@ The active connection metric contains the following metadata:
 ### Connection rate
 {: #ibm_cloud_load_balancer_connection_rate}
 
-Connection rate is number of new incoming active connections per second to your load balancer.
+Connection rate is the number of new incoming active connections per second to your load balancer.
 
 | Metadata | Description |
 |----------|-------------|
@@ -70,7 +70,7 @@ Connection rate is number of new incoming active connections per second to your 
 ### Throughput
 {: #ibm_cloud_load_balancer_throughput}
 
-Throughput is the amount of data that passes in and out of a load balancer over a period of time.
+Throughput is the amount of data that passes in and out of a load balancer over a period.
 
 | Metadata | Description |
 |----------|-------------|
@@ -99,7 +99,7 @@ The following attributes are available for segmenting all three of the {{site.da
 | `Service name` | `ibm_service_name` | ibm-cloud-load-balancer |
 {: caption="Table 4: {{site.data.keyword.mon_full_notm}} global attributes" caption-side="bottom"}
 
-### Additional attributes
+### Extra attributes
 {: #additional-attributes}
 
 The following attributes are available to segment one or more of the global attributes. See the individual metrics for any segmentation options.
@@ -153,20 +153,20 @@ To do so, follow these steps:
 
    Pricing plan details are explained in the selection window. Select the plan that best meets your requirements.
 
-4. Provide a service name for your instance. It can be any name that you want, and has no impact on functionality.
+4. Provide a service name for your instance. It can be any name that you want, and has no impact on functions.
 
    Do not create multiple {{site.data.keyword.mon_full_notm}} instances with the same name.
    {: important}
 
 5. Optionally, select a resource group. A resource group is a way to organize account resources in customizable groupings. Any account resource that is managed by using IBM Cloud Identity and Access Management (IAM) access control belongs to a resource group within your account.
 
-   If you do not have any pre-configured resource groups, or no reason to share this resource selectively, use the default selection.
+   If you do not have any pre-configured resource groups, or have no reason to share this resource selectively, use the default selection.
    {: note}
 
    If your account has multiple resource groups, you can choose which one has access to this {{site.data.keyword.mon_full_notm}} instance. This allows you to have metrics available to some resource groups and not to others.
    {: tip}
 
-6. Select the **Enable Platform Metrics** checkbox. You must select this to receive metrics from your load balancer.
+6. Select the **Enable Platform Metrics** checkbox. Select this to receive metrics from your load balancer.
 
 7. Click **Create**. You are taken back to the monitoring metrics home page.
 
@@ -188,7 +188,7 @@ To view and work with your {{site.data.keyword.mon_full_notm}} metrics, follow t
 
 4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify options and segment your metrics by load balancer ID or listener port, you must create a custom dashboard.
 
-   You can choose what time window that you'd like to see your metrics by using the time selection bar. You can also zoom in and out for more granularity and drag the mouse to create a selection of a specific time window.
+   You can choose what time window that you want to see your metrics by using the time selection bar. You can also zoom in and out for more granularity and drag the mouse to create a selection of a specific time window.
    {: tip}
 
 ## Creating a custom metrics dashboard
@@ -202,9 +202,9 @@ To customize your dashboard, follow these steps:
 
 2. Click **View {{site.data.keyword.mon_full_notm}}** next to the service name of the {{site.data.keyword.mon_full_notm}} instance you want to work with. The dashboard opens.
 
-3. On the left sidebar, select **Dashboards**. Then, click the green **+** sign in the pane.
+3. On the left sidebar, select **Dashboards**. Then, click the green **+** sign in the page.
 
-4. Select **Blank dashboard**, then select the type of visual representation you want.
+4. Select the **Blank dashboard**, then select the type of visual representation you want.
 
    {{site.data.keyword.mon_full_notm}} offers eight different visualizations for your dashboard. Read the description for each visualization, then choose the one that best meets your requirements.
 
@@ -239,7 +239,7 @@ After you create your I{{site.data.keyword.mon_full_notm}} instance, you must co
 * The {{site.data.keyword.mon_full_notm}} Monitor API token
 * The endpoint of your IBM Cloud Monitoring {{site.data.keyword.mon_full_notm}} instance
 
-To collect this information and start working with your {{site.data.keyword.mon_full_notm}} instance using the metric query API, follow these steps:
+To collect this information and start working with your {{site.data.keyword.mon_full_notm}} instance by using the metric query API, follow these steps:
 
 1. Access the [Monitoring home page](https://cloud.ibm.com/observe/monitoring), and click **View {{site.data.keyword.mon_full_notm}}** next to the instance you want to work with. After the {{site.data.keyword.mon_full_notm}} dashboard shows, select your Account Profile icon on the left sidebar, then select **Settings**. Your account settings display.
 

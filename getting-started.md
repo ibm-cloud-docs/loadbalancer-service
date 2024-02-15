@@ -18,12 +18,12 @@ subcollection: loadbalancer-service
 The {{site.data.keyword.loadbalancer_full}} service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. 
 {: shortdesc}
 
-To get started using {{site.data.keyword.loadbalancer_full}}, you require two main items: 
+To use {{site.data.keyword.loadbalancer_full}}, you require two main items: 
 
 * An account with IBM - [IBMid](https://www.ibm.com/account/us-en/signup/register.html){: external}
 * An IBM server, either [Bare Metal](/docs/bare-metal?topic=bare-metal-getting-started) or [Virtual Server Instance (VSI)](/docs/virtual-servers?topic=virtual-servers-getting-started-tutorial)
 
-If you need assistance in obtaining an **IBMid** account, contact your IBM Sales representative for additional guidance.
+If you need assistance in obtaining an **IBMid** account, contact your IBM Sales representative for extra guidance.
 
 ## Ordering a load balancer
 {: #ordering-a-load-balancer}

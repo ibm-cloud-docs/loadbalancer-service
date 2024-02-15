@@ -20,7 +20,7 @@ subcollection: loadbalancer-service
 The load balancer conducts periodic health checks to monitor the health of the back-end ports and forwards client traffic to them. If a given back-end server port is found unhealthy, then new connections are not forwarded to it. The load balancer continues to monitor the health of these unhealthy ports, and resumes their use if they are found healthy again by successfully passing two consecutive health check attempts.
 {: shortdesc}
 
-Health check definitions are mandatory for each of the back-end application ports. The port and protocol under health check configuration must match with the defined back-end port and protocol; otherwise, the configuration is rejected.
+Health check definitions are mandatory for each of the back-end application ports. The port and protocol under health check configuration must match with the defined back-end port and protocol. Otherwise, the configuration is rejected.
 
 The health checks against HTTP，HTTPS and TCP ports are conducted as follows:
 

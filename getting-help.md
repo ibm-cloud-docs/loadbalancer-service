@@ -15,7 +15,7 @@ subcollection: loadbalancer-service
 # Getting help and support
 {: #getting-help-and-support-for-ibm-cloud-load-balancer}
 
-If you have problems or questions when using the {{site.data.keyword.loadbalancer_full}} service, you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "lbaas" and "ibm-cloud".
+If you have problems or questions with the {{site.data.keyword.loadbalancer_full}} service, you can search for information or ask questions by using [Stack Overflow](https://stackoverflow.com/search?q=dl+ibm-cloud){: external}. Post your question then and tag it with "lbaas" and "ibm-cloud".
 {: shortdesc}
 
 For more information about opening an IBM Support case, or about support levels and case severities, see [Contacting support](/docs/get-support?topic=get-support-using-avatar#using-avatar).

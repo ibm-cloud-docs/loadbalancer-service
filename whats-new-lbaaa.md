@@ -25,10 +25,10 @@ Find out about new and updated features in {{site.data.keyword.loadbalancer_full
 {: release-note}
 
 Public subnet selection for public-to-private load balancers
-:    You can now choose a public subnet while creating a public-to-private load balancer if non-system pool is also selected. This is supported for creation of load balancers by using APIs only.
+:    You can now choose a public subnet while creating a public-to-private load balancer if nonsystem pool is also selected. This is supported for creation of load balancers by using APIs only.
 
 {{site.data.keyword.mon_full_notm}} monitoring metrics
-:    You can now access load balancer monitoring metrics (throughput, active connections, connection rate) through the use of [{{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
+:    You can now access load balancer monitoring metrics (throughput, active connections, connection rate) by using [{{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics#monitoring-metrics).
 
 ## 11 March 2020
 {: #loadbalancer-service-mar1120}
@@ -57,7 +57,7 @@ HTTP cookie session persistence
 {: release-note}
 
 Public-to-public load balancer
-:    {{site.data.keyword.loadbalancer_full}} now supports a new load balancer type that is called a public-to-public load balancer. With this type of load balancer, you can add back-end server instances using their public IPs, and traffic is forwarded to them through their public interface. This applies to both layer 4 and layer 7 back-end members.
+:    {{site.data.keyword.loadbalancer_full}} now supports a new load balancer type that is called a public-to-public load balancer. With this type of load balancer, you can add back-end server instances by using their public IPs, and traffic is forwarded to them through their public interface. This applies to both layer 4 and layer 7 back-end members.
 
 ## 21 April 2019
 {: #loadbalancer-service-apr2119}
@@ -72,7 +72,7 @@ Layer 7 support
 {: release-note}
 
 Data logs
-:    {{site.data.keyword.loadbalancer_full}} now supports data logs forwarding. With data logs enabled, your load balancer log data is forwarded to the IBM Cloud Log Analysis Service.
+:    {{site.data.keyword.loadbalancer_full}} now supports data log forwarding. With data logs enabled. Your load balancer log data is forwarded to the IBM Cloud Log Analysis Service.
 
 ## 11 December 2018
 {: #loadbalancer-service-dec1118}
@@ -110,11 +110,11 @@ Monitoring metrics
     * Connection rate
     * Active connections
 
-:    Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
+:    Up to two weeks of samples are collected and displayed by the load balancer web UI. The data can also be viewed on the IBM Cloud Monitoring service portal. If you require data for longer than two weeks, depending on the volume of other cloud metrics you might be sending to your Cloud Monitoring instance, you might need to upgrade your monitoring plan. For more information, see [Monitoring metrics by using {{site.data.keyword.mon_full_notm}}](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-metrics).
 
 Cipher suite customization
 :    You can now customize the cipher suites that are used when the load balancer is configured for SSL termination.
 
-:    When you enable SSL termination on {{site.data.keyword.loadbalancer_full}} (by selecting **HTTPS** as the front-end protocol), a carefully selected default set of cipher suites is enabled that conform to security best practices. IBM keeps a close watch on any new vulnerabilities that might be discovered, and updates the list . This, along with the seamless security updates of software and hardware components, helps to keep your applications secure at all times.
+:    When you enable SSL termination on {{site.data.keyword.loadbalancer_full}} (by selecting **HTTPS** as the front-end protocol), a carefully selected default set of cipher suites is enabled that conform to security best practices. IBM keeps a close watch on any new vulnerabilities that might be discovered, and updates the list. This, along with the seamless security updates of software and hardware components, helps to keep your applications secure always.
 
 :    For more information, see [Custom cipher suite](/docs/loadbalancer-service?topic=loadbalancer-service-choosing-a-preferred-cipher-suite-for-your-https-application).

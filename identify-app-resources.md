@@ -31,9 +31,9 @@ Add the protocols for your load balancer:
 
 4. You can also set the **Maximum connection limit** against your application. For more information, see [Max connections](/docs/loadbalancer-service?topic=loadbalancer-service-advanced-traffic-management-with-ibm-cloud-load-balancer#max-connections)
 
-5. Click **Add Protocol** to specify additional ports and protocols your application might be listening on. Be sure that all front-end ports are unique. You can choose HTTP, HTTPS, or TCP as your front-end protocol.
+5. Click **Add Protocol** to specify extra ports and protocols your application might be listening on. Be sure that all front-end ports are unique. You can choose HTTP, HTTPS, or TCP as your front-end protocol.
 
-	A maximum of two ports can be defined at the time of initial configuration. Additional ports can be added after creating the service instance. Refer to [Limitations on number of ports](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#max) for more information on the maximum number of ports allowed.
+	A maximum of two ports can be defined at the time of initial configuration. Extra ports can be added after creating the service instance. Refer to [Limitations on number of ports](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#max) for more information on the maximum number of ports allowed.
 	{: note}
 
 6. If you chose HTTPS for your front-end protocol, you must upload your SSL Certificate. Select one of your available certificates from the drop-down list.
@@ -43,7 +43,7 @@ Add the protocols for your load balancer:
 	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/classic/security/sslcerts) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
 	{: note}
 
-	Never delete any certificates associated with HTTPS listeners as this can cause issues with functionality.
+	Never delete any certificates associated with HTTPS listeners as this can cause issues.
 	{: important}
 
 ## Step 2 - Configuring health checks
@@ -55,15 +55,15 @@ The system pre-populates a default health check configuration for these back-end
 
 * **Interval**: Interval in seconds between two consecutive health check attempts
 * **Timeout**: Maximum amount of time the system waits for a response against a health check request
-* **Max Trials**: Maximum number of additional health check attempts the system makes before declaring a port unhealthy
+* **Max Trials**: Maximum number of extra health check attempts the system makes before declaring a port unhealthy
 * **Path**: The HTTP URL path for the health check
 
 ## Step 3 - Adding server instances
 {: #add-server-instances}
 
-Select your **server instance** from the dropdown in the table, and use the **Attach Server** button to add more servers. You can select from the IBM© Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
+Select your **server instance** from the dropdown in the table, and use **Attach Server** to add more servers. You can select from the IBM© Cloud Virtual Server Instances (VSIs) and Bare Metal Servers in your account.
 
-These server instances must be local to the data center where you deploy the load balancer service. Additionally, server instances from the neighboring data centers within the same city can also be added (for instance, if the first three letters of the data center name are the same).
+These server instances must be local to the data center where you deploy the load balancer service. Also, server instances from the neighboring data centers within the same city can also be added (for instance, if the first three letters of the data center name are the same).
 
 If the load balancer type is Public to Public, the server instances are added with their Public IP, as shown in the following image.
 

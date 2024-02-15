@@ -15,7 +15,7 @@ subcollection: loadbalancer-service
 # Common issues when creating a new load balancer
 {: #load-balancer-provisioning-troubleshooting}
 
-This topic rovides information on common issues that you might encounter when creating a new instance of {{site.data.keyword.loadbalancer_full}}.
+This topic provides information on common issues that you might encounter when creating a new instance of {{site.data.keyword.loadbalancer_full}}.
 {: shortdesc}
 
 ## Insufficient IP addresses in your subnet

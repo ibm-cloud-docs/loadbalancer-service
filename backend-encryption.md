@@ -22,5 +22,5 @@ Back-end encryption is supported to allow end-to-end data traffic encryption. No
 
 To enable back-end encryption:
 
-* If you are adding a new HTTPS protocol, set the front end and back end to **HTTPS**.
+* If you add a new HTTPS protocol, set the front end and back end to **HTTPS**.
 * For existing HTTPS protocols, set the back end to **HTTPS**.

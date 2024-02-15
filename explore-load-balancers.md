@@ -27,7 +27,7 @@ IBM Cloud offers several load balancing solutions to choose from. The following 
 |**Layer 7 load balancer**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Health Checks**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Horizontal Scaling**|![Checkmark icon](../../icons/checkmark-icon.svg)| | |
-|**SSL Offload**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
+|**SSL offload**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Management**|IBM console|Self-manage (Vendor GUI)|Self-manage (Vendor GUI) |
 |**High Availability**|Built-in|Optional|Optional |
 |**Advance LB (TCP Optimization, Compress, Caching, WAF)**| |Limited|![Checkmark icon](../../icons/checkmark-icon.svg)|

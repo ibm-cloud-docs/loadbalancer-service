@@ -29,7 +29,7 @@ When the configuration page appears, follow these steps:
 	For multi-zone availability, all requirements for [MZR](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
 	{: tip}
 
-4. Select the type of load balancer you want to create from the options **Public-to-Private** , **Private-to-Private**, or **Public-to-Public**. Refer to [{{site.data.keyword.loadbalancer_full}} basics](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
+4. Select the type of load balancer that you want to create from the options **Public-to-Private, **Private-to-Private**, or **Public-to-Public**. Refer to [{{site.data.keyword.loadbalancer_full}} basics](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
 
 5. Select the subnet where you want to deploy your new load balancer.
 
@@ -38,7 +38,7 @@ When the configuration page appears, follow these steps:
 
 6. Select the allocation of public IPs for the load balancer.
 
-	This option applies to only the **Public-to-Private** load balancer type. If you select the option **Allocate from a public subnet in this account**, you must ensure that you have at least two public IPs available in a public subnet in the same data center. Also, ensure that traffic to TCP management port 56501 and your application's own ports are not blocked by firewalls that is deployed on your public VLANs.
+	This option applies to only the **Public-to-Private** load balancer type. If you select **Allocate from a public subnet in this account**, you must have at least two public IPs available in a public subnet in the same data center. Also, ensure that traffic to TCP management port 56501 and your application's own ports are not blocked by firewalls that are deployed on your public VLANs.
 	{: note}
 
 ## What's next
