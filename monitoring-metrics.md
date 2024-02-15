@@ -15,7 +15,7 @@ subcollection: loadbalancer-service
 # Monitoring metrics using IBM Cloud Monitoring
 {: #monitoring-metrics}
 
-Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.mon_full_notm}}, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [{{site.data.keyword.mon_full_notm}}](https://www.ibm.com/cloud/sysdig).
+Support for the IBM Cloud Monitoring service ended 31 March 2020. {{site.data.keyword.loadbalancer_full}} monitoring is now provided with {{site.data.keyword.mon_full_notm}}, a third-party monitoring tool that specializes in data aggregation, usage alerts, and in-depth visualizations. For more information, see [{{site.data.keyword.mon_full_notm}}](https://www.ibm.com/products/cloud-monitoring).
 {: shortdesc}
 
 Load balancers calculate the metrics and send those metrics to your {{site.data.keyword.mon_full_notm}} instance, which reflects different types of use and traffic. You can visualize and analyze metrics from either the {{site.data.keyword.mon_full_notm}} dashboard, or its API.

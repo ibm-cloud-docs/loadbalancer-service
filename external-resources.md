@@ -18,5 +18,4 @@ subcollection: loadbalancer-service
 
 These resources are created by IBM and some of our partners and customers.
 
-* Blog - [Improved security and More: The latest for {{site.data.keyword.loadbalancer_full}}, by Jay Kidambi and Allan Hu](https://www.ibm.com/cloud/blog/updates-cloud-load-balancer?){: external}
-* Education - [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/cloud/learn/load-balancing)
+* Education - [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/topics/load-balancing)

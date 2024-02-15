@@ -6,7 +6,7 @@ lastupdated: "2019-11-14"
 
 keywords: migrate, update, local, cloud, faq, support, eom, auto scaling, vip, fqdn, service group, vsi, bare metal, migrating, disruption, scaling, protocol, TLS, version
 
-subcollection: local-load-balancer
+subcollection: loadbalancer-service
 
 ---
 
@@ -34,7 +34,7 @@ Yes, support is available for existing Local Load Balancer customers.
 {: #migfaq-get-started}
 {: faq}
 
-We recommend you get started by reading the [IBM Cloud Load Balancer documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started).
+It is recommended that you get started by reading the [IBM Cloud Load Balancer documentation](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started).
 
 ## Does a migration path exist from the Local Load Balancer service to an IBM Cloud Load Balancer?
 {: #migfaq-migration-path}
@@ -52,7 +52,7 @@ The Local Load Balancer is a hardware-based local load-balancing service, while 
 {: #migfaq-terminology}
 {: faq}
 
-In some cases, it does not. The following table compares key terms in Local Load Balancer with their corresponding and differing terms in Cloud Load Balancer.
+Sometimes, it does not. The following table compares key terms in Local Load Balancer with their corresponding and differing terms in Cloud Load Balancer.
 
 | Local Load Balancer Term  | Cloud Load Balancer Term |
 | ------------- | ------------- |
@@ -65,9 +65,9 @@ In some cases, it does not. The following table compares key terms in Local Load
 {: #migfaq-single-ip}
 {: faq}
 
-IPs for IBM Cloud Load Balancer are not fixed. The IBM Cloud Load Balancer assigns load balancer instances from a pool, which requires a fully qualified domain name (FQDN) at all times. As a result, the individual IP address of a Cloud Load Balancer might change.
+IPs for IBM Cloud Load Balancer are not fixed. The IBM Cloud Load Balancer assigns load balancer instances from a pool, which requires a fully qualified domain name (FQDN) always. As a result, the individual IP address of a Cloud Load Balancer might change.
 
-## Is IBM Cloud Load Balancer available for Public/Private VSI's and Bare metal solutions?
+## Is IBM Cloud Load Balancer available for Public or Private VSI's and Bare metal solutions?
 {: #migfaq-vsis}
 {: faq}
 
@@ -89,7 +89,7 @@ You won't experience downtime or traffic disruption as a result of the load bala
 
 No, Cloud Load Balancer and the Local Load Balancer are two separate offerings that work independently.
 
-## I used to choose a "connections per second" option with my Local Load Balancer. Do I also have to configure this with the Cloud Load Balancer?
+## I used to choose a "connections per second" option with my Local Load Balancer. Do I need to configure this with the Cloud Load Balancer?
 {: #migfaq-cps}
 
 No. IBM Cloud Load Balancer automatically adjusts its load capacity. You can read more about this in the topic [Cloud Load Balancer Horizontal Scaling](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics#horizontal-scaling).

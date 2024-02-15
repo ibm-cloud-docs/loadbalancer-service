@@ -46,4 +46,4 @@ MZRs have the following requirements:
 
 If the data center you select is not part of an MZR, or if VLAN spanning or VRF is not enabled in your account, the load balancer creation defaults to the original behavior of instantiating all load balancer nodes in the data center you specify.
 
-For a detailed overview and list of data centers that are part of the MZR, see [Multi Zone Region](/docs/overview?topic=overview-locations#mzr-table).
+For a detailed overview and list of data centers that are part of the MZR, see [Multi Zone Region](/docs/overview?topic=overview-locations).

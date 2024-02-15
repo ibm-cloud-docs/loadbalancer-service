@@ -18,26 +18,26 @@ subcollection: loadbalancer-service
 The SoftLayer application programming interface (API) is the development interface that gives developers and system administrators direct interaction with the SoftLayer back-end system.
 {: shortdesc}
 
-The SoftLayer API (SLAPI) powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. Because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
+The SoftLayer API powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. Because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
 
 The SLAPI is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
 
 For more information about the SoftLayer API, {{site.data.keyword.loadbalancer_full}} Service APIs, see the following resources in the SoftLayer Development Network:
-* [Getting Started with the SoftLayer API](https://softlayer.github.io/article/getting-started/){: external}
-* [SoftLayer_Product_Package API](https://softlayer.github.io/reference/services/SoftLayer_Product_Package/){: external}
+* [Getting Started with the SoftLayer API](https://sldn.softlayer.com/article/getting-started/){: external}
+* [SoftLayer_Product_Package API](https://sldn.softlayer.com/reference/services/SoftLayer_Product_Package/){: external}
 * [SoftLayer_Network_LBaaS_LoadBalancer API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
-* [SoftLayer_Network_LBaaS_Listener API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Listener/){: external}
-* [SoftLayer_Network_LBaaS_Member API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_Member/){: external}
-* [SoftLayer_Network_LBaaS_HealthMonitor API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: external}
-* [SoftLayer_Network_LBaaS_SSLCipher API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_SSLCipher/){: external}
-* [SoftLayer_Network_LBaaS_L7Policy API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Policy/){: external}
-* [SoftLayer_Network_LBaaS_L7Rule API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: external}
-* [SoftLayer_Network_LBaaS_L7Pool API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: external}
-* [SoftLayer_Network_LBaaS_L7Member API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_L7Member/){: external}
+* [SoftLayer_Network_LBaaS_Listener API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
+* [SoftLayer_Network_LBaaS_Member API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_Member/){: external}
+* [SoftLayer_Network_LBaaS_HealthMonitor API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: external}
+* [SoftLayer_Network_LBaaS_SSLCipher API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_SSLCipher/){: external}
+* [SoftLayer_Network_LBaaS_L7Policy API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Policy/){: external}
+* [SoftLayer_Network_LBaaS_L7Rule API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Rule/){: external}
+* [SoftLayer_Network_LBaaS_L7Pool API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Pool/){: external}
+* [SoftLayer_Network_LBaaS_L7Member API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_L7Member/){: external}
 
 The following examples are using [softlayer-python](https://github.com/softlayer/softlayer-python){: external} client.
 
-Set an api username and apikey as following for each example in case you don't have a `~/.softlayer` file that is configured in your environment.
+Set an api username and apikey as following for each example in case that you don't have a `~/.softlayer` file that is configured in your environment.
 
 ```py
 client = SoftLayer.Client(username='set me', api_key='set me')

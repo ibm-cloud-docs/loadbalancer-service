@@ -4,7 +4,7 @@ copyright:
   years: 2021
 lastupdated: "2021-05-19"
 
-subcollection:
+subcollection: loadbalancer-service
 
 ---
 
@@ -23,7 +23,7 @@ Looking for a managed Terraform on {{site.data.keyword.cloud}} solution? Try out
 {: #install-terraform}
 
 1. Follow the [Terraform on {{site.data.keyword.cloud}} getting started tutorial](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) to install the Terraform CLI and configure the {{site.data.keyword.cloud}} Provider plug-in for Terraform. The plug-in abstracts the {{site.data.keyword.cloud}} APIs that are used to provision, update, or delete IBM Cloud Load Balancer service instances and resources.
-2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a load balancer and to assign a user an access policy in Identity and Access Management (IAM) for that instance by using HashiCorp Configuration Language (HCL). For more information, see the [Terraform documentation](https://www.terraform.io/docs/language/index.html){: external}.
+2. Create a Terraform configuration file that is named `main.tf`. In this file, you add the configuration to create a load balancer and to assign a user an access policy in Identity and Access Management (IAM) for that instance by using HashiCorp Configuration Language (HCL). For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
    The load balancer instance in the following example is named `test_lb_local_service` and is enabled on port `80`. The ID of the local load balancer service group is `ibm_lb_service_group.test_service_group.service_group_id` and the weight for the load balancer service group is `1`. 
    

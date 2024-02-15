@@ -157,7 +157,7 @@ The available range of possible IPs for `public to public` load balancers cannot
 {: #faqs-terraform}
 {: faq}
 
-Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. For more information, see [Using Terraform with Cloud Load Balancer service](/docs/terraform?topic=terraform-infrastructure-resources#lbaas).
+Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. 
 
 ## Is it possible to add members with secondary IP addresses?
 {: #faqs-seconary-ip}
