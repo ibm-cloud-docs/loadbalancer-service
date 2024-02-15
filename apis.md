@@ -25,7 +25,7 @@ The SLAPI is a Remote Procedure Call system. Each call involves sending data tow
 For more information about the SoftLayer API, {{site.data.keyword.loadbalancer_full}} Service APIs, see the following resources in the SoftLayer Development Network:
 * [Getting Started with the SoftLayer API](https://sldn.softlayer.com/article/getting-started/){: external}
 * [SoftLayer_Product_Package API](https://sldn.softlayer.com/reference/services/SoftLayer_Product_Package/){: external}
-* [SoftLayer_Network_LBaaS_LoadBalancer API](https://softlayer.github.io/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
+* [SoftLayer_Network_LBaaS_LoadBalancer API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
 * [SoftLayer_Network_LBaaS_Listener API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_LoadBalancer/){: external}
 * [SoftLayer_Network_LBaaS_Member API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_Member/){: external}
 * [SoftLayer_Network_LBaaS_HealthMonitor API](https://sldn.softlayer.com/reference/services/SoftLayer_Network_LBaaS_HealthMonitor/){: external}
@@ -116,7 +116,7 @@ class LBaaSExample():
             'description': desc,
             'location': datacenter,
             'packageId': package_id,
-            'useHourlyPricing': True,       # Required since LBaaS is an hourly service            
+            'useHourlyPricing': True,       # Required since LBaaS is an hourly service
             'prices': [{'id': price_id} for price_id in prices],
             'protocolConfigurations': protocols,
             'subnets': [{'id': subnet_id}]
@@ -131,7 +131,7 @@ class LBaaSExample():
                 response = self.client['Product_Order'].placeOrder(orderData)
 
             return response
-        except SoftLayer.SoftLayerAPIError as e:            
+        except SoftLayer.SoftLayerAPIError as e:
             print("Unable to place the order: %s, %s" % (e.faultCode, e.faultString))
 
 
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     # Set False for private network
     is_public = True
 
-    protocols = [        
+    protocols = [
         {
             "backendPort": 80,
             "backendProtocol": "HTTP",
@@ -241,7 +241,7 @@ class LBaasExample():
         try:
             # Retrieve load balancer objects
             lbaas_list = self.lbaas_service.getAllObjects(filter=_filter)
-        except SoftLayer.SoftLayerAPIError as e:            
+        except SoftLayer.SoftLayerAPIError as e:
             print("Unable to get the LBaaS list: %s, %s" % (e.faultCode, e.faultString))
 
         return lbaas_list
@@ -288,7 +288,7 @@ try:
     # Retrieve a specific load balancer object
     details = lbaas_service.getLoadBalancer(uuid, mask=_mask)
     pprint(details)
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to retrieve LBaaS details: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -321,7 +321,7 @@ _mask = "mask[members]"
 try:
     response = member_service.addLoadBalancerMembers(uuid, serverInstances, mask=_mask)
     pprint(response)
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to add members: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -369,7 +369,7 @@ _mask = "mask[listeners]"
 try:
     response = listener_service.updateLoadBalancerProtocols(uuid, protocolConfigurations, mask=mask)
     pprint(response)
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to add protocols: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -386,12 +386,12 @@ uuid = 'set me'
 
 # New protocols to add
 protocolConfigurations = [
-    {   
+    {
         "listenerUuid": "69fad83a-e850-4b72-a4d3-af94d5bf5437",
         "serverTimeout": 60,
         "clientTimeout": 60
     },
-    {   
+    {
         "listenerUuid": "e4b8cfd0-1e27-4d3e-a8ed-595b198cd683",
         "frontendPort": 1450,
         "maxConn": 1002,
@@ -409,7 +409,7 @@ _mask = "mask[listeners]"
 try:
     response = listener_service.updateLoadBalancerProtocols(uuid, protocolConfigurations, mask=mask)
     pprint(response)
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to add protocols: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -432,7 +432,7 @@ try:
 
     if result:
         print("The cancellation request is accepted")
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Failed to cancel load balancer: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -469,7 +469,7 @@ try:
                                                           time_range, protocol_uuid)
 
     pprint(time_series)
-except SoftLayer.SoftLayerAPIError as e:            
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to retrieve the traffic: %s, %s" % (e.faultCode, e.faultString))
 ```
 {: codeblock}
@@ -626,7 +626,7 @@ networkLBaaSL7RuleService = client['SoftLayer_Network_LBaaS_L7Rule']
 try:
     result = networkLBaaSL7RuleService.updateL7Rules(policyUuid, rules)
     pprint(result)
-except SoftLayer.SoftLayerAPIError as e:    
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to update multiple Layer 7 Rules attached to the same Layer 7 policy: %s, %s"
           % (e.faultCode, e.faultString))
 ```
@@ -683,7 +683,7 @@ try:
     result = networkLBaaSL7PoolService.createL7Pool(loadBalancerUuid, l7Pool, l7Members,
                                                     l7HealthMonitor, l7SessionAffinity)
     pprint(result)
-except SoftLayer.SoftLayerAPIError as e:    
+except SoftLayer.SoftLayerAPIError as e:
     print("Unable to create a Layer 7 Pool with servers: %s, %s"
           % (e.faultCode, e.faultString))
 ```
