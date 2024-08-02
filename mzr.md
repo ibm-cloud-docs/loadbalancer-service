@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2023
-lastupdated: "2023-06-22"
+  years: 2017, 2024
+lastupdated: "2024-07-24"
 
 keywords: mzr, data centers
 
@@ -12,10 +12,10 @@ subcollection: loadbalancer-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Multi-Zone Region (MZR) overview
+# Deploying {{site.data.keyword.loadbalancer_short}} to multizone regions
 {: #multi-zone-region-mzr-overview}
 
-A Multi-Zone Region (MZR) helps your load balancer appliances achieve high availability and redundancy. When provisioning a load balancer, you must specify the subnet where you want it created. If that data center is part of an MZR, one appliance is deployed in the selected data center while a second is deployed in a different data center within the same region.
+A Multizone region (MZR) helps your load balancer appliances achieve high availability and redundancy. When provisioning a load balancer, you must specify the subnet where you want it created. If that data center is part of an MZR, one appliance is deployed in the selected data center while a second is deployed in a different data center within the same region.
 {: shortdesc}
 
 For example, `us-south` is an MZR, which contains the data centers `dal10`, `dal12`, `dal13`. You have a subnet A in `dal10`, subnets B and C in `dal12` and subnets D and E in `dal13`. If you create a load balancer in a data center `dal13`, the first appliance gets deployed in `dal13` while the second gets deployed in the subnet with the most available IPs between `dal10` or `dal12` data centers.
@@ -46,4 +46,4 @@ MZRs have the following requirements:
 
 If the data center you select is not part of an MZR, or if VLAN spanning or VRF is not enabled in your account, the load balancer creation defaults to the original behavior of instantiating all load balancer nodes in the data center you specify.
 
-For a detailed overview and list of data centers that are part of the MZR, see [Multi Zone Region](/docs/overview?topic=overview-locations).
+For a detailed overview and list of data centers that are part of the MZR, see [Region and data center locations for resource deployment](/docs/overview?topic=overview-locations).
