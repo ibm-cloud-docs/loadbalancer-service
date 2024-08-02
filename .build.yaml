@@ -1,7 +1,0 @@
-includes:
-    - https://github.ibm.com/cloud-docs-solutions/solution-tutorials
-translation:
-  exclude:
-    byFilePath:
-      - file-dont-translate.md
-      - folder-dont-translate/

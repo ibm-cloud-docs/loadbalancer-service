@@ -25,13 +25,6 @@ toc:
           href: https://www.ibm.com/topics/load-balancing
        - whats-new-lbaaa.md
     - navgroup:
-       id: tutorial
-       topics:
-       - topicgroup:
-          label: Classic infrastructure
-          topics:
-          - include: ../solution-tutorials/web-app-private-network.md
-    - navgroup:
        id: howto
        topics:
        - topicgroup:
@@ -47,7 +40,6 @@ toc:
           topics:
           - custom-ciphers.md
           - health-checks.md
-          - mzr.md
           - ssl-offload.md
           - advanced-traffic.md
           - monitoring-metrics.md
