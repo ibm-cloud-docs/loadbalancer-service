@@ -1,6 +1,6 @@
 {
     "title": "IBM Cloud Load Balancer docs",
-    "lastupdated": "2021-06-08",
+    "lastupdated": "2024-08-02",
     "introduction": "The IBM Cloud® Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.",
       "api": "/docs/loadbalancer-service?topic=loadbalancer-service-api-reference",
       "terraform": "https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started",
