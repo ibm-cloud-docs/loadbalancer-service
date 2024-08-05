@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2020
-lastupdated: "2020-08-19"
+  years: 2017, 2024
+lastupdated: "2024-08-05"
 
 keywords: options, load balancing, configure, protocol, health check
 
@@ -26,7 +26,7 @@ When the configuration page appears, follow these steps:
 
 3. Select the data center where the load balancer instance is to be created.
 
-	For multi-zone availability, all requirements for [MZR](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview) must be satisfied.
+	For multi-zone availability, all requirements for MZR must be satisfied.
 	{: tip}
 
 4. Select the type of load balancer that you want to create from the options **Public-to-Private, **Private-to-Private**, or **Public-to-Public**. Refer to [{{site.data.keyword.loadbalancer_full}} basics](/docs/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-basics) for details on each type.
