@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2024
+lastupdated: "2024-08-16"
 
 keywords: create, use, elastic
 
@@ -25,3 +25,6 @@ Task  | Description
 [Selecting the service and configuring basic options](/docs/loadbalancer-service?topic=loadbalancer-service-configuring-ibm-cloud-load-balancer-basic-parameters) | Configure basic options, such as the name, description, and type of your load balancer.
 [Configuring load-balancing options and placing your order](/docs/loadbalancer-service?topic=loadbalancer-service-configure-load-balancing-parameters-and-place-order) | Configure protocols, health checks, and back-end servers.
 [Monitoring and managing your service](/docs/loadbalancer-service?topic=loadbalancer-service-monitoring-and-managing-your-service) | Edit your configuration and monitor your load balancer performance.
+
+Mandatory management port 56501 must be allowlisted in order for load balancer provisioning (as well as customer and service triggered operations) to succeed. For more information, refer to this [FAQ](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#public).
+{: important}
