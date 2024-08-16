@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2021
-lastupdated: "2021-03-10"
+  years: 2017, 2024
+lastupdated: "2024-08-16"
 
 keywords:
 
@@ -110,7 +110,7 @@ VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX net
 {: faq}
 {: support}
 
-TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall, otherwise, load balancer provisioning fails. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
+TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, as well as customer and service triggered operations, may fail. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
 
 In summary, this is the required firewall configuration:
 
@@ -218,3 +218,9 @@ Pricing metrics for IBM Cloud Load Balancer are detailed in [this topic](/docs/l
 {: faq}
 
 No. Currently, IBM Cloud Load Balancer is not eligible to participate in Classic Bandwidth Pools.
+
+## Do I need extra IPs in the subnet for IBM Cloud load balancer operations?
+{: #faqs-extra-ips}
+{: faq}
+
+It is recommended that you allocate 8 extra IPs per subnet to accommodate horizontal scaling and maintenance operations. If you provision your application load balancer with one subnet, allocate 16 extra IPs.
