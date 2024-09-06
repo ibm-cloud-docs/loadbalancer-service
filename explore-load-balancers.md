@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-07"
+  years: 2017, 2024
+lastupdated: "2024-09-06"
 
 keywords: compare, explore
 
@@ -19,7 +19,7 @@ IBM Cloud offers several load balancing solutions to choose from. The following 
 {: shortdesc}
 
 
-|        | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started)|  [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Standard)| [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX/MPX (Platinum) |
+|        | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started)|  [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX (Standard)| [Citrix NetScaler](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started) VPX (Platinum) |
 |------- | :------: | :------: | :------: |
 |**Public VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
 |**Private VIP**|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg)|![Checkmark icon](../../icons/checkmark-icon.svg) |
