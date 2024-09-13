@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2020-03-25"
+  years: 2017, 2024
+lastupdated: "2024-09-13"
 
 keywords: troubleshooting, provisioning, question, problem
 
@@ -23,7 +23,7 @@ This topic provides information on common issues that you might encounter when c
 {: troubleshoot}
 {: support}
 
-{{site.data.keyword.loadbalancer_full}} requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well.
+{{site.data.keyword.loadbalancer_full}} requires at least two free IP addresses from its private subnet. In addition, if the load balancer is a public load balancer and the **IBM system pool** option is not used, then at least two free IP addresses are needed from your public subnet as well. This IP address requirement is not only required when you create a new load balancer, but also when performing maintenance on an existing load balancer.
 
 ## Issues with firewalls on public and private VLANs
 {: #issues-with-firewalls-on-public-and-private-vlans}
