@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-08-16"
+lastupdated: "2024-09-13"
 
 keywords:
 
@@ -110,7 +110,7 @@ VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX net
 {: faq}
 {: support}
 
-TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, as well as customer and service triggered operations, may fail. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
+TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, as well as customer and service triggered operations, may fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 10514 (security and compliance) must be allowed at all times for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
 
 In summary, this is the required firewall configuration:
 
