@@ -36,7 +36,6 @@
     }
   ],
   "section_devtools": {
-    "api": "/docs/loadbalancer-service?topic=loadbalancer-service-api-reference",
     "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/lb_service"
   },
   "section_updates": {
