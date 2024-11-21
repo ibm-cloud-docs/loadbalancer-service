@@ -26,13 +26,6 @@
       "description": "Load balancing is the process of distributing network traffic among servers to optimize application availability.",
       "href": "https://www.ibm.com/topics/load-balancing",
       "type": "blog"
-    },
-    {
-      "title": "Network as a service",
-      "description": "In this demo, you’ll learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
-      "href": "/docs/security-groups?topic=security-groups-naas-video",
-      "type": "video",
-      "recommended": true
     }
   ],
   "section_devtools": {
