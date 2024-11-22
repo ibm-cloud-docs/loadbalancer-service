@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "IBM Cloud Load Balancer",
-  "introduction": "The IBM Cloud Load Balancer service helps customers improve availability of their business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only.",
+  "introduction": "The IBM Cloud Load Balancer service helps customers improve availability of their applications by distributing traffic among multiple application server instances.",
   "product_page": "https://www.ibm.com/products/load-balancer",
   "console_page": "/catalog/infrastructure/load-balancer-group",
   "section_topics": {
@@ -26,13 +26,6 @@
       "description": "Load balancing is the process of distributing network traffic among servers to optimize application availability.",
       "href": "https://www.ibm.com/topics/load-balancing",
       "type": "blog"
-    },
-    {
-      "title": "Network as a service",
-      "description": "In this demo, you’ll learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
-      "href": "/docs/security-groups?topic=security-groups-naas-video",
-      "type": "video",
-      "recommended": true
     }
   ],
   "section_devtools": {
