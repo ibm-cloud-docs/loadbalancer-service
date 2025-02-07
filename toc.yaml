@@ -44,7 +44,7 @@ toc:
           - advanced-traffic.md
           - monitoring-metrics.md
           - backend-encryption.md
-          - data-logging.md
+          - logging.md
           - selecting-pod.md
        - topicgroup:
           label: Layer 7 support
