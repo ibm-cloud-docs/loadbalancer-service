@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2020
-lastupdated: "2020-04-06"
+  years: 2017, 2025
+lastupdated: "2025-03-14"
 
 keywords: monitor metrics
 
@@ -51,7 +51,7 @@ The active connection metric contains the following metadata:
 | Metric type | `gauge` |
 | Value type | `none`  |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 1: IBM Cloud Load Balancer active connections metrics metadata" caption-side="bottom"}
+{: caption="IBM Cloud Load Balancer active connections metrics metadata" caption-side="bottom"}
 
 
 ### Connection rate
@@ -65,7 +65,7 @@ Connection rate is the number of new incoming active connections per second to y
 | Metric type | `gauge` |
 | Value type  | `none` |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 2: IBM Cloud Load Balancer connection rate metric metadata" caption-side="bottom"}
+{: caption="IBM Cloud Load Balancer connection rate metric metadata" caption-side="bottom"}
 
 ### Throughput
 {: #ibm_cloud_load_balancer_throughput}
@@ -78,7 +78,7 @@ Throughput is the amount of data that passes in and out of a load balancer over 
 | Metric type | `gauge` |
 | Value type  | `byte` |
 | Segment by | `IBM Cloud Load Balancer appliance metrics` or `IBM Cloud Load Balancer listener metrics` |
-{: caption="Table 3: IBM Cloud Load Balancer throughput metric metadata" caption-side="bottom"}
+{: caption="IBM Cloud Load Balancer throughput metric metadata" caption-side="bottom"}
 
 ## Metric segmentation
 {: #attributes}
@@ -97,7 +97,7 @@ The following attributes are available for segmenting all three of the {{site.da
 | `Resource` | `ibm_resource` | A load balancer's unique ID |
 | `Scope` | `ibm_scope` | The account that is associated with a given load balancer |
 | `Service name` | `ibm_service_name` | ibm-cloud-load-balancer |
-{: caption="Table 4: {{site.data.keyword.mon_full_notm}} global attributes" caption-side="bottom"}
+{: caption="{{site.data.keyword.mon_full_notm}} global attributes" caption-side="bottom"}
 
 ### Extra attributes
 {: #additional-attributes}
@@ -108,7 +108,7 @@ The following attributes are available to segment one or more of the global attr
 |-----------|----------------|-----------------------|
 | IBM Cloud Load Balancer appliance metrics | `ibm_cloud_load_balancer_appliance_ip` | The metrics coming from the load balancer back end. Because the load balancer is highly available, multiple appliances support each load balancer for redundancy.  |
 | IBM Cloud Load Balancer listener metrics | `ibm_cloud_load_balancer_listener_port` | The metrics that are gathered from individual listeners and their ports. Configure the listeners in your load balancer settings. The monitoring metrics reflect the metrics coming from those listeners. |
-{: caption="Table 5: {{site.data.keyword.mon_full_notm}} additional attributes" caption-side="bottom"}
+{: caption="{{site.data.keyword.mon_full_notm}} additional attributes" caption-side="bottom"}
 
 The displayed metrics contain a timestamp and the metric value for the time interval ending at that timestamp. You can specify different scopes, as well as the time interval over which to report the metrics.
 

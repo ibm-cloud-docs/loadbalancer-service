@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-01-24"
+lastupdated: "2025-03-14"
 
 keywords: data logs
 
@@ -59,6 +59,7 @@ Sub-system name = `Cloud Load Balancer`
 | `msgTimestamp`    | Required   | The timestamp that indicates when the log was generated.     |
 | `logSourceCRN`    | Required   | The load balancer UUID can be obtained from `logSourceCRN`.    |
 | `message`         | Required   | Datapath log message. |
+{: caption="Log output examples" caption-side="top"}
 
 The following output is an example of an {{site.data.keyword.loadbalancer_full}} data log:
 

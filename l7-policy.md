@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-07-01"
+  years: 2017, 2025
+lastupdated: "2025-03-14"
 
 keywords: layer 7 policy
 
@@ -59,6 +59,7 @@ Priority | Within each action category, policies are evaluated in ascending orde
 Redirect URL | The URL to which traffic is redirected, if the action is set to `REDIRECT_URL`. Also, the HTTPS listener UUID to which traffic is to be redirected, if the action is set to `REDIRECT_HTTPS`.
 Redirect L7 Pool | The pool of servers to which traffic is sent, if the action is set to `REDIRECT_POOL`.
 Protocol | The front-end application port to which the policy is applied.
+{: caption="Layer 7 properties" caption-side="top"}
 
 ## Layer 7 rule
 {: #layer-7-rule}
@@ -80,6 +81,7 @@ Type      |  Field to be extracted and evaluated
 `HEADER`    | A field in the HTTP header
 `COOKIE`    | A named cookie in the HTTP header
 `PATH`      | The part of the URL that follows the hostname (for example, `/index.html`)
+{: caption="Layer 7 rules" caption-side="top"}
 
 Rules also have a comparison type, which indicates how they are to be evaluated.
 
@@ -90,6 +92,7 @@ Comparison Type |  Type of evaluation
 `ENDS_WITH`       |  Verify whether the extracted field ends with the supplied string
 `CONTAINS`        |  Verify whether the extracted field contains the supplied string
 `EQUAL_TO`        |  Verify whether the extracted field is identical to the supplied string
+{: caption="Comparison types" caption-side="top"}
 
 Not all rule types support all comparison types. For example, if you are using `FILE_TYPE`, it is best to use comparison types `REGEX` and `ENDS_WITH`.
 {: tip}
@@ -105,3 +108,4 @@ Key | The description key for the rule types `HEADER` and `COOKIE`.
 Value |  For the rule types `HEADER` and `COOKIE`, the value is compared against the key.
 Invert | If you set the value to 1, the value of this L7 rule comparison is set to `true` whenever the specified rule is not matched.
 Layer 7 Policy ID | The unique identifier of the policy to which the rules are attached.
+{: caption="Layer 7 rule properties" caption-side="top"}
