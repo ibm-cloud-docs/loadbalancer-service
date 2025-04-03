@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-09-13"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords: troubleshooting, provisioning, question, problem
 
@@ -30,7 +30,7 @@ This topic provides information on common issues that you might encounter when c
 {: troubleshoot}
 {: support}
 
-For more information, see [IBM Cloud IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
+For more information, see [IBM Cloud IP ranges](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges).
 
 ## Viewing load balancer error messages
 {: #viewing-load-balancer-error-messages}

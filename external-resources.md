@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords: resources, blog, brief
 
@@ -17,4 +17,4 @@ subcollection: loadbalancer-service
 
 IBM and some of its partners and customers created the following resources:
 
-* Education - [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/topics/load-balancing)
+* Education - [Load Balancing: How load balancing optimizes website and application performance](https://www.ibm.com/think/topics/load-balancing)
