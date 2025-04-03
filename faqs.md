@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-09-13"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords:
 
@@ -79,7 +79,7 @@ It is recommended that your load balancer service and your compute instances res
 
 The IBM Cloud Load Balancer service supports TLS 1.2 with SSL termination.
 
-The following list details the supported ciphers (listed in order of precedence):  
+The following list details the supported ciphers (listed in order of precedence):
 
 * ECDHE-RSA-AES256-GCM-SHA384
 * ECDHE-RSA-AES256-SHA384
@@ -103,7 +103,7 @@ Currently, you can create up to 50 service instances. If you need more instances
 
 VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is available using the API only, and not the web UI. Portable private IPs added by using the API appear as "Unknown" in the UI as they are not assigned by IBM Cloud. This configuration can be used with other hypervisors, such as Xen and KVM.
 
-VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX networks) cannot be added directly as back-end servers to the load balancer. However, depending on your configuration, it might be possible to configure an intermediary, such as an NSX gateway, that has a IBM Cloud private address as the back-end server to the load balancer (with the actual servers being VMs attached to networks managed by VMware NSX).
+VMWare virtual machines assigned non-IBM Cloud addresses (such as VMWare NSX networks) cannot be added directly as back-end servers to the load balancer. However, depending on your configuration, it might be possible to configure an intermediary, such as an NSX gateway, that has an IBM Cloud private address as the back-end server to the load balancer (with the actual servers being VMs attached to networks managed by VMware NSX).
 
 ## If I choose to use a public VLAN under my account to deploy my load balancer and I have a firewall deployed on my public VLAN, what configurations are required on my firewall to work with my load balancer service?
 {: #public}
@@ -157,7 +157,7 @@ The available range of possible IPs for `public to public` load balancers cannot
 {: #faqs-terraform}
 {: faq}
 
-Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource. 
+Terraform can be used to create, update, and delete an IBM Cloud Load Balancer service resource.
 
 ## Is it possible to add members with secondary IP addresses?
 {: #faqs-seconary-ip}
