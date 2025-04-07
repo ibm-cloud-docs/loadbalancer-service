@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-07-03"
+  years: 2017, 2025
+lastupdated: "2025-04-07"
 
 keywords: basics, load balancing
 
@@ -99,3 +99,23 @@ The following three load-balancing methods are available for distributing traffi
 {: #horizontal-scaling}
 
 The load balancer adjusts its capacity automatically according to the load. When this occurs, you might see a change in the number of IP addresses associated with the load balancer's DNS name.
+
+## Multizone region requirements
+{: #mzr-requirements}
+
+A Multizone Region (MZR) ensures high availability by deploying your load balancer appliances in multiple data centers. When you create a load balancer, you select the subnet for deployment. If the data center is part of an MZR, one appliance is deployed in your selected data center, and the other is deployed in a different data center within the same region.
+
+For example, `us-south` is an MZR, which contains the data centers `dal10`, `dal12`, `dal13`. You have a subnet A in `dal10`, subnets B and C in `dal12` and subnets D and E in `dal13`. If you create a load balancer in a data center `dal13`, the first appliance gets deployed in `dal13` while the second gets deployed in the subnet with the most available IPs between `dal10` or `dal12` data centers.
+
+Currently, the **Cloud Load Balancer** service is available in the data centers listed in [Classic infrastructure](/docs/overview?topic=overview-services_region#iaas-service-infra). 
+
+MZRs have the following requirements:
+
+* The selected data center must be part of an MZR.  
+* VLAN spanning or VRF must be enabled in your account.
+* Private subnets must exist in your account in the data centers of the MZR. Creation of compute devices in data centers results in the instantiation of private subnets.
+
+If the selected data center is not part of an MZR, or if VLAN spanning or VRF is not enabled in your account, the load balancer will be created with all nodes instantiated in the specified data center, following the original deployment behavior.
+{: note}
+
+For more information about multizone regions, see [IBM Cloud region and data center locations for resource deployment](/docs/overview?topic=overview-locations). For information about the mapping between regions and zones, see [Zone mapping per account](/docs/overview?topic=overview-locations#zone-mapping).
