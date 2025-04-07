@@ -105,7 +105,7 @@ The load balancer adjusts its capacity automatically according to the load. When
 
 A Multizone Region (MZR) ensures high availability by deploying your load balancer appliances in multiple data centers. When you create a load balancer, you select the subnet for deployment. If the data center is part of an MZR, one appliance is deployed in your selected data center, and the other is deployed in a different data center within the same region.
 
-For example, `us-south` is an MZR, which contains the data centers `dal10`, `dal12`, `dal13`. You have a subnet A in `dal10`, subnets B and C in `dal12` and subnets D and E in `dal13`. If you create a load balancer in a data center `dal13`, the first appliance gets deployed in `dal13` while the second gets deployed in the subnet with the most available IPs between `dal10` or `dal12` data centers.
+For example, Dallas (`us-south`) is an MZR that contains the data centers `dal10`, `dal12`, and `dal13`. Subnet A is in `dal10`, subnets B and C are in `dal12`, and subnets D and E are in `dal13`. If you create a load balancer in the `dal13` data center, the first appliance is deployed in `dal13` and the second appliance is deployed in the subnet with the most available IPs between `dal10` or `dal12` data centers.
 
 Currently, the **Cloud Load Balancer** service is available in the data centers listed in [Classic infrastructure](/docs/overview?topic=overview-services_region#iaas-service-infra). 
 
