@@ -101,7 +101,7 @@ The following three load-balancing methods are available for distributing traffi
 The load balancer adjusts its capacity automatically according to the load. When this occurs, you might see a change in the number of IP addresses associated with the load balancer's DNS name.
 
 ## Multizone region requirements
-{: #mzr-requirements}
+{: #multi-zone-region-mzr-overview}
 
 A Multizone Region (MZR) ensures high availability by deploying your load balancer appliances in multiple data centers. When you create a load balancer, you select the subnet for deployment. If the data center is part of an MZR, one appliance is deployed in your selected data center, and the other is deployed in a different data center within the same region.
 
