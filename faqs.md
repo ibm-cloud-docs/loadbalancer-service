@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-03"
+lastupdated: "2025-04-28"
 
 keywords:
 
@@ -24,6 +24,13 @@ The following frequently asked questions pertain to the {{site.data.keyword.load
 {: support}
 
 For a detailed comparison of IBM's load balancer offerings, refer to [Exploring IBM Cloud load balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
+
+## Does the {{site.data.keyword.loadbalancer_full}} support the HTTP/2 protocol?
+{: #http2}
+{: faq}
+{: support}
+
+Yes, as of 31 March 2023, the load balancer supports the HTTP/2 protocol for both HTTP requests and responses.
 
 ## Can I use a different DNS name for my load balancer?
 {: #dns}
