@@ -30,7 +30,7 @@ For a detailed comparison of IBM's load balancer offerings, refer to [Exploring 
 {: faq}
 {: support}
 
-Yes. The load balancer supports the HTTP/2 protocol for both HTTP requests and responses.
+Yes. The load balancer supports HTTP/2 protocol for both HTTP requests and responses.
 
 ## Can I use a different DNS name for my load balancer?
 {: #dns}
