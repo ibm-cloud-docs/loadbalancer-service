@@ -105,7 +105,7 @@ The following list details the supported ciphers (listed in order of precedence)
 
 Currently, you can create up to 50 service instances. If you need more instances, contact IBM Support.
 
-## Can the {{site.data.keyword.loadbalancer}} service be used with VMWare?
+## Can the IBM Cloud Load Balancer service be used with VMWare?
 {: #vmware}
 {: faq}
 {: support}
