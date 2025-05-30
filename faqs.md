@@ -228,7 +228,7 @@ Pricing metrics for IBM Cloud Load Balancer are detailed in the [pricing metrics
 {: #faqs-clb-costs}
 {: faq}
 
-No. Currently, IBM Cloud Load Balancer bandwidth usage is not covered by Classic Bandwidth Pools.
+No. Currently, IBM Cloud Load Balancer bandwidth usage isn't covered by Classic Bandwidth Pools.
 
 ## Do I need extra IPs in the subnet for IBM Cloud load balancer operations?
 {: #faqs-extra-ips}
