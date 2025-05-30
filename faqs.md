@@ -54,7 +54,7 @@ While you try to create a load balancer service, you can define up to two virtua
 {: #faqs-max-instances}
 {: faq}
 
-When you create a load balancer service, you can configure up to 10 compute instances as back-end servers. After the load balancer is created, you can add more servers, up to a maximum of 50 back-end members.
+When you create a load balancer service, you can configure up to 10 compute instances as back-end servers. After the load balancer is created, you can add more servers, up to a maximum of `50` back-end members.
 
 ## Can my back-end compute instances sit on a subnet different from the load balancer's subnet?
 {: #faqs-back-end-instances}
