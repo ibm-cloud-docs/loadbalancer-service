@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-05-30"
+lastupdated: "2025-06-04"
 
 keywords:
 
@@ -37,7 +37,7 @@ Yes. The load balancer supports HTTP/2 protocol for both HTTP requests and respo
 {: faq}
 {: support}
 
-While you can't customize the loads balancer's auto-assigned DNS name, you can add a Canonical Name (CNAME) record that points your preferred DNS name to the auto-assigned DNS name.
+While you can't customize the loads balancer auto-assigned DNS name, you can add a Canonical Name (CNAME) record that points your preferred DNS name to the auto-assigned DNS name.
 
 For example, if your account number is `123456`, your load balancer is deployed in the `dal09` data center, and its name is `myapp`, the system assigns it the DNS name `myapp-123456-dal09.lb.bluemix.net`.
 
@@ -112,7 +112,7 @@ Currently, you can create up to 50 service instances. If you need more instances
 
 VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is available only from the API, but not from the console. Portable private IPs added by using the API appear as "Unknown" in the console as they are not assigned by IBM Cloud. This configuration can be used with other hypervisors, such as Xen and KVM.
 
-VMWare virtual machines with non-IBM Cloud addresses, such as those that are on VMWare NSX networks can't be added directly as back-end servers to the load balancer. But depending on your setup, you might use an intermediary, such as an NSX gateway. This gateway has an IBM Cloud private address and acts as the back-end server for the load balancer, while the actual servers are VMs on VMware NSX-managed networks.
+VMWare virtual machines that are assigned non-IBM Cloud addresses, such as those that are on VMWare NSX networks can't be added directly as back-end servers to the load balancer. But depending on your setup, you might use an intermediary, such as an NSX gateway. This gateway has an IBM Cloud private address and acts as the back-end server for the load balancer, while the actual servers are VMs on VMware NSX-managed networks.
 
 ## If I deploy a load balancer and a firewall on a public VLAN in my account, what configurations do I need on the firewall to make it work with the load balancer?
 {: #public}
@@ -121,7 +121,7 @@ VMWare virtual machines with non-IBM Cloud addresses, such as those that are on 
 
 The TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, customer operations, and service triggered operations, might fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 10514 (security and compliance) must be always allowed for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
 
-In summary, the following requirements are needed for the firewall configuration:
+In summary, the following are needed for the firewall configuration:
 
 | Inbound and Outbound |	Protocol |	Source IP |	Source Port |	Destination IP | Destination Port |
 | ---------------- | --------- | ---------- | ----------- | -------------- | ----------------- |
@@ -204,7 +204,7 @@ No. The IBM Cloud Load Balancer service does not support UDP. It supports only T
 {: #faqs-autoscaling}
 {: faq}
 
-No. The IBM Cloud Load Balancer service currently doesn't support autoscaling.
+No. Currently, the IBM Cloud Load Balancer service doesn't support autoscaling.
 
 ## How can I monitor my IBM Cloud Load Balancer metrics?
 {: #faqs-monitor-metrics}
