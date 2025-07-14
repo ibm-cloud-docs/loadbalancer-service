@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-06-04"
+lastupdated: "2025-07-14"
 
 keywords:
 
@@ -12,7 +12,7 @@ subcollection: loadbalancer-service
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for IBM Cloud Load Balancer
+# FAQ for IBM Cloud Load Balancer
 {: #faqs-for-ibm-cloud-load-balancer}
 
 The following frequently asked questions relate to the {{site.data.keyword.loadbalancer_full}} service.
