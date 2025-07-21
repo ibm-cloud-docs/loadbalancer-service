@@ -23,7 +23,6 @@ toc:
        - link:
           label: What is load balancing?
           href: https://www.ibm.com/think/topics/load-balancing
-       - whats-new-lbaaa.md
     - navgroup:
        id: howto
        topics:
