@@ -115,7 +115,7 @@ To set the timeout values by using cURL, follow these steps:
     ```
     {: codeblock}
 
-1. Use the listener ID you obtained in the previous step) to get listener details:
+1. Use the listener ID you obtained in the previous step to get listener details:
 
     ```sh
        curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq
