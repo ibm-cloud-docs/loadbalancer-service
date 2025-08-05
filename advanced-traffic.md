@@ -52,7 +52,118 @@ Server-side and client-side idle connection timeout values can be configured by 
 You can configure the server timeout (`ParameterName: serverTimeout`) and client timeout (`ParameterName: clientTimeout`) value in seconds up to 2 hours (Range: `1 - 7200` seconds) by using `UpdateLoadBalancerProtocols` method of `SoftLayer_Network_LBaaS_Listener` service. If you do not provide the server or client timeout values, the load balancer uses the default value (mentioned in the table) for the corresponding timeout.
 {: note}
 
+### Setting the timeout value with the API
+{: #set-timeout-with-api}
+{: api}
 
+You can set the client and server timeout values with the API and cURL.
+
+To set the timeout value with the API, follow these steps:
+
+   ```sh
+   import SoftLayer
+   from pprint import pprint
+
+   #Your load balancer UUID
+   uuid = 'set me'
+
+   #New protocols to add
+   protocolConfigurations = [
+     {
+     "listenerUuid": "69fad83a-e850-4b72-a4d3-af94d5bf5437",
+     "serverTimeout": 60,
+     "clientTimeout": 60
+     },
+     {
+      "listenerUuid": "e4b8cfd0-1e27-4d3e-a8ed-595b198cd683",
+      "frontendPort": 1450,
+      "maxConn": 1002,
+      "serverTimeout": 80,
+      "clientTimeout": 80
+     }
+   ]
+
+   #Create the API client
+   client = SoftLayer.Client()
+   listener_service = client['Network_LBaaS_Listener']
+
+   _mask = "mask[listeners]"
+
+   try:
+     response = listener_service.updateLoadBalancerProtocols(uuid, protocolConfigurations, mask=mask)
+     pprint(response)
+   except SoftLayer.SoftLayerAPIError as e:
+     print("Unable to add protocols: %s, %s" % (e.faultCode, e.faultString))
+   ```
+   {: codeblock}
+
+For more information, see [updating a protocol](/docs/loadbalancer-service?topic=loadbalancer-service-api-reference#update-a-protocol) in the IBM Cloud Load Balancer API reference page.
+
+To set the timeout values by using cURL, follow these steps:
+
+1. Get load balancer information
+
+    ```sh
+       curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters":["CLB_UUID"]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/getLoadBalancer' | jq
+    ```
+    {: codeblock}
+
+1. Get load balancer listeners
+
+   ```sh
+      curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/CLB_ID/getListeners' | jq
+    ```
+    {: codeblock}
+
+1. Get listener details. (Use the listener ID you obtained in the previous step).
+
+    ```sh
+       curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq
+    ```
+    {: codeblock}
+
+1. Set client or server timeout values
+
+    ```sh
+       curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters": ["LB_UUID", [{"listenerUuid": "LISTENER_UUID", "clientTimeout": 1000}]]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/updateLoadBalancerProtocols.json' | jq
+    ```
+    {: codeblock}
+
+    Obtain the load balancer UUID and listener UUID from the previous steps.
+    {: note}
+
+### Setting the timeout value from the CLI
+{: #set-timeout-with-cli}
+{: cli}
+
+To set the timeout values from the CLI, follow these steps:
+
+1. Get the load balancer list in your account
+
+    ```sh
+       ibmcloud sl loadbal list
+    ```
+    {: pre}
+
+1. Get the ID of the required load balancer for which you want set the timeout value by running the following command:
+
+   ```sh
+      ibmcloud sl loadbal detail <LB-id>
+    ```
+    {: pre}
+
+1. Run the following command to edit the parameters obtained from previous command:
+
+    ```sh
+       ibmcloud sl call-api SoftLayer_Network_LBaaS_Listener updateLoadBalancerProtocols --parameters '["LB_UUID",[{"tlsCertificateId":null,"listenerUuid":"LISTENER_UUID","clientTimeout": <Value in seconds>}]]'
+    ```
+    {: pre}
+
+1. Verify the changes by running the following command:
+   ```sh
+      ibmcloud sl loadbal detail <LB-id>
+    ```
+    {: pre}
 
 Setting long idle connection timeout values can cause your data path traffic to experience latencies or be blocked because the idle connections are counted toward the maximum concurrent connections of 15,000. Consider the idle connection timeout value along with the maximum number of concurrent connections to ensure that your data path traffic is not disrupted.
 {: tip}
