@@ -101,28 +101,28 @@ For more information, see [updating a protocol](/docs/loadbalancer-service?topic
 
 To set the timeout values by using cURL, follow these steps:
 
-1. Get load balancer information
+1. Get load balancer information:
 
     ```sh
        curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters":["CLB_UUID"]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/getLoadBalancer' | jq
     ```
     {: codeblock}
 
-1. Get load balancer listeners
+1. Get load balancer listeners:
 
    ```sh
       curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/CLB_ID/getListeners' | jq
     ```
     {: codeblock}
 
-1. Get listener details. (Use the listener ID you obtained in the previous step).
+1. Use the listener ID you obtained in the previous step to get listener details:
 
     ```sh
        curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq
     ```
     {: codeblock}
 
-1. Set client or server timeout values
+1. Set client or server timeout values:
 
     ```sh
        curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters": ["LB_UUID", [{"listenerUuid": "LISTENER_UUID", "clientTimeout": 1000}]]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/updateLoadBalancerProtocols.json' | jq
@@ -138,28 +138,28 @@ To set the timeout values by using cURL, follow these steps:
 
 To set the timeout values from the CLI, follow these steps:
 
-1. Get the load balancer list in your account
+1. Get the load balancer list in your account:
 
     ```sh
        ibmcloud sl loadbal list
     ```
     {: pre}
 
-1. Get the ID of the required load balancer for which you want set the timeout value by running the following command:
+1. Get the ID of the required load balancer for which you want set the timeout value:
 
    ```sh
       ibmcloud sl loadbal detail <LB-id>
     ```
     {: pre}
 
-1. Run the following command to edit the parameters obtained from previous command:
+1. Edit the parameters obtained from previous command:
 
     ```sh
        ibmcloud sl call-api SoftLayer_Network_LBaaS_Listener updateLoadBalancerProtocols --parameters '["LB_UUID",[{"tlsCertificateId":null,"listenerUuid":"LISTENER_UUID","clientTimeout": <Value in seconds>}]]'
     ```
     {: pre}
 
-1. Verify the changes by running the following command:
+1. Verify your changes:
    ```sh
       ibmcloud sl loadbal detail <LB-id>
     ```
