@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-08-04"
+lastupdated: "2025-08-05"
 
 keywords: traffic, management, connection, persistence
 
@@ -47,8 +47,10 @@ The following timeout values are used by the load balancer:
 | Server-side idle connection | The maximum idle time (with back-end protocol configuration of TCP) after which the load balancer closes the server-side connection. When HTTP is used as the back-end protocol, if the load balancer doesn't receive an HTTP response within the idle timeout period, it returns an error message to the client.                               | 50 seconds | Yes   |
 {: caption="Load Balancer Timeout Values" caption-side="top"}
 
-Server-side and client-side idle connection timeout values can be configured by using the API. You can configure the server timeout (`ParameterName: serverTimeout`) and client timeout (`ParameterName: clientTimeout`) value in seconds up to 2 hours (Range: `1 - 7200` seconds) by using `UpdateLoadBalancerProtocols` method of `SoftLayer_Network_LBaaS_Listener` service.
-If you do not provide the server or client timeout values, the load balancer uses the default value (mentioned in the table) for the corresponding timeout.
+Server-side and client-side idle connection timeout values can be configured by using the API, cURL or from the CLI.
+
+You can configure the server timeout (`ParameterName: serverTimeout`) and client timeout (`ParameterName: clientTimeout`) value in seconds up to 2 hours (Range: `1 - 7200` seconds) by using `UpdateLoadBalancerProtocols` method of `SoftLayer_Network_LBaaS_Listener` service. If you do not provide the server or client timeout values, the load balancer uses the default value (mentioned in the table) for the corresponding timeout.
+{: note}
 
 
 
