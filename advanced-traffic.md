@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-08-05"
+lastupdated: "2025-08-22"
 
 keywords: traffic, management, connection, persistence
 
@@ -103,34 +103,34 @@ To set the timeout values by using cURL, follow these steps:
 
 1. Get load balancer information:
 
-    ```sh
-       curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters":["CLB_UUID"]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/getLoadBalancer' | jq
-    ```
-    {: codeblock}
+   ```sh
+      curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters":["CLB_UUID"]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/getLoadBalancer' | jq
+   ```
+   {: codeblock}
 
 1. Get load balancer listeners:
 
    ```sh
       curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_LoadBalancer/CLB_ID/getListeners' | jq
-    ```
-    {: codeblock}
+   ```
+   {: codeblock}
 
-1. Use the listener ID you obtained in the previous step to get listener details:
+1. Use the listener ID you obtained in the previous step) to get listener details:
 
-    ```sh
-       curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq
-    ```
-    {: codeblock}
+   ```sh
+      curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq
+   ```
+   {: codeblock}
 
 1. Set client or server timeout values:
 
-    ```sh
-       curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters": ["LB_UUID", [{"listenerUuid": "LISTENER_UUID", "clientTimeout": 1000}]]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/updateLoadBalancerProtocols.json' | jq
-    ```
-    {: codeblock}
+   ```sh
+      curl -g -u $SL_USER:$SL_APIKEY -X POST -d '{"parameters": ["LB_UUID", [{"listenerUuid": "LISTENER_UUID", "clientTimeout": 1000}]]}' 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/updateLoadBalancerProtocols.json' | jq
+   ```
+   {: codeblock}
 
-    Obtain the load balancer UUID and listener UUID from the previous steps.
-    {: note}
+   Obtain the load balancer UUID and listener UUID from the previous steps.
+   {: note}
 
 ### Setting the timeout value from the CLI
 {: #set-timeout-with-cli}
@@ -140,30 +140,30 @@ To set the timeout values from the CLI, follow these steps:
 
 1. Get the load balancer list in your account:
 
-    ```sh
-       ibmcloud sl loadbal list
-    ```
-    {: pre}
+   ```sh
+      ibmcloud sl loadbal list
+   ```
+   {: pre}
 
 1. Get the ID of the required load balancer for which you want set the timeout value:
 
    ```sh
       ibmcloud sl loadbal detail <LB-id>
-    ```
-    {: pre}
+   ```
+   {: pre}
 
 1. Edit the parameters obtained from previous command:
 
-    ```sh
-       ibmcloud sl call-api SoftLayer_Network_LBaaS_Listener updateLoadBalancerProtocols --parameters '["LB_UUID",[{"tlsCertificateId":null,"listenerUuid":"LISTENER_UUID","clientTimeout": <Value in seconds>}]]'
-    ```
-    {: pre}
+   ```sh
+      ibmcloud sl call-api SoftLayer_Network_LBaaS_Listener updateLoadBalancerProtocols --parameters '["LB_UUID",[{"tlsCertificateId":null,"listenerUuid":"LISTENER_UUID","clientTimeout": <Value in seconds>}]]'
+   ```
+   {: pre}
 
 1. Verify your changes:
    ```sh
       ibmcloud sl loadbal detail <LB-id>
-    ```
-    {: pre}
+   ```
+   {: pre}
 
 Setting long idle connection timeout values can cause your data path traffic to experience latencies or be blocked because the idle connections are counted toward the maximum concurrent connections of 15,000. Consider the idle connection timeout value along with the maximum number of concurrent connections to ensure that your data path traffic is not disrupted.
 {: tip}
