@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-03-14"
+lastupdated: "2025-08-22"
 
 keywords: data logs
 
@@ -15,9 +15,6 @@ subcollection: loadbalancer-service
 # Logging for IBM Cloud Load Balancer
 {: #ibm-cloud-logging}
 
-As of 28 March 2024, the {{site.data.keyword.la_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.la_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Logging is the same for both services. For information about migrating from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
-{: deprecated} 
-
 Data and health check logs are valuable for debugging and maintenance purposes. With the data logging feature enabled, IBM Cloud Load Balancer forwards these logs to the [IBM Cloud Logs](https://cloud.ibm.com/observe/logging){: external} under your account.
 {: shortdesc}
 
@@ -29,7 +26,7 @@ You can enable or disable this feature by:
 
 * Using the API: `enableOrDisableDataLogs`.
 
-## Viewing logs in the IBM Cloud Logs  service
+## Viewing logs in the IBM Cloud Logs service
 {: #viewing-logs-in-the-ibm-cloud-logs-service}
 
 Log in to the [IBM Cloud Logs](https://cloud.ibm.com/observe/logging){: external} with your IBM Cloud account. Logs can be viewed from the IBM Cloud Logs instance. Refer to [Getting started with IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started) for more information.
@@ -46,7 +43,7 @@ To create a IBM Cloud Logs instance, perform the following procedure:
    For a load balancer in SYD01, you would choose the region of Sydney.
    {: tip}
 
-   For information on the mapping between regions and data center, refer to [IBM Cloud global data centers](https://www.ibm.com/cloud/data-centers){: external}.
+   For information on the mapping between regions and data center, refer to [IBM Cloud global data centers](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
 3. You can use {{site.data.keyword.logs_routing_full_notm}}, a platform service, to route platform logs in your account to a destination of your choice by configuring a tenant that defines where platform logs are sent. For more information, see [About Logs Routing](/docs/logs-router?topic=logs-router-about).
 
