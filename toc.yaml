@@ -52,11 +52,6 @@ toc:
           - l7-policy.md
           - l7-rule.md
           - l7-pool.md
-       - topicgroup:
-          label: Migrating from an IBM Local Load Balancer
-          topics:
-          - array-load-balancer-migration-steps.md
-          - array-load-balancer-migration-faqs.md
     - navgroup:
        id: reference
        topics:
