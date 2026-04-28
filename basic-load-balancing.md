@@ -26,7 +26,7 @@ A publicly accessible, fully qualified domain name is assigned to your load bala
 As a good practice, it is recommended that you provision your back-end servers as `private-only`, unless they require direct public connectivity. This practice helps achieve better security, and it preserves your public IP address. The applications that are hosted on these back-end servers are still accessible over public networks by using the load balancer.
 {: note}
 
-You can allocate public IP addresses to the load balancer by using following ways:
+You can allocate public IP addresses to the load balancer by using the following ways:
 
 * **Allocate from IBM system pool:** The default method. This method allocates IP addresses from IBM system pool.
 
