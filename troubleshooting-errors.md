@@ -17,7 +17,7 @@ subcollection: loadbalancer-service
 {: troubleshoot}
 {: support}
 
-The following section provides information on common error messages that you might encounter when you create or update an instance of {{site.data.keyword.loadbalancer_full}}.
+The following table provides information on common error messages that you might encounter when you create or update an instance of {{site.data.keyword.loadbalancer_full}}.
 {: shortdesc}
 
 |Error|Explanation|Solution|
