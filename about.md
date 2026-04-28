@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-23"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: about, fqdn, http, https, tcp, features, logs, layer 7, monitoring, health checks
 
@@ -28,7 +28,7 @@ The {{site.data.keyword.loadbalancer_full}} service offers the following feature
 * Basic load balancing
    * Traffic distribution based on layer 4 application port information
    * Support for HTTP, HTTPS, and TCP-based applications
-   * A variety of load-balancing methods, such as round robin, weighted round robin, and least connections
+   * Various load-balancing methods, such as round robin, weighted round robin, and least connections
    * Load balancing among virtual server and bare metal compute instances that reside locally within a data center
 * Server health checks
    * Periodic monitoring of server health to ensure that traffic is forwarded to healthy servers only
@@ -50,11 +50,11 @@ The {{site.data.keyword.loadbalancer_full}} service offers the following feature
 
 IBM Cloud Load Balancer determines its pricing based on the following metrics.
 
-*Instance hour per month:* Measures the number of hours CLB is used per calendar month.
+*Instance hour per month:* It measures the number of hours CLB is used per calendar month.
 
-*Data Processed:* Measures how much data, in gigabytes (GB), that is processed per calendar month.
+*Data Processed:* It measures how much data, in gigabytes (GB), that is processed per calendar month.
 
-*Bandwidth Usage:* Measures the amount of bandwidth, in gigabytes (GB), used per calendar month.
+*Bandwidth Usage:* It measures the amount of bandwidth, in gigabytes (GB), used per calendar month.
 
 This pricing metric has multiple pricing tiers that differ based on the amount of data used.
 {: note}

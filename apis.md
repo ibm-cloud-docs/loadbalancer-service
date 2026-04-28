@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-07"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: slapi
 
@@ -20,7 +20,7 @@ The SoftLayer application programming interface (API) is the development interfa
 
 The SoftLayer API powers many of the features in the Customer Portal. Generally, if an interaction is possible in the Customer Portal, it can also be run in the API. Because you can programmatically interact with all portions of the SoftLayer environment within the API, you can use the API to automate tasks.
 
-The SLAPI is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC or REST for data transmission.
+The SLAPI is a Remote Procedure Call system. Each call involves sending data towards an API endpoint and receiving structured data in return. The format used to send and receive data with the SLAPI depends on which implementation of the API you choose. The SLAPI currently uses SOAP, XML-RPC, or REST for data transmission.
 
 For more information about the SoftLayer API, {{site.data.keyword.loadbalancer_full}} Service APIs, see the following resources in the SoftLayer Development Network:
 * [Getting Started with the SoftLayer API](https://sldn.softlayer.com/article/getting-started/){: external}

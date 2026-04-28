@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-08-22"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: traffic, management, connection, persistence
 
@@ -42,9 +42,9 @@ The following timeout values are used by the load balancer:
 
 | Name | Description | Default timeout | User configurable |
 | ------------------------------------------ | --------------------------------------------------- | ------------------- | ------------------- |
-| Server-side connection attempt    | The maximum time window that the load balancer can use to establish a TCP connection with the back-end server. If the connection attempt is unsuccessful, the load balancer tries the next available server, according to the load-balancing method that you configured. | 5 seconds   | No   |
-| Client-side idle connection  | The maximum idle time after which the load balancer brings down the client-side connection, if the client failed to close its connection properly.| 50 seconds  | Yes   |
-| Server-side idle connection | The maximum idle time (with back-end protocol configuration of TCP) after which the load balancer closes the server-side connection. When HTTP is used as the back-end protocol, if the load balancer doesn't receive an HTTP response within the idle timeout period, it returns an error message to the client.                               | 50 seconds | Yes   |
+| Server-side connection attempt | The maximum time window that the load balancer can use to establish a TCP connection with the back-end server. If the connection attempt is unsuccessful, the load balancer tries the next available server, according to the load-balancing method that you configured. | 5 seconds | No |
+| Client-side idle connection | The maximum idle time after which the load balancer brings down the client-side connection, if the client failed to close its connection properly. | 50 seconds | Yes |
+| Server-side idle connection | The maximum idle time (with back-end protocol configuration of TCP) after which the load balancer closes the server-side connection. When HTTP is used as the back-end protocol, if the load balancer doesn't receive an HTTP response within the idle timeout period, it returns an error message to the client. | 50 seconds | Yes |
 {: caption="Load Balancer Timeout Values" caption-side="top"}
 
 Server-side and client-side idle connection timeout values can be configured by using the API, cURL or from the CLI.
@@ -115,7 +115,7 @@ To set the timeout values by using cURL, follow these steps:
    ```
    {: codeblock}
 
-1. Use the listener ID you obtained in the previous step to get listener details:
+1. Use the listener ID that you obtained in the previous step to get listener details:
 
    ```sh
       curl -g -u $SL_USER:$SL_APIKEY -X GET 'https://api.softlayer.com/rest/v3.1/SoftLayer_Network_LBaaS_Listener/CLB_LISTENER_ID/getObject' | jq

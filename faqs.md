@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-07-14"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords:
 
@@ -110,29 +110,29 @@ Currently, you can create up to 50 service instances. If you need more instances
 {: faq}
 {: support}
 
-VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is available only from the API, but not from the console. Portable private IPs added by using the API appear as "Unknown" in the console as they are not assigned by IBM Cloud. This configuration can be used with other hypervisors, such as Xen and KVM.
+VMWare virtual machines that are assigned IBM Cloud portable private addresses can be specified as back-end servers to the load balancer. This feature is available only from the API, but not from the console. Portable private IP addresses that added by using the API appear as "Unknown" in the console as they are not assigned by IBM Cloud. This configuration can be used with other hypervisors, such as Xen and KVM.
 
-VMWare virtual machines that are assigned non-IBM Cloud addresses, such as those that are on VMWare NSX networks can't be added directly as back-end servers to the load balancer. But depending on your setup, you might use an intermediary, such as an NSX gateway. This gateway has an IBM Cloud private address and acts as the back-end server for the load balancer, while the actual servers are VMs on VMware NSX-managed networks.
+VMWare virtual machines that are assigned non-IBM Cloud addresses, such as those that are on VMWare NSX networks can't be added directly as back-end servers to the load balancer. But depending on your setup, you might use an intermediary, such as an NSX gateway. This gateway has an IBM Cloud Private address and acts as the back-end server for the load balancer, while the actual servers are VMs on VMware NSX-managed networks.
 
 ## If I deploy a load balancer and a firewall on a public VLAN in my account, what configurations do I need on the firewall to make it work with the load balancer?
 {: #public}
 {: faq}
 {: support}
 
-The TCP port 56501 is used for management. Ensure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, customer operations, and service triggered operations, might fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 10514 (security and compliance) must be always allowed for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
+The TCP port 56501 is used for management. Make sure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, customer operations, and service triggered operations, might fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 10514 (security and compliance) must be always allowed for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
 
 In summary, the following are needed for the firewall configuration:
 
-| Inbound and Outbound |	Protocol |	Source IP |	Source Port |	Destination IP | Destination Port |
-| ---------------- | --------- | ---------- | ----------- | -------------- | ----------------- |
-|     Inbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	 56501      |
-|     Inbound 	   |    TCP 	 |     AnyIP 	|     443     |    AnyIP       |    	AnyPort     |
-|     Inbound 	   |    TCP 	 |     AnyIP 	|    10514    |    AnyIP       |    	AnyPort     |
-|     Inbound 	   |    TCP 	 |     AnyIP 	|     8834    |    AnyIP       |    	AnyPort     |
-|     Outbound 	   |    TCP 	 |     AnyIP 	|     56501   |    AnyIP       |    	AnyPort     |
-|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  443       |
-|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	 10514      |
-|     Outbound 	   |    TCP 	 |     AnyIP 	|    AnyPort  |    AnyIP       |    	  8834      |
+|Inbound and Outbound|Protocol|Source IP|Source Port|Destination IP|Destination Port|
+|----------------|---------|----------|-----------|--------------|-----------------|
+|Inbound|TCP|AnyIP|AnyPort|AnyIP|56501|
+|Inbound|TCP|AnyIP|`443`|AnyIP|AnyPort|
+|Inbound|TCP|AnyIP|`10514`|AnyIP|AnyPort|
+|Inbound|TCP|AnyIP|`8834`|AnyIP|AnyPort|
+|Outbound|TCP|AnyIP|`56501`|AnyIP|AnyPort|
+|Outbound|TCP|AnyIP|AnyPort|AnyIP|`443`|
+|Outbound|TCP|AnyIP|AnyPort|AnyIP|`10514`|
+|Outbound|TCP|AnyIP|AnyPort|AnyIP|`8834`|
 {: caption="Required firewall configuration" caption-side="bottom"}
 
 Also, ensure your application's ports are open to accept traffic.
@@ -148,7 +148,7 @@ Monitoring metrics aren't available for existing load balancers after you link t
 {: faq}
 {: support}
 
-No. The load balancer is built to adjust automatically as needed, which means its IP addresses might change over time. As the service scales up or down, the IPs linked to the FQDN of your instance might also change.
+No. The load balancer is built to adjust automatically as needed, which means its IP addresses might change over time. As the service scales up or down, the IP addresses linked to the FQDN of your instance might also change.
 
 Use FQDN and not cached IP addresses.
 {: note}
@@ -158,7 +158,7 @@ Use FQDN and not cached IP addresses.
 {: faq}
 {: support}
 
-The available range of possible IPs for `public to public` load balancers cannot be predicted. Because of this condition, you must open all back-end member ports that are added to the load balancer and set the source IP to `any`.
+The available range of possible IP addresses for `public to public` load balancers cannot be predicted. Because of this condition, you must open all back-end member ports that are added to the load balancer and set the source IP to `any`.
 
 `Public to private` and `private to private` load balancers use your private subnets to communicate with your back-end members. Because of this setup, you can set the source IP with your subnet's CIDR.
 
@@ -230,8 +230,8 @@ Pricing metrics for IBM Cloud Load Balancer are detailed in the [pricing metrics
 
 No. Currently, IBM Cloud Load Balancer bandwidth usage isn't covered by Classic Bandwidth Pools.
 
-## Do I need extra IPs in the subnet for IBM Cloud load balancer operations?
+## Do I need extra IP addresses in the subnet for IBM Cloud Load Balancer operations?
 {: #faqs-extra-ips}
 {: faq}
 
-Yes. To support scaling and maintenance, it is best to allocate 8 extra IP addresses per subnet used by the load balancer. If your application load balancer uses only one subnet, allocate 16 extra IPs.
+Yes. To support scaling and maintenance, it is best to allocate 8 extra IP addresses per subnet used by the load balancer. If your application load balancer uses only one subnet, allocate 16 extra IP addresses.

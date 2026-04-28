@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-03"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: troubleshooting, provisioning, question, problem
 
@@ -15,7 +15,7 @@ subcollection: loadbalancer-service
 # Common issues when creating a new load balancer
 {: #load-balancer-provisioning-troubleshooting}
 
-This topic provides information on common issues that you might encounter when creating a new instance of {{site.data.keyword.loadbalancer_full}}.
+The following sections provide information on common issues that you might encounter when creating a new instance of {{site.data.keyword.loadbalancer_full}}.
 {: shortdesc}
 
 ## Insufficient IP addresses in your subnet

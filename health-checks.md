@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: health check, http, tcp, ports
 
@@ -24,7 +24,7 @@ Health check definitions are mandatory for each of the back-end application port
 
 The health checks against HTTP，HTTPS and TCP ports are conducted as follows:
 
-* **HTTP** - An `HTTP GET` request against a pre-specified URL is sent to the back-end server port. The server port is marked healthy upon receiving a `200 OK` response. The default `GET` URL is “/” via the GUI, and it can be customized.
+* **HTTP** - An `HTTP GET` request against a pre-specified URL is sent to the back-end server port. The server port is marked healthy upon receiving a `200 OK` response. The default `GET` URL is “/” with the GUI, and it can be customized.
 
 * **HTTPS** - Only applicable when back-end encryption is enabled and the back-end protocol is set to HTTPS. The mechanism is the same as **HTTP**, except that all health check messages are SSL encrypted. For more information, see [Setting back-end encryption](/docs/loadbalancer-service?topic=loadbalancer-service-setting-backend-encryption).
 
