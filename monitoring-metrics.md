@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-03-14"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: monitor metrics
 
@@ -45,12 +45,12 @@ Active connections are the number of connections that are established on a load 
 
 The active connection metric contains the following metadata:
 
-| Metadata | Description |
+|Metadata|Description|
 |----------|-------------|
-| Metric name | `ibm_cloud_load_balancer_active_connections` |
-| Metric type | `gauge` |
-| Value type | `none`  |
-| Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
+|Metric name|`ibm_cloud_load_balancer_active_connections`|
+|Metric type|`gauge`|
+|Value type|`none`|
+|Segment by|`IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics`|
 {: caption="IBM Cloud Load Balancer active connections metrics metadata" caption-side="bottom"}
 
 
@@ -59,12 +59,12 @@ The active connection metric contains the following metadata:
 
 Connection rate is the number of new incoming active connections per second to your load balancer.
 
-| Metadata | Description |
+|Metadata|Description|
 |----------|-------------|
-| Metric name | `ibm_cloud_load_balancer_connection_rate`|
-| Metric type | `gauge` |
-| Value type  | `none` |
-| Segment by | `IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics` |
+|Metric name|`ibm_cloud_load_balancer_connection_rate`|
+|Metric type|`gauge`|
+|Value type|`none`|
+|Segment by|`IBM Cloud Load Balancer appliance metrics` and `IBM Cloud Load Balancer listener metrics`|
 {: caption="IBM Cloud Load Balancer connection rate metric metadata" caption-side="bottom"}
 
 ### Throughput
@@ -72,12 +72,12 @@ Connection rate is the number of new incoming active connections per second to y
 
 Throughput is the amount of data that passes in and out of a load balancer over a period.
 
-| Metadata | Description |
+|Metadata|Description|
 |----------|-------------|
-| Metric name | `ibm_cloud_load_balancer_throughput`|
-| Metric type | `gauge` |
-| Value type  | `byte` |
-| Segment by | `IBM Cloud Load Balancer appliance metrics` or `IBM Cloud Load Balancer listener metrics` |
+|Metric name|`ibm_cloud_load_balancer_throughput`|
+|Metric type|`gauge`|
+|Value type|`byte`|
+|Segment by|`IBM Cloud Load Balancer appliance metrics` or `IBM Cloud Load Balancer listener metrics`|
 {: caption="IBM Cloud Load Balancer throughput metric metadata" caption-side="bottom"}
 
 ## Metric segmentation
@@ -85,18 +85,18 @@ Throughput is the amount of data that passes in and out of a load balancer over 
 
 You can split the data that {{site.data.keyword.mon_full_notm}} presents into various visualizations in the {{site.data.keyword.mon_full_notm}} dashboard, allowing views of different metrics based on your preferences. For example, if you have multiple load balancers or accounts with different load balancers in each account, you might want to focus on a particular listener (front-end protocol) port.
 
-As an example, you can segment the `active connections` by `IBM Cloud Load Balancer listener port` to show how many active users are connected to the load balancer through each listener type. To illustrate this, let's assume that your load balancer has two different listener protocols one HTTP on port 80 and another for TCP on port 8080. The dashboard would contain different lines showing 10 users who are connected through HTTP on Port 80 in one color, and 6 users connected through TCP on port 8080 in another color.
+As an example, you can segment the `active connections` by `IBM Cloud Load Balancer listener port` to show how many active users are connected to the load balancer through each listener type. To illustrate this behavior, let's assume that your load balancer has two different listener protocols one HTTP on port 80 and another for TCP on port 8080. The dashboard would contain different lines showing 10 users who are connected through HTTP on Port 80 in one color, and 6 users connected through TCP on port 8080 in another color.
 
 ### Global attributes
 {: #global-attributes}
 
 The following attributes are available for segmenting all three of the {{site.data.keyword.mon_full_notm}} metrics.
 
-| Attribute | Attribute Name | Attribute Description |
+|Attribute|Attribute Name|Attribute Description|
 |-----------|----------------|-----------------------|
-| `Resource` | `ibm_resource` | A load balancer's unique ID |
-| `Scope` | `ibm_scope` | The account that is associated with a given load balancer |
-| `Service name` | `ibm_service_name` | ibm-cloud-load-balancer |
+|`Resource`|`ibm_resource`|A load balancer's unique ID|
+|`Scope`|`ibm_scope`|The account that is associated with a given load balancer|
+|`Service name`|`ibm_service_name`|`ibm-cloud-load-balancer`|
 {: caption="{{site.data.keyword.mon_full_notm}} global attributes" caption-side="bottom"}
 
 ### Extra attributes
@@ -104,10 +104,10 @@ The following attributes are available for segmenting all three of the {{site.da
 
 The following attributes are available to segment one or more of the global attributes. See the individual metrics for any segmentation options.
 
-| Attribute | Attribute Name | Attribute Description |
+|Attribute|Attribute Name|Attribute Description|
 |-----------|----------------|-----------------------|
-| IBM Cloud Load Balancer appliance metrics | `ibm_cloud_load_balancer_appliance_ip` | The metrics coming from the load balancer back end. Because the load balancer is highly available, multiple appliances support each load balancer for redundancy.  |
-| IBM Cloud Load Balancer listener metrics | `ibm_cloud_load_balancer_listener_port` | The metrics that are gathered from individual listeners and their ports. Configure the listeners in your load balancer settings. The monitoring metrics reflect the metrics coming from those listeners. |
+|IBM Cloud Load Balancer appliance metrics|`ibm_cloud_load_balancer_appliance_ip`|The metrics coming from the load balancer back end. Because the load balancer is highly available, multiple appliances support each load balancer for redundancy.|
+|IBM Cloud Load Balancer listener metrics|`ibm_cloud_load_balancer_listener_port`|The metrics that are gathered from individual listeners and their ports. Configure the listeners in your load balancer settings. The monitoring metrics reflect the metrics coming from those listeners.|
 {: caption="{{site.data.keyword.mon_full_notm}} additional attributes" caption-side="bottom"}
 
 The displayed metrics contain a timestamp and the metric value for the time interval ending at that timestamp. You can specify different scopes, as well as the time interval over which to report the metrics.
@@ -128,7 +128,7 @@ You can also specify the time interval over which to report your metrics. Time i
 * 1 hour
 * 6 hours
 * 2 weeks
-* Custom  
+* Custom
 
 The number of data points you can report is roughly the same for each time interval. For example, if the interval is 1 hour, then each data point represents 5 minutes of data. If the interval is 2 weeks, then each data point represents 24 hours of data.
 
@@ -163,10 +163,10 @@ To do so, follow these steps:
    If you do not have any pre-configured resource groups, or have no reason to share this resource selectively, use the default selection.
    {: note}
 
-   If your account has multiple resource groups, you can choose which one has access to this {{site.data.keyword.mon_full_notm}} instance. This allows you to have metrics available to some resource groups and not to others.
+   If your account has multiple resource groups, you can choose which one has access to this {{site.data.keyword.mon_full_notm}} instance. This option allows you to have metrics available to some resource groups and not to others.
    {: tip}
 
-6. Select the **Enable Platform Metrics** checkbox. Select this to receive metrics from your load balancer.
+6. Select the **Enable Platform Metrics** checkbox. Select this option to receive metrics from your load balancer.
 
 7. Click **Create**. You are taken back to the monitoring metrics home page.
 
@@ -188,7 +188,7 @@ To view and work with your {{site.data.keyword.mon_full_notm}} metrics, follow t
 
 4. Three main metrics in the dashboard are shown: Throughput, Active Connections, and Connection Rate. To modify options and segment your metrics by load balancer ID or listener port, you must create a custom dashboard.
 
-   You can choose what time window that you want to see your metrics by using the time selection bar. You can also zoom in and out for more granularity and drag the mouse to create a selection of a specific time window.
+   You can choose what time window that you want to see your metrics by using the time selection bar. You can also zoom in and out for a higher granularity and drag the mouse to create a selection of a specific time window.
    {: tip}
 
 ## Creating a custom metrics dashboard
@@ -206,7 +206,7 @@ To customize your dashboard, follow these steps:
 
 4. Select the **Blank dashboard**, then select the type of visual representation you want.
 
-   {{site.data.keyword.mon_full_notm}} offers eight different visualizations for your dashboard. Read the description for each visualization, then choose the one that best meets your requirements.
+   {{site.data.keyword.mon_full_notm}} offers eight different visualizations for your dashboard. Read the description for each visualization and then choose the one that best meets your requirements.
 
    **Line** ("View trends over time") is the easiest and most basic option. It is also the most frequently selected option. The following examples show a Line-based visualization.
    {: note}
@@ -232,7 +232,7 @@ To return to the default {{site.data.keyword.mon_full_notm}} dashboard at any ti
 ## Working with {{site.data.keyword.mon_full_notm}} using the APIs
 {: #metric-query-api}
 
-You can also work with the {{site.data.keyword.mon_full_notm}} instance by using the metric query API. You might want to do this if you need raw data points or want to consume your metrics from a command-line interface rather than using the {{site.data.keyword.mon_full_notm}} dashboard.
+You can also work with the {{site.data.keyword.mon_full_notm}} instance by using the metric query API. You might want to do this approach if you need raw data points or want to consume your metrics from a command-line interface rather than using the {{site.data.keyword.mon_full_notm}} dashboard.
 
 After you create your I{{site.data.keyword.mon_full_notm}} instance, you must collect the following two pieces of information.
 
@@ -260,7 +260,7 @@ To collect this information and start working with your {{site.data.keyword.mon_
 
    * The {{site.data.keyword.mon_full_notm}} Monitor API token.
    * The endpoint of your {{site.data.keyword.mon_full_notm}} instance.
-   * The value for `ibm_resource` (this is the load balancer ID you want to see metrics for).
+   * The value for `ibm_resource` (this value is the load balancer ID you want to see metrics for).
 
       If you want to see this metric for all of your load balancers, do not enter a value for the `scope` attribute. For example, use `"scope” : ""`.
       {: tip}
@@ -271,7 +271,7 @@ To collect this information and start working with your {{site.data.keyword.mon_
 
       Because a large volume of data is stored in {{site.data.keyword.mon_full_notm}}, choosing the specific level of granularity is important. {{site.data.keyword.mon_full_notm}} can return only 600 data points at any time with a given request. As a result, the `sampling` and `value` attributes are important. Leaving these two lines out of your request returns an aggregate sum over that time period instead.
 
-      If the time range specified by `from` and `to` is large (for example, 4 days), but you define a `sampling` and `value` of 10 seconds, this means that you receive 4 days worth of data that is split into 10-second chunks. This is not a useful sampling due to the large amount of data returned. Specifying a larger chunk is recommended (for example, 1 hour instead of 10 seconds).      
+      If the time range specified by `from` and `to` is large (for example, 4 days), but you define a `sampling` and `value` of 10 seconds, this means that you receive 4 days worth of data that is split into 10-second chunks. This configuration is not a useful sampling due to the large amount of data returned. Specifying a larger chunk is recommended (for example, 1 hour instead of 10 seconds).
       {: tip}
 
    ```sh

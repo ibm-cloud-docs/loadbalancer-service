@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-08-22"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: data logs
 
@@ -45,17 +45,18 @@ To create a IBM Cloud Logs instance, perform the following procedure:
 
    For information on the mapping between regions and data center, refer to [IBM Cloud global data centers](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
-3. You can use {{site.data.keyword.logs_routing_full_notm}}, a platform service, to route platform logs in your account to a destination of your choice by configuring a tenant that defines where platform logs are sent. For more information, see [About Logs Routing](/docs/logs-router?topic=logs-router-about).
+3. You can use {{site.data.keyword.logs_routing_full_notm}}, a platform service to route platform logs in your account to a destination of your choice by configuring a tenant that defines where platform logs are sent. For more information, see [About Logs Routing](/docs/logs-router?topic=logs-router-about).
 
 ## Log output examples
 {: #log-output-examples}
 
 Sub-system name = `Cloud Load Balancer`
-| Field             | Type       | Description             |
+
+|Field|Type|Description|
 |-------------------|------------|-------------------------|
-| `msgTimestamp`    | Required   | The timestamp that indicates when the log was generated.     |
-| `logSourceCRN`    | Required   | The load balancer UUID can be obtained from `logSourceCRN`.    |
-| `message`         | Required   | Datapath log message. |
+|`msgTimestamp`|Required|The timestamp that indicates when the log was generated.|
+|`logSourceCRN`|Required|The load balancer UUID can be obtained from `logSourceCRN`.|
+|`message`|Required|Datapath log message.|
 {: caption="Log output examples" caption-side="top"}
 
 The following output is an example of an {{site.data.keyword.loadbalancer_full}} data log:
@@ -74,7 +75,7 @@ platformSource:Cloud Load Balancer
 ```
 {: screen}
 
-Details of the datapath log fieds are:
+Details of the datapath log fields are:
 * `msgTimestamp` is Coordinated Universal Time.
 * `loadbalancer-wdc04-323716-1137319-1367523` is the load balancer name, and `wdc04` is the data center.
 * `323716` is the account ID. `1137319` is the load balancer ID. `1367523` is the load balancer instance ID.

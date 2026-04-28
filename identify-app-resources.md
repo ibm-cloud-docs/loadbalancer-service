@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2020-08-19"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: resources, server, application, instance, configure
 
@@ -43,7 +43,7 @@ Add the protocols for your load balancer:
 	If you do not have an existing certificate, go to the [IBM Cloud Certificate service](https://cloud.ibm.com/classic/security/sslcerts) and either purchase a new certificate or upload an existing one. After adding the certificate, return to the load balancer configuration page and click the refresh icon next to the SSL Certificate drop-down list to view and add your newly added certificate.
 	{: note}
 
-	Never delete any certificates associated with HTTPS listeners as this can cause issues.
+	Never delete any certificates associated with HTTPS listeners as this action can cause issues.
 	{: important}
 
 ## Step 2 - Configuring health checks

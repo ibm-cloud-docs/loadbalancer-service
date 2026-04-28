@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-08-05"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: options, load balancing, configure, protocol, health check
 
@@ -33,12 +33,12 @@ When the configuration page appears, follow these steps:
 
 5. Select the subnet where you want to deploy your new load balancer.
 
-	This option applies to only **Public-to-Private** and **Private-to-Private** load balancer types. Your load balancer service instance has one of its network interfaces on this subnet. Ensure that your application servers are either on this subnet or reachable from this subnet. If necessary, enable VLAN spanning.
+	This option applies to only **Public-to-Private** and **Private-to-Private** load balancer types. Your load balancer service instance has one of its network interfaces on this subnet. Make sure that your application servers are either on this subnet or reachable from this subnet. If necessary, enable VLAN spanning.
 	{: note}
 
-6. Select the allocation of public IPs for the load balancer.
+6. Select the allocation of public IP addresses for the load balancer.
 
-	This option applies to only the **Public-to-Private** load balancer type. If you select **Allocate from a public subnet in this account**, you must have at least two public IPs available in a public subnet in the same data center. Also, ensure that traffic to TCP management port 56501 and your application's own ports are not blocked by firewalls that are deployed on your public VLANs.
+	This option applies to only the **Public-to-Private** load balancer type. If you select **Allocate from a public subnet in this account**, you must have at least two public IPs available in a public subnet in the same data center. Also, make sure that traffic to TCP management port 56501 and your application's own ports are not blocked by firewalls that are deployed on your public VLANs.
 	{: note}
 
 ## What's next

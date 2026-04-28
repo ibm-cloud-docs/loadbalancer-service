@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-05-08"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: pod, vlan, subnet, location, selection, point of delivery
 
@@ -15,12 +15,12 @@ subcollection: loadbalancer-service
 # Selecting Point of Delivery (PoD) based locations by using the CLI and API
 {: #selecting-pod}
 
-Each physical data center location in {{site.data.keyword.cloud}} is divided into multiple, discrete networking LANs, otherwise known as PoDs. Each of these has its own separate network infrastructure, a limited number of VLANs, as well as public and private IP subnets. These VLANs and subnets are shared by all clients that have compute capacity that is provisioned within that PoD space.
+Each physical data center location in {{site.data.keyword.cloud}} is divided into multiple, discrete networking LANs, otherwise known as PoDs. Each of these PoDs has its own separate network infrastructure, a limited number of VLANs, as well as public and private IP subnets. These VLANs and subnets are shared by all clients that have compute capacity that is provisioned within that PoD space.
 {: shortdesc}
 
 Currently, you can use the UI to select the deploying data center location at the specific zone, such as `tok02`. You can also select the deploying VLAN and subnet when you have the existing one. However, you cannot specify PoD-based locations except for a gateway appliance and VLAN in the console.
 
-Because you cannot specify PoD locations, and there is no VLAN or subnets, your provisioning can be distributed over multiple PoDs, which can be problematic.
+Because you can't specify PoD locations, and no VLAN or subnets exist, your provisioning can be distributed over multiple PoDs, which can be problematic.
 
 To prevent this issue, you can order a "Premium VLAN" in advance, then specify it as your network VLAN; however, this option incurs an extra cost.
 
@@ -29,7 +29,7 @@ A better option is to use the CLI and API.
 ## Using the CLI and API to specify PoD
 {: #pod-cli-api}
 
-You can use the CLI and API to specify PoD using the following option:
+You can use the CLI and API to specify PoD by using the following option:
 
 ```sh
 --extras '{"virtualGuests": [{"hostname": "test", "domain": "softlayer.com", "primaryBackendNetworkComponent": {"router": {"id": 1673467}}}]}'

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: ssl offload, cipher
 
@@ -17,7 +17,7 @@ subcollection: loadbalancer-service
 
 For all incoming HTTPS connections, the load balancer service ends the SSL connection and establishes a plain text HTTP communication with the back-end server. CPU-intensive SSL handshakes and encryption or decryption tasks are shifted away from the back-end servers, allowing them to use all their CPU cycles for processing application traffic.
 
-An SSL certificate is required for the load balancer to perform SSL offload tasks. You can use a pre-existing SSL certificate or purchase a new one, and manage it through the [SSL Certificates page](https://cloud.ibm.com/classic/security/sslcerts){: external}.
+An SSL certificate is required for the load balancer to handle SSL offloading tasks. You can use a pre-existing SSL certificate or purchase a new one, and manage it through the [SSL Certificates page](https://cloud.ibm.com/classic/security/sslcerts){: external}.
 
 ## SSL cipher suites
 {: #ssl-cipher-suites}

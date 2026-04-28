@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-01-28"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
-keywords: 
+keywords:
 
 subcollection: loadbalancer-service
 
@@ -17,7 +17,7 @@ subcollection: loadbalancer-service
 {: help}
 {: support}
 
-Back-end encryption is supported to allow end-to-end data traffic encryption. Not only is the traffic between the load balancer and the client encrypted, but so is the traffic between the load balancer and the back-end server.
+Back-end encryption is supported to allow end-to-end data traffic encryption. Not only is the traffic between the load balancer and the client encrypted, but so is the traffic between the load balancer and the backend server.
 {: #shortdesc}
 
 To enable back-end encryption:

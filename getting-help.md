@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-06-02"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
 keywords: help, support, troubleshooting
 
@@ -22,6 +22,6 @@ If you experience an issue or have questions when using IBM Cloud® Load Balance
 * Review the [FAQs](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer) in the product documentation.
 * Review the [troubleshooting documentation](/docs/loadbalancer-service?topic=loadbalancer-service-the-back-end-server-is-unhealthy) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](/status){: external}.
-* Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `ibm-cloud` and `load-balancer-service`, so that it's seen by the {{site.data.keyword.Bluemix_notm}} development teams.
+* Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `ibm-cloud` and `load-balancer-service` so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams.
 
 If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/account?topic=account-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).

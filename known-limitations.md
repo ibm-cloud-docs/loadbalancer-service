@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2026
+lastupdated: "2026-04-28"
 
-keywords: 
+keywords:
 
 subcollection: loadbalancer-service
 
@@ -25,7 +25,7 @@ The {{site.data.keyword.loadbalancer_full}} service currently has the following 
 
 * The **Edit** button in the server instances and protocols tabs applies to all entries and is not restricted to rows selected by using a checkbox.
 * During the initial creation of the load balancer service, your custom health check settings are lost if you go back and forth between various pages.
-* You might experience some issues while using Internet Explorer 11, Edge, or Safari browsers for administering the load balancer service. As an alternative, use either the Firefox or Chrome browser.
+* You might experience some issues when you use Internet Explorer 11, Edge, or Safari browsers for administering the load balancer service. As an alternative, use either the Firefox or Chrome browser.
 * During the initial service creation, the list for the data centers might be skewed. Regardless, you can still select your data center.
 * The pricing information on the review page is rounded off to two decimal digits. For correct pricing, refer to the pricing displayed on the plan page.
 
