@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-08-07"
 
 keywords:
 
@@ -119,7 +119,7 @@ VMWare virtual machines that are assigned non-IBM Cloud addresses, such as those
 {: faq}
 {: support}
 
-The TCP port 56501 is used for management. Make sure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, customer operations, and service triggered operations, might fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 10514 (security and compliance) must be always allowed for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
+The TCP port 56501 is used for management. Make sure that incoming traffic to this port is not blocked by your firewall. Otherwise, load balancer provisioning, customer operations, and service triggered operations, might fail. More specifically, ports 56501 (management), 443 (monitoring), 8834 and 6514 (security and compliance) must be always allowed for the load balancer to successfully manage customer workloads. Some outbound traffic is also required to be open to make sure the load balancer functions properly.
 
 In summary, the following are needed for the firewall configuration:
 
